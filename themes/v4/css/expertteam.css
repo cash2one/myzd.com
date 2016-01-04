@@ -1,0 +1,21 @@
+.bg-green{background-color: #009b97;}
+#site-content .area>span{padding: 0 20px;}
+#site-content .area>span.active>a{color: #19aea5;}
+#site-content .area .border-left{border-left: 1px solid #ddd;}
+.tooltip.bottom .tooltip-arrow {display: none;}
+.tooltip-inner{background-color: #c9c9ca!important;}
+.expert-list{padding: 0 0px 10px;margin-top: -10px;}
+.expert-name,.expert-title{width: 50%;}
+.expert-name{text-align: right;padding-right: 20px;font-size: 18px;}
+.expert-title{margin-top: 4px;text-align: left;padding-left: 5px;}
+.rec-expert{margin-top: 10px;}
+.rec-expert .expert:hover{background-color: rgba(80%,80%,80%,0.2);}
+.rec-expert .expert{min-height: 380px;border: 1px solid #cecece;margin-top: 15px;}
+.rec-expert .img100 {display: block;margin: 20px auto 10px;width: 100px;height: 100px;border: 1px solid #ddd;border-radius: 50%;overflow: hidden;}
+.rec-expert .expert-slogan{color: #59b3a8;text-align: center;font-size: 16px;margin-top: 5px;}
+.rec-expert .expert-hospital{text-align: center;color: #333;font-size: 12px;margin-top: 5px;}
+.rec-expert .bg-line{background: url(../images/event/wire3.png) repeat-x center center;height: 64px;text-align: center;padding-top: 10px;}
+.rec-expert .bg-line .honor-header{background-image: url(../images/general/good.png);background-repeat:  no-repeat;height: 30px;width: 255px;margin: 10px auto 0;background-size: 100% 100%;background-position: center 70%;}
+.rec-expert .honor{padding: 15px;}
+.rec-expert .honor ul{padding-left: 5px;margin-top: -20px;}
+.rec-expert .honor ul>li{margin-top: 5px;background: url(../images/general/honour-s.png) no-repeat 0 center;line-height: 1.8em;padding-left: 28px;height: 1.7em;overflow-y: hidden;}

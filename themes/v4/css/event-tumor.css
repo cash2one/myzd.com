@@ -1,0 +1,33 @@
+.arrow{position: absolute;width: 0;height: 0;border-bottom: 20px solid #19aea5;}
+.arrow-l {top: 0px;border-left: 30px solid transparent;}
+.arrow-r {top: 0px;right: -30px;border-right: 30px solid transparent;margin-left: 70px;}
+.tumor-header{background: url(../images/event/tumor.jpg) no-repeat center center;height: 400px;}
+#site-content{padding-bottom: 0!important;}
+.tumor-content{border: 1px solid #ddd;border-bottom: 0;padding-bottom: 40px;}
+.tumor-news{background: url(../images/event/bg-tumornews.png) no-repeat center 0;padding: 20px;margin-top: -44px;}
+.tumor-news .tnews-content{width: 79%;margin: 0 auto;padding: 20px;}
+.tumor-news .tnews-content .tnews-heaer{font-size: 30px;color: #19aea5;}
+.tumor-news .tnews-content span{letter-spacing: 3px;line-height: 1.7em;}
+.tumor-news .tnews-content .border-left{}
+.tumor-news .tnews-content .tnew-text{border-left: 1px solid #fff;margin-left: 10px;padding-left: 30px;}
+@media screen and (max-width:1200px){.tumor-news{background-size: 100% 100%!important;}.tumor-news .tnews-content{width: 100%!important;}.tumor-dis{padding: 15px!important;}}
+.tumor-line{background: url(../images/event/wire3.png) repeat-x;height: 3px;margin-top: 60px;}
+.tumor-dis{padding-left: 128px;}
+.tdis-title{color: #4da9ae;font-size: 20px;margin: 30px 0 10px;}
+.tumor-dis .tdis-info{letter-spacing: 2px;line-height: 2em;}
+.tumor-eteam{border: 1px solid #e4e4e4;margin-right: 15px;margin-top: 40px;padding-top: 10px;}
+.tumor-eteam .eteam-header{font-size: 24px;color: #4da9ae;padding-left: 20px;line-height: 1.2em;}
+.tumor-eteam .eteam-slogan{color: #888;margin-top: 7px;font-size: 17px;border-left: 1px solid #ddd;padding-left: 15px;margin-left: -10px;}
+.tumordivider{border-bottom: 1px solid #e4e4e4;margin: 0px 15px 0;}
+.img70{width: 70px;height: 70px;border: 1px solid #ddd;border-radius: 50%;display: block;margin:0 auto;}
+.expertinfo{text-align: center;font-size: 12px;}
+.edecs{background: url(../images/event/frame.png) no-repeat;background-size: 100% 100%;height: 100px;margin-right: 15px;padding: 10px 20px;font-size: 12px;overflow: hidden;}
+.expertteam{font-size: 14px;letter-spacing: 3px;line-height: 1.7em;text-align: center;}
+.expertteam .border-right{border-right: 1px solid #ddd;}
+.expertteam .expert-content:hover{background-color: rgba(190,227,237,0.3);box-shadow: 0 0 1px 1px #e4e4e4;}
+.expertteam img{border: 1px solid #ddd;border-radius: 50%;}
+.expertteam .ename{font-size: 16px;}
+.expertteam .text12{font-size: 12px;letter-spacing: 1px;}
+.color-yellow{color: #EFA429;}
+.expertteam .edesc{text-align: left;margin-top: 10px;}
+.expertteam .expert-content{min-height: 416px;padding:20px 10px 20px 15px;}

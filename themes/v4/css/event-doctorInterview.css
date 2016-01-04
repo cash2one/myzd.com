@@ -1,0 +1,15 @@
+#site-content{padding-bottom: 0!important;}
+#doctorInterview .docInterview-header{background-image: url(../images/event/doctorInterview/bg-header.jpg);background-repeat: no-repeat;height: 400px;}
+#doctorInterview .docInterview-header .header-content{background-image: url(../images/event/doctorInterview/header.png);background-repeat: no-repeat;background-size: 100% 100%;height: 332px;max-width: 1027px;margin: 83px auto 0;padding-right: 20px;}
+#doctorInterview .docInterview-header .header-content .main-text{padding-top: 120px;font-size: 13px;letter-spacing: 2px;}
+#doctorInterview .container-body{max-width: 995px;background-color: #f2f3f3;font-size: 13px;line-height: 2em;letter-spacing: 2px;padding-bottom: 40px;}
+#doctorInterview .question{background-image: url(../images/event/doctorInterview/question.png);background-repeat: no-repeat;background-position-y: 0.3em;padding-left: 2.5em;margin: 20px 0;}
+#doctorInterview .question>.q-text{color: #19aea5;padding-bottom: 8px;background-image: url(../images/event/doctorInterview/arrow.png);background-repeat: no-repeat;background-position: right 1.3em;}
+#doctorInterview .question>.q-text>.border-yellor{border-bottom: 1px dashed #f8b62c;padding-bottom: 3px;}
+#doctorInterview .answer{background-image: url(../images/event/doctorInterview/answer.png);background-repeat: no-repeat;padding-left: 2.5em;margin-bottom: 50px;}
+#doctorInterview .interViewList .difficulty{padding-left: 2em;margin-top: 10px;}
+#doctorInterview .interViewList .difficulty>.step{position: absolute;left: 13px;color: #f8b62c;font-weight: bold;}
+.pad1{padding: 2em 1em;}
+.color-yellow{color: #f8b62c;}
+.color-red{color: #e50011;}
+.color-gray{color: #595757;}

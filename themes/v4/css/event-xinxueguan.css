@@ -1,0 +1,22 @@
+.xinxueguan{letter-spacing: 3px;padding: 10px 150px;}
+@media screen and (max-width:768px){.xinxueguan{padding: 10px 0;}.xinxueguan .xinxueguan-title{padding: 10px 0!important;}}
+.xinxueguan-header{background-image: url(../images/event/xinxueguan/bg-header.jpg);background-repeat: no-repeat;background-position: center;text-align: center;padding: 22px;font-size: 20px;color: #19aea5;}
+.xinxueguan p{padding-bottom: 20px;}
+.xinxueguan .xinxueguan-title{margin-top: 30px;background-image: url(../images/event/xinxueguan/bg-title.png);background-repeat: no-repeat;background-position: center;text-align: center;padding: 20px;font-size: 20px;color: #19aea5;}
+.xinxueguan .girl img{margin-top: -25px;}
+.xinxueguan .title-sm{margin-bottom: 10px;}
+.xinxueguan .title-sm .title-no{color: #19aea5;}
+.xinxueguan .title-sm .title-content{background-color: #ffde00;padding: 0 5px;}
+.xinxueguan .time img{margin: 10px auto;display: block;}
+.step img{border: 1px solid #19aea5;}
+@media screen and (min-width:768px){.minheight100{min-height: 100px;}.minheight180{min-height: 184px;}}
+.xinxueguan .shoushu{margin-top: 20px;padding: 10px;min-height: 150px;border: 1px dashed #19eae5;}
+.expertteam{font-size: 14px;letter-spacing: 3px;line-height: 1.7em;text-align: center;}
+.expertteam .border-right{border-right: 1px solid #ddd;}
+.expertteam .expert-content:hover{background-color: rgba(190,227,237,0.3);box-shadow: 0 0 1px 1px #e4e4e4;}
+.expertteam img{border: 1px solid #ddd;border-radius: 50%;width: 130px;height: 130px;}
+.expertteam .ename{font-size: 16px;}
+.expertteam .text12{font-size: 12px;letter-spacing: 1px;}
+.color-yellow{color: #EFA429;}
+.expertteam .edesc{text-align: left;margin-top: 10px;}
+.expertteam .expert-content{min-height: 416px;padding:20px 10px 20px 15px;margin-bottom: 20px;}

@@ -1,0 +1,9 @@
+.dididoctor{padding:30px 30px;background-color: #ececed;}
+.title-lg{line-height: 1em;border-left: 10px solid #ff9114;color: #ff9114;font-size: 40px;padding-left: 10px;margin: 20px 0 20px;padding-bottom: 4px;font-weight: bold;}
+.title-sm{line-height: 1em;border-left: 10px solid #58beb5;color: #58beb5;font-size: 24px;padding-bottom: 3px;padding-left: 10px;font-weight: bold;margin: 20px 0;}
+.dididoctor-content{border: 1px solid #ddd;padding: 10px 15px;letter-spacing: 2px;line-height: 1.8em;}
+.text16{font-size: 16px;}
+.comment{padding: 10px 90px;}
+.title-xs{background-image: url(../images/event/dididoctor/bg-rad.png);background-repeat: no-repeat;background-position-y: center;padding-left: 40px;padding-bottom: 3px;font-size: 18px;color: #ff9114;margin: 20px 0 10px;}
+.dididoctor-content img{display: block;margin: 20px auto;}
+.dididoctor-text{padding: 10px 0px;letter-spacing: 2px;line-height: 1.8em;}
