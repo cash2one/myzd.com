@@ -1,0 +1,93 @@
+/**** container-fluid ****/
+.bg-gray{
+    background-color: rgb(248, 248, 248);
+}
+.bg-lightred{
+    background-color:#f3b3be;
+}
+#site-content{padding-bottom:0;}
+
+/**** bxslider ****/
+.mt-fix{margin: 0 10px;}
+.bx-wrapper{margin-bottom: 0!important;}
+.bx-controls{
+    position: absolute;
+    width: 100%;
+}
+.bx-prev,.bx-next{top:-280px;display: none;}
+.bx-prev:hover,.bx-next:hover{opacity: 0.7;}
+.bx-pager{bottom: 20px!important;width:100%!important;text-align: center!important;}
+.bx-controls-auto{display: none;}
+@media screen and (max-width:768px){
+    .bx-prev,.bx-next{top:-110px!important;display: none;}
+}
+@media screen and (max-width:992px){
+    .bx-prev,.bx-next{top:-180px;display: none;}
+}
+
+/**** booking ****/
+@media screen and (min-width:768px){
+    .home-faculty{margin-right: 20px;}
+}
+.home-booking{margin-left: -20px;}
+.mt74{margin-top: 74px!important;}
+
+.home-faculty{
+    padding:20px;
+    border: 1px solid #e4e4e4;
+}
+.home-faculty .faculty-content{
+    padding-bottom: 20px;
+}
+/**** faculty ****/
+.home-faculty .faculty-content .faculty-name{margin-top:10px;text-align:center;font-size:20px;}
+.faculty a:hover>.faculty-icon{opacity: 0.7;}
+.faculty a:hover>.faculty-name{color:#f56734;}
+.home-faculty .faculty-icon {width: 100px;height: 100px;margin:0 auto;background-size:1200px 100px;background:url("../images/icons/icon_faculty.png");}
+.home-faculty .icon-xinxueguan{background-position:0 0;background-size:1200px 100px;}
+.home-faculty .icon-jiazhuangxianke{background-position:-100px 0;background-size:1200px 100px;}
+.home-faculty .icon-yanke{background-position:-200px 0;background-size:1200px 100px;}
+.home-faculty .icon-baineizhangke{background-position:-300px 0;background-size:1200px 100px;}
+.home-faculty .icon-shenjingke{background-position:-400px 0;background-size:1200px 100px;}
+.home-faculty .icon-jiezhichangaike{background-position:-500px 0;background-size:1200px 100px;}
+.home-faculty .icon-gandan{background-position:-600px 0;background-size:1200px 100px;}
+.home-faculty .icon-yixianwaike{background-position:-700px 0;background-size:1200px 100px;}
+.home-faculty .icon-shengzhiyixueke{background-position:-800px 0;background-size:1200px 100px;}
+.home-faculty .icon-zhongliu{background-position:-900px 0;background-size:1200px 100px;}
+.home-faculty .icon-fuke{background-position:-1000px 0;background-size:1200px 100px;}
+.home-faculty .icon-guke{background-position:-1100px 0;background-size:1200px 100px;}
+
+/**** home-hospital ****/
+.home-hospital{border:1px solid #e4e4e4;padding-top: 20px;}
+.home-hospital .title-hospital{text-align: center; color: #19aea5; font-size: 36px;}
+.home-hospital .title-slogan{text-align: center; color: #19aea5; font-size: 14px;}
+.city-img{margin: 0 auto;width:300px;height:320px;}
+.home-hospital .beijing{background-image: url(../images/home/city/beijing.jpg);background-size:100% 100%;}
+.home-hospital .shanghai{background-image: url(../images/home/city/shanghai.jpg);background-size:100% 100%;}
+.home-hospital .nanjing{background-image: url(../images/home/city/nanjing.jpg);background-size:100% 100%;}
+.bg-front{width:300px;height:320px;position: absolute;z-index: 0;}
+.city>a:hover .bg-front{background:rgba(0,0,0,0.2);}
+.city-name{z-index: 100;color: #fff;font-size: 24px;text-align: center;padding-top: 30px;font-family: 兰亭黑-简 Extralight;}
+.city-name>span{padding: 5px 0;width: 100%;display: inline-block;background:rgba(0,0,0,0.4);}
+
+.show-more>a:hover>.more-hospital{opacity: 0.7;}
+.home-hospital .more-hospital{border:1px solid #19aea5; padding: 3px 20px;margin: 0 auto;width:340px;}
+
+
+
+/**** content ****/
+.container .content>.item{padding:24px;border:3px solid #ffcc01;border-radius:16px;color:#000;font-size:18px;}
+.container .content>.item>.comment{margin-bottom:24px;}
+.container .content>.item>.btm>div{display:inline-block;}
+.container .content>.item>.btm>.dis{font-size:16px;}
+.container .content>.item>.btm>.icon-quote {width:28px;height:23px;}
+.container .content>.item>.btm>.icon-quote-left {background-image:url("../images/icons/icon_quote.png");}
+.container .content>.item>.btm>.icon-quote-right {background-image:url("../images/icons/icon_quote.png");background-position:-28px 0;}
+.container .content>.item>.btm>.location{font-size:16px;}
+.container .content>.item-1{float:left;margin-bottom:28px;}
+.container .content>.item-1>.btm{float:right;clear:both;}
+.container .content>.item-1>.btm>div{margin-left:30px;}
+.container .content>.item-2{float:right;}
+.container .content>.item-2>.btm>div{margin-right:30px;}
+.container .content>.item-2>.btm>div{margin-right:30px;}
+@media(min-width:776px){.container .content>.item{width:630px;}}
