@@ -1,0 +1,29 @@
+.bg-pink{background-color: #e87f96;min-height: 30px;}
+.healthy{background-color: #d8edea;padding-top: 60px;}
+.healthy .healthy-content{border: 3px solid #fff;border-bottom: 0;border-top-left-radius: 10px;border-top-right-radius: 10px;min-height: 100px;padding: 0 100px;}
+.healthy .healthy-content .healthy-title{font-size: 30px;color: #5fbeaa;padding: 0 20px;background-color: #d8edea;margin: -25px auto 0;display: block;width: 30%;min-width: 375px;}
+.healthy .healthy-content img{margin-bottom: -20px;}
+.healthy .healthy-content .healthy-text{padding-top: 30px;font-size: 16px;letter-spacing: 2px;}
+.prominent{font-size: 20px;color: #5fbeaa;}
+.ruxianai .ruxianai-content{border: 3px solid #d8edea;border-top: 0;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;min-height: 100px;padding: 50px 0;}
+.ruxianai .ruxianai-content .ruxianai-title{background-image:url(../images/event/ruxianai/bg-title.png);background-repeat: no-repeat;color: #fff;font-size: 34px;padding: 5px 20px 20px;background-size: auto 100%;}
+.ruxianai .ruxianai-content .ruxianai-text{padding: 20px 60px 50px;font-size: 14px;letter-spacing: 2px;line-height: 2em;}
+.ruxianai .ruxianai-content .ruxianai-text ul{padding-left: 10px;}
+.ruxianai .ruxianai-content .ruxianai-text ul li{list-style: disc;}
+.ruxianai .ruxianai-content .illness .illness-title{padding: 15px 0;text-align: center;background-color: #5fbeaa;color: #fff;font-size: 23px;margin-top: 20px;}
+.ruxianai .ruxianai-content .selfcheckmethod img{display: block;margin: 30px auto;}
+.ruxianai .ruxianai-content .selfcheckmethod .step{background-repeat: no-repeat;background-position-y: center;padding-left: 17px;}
+.ruxianai .ruxianai-content .selfcheckmethod .step1{background-image: url(../images/event/ruxianai/step.png);background-position-x: 0;}
+.ruxianai .ruxianai-content .selfcheckmethod .step2{background-image: url(../images/event/ruxianai/step.png);background-position-x: -17px;}
+.ruxianai .ruxianai-content .selfcheckmethod .step3{background-image: url(../images/event/ruxianai/step.png);background-position-x: -34px;}
+.ruxianai .ruxianai-content .selfcheckmethod .step4{background-image: url(../images/event/ruxianai/step.png);background-position-x: -51px;}
+.ruxianai .ruxianai-content .selfcheckmethod .step5{background-image: url(../images/event/ruxianai/step.png);background-position-x: -68px;}
+.ruxianai .ruxianai-content .selfcheckmethod .step6{background-image: url(../images/event/ruxianai/step.png);background-position-x: -85px;}
+.ruxianai .ruxianai-content .doctors img{display: block;width: 120px;height: 120px;border-radius: 50%;margin: 10px auto;}
+.ruxianai .ruxianai-content .doctors .title{color: #9f9fa0;}
+.ruxianai .ruxianai-content .doctors .doctor-disc{border: 1px solid #9f9fa0;border-radius: 5px;padding: 20px;margin-top: 10px;}
+.ruxianai .ruxianai-content .doctors .doctor-disc .discontent{height: 4em;line-height: 2em;overflow: hidden;}
+.ruxianai .ruxianai-content .doctors .bookingbtn{padding: 10px;margin-top: 30px;}
+.tooltip-inner {background-color: #c9c9ca!important;max-width: 300px!important;}
+.tooltip.bottom .tooltip-arrow {border-bottom-color: #c9c9ca!important;}
+.pad0{padding: 0!important;}
