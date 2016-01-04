@@ -20,7 +20,8 @@ class StatCode {
     const BK_STATUS_PROCESSING = 2;   // 处理中
     const BK_STATUS_CONFIRMED_DOCTOR = 3;   // 已确认专家
     const BK_STATUS_PATIENT_ACCEPTED = 4;   // 患者已接受
-    const BK_STATUS_DONE = 8;        // 已完成
+    const BK_STATUS_INVALID = 7;      // 失效的
+    const BK_STATUS_DONE = 8;         // 已完成
     const BK_STATUS_CANCELLED = 9;   // 已取消
     const DR_C_TITLE_ZHUREN = 1;        // 主任
     const DR_C_TITLE_ZHUREN_ASSOC = 2;  // 副主任
@@ -112,6 +113,7 @@ class StatCode {
             self::BK_STATUS_PROCESSING => '处理中',
             self::BK_STATUS_CONFIRMED_DOCTOR => '专家已确认',
             self::BK_STATUS_PATIENT_ACCEPTED => '患者已接受',
+            self::BK_STATUS_INVALID => '失效的',
             self::BK_STATUS_DONE => '已完成',
             self::BK_STATUS_CANCELLED => '已取消'
         );

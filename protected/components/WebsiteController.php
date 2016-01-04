@@ -122,6 +122,12 @@ abstract class WebsiteController extends Controller {
         unset(Yii::app()->session[$key]);
     }
 
+    public function addHttpSession($key, $value) {
+        $session = new CHttpSession;
+        $session->open();
+        $session[$key] = $value;
+    }
+
     /*
       public function renderJsonOutput($data) {
       header('Content-Type: application/json; charset=utf-8');
