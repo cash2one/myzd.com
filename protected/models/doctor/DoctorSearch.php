@@ -11,7 +11,7 @@ class DoctorSearch extends ESearchModel {
     }
 
     public function getQueryFields() {
-        return array('city', 'disease', 'hospital', 'hpdept', 'mtitle', 'disease_name');
+        return array('city', 'disease', 'hospital', 'hpdept', 'mtitle', 'disease_name', 'disease_category', 'is_contracted');
     }
 
     public function addQueryConditions() {
@@ -23,7 +23,12 @@ class DoctorSearch extends ESearchModel {
                 $mtitle = $this->queryParams['mtitle'];
                 $this->criteria->compare('t.medical_title', $mtitle);
             }
-            // City.
+            // Doctor.is_contracted
+            if (isset($this->queryParams['is_contracted'])) {
+                $is_contracted = $this->queryParams['is_contracted'];
+                $this->criteria->compare('t.is_contracted', $is_contracted);
+            }
+            // Doctor.city
             if (isset($this->queryParams['city'])) {
                 $cityId = $this->queryParams['city'];
                 $this->criteria->compare('t.city_id', $cityId);
@@ -57,7 +62,7 @@ class DoctorSearch extends ESearchModel {
                 $cateId = $this->queryParams['disease_category'];
                 $this->criteria->join = 'left join disease_doctor_join b on t.id=b.doctor_id left join disease c on c.id=b.disease_id left join disease_category d on c.category_id=d.sub_cat_id';
                 $this->criteria->addCondition("d.cat_id=:cateId");
-                $this->criteria->params[":cateId"] = $disease_category;
+                $this->criteria->params[":cateId"] = $cateId;
                 $this->criteria->distinct = true;
             }
         }
