@@ -11,7 +11,7 @@ class DoctorSearch extends ESearchModel {
     }
 
     public function getQueryFields() {
-        return array('city', 'disease', 'hospital', 'hpdept', 'mtitle');
+        return array('city', 'disease', 'hospital', 'hpdept', 'mtitle', 'disease_name');
     }
 
     public function addQueryConditions() {
@@ -35,6 +35,13 @@ class DoctorSearch extends ESearchModel {
                 $this->criteria->compare("ddj.disease_id", $diseaseId);
                 $this->criteria->distinct = true;
             }
+            // DiseaseName.
+            if (isset($this->queryParams['disease_name'])) {
+                $disease_name = $this->queryParams['disease_name'];
+                $this->criteria->join = 'left join disease_doctor_join ddj on (t.`id`=ddj.`doctor_id`) left join disease d on d.id=dhj.disease_id';
+                $this->criteria->addSearchCondition('d.name', $disease_name);
+                $this->criteria->distinct = true;
+            }
             if (isset($this->queryParams['hospital'])) {
                 $hospitalId = $this->queryParams['hospital'];
                 $this->criteria->compare("t.hospital_id", $hospitalId);
@@ -43,6 +50,14 @@ class DoctorSearch extends ESearchModel {
                 $hpdeptId = $this->queryParams['hpdept'];
                 $this->criteria->join .= 'left join hospital_dept_doctor_join hddj on (t.`id`=hddj.`doctor_id`)';
                 $this->criteria->compare("hddj.hp_dept_id", $hpdeptId);
+                $this->criteria->distinct = true;
+            }
+            // disease_category.
+            if (isset($this->queryParams['disease_category'])) {
+                $cateId = $this->queryParams['disease_category'];
+                $this->criteria->join = 'left join disease_doctor_join b on t.id=b.doctor_id left join disease c on c.id=b.disease_id left join disease_category d on c.category_id=d.sub_cat_id';
+                $this->criteria->addCondition("d.cat_id=:cateId");
+                $this->criteria->params[":cateId"] = $disease_category;
                 $this->criteria->distinct = true;
             }
         }
