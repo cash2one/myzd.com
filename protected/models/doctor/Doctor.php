@@ -91,6 +91,7 @@ class Doctor extends EActiveRecord {
         return array(
             'doctorAvatar' => array(self::HAS_ONE, 'DoctorAvatar', 'doctor_id'),
             'doctorCerts' => array(self::HAS_MANY, 'DoctorCert', 'doctor_id'),
+            'doctorExpertTeam' => array(self::HAS_ONE, 'ExpertTeam', 'leader_id'),
             //'medicalRecordAssignments' => array(self::HAS_MANY, 'MedicalRecordAssignment', 'doctor_id'),
             'doctorHospital' => array(self::BELONGS_TO, 'Hospital', 'hospital_id'),
             'doctorHpDept' => array(self::BELONGS_TO, 'HospitalDepartment', 'hp_dept_id'),
@@ -448,6 +449,10 @@ class Doctor extends EActiveRecord {
         return $this->doctorCity;
     }
 
+    public function getDoctorExpertTeam() {
+        return $this->doctorExpertTeam;
+    }
+
     public function getHospital() {
         return $this->doctorHospital;
     }
@@ -459,7 +464,7 @@ class Doctor extends EActiveRecord {
     public function getFaculties() {
         return $this->doctorFaculties;
     }
-    
+
     public function getDiseases() {
         return $this->doctorDiseases;
     }
@@ -551,14 +556,44 @@ class Doctor extends EActiveRecord {
     public function getDateCreated($format = null) {
         return $this->getDateAttribute($this->date_created, $format);
     }
-    
-    public function getDoctorDiseases(){
+
+    public function getDoctorDiseases() {
         return $this->doctorDiseases;
     }
-    
-    public function getIsContracted(){
+
+    public function getIsContracted() {
         return $this->is_contracted;
     }
-    
+
+    public function getFileUploadRootPath() {
+        return Yii::app()->params['doctorAvatar'];
+    }
+
+    /**
+     * gets the file upload path of given foler name.
+     * @param type $folderName
+     * @return type 
+     */
+    public function getFileUploadPath($folderName = null) {
+        if ($folderName === null) {
+            return $this->getFileUploadRootPath();
+        } else {
+            return ($this->getFileUploadRootPath() . $folderName);
+        }
+    }
+
+    /**
+     * get File System Path
+     *
+     * @param string        	
+     * @return string
+     */
+    public function getFileSystemUploadPath($folderName = null) {
+        return (Yii::getPathOfAlias('webroot') . DIRECTORY_SEPARATOR . $this->getFileUploadPath($folderName));
+    }
+
+    public function getBaseUrl() {
+        return Yii::app()->getBaseUrl(true) . '/';
+    }
 
 }

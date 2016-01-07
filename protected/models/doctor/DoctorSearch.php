@@ -42,8 +42,9 @@ class DoctorSearch extends ESearchModel {
             }
             // DiseaseName.
             if (isset($this->queryParams['disease_name'])) {
+
                 $disease_name = $this->queryParams['disease_name'];
-                $this->criteria->join = 'left join disease_doctor_join ddj on (t.`id`=ddj.`doctor_id`) left join disease d on d.id=dhj.disease_id';
+                $this->criteria->join = 'left join disease_doctor_join ddj on (t.`id`=ddj.`doctor_id`) left join disease d on d.id=ddj.disease_id';
                 $this->criteria->addSearchCondition('d.name', $disease_name);
                 $this->criteria->distinct = true;
             }
