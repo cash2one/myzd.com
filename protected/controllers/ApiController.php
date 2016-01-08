@@ -85,7 +85,6 @@ class ApiController extends Controller {
                 }
                 break;
             case "appnav2":
-                
                 if ($api >= 5) {
                     $values = $_GET;
                     $apiService = new ApiViewExpertTeamSearchV5($values);
@@ -142,7 +141,10 @@ class ApiController extends Controller {
 
             case 'doctor':
                 $values = $_GET;
-                if($api >= 5){
+                if($api >= 7){
+                    $apiService = new ApiViewDoctorSearchV7($values);
+                    $output = $apiService->loadApiViewData();
+                }elseif ($api == 5 || $api == 6) {
                     $apiService = new ApiViewDoctorSearchV5($values);
                     $output = $apiService->loadApiViewData();
                 }elseif ($api == 4) {
@@ -200,6 +202,11 @@ class ApiController extends Controller {
                 $city = new ApiViewOpenCity($values);
                 $output = $city->loadApiViewData();
                 break;
+            case 'diseasecategory'://获取疾病分类
+                $apiService = new ApiViewDiseaseCategory();
+                $output = $apiService->loadApiViewData();
+                break;
+
             default:
                 // Model not implemented error
                 //$this->_sendResponse(501, sprintf('Error: Mode <b>list</b> is not implemented for model <b>%s</b>', $model));
@@ -313,6 +320,10 @@ class ApiController extends Controller {
                     $apiSvc = new ApiViewDisease($id);
                     $output = $apiSvc->loadApiViewData();
                 }
+                break;
+            case 'diseasebycategory'://根据疾病分类获取疾病
+                $apiService = new ApiViewDiseaseByCategory($id);
+                $output = $apiService->loadApiViewData();
                 break;
             /*
               case 'diseaseinfo':
