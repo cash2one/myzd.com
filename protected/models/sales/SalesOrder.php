@@ -326,6 +326,10 @@ class SalesOrder extends EActiveRecord {
     public function getFinalAmount() {
         return $this->final_amount;
     }
+    
+    public function getDateClosed() {
+        return $this->date_closed;
+    }
 
     public function getOptionsOrderType() {
         return array(

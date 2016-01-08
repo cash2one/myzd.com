@@ -1,6 +1,6 @@
 <?php
 
-class ApiViewDoctorSearchV5 extends EApiViewService {
+class ApiViewDoctorSearchV7 extends EApiViewService {
 
     private $searchInputs;      // Search inputs passed from request url.
     private $getCount = false;  // whether to count no. of Doctors satisfying the search conditions.
@@ -14,7 +14,7 @@ class ApiViewDoctorSearchV5 extends EApiViewService {
         $this->searchInputs = $searchInputs;
         $this->getCount = isset($searchInputs['getcount']) && $searchInputs['getcount'] == 1 ? true : false;
         $this->searchInputs['pagesize'] = isset($searchInputs['pagesize']) && $searchInputs['pagesize'] > 0 ? $searchInputs['pagesize'] : $this->pageSize;
-        $this->doctorSearch = new DoctorSearch($this->searchInputs);
+        $this->doctorSearch = new DoctorSearchV7($this->searchInputs);
         $this->doctorSearch->addSearchCondition("t.date_deleted is NULL");
     }
 
@@ -32,6 +32,7 @@ class ApiViewDoctorSearchV5 extends EApiViewService {
                 'status' => self::RESPONSE_OK,
                 'errorCode' => 0,
                 'errorMsg' => 'success',
+                'dataNum' => $this->doctorCount,
                 'results' => $this->doctors,
             );
         }
@@ -62,6 +63,7 @@ class ApiViewDoctorSearchV5 extends EApiViewService {
         //    $data->actionUrl = Yii::app()->createAbsoluteUrl('/mobile/booking/create', array('did' => $data->id, 'header' => 0, 'footer' => 0));   // @used by app.
             $data->actionUrl = $data->actionUrl = Yii::app()->createAbsoluteUrl('/api/booking');    // @user by app.
             $data->isContracted = $model->getIsContracted();
+            $data->isExpteam = $model->getIsExpteam();
             $this->doctors[] = $data;
         }
     }

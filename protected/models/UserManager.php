@@ -162,9 +162,8 @@ class UserManager {
             $output['errors'] = $form->getErrors();
             return $output;
         }
-        $userMgr = new UserManager();
         $doctorHz = new UserDoctorHuizhen();
-        $model = $userMgr->loadUserDoctorHuizhenByUserId($userId);
+        $model = $this->loadUserDoctorHuizhenByUserId($userId);
         if (isset($model)) {
             $doctorHz = $model;
         }
@@ -190,9 +189,8 @@ class UserManager {
             $output['errors'] = $form->getErrors();
             return $output;
         }
-        $userMgr = new UserManager();
         $doctorZz = new UserDoctorZhuanzhen();
-        $model = $userMgr->loadUserDoctorZhuanzhenByUserId($userId);
+        $model = $this->loadUserDoctorZhuanzhenByUserId($userId);
         if (isset($model)) {
             $doctorZz = $model;
         }

@@ -30,8 +30,12 @@ class DiseaseManager {
         return $output;
     }
 
+    public function loadDiseaseCategoryListV7() {
+        $models = DiseaseCategory::model()->getAllByInCondition('t.app_version', 7);
+        return $models;
+    }
     public function loadDiseaseCategoryList() {
-        $models = DiseaseCategory::model()->getAll(array('dcDiseases'));
+        $models = DiseaseCategory::model()->getAllByInCondition('t.app_version', null, array('dcDiseases'));
 
         return $models;
     }

@@ -565,6 +565,10 @@ class Doctor extends EActiveRecord {
         return $this->is_contracted;
     }
 
+    public function getIsExpteam() {
+        return isset($this->expteam_id) ? 1 : 0;
+    }
+
     public function getFileUploadRootPath() {
         return Yii::app()->params['doctorAvatar'];
     }

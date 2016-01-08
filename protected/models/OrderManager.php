@@ -19,6 +19,18 @@ class OrderManager {
         if ($model instanceof PatientBooking) {
             $order->createRefNo($model->refNo, $model->id, StatCode::TRANS_TYPE_PB);
             $order->user_id = $model->creator_id;
+            //根据creator_id 查询其所在地址
+            $userDoctorPorfile = UserDoctorProfile::model()->getByUserId($model->creator_id);
+            if (isset($userDoctorPorfile)) {
+                $stateName = $userDoctorPorfile->getStateName();
+                if ($stateName == '北京' || $stateName == '天津' || $stateName == '上海' || $stateName == '重庆') {
+                    $bdCode = $stateName;
+                } else {
+                    $bdCode = $stateName . $userDoctorPorfile->getCityName();
+                }
+                $order->bd_code = $bdCode;
+            }
+            $order->bk_ref_no = $model->refNo;
             $order->bk_type = StatCode::TRANS_TYPE_PB;
             if ($model->travel_type == StatCode::BK_TRAVELTYPE_DOCTOR_COME) {
                 $order->order_type = SalesOrder::ORDER_TYPE_SERVICE;
@@ -28,6 +40,7 @@ class OrderManager {
         } elseif ($model instanceof Booking) {
             $order->createRefNo($model->refNo, $model->id, StatCode::TRANS_TYPE_BK);
             $order->user_id = $model->getUserId();
+            $order->bk_ref_no = $model->refNo;
             $order->bk_type = StatCode::TRANS_TYPE_BK;
             $order->subject = $order->getOrderType(true) . '-' . $model->getContactName();
             if (strIsEmpty($model->getExpertNameBooked())) {

@@ -195,7 +195,7 @@ class AuthManager {
             $output['status'] = EApiViewService::RESPONSE_OK;
             $output['errorCode'] = ErrorList::ERROR_NONE;
             $output['errorMsg'] = 'success';
-            $output['results'] = array('token' => $authTokenUser->getToken(), 'isProfile'=>is_object(UserDoctorProfile::model()->getByUserId($user->getId())) ? 1 : 0);
+            $output['results'] = array('token' => $authTokenUser->getToken(), 'uid' => $user->getUid(), 'isProfile'=>is_object(UserDoctorProfile::model()->getByUserId($user->getId())) ? 1 : 0);
         }
         return $output;
     }
