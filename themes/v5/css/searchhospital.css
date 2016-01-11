@@ -1,0 +1,19 @@
+.department-name{border:1px solid #19aea5;height:70px;line-height:70px;font-size:16px;}
+.city-sick-title{border-left:5px solid #19aea5;padding-bottom: 3px;line-height:1em;}
+.city-sick-title>span{margin-left:20px;}
+.border-gray{border:1px solid #ddd;}
+.waike{background:url('moren.png') no-repeat ;background-size:10px 20px;}
+.color-gray{color:#9f9fa0;}
+.expert-list{padding:0px 5px 10px 5px;}
+.bg-green{background-color:#19aea5;}
+.department-list{padding:20px;}
+.ad-area{height:140px;line-height:140px;}
+.find-navi{color:#fff;font-size:16px;padding:10px 0px 5px 15px;}
+.dept:hover{cursor:pointer;}
+.findexp-nav>span{margin-left:30px;}
+.modal-dialog{width:450px;}
+#btnSubmit{width:100%;}
+.label-booking{margin-top:7px;}
+.mybooking{background-color:#19aea5;height:140px;line-height:140px;}
+.mybooking-text{font-size:18px;letter-spacing:0.5em;}
+.booking-form{border:1px solid #19aea5;padding:10px 5px;}

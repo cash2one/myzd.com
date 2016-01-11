@@ -24,7 +24,7 @@ class BookingController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile'),
+                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile','list','success'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -41,11 +41,27 @@ class BookingController extends WebsiteController {
      * Displays a particular model.
      * @param integer $id the ID of the model to be displayed
      */
-    public function actionView($id) {
-        $this->render('view', array(
-            'model' => $this->loadModel($id),
-        ));
+    //预约列表
+    public function actionList(){
+        $this->render('list');
     }
+    //预约详情
+    public function actionView(){
+        $this->render('view');
+    }
+    //预约成功
+    public function actionSuccess(){
+        $this->render('success');
+    }
+    //上传文件页面
+    public function actionUploadFile(){
+        $this->render('uploadFile');
+    }
+//    public function actionView($id) {
+//        $this->render('view', array(
+//            'model' => $this->loadModel($id),
+//        ));
+//    }
 
     public function actionCreate() {
         $values = $_GET;

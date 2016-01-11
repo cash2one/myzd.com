@@ -1,136 +1,54 @@
-/**** bxslider ****/
-.block-center{margin: 0 auto;display: block;}
-.bx-wrapper{margin-bottom: 0!important;}
-.bx-controls{width: 100%;}
-.bx-next{display: block;}
-.bx-prev:hover,.bx-next:hover{opacity: 0.7;}
-.bx-pager{bottom: 10px!important;width:100%!important;text-align: center!important;}
-.bx-controls-auto{display: none;}
-#homeads .bx-controls-direction{display: none;z-index: 1!important;}
-#homeads{background: url(../images/loading/loading02.gif) no-repeat center center;}
-#homeads .infertility{background: url(../images/homeslider/bg-infertility.jpg) no-repeat center center;}
-#homeads .tumor{background: url(../images/homeslider/bg-tumor.jpg) no-repeat center center;}
-#homeads .preliverdisease{background: url(../images/homeslider/bg-preliverdisease.jpg) no-repeat center center;}
-#homeads .teacher{background-color: #fceae3;}
-#homeads .rectalcancer{background:url(../images/homeslider/bg-rectalcancer.jpg) no-repeat center center;}
-#homeads .midautumn{background:url(../images/homeslider/bg-midautumn.jpg) no-repeat center center;}
-#homeads .nationalday{background:url(../images/homeslider/bg-nationalday.jpg) no-repeat center center;}
-#homeads .thyroid{background:url(../images/homeslider/bg-thyroid.jpg) no-repeat center center;}
-#homeads .ruxianai{background:url(../images/homeslider/bg-ruxianai.jpg) no-repeat center center;}
-#homeads .dididoctor{background:url(../images/homeslider/bg-dididoctor.jpg) no-repeat center center;}
-#homeads .xinxueguan{background:url(../images/homeslider/bg-xinxueguan.jpg) no-repeat center center;}
-#homeads .ertai{background:url(../images/homeslider/bg-ertai.jpg) no-repeat center center;}
-#homeads .guanxinbing{background:url(../images/homeslider/bg-guanxinbing.png) no-repeat center center;}
-#homeads .doctorInterview{background:url(../images/homeslider/bg-doctorInterview.jpg) no-repeat center center;}
-#homeads .awards{background:url(../images/homeslider/bg-awards.jpg) no-repeat center center;}
-#homeads .lujinsong{background:url(../images/homeslider/bg-lujinsong.jpg) no-repeat center center;}
-#homeads .xinyabang{background:url(../images/homeslider/bg-xinyabang.jpg) no-repeat center center;}
-
-@media screen and (min-width:1200px){#homeads{min-height: 400px!important;}.operation{margin-top: 0!important;}}
-@media screen and (min-width:995px){#homeads{min-height: 373px;}.operation{margin-top: 30px;}.form-content .hospitallist,.form-content .citylist{padding-left: 0!important;}#site-header #header-nav {padding-left: 175px!important;}#site-header #header-nav>li, #site-header #header-nav>.dropdown>.dropdown-menu{min-width: 140px!important;}}
-@media screen and (max-width:995px){#dis-nav{display: none;}.operation{margin-top: 20px;}}
-@media screen and (max-width:768px){.bx-pager{bottom: 0px;}#homeads img{margin-left: 0!important;height: 200px!important;}#homeads{height: 200px!important;}}
-.border-bottom{border-bottom: 1px solid #e4e4e4;}
-/**** dis-nav ****/
-.dotted{border-bottom: 1px dotted #ddd;}
-#home-header{position: relative;}
-#dis-nav .faculty-icon .icon-img{width: 22px;height: 22px;background-repeat: no-repeat;padding-left: 1.35em;margin-right: 3px;}
-#dis-nav .alldis .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: 0 0;}
-#dis-nav .waike .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -22px 0;}
-#dis-nav .guke .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -44px 0;}
-#dis-nav .fuchanke .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -66px 0;}
-#dis-nav .yanke .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -88px 0;}
-#dis-nav .kouqiangke .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -110px 0;}
-#dis-nav .erke .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -132px 0;}
-#dis-nav .other .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -154px 0;}
-#dis-nav>ul>li:hover .waike .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -22px -22px;}
-#dis-nav>ul>li:hover .guke .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -44px -22px;}
-#dis-nav>ul>li:hover .fuchanke .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -66px -22px;}
-#dis-nav>ul>li:hover .yanke .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -88px -22px;}
-#dis-nav>ul>li:hover .kouqiangke .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -110px -22px;}
-#dis-nav>ul>li:hover .erke .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -132px -22px;}
-#dis-nav>ul>li:hover .other .icon-img{background-image: url(../images/home/icon-faculty.png);background-position: -154px -22px;}
-
-#dis-nav>ul>li{padding: 15px 40px 16.1px;;}
-#homeads img{margin-left: 190px;height: 400px;}
-#dis-nav .dis-class{height: 400px;}
-#dis-nav{position: absolute;top: -36px;z-index: 9999;}
-#dis-nav>ul{padding-left: 0;margin-bottom: 0;min-width: 190px;height: 436px;border-top: 1px solid #e4e4e4;background-color: #19aea5;color: #fff;}
-#dis-nav>ul>li{border-bottom: 1px solid #e4e4e4;border-left: 3px solid #19aea5;}
-#dis-nav>ul>li.last{border-bottom: 0;}
-#dis-nav>ul>li>span{font-size: 1.2em;}
-#dis-nav>ul>li.dis-header{padding: 5px 40px;background-color: #0f9890;color: #fff;border-left: 3px solid #0f9890;}
-#dis-nav>ul>li.dis-header:hover{background-color: #0f9890;color: #fff;}
-#dis-nav>ul>li:hover{background-color: #fff;color: #19aea5;cursor:pointer;border-left: 3px solid #19aea5;}
-#dis-nav>ul>li:hover .dis-class{display: block;}
-#dis-nav .dis-class{display: none;width: 600px;color: #000;text-align: left;padding: 5px 20px;position: absolute;top: 35.5px;left: 190px;border: 1px solid #e4e4e4;border-left: 0;box-shadow: 3px 1px 3px rgba(0,0,0,.2);background: #fff;}
-#dis-nav .dis-class li{padding-bottom: 10px;padding-top: 10px;border-bottom: 1px dotted #ddd;}
-#dis-nav .dis-class li.last{border: 0;}
-#dis-nav .dis-class .dis-title{font-size: 14px;margin-bottom: 5px;}
-#dis-nav .dis-class .dis-list>a{display: inline-block;color: #888;font-size: 12px;line-height: 1.5em;margin: 4px 0;padding:0 10px;border-right: 1px solid #e4e4e4;}
-#dis-nav .dis-class .dis-list>a:hover{color:#19aea5;}
-#dis-nav .dis-class .dis-list>a.last{border: 0;}
-#dis-nav .dis-class .dis-list>a.focus{color: #19aea5;}
-#dis-nav .dis-class .pagenav{position: absolute;bottom:10px;left: 43%;}
-#dis-nav .dis-class .page{display: none;}
-#dis-nav .dis-class .page.active{display: block;}
-#dis-nav .dis-class .pagenav ul{padding-left: 0;}
-#dis-nav .dis-class .pagenav ul>li{display: inline-block;border: 1px solid #e4e4e4;border-radius: 50%;width: 23px;height: 23px;padding: 0;text-align: center;}
-#dis-nav .dis-class .pagenav ul>li:hover{color: #fff;background-color: #7bc9ca;}
-#dis-nav .dis-class .pagenav ul>li.active{color: #fff;background-color: #19aea5;}
-#dis-nav .dis-class .pagenav ul>li.active>a,#dis-nav .dis-class .pagenav ul>li:hover>a{color: #fff;}
-#dis-nav .dis-class .pagenav ul>li>a{padding:0 6px;}
-#dis-nav .dis-class .pagenav ul>li>a:hover{text-decoration: none;}
-/**** booking-form ****/
-.form-content{min-height: 272px;}
-.form-head{padding: 10px; text-align: center; font-size: 21px;border-bottom: 1px solid #e4e4e4;}
-.operation img{border: 1px solid #e4e4e4;}
-.operation img:hover{border: 1px solid #19aea5;box-shadow:1px 1px 3px 3px #e4e4e4; }
-/**** expertteam list ****/
-#site-content .expertteam ul{padding: 0!important;}
-#site-content #slider-next>.next{color: #888889;}
-#site-content #slider-next>.next:hover{color: #333;}
-#site-content .expertteam .bx-pager{display: none;}
-#site-content .expertteam .bx-wrapper .bx-controls-direction a{width: 40px;height: 80px;}
-#site-content .expertteam .bx-controls-direction .bx-prev,#site-content .expertteam .bx-controls-direction .bx-next{background-color: rgba(50%,50%,50%,0.5);}
-#site-content .expert-title,#site-content .hospital-title,#site-content .caselist-title{margin: 15px 0 5px;display: inline-block;font-size: 32px;}
-#site-content .expertteam-rec{background: url(../images/icons/hot.gif) no-repeat 75px 0px;padding-right: 40px;padding-top: 5px;}
-#site-content .more-expertteam{margin-top: 36px;}
-#site-content .more-expertteam>a{color: #9f9fa0;}
-#site-content .more-expertteam>a:hover{color: #19aea5;}
-#site-content .recommend{font-size: 17px;margin-top: 10px;}
-#site-content a:hover{text-decoration:underline;}
-#site-content .expert{margin-bottom: 20px;background: url(../images/team-img/bg-bxslide.jpg) no-repeat;background-size: 100% 100%;}
-#site-content .expert img{width: 100%;border-bottom: 1px solid #e4e4e4;}
-#site-content .expert img:hover{box-shadow:1px 1px 3px 3px #e4e4e4; border-bottom-color: #19aea5;}
-#site-content .city-name{padding:0 10px;border-right: 1px solid #e4e4e4;}
-#site-content .city-name>a.active{color: #19aea5;}
-#site-content .media{margin-top: 20px;}
-#site-content .img150{width: 150px;}
-#site-content .media-body{padding: 10px 0;}
-#site-content .introduce{padding: 5px 0;}
-#site-content .expertteam .loading.loading02 {margin-top: 50px!important;}
-/**** hospital ****/
-#site-content .hospital-more{margin-top: 37px;}
-#site-content .hospital-more>a{color: #9f9fa0;}
-#site-content .hospital-more>a:hover{color: #19aea5;}
-#site-content .hlist{min-height: 336px;margin-top: -20px;}
-#sec-hospital .hlist a:hover{text-decoration: none;}
-#sec-hospital .media img{border: 1px solid #fff;}
-#sec-hospital .media:hover {border: 1px solid #19aea5;box-shadow: 1px 1px 3px 3px #e4e4e4;}
-#site-content #sec-hospital .media{padding: 10px;min-height: 152px;}
-#site-content #sec-hospital .morehp-btn .btn-text{color: #9f9fa0;text-align: center;letter-spacing: 5px; margin-top: 50px}
-#site-content #sec-hospital .morehp-btn:hover .btn-text{color: #a5d8d8;}
-.img130 {display: block;margin: 0 auto;width: 130px;height: 130px;overflow: hidden;}
-/**** case list ****/
-#site-content .case-more,#site-content .news-more{margin-top: 37px;}
-#site-content .news-more>a{color: #9f9fa0;}
-#site-content .news-more>a:hover{color: #19aea5;}
-#site-content .case-item .case-header{font-weight: bold;}
-/**** news ****/
-#site-content .news .news-title{font-weight: bold;}
-#site-content .case-list .case-content,#site-content .news-list .news-decs{margin-top: 15px;line-height: 2em;}
-#site-content .news .fa-star,#site-content .case-list .fa-star{color: #EFA429;font-size: 12px;}
-#site-content .case-list .case-item>a:hover,#site-content .news-list .news>a:hover{text-decoration: none;color: #19aea5;}
-@media screen and (min-width:995px){#site-content .case-list .border-left{}#site-content .case-list{padding-bottom: 15px;}#site-content .case-list .case-item{padding-right: 30px;}#site-content .news .news-decs{padding-left: 19px;}#site-content .case-list .case-content{padding-left: 19px;}#site-content .news-list{padding-left: 30px;}#site-content .expert-l{margin-right: 20px;}#site-content .expert-r{margin-left: 20px;}}
-@media screen and (max-width:768px){#site-content .news .news-decs{padding-left: 0;}.operation{margin-top: 20px;}}
+.bg-lunbo{background-image:url('../images/home/bg_header.jpg');}
+.home-header{height:600px;}
+.home-slogn{margin-top:115px;}
+.slogan-lg{font-size:58px;}
+.slogan-sm{font-size:36px;}
+.bg-home-top{background-color:#5ec1b9;padding-bottom:45px;}
+.search-top{border:1px solid #19aea5;margin-top:-17px;font-size:14px;height:35px;width:100px;background-color:#fff;color:#19aea5;line-height:35px;text-align:center;}
+.search-top:hover{cursor: pointer;}
+.search-top.active{background-color:#19aea5;color:#fff;}
+.search-top2{margin-left:8px;}
+.searchform{display: none;}
+.learn-more{color:yellow;text-decoration:underline;}
+.btn-home,.btn-home:hover,.btn-home:visited{font-size:24px;background-color:#fff;opacity:0.7;color:#19aea5!important;}
+.home-search{background-color:#221814;opacity:0.7;height:100px;margin-top:-100px;}
+.home-search .container{position: relative;}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{border-bottom:5px solid #3973ac;background-color:#efefef;border-top:none;border-left:none;color:#19aea5;font-size:22px;}
+.nav-tabs>li>a,.nav-tabs>li>a:hover{color:#19aea5;font-size:22px;border-right:1px solid #ddd;}
+.nav-tabs>li:hover,.nav-tabs>li:focus,.nav-tabs>li>a:hover,.nav-tabs>li>a:focus{border-bottom:none;}
+.nav-tabs>.neike1>a,.nav-tabs>.neike1.active>a{border-right:none!important;}
+.expert .nav-tabs>li{width: 16.66666667%;}
+.expert .nav-tabs>li>a{margin-right: 0;}
+.title{background:url(../images/home/home_wire.png) no-repeat;background-position:400px 40px;margin-top:40px;}
+.title .title-lg{font-size:36px;color:#3973ac}
+.title .title-sm{letter-spacing:5px;color:#3973ac;}
+#propaganda{background-image:url('../images/homeslider/bg-rectalcancer.jpg');background-position:center;height:400px;width:100%;}
+.waike{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);}
+.guke{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-670px 0px;}
+.fuchanke{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-1005px 0px;}
+.xiaoerwaike{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-335px 0px;}
+.wuguanke{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:335px 0px;}
+.neike{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:670px 0px;}
+.recommend-area{width:100px;height:100px;line-height:100px;background-color:#efefef;}
+.color-blue{color:#3973ac;}
+.explist-border{border:3px solid #87ccc5;}
+.login{color:#595757;}
+.input-area{width:100%!important;padding:20px 45px;font-size:24px;height:60px;}
+.change{color:#3973ac;cursor:pointer;}
+.carousel-indicators{margin-bottom:-50px;}
+.carousel-indicators>li.active{background-color:#9f9fa0;}
+.carousel-indicators>li{background-color:#dcdcdd;}
+.expTitle{color:#686868;}
+.expHospital{color:#686868;}
+.h300{height:300px;}
+.h180{height:180px;}
+.text16{font-size:16px;}
+.text13{font-size:13px;}
+.home-title{background-color:#fff;opacity:0.5;width:550px;margin-left:300px;}
+.select-label{height:60px;width:335px!important;padding:0px 45px;font-size:24px;height:60px;}
+.search-size{height:60px;width:125px;font-size:24px;}
+.search-citys{position: relative;}
+.citylist{display: none;position: absolute;width: 100%;font-size: 16px;line-height: 1.5em;background-color: #fff;box-shadow: 0px 0px 1px 1px #e4e4e4;z-index: 9999;padding: 0 15px 15px;margin-top: -17px;}
+.citylist span{display: inline-block;padding-right: 10px;padding-top: 10px;}
+.w83{width:83%;}
+.w17{width:17%;}

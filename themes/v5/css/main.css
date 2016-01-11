@@ -43,6 +43,7 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 .mt10{margin-top:10px;}
 .mt15{margin-top:15px;}
 .mt20{margin-top:20px;}
+.mt25{margin-top:25px;}
 .mt30{margin-top:30px;}
 .mt40{margin-top:40px;}
 .mt50{margin-top:50px;}
@@ -66,24 +67,27 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 .ml20{margin-left:20px!important;}
 
 .color-black{color: #000!important;}
+.color-white{color: #fff;}
 .border-bottom{border-bottom: 1px solid #e4e4e4;}
 /**** site-header ****/
+.home-top{height:50px;line-height:50px;}
+.home-top a:hover{color: #19aea5;cursor: pointer;}
 #site-header{border-bottom:1px solid #ddd;}
 #site-header .navbar{margin-bottom: 0;border:none;background-color:#fff;}
 #site-header{border-bottom:1px solid #ddd;}
-#site-header .container{padding-top:20px;}
+//#site-header .container{padding-top:20px;}
 #site-header .bg-blue{background-color: #19aea5;}
 #site-header .siteheader-menu{margin-top: 10px;}
 #site-header .navbar{margin-bottom: 0;}
 //#site-header #header-nav{margin-left: 40px!important;}
-#site-header #header-nav{width: 100%;}
+#site-header #header-nav{width: 80%;}
 @media (min-width: 768px){#site-header #header-nav>li{width: 20%;}}
 #site-header #header-nav>li{font-size:1.2em;}
 #site-header #header-nav>li *{text-align:center;}
-#site-header #header-nav>li>a{padding:10px 12px;color: #000;letter-spacing: 3px;}
+#site-header #header-nav>li>a{padding:10px 12px;color: #000;letter-spacing: 3px;font-size:16px;color:#19aea5;font-weight:bold;}
 #site-header #header-nav>li>a:hover{color: #19aea5;}
 #site-header #header-nav>li.open>a{background:none;}
-#site-header #header-nav>.dropdown>.dropdown-menu{border:none;background-color:#fff;}
+#site-header #header-nav>.dropdown>.dropdown-menu{border:none;background-color:#fff;width: 20%;}
 #site-header .collapse.in #header-nav>.dropdown>.dropdown-menu{background-color:rgba(87, 87, 87, 0.85);}
 #site-header #header-nav>.dropdown>.dropdown-menu>li>a{padding:6px 20px;}
 #site-header #header-nav>.dropdown>.dropdown-menu>li:hover>a{color:#fff;background-color:#19aea5;}
@@ -96,12 +100,14 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 #site-header ul.nav-top-right>li.user-control>a:hover{text-decoration:underline;}
 .site-phone{color: #19aea5;font-size: 18px!important;display:inline-block; height:1.2em;line-height:1.2em;padding-left:1.5em;font-size:1em;background:url(../images/icons/ic_phone.png) no-repeat 0 0px;padding-top: 3px;background-size:contain;-webkit-background-size: contain;-moz-background-size: contain;-o-background-size: contain;}
 .header-sologan li{padding: 0px 30px; margin-left: 45px;font-size: 12px;margin-top: -3px;background: url(../images/icons/icon_gold.png) no-repeat 10px 2px;}
-.phone{margin-top: -5px;}
-@media (min-width: 992px){#site-header #header-nav>li,#site-header #header-nav>.dropdown>.dropdown-menu{min-width: 150px;}}
+//.phone{margin-top: -5px;}
+//@media (min-width: 992px){#site-header #header-nav>li,#site-header #header-nav>.dropdown>.dropdown-menu{min-width: 150px;}}
 /**** site-content ****/
 .passage {line-height: 2;}
 .border-gray{border: 1px solid #e4e4e4;}
+.border-green {border: 1px solid #19aea5;}
 .divider{border-bottom: 1px solid #888;}
+.divide-line-gray {border-top: 1px solid #686868;}
 #site-content{padding-bottom: 40px;}
 #site-content .container-title{font-size: 32px;margin-top: 20px;margin-bottom: 10px;}
 a,a:hover{text-decoration: none;}
@@ -120,8 +126,10 @@ form a:hover{text-decoration: none!important;}
 form span.required {color: #E21E1A;}
 .panel-body{padding:50px;}
 .booking .booking-form {padding-right: 5px;padding-left: 5px;}
+.img100{display: block;margin: 20px auto 10px;width: 100px;height: 100px;border: 1px solid hsl(0, 0%, 87%);border-radius: 50%;overflow: hidden;}
+.block-center{display: block;margin: 0 auto;}
 /**** loading ****/
-.loading {position: absolute;left: 45%;z-index: 999;display: none;margin: 0 auto;width: 48px;height: 48px;background-image: url("../images/loading/loading03.gif");background-repeat: no-repeat;background-position: center;background-size: contain;}
+.loading {position: absolute;left: 45%;top:40%;z-index: 999;display: none;margin: 0 auto;width: 48px;height: 48px;background-image: url("../images/loading/loading03.gif");background-repeat: no-repeat;background-position: center;background-size: contain;}
 .loading.loading02 {width: 48px;height: 48px;background-image: url("../images/loading/loading02.gif");}
 /**** btn ****/
 .btn-verifycode {color: #fff;background-color: #EFA429;border-color: #eea236;}

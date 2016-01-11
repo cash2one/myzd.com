@@ -42,6 +42,7 @@
         <!-- Header -->
         <?php
         if ($this->showHeader()) {
+            $this->renderPartial('//layouts/header_home');
             $this->renderPartial('//layouts/header');
         }
         ?>

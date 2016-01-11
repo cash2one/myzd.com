@@ -1,55 +1,23 @@
-.crumbs{background-color: #19aea5;}
-.bread-crumb{letter-spacing: 3px;font-size: 16px;color: #fff;padding:10px;background-color: #19aea5;}
-.bread-crumb>span{padding: 5px 10px;color: #fff;border-radius: 5px;text-align: center;}
-.selector .selector-item{border-bottom: 1px solid #19aea5;margin-top: 30px;}
-.selector .selector-item>span a{padding: 10px 20px;display: inline-block;}
-.selector .selector-item .selector-header{font-size: 16px;font-weight: bold;}
-.selector .selector-item .selector-header>a{}
-.city-selector .city-content{margin-top: -10px;padding-top: 10px;display: none;position: relative;}
-.city-selector .citylist{position: absolute;width: 100%;background-color: #fff;padding: 10px;z-index: 999;border: 1px solid #e4e4e4;box-shadow: 1px 2px 3px 2px #ddd;}
-.city-selector .citylist span{display: inline-block;padding: 0 20px;}
-.city-selector .morecity:hover{cursor: pointer;color:#efca24;}
-.city-selector .city.active{color: #ec971f;}
-.dis-selector{position: relative;border-bottom: 1px solid #efca24;margin-top: 30px;}
-.dis-selector .dis-header{padding: 10px 20px;}
-.dis-selector #dis-nav{display: inline-block;}
-.dis-selector #dis-nav ul{padding-left: 0;margin-bottom: 0;}
-.dis-selector #dis-nav>ul>li.dis-header{}
-.dis-selector #dis-nav>ul>li{display: inline-block;padding: 9px 25px;margin: 0 -5px;}
-.dis-selector #dis-nav>ul>li:hover,.dis-selector #dis-nav>ul>li>.faculty-icon.active{color: #ec971f;cursor: pointer;}
-.dis-selector #dis-nav>ul>li:hover .dis-class{display: block}
-.dis-selector #dis-nav .dis-class{min-height: 200px;left: 0;margin-top: 9px;display: none;text-align: left;padding: 5px 0px;position: absolute;width: 100%;border: 1px solid #e4e4e4;box-shadow: 3px 1px 3px rgba(0,0,0,.2);background: #fff;z-index: 9999;}
-#dis-nav .dis-class li{padding-bottom: 10px;padding-top: 10px;border-bottom: 1px dotted #ddd;}
-#dis-nav .dis-class li.last{border: 0;}
-#dis-nav .dis-class .dis-title{font-size: 14px;margin-bottom: 5px;color: #333;border-left: 4px solid #ec971f;padding-left: 10px;line-height: 1em;}
-#dis-nav .dis-class .dis-list{padding-left: 50px;}
-#dis-nav .dis-class .dis-list>a{display: inline-block;color: #888;font-size: 12px;line-height: 1.5em;margin: 4px 0;padding:0 10px;border-right: 1px solid #e4e4e4;}
-#dis-nav .dis-class .dis-list>a:hover{color:#19aea5!important;}
-#dis-nav .dis-class .dis-list>a.last{border: 0;}
-#dis-nav .dis-class .dis-list>a.focus{color: #0068b7;}
-#dis-nav .dis-class .dis-list>a.active{color: #ec971f;}
-.dis-selector #dis-nav .dis-class .pagenav{display: none;}
-.hp-selector{position: relative;}
-.hp-selector .selector-header{padding: 10px 20px;}
-.hplist a:hover{text-decoration: underline;}
-.hplist{padding: 20px 0px 20px 0px;border: 1px solid #e4e4e4;border-top-color: #19aea5;margin-top: -1px;position: absolute;display: none;background-color: #fff;z-index: 99;min-height: 7em;box-shadow: 3px 1px 3px rgba(0,0,0,.2);min-width: 100%;}
-.hpname{line-height: 2em;height: 2em;overflow: hidden;}
-.hospitalname.active,.hospitalname:hover{color: #ec971f;}
-.hplist .morehospital,.hplist .retract{position: absolute;padding: 10px 10px 10px;right: 0px;top: 13px;color: #9f9fa0;font-size: 14px;z-index: 999;}
-.hplist .morehospital:hover,.hplist .retract:hover{cursor: pointer;color: #19aea5;}
-.hplist .somehospital{padding: 0 100px 0 20px;border-left: 5px solid #ec971f;}
-.hplist .allhospital{padding: 0 0 1em 0;margin:0 25px 0 25px; background-color: #fff;z-index: 999;}
-.doc-list{min-height: 50px;padding-top: 20px;position: relative;}
-.doc-list .loading{margin-top: 30px!important;}
-.doc-list .docinfo{padding: 10px;border: 1px solid #e4e4e4;line-height: 1.8em;}
-.doc-list .docinfo img{width: 120px;height: 120px;border-radius: 50%;display: block;;margin: 0 auto;border: 1px solid #e4e4e4;overflow: hidden;}
-.doc-list .docinfo .docname{font-size: 17px;}
-.doc-list .docinfo .doctitle{font-size: 17px;color: #9f9fa0;}
-.doc-list .docinfo .dashed{border-bottom: 1px dashed #e4e4e4;margin: 10px -10px;}
-.doc-list .docinfo .docdesc>.long{position: absolute;color: #9f9fa0;}
-.doc-list .docinfo .docdesc .desc-content{padding-left: 39px;min-height: 3.6em;}
-.tooltip-inner {background-color: #c9c9ca!important;max-width: 300px!important;}
-.tooltip.bottom .tooltip-arrow{border-bottom-color: #c9c9ca!important;}
-.doc-list .pagination>li>a, .pagination>li>span{color: #96d2d0;border:1px solid #fff;}
-.doc-list .pagination>li>a:hover, .doc-list .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus{color: #96d2d0;border-color: #fff}
-.doc-list .pagination>.active>a, .doc-list .pagination>.active>span, .doc-list .pagination>.active>a:hover, .doc-list .pagination>.active>span:hover, .doc-list .pagination>.active>a:focus, .doc-list .pagination>.active>span:focus{background-color: #96d2d0;color: #fff;border-color:#fff;}
+.img100{width: 100px;height: 100px;display: block;margin: 10px auto;border: 1px solid #e4e4e4;border-radius: 50%;}
+.department-name{background-color: #19aea5;height:65px;line-height:65px;font-size:16px;color: #fff;}
+.city-sick-title{border-left:5px solid #19aea5;padding-bottom: 3px;line-height:1.5em;padding-left: 5px;}
+.city-sick-title a{margin-right:20px;display: inline-block;}
+.city-sick-title a:hover{cursor: pointer;}
+.disease-list{margin-top: 17px;}
+.border-gray{border:1px solid #ddd;}
+.color-gray{color:#9f9fa0;}
+.expert-list{padding:0px 5px 10px 5px;}
+.department-list{padding:0 15px 20px;}
+.department-list .department{padding-left: 10px;margin-top: 20px;}
+.department-list .department .dept-header:hover{cursor: pointer;}
+.department-list .department .fa{color: #19aea5;}
+.department-list .department .fa-caret-down{display: none;}
+.department-list .department.active .fa-caret-down{display: inline-block;}
+.department-list .department.active .fa-caret-right{display: none;}
+.department-list .department ul{padding-left: 14px;display: none;}
+.department-list .department.active ul{display: block;}
+.department-list .department ul>li{margin-top: 3px;}
+.ad-area{height:140px;line-height:140px;}
+.find-navi{color:#fff;font-size:16px;padding:10px 0px 5px 15px;}
+.docdesc{height: 9em;overflow-y: hidden;}
+.contracted-img{margin-top:-90px;margin-right:-13px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}

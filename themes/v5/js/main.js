@@ -4,7 +4,15 @@ $(document).ready(function (e) {
         $browserModeMenu.show();
         $("#site-header").css("margin-top", "20px");
     }
-
+    $('.bookingBtn').click(function(e){
+        e.preventDefault();
+        var c_name = getCookie('user');
+        if(c_name){
+            $('#bookingModal').modal();
+        }else{
+            $('#loginModal').modal();
+        }
+    });
 });
 
 function isDeviceMobile() {

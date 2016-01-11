@@ -1,14 +1,41 @@
 <?php
+Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.form.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.validate.min.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login.js", CClientScript::POS_HEAD);
 $siteMenu = $this->loadSiteMenu();
 $facultyMenu = $siteMenu["faculty"];
 $aboutusMenu = $this->loadSiteMenu()["site"];
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
+$loginUrl = $this->createUrl('user/login');
+$ajaxLoginUrl = $this->createUrl('user/ajaxLogin');
+$registerUrl = $this->createUrl('user/register');
+$urlLogout = $this->createUrl('user/logout');
+$bookinglist = $this->createUrl('booking/list');
 ?>
 <section id="site-header" class="container-fluid">
-    <div class="container">
-        <div class="">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="">
+    <div class="container-fluid bg-gray home-top">
+        <div class="row">
+            <div class="container">
+                <div class="pull-left hidden-sm phone"><span class="site-phone">400-119-7900</span></div>
+                <div class="pull-right " >
+                    <?php
+                    $user = $this->getCurrentUser();
+                    if (isset($user)) {
+                        echo '<span class="user">您好！&nbsp;<a target="_blank" href="' . $bookinglist . '">' . $user->getUsername() . '</a>&nbsp;</span>|<a href="' . $urlLogout . '">&nbsp;退出&nbsp;</a>|<a target="_blank" href="' . $bookinglist . '">&nbsp;我的手术&nbsp;|</a>';
+                    } else {
+                        echo '<span class="user">您好！&nbsp;请&nbsp;<a data-toggle="modal" data-target="#loginModal">登陆</a>/<a target="_blank" href="' . $registerUrl . '">注册</a>&nbsp;</span>|';
+                    }
+                    ?>
+                    <a>&nbsp;快速预约&nbsp;|</a><a>&nbsp;下载APP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="container mt30 mb20">
+                <nav class="navbar navbar-default bg-white no-border" role="navigation">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse">
@@ -18,79 +45,73 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <span class="icon-bar"></span>
                         </button>
                         <a href="<?php echo Yii::app()->homeUrl; ?>"><img src="<?php echo $urlResImage; ?>icons/logo.png"></a>
-                    </div>     
-                    <ul class="nav navbar-nav user-nav nav-top-right hidden-xs" style="width: 50%">
-                        <div class="pull-right hidden-sm phone"><a><span class="site-phone text color-green">400-119-7900</span></a></div>
-                    </ul>
-                    <ul class="header-sologan nav navbar-nav user-nav nav-top-rightx hidden-sm hidden-xs">
-                        <li class="nav-item pull-left">仁爱</li> 
-                        <li class="nav-item">专业</li> 
-                        <li class="nav-item">创新</li> 
-                        <li class="nav-item mr30">效率</li> 
-                    </ul>
-                    <ul class="nav navbar-nav user-nav nav-top-right hidden-xs">
-                        <?php
-                        $user = $this->getCurrentUser();
-                        /*
-                          if (isset($user)) {
-                          //user is signed in.
-                          echo '<li class="dropdown dropdown-hover">';
-                          echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown">账号:' . $user->getUsername() . '<i class="fa fa-caret-down"></i></a>';
-                          echo '<ul class="dropdown-menu nopadding" role="menu">';
-                          //    echo '<li><a href="' . $this->createUrl('medicalrecord/index') . '"><i class="fa fa-files-o"></i>&nbsp;我的预约</a></li>';
-                          echo '<li><a href="' . $this->createUrl('user/account') . '"><i class="fa fa-gear"></i>&nbsp;账户设置</a></li>';
-                          echo '<li class="divider"></li>';
-                          echo '<li><a href="' . $this->createUrl('user/logout') . '"><i class="fa fa-sign-out"></i>&nbsp;退出登录</a></li>';
-                          echo '</ul>';
-                          echo '</li>';
-                          } else {
-                          echo '<li class="nav-item"><a href="' . $this->createUrl('user/login') . '">登录</a></li>';
-                          echo '<li class="nav-item"><a href="' . $this->createUrl('user/register') . '">注册</a></li>';
-                          }
-                         * 
-                         */
-                        ?>  
-                    </ul>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-
-                </div>
-            </nav>
-        </div>
-    </div>
-    <div class="siteheader-menu row">
-        <div class="container pt0">
-            <div class="">
-                <div class="collapse navbar-collapse" id="header-navbar-collapse">                
-                    <ul id="header-nav" class="nav navbar-nav">
-                        <li class="dropdown dropdown-hover">
-                            <a id="header-nav-expertteam" href="<?php echo $this->createUrl('expertteam/index'); ?>" class="dropdown-toggle">专家团队</a>
-                        </li>
-                        <li class="dropdown dropdown-hover">
-                            <a id="header-nav-hospital" href="<?php echo $this->createUrl('hospital/index', array('city' => '1')); ?>" class="dropdown-toggle">推荐医院</a>
-                        </li>
-                        <li class="dropdown dropdown-hover">
-                            <a id="header-nav-aboutus" href="<?php echo $aboutusMenu["aboutus"]["url"]; ?>" class="dropdown-toggle">关于我们</a>
-                        </li>
-                        <li class="dropdown dropdown-hover">
-                            <a id="header-nav-aboutus" href="<?php echo $this->createUrl('site/enquiry'); ?>" class="dropdown-toggle">我要预约</a>
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
+                    </div> 
+                    <div class="collapse navbar-collapse" id="header-navbar-collapse">                
+                        <ul id="header-nav" class="nav navbar-nav mt5">
+                            <li class="dropdown dropdown-hover">
+                                <a id="header-nav-home" href="<?php echo Yii::app()->homeUrl; ?>" class="dropdown-toggle">首页</a>
+                            </li>
+                            <li class="dropdown dropdown-hover">
+                                <a id="header-nav-hospital" href="#" class="dropdown-toggle">名医榜单</a>
+                            </li>
+                            <li class="dropdown dropdown-hover">
+                                <a id="header-nav-aboutus" href="#" class="dropdown-toggle">顶尖科室</a>
+                            </li>
+                            <li class="dropdown dropdown-hover">
+                                <a id="header-nav-aboutus" href="#" class="dropdown-toggle">手术直通车</a>
+                            </li>
+                            <li class="dropdown dropdown-hover">
+                                <a id="header-nav-aboutus" href="<?php echo $aboutusMenu["aboutus"]["url"]; ?>" class="dropdown-toggle">关于我们</a>
+                            </li>
+                        </ul>
+                    </div>											
+                </nav>
             </div>
-            <?php
-            if ($this->show_header_navbar) {
-                ?>
-                <a class="dis-index hidden-sm hidden-xs" href="<?php echo $this->createUrl('disease/index'); ?>" target="_blank">快速查找入口</a>
-                <?php
-            }
-            ?>
-
-            <style>
-                .dis-index{width: 158px;text-align: center;padding: 3px 10px;letter-spacing: 5px;font-size: 15px;background-color: #19aea5;color: #fff;box-shadow: 0px 0px 1px 1px #ccc;position: absolute;right: 15px;top: -30px;border-radius: 5px;z-index: 999;}
-                .siteheader-menu .container{position: relative;}
-            </style>
         </div>
     </div>
 </section>
-
-
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="loginModal">登录</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal mt40" id="login-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" method="post">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label required" for="UserLoginForm_username">用户名 <span class="required">*</span></label>                
+                        <div class="col-sm-8">
+                            <input class="form-control" placeholder="输入手机号" name="UserLoginForm[username]" id="UserLoginForm_username" type="text">                        
+                            <div class="errorMessage" id="UserLoginForm_username_em_" style="display:none"></div>                    
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label required" for="UserLoginForm_password">登录密码 <span class="required">*</span></label>
+                        <div class="col-sm-8">
+                            <input class="form-control" autocomplete="off" placeholder="输入密码" name="UserLoginForm[password]" id="UserLoginForm_password" type="password">                    
+                            <div class="errorMessage" id="UserLoginForm_password_em_" style="display:none"></div>                    
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-8 col-sm-offset-3">   
+                            <input id="ytUserLoginForm_rememberMe" type="hidden" value="0" name="UserLoginForm[rememberMe]">
+                            <input class="radio-checkbox" name="UserLoginForm[rememberMe]" id="UserLoginForm_rememberMe" value="1" type="checkbox">                        
+                            <label class="radio-label" for="UserLoginForm_rememberMe">下次记住我</label>
+                            <div class="errorMessage" id="UserLoginForm_rememberMe_em_" style="display:none"></div>
+                            <div class="pull-right hide">
+                                <a class="nostyle strong" href="/mingyizhudao/user/forgetPassword">&gt;&gt;忘记密码？</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt30 mb30">
+                        <div class="col-sm-offset-3 col-sm-6">
+                            <span id="btnSubmit" class="btn btn-yes btn-lg btn-block">登录</span>			
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
