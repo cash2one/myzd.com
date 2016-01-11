@@ -22,7 +22,7 @@ class ApiViewDiseaseByCategory extends EApiViewService {
         }
     }
     public function loadDisease(){
-        $models = CategoryDiseaseJion::model()->getAllBySubCatId($this->cate_id);
+        $models = CategoryDiseaseJoin::model()->getAllBySubCatId($this->cate_id);
         $this->setDisease($models);
     }
     private function setDisease($models){

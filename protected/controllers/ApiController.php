@@ -117,8 +117,14 @@ class ApiController extends Controller {
 
             case"hospital":
                 $values = $_GET;
-                $apiService = new ApiViewHospitalSearch($values);
-                $output = $apiService->loadApiViewData();
+
+                if($api >= 7){
+                    $apiService = new ApiViewHospitalSearchV7($values);
+                    $output = $apiService->loadApiViewData();
+                } else {
+                    $apiService = new ApiViewHospitalSearch($values);
+                    $output = $apiService->loadApiViewData();
+                }
                 /*
                   $diseaseId = Yii::app()->request->getQuery('disease', null);
                   if (isset($diseaseId)) {
@@ -206,7 +212,10 @@ class ApiController extends Controller {
                 $apiService = new ApiViewDiseaseCategory();
                 $output = $apiService->loadApiViewData();
                 break;
-
+            case 'recommendeddoctors'://首页推荐的医生
+                $apiService = new ApiViewRecommendedDoctors();
+                $output = $apiService->loadApiViewData();
+                break;
             default:
                 // Model not implemented error
                 //$this->_sendResponse(501, sprintf('Error: Mode <b>list</b> is not implemented for model <b>%s</b>', $model));

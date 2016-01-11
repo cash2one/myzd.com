@@ -60,7 +60,7 @@ class DoctorSearchV7 extends ESearchModel {
             // disease_category.
             if (isset($this->queryParams['disease_category'])) {
                 $cateId = $this->queryParams['disease_category'];
-                $this->criteria->join .= 'left join category_doctor_jion b on t.id=b.doctor_id  left join disease_category c on b.sub_cat_id=c.sub_cat_id';
+                $this->criteria->join .= 'left join category_doctor_join b on t.id=b.doctor_id  left join disease_category c on b.sub_cat_id=c.sub_cat_id';
                 $this->criteria->addCondition("c.cat_id=:cateId");
                 $this->criteria->params[":cateId"] = $cateId;
                 $this->criteria->distinct = true;
@@ -68,7 +68,7 @@ class DoctorSearchV7 extends ESearchModel {
             // disease_sub_category.
             if (isset($this->queryParams['disease_sub_category'])) {
                 $category_id= $this->queryParams['disease_sub_category'];
-                $this->criteria->join = 'left join category_doctor_jion b on t.id=b.doctor_id ';
+                $this->criteria->join = 'left join category_doctor_join b on t.id=b.doctor_id ';
                 $this->criteria->addCondition("b.sub_cat_id=:sub_cat_id");
                 $this->criteria->params[":sub_cat_id"] = $category_id;
 //                $this->criteria->order = 'expteam_id desc';
