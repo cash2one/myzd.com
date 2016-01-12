@@ -24,7 +24,7 @@ class BookingController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile','list','success'),
+                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile','list','success','get'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -43,6 +43,10 @@ class BookingController extends WebsiteController {
      */
     //预约列表
     public function actionList(){
+        $user = $this->getCurrentUser();
+        $booking = new ApiViewBookingListV7($user);
+        $output = $booking->loadApiViewData();
+        var_dump($output);
         $this->render('list');
     }
     //预约详情
@@ -102,7 +106,21 @@ class BookingController extends WebsiteController {
             //    $form->setAttributes($data, true);
 
             $this->render('doctor', array('model' => $form));
-        } else {
+        }  elseif (isset($values['hp_dept_id'])) {
+            // 预约科室
+            $form = new BookDeptForm();
+            $form->initModel();
+            $form->setHpDeptId($values['hp_dept_id']);
+            $form->setHpDeptlData();
+            $userId = $this->getCurrentUserId();
+            if (isset($userId)) {
+                $form->setUserId($userId);
+            }
+            //@TEST:
+            //    $data = $this->testDataDoctorBook();
+            //    $form->setAttributes($data, true);
+            $this->render('doctor', array('model' => $form));
+        }else {
             // 快速预约
             $form = new BookQuickForm();
             $form->initModel();
@@ -208,6 +226,11 @@ class BookingController extends WebsiteController {
                 $form = new BookDoctorForm();
                 $form->setAttributes($values, true);
                 $form->setDoctorData();
+            } elseif (isset($values['hp_dept_id'])) {
+                // 预约科室
+                $form = new BookDeptForm();
+                $form->setAttributes($values, true);
+                $form->setHpDeptlData();
             } else {
                 // 快速预约
                 $form = new BookQuickForm();
@@ -361,6 +384,9 @@ class BookingController extends WebsiteController {
                 
             }
         }
+    }
+    public function actionGet(){
+        print_r($this->getCurrentUser());
     }
 
     private function testDataQuickBook() {

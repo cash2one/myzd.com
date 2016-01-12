@@ -1,6 +1,6 @@
 <?php
 
-class BookDoctorForm extends EFormModel {
+class BookDeptForm extends EFormModel {
 
     public $id;
     public $ref_no;
@@ -88,7 +88,7 @@ class BookDoctorForm extends EFormModel {
             $this->scenario = $model->scenario;
         } else {
             $this->bk_status = StatCode::BK_STATUS_NEW;
-            $this->bk_type = StatCode::BK_TYPE_DOCTOR;
+            $this->bk_type = StatCode::BK_TYPE_DEPT;
         }
         $this->loadOptions();
     }
@@ -97,28 +97,26 @@ class BookDoctorForm extends EFormModel {
         
     }
 
-    public function setDoctorData() {
-        if (isset($this->doctor_id)) {
-            $with = array('doctorHospital', 'doctorHpDept');
-            $doctor = Doctor::model()->getById($this->doctor_id, $with);
-            if (isset($doctor)) {
-                $this->doctor_name = $doctor->getFullname();
-                $hospital = $doctor->getHospital();
+    public function setHpDeptlData() {
+        if (isset($this->hp_dept_id)) {
+            $with = array('hpDeptHospital');
+            $hpdept = HospitalDepartment::model()->getById($this->hp_dept_id);
+            if (isset($hpdept)) {
+                $this->hp_dept_id = $hpdept->getId();
+                $this->hp_dept_name = $hpdept->getName();
+                $hospital = $hpdept->getHospital();
                 if (isset($hospital)) {
                     $this->hospital_id = $hospital->getId();
                     $this->hospital_name = $hospital->getName();
                 }
-                $hpdept = $doctor->getHpDept();
-                if (isset($hpdept)) {
-                    $this->hp_dept_id = $hpdept->getId();
-                    $this->hp_dept_name = $hpdept->getName();
-                }
             }
         }
+
+
     }
 
-    public function setDoctorId($v) {
-        $this->doctor_id = $v;
+    public function setHpDeptId($v) {
+        $this->hp_dept_id = $v;
     }
 
     public function setUserId($v) {
