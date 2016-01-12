@@ -30,7 +30,6 @@ class ApiViewRecommendedDoctors extends EApiViewService {
             if (arrayNotEmpty($models)) {
                 $this->setDoctors($models, $key);
             }
-            break;
         }
     }
     private function setDoctors($models, $key){
