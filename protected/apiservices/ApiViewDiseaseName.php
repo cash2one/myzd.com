@@ -25,7 +25,6 @@ class ApiViewDiseaseName extends EApiViewService {
         $model = $disease->getByName($this->disease_name);
         $data = new stdClass();
         if (isset($model)) {
-
             $data->id = $model->getId();
             $data->name = $model->getName();
         }
