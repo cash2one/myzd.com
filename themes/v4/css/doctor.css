@@ -1,0 +1,57 @@
+#cover{position:relative;height:262px;padding-top:131px;background-image:url("../images/demo/doctor/banner.jpg");background-repeat:no-repeat;background-size:cover;}
+#cover .title{display:none;}
+#content .btn-createcase,#content .btn-info, #content .btn-primary{display:none;}
+
+.page-title{color:#fff;}
+.cell{padding:15px;}
+.cell-inner{overflow: hidden;}
+
+#search-filter{}
+#search-filter .panel-body{padding:0}
+#search-filter .filter-option{padding:10px 15px; border-bottom:1px solid #ccc;}
+#search-filter .filter-label{margin-top:5px; margin-right:10px;width:80px;}
+#search-filter .nav>li>a{padding:5px 10px;}
+
+#hospital-search-result .hospital .name{font-size:20px;}
+
+#search-result .result-row{margin-bottom:10px;border-bottom:1px solid #eee;}
+#search-result .result-row>.cell{padding:15px;}
+#search-result .result-row>.cell .dr-name{display:inline-block;margin-right:20px;font-size:20px;}
+#search-result .result-row>.cell .dr-title{display:inline-block;padding: 5px 10px;font-size:1em;vertical-align:text-bottom; border-radius: 0;}
+#search-result .result-row>.cell .hospital{margin:10px 0;}
+#search-result .result-row>.cell .avatar>img{width:100%;}
+#search-result .result-row>.cell .btn{padding:3px 20px;}
+
+/**** PC ****/
+@media screen and (min-width:768px){
+    #hospital-search-result .hospital .cell-inner{height:84px;}
+    
+    #search-result .result-row>.cell>.cell-inner{margin-right:-15px;padding-right:15px; border-right:1px dashed #ccc;}    
+    #search-result .result-row>.cell .avatar{width:120px;height:120px;margin-right:10px;float:left;}
+    #search-result .result-row>.cell .link-profile{ position:absolute;bottom:0;}
+    #search-result .result-row>.cell .link-profile>a{width:160px;}
+    #search-result .result-row>.cell .media .media-body{position:relative;min-height:120px;}
+    #search-result .result-row>.cell .hospital{height:42px;}    
+    #search-result .result-row>.cell>.cell-inner .expertise{height:112px;overflow:hidden;}
+}
+
+/**** mobile ****/
+@media screen and (max-width:767px){
+    .nav-disease>li{width:33%;}
+    .nav-disease>li>a{padding:10px 0; line-height:30px; font-size:1.2em;}
+    .nav-disease>li.active>a, .nav-disease>li.active>a:hover, .nav-disease>li.active>a:focus{font-size:1.2em;}
+    
+    #hospital-search-result .hospital>.cell-l{padding-bottom:0;}
+    #hospital-search-result .hospital>.cell-r{padding-top:0;}
+    
+    #doctor-search-result{border:none;}
+    #search-result .result-row{border:1px solid #eee;}
+    #search-result .result-row>.cell-l{padding-bottom:0;}
+    #search-result .result-row>.cell-r{padding-top:0;}
+    #search-result .result-row>.cell .media-heading{text-align:center;}
+    #search-result .result-row>.cell .avatar{width:200px;height:auto;margin:0 auto;}
+    #search-result .result-row>.cell .dr-name,#search-result .result-row>.cell .dr-title,#search-result .result-row>.cell .hospital {display:block;text-align:center;}
+    #search-result .result-row>.cell .dr-name{margin-right:0;}
+    #search-result .result-row>.cell .dr-title{display:inline-block;}
+    #search-result .result-row>.cell .link-profile>a{font-size: 18px;line-height: 1.33;}
+}

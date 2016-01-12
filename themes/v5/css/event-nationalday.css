@@ -1,0 +1,23 @@
+#site-content{padding-bottom: 0px!important;}
+.nationalday-hreder{background-image: url(../images/event/nationalday/head.jpg);background-repeat: no-repeat;min-height: 945px;background-size: 100%;}
+.text-content{text-indent: 2em;letter-spacing: 3px;line-height: 2em;}
+.pt436{padding-top: 436px;}
+.daoyu{color: #fff;padding-left: 200px;}
+.zhunbeigongzuo{padding-right: 130px;padding-left: 50px;font-size: 12px;}
+.zhunbeigongzuo h3{color: #fff;}
+.zhunbeigongzuo .header-title{font-size: 15px;color: #f65c67;margin: 3px 0 5px;}
+.zhunbeigongzuo .header-content{padding-left: 20px;line-height: 1.8em;}
+.method{background-color: #45bba5;padding: 0 100px 20px;}
+.method .method-header{font-size: 26px;color: #fff;text-align: center;padding: 10px 0;}
+.method-content{color: #fff;}
+.color-yellow{color: #eeca23;}
+.step{padding-left: 100px;color: #fff;margin-bottom: 40px;}
+.step .round{padding: 14px 22px;border: 3px solid #eeca23;border-radius: 50%;width: 80px;height: 80px;color: #fff;font-size: 30px;display: inline-block;position: absolute;margin-left: -100px;}
+.step .step-header{font-size: 16px;color: #176a86;font-weight: bold;}
+.line{background-repeat: no-repeat;background-color: #e2e0cd;}
+.tixing{background-color: #e2e0cd;padding: 0 100px 100px;}
+.tixing .tixing-header{font-size: 26px;color: #48a2a5;text-align: center;padding: 10px 0;}
+.tixing .color-green{color: #48a2a5;}
+.border-right{border-right: 1px dashed #fff;}
+.tixing .yaoqiu{line-height: 2em;padding-left: 40px;min-height: 82px;color: #176a86;}
+.tixing .yaoqiu>span{background-image: url(../images/event/nationalday/title.png);background-repeat: no-repeat;width: 30px;height: 30px;background-size: 100% 100%;color: #fff;font-size: 17px;display: inline-block;text-align: center;vertical-align: middle;position: absolute;margin-left: -40px;}

@@ -1,0 +1,2483 @@
+{
+    "hospitals": [
+        {
+            "id": "58",
+            "name": "中国中医科学院望京医院",
+            "class": "",
+            "type": "",
+            "desc": null,
+            "phone": "",
+            "address": "",
+            "urlWebsite": "",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": null
+        },
+        {
+            "id": "76",
+            "name": "中国医学科学院肿瘤医院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "010-67781331",
+            "address": "北京市朝阳区潘家园南里17号",
+            "urlWebsite": "http://www.cicams.ac.cn/",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "五官科": [
+                    {
+                        "id": "325",
+                        "hid": "76",
+                        "group": "五官科",
+                        "name": "口腔科"
+                    }
+                ],
+                "其他": [
+                    {
+                        "id": "329",
+                        "hid": "76",
+                        "group": "其他",
+                        "name": "放射治疗科"
+                    },
+                    {
+                        "id": "330",
+                        "hid": "76",
+                        "group": "其他",
+                        "name": "麻醉科"
+                    },
+                    {
+                        "id": "331",
+                        "hid": "76",
+                        "group": "其他",
+                        "name": "重症加强科"
+                    },
+                    {
+                        "id": "332",
+                        "hid": "76",
+                        "group": "其他",
+                        "name": "检验科"
+                    },
+                    {
+                        "id": "333",
+                        "hid": "76",
+                        "group": "其他",
+                        "name": "PET-CT中心"
+                    }
+                ],
+                "医学影像科": [
+                    {
+                        "id": "326",
+                        "hid": "76",
+                        "group": "医学影像科",
+                        "name": "核医疗科"
+                    },
+                    {
+                        "id": "327",
+                        "hid": "76",
+                        "group": "医学影像科",
+                        "name": "影像诊断科"
+                    },
+                    {
+                        "id": "328",
+                        "hid": "76",
+                        "group": "医学影像科",
+                        "name": "内镜科"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "313",
+                        "hid": "76",
+                        "group": "外科",
+                        "name": "头颈外科"
+                    },
+                    {
+                        "id": "314",
+                        "hid": "76",
+                        "group": "外科",
+                        "name": "骨科"
+                    },
+                    {
+                        "id": "315",
+                        "hid": "76",
+                        "group": "外科",
+                        "name": "腹部胰胃外科"
+                    },
+                    {
+                        "id": "316",
+                        "hid": "76",
+                        "group": "外科",
+                        "name": "神经外科"
+                    },
+                    {
+                        "id": "317",
+                        "hid": "76",
+                        "group": "外科",
+                        "name": "腹部肝胆外科"
+                    },
+                    {
+                        "id": "318",
+                        "hid": "76",
+                        "group": "外科",
+                        "name": "泌尿外科"
+                    },
+                    {
+                        "id": "319",
+                        "hid": "76",
+                        "group": "外科",
+                        "name": "胸外科"
+                    },
+                    {
+                        "id": "320",
+                        "hid": "76",
+                        "group": "外科",
+                        "name": "腹部结直肠科"
+                    }
+                ],
+                "肿瘤科": [
+                    {
+                        "id": "321",
+                        "hid": "76",
+                        "group": "肿瘤科",
+                        "name": "肿瘤内科"
+                    },
+                    {
+                        "id": "322",
+                        "hid": "76",
+                        "group": "肿瘤科",
+                        "name": "妇瘤科"
+                    },
+                    {
+                        "id": "323",
+                        "hid": "76",
+                        "group": "肿瘤科",
+                        "name": "防癌科"
+                    },
+                    {
+                        "id": "324",
+                        "hid": "76",
+                        "group": "肿瘤科",
+                        "name": "综合科"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "12",
+            "name": "中国解放军总医院301医院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "",
+            "address": "北京市海淀区复兴路28号",
+            "urlWebsite": "http://www.301hospital.com.cn/index.php",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": null
+        },
+        {
+            "id": "15",
+            "name": "人民医院",
+            "class": "三级甲等",
+            "type": "",
+            "desc": null,
+            "phone": null,
+            "address": "",
+            "urlWebsite": null,
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": null
+        },
+        {
+            "id": "18",
+            "name": "北京中医院",
+            "class": "三级甲等",
+            "type": "",
+            "desc": null,
+            "phone": null,
+            "address": "",
+            "urlWebsite": null,
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": null
+        },
+        {
+            "id": "11",
+            "name": "北京协和医院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "",
+            "address": "",
+            "urlWebsite": "http://www.pumch.cn/",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": null
+        },
+        {
+            "id": "68",
+            "name": "北京协和医院东院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "010-69156114 ",
+            "address": "北京市东城区帅府园1号\n北京市东城区东单北大街75号\n",
+            "urlWebsite": "http://www.pumch.cn/",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "五官科": [
+                    {
+                        "id": "2",
+                        "hid": "68",
+                        "group": "五官科",
+                        "name": "口腔科"
+                    },
+                    {
+                        "id": "3",
+                        "hid": "68",
+                        "group": "五官科",
+                        "name": "眼科"
+                    },
+                    {
+                        "id": "4",
+                        "hid": "68",
+                        "group": "五官科",
+                        "name": "耳鼻咽喉头颈科"
+                    }
+                ],
+                "其他": [
+                    {
+                        "id": "25",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "妇产科"
+                    },
+                    {
+                        "id": "26",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "儿科"
+                    },
+                    {
+                        "id": "27",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "皮肤科"
+                    },
+                    {
+                        "id": "28",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "疼痛科"
+                    },
+                    {
+                        "id": "29",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "中医科"
+                    },
+                    {
+                        "id": "30",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "病理科"
+                    },
+                    {
+                        "id": "31",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "放射科"
+                    },
+                    {
+                        "id": "32",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "特需老年综合征"
+                    },
+                    {
+                        "id": "33",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "物理医学康复"
+                    },
+                    {
+                        "id": "34",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "心理医学科"
+                    },
+                    {
+                        "id": "35",
+                        "hid": "68",
+                        "group": "其他",
+                        "name": "营养科"
+                    }
+                ],
+                "内科": [
+                    {
+                        "id": "5",
+                        "hid": "68",
+                        "group": "内科",
+                        "name": "变态反应科"
+                    },
+                    {
+                        "id": "6",
+                        "hid": "68",
+                        "group": "内科",
+                        "name": "感染内科"
+                    },
+                    {
+                        "id": "7",
+                        "hid": "68",
+                        "group": "内科",
+                        "name": "呼吸内科"
+                    },
+                    {
+                        "id": "8",
+                        "hid": "68",
+                        "group": "内科",
+                        "name": "内分泌科"
+                    },
+                    {
+                        "id": "9",
+                        "hid": "68",
+                        "group": "内科",
+                        "name": "普通内科"
+                    },
+                    {
+                        "id": "10",
+                        "hid": "68",
+                        "group": "内科",
+                        "name": "神经内科"
+                    },
+                    {
+                        "id": "11",
+                        "hid": "68",
+                        "group": "内科",
+                        "name": "肾内科"
+                    },
+                    {
+                        "id": "12",
+                        "hid": "68",
+                        "group": "内科",
+                        "name": "消化内科"
+                    },
+                    {
+                        "id": "13",
+                        "hid": "68",
+                        "group": "内科",
+                        "name": "心内科"
+                    },
+                    {
+                        "id": "14",
+                        "hid": "68",
+                        "group": "内科",
+                        "name": "血液内科"
+                    }
+                ],
+                "医学影像科": [
+                    {
+                        "id": "24",
+                        "hid": "68",
+                        "group": "医学影像科",
+                        "name": "核医学科"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "15",
+                        "hid": "68",
+                        "group": "外科",
+                        "name": "肝胆外科"
+                    },
+                    {
+                        "id": "16",
+                        "hid": "68",
+                        "group": "外科",
+                        "name": "普通外科"
+                    },
+                    {
+                        "id": "17",
+                        "hid": "68",
+                        "group": "外科",
+                        "name": "泌尿外科"
+                    },
+                    {
+                        "id": "18",
+                        "hid": "68",
+                        "group": "外科",
+                        "name": "乳腺外科"
+                    },
+                    {
+                        "id": "19",
+                        "hid": "68",
+                        "group": "外科",
+                        "name": "神经外科"
+                    },
+                    {
+                        "id": "20",
+                        "hid": "68",
+                        "group": "外科",
+                        "name": "血管外科"
+                    },
+                    {
+                        "id": "21",
+                        "hid": "68",
+                        "group": "外科",
+                        "name": "心外科"
+                    },
+                    {
+                        "id": "22",
+                        "hid": "68",
+                        "group": "外科",
+                        "name": "胸外科"
+                    },
+                    {
+                        "id": "23",
+                        "hid": "68",
+                        "group": "外科",
+                        "name": "整形外科"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "69",
+            "name": "北京协和医院西院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "010-69156114 ",
+            "address": "北京市西城区木仓胡同41号",
+            "urlWebsite": "http://www.pumch.cn/",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "五官科": [
+                    {
+                        "id": "52",
+                        "hid": "69",
+                        "group": "五官科",
+                        "name": "口腔科"
+                    },
+                    {
+                        "id": "53",
+                        "hid": "69",
+                        "group": "五官科",
+                        "name": "眼科"
+                    },
+                    {
+                        "id": "54",
+                        "hid": "69",
+                        "group": "五官科",
+                        "name": "耳鼻咽喉头颈科"
+                    }
+                ],
+                "其他": [
+                    {
+                        "id": "55",
+                        "hid": "69",
+                        "group": "其他",
+                        "name": "妇产科"
+                    },
+                    {
+                        "id": "56",
+                        "hid": "69",
+                        "group": "其他",
+                        "name": "中医科"
+                    },
+                    {
+                        "id": "57",
+                        "hid": "69",
+                        "group": "其他",
+                        "name": "物理康复科\n"
+                    }
+                ],
+                "内科": [
+                    {
+                        "id": "36",
+                        "hid": "69",
+                        "group": "内科",
+                        "name": "呼吸内科"
+                    },
+                    {
+                        "id": "37",
+                        "hid": "69",
+                        "group": "内科",
+                        "name": "风湿免疫科"
+                    },
+                    {
+                        "id": "38",
+                        "hid": "69",
+                        "group": "内科",
+                        "name": "内分泌科"
+                    },
+                    {
+                        "id": "39",
+                        "hid": "69",
+                        "group": "内科",
+                        "name": "普通内科"
+                    },
+                    {
+                        "id": "40",
+                        "hid": "69",
+                        "group": "内科",
+                        "name": "神经内科"
+                    },
+                    {
+                        "id": "41",
+                        "hid": "69",
+                        "group": "内科",
+                        "name": "肾内科"
+                    },
+                    {
+                        "id": "42",
+                        "hid": "69",
+                        "group": "内科",
+                        "name": "消化内科"
+                    },
+                    {
+                        "id": "43",
+                        "hid": "69",
+                        "group": "内科",
+                        "name": "心血管内科"
+                    },
+                    {
+                        "id": "44",
+                        "hid": "69",
+                        "group": "内科",
+                        "name": "血液科"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "45",
+                        "hid": "69",
+                        "group": "外科",
+                        "name": "基本外科"
+                    },
+                    {
+                        "id": "46",
+                        "hid": "69",
+                        "group": "外科",
+                        "name": "泌尿外科"
+                    },
+                    {
+                        "id": "47",
+                        "hid": "69",
+                        "group": "外科",
+                        "name": "乳腺外科"
+                    },
+                    {
+                        "id": "48",
+                        "hid": "69",
+                        "group": "外科",
+                        "name": "血管外科"
+                    },
+                    {
+                        "id": "49",
+                        "hid": "69",
+                        "group": "外科",
+                        "name": "心外科"
+                    },
+                    {
+                        "id": "50",
+                        "hid": "69",
+                        "group": "外科",
+                        "name": "整形外科"
+                    },
+                    {
+                        "id": "51",
+                        "hid": "69",
+                        "group": "外科",
+                        "name": "骨科"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "14",
+            "name": "北京同仁医院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "010-58266699",
+            "address": "北京市东城区东交民巷1号",
+            "urlWebsite": "http://www.trhos.com/",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "其他": [
+                    {
+                        "id": "83",
+                        "hid": "14",
+                        "group": "其他",
+                        "name": "中医科"
+                    },
+                    {
+                        "id": "84",
+                        "hid": "14",
+                        "group": "其他",
+                        "name": "神经内科"
+                    },
+                    {
+                        "id": "85",
+                        "hid": "14",
+                        "group": "其他",
+                        "name": "皮肤科"
+                    },
+                    {
+                        "id": "86",
+                        "hid": "14",
+                        "group": "其他",
+                        "name": "妇产科"
+                    },
+                    {
+                        "id": "87",
+                        "hid": "14",
+                        "group": "其他",
+                        "name": "核医学科"
+                    },
+                    {
+                        "id": "88",
+                        "hid": "14",
+                        "group": "其他",
+                        "name": "放射科"
+                    },
+                    {
+                        "id": "89",
+                        "hid": "14",
+                        "group": "其他",
+                        "name": "血液科"
+                    },
+                    {
+                        "id": "90",
+                        "hid": "14",
+                        "group": "其他",
+                        "name": "儿科"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "75",
+                        "hid": "14",
+                        "group": "外科",
+                        "name": "泌尿外科"
+                    },
+                    {
+                        "id": "76",
+                        "hid": "14",
+                        "group": "外科",
+                        "name": "普外科"
+                    },
+                    {
+                        "id": "77",
+                        "hid": "14",
+                        "group": "外科",
+                        "name": "血管外科"
+                    },
+                    {
+                        "id": "78",
+                        "hid": "14",
+                        "group": "外科",
+                        "name": "整形外科"
+                    },
+                    {
+                        "id": "79",
+                        "hid": "14",
+                        "group": "外科",
+                        "name": "骨科"
+                    },
+                    {
+                        "id": "80",
+                        "hid": "14",
+                        "group": "外科",
+                        "name": "胸外科"
+                    },
+                    {
+                        "id": "81",
+                        "hid": "14",
+                        "group": "外科",
+                        "name": "神经外科"
+                    },
+                    {
+                        "id": "82",
+                        "hid": "14",
+                        "group": "外科",
+                        "name": "肿瘤外科"
+                    }
+                ],
+                "眼科": [
+                    {
+                        "id": "64",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "白内障中心"
+                    },
+                    {
+                        "id": "65",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "屈光科"
+                    },
+                    {
+                        "id": "66",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "青光眼"
+                    },
+                    {
+                        "id": "67",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "眼整形科"
+                    },
+                    {
+                        "id": "68",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "眼肌科"
+                    },
+                    {
+                        "id": "69",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "视光学科"
+                    },
+                    {
+                        "id": "70",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "眼外伤"
+                    },
+                    {
+                        "id": "71",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "眼肿瘤"
+                    },
+                    {
+                        "id": "72",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "眼中医"
+                    },
+                    {
+                        "id": "73",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "眼底病科"
+                    },
+                    {
+                        "id": "74",
+                        "hid": "14",
+                        "group": "眼科",
+                        "name": "眼角膜科"
+                    }
+                ],
+                "耳鼻咽喉头颈科": [
+                    {
+                        "id": "60",
+                        "hid": "14",
+                        "group": "耳鼻咽喉头颈科",
+                        "name": "头颈外科"
+                    },
+                    {
+                        "id": "61",
+                        "hid": "14",
+                        "group": "耳鼻咽喉头颈科",
+                        "name": "耳科"
+                    },
+                    {
+                        "id": "62",
+                        "hid": "14",
+                        "group": "耳鼻咽喉头颈科",
+                        "name": "鼻科"
+                    },
+                    {
+                        "id": "63",
+                        "hid": "14",
+                        "group": "耳鼻咽喉头颈科",
+                        "name": "咽喉科"
+                    }
+                ],
+                "骨科": [
+                    {
+                        "id": "58",
+                        "hid": "14",
+                        "group": "骨科",
+                        "name": "足踝外科"
+                    },
+                    {
+                        "id": "59",
+                        "hid": "14",
+                        "group": "骨科",
+                        "name": "骨科门诊"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "71",
+            "name": "北京同仁医院南院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "010-58269911",
+            "address": "北京经济技术开发区西环南路2号",
+            "urlWebsite": "http://www.trhos.com/index.asp",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "五官科": [
+                    {
+                        "id": "95",
+                        "hid": "71",
+                        "group": "五官科",
+                        "name": "口腔科"
+                    },
+                    {
+                        "id": "96",
+                        "hid": "71",
+                        "group": "五官科",
+                        "name": "眼科"
+                    },
+                    {
+                        "id": "97",
+                        "hid": "71",
+                        "group": "五官科",
+                        "name": "耳鼻咽喉头颈科"
+                    }
+                ],
+                "其他": [
+                    {
+                        "id": "106",
+                        "hid": "71",
+                        "group": "其他",
+                        "name": "其他:麻醉科"
+                    },
+                    {
+                        "id": "107",
+                        "hid": "71",
+                        "group": "其他",
+                        "name": "妇产科"
+                    }
+                ],
+                "内科": [
+                    {
+                        "id": "91",
+                        "hid": "71",
+                        "group": "内科",
+                        "name": "血液科"
+                    },
+                    {
+                        "id": "92",
+                        "hid": "71",
+                        "group": "内科",
+                        "name": "神经内科"
+                    },
+                    {
+                        "id": "93",
+                        "hid": "71",
+                        "group": "内科",
+                        "name": "心血管门诊"
+                    },
+                    {
+                        "id": "94",
+                        "hid": "71",
+                        "group": "内科",
+                        "name": "综合内科门诊"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "98",
+                        "hid": "71",
+                        "group": "外科",
+                        "name": "泌尿外科"
+                    },
+                    {
+                        "id": "99",
+                        "hid": "71",
+                        "group": "外科",
+                        "name": "普外科"
+                    },
+                    {
+                        "id": "100",
+                        "hid": "71",
+                        "group": "外科",
+                        "name": "血管外科"
+                    },
+                    {
+                        "id": "101",
+                        "hid": "71",
+                        "group": "外科",
+                        "name": "整形外科"
+                    },
+                    {
+                        "id": "102",
+                        "hid": "71",
+                        "group": "外科",
+                        "name": "骨科"
+                    },
+                    {
+                        "id": "103",
+                        "hid": "71",
+                        "group": "外科",
+                        "name": "胸外科"
+                    },
+                    {
+                        "id": "104",
+                        "hid": "71",
+                        "group": "外科",
+                        "name": "神经外科"
+                    },
+                    {
+                        "id": "105",
+                        "hid": "71",
+                        "group": "外科",
+                        "name": "肿瘤外科"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "75",
+            "name": "北京和睦家医院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "4008-919191\n",
+            "address": "中国北京朝阳区将台路2号",
+            "urlWebsite": "http://beijing.ufh.com.cn/",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "五官科": [
+                    {
+                        "id": "256",
+                        "hid": "75",
+                        "group": "五官科",
+                        "name": "耳鼻喉科"
+                    },
+                    {
+                        "id": "257",
+                        "hid": "75",
+                        "group": "五官科",
+                        "name": "眼科"
+                    }
+                ],
+                "儿科": [
+                    {
+                        "id": "259",
+                        "hid": "75",
+                        "group": "儿科",
+                        "name": "小而普通外科"
+                    },
+                    {
+                        "id": "260",
+                        "hid": "75",
+                        "group": "儿科",
+                        "name": "小儿心脏科"
+                    },
+                    {
+                        "id": "261",
+                        "hid": "75",
+                        "group": "儿科",
+                        "name": "特殊儿童"
+                    },
+                    {
+                        "id": "262",
+                        "hid": "75",
+                        "group": "儿科",
+                        "name": "小儿骨科"
+                    },
+                    {
+                        "id": "263",
+                        "hid": "75",
+                        "group": "儿科",
+                        "name": "小儿血液科"
+                    },
+                    {
+                        "id": "264",
+                        "hid": "75",
+                        "group": "儿科",
+                        "name": "青春期医学"
+                    },
+                    {
+                        "id": "265",
+                        "hid": "75",
+                        "group": "儿科",
+                        "name": "\n医学影像科:放射科"
+                    },
+                    {
+                        "id": "266",
+                        "hid": "75",
+                        "group": "儿科",
+                        "name": "超声科"
+                    }
+                ],
+                "其他": [
+                    {
+                        "id": "269",
+                        "hid": "75",
+                        "group": "其他",
+                        "name": "麻醉科"
+                    },
+                    {
+                        "id": "270",
+                        "hid": "75",
+                        "group": "其他",
+                        "name": "疼痛门诊"
+                    },
+                    {
+                        "id": "271",
+                        "hid": "75",
+                        "group": "其他",
+                        "name": "全科"
+                    },
+                    {
+                        "id": "272",
+                        "hid": "75",
+                        "group": "其他",
+                        "name": "康复医学科"
+                    },
+                    {
+                        "id": "273",
+                        "hid": "75",
+                        "group": "其他",
+                        "name": "心理咨询科"
+                    },
+                    {
+                        "id": "274",
+                        "hid": "75",
+                        "group": "其他",
+                        "name": "中医科"
+                    }
+                ],
+                "内科": [
+                    {
+                        "id": "229",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "变态反应科"
+                    },
+                    {
+                        "id": "230",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "糖尿病中心"
+                    },
+                    {
+                        "id": "231",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "消化内科"
+                    },
+                    {
+                        "id": "232",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "肾内科"
+                    },
+                    {
+                        "id": "233",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "心脏内科"
+                    },
+                    {
+                        "id": "234",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "内分泌科"
+                    },
+                    {
+                        "id": "235",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "传染病科"
+                    },
+                    {
+                        "id": "236",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "神经内科"
+                    },
+                    {
+                        "id": "237",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "肿瘤科/血液科"
+                    },
+                    {
+                        "id": "238",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "风湿免疫科"
+                    },
+                    {
+                        "id": "239",
+                        "hid": "75",
+                        "group": "内科",
+                        "name": "呼吸内科，"
+                    }
+                ],
+                "医学影像科": [
+                    {
+                        "id": "267",
+                        "hid": "75",
+                        "group": "医学影像科",
+                        "name": "放射科"
+                    },
+                    {
+                        "id": "268",
+                        "hid": "75",
+                        "group": "医学影像科",
+                        "name": "超声科"
+                    }
+                ],
+                "口腔科": [
+                    {
+                        "id": "240",
+                        "hid": "75",
+                        "group": "口腔科",
+                        "name": "口腔预防科"
+                    },
+                    {
+                        "id": "241",
+                        "hid": "75",
+                        "group": "口腔科",
+                        "name": "口腔卫生保健科"
+                    },
+                    {
+                        "id": "242",
+                        "hid": "75",
+                        "group": "口腔科",
+                        "name": "儿童口腔中心"
+                    },
+                    {
+                        "id": "243",
+                        "hid": "75",
+                        "group": "口腔科",
+                        "name": "口腔修复科"
+                    },
+                    {
+                        "id": "244",
+                        "hid": "75",
+                        "group": "口腔科",
+                        "name": "口腔美容科"
+                    },
+                    {
+                        "id": "245",
+                        "hid": "75",
+                        "group": "口腔科",
+                        "name": "口腔种植科"
+                    },
+                    {
+                        "id": "246",
+                        "hid": "75",
+                        "group": "口腔科",
+                        "name": "口腔正畸科"
+                    },
+                    {
+                        "id": "247",
+                        "hid": "75",
+                        "group": "口腔科",
+                        "name": "牙体牙髓科"
+                    },
+                    {
+                        "id": "248",
+                        "hid": "75",
+                        "group": "口腔科",
+                        "name": "牙周病科"
+                    },
+                    {
+                        "id": "249",
+                        "hid": "75",
+                        "group": "口腔科",
+                        "name": "口腔颌面外科"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "222",
+                        "hid": "75",
+                        "group": "外科",
+                        "name": "普外科"
+                    },
+                    {
+                        "id": "223",
+                        "hid": "75",
+                        "group": "外科",
+                        "name": "小儿外科"
+                    },
+                    {
+                        "id": "224",
+                        "hid": "75",
+                        "group": "外科",
+                        "name": "泌尿外科"
+                    },
+                    {
+                        "id": "225",
+                        "hid": "75",
+                        "group": "外科",
+                        "name": "神经外科"
+                    },
+                    {
+                        "id": "226",
+                        "hid": "75",
+                        "group": "外科",
+                        "name": "整形外科"
+                    },
+                    {
+                        "id": "227",
+                        "hid": "75",
+                        "group": "外科",
+                        "name": "骨科及运动医学"
+                    },
+                    {
+                        "id": "228",
+                        "hid": "75",
+                        "group": "外科",
+                        "name": "胸外科"
+                    }
+                ],
+                "妇科": [
+                    {
+                        "id": "258",
+                        "hid": "75",
+                        "group": "妇科",
+                        "name": "妇产科"
+                    }
+                ],
+                "心血管中心": [
+                    {
+                        "id": "250",
+                        "hid": "75",
+                        "group": "心血管中心",
+                        "name": "心脏内科"
+                    },
+                    {
+                        "id": "251",
+                        "hid": "75",
+                        "group": "心血管中心",
+                        "name": "双心门诊"
+                    },
+                    {
+                        "id": "252",
+                        "hid": "75",
+                        "group": "心血管中心",
+                        "name": "心脏康复"
+                    }
+                ],
+                "皮肤科": [
+                    {
+                        "id": "253",
+                        "hid": "75",
+                        "group": "皮肤科",
+                        "name": "普通皮肤科"
+                    },
+                    {
+                        "id": "254",
+                        "hid": "75",
+                        "group": "皮肤科",
+                        "name": "美容皮肤治疗"
+                    },
+                    {
+                        "id": "255",
+                        "hid": "75",
+                        "group": "皮肤科",
+                        "name": "性传播疾病"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "13",
+            "name": "北京大学第三医院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "",
+            "address": "北京海淀区花园北路49号",
+            "urlWebsite": "http://www.puh3.net.cn/",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": null
+        },
+        {
+            "id": "17",
+            "name": "北京大学肿瘤医院",
+            "class": "三级甲等",
+            "type": "肿瘤医院",
+            "desc": null,
+            "phone": "",
+            "address": "北京海淀区阜成路52号",
+            "urlWebsite": "http://www.bjcancer.org/Html/Index.html",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": null
+        },
+        {
+            "id": "73",
+            "name": "北京朝阳医院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "010-85231000\n",
+            "address": "北京市朝阳区工人体育场南路8号",
+            "urlWebsite": "http://www.bjcyh.com.cn",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "五官科": [
+                    {
+                        "id": "175",
+                        "hid": "73",
+                        "group": "五官科",
+                        "name": "眼科"
+                    },
+                    {
+                        "id": "176",
+                        "hid": "73",
+                        "group": "五官科",
+                        "name": "口腔科"
+                    },
+                    {
+                        "id": "177",
+                        "hid": "73",
+                        "group": "五官科",
+                        "name": "耳鼻咽喉头颈外科"
+                    }
+                ],
+                "其他": [
+                    {
+                        "id": "191",
+                        "hid": "73",
+                        "group": "其他",
+                        "name": "妇科"
+                    },
+                    {
+                        "id": "192",
+                        "hid": "73",
+                        "group": "其他",
+                        "name": "儿科"
+                    },
+                    {
+                        "id": "193",
+                        "hid": "73",
+                        "group": "其他",
+                        "name": "中医科"
+                    },
+                    {
+                        "id": "194",
+                        "hid": "73",
+                        "group": "其他",
+                        "name": "皮肤科"
+                    },
+                    {
+                        "id": "195",
+                        "hid": "73",
+                        "group": "其他",
+                        "name": "临床心理科"
+                    }
+                ],
+                "内科": [
+                    {
+                        "id": "178",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "心脏中心"
+                    },
+                    {
+                        "id": "179",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "呼吸科"
+                    },
+                    {
+                        "id": "180",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "内分泌科"
+                    },
+                    {
+                        "id": "181",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "肾内科"
+                    },
+                    {
+                        "id": "182",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "高压氧科"
+                    },
+                    {
+                        "id": "183",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "风湿免疫科"
+                    },
+                    {
+                        "id": "184",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "神经内科"
+                    },
+                    {
+                        "id": "185",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "消化内科"
+                    },
+                    {
+                        "id": "186",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "综合科"
+                    },
+                    {
+                        "id": "187",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "感染科"
+                    },
+                    {
+                        "id": "188",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "肿瘤科"
+                    },
+                    {
+                        "id": "189",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "职业病与中毒医学"
+                    },
+                    {
+                        "id": "190",
+                        "hid": "73",
+                        "group": "内科",
+                        "name": "血液科"
+                    }
+                ],
+                "医技科室": [
+                    {
+                        "id": "171",
+                        "hid": "73",
+                        "group": "医技科室",
+                        "name": "超声科"
+                    },
+                    {
+                        "id": "172",
+                        "hid": "73",
+                        "group": "医技科室",
+                        "name": "营养科"
+                    },
+                    {
+                        "id": "173",
+                        "hid": "73",
+                        "group": "医技科室",
+                        "name": "核医学科"
+                    },
+                    {
+                        "id": "174",
+                        "hid": "73",
+                        "group": "医技科室",
+                        "name": "体外循环中心"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "158",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "泌尿外科"
+                    },
+                    {
+                        "id": "159",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "普外科"
+                    },
+                    {
+                        "id": "160",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "神经外科"
+                    },
+                    {
+                        "id": "161",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "骨科"
+                    },
+                    {
+                        "id": "162",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "外科ICU"
+                    },
+                    {
+                        "id": "163",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "血管外科"
+                    },
+                    {
+                        "id": "164",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "心外科"
+                    },
+                    {
+                        "id": "165",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "胸外科"
+                    },
+                    {
+                        "id": "166",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "肝胆外科"
+                    },
+                    {
+                        "id": "167",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "手术麻醉科"
+                    },
+                    {
+                        "id": "168",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "神经介入科"
+                    },
+                    {
+                        "id": "169",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "乳腺外科"
+                    },
+                    {
+                        "id": "170",
+                        "hid": "73",
+                        "group": "外科",
+                        "name": "整形外科"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "74",
+            "name": "北京朝阳医院西院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "010-51718999",
+            "address": "北京市石景山区京原路5号",
+            "urlWebsite": "http://www.bjcyh.com.cn/",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "五官科": [
+                    {
+                        "id": "215",
+                        "hid": "74",
+                        "group": "五官科",
+                        "name": "眼科"
+                    },
+                    {
+                        "id": "216",
+                        "hid": "74",
+                        "group": "五官科",
+                        "name": "口腔科"
+                    },
+                    {
+                        "id": "217",
+                        "hid": "74",
+                        "group": "五官科",
+                        "name": "医学影像科"
+                    }
+                ],
+                "其他": [
+                    {
+                        "id": "218",
+                        "hid": "74",
+                        "group": "其他",
+                        "name": "妇产科"
+                    },
+                    {
+                        "id": "219",
+                        "hid": "74",
+                        "group": "其他",
+                        "name": "儿科"
+                    },
+                    {
+                        "id": "220",
+                        "hid": "74",
+                        "group": "其他",
+                        "name": "中医科"
+                    },
+                    {
+                        "id": "221",
+                        "hid": "74",
+                        "group": "其他",
+                        "name": "皮肤与医疗美容科"
+                    }
+                ],
+                "内科": [
+                    {
+                        "id": "196",
+                        "hid": "74",
+                        "group": "内科",
+                        "name": "内分泌科"
+                    },
+                    {
+                        "id": "197",
+                        "hid": "74",
+                        "group": "内科",
+                        "name": "消化内科"
+                    },
+                    {
+                        "id": "198",
+                        "hid": "74",
+                        "group": "内科",
+                        "name": "肾脏与风湿免疫科"
+                    },
+                    {
+                        "id": "199",
+                        "hid": "74",
+                        "group": "内科",
+                        "name": "神经内科"
+                    },
+                    {
+                        "id": "200",
+                        "hid": "74",
+                        "group": "内科",
+                        "name": "血液与肿瘤科"
+                    },
+                    {
+                        "id": "201",
+                        "hid": "74",
+                        "group": "内科",
+                        "name": "呼吸与危重症医学科"
+                    },
+                    {
+                        "id": "202",
+                        "hid": "74",
+                        "group": "内科",
+                        "name": "心内科"
+                    },
+                    {
+                        "id": "203",
+                        "hid": "74",
+                        "group": "内科",
+                        "name": "肝病感染科"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "204",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "麻醉科"
+                    },
+                    {
+                        "id": "205",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "泌尿外科"
+                    },
+                    {
+                        "id": "206",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "肛肠科"
+                    },
+                    {
+                        "id": "207",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "心外科"
+                    },
+                    {
+                        "id": "208",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "肝胆外科"
+                    },
+                    {
+                        "id": "209",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "普外科"
+                    },
+                    {
+                        "id": "210",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "骨科"
+                    },
+                    {
+                        "id": "211",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "神经外科"
+                    },
+                    {
+                        "id": "212",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "疝与腹壁外科"
+                    },
+                    {
+                        "id": "213",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "胸外科"
+                    },
+                    {
+                        "id": "214",
+                        "hid": "74",
+                        "group": "外科",
+                        "name": "烧伤科"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "16",
+            "name": "北大医院",
+            "class": "三级甲等",
+            "type": "",
+            "desc": null,
+            "phone": null,
+            "address": "",
+            "urlWebsite": null,
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": null
+        },
+        {
+            "id": "62",
+            "name": "阜外心血管医院",
+            "class": "三级甲等",
+            "type": "专科医院",
+            "desc": null,
+            "phone": "010-88398866",
+            "address": "北京市西城区北礼士路167号（西二环阜成门桥西北方向，阜成门外大街与北礼士路交叉十字路口西北角）",
+            "urlWebsite": "http://www.fuwaihospital.org/Hospitals/Main",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "内科": [
+                    {
+                        "id": "139",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "冠心病中心"
+                    },
+                    {
+                        "id": "140",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "特需医疗中心"
+                    },
+                    {
+                        "id": "141",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "内分泌与心血管病诊治中心"
+                    },
+                    {
+                        "id": "142",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "心律失常中心"
+                    },
+                    {
+                        "id": "143",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "心力衰竭中心"
+                    },
+                    {
+                        "id": "144",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "血脂异常与心血管病诊治中心"
+                    },
+                    {
+                        "id": "145",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "高血压中心"
+                    },
+                    {
+                        "id": "146",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "急重症中心"
+                    },
+                    {
+                        "id": "147",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "血栓性疾病诊治中心"
+                    },
+                    {
+                        "id": "148",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "临床病例中心"
+                    },
+                    {
+                        "id": "149",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "肺血管病中心"
+                    },
+                    {
+                        "id": "150",
+                        "hid": "62",
+                        "group": "内科",
+                        "name": "中医科"
+                    }
+                ],
+                "医学影像科": [
+                    {
+                        "id": "155",
+                        "hid": "62",
+                        "group": "医学影像科",
+                        "name": "放射影像中心"
+                    },
+                    {
+                        "id": "156",
+                        "hid": "62",
+                        "group": "医学影像科",
+                        "name": "超声影像中心"
+                    },
+                    {
+                        "id": "157",
+                        "hid": "62",
+                        "group": "医学影像科",
+                        "name": "核医学影像中心"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "151",
+                        "hid": "62",
+                        "group": "外科",
+                        "name": "成人外科中心"
+                    },
+                    {
+                        "id": "152",
+                        "hid": "62",
+                        "group": "外科",
+                        "name": "血管外科中心"
+                    },
+                    {
+                        "id": "153",
+                        "hid": "62",
+                        "group": "外科",
+                        "name": "小儿外科中心"
+                    },
+                    {
+                        "id": "154",
+                        "hid": "62",
+                        "group": "外科",
+                        "name": "体内循环中心"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "61",
+            "name": "首都医科大学附属北京口腔医院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "",
+            "address": "",
+            "urlWebsite": "http://www.dentist.org.cn/yygk/article/10324.html",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": null
+        },
+        {
+            "id": "60",
+            "name": "首都医科大学附属北京天坛医院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "010-67056565",
+            "address": "北京市东城区天坛西里6号",
+            "urlWebsite": "http://www.bjtth.org/",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "五官科": [
+                    {
+                        "id": "297",
+                        "hid": "60",
+                        "group": "五官科",
+                        "name": "眼科"
+                    },
+                    {
+                        "id": "298",
+                        "hid": "60",
+                        "group": "五官科",
+                        "name": "口腔科"
+                    },
+                    {
+                        "id": "299",
+                        "hid": "60",
+                        "group": "五官科",
+                        "name": "耳鼻咽喉头颈外科"
+                    }
+                ],
+                "其他": [
+                    {
+                        "id": "305",
+                        "hid": "60",
+                        "group": "其他",
+                        "name": "疼痛科"
+                    },
+                    {
+                        "id": "306",
+                        "hid": "60",
+                        "group": "其他",
+                        "name": "高压氧科"
+                    },
+                    {
+                        "id": "307",
+                        "hid": "60",
+                        "group": "其他",
+                        "name": "急诊科"
+                    },
+                    {
+                        "id": "308",
+                        "hid": "60",
+                        "group": "其他",
+                        "name": "麻醉科"
+                    },
+                    {
+                        "id": "309",
+                        "hid": "60",
+                        "group": "其他",
+                        "name": "皮肤性病科"
+                    },
+                    {
+                        "id": "310",
+                        "hid": "60",
+                        "group": "其他",
+                        "name": "神经介入科"
+                    },
+                    {
+                        "id": "311",
+                        "hid": "60",
+                        "group": "其他",
+                        "name": "重症医学科"
+                    },
+                    {
+                        "id": "312",
+                        "hid": "60",
+                        "group": "其他",
+                        "name": "老年病科"
+                    }
+                ],
+                "内科": [
+                    {
+                        "id": "283",
+                        "hid": "60",
+                        "group": "内科",
+                        "name": "神经病学中心"
+                    },
+                    {
+                        "id": "284",
+                        "hid": "60",
+                        "group": "内科",
+                        "name": "呼吸内科"
+                    },
+                    {
+                        "id": "285",
+                        "hid": "60",
+                        "group": "内科",
+                        "name": "心内科"
+                    },
+                    {
+                        "id": "286",
+                        "hid": "60",
+                        "group": "内科",
+                        "name": "内分泌科"
+                    },
+                    {
+                        "id": "287",
+                        "hid": "60",
+                        "group": "内科",
+                        "name": "血液内科"
+                    },
+                    {
+                        "id": "288",
+                        "hid": "60",
+                        "group": "内科",
+                        "name": "神经精神医学科"
+                    },
+                    {
+                        "id": "289",
+                        "hid": "60",
+                        "group": "内科",
+                        "name": "消化内科"
+                    },
+                    {
+                        "id": "290",
+                        "hid": "60",
+                        "group": "内科",
+                        "name": "肾内科"
+                    }
+                ],
+                "医学影像科": [
+                    {
+                        "id": "300",
+                        "hid": "60",
+                        "group": "医学影像科",
+                        "name": "普通放射科"
+                    },
+                    {
+                        "id": "301",
+                        "hid": "60",
+                        "group": "医学影像科",
+                        "name": "超声诊断科"
+                    },
+                    {
+                        "id": "302",
+                        "hid": "60",
+                        "group": "医学影像科",
+                        "name": "神经放射科"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "291",
+                        "hid": "60",
+                        "group": "外科",
+                        "name": "神经外科"
+                    },
+                    {
+                        "id": "292",
+                        "hid": "60",
+                        "group": "外科",
+                        "name": "泌尿外科"
+                    },
+                    {
+                        "id": "293",
+                        "hid": "60",
+                        "group": "外科",
+                        "name": "乳腺外科"
+                    },
+                    {
+                        "id": "294",
+                        "hid": "60",
+                        "group": "外科",
+                        "name": "普外科"
+                    },
+                    {
+                        "id": "295",
+                        "hid": "60",
+                        "group": "外科",
+                        "name": "骨外科"
+                    },
+                    {
+                        "id": "296",
+                        "hid": "60",
+                        "group": "外科",
+                        "name": "伽马刀中心"
+                    }
+                ],
+                "妇儿科": [
+                    {
+                        "id": "303",
+                        "hid": "60",
+                        "group": "妇儿科",
+                        "name": "妇产科"
+                    },
+                    {
+                        "id": "304",
+                        "hid": "60",
+                        "group": "妇儿科",
+                        "name": "儿科"
+                    }
+                ],
+                "神经病学中心": [
+                    {
+                        "id": "275",
+                        "hid": "60",
+                        "group": "神经病学中心",
+                        "name": "血管神经病学科"
+                    },
+                    {
+                        "id": "276",
+                        "hid": "60",
+                        "group": "神经病学中心",
+                        "name": "临床试验与临床研究中心"
+                    },
+                    {
+                        "id": "277",
+                        "hid": "60",
+                        "group": "神经病学中心",
+                        "name": "神经变性病科"
+                    },
+                    {
+                        "id": "278",
+                        "hid": "60",
+                        "group": "神经病学中心",
+                        "name": "神经肌肉与遗传疾病科"
+                    },
+                    {
+                        "id": "279",
+                        "hid": "60",
+                        "group": "神经病学中心",
+                        "name": "神经重症医学科"
+                    },
+                    {
+                        "id": "280",
+                        "hid": "60",
+                        "group": "神经病学中心",
+                        "name": "癫痫科"
+                    },
+                    {
+                        "id": "281",
+                        "hid": "60",
+                        "group": "神经病学中心",
+                        "name": "介入神经病学科"
+                    },
+                    {
+                        "id": "282",
+                        "hid": "60",
+                        "group": "神经病学中心",
+                        "name": "临床神经生理课"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "63",
+            "name": "首都医科大学附属北京安贞医院",
+            "class": "三级甲等",
+            "type": "综合医院",
+            "desc": null,
+            "phone": "010-64412431",
+            "address": "北京市朝阳区安贞路2号",
+            "urlWebsite": "http://www.anzhen.org",
+            "urlImage": "http://mingyihz.oss-cn-hangzhou.aliyuncs.com/h%2Fhospital_default.svg",
+            "city": {
+                "id": "1",
+                "name": "北京",
+                "stateId": "1"
+            },
+            "facultyDesc": null,
+            "departments": {
+                "五官科": [
+                    {
+                        "id": "130",
+                        "hid": "63",
+                        "group": "五官科",
+                        "name": "眼科"
+                    },
+                    {
+                        "id": "131",
+                        "hid": "63",
+                        "group": "五官科",
+                        "name": "口腔科"
+                    },
+                    {
+                        "id": "132",
+                        "hid": "63",
+                        "group": "五官科",
+                        "name": "耳鼻咽喉科"
+                    },
+                    {
+                        "id": "133",
+                        "hid": "63",
+                        "group": "五官科",
+                        "name": "头颈外科"
+                    }
+                ],
+                "儿科": [
+                    {
+                        "id": "108",
+                        "hid": "63",
+                        "group": "儿科",
+                        "name": "小儿心脏中心特需"
+                    },
+                    {
+                        "id": "109",
+                        "hid": "63",
+                        "group": "儿科",
+                        "name": "普儿科"
+                    },
+                    {
+                        "id": "110",
+                        "hid": "63",
+                        "group": "儿科",
+                        "name": "小儿心脏外科"
+                    }
+                ],
+                "其他": [
+                    {
+                        "id": "134",
+                        "hid": "63",
+                        "group": "其他",
+                        "name": "麻醉科"
+                    },
+                    {
+                        "id": "135",
+                        "hid": "63",
+                        "group": "其他",
+                        "name": "疼痛科"
+                    },
+                    {
+                        "id": "136",
+                        "hid": "63",
+                        "group": "其他",
+                        "name": "中医理疗科"
+                    },
+                    {
+                        "id": "137",
+                        "hid": "63",
+                        "group": "其他",
+                        "name": "SICU"
+                    },
+                    {
+                        "id": "138",
+                        "hid": "63",
+                        "group": "其他",
+                        "name": "精神心理科"
+                    }
+                ],
+                "内科": [
+                    {
+                        "id": "111",
+                        "hid": "63",
+                        "group": "内科",
+                        "name": "感染科"
+                    },
+                    {
+                        "id": "112",
+                        "hid": "63",
+                        "group": "内科",
+                        "name": "肾内科"
+                    },
+                    {
+                        "id": "113",
+                        "hid": "63",
+                        "group": "内科",
+                        "name": "普内科"
+                    },
+                    {
+                        "id": "114",
+                        "hid": "63",
+                        "group": "内科",
+                        "name": "呼吸内科"
+                    },
+                    {
+                        "id": "115",
+                        "hid": "63",
+                        "group": "内科",
+                        "name": "心脏内科"
+                    },
+                    {
+                        "id": "116",
+                        "hid": "63",
+                        "group": "内科",
+                        "name": "综合科心内门诊"
+                    },
+                    {
+                        "id": "117",
+                        "hid": "63",
+                        "group": "内科",
+                        "name": "神经内科"
+                    },
+                    {
+                        "id": "118",
+                        "hid": "63",
+                        "group": "内科",
+                        "name": "内分泌科"
+                    }
+                ],
+                "外科": [
+                    {
+                        "id": "119",
+                        "hid": "63",
+                        "group": "外科",
+                        "name": "泌尿外科"
+                    },
+                    {
+                        "id": "120",
+                        "hid": "63",
+                        "group": "外科",
+                        "name": "普外科"
+                    },
+                    {
+                        "id": "121",
+                        "hid": "63",
+                        "group": "外科",
+                        "name": "神经外科"
+                    },
+                    {
+                        "id": "122",
+                        "hid": "63",
+                        "group": "外科",
+                        "name": "血管科"
+                    },
+                    {
+                        "id": "123",
+                        "hid": "63",
+                        "group": "外科",
+                        "name": "心外科"
+                    },
+                    {
+                        "id": "124",
+                        "hid": "63",
+                        "group": "外科",
+                        "name": "胸外科"
+                    },
+                    {
+                        "id": "125",
+                        "hid": "63",
+                        "group": "外科",
+                        "name": "心脏外科"
+                    },
+                    {
+                        "id": "126",
+                        "hid": "63",
+                        "group": "外科",
+                        "name": "整形科"
+                    },
+                    {
+                        "id": "127",
+                        "hid": "63",
+                        "group": "外科",
+                        "name": "骨科"
+                    }
+                ],
+                "影像医学科": [
+                    {
+                        "id": "128",
+                        "hid": "63",
+                        "group": "影像医学科",
+                        "name": "超声诊断科"
+                    },
+                    {
+                        "id": "129",
+                        "hid": "63",
+                        "group": "影像医学科",
+                        "name": "核医学科"
+                    }
+                ]
+            }
+        }
+    ]
+}

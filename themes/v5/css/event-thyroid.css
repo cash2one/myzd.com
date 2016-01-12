@@ -1,0 +1,27 @@
+.header-img{height: 400px;background-image: url(../images/event/thyroid/thyriod-header.jpg);background-repeat: no-repeat;background-position-x: center;}
+.thyroid .thyroid-header{padding: 30px 50px 30px;border: 1px solid #62edd9;margin-top: -190px;}
+@media (min-width: 1200px){.thyroid .thyroid-header .row .col-lg-3{width: 19%;}}
+.thyroid .thyroid-header h4{margin-top: 25px;}
+.thyroid .thyroid-content{padding:40px 30px 40px;border: 1px solid #19aea5;background-color: #fcf8f5;}
+.thyroid .thyroid-content .text-content{border: 1px dotted #EFA429;padding: 10px 10px 20px;border-radius: 2px;}
+.thyroid .thyroid-content .text-content .text-title{background-repeat: no-repeat;padding: 5px 0 0 30px;font-size: 22px;color: #fff;letter-spacing: 2px;}
+.thyroid .thyroid-content .text-content .text-title>span{vertical-align: bottom;}
+.thyroid .thyroid-content .text-content .text-title.step1{background-image: url(../images/event/thyroid/step1.png);}
+.thyroid .thyroid-content .text-content .text-title.step2{background-image: url(../images/event/thyroid/step2.png);}
+.thyroid .thyroid-content .text-content .text-title.step3{background-image: url(../images/event/thyroid/step3.png);}
+.thyroid .thyroid-content .text-content .text-title.step4{background-image: url(../images/event/thyroid/step4.png);}
+.thyroid .thyroid-content .text-content .note-content{margin: 20px 60px;background-color: #f7f7f7;box-shadow: 1px 1px 3px 3px #ddd;padding: 10px;min-height: 170px;}
+.thyroid .thyroid-content .text-content ul{padding-left: 15px;}
+.thyroid .thyroid-content .text-content ul>li{list-style-type: disc;}
+.thyroid .thyroid-content .thyroid-eteam{border: 1px solid #e4e4e4;}
+.thyroid .thyroid-content .thyroid-eteam h3{background-image: url(../images/event/thyroid/doctor.png);background-repeat: no-repeat;background-position-y: 2px;padding-left: 30px;margin-left: 10px;margin-right: 10px;margin-bottom: 0;padding-bottom: 15px;border-bottom:1px dotted #e4e4e4;}
+.thyroid .thyroid-content .thyroid-eteam .teamlist{padding: 15px 10px 40px;}
+.thyroid .thyroid-content .thyroid-eteam .teamlist:hover{background-color: rgba(190,227,237,0.3);box-shadow: 0 0 1px 1px #e4e4e4;}
+.thyroid .thyroid-content .thyroid-eteam .teamlist img{border: 1px solid #e4e4e4;border-radius: 50%;margin: 0 auto;display: block;}
+.thyroid .thyroid-content .thyroid-eteam .teamlist .doc-name{font-size: 16px;font-weight: bold;}
+.thyroid .thyroid-content .thyroid-eteam .teamlist .doc-title{vertical-align: bottom;}
+.thyroid .thyroid-content .thyroid-eteam .teamlist .doc-hpName{text-align: center;color: #9f9fa0;}
+.thyroid .thyroid-content .thyroid-eteam .teamlist .doc-slogan{text-align: center;color: #EFA429;font-size: 17px;line-height: 2em;}
+.thyroid .thyroid-content .thyroid-eteam .teamlist .eteam-desc{letter-spacing: 2px;}
+.thyroid .thyroid-content .thyroid-eteam .teamlist .title{font-size: 16px;margin-top: 30px;}
+.thyroid .thyroid-content .thyroid-eteam .teamlist .eteam-dis{border: 1px solid #EFA429;border-radius: 5px;padding: 10px 0;margin: 5px 0;text-align: center;font-size: 16px;color: #19aea5;}

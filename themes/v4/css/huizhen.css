@@ -1,0 +1,106 @@
+#site-content{padding-bottom:0;}
+#main-content{padding-bottom:80px;}
+.page-cover{        
+    background:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static/cover.jpg") no-repeat center center; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;  
+    background-image:none!important;
+    background-color:#74B331;
+}
+.page-cover>.overlay-shadow{
+    background-color:rgba(0,0,0,0.6);    
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60); /* IE6/IE7/8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=60)"; /*  IE8 */
+}
+/*.guke .page-cover>.overlay-shadow,.xinxueguan .page-cover>.overlay-shadow,.zhongliu .page-cover>.overlay-shadow{background:none;}*/
+.gandan .page-cover{background-image:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static/faculty_cover_gandan.jpg"); }
+.guke .page-cover{background-image:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static%2Ffaculty_cover_guke.jpg"); }
+.xinxueguan .page-cover{background-image:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static/faculty_cover_xinxueguan.jpg");}
+.fuchan .page-cover{background-image:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static/faculty_cover_fuchan.jpg");}
+.zhengxing .page-cover{background-image:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static/faculty_cover_zhengrong.jpg"); }
+.zhongliu .page-cover{background-image:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static/faculty_cover_zhongliu.jpg"); }
+.buyun .page-cover{background-image:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static/faculty_cover_buyun.jpg");}
+.xiongwaike .page-cover{background-image:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static%2Ffaculty_cover_xiongwaike.jpg"); }
+.miniaowaike .page-cover{background-image:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static%2Ffaculty_cover_miniaowaike.jpg"); }
+.shenjingke .page-cover{background-image:url("http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static%2Ffaculty_cover_shenjingke.jpg"); }
+
+/*.page-title{padding:66px 0;margin:0 auto;font-size:33px;line-height:33px;color:#fff;}*/
+.page-title{padding:36px 0;margin:0 auto;font-size:33px;line-height:33px;color:#fff;}
+/*.shenjingke .page-title{text-shadow:2px 2px 2px #333;}*/
+
+.page-content .col-2{max-width:900px;padding:0 15px 30px 30px;}
+.nav-dis>ul{list-style:none;padding-left:0;}
+.nav-dis>ul>li{xdisplay:inline-block;xwidth:32%;padding:4px 0;}
+.nav-dis>ul>li>.glyphicon,.nav-dis>ul>li>.fa{margin-right:8px;color:#68A339;}
+
+section.intro{display:none;}
+
+.hospital .col-2{padding:0 15px; min-height:267px;border-left:1px solid #ddd;}
+.hospital ul.nav-tabs{border:none;}
+.hospital ul.nav-tabs>li{width:100%;}
+.hospital ul.nav-tabs>li>a{margin:0;padding:5px 15px;border-bottom:1px solid #ddd;border-radius:0;border-top:none !important;border-right:none !important;border-left:none !important;}
+.hospital ul.nav-tabs>li:last-child>a{border-bottom:none;}
+.hospital ul.nav-tabs>li.active>a *,.hospital ul.nav-tabs>li>a:hover *{color:#fff !important;}
+.hospital ul.nav-tabs>li>a .h-name{margin:5px 0;}
+.hospital .content{border:1px solid #ddd;}
+.hospital .content, .hospital ul.nav-tabs>li>a{line-height:2 !important;}
+.hospital .tab-content{padding:20px 15px; color:#666;}
+.hospital .tab-content>.tab-pane{/*text-overflow:clip;overflow:hidden;*/}
+.hospital .col-1, .hospital .col-2{}
+
+.hospital .content .h-name{}
+.hospital .content .h-class,.hospital .content .h-type{display:inline-block;}
+.hospital .content .h-class{margin-right:20px;}
+.doctor .content{border:1px solid #ddd;border-right:none;border-bottom:none;}
+.doctor .content>.row{margin:0;}
+.doctor .content .d-info{border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+.doctor .d-info .d-avatar{margin-right:20px;float:left;}
+.doctor .d-info .d-avatar>img{width:128px;height:128px;border:3px solid #ddd; border-radius:50%;}
+.doctor .d-info .d-name{margin-bottom:4px;color:#68A339;font-size:24px;font-weight:200;}
+.doctor .d-info .d-hospital, .doctor .d-info .d-faculty{display:block;font-size:16px;color:#999;}
+.doctor .d-info .d-hospital{margin-right:10px;color:#555;}
+.doctor .d-info .d-title{
+    display: inline-block;
+    margin-top:6px;
+    padding: 0.5em 1em;  
+    font-size:16px;
+    font-weight: 200;
+    line-height: 1;
+    color: #FFF;
+    background-color:#5BC0DE;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0;
+}
+.doctor .d-info .divider{margin:24px 0;}
+.doctor .d-info .d-desc{color:#666;line-height:2;}
+.doctor .d-info .d-desc>div{margin-bottom:15px;}
+
+
+/**** PC ****/
+@media screen and (min-width:768px){
+    .sidemenu{margin-top:30px;}
+    .doctor .content .d-info{padding:30px 15px;}
+    .page-content>.row>.col-2{min-height:267px;border-left:1px solid #ddd;}
+    .page-content>.row>.col-2>section{margin-bottom:10px;}
+    .hospital .content .bg{
+        margin-right:0;
+        background:url(../images/huizhen/u140.png) no-repeat 600px 0; 
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+    }
+    .hospital .content .col-2 .tab-content>.tab-pane{/*height:224px;*/}
+}
+
+/**** Mobile ****/
+@media screen and (max-width:767px){
+    .page-title{padding:10px 15px;font-size:21px;}
+    .page-content .center-block{padding:15px;}
+    .doctor .d-info .d-avatar{float:none;}
+    .hospital ul.nav-tabs{border-bottom:1px solid #ddd;}
+}

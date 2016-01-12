@@ -1,0 +1,23 @@
+#site-content{padding-bottom: 0!important;}
+#xinyabang .xinyabang-header{background-image: url(../images/event/xinyabang/bg-header.jpg);background-position: center;background-repeat: no-repeat;padding-top: 40px;}
+.img-block{display: block;margin: 0 auto;}
+#xinyabang .header-sm{margin-left: -1px;}
+#xinyabang .xinyabang-content .main-content{padding-bottom: 40px;font-size: 14px;margin: 0 15px;border: 1px solid #e50011;border-top: 0;border-bottom: 0;position: relative;}
+#xinyabang .xinyabang-content .pad100{padding: 40px 100px;}
+#xinyabang .xinyabang-content .summary{font-size: 16px;color: #686868;}
+#xinyabang .xinyabang-content .summary .summary-title{background-color: #e50011;font-size: 28px;padding: 4px 10px 6px;line-height: 1.3em;color: #fff;position: absolute;width: 100px;margin-left: -115px;}
+#xinyabang .xinyabang-content .summary .summary-title>span{padding-right: 5px;border-right: 5px solid #fff;padding-top: 5px;padding-bottom: 6px;}
+#xinyabang .xinyabang-content .introduce{padding: 10px 5px 20px;border: 1px solid #e50011;color: #000;text-indent: 2em;}
+#xinyabang .xinyabang-content .ranking{background-color: #e50011;margin: 0 -15px;padding-left: 110px;height: 48px;position: relative;}
+#xinyabang .xinyabang-content .ranking>span{font-size: 28px;background-color: #fff;color: #e50011;line-height: 1.5em;padding: 10px 5px;}
+#xinyabang .xinyabang-content .ranking .explanation{position: absolute;text-align: center;margin-top: -45px;width: 100%;color: #fff;padding-top: 5px;}
+#xinyabang .xinyabang-content .company-list{padding: 0 50px;background-image: url(../images/event/xinyabang/bg-companylist.png);background-repeat: no-repeat;background-position: center center;}
+#xinyabang .xinyabang-content .company-list .company-header{font-size: 16px;color: #333!important;}
+#xinyabang .xinyabang-content .company-list .company{padding: 0 30px;border-bottom: 1px dashed #e50011;color: #686868;}
+#xinyabang .xinyabang-content .company-list .company.mingyizhudao{color: #e50011;font-weight: bold;}
+#xinyabang .xinyabang-content .company-list .company>p{width: 50%;float: left;margin: 4px 0;}
+#xinyabang .xinyabang-content .ranking-img>img{display: block;margin: 20px auto;border: 1px solid #e50011;}
+#xinyabang .xinyabang-content .fifty>img{position: absolute;margin-left: -23px;background-color: #fff;}
+#xinyabang .xinyabang-content .right-text{position: absolute;background-color: #fff;writing-mode:vertical-lr;width: 1.6em;right: -0.8em;top: 30%;color: #19aea5;text-align: center;}
+.text18{font-size: 18px;letter-spacing: 5px;}
+.text12{font-size: 12px;letter-spacing: 5px;}

@@ -1,0 +1,18 @@
+#site-content{padding-bottom: 0!important;}
+#maincontent{max-width:990px;}
+.main-body{line-height: 1.8em;}
+.bg-body-lu{background-color:#03033d;}
+.text16{font-size: 16px;}
+.main-border{border:1px solid #2c2c77;border-bottom: 0;padding:30px 30px 60px;}
+.main-body{margin:0px auto;}
+
+.header-lu{background:url('../images/event/lujinsong/lujinsong.jpg') no-repeat;padding-left:150px;background-position-y: 20px;}
+
+.divider-white{border-bottom: 1px solid #fff;}
+
+.color-yellow{color:#f7ff3c;}
+.color-white{color: #fff;}
+
+.answer{margin-left:60px;background-color:#fff;border-radius:4px;padding:10px 10px 20px 10px;color:#231815;}
+
+.position-a{position:absolute;}

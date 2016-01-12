@@ -1,0 +1,12 @@
+#appdownload .phone-bxslider{background: url(../images/download/phone.png) no-repeat;background-size: 100% 100%;width: 258px;height: 531px;padding: 73px 21px 72px;margin: 0 auto;}
+.bx-controls-auto{display: none;}
+.bx-pager{bottom: 10px!important;width:100%!important;text-align: center!important;display: none;}
+#appdownload .qr-code{margin: 10px auto;width: 150px;height: 150px;background-size: 100%;}
+#appdownload .android-download{background-image: url(../images/icons/android-download.png);}
+#appdownload .ios-download{background-image: url(../images/icons/ios-download.png);}
+#appdownload .download-desc{width: 150px;padding: 7px;background-color: #19aea5;display: inline-block;color: #fff;}
+#appdownload .download-desc>.fa{font-size: 24px;}
+#site-content{padding-bottom: 0!important;}
+#site-footer{margin-top: -20px;}
+@media screen and (min-width:768px){#appdownload .download-img{margin-top: 120px;margin-left: 30px;}}
+@media screen and (max-width:768px){#appdownload .download-img{margin-top: 20px;}}

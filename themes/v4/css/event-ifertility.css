@@ -1,0 +1,23 @@
+#site-content{padding-bottom: 80px!important;}
+.header-img{height: 400px;background:url(../images/event/infertility.jpg) no-repeat center center;background-size: 100% 100%;}
+.bg-angle{height: 5px;background:url(../images/event/triangle.png) repeat-x;z-index: 9999;margin-top: -5px;}
+.telphone{padding: 20px 0;text-align: center;background-color: #b8dfe9;}
+.infertility-desc{padding: 20px;}
+.infertility-desc .decs-title{padding: 10px 0;color: #b8dfe9;font-size: 24px;}
+.infertility-desc .line{letter-spacing: -5px;margin-right: 10px;}
+.infertility-desc .decs-content{border: 1px solid #b8dfe9;border-radius: 7px;padding: 20px 20px;font-size: 14px;line-height: 2.5em;}
+.infertility-title{text-align: center;background: url(../images/event/wire3.png) repeat-x center center;}
+.infertility-title>span{border: 1px solid #b8dfe9;border-radius: 5px;padding: 5px 80px;font-size: 24px;background-color: #fff;}
+.infertility-info{padding: 20px;}
+.infertility-info .dis-infertility{padding-top: 30px;font-size: 16px;}
+.infertility-info .dis-infertility .dis-title{font-weight: bold;margin: 20px 0 10px;}
+.infertility-info .dis-infertility .fa-star-o{color: #eeca23;}
+.infertility-info .dis-infertility .dis-desc{letter-spacing: 2px;line-height: 2em;font-size:14px;}
+.expertteam{font-size: 14px;letter-spacing: 3px;line-height: 1.7em;text-align: center;}
+.expertteam .expert-content:hover{background-color: rgba(190,227,237,0.3);box-shadow: 0 0 1px 1px #e4e4e4;}
+.expertteam img{border: 1px solid #e4e4e4;border-radius: 50%;}
+.expertteam .ename{font-size: 16px;}
+.expertteam .text12{font-size: 12px;letter-spacing: 1px;}
+.color-yellow{color: #EFA429;}
+.expertteam .edesc{text-align: left;margin-top: 10px;}
+.expertteam .expert-content{min-height: 396px;}

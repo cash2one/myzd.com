@@ -1,0 +1,296 @@
+2016/01/04 08:38:45 [trace] [system.CModule] Loading "log" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.CModule] Loading "db" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_log` WHERE 0=1
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.CModule] Loading "request" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.CModule] Loading "session" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_session` WHERE expire<:expire
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT `data`
+FROM `core_session`
+WHERE expire>:expire AND id=:id
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.CModule] Loading "user" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (32)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.CModule] Loading "urlManager" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.CModule] Loading "coreMessages" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:38:45 [trace] [system.CModule] Loading "errorHandler" application component
+2016/01/04 08:38:45 [trace] [system.base.CModule] Loading "mobile" module
+2016/01/04 08:38:45 [trace] [system.CModule] Loading "themeManager" application component
+in D:\wamp\www\mingyizhudao\protected\modules\mobile\MobileModule.php (49)
+in D:\wamp\www\mingyizhudao\protected\modules\mobile\MobileModule.php (31)
+2016/01/04 08:38:45 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `core_log` (`level`, `category`, `logtime`, `message`) VALUES (:level, :category, :logtime, :message)
+2016/01/04 08:40:35 [trace] [system.CModule] Loading "log" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.CModule] Loading "db" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_log` WHERE 0=1
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.CModule] Loading "request" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.CModule] Loading "session" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_session` WHERE expire<:expire
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.db.CDbCommand] Querying SQL: SELECT `data`
+FROM `core_session`
+WHERE expire>:expire AND id=:id
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.CModule] Loading "user" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (32)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.CModule] Loading "urlManager" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.CModule] Loading "themeManager" application component
+in D:\wamp\www\mingyizhudao\protected\components\WebsiteController.php (39)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.CModule] Loading "clientScript" application component
+in D:\wamp\www\mingyizhudao\protected\components\WebsiteController.php (48)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.CModule] Loading "coreMessages" application component
+in D:\wamp\www\mingyizhudao\protected\controllers\ExpertteamController.php (42)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:40:35 [trace] [system.CModule] Loading "errorHandler" application component
+2016/01/04 08:40:35 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `core_log` (`level`, `category`, `logtime`, `message`) VALUES (:level, :category, :logtime, :message)
+2016/01/04 08:41:22 [trace] [system.CModule] Loading "log" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.CModule] Loading "db" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_log` WHERE 0=1
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.CModule] Loading "request" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.CModule] Loading "session" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_session` WHERE expire<:expire
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT `data`
+FROM `core_session`
+WHERE expire>:expire AND id=:id
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.CModule] Loading "user" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (32)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.CModule] Loading "urlManager" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.base.CModule] Loading "mobile" module
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.CModule] Loading "themeManager" application component
+in D:\wamp\www\mingyizhudao\protected\modules\mobile\MobileModule.php (49)
+in D:\wamp\www\mingyizhudao\protected\modules\mobile\MobileModule.php (31)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.CModule] Loading "errorHandler" application component
+in D:\wamp\www\mingyizhudao\protected\modules\mobile\MobileModule.php (49)
+in D:\wamp\www\mingyizhudao\protected\modules\mobile\MobileModule.php (31)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:41:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `core_log` (`level`, `category`, `logtime`, `message`) VALUES (:level, :category, :logtime, :message)
+in D:\wamp\www\mingyizhudao\protected\modules\mobile\MobileModule.php (49)
+in D:\wamp\www\mingyizhudao\protected\modules\mobile\MobileModule.php (31)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "log" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "db" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_log` WHERE 0=1
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "request" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "session" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_session` WHERE expire<:expire
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT `data`
+FROM `core_session`
+WHERE expire>:expire AND id=:id
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "user" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (32)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "urlManager" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "themeManager" application component
+in D:\wamp\www\mingyizhudao\protected\components\WebsiteController.php (39)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "clientScript" application component
+in D:\wamp\www\mingyizhudao\protected\components\WebsiteController.php (40)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "mobileDetect" application component
+in D:\wamp\www\mingyizhudao\protected\components\WebsiteController.php (170)
+in D:\wamp\www\mingyizhudao\protected\controllers\SiteController.php (30)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\wamp\www\mingyizhudao\themes\v4\views\layouts\layoutHome.php (1)
+in D:\wamp\www\mingyizhudao\protected\controllers\SiteController.php (37)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "assetManager" application component
+in D:\wamp\www\mingyizhudao\protected\controllers\SiteController.php (37)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "log" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "db" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_log` WHERE 0=1
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "request" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "session" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_session` WHERE expire<:expire
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT `data`
+FROM `core_session`
+WHERE expire>:expire AND id=:id
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "user" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (32)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "urlManager" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:43 [trace] [system.db.ar.CActiveRecord] ExpertTeam.findAll()
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (32)
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (7)
+in D:\wamp\www\mingyizhudao\protected\controllers\ApiController.php (190)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `expert_team`
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (32)
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (7)
+in D:\wamp\www\mingyizhudao\protected\controllers\ApiController.php (190)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `expert_team`
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (32)
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (7)
+in D:\wamp\www\mingyizhudao\protected\controllers\ApiController.php (190)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `doctor`
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (32)
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (7)
+in D:\wamp\www\mingyizhudao\protected\controllers\ApiController.php (190)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `doctor`
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (32)
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (7)
+in D:\wamp\www\mingyizhudao\protected\controllers\ApiController.php (190)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`code` AS `t0_c1`, `t`.`name` AS `t0_c2`, `t`.`city_id` AS `t0_c3`, `t`.`leader_id` AS `t0_c4`, `t`.`leader_name` AS `t0_c5`, `t`.`hospital_id` AS `t0_c6`, `t`.`hospital_name` AS `t0_c7`, `t`.`hp_dept_id` AS `t0_c8`, `t`.`hp_dept_name` AS `t0_c9`, `t`.`faculty_id` AS `t0_c10`, `t`.`dis_tags` AS `t0_c11`, `t`.`slogan` AS `t0_c12`, `t`.`description` AS `t0_c13`, `t`.`app_image_url` AS `t0_c14`, `t`.`banner_url` AS `t0_c15`, `t`.`detail_url` AS `t0_c16`, `t`.`is_team` AS `t0_c17`, `t`.`date_created` AS `t0_c18`, `t`.`date_updated` AS `t0_c19`, `t`.`date_deleted` AS `t0_c20`, `expteamLeader`.`id` AS `t1_c0`, `expteamLeader`.`user_id` AS `t1_c1`, `expteamLeader`.`name` AS `t1_c2`, `expteamLeader`.`fullname` AS `t1_c3`, `expteamLeader`.`mobile` AS `t1_c4`, `expteamLeader`.`is_contracted` AS `t1_c5`, `expteamLeader`.`hospital_id` AS `t1_c6`, `expteamLeader`.`hospital_name` AS `t1_c7`, `expteamLeader`.`hp_dept_id` AS `t1_c8`, `expteamLeader`.`hp_dept_name` AS `t1_c9`, `expteamLeader`.`faculty` AS `t1_c10`, `expteamLeader`.`medical_title` AS `t1_c11`, `expteamLeader`.`academic_title` AS `t1_c12`, `expteamLeader`.`state_id` AS `t1_c13`, `expteamLeader`.`city_id` AS `t1_c14`, `expteamLeader`.`gender` AS `t1_c15`, `expteamLeader`.`specialty` AS `t1_c16`, `expteamLeader`.`disease_specialty` AS `t1_c17`, `expteamLeader`.`surgery_specialty` AS `t1_c18`, `expteamLeader`.`search_keywords` AS `t1_c19`, `expteamLeader`.`description` AS `t1_c20`, `expteamLeader`.`avatar_url` AS `t1_c21`, `expteamLeader`.`base_url` AS `t1_c22`, `expteamLeader`.`role` AS `t1_c23`, `expteamLeader`.`honour` AS `t1_c24`, `expteamLeader`.`email` AS `t1_c25`, `expteamLeader`.`password` AS `t1_c26`, `expteamLeader`.`salt` AS `t1_c27`, `expteamLeader`.`password_raw` AS `t1_c28`, `expteamLeader`.`wechat` AS `t1_c29`, `expteamLeader`.`tel` AS `t1_c30`, `expteamLeader`.`display_order` AS `t1_c31`, `expteamLeader`.`date_activated` AS `t1_c32`, `expteamLeader`.`date_verified` AS `t1_c33`, `expteamLeader`.`last_login_time` AS `t1_c34`, `expteamLeader`.`create_by` AS `t1_c35`, `expteamLeader`.`date_created` AS `t1_c36`, `expteamLeader`.`date_updated` AS `t1_c37`, `expteamLeader`.`date_deleted` AS `t1_c38` FROM `expert_team` `t`  LEFT OUTER JOIN `doctor` `expteamLeader` ON (`t`.`leader_id`=`expteamLeader`.`id`)  WHERE (t.date_deleted is NULL)
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (32)
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (7)
+in D:\wamp\www\mingyizhudao\protected\controllers\ApiController.php (190)
+2016/01/04 08:45:43 [trace] [system.CModule] Loading "errorHandler" application component
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (134)
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (10)
+in D:\wamp\www\mingyizhudao\protected\controllers\ApiController.php (190)
+2016/01/04 08:45:43 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `core_log` (`level`, `category`, `logtime`, `message`) VALUES (:level, :category, :logtime, :message)
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (134)
+in D:\wamp\www\mingyizhudao\protected\models\ExpertTeamManager.php (10)
+in D:\wamp\www\mingyizhudao\protected\controllers\ApiController.php (190)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "log" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "db" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_log` WHERE 0=1
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "request" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "session" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_session` WHERE expire<:expire
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT `data`
+FROM `core_session`
+WHERE expire>:expire AND id=:id
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "user" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (32)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "urlManager" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `hospital`
+in D:\wamp\www\mingyizhudao\protected\models\hospital\HospitalSearch.php (10)
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (33)
+in D:\wamp\www\mingyizhudao\protected\models\hospital\HospitalSearch.php (6)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `hospital`
+in D:\wamp\www\mingyizhudao\protected\models\hospital\HospitalSearch.php (10)
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (33)
+in D:\wamp\www\mingyizhudao\protected\models\hospital\HospitalSearch.php (6)
+2016/01/04 08:45:44 [trace] [system.db.ar.CActiveRecord] Hospital.findAll()
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (80)
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (39)
+in D:\wamp\www\mingyizhudao\protected\apiservices\ApiViewHospitalSearch.php (44)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `hospital` `t` WHERE ((t.date_deleted is NULL) AND (t.is_show=:ycp0)) AND (t.city_id=:ycp1) ORDER BY t.name LIMIT 10
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (80)
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (39)
+in D:\wamp\www\mingyizhudao\protected\apiservices\ApiViewHospitalSearch.php (44)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "log" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "db" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_log` WHERE 0=1
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "request" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "session" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `core_session` WHERE expire<:expire
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT `data`
+FROM `core_session`
+WHERE expire>:expire AND id=:id
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (28)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "user" application component
+in D:\wamp\www\mingyizhudao\protected\components\ApplicationConfigBehavior.php (32)
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.CModule] Loading "urlManager" application component
+in D:\wamp\www\mingyizhudao\index.php (13)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `hospital`
+in D:\wamp\www\mingyizhudao\protected\models\hospital\HospitalSearch.php (10)
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (33)
+in D:\wamp\www\mingyizhudao\protected\models\hospital\HospitalSearch.php (6)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `hospital`
+in D:\wamp\www\mingyizhudao\protected\models\hospital\HospitalSearch.php (10)
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (33)
+in D:\wamp\www\mingyizhudao\protected\models\hospital\HospitalSearch.php (6)
+2016/01/04 08:45:44 [trace] [system.db.ar.CActiveRecord] Hospital.findAll()
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (80)
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (39)
+in D:\wamp\www\mingyizhudao\protected\apiservices\ApiViewHospitalSearch.php (44)
+2016/01/04 08:45:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `hospital` `t` WHERE ((t.date_deleted is NULL) AND (t.is_show=:ycp0)) AND (t.city_id=:ycp1) ORDER BY t.id LIMIT 10
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (80)
+in D:\wamp\www\mingyizhudao\protected\models\base\ESearchModel.php (39)
+in D:\wamp\www\mingyizhudao\protected\apiservices\ApiViewHospitalSearch.php (44)
