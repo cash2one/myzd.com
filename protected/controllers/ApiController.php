@@ -203,6 +203,11 @@ class ApiController extends Controller {
                 $diseaseMgr = new DiseaseManager();
                 $output = $diseaseMgr->loadListDisease();
                 break;
+            case 'diseasename'://根据疾病名称获取疾病信息
+                $values = $_GET;
+                $apiService = new ApiViewDiseaseName($values);
+                $output = $apiService->loadApiViewData();
+                break;
             case 'city':
                 $values = $_GET;
                 $city = new ApiViewOpenCity($values);
