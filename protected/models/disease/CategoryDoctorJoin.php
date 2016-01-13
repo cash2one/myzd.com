@@ -50,7 +50,7 @@ class CategoryDoctorJoin extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'doctor' => array(self::BELONGS_TO, 'Doctor', 'doctor_id'),
+			'cdjDoctor' => array(self::BELONGS_TO, 'Doctor', 'doctor_id'),
 		);
 	}
 
@@ -111,4 +111,28 @@ class CategoryDoctorJoin extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function getByDoctorId($doctor_id){
+        $criteria = new CDbCriteria;
+        $criteria->addCondition('t.date_deleted is NULL');
+        $criteria->compare('doctor_id', $doctor_id);
+        $criteria->limit = 1;
+        return $this->find($criteria);
+    }
+    public function getBySubCatId($sub_cat_id, $doctor_id){
+        $criteria = new CDbCriteria;
+        $criteria->addCondition('t.date_deleted is NULL');
+        $criteria->addNotInCondition('doctor_id', array($doctor_id));
+        $criteria->compare('sub_cat_id', $sub_cat_id);
+        $criteria->limit = 3;
+        return $this->findAll($criteria);
+    }
+
+    public function getSubCatId(){
+        return $this->sub_cat_id;
+    }
+
+    public function getDoctorId(){
+        return $this->doctor_id;
+    }
 }
