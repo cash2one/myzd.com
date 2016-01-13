@@ -102,6 +102,15 @@ class DiseaseCategory extends EActiveRecord {
         ));
     }
 
+    public function getBySubCatId($sub_cat_id){
+        $criteria = new CDbCriteria;
+        $criteria->addCondition('t.date_deleted is NULL');
+        $criteria->compare('sub_cat_id', $sub_cat_id);
+        $criteria->compare('app_version', 7);
+        $criteria->limit = 1;
+        return $this->find($criteria);
+    }
+
     /**
      * Returns the static model of the specified AR class.
      * Please note that you should have this exact method in all your CActiveRecord descendants!
