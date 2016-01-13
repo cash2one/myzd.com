@@ -4,6 +4,7 @@ class ApiViewDoctorV7 extends EApiViewService {
 
     private $doctor_id;
     private $members;
+    private $subCatId;
     public function __construct($id) {
         parent::__construct();
         $this->doctor_id = $id;
@@ -77,7 +78,9 @@ class ApiViewDoctorV7 extends EApiViewService {
     private function loadRelatedDoctors(){
         $categoryDoctorJoin = CategoryDoctorJoin::model()->getByDoctorId($this->doctor_id);
         if(isset($categoryDoctorJoin)){
-            $categoryDoctorJoins = CategoryDoctorJoin::model()->getBySubCatId($categoryDoctorJoin->getSubCatId(), $this->doctor_id);
+            $this->subCatId = $categoryDoctorJoin->getSubCatId();
+            $this->setNavigation($this->subCatId);
+            $categoryDoctorJoins = CategoryDoctorJoin::model()->getBySubCatId($this->subCatId, $this->doctor_id);
             if(isset($categoryDoctorJoins)){
                 $this->setRelatedDoctors($categoryDoctorJoins);
             }
@@ -101,5 +104,15 @@ class ApiViewDoctorV7 extends EApiViewService {
 
             $this->results->related[] = $data;
         }
+    }
+
+    public function setNavigation($subCatId){
+        $model = DiseaseCategory::model()->getBySubCatId($subCatId);
+        $data = new stdClass();
+        $data->cate_id = $model->getCategoryId();
+        $data->cate_name = $model->getCategoryName();
+        $data->sub_cate_id = $model->getSubCategoryId();
+        $data->getSubCategoryName = $model->getSubCategoryName();
+        $this->results->navigation = $data;
     }
 }
