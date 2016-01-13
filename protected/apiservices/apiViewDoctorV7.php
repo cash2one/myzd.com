@@ -76,10 +76,11 @@ class ApiViewDoctorV7 extends EApiViewService {
 
     private function loadRelatedDoctors(){
         $categoryDoctorJoin = CategoryDoctorJoin::model()->getByDoctorId($this->doctor_id);
-        $categoryDoctorJoins = CategoryDoctorJoin::model()->getBySubCatId($categoryDoctorJoin->getSubCatId(), $this->doctor_id);
-
-        if(isset($categoryDoctorJoins)){
-            $this->setRelatedDoctors($categoryDoctorJoins);
+        if(isset($categoryDoctorJoin)){
+            $categoryDoctorJoins = CategoryDoctorJoin::model()->getBySubCatId($categoryDoctorJoin->getSubCatId(), $this->doctor_id);
+            if(isset($categoryDoctorJoins)){
+                $this->setRelatedDoctors($categoryDoctorJoins);
+            }
         }
     }
 
