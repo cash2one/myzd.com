@@ -24,7 +24,7 @@ class BookingController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile', 'list', 'success', 'get','uploadFile'),
+                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile', 'list', 'success', 'get', 'uploadFile'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -70,6 +70,16 @@ class BookingController extends WebsiteController {
     public function actionBookingFile($id) {
         $apisvc = new ApiViewBookingFile($id);
         $output = $apisvc->loadApiViewData();
+        $this->renderJsonOutput($output);
+    }
+
+    /**
+     * 取消订单
+     * @param type $id
+     */
+    public function actionCancelbook($id) {
+        $bookMgr = new BookingManager();
+        $output = $bookMgr->cancelbook($id);
         $this->renderJsonOutput($output);
     }
 
