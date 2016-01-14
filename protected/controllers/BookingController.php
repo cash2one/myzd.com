@@ -278,33 +278,35 @@ class BookingController extends WebsiteController {
             $form->initModel();
             //$form->validate();
             //var_dump($form->attributes);exit;
-
-            if ($form->validate()) {
-                /*
-                  $output['status'] = 'no';
-                  $output['form'] = 'is success';
-                  $this->renderJsonOutput($output);
-                 */
-                $booking = new Booking();
-                $booking->setAttributes($form->attributes, true);
-                $booking->user_agent = StatCode::USER_AGENT_WEBSITE;
-                if ($booking->save()) {
-                    $output['status'] = 'ok';
-                    $output['booking']['id'] = $booking->getId();
-                    $booking = Booking::model()->getById($booking->id);
-                    $email = 0;
-                    //    $email = $this->sendBookingEmailNew($booking);
-                    $output['email'] = $email;
+            try {
+                if ($form->validate()) {
+                    $booking = new Booking();
+                    $booking->setAttributes($form->attributes, true);
+                    $booking->user_agent = StatCode::USER_AGENT_WEBSITE;
+                    if ($booking->save() === false) {
+                        $output['errors'] = $booking->getErrors();
+                        throw new CException('error saving data.');
+                    }
+                    //预约单保存成功  生成一张支付单
+                    $orderMgr = new OrderManager();
+                    $salesOrder = $orderMgr->createSalesOrder($booking);
+                    if ($salesOrder->hasErrors() === false) {
+                        $output['status'] = 'ok';
+                        $output['salesOrderRefNo'] = $salesOrder->getRefNo();
+                        $output['booking']['id'] = $booking->getId();
+                    } else {
+                        $output['errors'] = $salesOrder->getErrors();
+                        throw new CException('error saving data.');
+                    }
                 } else {
-                    $output['errors'] = $booking->getErrors();
+                    $output['errors'] = $form->getErrors();
                 }
-            } else {
-                $output['errors'] = $form->getErrors();
+            } catch (CException $cex) {
+                $output['status'] = 'no';
             }
         } else {
             $output['error'] = 'missing parameters';
         }
-
         $this->renderJsonOutput($output);
     }
 
