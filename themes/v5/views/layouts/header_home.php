@@ -39,8 +39,10 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
         var navH = 396;
         $(window).scroll(function () {
             var scroH = $(this).scrollTop();
-            if (scroH >= navH) {
+            var is_show = $("#header_home").is(':visible');
+            if (is_show && scroH >= navH) {
                 $("#header_home").slideUp(0);
+                $("html,body").animate({"scrollTop": 0}, 0);
             }
         });
 

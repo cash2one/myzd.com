@@ -155,6 +155,7 @@ function initDiseaseFunction() {
         condition["disease_category"] = '';
         condition["disease_sub_category"] = '';
         urlLoadDoctor = url;
+        $('.department-name>span').html(condition["disease_name"]);
         ajaxLoadDoctor('&getcount=1');
     });
 }

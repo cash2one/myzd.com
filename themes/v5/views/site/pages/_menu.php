@@ -2,14 +2,20 @@
 $menu = $this->getPageMenu();
 $curView = Yii::app()->request->getParam('view');
 ?>
+<style>.w20{width:20%;} .mt-60{margin-top:-60px;}
 
-<div class="row hidden-xs">
-    <ul class="nav nav-pills nav-stacked">
+.nav-pills>li{width:20%;}.nav-pills>li+li{margin-left:0px;}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{border-bottom:none!important;border:1px solid #19eae5;color:#19eae5;border-top-left-radius:20px;border-top-right-radius:20px;background-color:#fff;font-size:22px;text-align:center;height:60px;line-height:49px;}
+.nav-pills>li>a, .nav-pills>li>a:hover, .nav-pills>li>a:focus{border-top-left-radius:20px;border-top-right-radius:20px;background-color:#fff;height:60px;font-size:22px;text-align:center;line-height:50px;}
+</style>
+
+<div class="hidden-xs">
+    <ul class="nav nav-pills ">
         <?php
         foreach ($menu as $key => $menuItem) {
-//            if (($this->action->id == 'contactus') && ($key == 'contactus')) {
-//                echo '<li class="active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
-//            } else 
+            if (($this->action->id == 'contactus') && ($key == 'contactus')) {
+                echo '<li class="active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
+            } else 
             if (($this->action->id == 'enquiry') && ($key == 'enquiry')) {
                 echo '<li class="active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
             } else if ($key == $curView) {
@@ -21,8 +27,7 @@ $curView = Yii::app()->request->getParam('view');
         ?>
     </ul>
 </div>
-
-<div class="row visible-xs">
+<div class="visible-xs">
     <div class="btn-group block">
         <button type="button" class="btn btn-default btn-success btn-lg btn-block dropdown-toggle" data-toggle="dropdown">
             <?php echo $this->getCurrentPageLabel(); ?> <span class="caret"></span>
@@ -42,3 +47,4 @@ $curView = Yii::app()->request->getParam('view');
         </ul>
     </div>
 </div>
+

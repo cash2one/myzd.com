@@ -4,14 +4,9 @@ $(document).ready(function (e) {
         $browserModeMenu.show();
         $("#site-header").css("margin-top", "20px");
     }
-    $('.bookingBtn').click(function(e){
-        e.preventDefault();
-        var c_name = getCookie('user');
-        if(c_name){
-            $('#bookingModal').modal();
-        }else{
-            $('#loginModal').modal();
-        }
+    initBookingBtn();
+    $('#logout').click(function(){
+        delCookie('user');
     });
 });
 
@@ -51,6 +46,12 @@ function setCookie(c_name, value, expiredays) {
     exdate.setDate(exdate.getDate() + expiredays);
     document.cookie = c_name + "=" + escape(value) +
             ((expiredays == null) ? "" : "; expires=" + exdate.toGMTString()) + "; path=/";
+}
+
+function delCookie(c_name) {//为了删除指定名称的cookie，可以将其过期时间设定为一个过去的时间
+    var date = new Date();
+    date.setTime(date.getTime() - 10000);
+    document.cookie = c_name + "=a; expires=" + date.toGMTString();
 }
 
 // Read a page's GET URL variables and return them as an associative array.
@@ -112,4 +113,51 @@ function isUserAgentWeixin() {
     } else {
         return false;
     }
+}
+//disabledBtn
+function disabledBtn(btnSubmit) {
+    btnSubmit.attr("disabled", true);
+}
+//enableBtn
+function enableBtn(btnSubmit) {
+    btnSubmit.attr("disabled", false);
+}
+
+//因预约按钮可能是js生成，这里初始化预约未登录就填出登录框
+function initBookingBtn() {
+    $('.bookingBtn').click(function (e) {
+        e.preventDefault();
+        var c_name = getCookie('user');
+        var bookingBtn = $(this);
+        if (c_name) {
+            openBookingModal(bookingBtn);
+        } else {
+            $('#loginModal').modal();
+        }
+    });
+}
+function openBookingModal(bookingBtn) {
+    $('#bookingModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var hospital = bookingBtn.data('hospital');
+        var dept = bookingBtn.data('dept');
+        var hospitalId = bookingBtn.data('hospitalid');
+        var deptId = bookingBtn.data('deptid');
+        var modal = $(this);
+        modal.find('.modal-content input[name="booking[hospital_id]"]').val(hospitalId);
+        modal.find('.modal-content input[name="booking[hp_dept_id]"]').val(deptId);
+        modal.find('.modal-content input[name="booking[hp_dept_name]"]').val(dept);
+        modal.find('.modal-content .hospital-name').text(hospital);
+        modal.find('.modal-content .dept-name').text(dept);
+
+        var docid = bookingBtn.data('docid');
+        var docname = bookingBtn.data('docname');
+        var dochospital = bookingBtn.data('dochospital');
+        var docdept = bookingBtn.data('docdept');
+        modal.find('.modal-content input[name="booking[doctor_id]"]').val(docid);
+        modal.find('.modal-content .docname').text(docname);
+        modal.find('.modal-content .dochospital').text(dochospital);
+        modal.find('.modal-content .docdept').text(docdept);
+    });
+    $('#bookingModal').modal();
 }

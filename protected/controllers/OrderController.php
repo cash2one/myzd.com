@@ -18,8 +18,8 @@ class OrderController extends WebsiteController{
         $this->show_baidushangqiao=false;
         $this->render('viewtest', array('model' => $model));
     }
-    public function actionViewnew(){
-        $this->render('viewnew');
+    public function actionViewweb(){
+        $this->render('viewweb');
     }
     //退款
     public function actionRecede(){

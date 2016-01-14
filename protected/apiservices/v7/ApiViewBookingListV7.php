@@ -1,23 +1,22 @@
 <?php
 
-class ApiViewBookingListV7 extends EApiViewService {
-
+class ApiViewBookingListV7 extends EApiViewService{
     private $user;
-    private $pageIndex;
-    private $pageSize;
-
+    
     //初始化类的时候将参数注入
-    public function __construct($user, $pageIndex = 1, $pageSize = Booking::BOOKING_PAGE_SIZE) {
+    public function __construct($user) {
         parent::__construct();
+        $this->results = new stdClass();
         $this->user = $user;
-        $this->pageIndex = $pageIndex;
-        $this->pageSize = $pageSize;
+//        $this->bookingMgr = new BookingManager();
+//        $this->Bookings=array();
     }
 
     protected function loadData() {
-        $this->loadBookings();
-        $this->loadDataCount();
+        // load PatientBooking by creatorId.
+        $this->loadBookings();        
     }
+
 
     //返回的参数
     protected function createOutput() {
@@ -26,39 +25,37 @@ class ApiViewBookingListV7 extends EApiViewService {
                 'status' => self::RESPONSE_OK,
                 'errorCode' => 0,
                 'errorMsg' => 'success',
-                'results' => $this->results,
+                'results' => $this->results->booking,
             );
         }
     }
-
+    
     //加载booking的数据
-    private function loadBookings() {
+    private function loadBookings(){
         $models = Booking::model()->getAllByUserIdOrMobile($this->user->getId(), $this->user->getMobile());
         $this->setBookings($models);
     }
-
-    private function loadDataCount() {
-        $count = Booking::model()->getCountByUserIdOrMobile($this->user->getId(), $this->user->getMobile());
-        $this->results->dataCount = $count;
-    }
-
-    private function setBookings($models) {
-        if (arrayNotEmpty($models)) {
-            foreach ($models as $model) {
+    
+    private function setBookings($models){
+        if(arrayNotEmpty($models)){
+            foreach($models as $model){
                 $data = new stdClass();
                 $data->id = $model->getId();
                 $data->refNo = $model->getrefNo();
+                $data->contact_name = $model->getContactName();
                 $data->expertName = $model->getExpertNameBooked();
                 $data->hpName = $model->gethospitalName();
                 $data->hpDeptName = $model->gethpDeptName();
                 $data->dateStart = $model->getDateStart();
                 $data->dateEnd = $model->getDateEnd();
-                $data->statusText = $model->getStatusText();
-                $data->status = $model->bk_status;
-                $data->actionUrl = Yii::app()->createAbsoluteUrl('/booking/userbooking/' . $data->id);
+                $data->bkStatus = $model->getBkStatus();
+                $data->bkStatusId = $model->bk_status;
+                $data->actionUrl = Yii::app()->createAbsoluteUrl('/api/userbooking/'.$data->id);
                 $this->results->booking[] = $data;
             }
-        } else {
+        }
+        else
+        {
             $this->results->booking = array();
         }
     }

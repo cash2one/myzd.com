@@ -24,11 +24,11 @@ class BookingController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile', 'list', 'success', 'get'),
+                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile', 'list', 'success', 'get','uploadFile'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('ajaxCreate', 'update'),
+                'actions' => array('ajaxCreate', 'update', 'userBooking', 'bookingFile'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -82,7 +82,9 @@ class BookingController extends WebsiteController {
         $user = $this->getCurrentUser();
         $booking = new ApiViewBookingListV7($user);
         $output = $booking->loadApiViewData();
-        $this->render('list');
+        $this->render('list', array(
+            'data' => $output
+        ));
     }
 
     //预约详情
@@ -91,13 +93,21 @@ class BookingController extends WebsiteController {
     }
 
     //预约成功
-    public function actionSuccess() {
-        $this->render('success');
+    public function actionSuccess($id) {
+        $apisvc = new ApiViewUserBookingV7($id);
+        $output = $apisvc->loadApiViewData();
+        $this->render('success', array(
+            'data' => $output
+        ));
     }
 
     //上传文件页面
-    public function actionUploadFile() {
-        $this->render('uploadFile');
+    public function actionUploadFile($id) {
+        $apisvc = new ApiViewUserBookingV7($id);
+        $output = $apisvc->loadApiViewData();
+        $this->render('uploadFile', array(
+            'data' => $output
+        ));
     }
 
 //    public function actionView($id) {
@@ -276,6 +286,8 @@ class BookingController extends WebsiteController {
                 $form->setAttributes($values, true);
             }
             $form->initModel();
+            $user = $this->getCurrentUser();
+            $form->mobile = $user->username;
             //$form->validate();
             //var_dump($form->attributes);exit;
             try {

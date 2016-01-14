@@ -23,8 +23,8 @@ $page = Yii::app()->request->getQuery('page', '');
 </div>
 <div class="container pb20">
     <div class="row mt30">
-        <div class="col-sm-2">
-            <div class="strong text-center department-name"><span>血管外科</span></div>
+        <div class="col-sm-3 col-md-2">
+            <div class="strong text-center department-name"><span>全部</span></div>
         </div>
         <div class="col-sm-10">
             <div class="city-sick-title city-list">所在城市：<a class="all">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a>其他</a></div>
@@ -94,15 +94,18 @@ $page = Yii::app()->request->getQuery('page', '');
             condition["page"] = 1;
             ajaxLoadDoctor('&getcount=1');
         });
+        if(condition["disease_name"]){
+            $('.department-name>span').html(condition["disease_name"]);
+        }
     });
     /**** ajax异步加载医生 ****/
     function ajaxLoadDoctor(getCount) {
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
-        urlLoadDoctor += setUrlCondition();
-        urlLoadDoctor += getCount;
+        var urlAjaxLoadDoctor = urlLoadDoctor+setUrlCondition();
+        urlAjaxLoadDoctor += getCount;
         $('.loading').show();
         $.ajax({
-            url: urlLoadDoctor,
+            url: urlAjaxLoadDoctor,
             success: function (data) {
                 setPages(data.dataNum, condition["page"]);
                 setDoctorHtml(data, urlDoctorView);
@@ -140,10 +143,11 @@ $page = Yii::app()->request->getQuery('page', '');
             var innerHtml = '';
             var diseaseCategorys = data.results;
             var active = '';
-            for (var i = 0; i < diseaseCategorys.length; i++) {
-                var diseaseCategory = diseaseCategorys[i];
-                if (i == 0) {
+            for (var i = 1; i <= diseaseCategorys.length; i++) {
+                var diseaseCategory = diseaseCategorys[i-1];
+                if (i == condition["disease_category"]) {
                     active = 'active';
+                    $('.department-name>span').text(diseaseCategory.name);
                 } else {
                     active = '';
                 }

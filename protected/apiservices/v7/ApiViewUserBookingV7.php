@@ -44,6 +44,8 @@ class ApiViewUserBookingV7 extends EApiViewService {
         $data->refNo = $model->getRefNo();
         $this->bk_id = $model->getId();
         $data->expertName = $model->getExpertNameBooked();
+        $data->patientName = $model->getContactName();
+        $data->mobile = $model->getMobile();
         $data->hpName = $model->gethospitalName();
         $data->hpDeptName = $model->gethpDeptName();
         $data->dateStart = $model->getDateStart('m月d日');
@@ -54,13 +56,14 @@ class ApiViewUserBookingV7 extends EApiViewService {
         $data->diseaseDetail = $model->getDiseaseDetail();
         $data->dateUpdate = $model->getDateUpdated();
         $data->isDepositPaid = $model->is_deposit_paid;
+        
         $this->booking = $data;
     }
 
     private function loadSalesOrder() {
         if (strIsEmpty($this->bk_id) === false) {
             $bkType = StatCode::TRANS_TYPE_BK;
-            $models = SalesOrder::model()->getByBkIdAndBkType($this->bk_id, $bkType, '*', null);
+            $models = SalesOrder::model()->getByBkIdAndBkType($this->bk_id, $bkType, '*', null, null);
             if (arrayNotEmpty($models)) {
                 $this->setSalesOrder($models);
             }

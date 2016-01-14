@@ -9,7 +9,7 @@
 .color-status:hover,.color-status:visited,.color-status:focus{color:#185396;}
 .user-crumbs{padding: 10px 0;color: #fff;}
 .user-crumbs>a{color: #fff;}
-.login-menu .personalcenter{padding:20px 0;font-size: 15px;border: 1px solid #78c7bb;color: #78c7bb;min-height: 113px;}
+.login-menu .personalcenter{padding:15px 0;font-size: 15px;border: 1px solid #78c7bb;color: #78c7bb;min-height: 113px;}
 .login-menu ul{padding: 0;margin-bottom: 0;font-size: 14px;}
 .login-menu ul>li{border-bottom: 1px solid #78c7bb;}
 .login-menu ul>li>a{display:block;padding: 10px 0;font-size: 16px;padding-left: 5em;color:#25aea6;}
@@ -31,6 +31,7 @@
 .bookinglist .table>thead>tr>td{line-height: 1.5em;padding: 10px 0;}
 .bookinglist .table>tbody>tr{border-bottom: 1px solid #eeefef;}
 .bookinglist .table>tbody>tr>td{vertical-align: middle;}
+@media (min-width: 768px){.modal-dialog.modal-sm {margin: 200px auto 30px;}}
 //.bookinglist .table>tbody>tr>td a{color: #31708f;}
 /**** bookingView ****/
 .bookingView .user-header{min-height:113px;padding-top:10px;}
@@ -44,6 +45,7 @@
 /**** paySuccess ****/
 .user-header{min-height:113px;padding-top:10px;}
 .paySuccess .detail{position: absolute;border: 1px solid #31708f;color: #31708f;font-size: 12px;padding: 2px 3px;margin-top: -1em;}
+.paySuccess .detail:hover{cursor: pointer;}
 .paySuccess .user-header .tooltip.right .tooltip-arrow {border-right-color: #31708f;}
 .paySuccess .user-header .tooltip-inner {max-width: 140px;padding: 3px 8px;color: #f00;text-align: left;text-decoration: none;background-color: #fff;border-radius: 4px;border: 1px solid #31708f;}
 .paySuccess ul{padding-left: 18px;}
@@ -58,6 +60,8 @@
 .bookingSuccess .introduce .introduce-title>.fa{color: #78c7bb;font-size: 24px;position: absolute;margin-left: -12px;}
 .border-left-dashed{border-left: 1px dashed #ddd;}
 .border-right{border-right: 1px solid #ddd;}
+.bookingSuccess .showBookingInfo .fa-angle-down{display: none;}
+.bookingSuccess .bookingInfo{display: none;}
 
 .personalcenter-title{padding:10px 0;font-size: 15px;color:#fff;border: 1px solid #78c7bb;background-color: #78c7bb;text-align: center;}
 .personalinfo{min-height: 295px;}
