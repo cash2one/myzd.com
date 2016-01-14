@@ -24,7 +24,7 @@ class BookingController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile','list','success','get'),
+                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile', 'list', 'success', 'get'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -37,30 +37,69 @@ class BookingController extends WebsiteController {
         );
     }
 
+    /*     * **************************************网站功能 2016年1月12日************************************************************** */
+
+    public function actionBookingList() {
+        $this->render('userBooking');
+    }
+
+    /**
+     * 查询患者用户的预约列表 
+     */
+    public function actionAjaxBookinglist($pageIndex = 1, $pageSize = Booking::BOOKING_PAGE_SIZE) {
+        $user = $this->getCurrentUser();
+        $apisvc = new ApiViewBookingListV7($user, $pageIndex, $pageSize);
+        $output = $apisvc->loadApiViewData();
+        $this->renderJsonOutput($output);
+    }
+
+    /**
+     * 加载预约详情
+     * @param type $id
+     */
+    public function actionUserbooking($id) {
+        $apisvc = new ApiViewUserBookingV7($id);
+        $output = $apisvc->loadApiViewData();
+        $this->render('userBooking', array('data' => $output));
+    }
+
+    /**
+     * 异步加载图片
+     * @param type $id
+     */
+    public function actionBookingFile($id) {
+        $apisvc = new ApiViewBookingFile($id);
+        $output = $apisvc->loadApiViewData();
+        $this->renderJsonOutput($output);
+    }
+
     /**
      * Displays a particular model.
      * @param integer $id the ID of the model to be displayed
      */
     //预约列表
-    public function actionList(){
+    public function actionList() {
         $user = $this->getCurrentUser();
         $booking = new ApiViewBookingListV7($user);
         $output = $booking->loadApiViewData();
-        var_dump($output);
         $this->render('list');
     }
+
     //预约详情
-    public function actionView(){
+    public function actionView() {
         $this->render('view');
     }
+
     //预约成功
-    public function actionSuccess(){
+    public function actionSuccess() {
         $this->render('success');
     }
+
     //上传文件页面
-    public function actionUploadFile(){
+    public function actionUploadFile() {
         $this->render('uploadFile');
     }
+
 //    public function actionView($id) {
 //        $this->render('view', array(
 //            'model' => $this->loadModel($id),
@@ -106,7 +145,7 @@ class BookingController extends WebsiteController {
             //    $form->setAttributes($data, true);
 
             $this->render('doctor', array('model' => $form));
-        }  elseif (isset($values['hp_dept_id'])) {
+        } elseif (isset($values['hp_dept_id'])) {
             // 预约科室
             $form = new BookDeptForm();
             $form->initModel();
@@ -120,7 +159,7 @@ class BookingController extends WebsiteController {
             //    $data = $this->testDataDoctorBook();
             //    $form->setAttributes($data, true);
             $this->render('doctor', array('model' => $form));
-        }else {
+        } else {
             // 快速预约
             $form = new BookQuickForm();
             $form->initModel();
@@ -254,7 +293,7 @@ class BookingController extends WebsiteController {
                     $output['booking']['id'] = $booking->getId();
                     $booking = Booking::model()->getById($booking->id);
                     $email = 0;
-                //    $email = $this->sendBookingEmailNew($booking);
+                    //    $email = $this->sendBookingEmailNew($booking);
                     $output['email'] = $email;
                 } else {
                     $output['errors'] = $booking->getErrors();
@@ -385,7 +424,8 @@ class BookingController extends WebsiteController {
             }
         }
     }
-    public function actionGet(){
+
+    public function actionGet() {
         print_r($this->getCurrentUser());
     }
 
