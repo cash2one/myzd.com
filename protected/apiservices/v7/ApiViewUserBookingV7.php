@@ -3,12 +3,15 @@
 class ApiViewUserBookingV7 extends EApiViewService {
 
     private $id;
+    private $ref_no;
     private $booking;
+    private $salerOrder;
 
     public function __construct($id) {
         parent::__construct();
         $this->id = $id;
         $this->booking = null;
+        $this->salerOrder = null;
     }
 
     protected function createOutput() {
@@ -24,6 +27,7 @@ class ApiViewUserBookingV7 extends EApiViewService {
 
     protected function loadData() {
         $this->loadBooking();
+        $this->loadSalesOrder();
     }
 
     private function loadBooking() {
@@ -37,7 +41,8 @@ class ApiViewUserBookingV7 extends EApiViewService {
     private function setBooking(Booking $model) {
         $data = new stdClass();
         $data->id = $model->getId();
-        $data->refNo = $model->getrefNo();
+        $data->refNo = $model->getRefNo();
+        $this->ref_no = $model->getRefNo();
         $data->expertName = $model->getExpertNameBooked();
         $data->hpName = $model->gethospitalName();
         $data->hpDeptName = $model->gethpDeptName();
@@ -47,8 +52,34 @@ class ApiViewUserBookingV7 extends EApiViewService {
         $data->status = $model->bk_status;
         $data->diseaseName = $model->getDiseaseName();
         $data->diseaseDetail = $model->getDiseaseDetail();
-        $dara->dateUpdate = $model->getDateUpdated();
+        $data->dateUpdate = $model->getDateUpdated();
+        $data->isDepositPaid = $model->is_deposit_paid;
         $this->booking = $data;
+    }
+
+    private function loadSalesOrder() {
+        if (strIsEmpty($this->refNo) === false) {
+            $model = SalesOrder::model()->getByRefNo($this->refNo);
+            if (isset($model)) {
+                $this->setSalesOrder($model);
+            }
+        }
+        $this->results->salerOrder = $this->salerOrder;
+    }
+
+    private function setSalesOrder(SalesOrder $model) {
+        $data = new stdClass();
+        $data->id = $model->getId();
+        $data->refNo = $model->ref_no;
+        $data->userId = $model->user_id;
+        $data->subject = $model->getSubject();
+        $data->description = $model->getDescription();
+        $data->finalAmount = $model->getFinalAmount();
+        $data->isPaid = $model->getIsPaid(false);
+        $data->orderType = $model->getOrderType();
+        //判断值
+        $this->salesOrder = $data;
+        $this->results->salesOrder = $this->salesOrder;
     }
 
 }
