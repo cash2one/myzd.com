@@ -90,7 +90,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                         <ul class="nav nav-tabs text-right mt20" role="tablist">
                             <?php
                             $i = 1;
-                            foreach (array_reverse($departments) as $key => $dept) {
+                            foreach ($departments as $key => $dept) {
                                 if ($i == count($departments)) {
                                     $active = 'active';
                                 } else {
@@ -104,7 +104,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                         <div class="tab-content">
                             <?php
                             $j = 1;
-                            foreach (array_reverse($departments) as $key => $dept) {
+                            foreach ($departments as $key => $dept) {
                                 if ($j == count($departments)) {
                                     $active = 'active';
                                 } else {

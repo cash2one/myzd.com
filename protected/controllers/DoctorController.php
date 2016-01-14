@@ -60,19 +60,11 @@ class DoctorController extends WebsiteController {
      * @param integer $id the ID of the model to be displayed
      */
     public function actionView($id) {
-        $model = $this->loadModel($id);
-        $list = $this->getListId();
-        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/doctor.css");
-        if (in_array($id, $list)) {
-            $filename = $id;
-            $this->render('pages/' . $filename, array('id' => $id, 'model' => $model));
-        } else {
-
-            $this->render('view', array(
-                'model' => $model
-            ));
-            //throw new CHttpException(404, 'The requested page does not exist.');
-        }
+        $apiService = new apiViewDoctorV7($id);
+        $output = $apiService->loadApiViewData();
+        $this->render('view', array(
+            'data' => $output
+        ));
     }
 
     public function actionRegister() {

@@ -53,6 +53,9 @@ class Booking extends EActiveRecord {
         return 'booking';
     }
 
+    //预约页面分页行数
+    const BOOKING_PAGE_SIZE = 10;
+
     /**
      * @return array validation rules for model attributes.
      */
@@ -260,6 +263,14 @@ class Booking extends EActiveRecord {
             $criteria->order = $options['order'];
 
         return $this->findAll($criteria);
+    }
+
+    public function getCountByUserIdOrMobile($userId, $mobile) {
+        $criteria = new CDbCriteria();
+        $criteria->compare("t.user_id", $userId, false, 'AND');
+        $criteria->compare("t.mobile", $mobile, false, 'OR');
+        $criteria->addCondition("t.date_deleted is NULL");
+        $this->count($criteria);
     }
 
     public function setIsCorporate($v = 1) {
@@ -507,7 +518,7 @@ class Booking extends EActiveRecord {
     public function getCorpStaffRef() {
         return $this->corp_staff_rel;
     }
-    
+
     public function getUserAgent() {
         return $this->user_agent;
     }

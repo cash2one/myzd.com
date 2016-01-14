@@ -30,7 +30,6 @@ class ApiViewRecommendedDoctors extends EApiViewService {
             if (arrayNotEmpty($models)) {
                 $this->setDoctors($models, $key);
             }
-            break;
         }
     }
     private function setDoctors($models, $key){
@@ -47,6 +46,7 @@ class ApiViewRecommendedDoctors extends EApiViewService {
             $data->desc = $model->getDescription();
             $data->hpDeptId = $model->getHpDeptId();
             $data->hpDeptName = $model->getHpDeptName();
+            $data->isContracted = $model->getIsContracted();
             $temp[] = $data;
         }
         $this->results->disease_category[$key] = $temp;

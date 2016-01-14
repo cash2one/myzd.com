@@ -11,8 +11,12 @@ $ajaxLoginUrl = $this->createUrl('user/ajaxLogin');
 $registerUrl = $this->createUrl('user/register');
 $urlLogout = $this->createUrl('user/logout');
 $bookinglist = $this->createUrl('booking/list');
+$urlDownloadApp = $this->createUrl('download/app');
+$urlDoctorSearch = $this->createUrl('doctor/search',array('disease_category'=>1));
+$urlHopitalSearch = $this->createUrl('hospital/search',array('disease_category'=>1));
+$urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
 ?>
-<section id="site-header" class="container-fluid">
+<section id="site-header">
     <div class="container-fluid bg-gray home-top">
         <div class="row">
             <div class="container">
@@ -21,17 +25,16 @@ $bookinglist = $this->createUrl('booking/list');
                     <?php
                     $user = $this->getCurrentUser();
                     if (isset($user)) {
-                        echo '<span class="user">您好！&nbsp;<a target="_blank" href="' . $bookinglist . '">' . $user->getUsername() . '</a>&nbsp;</span>|<a href="' . $urlLogout . '">&nbsp;退出&nbsp;</a>|<a target="_blank" href="' . $bookinglist . '">&nbsp;我的手术&nbsp;|</a>';
+                        echo '<span class="user">您好！&nbsp;<a target="_blank" href="' . $bookinglist . '">' . $user->getUsername() . '</a>&nbsp;</span>|<a id="logout" href="' . $urlLogout . '">&nbsp;退出&nbsp;</a>|<a target="_blank" href="' . $bookinglist . '">&nbsp;我的手术&nbsp;|</a>';
                     } else {
                         echo '<span class="user">您好！&nbsp;请&nbsp;<a data-toggle="modal" data-target="#loginModal">登陆</a>/<a target="_blank" href="' . $registerUrl . '">注册</a>&nbsp;</span>|';
                     }
                     ?>
-                    <a>&nbsp;快速预约&nbsp;|</a><a>&nbsp;下载APP</a>
+                    <a data-toggle="modal" data-target="#qucikbookingModal">&nbsp;快速预约&nbsp;</a>|<a target="_blank" href="<?php echo $urlDownloadApp; ?>">&nbsp;下载APP</a>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="container-fluid ">
         <div class="row">
             <div class="container mt30 mb20">
@@ -52,13 +55,13 @@ $bookinglist = $this->createUrl('booking/list');
                                 <a id="header-nav-home" href="<?php echo Yii::app()->homeUrl; ?>" class="dropdown-toggle">首页</a>
                             </li>
                             <li class="dropdown dropdown-hover">
-                                <a id="header-nav-hospital" href="#" class="dropdown-toggle">名医榜单</a>
+                                <a id="header-nav-hospital" href="<?php echo $urlDoctorSearch; ?>" class="dropdown-toggle" target="_blank">名医榜单</a>
                             </li>
                             <li class="dropdown dropdown-hover">
-                                <a id="header-nav-aboutus" href="#" class="dropdown-toggle">顶尖科室</a>
+                                <a id="header-nav-aboutus" href="<?php echo $urlHopitalSearch; ?>" class="dropdown-toggle" target="_blank">顶尖科室</a>
                             </li>
                             <li class="dropdown dropdown-hover">
-                                <a id="header-nav-aboutus" href="#" class="dropdown-toggle">手术直通车</a>
+                                <a id="header-nav-aboutus" href="<?php echo $urlZhiTongChe; ?>" class="dropdown-toggle" target="_blank">手术直通车</a>
                             </li>
                             <li class="dropdown dropdown-hover">
                                 <a id="header-nav-aboutus" href="<?php echo $aboutusMenu["aboutus"]["url"]; ?>" class="dropdown-toggle">关于我们</a>
@@ -70,6 +73,7 @@ $bookinglist = $this->createUrl('booking/list');
         </div>
     </div>
 </section>
+<?php $this->renderPartial('//booking/quickBookingModal'); ?>
 <!-- Login Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
     <div class="modal-dialog" role="document">
@@ -107,7 +111,7 @@ $bookinglist = $this->createUrl('booking/list');
                     </div>
                     <div class="form-group mt30 mb30">
                         <div class="col-sm-offset-3 col-sm-6">
-                            <span id="btnSubmit" class="btn btn-yes btn-lg btn-block">登录</span>			
+                            <span id="btnLoginSubmit" class="btn btn-yes btn-lg btn-block">登录</span>			
                         </div>
                     </div>
                 </form>

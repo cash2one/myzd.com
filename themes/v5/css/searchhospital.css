@@ -1,4 +1,20 @@
 .department-name{border:1px solid #19aea5;height:70px;line-height:70px;font-size:16px;}
+.department-list{padding:0 15px 20px;}
+.department-list .department{padding-left: 10px;margin-top: 20px;}
+.department-list .department .dept-header:hover{cursor: pointer;}
+.department-list .department .fa{color: #19aea5;}
+.department-list .department .fa-caret-down{display: none;}
+.department-list .department .dept-header{font-size: 15px;}
+.department-list .department .dept-header .fa{font-size: 16px;margin-right: 3px;}
+.department-list .department.active .fa-caret-down{display: inline-block;}
+.department-list .department.active .fa-caret-right{display: none;}
+.department-list .department ul{padding-left: 14px;display: none;}
+.department-list .department.active ul{display: block;}
+.department-list .department ul>li{margin-top: 3px;}
+.department-list .department .fa{color: #19aea5;}
+.department-list .department .fa-caret-down{display: none;}
+.department-list .department.active .fa-caret-down{display: inline-block;}
+.department-list .department.active .fa-caret-right{display: none;}
 .city-sick-title{border-left:5px solid #19aea5;padding-bottom: 3px;line-height:1em;}
 .city-sick-title>span{margin-left:20px;}
 .border-gray{border:1px solid #ddd;}
@@ -6,14 +22,24 @@
 .color-gray{color:#9f9fa0;}
 .expert-list{padding:0px 5px 10px 5px;}
 .bg-green{background-color:#19aea5;}
-.department-list{padding:20px;}
+.department-list{padding:0 15px 20px;min-height: 268px;}
 .ad-area{height:140px;line-height:140px;}
 .find-navi{color:#fff;font-size:16px;padding:10px 0px 5px 15px;}
+.find-navi>a{color:#fff;font-size:16px;}
 .dept:hover{cursor:pointer;}
-.findexp-nav>span{margin-left:30px;}
+.findexp-nav a{margin-left:30px;}
+.findexp-nav a:hover{cursor: pointer;}
 .modal-dialog{width:450px;}
 #btnSubmit{width:100%;}
 .label-booking{margin-top:7px;}
 .mybooking{background-color:#19aea5;height:140px;line-height:140px;}
 .mybooking-text{font-size:18px;letter-spacing:0.5em;}
 .booking-form{border:1px solid #19aea5;padding:10px 5px;}
+.mt25{margin-top:25px;}
+.mb25{margin-bottom:25px;}
+.find-header{background-image:url('../images/hospital/bg.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+.hospital-list img{width: 142px;height: 150px;}
+.dese-operate{padding-right: 3px;color: #EFA429;}
+.dese-operate:hover{cursor: pointer;}
+.dese-last{display: none;}
+.dese-operate .desc-retract{display: none;}

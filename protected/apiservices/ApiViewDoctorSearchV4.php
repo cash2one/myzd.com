@@ -32,7 +32,7 @@ class ApiViewDoctorSearchV4 extends EApiViewService {
                 'status' => self::RESPONSE_OK,
                 'errorCode' => 0,
                 'errorMsg' => 'success',
-//                'doctorCount' => $this->doctorCount,
+                'dataNum' => $this->doctorCount,
                 'results' => $this->doctors,
             );
         }

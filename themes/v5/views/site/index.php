@@ -2,9 +2,12 @@
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/home.js', CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 1));
+$urlRecommendedDoctors = $this->createUrl('api/recommendeddoctors');
+$urlDiseaseName = $this->createUrl('api/diseasename', array('api' => 7, 'disease_name' => '')); //api/diseasename?api=7&disease_name=
 $urlDoctorView = $this->createUrl('doctor/view', array('id' => ''));
 $urlDoctorSearch = $this->createUrl('doctor/search');
 $urlHopitalSearch = $this->createUrl('hospital/search');
+$urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_category' => 1));
 ?>
 <section id="site-content">
     <div class="container-fluid bg-lunbo">
@@ -56,24 +59,20 @@ $urlHopitalSearch = $this->createUrl('hospital/search');
                 </div>
                 <div class="expert">
                     <!-- Nav tabs -->
-                    <ul class="nav nav-tabs mt30">
-                        <li class="active text-center color-green"><a class="category" href="<?php echo $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 1)) ?>">外科</a></li>
-                        <li class="text-center"><a class="category" href="<?php echo $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 2)) ?>">骨科</a></li>
-                        <li class="text-center"><a class="category" href="<?php echo $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 3)) ?>">妇产科</a></li>
-                        <li class="text-center"><a class="category" href="<?php echo $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 4)) ?>">小儿外科</a></li>
-                        <li class="text-center"><a class="category" href="<?php echo $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 5)) ?>">五官科</a></li>
-                        <li class="text-center"><a class="category" href="<?php echo $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 6)) ?>">内科</a></li>
+                    <ul class="nav nav-tabs mt30" role="tablist">
+                        <li role="presentation" class="active category text-center"><a href="#dept1" aria-controls="dept1" role="tab" data-toggle="tab">外科</a></li>
+                        <li role="presentation" class="category text-center"><a href="#dept2" aria-controls="dept2" role="tab" data-toggle="tab">骨科</a></li>
+                        <li role="presentation" class="category text-center"><a href="#dept3" aria-controls="dept3" role="tab" data-toggle="tab">妇产科</a></li>
+                        <li role="presentation" class="category text-center"><a href="#dept4" aria-controls="dept4" role="tab" data-toggle="tab">小儿外科</a></li>
+                        <li role="presentation" class="category text-center"><a href="#dept5" aria-controls="dept5" role="tab" data-toggle="tab">五官科</a></li>
+                        <li role="presentation" class="category text-center last"><a href="#dept6" aria-controls="dept6" role="tab" data-toggle="tab">内科</a></li>
                     </ul>
                     <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane active">
-                            <div class="row expList mt15" >
+                    <div class="tab-content expList">
 
-                            </div>
-                            <div class="pull-right mr20 color-blue">更多专家></div>
-                            <div class="clearfix"></div>
-                        </div>
                     </div>
+                    <a href="<?php echo $urlDoctorSearchCategory; ?>" class="pull-right mt20 color-blue" target="_blank">更多专家></a>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
@@ -97,32 +96,32 @@ $urlHopitalSearch = $this->createUrl('hospital/search');
                 </div>         
                 <div class="row mt10 mb50">
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a href="#">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 1)); ?>">
                             <div class="faculty waike img-responsive"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a href="#">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 2)); ?>">
                             <div class="faculty guke block-center"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a href="#">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 3)); ?>">
                             <div class="faculty fuchanke pull-right"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a href="#">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 4)); ?>">
                             <div class="faculty xiaoerwaike"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a href="#">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 5)); ?>">
                             <div class="faculty wuguanke block-center"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a href="#">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 6)); ?>">
                             <div class="faculty neike pull-right"></div>
                         </a>
                     </div>
@@ -132,7 +131,7 @@ $urlHopitalSearch = $this->createUrl('hospital/search');
     </div>
     <div class="container-fluid " >
         <div class="row">
-            <div class="container mt50 mb50">
+            <div class="container mt50">
                 <div class="row">
                     <div class="col-md-8">
                         <img class="img-responsive h300" src="<?php echo $urlResImage; ?>home/wanzheng.png"/>
@@ -172,27 +171,27 @@ $urlHopitalSearch = $this->createUrl('hospital/search');
                                     </div>
                                     <div class="item">
                                         <div class="col-sm-4 mt35 ">
-                                            <div class="recommend-area">111</div>
+                                            <div class="recommend-area">112</div>
                                         </div>
                                         <div class="col-sm-4 mt35 pl5">
-                                            <div class="recommend-area">111</div>
+                                            <div class="recommend-area">112</div>
                                         </div>
                                         <div class="col-sm-4 mt35 pl0 ml-5">
-                                            <div class="recommend-area">111</div>
+                                            <div class="recommend-area">112</div>
                                         </div>
                                         <div class="col-sm-4 mt35">
-                                            <div class="recommend-area">111</div>
+                                            <div class="recommend-area">112</div>
                                         </div>
                                         <div class="col-sm-4 mt35 pl5">
-                                            <div class="recommend-area">111</div>
+                                            <div class="recommend-area">1121</div>
                                         </div>
                                         <div class="col-sm-4 mt35 pl0 ml-5">
-                                            <div class="recommend-area">111</div>
+                                            <div class="recommend-area">1121</div>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="col-sm-4 mt35 ">
-                                            <div class="recommend-area">111</div>
+                                            <div class="recommend-area">1131</div>
                                         </div>
                                         <div class="col-sm-4 mt35 pl5">
                                             <div class="recommend-area">111</div>
@@ -225,14 +224,7 @@ $urlHopitalSearch = $this->createUrl('hospital/search');
             $('#header_home').slideToggle(500);
         });
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
-        ajaxLoadDoctor('<?php echo $urlLoadDoctor; ?>', urlDoctorView);
-        $('.category').click(function (e) {
-            e.preventDefault();
-            $('.expert .nav li').removeClass('active');
-            $(this).parent().addClass('active');
-            var urlLoadDoctor = $(this).attr('href');
-            ajaxLoadDoctor(urlLoadDoctor, urlDoctorView);
-        });
+        ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
         $('.searchdoctor-tab').click(function () {
             $('.search-top').removeClass('active');
             $(this).addClass('active');
@@ -247,15 +239,37 @@ $urlHopitalSearch = $this->createUrl('hospital/search');
         });
         $('#searchdoctor-btn').click(function (e) {
             e.preventDefault();
-            var disease_name = $('.disease-name').val();
-            var urlDoctorSearch = '<?php echo $urlDoctorSearch; ?>?disease_name=' + disease_name;
-            location.href = urlDoctorSearch;
+            var disease_name = $('#home-doctor-search-form .disease-name').val();
+            var fullName = disease_name == '' ? '' : getDisFullNameByDisName(disease_name);
+            var urlDoctorSearch = '<?php echo $urlDoctorSearch; ?>?disease_name=' + fullName;
+            window.open(urlDoctorSearch);
         });
         $('#searchhospital-btn').click(function (e) {
             e.preventDefault();
-            var disease_name = $('.disease-name').val();
-            var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>';
-                location.href = urlHopitalSearch;
+            var disease_name = $('#home-hospital-search-form .disease-name').val();
+            var fullName = disease_name == '' ? '' : getDisFullNameByDisName(disease_name);
+            var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease_name=' + fullName;
+            window.open(urlHopitalSearch);
         });
     });
+    //根据疾病名称获取疾病全称
+    function getDisFullNameByDisName(disease_name) {
+        var disFullName = '';
+        var urlDiseaseName = '<?php echo $urlDiseaseName; ?>' + disease_name;
+        $.ajax({
+            url: urlDiseaseName,
+            async: false,
+            success: function (data) {
+                if (data.results.name) {
+                    disFullName = data.results.name;
+                } else {
+                    disFullName = disease_name;
+                }
+            },
+            error: function () {
+                return disFullName = disease_name;
+            }
+        });
+        return disFullName;
+    }
 </script>

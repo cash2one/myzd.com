@@ -22,11 +22,11 @@ class UserController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'login', 'captcha','ajaxLogin'),
+                'actions' => array('register', 'login', 'captcha', 'ajaxLogin'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('logout', 'changePassword', 'account'),
+                'actions' => array('logout', 'changePassword', 'account', 'paySuccess'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -69,7 +69,7 @@ class UserController extends WebsiteController {
                 //$this->redirect(Yii::app()->user->returnUrl);
                 $output['status'] = 'ok';
                 $output['user'] = $this->getCurrentUser();
-            }else{
+            } else {
                 $output['errors'] = $form->getErrors();
             }
             $this->renderJsonOutput($output);
@@ -177,6 +177,14 @@ class UserController extends WebsiteController {
 
         $this->render('changePassword', array(
             'model' => $form
+        ));
+    }
+
+    public function actionPaySuccess($id) {
+        $apisvc = new ApiViewUserBookingV7($id);
+        $output = $apisvc->loadApiViewData();
+        $this->render('paySuccess', array(
+            'data' => $output
         ));
     }
 

@@ -9,7 +9,27 @@ class BookingManager {
     public function loadBookingMobileById($id, $attributes = null, $with = null) {
         return Booking::model()->getById($id, $with);
     }
-    
+
+    /**
+     * 取消订单
+     * @param type $id
+     */
+    public function cancelbook($id) {
+        $output = array('status' => 'no');
+        $model = Booking::model()->getById($id);
+        if (isset($model)) {
+            $model->bk_type = StatCode::BK_STATUS_CANCELLED;
+            if ($model->update(array('bk_type'))) {
+                $output['status'] = 'ok';
+                $output['id'] = $model->getId();
+            } else {
+                $output['errors'] = $model->getErrors();
+            }
+        } else {
+            $output['errors'] = 'no data...';
+        }
+        return $output;
+    }
 
     /*     * ****** Api 5.0 ******* */
 
@@ -383,9 +403,8 @@ class BookingManager {
 
         return $bFile;
     }
-    
-    
-    public function cerateBookingCorp($booking){
+
+    public function cerateBookingCorp($booking) {
         $bookingId = $booking->getId();
         $userId = $booking->getUserId();
         $uploadField = 'file';
@@ -398,16 +417,14 @@ class BookingManager {
         }
         return $output;
     }
-    
-     private function saveBookingCorp($file, $bookingId, $userid) {
+
+    private function saveBookingCorp($file, $bookingId, $userid) {
         $bFile = new BookingCorpIc();
         $bFile->initModel($bookingId, $userid, $file);
         $bFile->saveModel();
 
         return $bFile;
     }
-    
-    
 
     public function loadIBooking($id, $with = null) {
         if (is_null($with)) {

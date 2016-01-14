@@ -1,113 +1,161 @@
 <?php
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/searchhospital.css");
+Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchhospital.js', CClientScript::POS_HEAD);
+$urlHopitalSearch = $this->createUrl('hospital/search');
+$urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5));
+$urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5, 'disease_sub_category' => ''));
+$urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
+$urlHospitalView = $this->createUrl('hospital/view', array('id' => ''));
+$city = Yii::app()->request->getQuery('city', '');
+$disease_name = Yii::app()->request->getQuery('disease_name', '');
+$disease_category = Yii::app()->request->getQuery('disease_category', '');
+$disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
+$page = Yii::app()->request->getQuery('page', '');
 ?>
 <div class="container-fluid bg-green">
-    <div class="container find-navi">首页&nbsp;&gt;&nbsp;按照科室找医院</div>
+    <div class="container find-navi"><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a>&nbsp;&gt;&nbsp;找顶尖科室</div>
 </div>
-<!--明星专家团队-->
 <div class="container">
     <div class="row mt30">
         <div class="col-sm-2">
-            <div class="strong text-center department-name color-green"><strong>神经外科</strong></div>
-        </div>
-        <div class="col-sm-10 border-green">
-            <div>名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀名医主刀</div>
-            <div class="color-red mt5 pull-right">*排名依照。。。</div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-2 mt30">
-            <div class="border-gray department-list">
-                <div><div class="waike"><span class="ml20 strong">外科</span></div></div>
-                <div class="mt30"><div class="waike"><span class="ml20 strong">骨科</span></div></div>
-                <div class="mt30"><div class="waike"><span class="ml20 strong">妇产科</span></div></div>
-                <div class="mt30"><div class="waike"><span class="ml20 strong">小儿外科</span></div></div>
-                <div class="mt30"><div class="waike"><span class="ml20 strong">五官科</span></div></div>
-                <div class="mt30"><div class="waike"><span class="ml20 strong">内科</span></div></div>
+            <div class="strong text-center department-name color-green"><strong>全部</strong></div>
+            <div class="border-gray department-list mt20">
+                
             </div>
-            <div class="border-gray mt20">
-                <div class="text-center ad-area">
-                    <div>200x140</div>			
+        </div>
+        <div class="col-sm-10">
+            <div class="row find-header">
+                <div class="col-sm-9 mt25" >
+                    <div>名医主刀为您精选出在综合及专科领域最强的医院，您只需预约目标医院的科室，名医助手会根据您的具病情推荐该科室里最合适的主刀医生，免除您搜寻和预约医生的烦恼。</div>
+                    <div class="color-red mt30 mb25">* 排名依照复旦版最新《中国最佳医院综合排行榜》和《中国医院最佳专科声誉排行榜》</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mt20 findexp-nav city-list">
+                    地区:<a class="all">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a>其他</a>
+                </div>
+                <div class="loading loading02"></div>
+                <div class="hospital-list">
+                    
+                </div>
+
+                <!--分页-->
+                <div class="mt30">
+                    <nav class="text-center">
+                        <ul class="pagination">
+
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-        <div class="col-sm-10 nopadding">
-
-            <div class="mt30">脑外伤是由于脑外伤是由于脑外伤是由于脑外伤是由于脑外伤是由于脑外伤是由于脑外伤是由于脑外伤是由于脑外伤是由于脑外伤是由于脑外伤是由于</div>
-            <div class="divide-line-gray mt30"></div>
-            <div class="mt20 findexp-nav">
-                地区:<span class=>全部</span><span>北京</span><span>上海</span><span>广州</span><span>南京</span><span>杭州</span><span>其他</span>
-            </div>
-            <div class="row mt30">
-                <div class="col-sm-2"><img class="img-responsive" src="http://mingyizhudao.com/resource/hospital/0012-BJ-301.jpg"></div>
-                <div class="col-sm-10">
-                    <div><strong>上海交通大学附属医院新华医院</strong><span class="color-green ml20">三甲医院</span><span class="pull-right"><button type="submit" class="btn btn-yes" data-toggle="modal" data-target="#booking-dept">预约</button></span></div>
-                    <div class="clearfix"></div>
-                    <div class="modal fade" id="booking-dept" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="text-center mybooking">
-                                    <div class="color-white mybooking-text">我要预约</div>
-                                </div>
-                                <div class="booking-form">
-                                    <form class="form-horizontal">
-                                        <div class="form-group mt10">
-                                            <label class="col-sm-3 control-label">就诊医院:</label>
-                                            <div class="col-sm-8 text-left label-booking">
-                                                上海复旦大学
-                                            </div>
-                                        </div>
-                                        <div class="form-group mt30">
-                                            <label class="col-sm-3 control-label">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>
-                                            <div class="col-sm-8">
-                                                <input type="text" class="form-control" placeholder="请填写患者姓名">
-                                            </div>
-                                        </div>
-                                        <div class="form-group mt30">
-                                            <label class="col-sm-3 control-label">确诊疾病:</label>
-                                            <div class="col-sm-8">
-                                                <input type="text" class="form-control" placeholder="请填写确认疾病名称">
-                                            </div>
-                                        </div>
-                                        <div class="form-group mt30">
-                                            <label class="col-sm-3 control-label">疾病描述:</label>
-                                            <div class="col-sm-8">
-                                                <textarea class="form-control" rows="4" placeholder="为了让专家对您的病情有更好的初判，请您尽量详细填写（至少10个字）。"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group mt50">
-                                            <div class="col-sm-offset-3 col-sm-8">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox">我已同意《名医主刀在线用户协议》
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-10 col-sm-offset-1">
-                                                <button id="btnSubmit" type="button" class="btn btn-lg btn-yes btn-block " name="">提&nbsp;交</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-1"><strong class="text15">科室介绍</strong></div>
-                        <div class="col-sm-11">科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍科室介绍</div>
-                    </div>
-                </div>
-            </div>
-
-            <!--分页-->
-            <div class="text-center mt50"><span>1</span><span class="ml20">2</span><span class="ml20">3</span></div>
-
-        </div>
     </div>
-
 </div>
+<?php $this->renderPartial("//booking/bookingDeptModal"); ?>
+<script>
+    //url参数数组
+    var condition = new Array();
+    condition["city"] = '<?php echo $city ?>';
+    condition["disease_name"] = '<?php echo $disease_name; ?>';
+    condition["disease_category"] = '<?php echo $disease_category; ?>';
+    condition["disease_sub_category"] = '<?php echo $disease_sub_category; ?>';
+    condition["page"] = '<?php echo $page == '' ? 1 : $page; ?>';
+    var urlLoadHospital = '<?php echo $urlLoadHospital; ?>';
+    $(document).ready(function () {
+        ajaxLoadHopital('&getcount=1');
+        ajaxLoadDiseaseCategory();
+        $('.city-list a.all').click(function (e) {
+            e.preventDefault();
+            condition["city"] = '';
+            condition["page"] = 1;
+            ajaxLoadHopital('&getcount=1');
+        });
+        $('.city-list .city').click(function (e) {
+            e.preventDefault();
+            var cityId = $(this).attr('data-id');
+            condition["city"] = cityId;
+            condition["page"] = 1;
+            ajaxLoadHopital('&getcount=1');
+        });
+        if (condition["disease_name"]) {
+            $('.department-name>strong').html(condition["disease_name"]);
+        }
+    });
+    //异步加载医院
+    function ajaxLoadHopital(getCount) {
+        var urlHospitalView = '<?php echo $urlHospitalView; ?>';
+        var urlAjaxLoadHospital = '';
+        urlAjaxLoadHospital = urlLoadHospital + setUrlCondition();
+        urlAjaxLoadHospital += getCount;
+        $('.loading').show();
+        $.ajax({
+            url: urlAjaxLoadHospital,
+            success: function (data) {
+                setPages(data.dataNum, condition["page"]);
+                setHospitalHtml(data, urlHospitalView);
+                $('.loading').hide();
+            },
+            error: function () {
+                $('.loading').hide();
+            }
+        });
+    }
+    /**** ajax异步加载科室 ****/
+    function ajaxLoadDiseaseCategory() {
+        var urlloadDiseaseCategory = '<?php echo $urlloadDiseaseCategory; ?>';
+        $.ajax({
+            url: urlloadDiseaseCategory,
+            success: function (data) {
+                setDiseaseCategory(data);
+            }
+        });
+    }
+
+    /**** 设置左侧科室菜单html ****/
+    function setDiseaseCategory(data) {
+        if (data.results) {
+            var innerHtml = '';
+            var diseaseCategorys = data.results;
+            var active = '';
+            for (var i = 1; i <= diseaseCategorys.length; i++) {
+                var diseaseCategory = diseaseCategorys[i - 1];
+                if (i == condition["disease_category"]) {
+                    active = 'active';
+                    $('.department-name>span').text(diseaseCategory.name);
+                } else {
+                    active = '';
+                }
+                innerHtml += '<div class="department ' + active + '">' +
+                        '<div class="dept-header">' +
+                        '<i class="fa fa-caret-right"></i>' +
+                        '<i class="fa fa-caret-down"></i>' +
+                        '<span class="strong">' + diseaseCategory.name + '</span>' +
+                        '</div>' +
+                        '<ul>';
+                var subCats = diseaseCategory.subCat;
+                for (var j = 0; j < subCats.length; j++) {
+                    var subCat = subCats[j];
+                    innerHtml += '<li><a class="subCat" data-id = "' + subCat.id + '" href="<?php echo $urlLoadHospitalByDiseaseSubCategory; ?>' + subCat.id + '">' + subCat.name + '</a></li>';
+                }
+                innerHtml += '</ul></div>';
+            }
+            $('.department-list').html(innerHtml);
+            initDeptFunction();
+        }
+    }
+    //设置地址栏信息
+    function setLocationUrl() {
+        var stateObject = {};
+        var title = "";
+        var urlCondition = '';
+        for ($key in condition) {
+            if (condition[$key] && condition[$key] !== "") {
+                urlCondition += "&" + $key + "=" + condition[$key];
+            }
+        }
+        urlCondition = urlCondition.substring(1);
+        urlCondition = "?" + urlCondition;
+        var newUrl = "<?php echo $urlHopitalSearch; ?>" + urlCondition;
+        history.pushState(stateObject, title, newUrl);
+    }
+</script>

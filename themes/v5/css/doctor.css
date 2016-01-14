@@ -23,7 +23,7 @@
 .doctor-menu .memu-title{font-size: 20px;color: #fff;text-align: center;}
 .doctor-menu .btn{color: #fff;min-width: 160px;font-size: 17px;}
 .doctor-menu .btn:hover{color: #fff;}
-.doctor-menu .rec-title{color: #19aea5;margin-top: 30px;margin-bottom:5px;border-left:5px solid #19aea5;line-height:1em;padding-left:5px;}
+.doctor-menu .rec-title{color: #19aea5;margin-top: 50px;margin-bottom:5px;line-height:1em;font-size: 16px;}
 .doctor-menu .rec-title>a{color: #19aea5;}
 .doctor-menu .rec-doc{margin: 0 -10px;}
 .expInfo>div>img{margin:10px 0px;}
@@ -37,7 +37,7 @@
 .ml30{margin-left: 30px;}
 #btnSubmit{width:100%;}
 .modal-dialog{width:450px;}
-.label-booking{margin-top:7px;}
+.label-booking{margin-top:3px;}
 .mybooking{background-color:#19aea5;height:140px;line-height:140px;}
 .mybooking-text{font-size:18px;letter-spacing:0.5em;}
 .booking-form{border:1px solid #19aea5;padding:10px 5px;}

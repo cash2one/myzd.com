@@ -51,18 +51,6 @@ $urlReturn = '#success';
                 <?php echo $form->error($model, 'contact_name'); ?> 
             </div>
             <div class="ui-field-contain">
-                <?php echo CHtml::activeLabel($model, 'mobile'); ?>   
-                <?php echo $form->numberField($model, 'mobile', array('name' => 'booking[mobile]', 'placeholder' => '请输入手机号')); ?>
-                <?php echo $form->error($model, 'mobile'); ?>
-                <button id="btn-sendSmsCode" type="button" class="ui-btn ui-corner-all ui-shadow">获取验证码</button>
-            </div>
-            <div class="ui-field-contain">
-                <?php echo CHtml::activeLabel($model, 'verify_code'); ?>                                           
-                <?php echo $form->numberField($model, 'verify_code', array('name' => 'booking[verify_code]', 'placeholder' => '请输入验证码')); ?>
-                <?php echo $form->error($model, 'verify_code'); ?> 
-            </div>
-
-            <div class="ui-field-contain">
                 <?php echo CHtml::activeLabel($model, 'disease_name'); ?>                                           
                 <?php echo $form->textField($model, 'disease_name', array('name' => 'booking[disease_name]', 'placeholder' => '请输入确诊疾病')); ?>
                 <?php echo $form->error($model, 'disease_name'); ?> 

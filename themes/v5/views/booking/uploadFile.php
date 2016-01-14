@@ -1,8 +1,89 @@
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+$urlResImage = Yii::app()->theme->baseUrl . "/images/";
+$urlUploadFile = $this->createUrl("booking/ajaxUploadFile");
+$urlBookingList = $this->createUrl('booking/list');
+$booking = $data->results->booking;
+$urlReturn = $this->createUrl('booking/userBooking',array('id'=>$booking->id));
+?>
+<div class="bg-green">
+    <div class="container">
+        <div class="user-crumbs">
+            <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a>
+            >>
+            <a href="<?php echo $urlBookingList; ?>">个人中心</a>
+            >>
+            <a href="<?php echo $urlBookingList; ?>">预约单</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row mt40">
+        <div class="col-sm-3">
+            <?php $this->renderPartial('//user/_userMenu',array('pageActive'=>'bookinglist')); ?>
+        </div>
+        <div class="col-sm-9">
+            <div class="">
+                <img class="img-responsive" src="<?php echo $urlResImage; ?>user/process.png">
+            </div>
+            <div class="bookingSuccess border-green mt10 pl40 pr40 minh700">
+                <div class="row mt40">
+                    <div class="col-md-8 border-right">
+                        <div>
+                            <form id="booking-form" data-url-uploadfile="<?php echo $urlUploadFile; ?>" data-url-return="<?php echo $urlReturn; ?>">
+                                <input id="bookingId" type="hidden" name="booking[id]" value="<?php echo $booking->id; ?>" />
+                                <input id="bookingReport_type" type="hidden" name="booking[report_type]" value="mr" />
+                            </form>
+                            <h4 class="color-green">提交成功！请您上传病例资料：</h4>
+                            <div>
+                                <?php echo $this->renderPartial('_uploadFile'); ?>
+                            </div>
+                            
+                            <div class="mt100">
+                                <a href="<?php echo $this->createUrl('booking/view', array('id' => $booking->id)); ?>" class="showBookingInfo color-status">查看预约详情 <i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></a>
+                            </div>
+                            <div class="row mt10 bookingInfo">
+                                <div class="col-md-6">
+                                    <div>意向专家：<?php echo $booking->expertName == '' ? '未填写' : $booking->expertName; ?></div>
+                                    <div class="mt30">专家科室：<?php echo $booking->hpDeptName == '' ? '未填写' : $booking->hpDeptName; ?></div>
+                                    <div class="mt30">专家医院：<?php echo $booking->hpName == '' ? '未填写' : $booking->hpName; ?></div>
+                                    <div class="mt30">意向日期：<?php echo $booking->dateStart . ' -- ' . $booking->dateEnd; ?></div>
+                                </div>
+                                <div class="col-md-6 border-left-dashed">
+                                    <div>患者姓名：<?php echo $booking->patientName; ?></div>
+                                    <div class="mt30">联系方式：<?php echo $booking->mobile; ?></div>
+                                    <div class="mt30">疾病名称：<?php echo $booking->diseaseName; ?></div>
+                                    <div class="mt30">疾病描述：<?php echo $booking->diseaseDetail; ?></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="introduce">
+                            <div class="introduce-title"><i class="fa fa-caret-right"></i> 什么是病例资料？</div>
+                            <div class="introduce-content"></div>
+                        </div>
+                        <div class="introduce">
+                            <div class="introduce-title"><i class="fa fa-caret-right"></i> 为什么要上传影像资料？</div>
+                            <div class="introduce-content"></div>
+                        </div>
+                        <div class="introduce">
+                            <div class="introduce-title"><i class="fa fa-caret-right"></i> 暂时没有，稍后可以补充吗？</div>
+                            <div class="introduce-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.showBookingInfo').click(function (e) {
+            e.preventDefault();
+            $('.showBookingInfo .fa-angle-right').toggle();
+            $('.showBookingInfo .fa-angle-down').toggle();
+            $('.bookingInfo').toggle();
+        });
+    });
+</script>
