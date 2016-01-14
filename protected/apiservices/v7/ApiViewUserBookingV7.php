@@ -5,13 +5,13 @@ class ApiViewUserBookingV7 extends EApiViewService {
     private $id;
     private $bk_id;
     private $booking;
-    private $salerOrder;
+    private $salesOrder;
 
     public function __construct($id) {
         parent::__construct();
         $this->id = $id;
         $this->booking = null;
-        $this->salerOrder = array();
+        $this->salesOrder = array();
     }
 
     protected function createOutput() {
@@ -65,7 +65,7 @@ class ApiViewUserBookingV7 extends EApiViewService {
                 $this->setSalesOrder($models);
             }
         }
-        $this->results->salerOrder = $this->salerOrder;
+        $this->results->salesOrder = $this->salesOrder;
     }
 
     private function setSalesOrder($models) {
