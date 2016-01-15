@@ -112,10 +112,11 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                                 }
                                 echo '<div role="tabpanel" class="tab-pane ' . $active . '" id="' . $j . '">';
                                 foreach ($dept as $faculty) {
-                                    echo '<div class="mt20 dept-describe">'.
-                                         '<div class="dept-title">'.$faculty->name.'<div class="pull-right mt5"><a class="btn btn-yes">预约</a></div><div class="clearfix"></div></div>'.
-                                         '<div class="mt10 strong"><strong>科室介绍：</strong>新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院新华医院</div>'.
-                                         '</div>';
+                                    $description = $faculty->description =='' ? '暂无信息' : $faculty->description;
+                                    echo '<div class="mt20 dept-describe">' .
+                                    '<div class="dept-title">' . $faculty->name . '<div class="pull-right mt5"><button class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' . $hName . '" data-dept="' . $faculty->name . '" data-hospitalid="' . $hid . '" data-deptid="' . $faculty->id . '" data-toggle="modal" data-target="#booking">预 约</button></div><div class="clearfix"></div></div>' .
+                                    '<div class="mt10 strong"><strong>科室介绍：</strong>' . $description . '</div>' .
+                                    '</div>';
                                 }
                                 echo '</div>';
                                 $j++;
@@ -133,7 +134,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
 </div>
 <?php //$this->renderPartial("//booking/_modalQuickBook"); ?>
 <?php //$this->renderPartial("//booking/_modalBooking"); ?>
-<?php $this->renderPartial("//booking/formModal"); ?>
+<?php $this->renderPartial("//booking/bookingDeptModal"); ?>
 <script>
     $(document).ready(function () {
         $(".more-desc").click(function () {

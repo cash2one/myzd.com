@@ -116,6 +116,7 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 /**** loginModal ****/
 @media (min-width: 768px){#loginModal .modal-dialog,#registerModal .modal-dialog {width: 600px;margin: 100px auto 30px;}}
 /**** site-content ****/
+.label-booking {margin-top: 7px;}
 .nav-pills>li>a{color: #686868;}
 .text17{font-size: 17px;}
 .text12{font-size: 12px;}
