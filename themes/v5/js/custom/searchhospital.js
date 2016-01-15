@@ -129,6 +129,8 @@ function initDeptFunction() {
         condition["disease_sub_category"] = subCat;
         urlLoadHospital = url;
         $('.department-name>span').html(subCatName);
+        $('.department ul>li>a.subCat').removeClass('active');
+        $(this).addClass('active');
         ajaxLoadHopital('&getcount=1');
     });
 }

@@ -116,6 +116,8 @@ function initDeptFunction() {
         condition["disease_sub_category"] = subCat;
         urlLoadDoctor = url;
         $('.department-name>span').html(subCatName);
+        $('.department ul>li>a.subCat').removeClass('active');
+        $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
         ajaxLoadDiseaseByCategory(subCat);
     });
@@ -143,6 +145,9 @@ function initDiseaseFunction() {
         condition["disease_category"] = '';
         condition["disease_sub_category"] = subCat;
         urlLoadDoctor = url;
+        $('.department-name>span').html('全部');
+        $('.disease-list a.disease').removeClass('active');
+        $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
     });
     $('.disease-list a.disease').click(function (e) {
@@ -156,6 +161,8 @@ function initDiseaseFunction() {
         condition["disease_sub_category"] = '';
         urlLoadDoctor = url;
         $('.department-name>span').html(condition["disease_name"]);
+        $('.disease-list a.disease').removeClass('active');
+        $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
     });
 }

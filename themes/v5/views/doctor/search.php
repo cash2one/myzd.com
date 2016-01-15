@@ -27,7 +27,7 @@ $page = Yii::app()->request->getQuery('page', '');
             <div class="strong text-center department-name"><span>全部</span></div>
         </div>
         <div class="col-sm-10">
-            <div class="city-sick-title city-list">所在城市：<a class="all">全部</a>
+            <div class="city-sick-title city-list">所在城市：<a class="all city active">全部</a>
                 <a class="city" data-id="1">北京</a>
                 <a class="city" data-id="73">上海</a>
                 <a class="city" data-id="200">广州</a>
@@ -90,6 +90,7 @@ $page = Yii::app()->request->getQuery('page', '');
     var urlLoadDoctor = '<?php echo $urlLoadDoctor; ?>';
     $(document).ready(function () {
         ajaxLoadDoctor('&getcount=1');
+        setCityActive();
         ajaxLoadDiseaseCategory();
         var disease_category = condition["disease_sub_category"] == '' ? 1 : condition["disease_sub_category"];
         ajaxLoadDiseaseByCategory(disease_category);
@@ -105,6 +106,7 @@ $page = Yii::app()->request->getQuery('page', '');
             condition["city"] = cityId;
             condition["page"] = 1;
             ajaxLoadDoctor('&getcount=1');
+            setCityActive();
         });
         if(condition["disease_name"]){
             $('.department-name>span').html(condition["disease_name"]);
@@ -186,7 +188,7 @@ $page = Yii::app()->request->getQuery('page', '');
     function setDiseaseHtml(data, subCatId) {
         if (data.results) {
             var diseases = data.results.disease;
-            var innerHtml = '具体疾病：<span><a class="all" data-id="' + subCatId + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCatId + '">全部</a></span>';
+            var innerHtml = '具体疾病：<span><a class="all disease" data-id="' + subCatId + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCatId + '">全部</a></span>';
             for (var i = 0; i < diseases.length; i++) {
                 var disease = diseases[i];
                 innerHtml += '<span><a class="disease" href = "<?php echo $urlLoadDoctor; ?>">' + disease.name + '</a></span>';
@@ -218,5 +220,14 @@ $page = Yii::app()->request->getQuery('page', '');
         urlCondition = "?" + urlCondition;
         var newUrl = "<?php echo $urlDoctorSearch; ?>" + urlCondition;
         history.pushState(stateObject, title, newUrl);
+    }
+    function setCityActive(){
+        $('.city-list a').each(function(){
+            var cityId = $(this).attr('data-id');
+            if(cityId == condition["city"]){
+                $('.city-list a').removeClass('active');
+                $(this).addClass('active');
+            }
+        });
     }
 </script>
