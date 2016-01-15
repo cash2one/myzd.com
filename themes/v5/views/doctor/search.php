@@ -27,7 +27,19 @@ $page = Yii::app()->request->getQuery('page', '');
             <div class="strong text-center department-name"><span>全部</span></div>
         </div>
         <div class="col-sm-10">
-            <div class="city-sick-title city-list">所在城市：<a class="all">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a>其他</a></div>
+            <div class="city-sick-title city-list">所在城市：<a class="all">全部</a>
+                <a class="city" data-id="1">北京</a>
+                <a class="city" data-id="73">上海</a>
+                <a class="city" data-id="200">广州</a>
+                <a class="city" data-id="87">南京</a>
+                <a class="city" data-id="114">杭州</a>
+                <a class="city" data-id="74">福州</a>
+                <a class="city" data-id="134">济南</a>
+                <a class="city" data-id="186">长沙</a>
+                <a class="city" data-id="255">成都</a>
+                <a class="city" data-id="204">汕头</a>
+                <a class="city" data-id="218">潮州</a>
+            </div>
             <div class="city-sick-title disease-list"></div>
         </div>
     </div>

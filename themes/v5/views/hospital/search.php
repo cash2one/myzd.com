@@ -32,7 +32,7 @@ $page = Yii::app()->request->getQuery('page', '');
             </div>
             <div class="row">
                 <div class="mt20 findexp-nav city-list">
-                    地区:<a class="all">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a>其他</a>
+                    地区:<a class="all">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a class="city" data-id="74">南京</a><a class="city" data-id="87">杭州</a><a class="city" data-id="134">济南</a><a class="city" data-id="202">深圳</a><a class="city" data-id="254">重庆</a><a class="city" data-id="255">成都</a>
                 </div>
                 <div class="loading loading02"></div>
                 <div class="hospital-list">
