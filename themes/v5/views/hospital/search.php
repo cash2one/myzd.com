@@ -18,7 +18,7 @@ $page = Yii::app()->request->getQuery('page', '');
 <div class="container">
     <div class="row mt30">
         <div class="col-sm-2">
-            <div class="strong text-center department-name color-green"><strong>全部</strong></div>
+            <div class="strong text-center department-name color-green"><span>全部</span></div>
             <div class="border-gray department-list mt20">
 
             </div>
