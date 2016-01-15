@@ -25,4 +25,4 @@
 .docdesc{height: 9em;overflow-y: hidden;}
 .contracted-img{margin-top:-90px;margin-right:-13px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
 .city-list a.active{color: #19aea5;}
-.disease-list .disease.active{color: #19aea5;}
+.disease-list a.active{color: #19aea5;}

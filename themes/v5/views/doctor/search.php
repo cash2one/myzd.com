@@ -188,7 +188,7 @@ $page = Yii::app()->request->getQuery('page', '');
     function setDiseaseHtml(data, subCatId) {
         if (data.results) {
             var diseases = data.results.disease;
-            var innerHtml = '具体疾病：<span><a class="all disease" data-id="' + subCatId + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCatId + '">全部</a></span>';
+            var innerHtml = '具体疾病：<span><a class="all" data-id="' + subCatId + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCatId + '">全部</a></span>';
             for (var i = 0; i < diseases.length; i++) {
                 var disease = diseases[i];
                 innerHtml += '<span><a class="disease" href = "<?php echo $urlLoadDoctor; ?>">' + disease.name + '</a></span>';
