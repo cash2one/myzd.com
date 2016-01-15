@@ -52,14 +52,14 @@ $bookinglist = $data->results;
                                         <div class="color-red bkStatus"><?php echo $booking->bkStatus; ?></div>
                                         <div><a target="_blank" href="<?php echo $this->createUrl('booking/userBooking', array('id' => $booking->id)); ?>" class="color-status">详情</a></div>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center bookOperate">
                                         <?php
-                                        if ($booking->bkStatusId == 9) {
-                                            echo '已取消';
-                                        } else {
+                                        if ($booking->bkStatusId == 1) {
                                             ?>
                                             <a class="color-status" data-id="<?php echo $booking->id; ?>" data-href="<?php echo $this->createUrl('booking/cancelbook', array('id' => $booking->id)); ?>" data-toggle="modal" data-target="#cancelOrder">取消订单</a>
                                             <?php
+                                        } else {
+                                            echo '—';
                                         }
                                         ?>
                                     </td>
@@ -109,6 +109,8 @@ $bookinglist = $data->results;
                     if (data.status == 'ok') {
                         $('#cancelOrder').modal('hide');
                         $(trId).find('.bkStatus').text('已取消');
+                        $(trId).find('.bookOperate').html('—');
+                        
                     }
                 }
             });
