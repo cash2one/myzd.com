@@ -103,12 +103,13 @@ jQuery(function () {
 //        wrapper: "div",
         errorElement: "div",
         errorPlacement: function (error, element) {                             //错误信息位置设置方法  
-            element.parents(".controls").find("div.error").remove();
+            //element.parents(".controls").find("div.error").remove();
             error.appendTo(element.parents(".controls"));     //这里的element是录入数据的对象  
             //error.appendTo(element); 
         },
         submitHandler: function () {
             //form插件的异步无刷新提交
+            disabledBtn(btnSubmit);
             actionUrl = domForm.attr('action');
             returnUrl = domForm.attr("data-url-return");
             //alert("asdf");
@@ -116,9 +117,6 @@ jQuery(function () {
             domForm.ajaxSubmit({
                 type: 'post',
                 url: actionUrl,
-                before: function () {
-                    $("#btnSubmit").attr("disabled", true);
-                },
                 success: function (data) {
                     if (data.status == 'ok') {
                         //弹框提示
@@ -142,8 +140,10 @@ jQuery(function () {
                         }
 
                     }
+                    enableBtn(btnSubmit);
                 },
                 error: function (XmlHttpRequest, textStatus, errorThrown) {
+                    enableBtn(btnSubmit);
                     console.log(XmlHttpRequest);
                     console.log(textStatus);
                     console.log(errorThrown);
