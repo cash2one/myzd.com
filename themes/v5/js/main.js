@@ -5,8 +5,11 @@ $(document).ready(function (e) {
         $("#site-header").css("margin-top", "20px");
     }
     initBookingBtn();
-    $('#logout').click(function(){
+    $('#logout').click(function(e){
+        e.preventDefault();
         delCookie('user');
+        var logoutUrl = $(this).attr('href');
+        location.href = logoutUrl;
     });
 });
 
@@ -49,9 +52,11 @@ function setCookie(c_name, value, expiredays) {
 }
 
 function delCookie(c_name) {//为了删除指定名称的cookie，可以将其过期时间设定为一个过去的时间
-    var date = new Date();
-    date.setTime(date.getTime() - 10000);
-    document.cookie = c_name + "=a; expires=" + date.toGMTString();
+    var date = new Date(0);
+    date.setTime(date.getTime() - 100000);
+    console.log(date);
+    document.cookie = c_name + "=0 ; expires=" + date.toGMTString() + "; path=/";
+    //document.cookie = c_name + "=a; expires=" + date.toGMTString();
 }
 
 // Read a page's GET URL variables and return them as an associative array.

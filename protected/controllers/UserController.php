@@ -22,11 +22,11 @@ class UserController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'login', 'captcha', 'ajaxLogin'),
+                'actions' => array('register', 'login', 'captcha', 'ajaxLogin', 'ajaxRegister'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('logout', 'changePassword', 'account', 'paySuccess'),
+                'actions' => array('logout', 'changePassword', 'account', 'paySuccess', 'ajaxChangePassword'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -143,6 +143,32 @@ class UserController extends WebsiteController {
         ));
     }
 
+    public function actionAjaxRegister() {
+        $userRole = User::ROLE_PATIENT;
+        $form = new UserRegisterForm();
+        $form->role = $userRole;
+        $form->terms = 1;
+        //$form->sms_verify_code = 123456;
+        $this->performAjaxValidation($form);
+
+        if (isset($_POST['UserRegisterForm'])) {
+            $form->attributes = $_POST['UserRegisterForm'];
+            //   $form->scenario = 'getSmsCode';   //set this scenario when using sms verify code.
+
+            $userMgr = new UserManager();
+            $userMgr->registerNewUser($form);
+            if ($form->hasErrors() === false) {
+                // success                
+                $loginForm = $userMgr->autoLoginUser($form->username, $form->password, $userRole, 1);
+                $output['status'] = 'ok';
+                $output['user'] = $this->getCurrentUser();
+            } else {
+                $output['errors'] = $form->getErrors();
+            }
+        }
+        $this->renderJsonOutput($output);
+    }
+
     public function actionChangePassword() {
         $user = $this->getCurrentUser();
         $form = new UserPasswordForm('new');
@@ -178,6 +204,26 @@ class UserController extends WebsiteController {
         $this->render('changePassword', array(
             'model' => $form
         ));
+    }
+
+    public function actionAjaxChangePassword() {
+        $user = $this->getCurrentUser();
+        $form = new UserPasswordForm('new');
+        $form->initModel($user);
+        $this->performAjaxValidation($form);
+
+        if (isset($_POST['UserPasswordForm'])) {
+            $form->attributes = $_POST['UserPasswordForm'];
+            $userMgr = new UserManager();
+            $success = $userMgr->doChangePassword($form);
+
+            if ($success) {
+                // $this->redirect(array('user/account'));
+                $output['status'] = 'ok';
+                $output['user'] = $this->getCurrentUser();
+            }
+        }
+        $this->renderJsonOutput($output);
     }
 
     public function actionPaySuccess($id) {

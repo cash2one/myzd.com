@@ -3,11 +3,13 @@ $user = $this->getCurrentUser();
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBookingList = $this->createUrl('booking/list');
 $urlSettings = $this->createUrl('user/changePassword');
+$urlHelp = $this->createUrl('site/page',array('view'=>'help'));
 $urlBack = $this->createUrl('booking/feedback');
 $menus = array(
-    'bookinglist' => array('url' => $urlBookingList, 'label' => '我的预约单'),
+    'bookinglist' => array('url' => $urlBookingList, 'label' => '我的手术'),
     'settings' => array('url' => $urlSettings, 'label' => '账号设置'),
-    'back' => array('url' => $urlBack, 'label' => '问题反馈'),
+    'help' => array('url' => $urlHelp, 'label' => '帮助中心'),
+    //'back' => array('url' => $urlBack, 'label' => '问题反馈'),
 );
 ?>
 <div class="login-menu mb20">

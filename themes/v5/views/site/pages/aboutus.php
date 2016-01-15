@@ -13,7 +13,8 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     .page-content .panel-body{padding-top:30px;min-height: 400px;}    
 
 </style>
-<div class="container-fluid bg-gray h400">
+<div class="container-fluid aboutus-header h400">
+    <img src="<?php echo $urlResImage; ?>aboutus/our-header.png"/>
 </div>
 <div class="container-fluid">
     <div class="row">

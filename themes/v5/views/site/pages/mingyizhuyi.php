@@ -3,7 +3,8 @@ $menu = $this->getPageMenu();
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/mingyizhuyi.css");
 ?>
-<div class="container-fluid bg-gray h400">
+<div class="container-fluid aboutus-header h400">
+    <img src="<?php echo $urlResImage; ?>aboutus/our-header.png"/>
 </div>
 <div class="container-fluid bg-gray-f7">
     <div class="row">

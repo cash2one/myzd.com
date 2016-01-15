@@ -30,6 +30,7 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 .pl20{padding-left: 20px;}
 .pl30{padding-left: 30px;}
 .pl40{padding-left: 40px;}
+.pl100{padding-left: 100px;}
 .pr0{padding-right: 0;}
 .pr10{padding-right: 10px;}
 .pr20{padding-right: 20px;}
@@ -91,7 +92,7 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 @media (min-width: 768px){#site-header #header-nav>li{width: 20%;}}
 #site-header #header-nav>li{font-size:1.2em;}
 #site-header #header-nav>li *{text-align:center;}
-#site-header #header-nav>li>a{padding:10px 12px;color: #000;letter-spacing: 3px;font-size:16px;color:#19aea5;font-weight:bold;}
+#site-header #header-nav>li>a{padding:10px 12px;color: #3e3a39;letter-spacing: 3px;font-size:16px;font-weight:bold;}
 #site-header #header-nav>li>a:hover{color: #19aea5;}
 #site-header #header-nav>li.open>a{background:none;}
 #site-header #header-nav>.dropdown>.dropdown-menu{border:none;background-color:#fff;width: 20%;}
@@ -110,10 +111,14 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 //.phone{margin-top: -5px;}
 //@media (min-width: 992px){#site-header #header-nav>li,#site-header #header-nav>.dropdown>.dropdown-menu{min-width: 150px;}}
 /**** quickBooking ****/
-.mybooking {background-color: #19aea5;height: 140px;line-height: 120px;padding: 1em 1em 0;}
+.mybooking {background-color: #19aea5;height: 120px;line-height: 100px;padding: 1em 1em 0;}
 .mybooking-text {font-size: 18px;letter-spacing: 0.5em;}
+/**** loginModal ****/
+@media (min-width: 768px){#loginModal .modal-dialog,#registerModal .modal-dialog {width: 600px;margin: 100px auto 30px;}}
 /**** site-content ****/
+.nav-pills>li>a{color: #686868;}
 .text17{font-size: 17px;}
+.text12{font-size: 12px;}
 .line-height2-5em{line-height: 2.4em;}
 .passage {line-height: 2;}
 .border-gray{border: 1px solid #e4e4e4;}
@@ -121,6 +126,7 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 .divider{border-bottom: 1px solid #888;}
 .divide-line-black{border-bottom:1px solid #717071;}
 .divide-line-gray {border-top: 1px solid #686868;}
+.color-gray{color: #686868;}
 #site-content{padding-bottom: 50px;}
 #site-content .container-title{font-size: 32px;margin-top: 20px;margin-bottom: 10px;}
 a,a:hover{text-decoration: none;}
@@ -153,7 +159,7 @@ form span.required {color: #E21E1A;}
 .btn-verifycode:hover {color: #fff;background-color: #ec971f;border-color: #d58512;}
 .btn-yes {color: #fff;background-color: #19aea5;border:0!important;border-radius: 5px!important;}
 .btn-yes:hover, .btn-yes:focus ,.btn-yes:active{color: #fff;background-color: #7bc9ca;border:0;}
-.btn-disabled{background-color: #ddd;border-radius: 5px!important;padding: 5px 20px;letter-spacing: 2px;}
+.btn-disabled,.btn-disabled:hover{background-color: #ddd;border-radius: 5px!important;padding: 5px 20px;letter-spacing: 2px;color: #333;}
 .abs-btn {display: block;margin: 10px;padding: 3px 20px;font-size: 15px;border-radius: 5px;}
 .btn-booking {background-color: #EFA429;border: 1px solid #EFA429;border-radius: 5px!important;padding: 5px 20px;letter-spacing: 2px;color: #fff;}
 .btn-booking:hover, .btn-booking:focus, .btn-booking:active {color: #fff;background-color: #ec971f;border: 1px solid #EFA429;}
@@ -177,6 +183,9 @@ form span.required {color: #E21E1A;}
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {z-index: 2;color: #fff;cursor: default;background-color: #19aea5;border-color: #19aea5;}
 .pagination>li>a, .pagination>li>span{color: #19aea5;}
 .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus{color: #19aea5;}
+/**** aboutus ****/
+.aboutus-header{background-color:#33cccc;text-align:center;}
+.aboutus-header img{display: block;margin: 0 auto;}
 /**** site-footer-old ****/
 .totop{position: fixed;bottom: 20%;right: 10px;width: 40px;height: 36px;background: url(../images/icons/totop.png);}
 .totop:hover{cursor: pointer;background-position:0 35px;}

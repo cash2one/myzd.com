@@ -1,8 +1,8 @@
 jQuery(function () {
     //图片上传板块
     var $ = jQuery, // just in case. Make sure it's not an other libaray.
-            domForm = $("#booking-form"),
-            btnSubmit = $("#btnSubmit");
+            domForm = $("#zhitongche-form"),
+            btnSubmit = $("#btnZhiTongCheSubmit");
 //提交按钮点击时间
 
     btnSubmit.click(function () {
@@ -35,6 +35,16 @@ jQuery(function () {
                 required: true,
                 maxlength: 50
             },
+            'booking[mobile]': {
+                required: true,
+                isMobile: true
+            },
+            'booking[verify_code]': {
+                required: true,
+                digits: true,
+                maxlength: 6,
+                minlength: 6
+            },
             'booking[disease_name]': {
                 required: true,
                 maxlength: 50
@@ -64,6 +74,16 @@ jQuery(function () {
             'booking[contact_name]': {
                 required: '请填写患者姓名',
                 maxlength: '患者姓名太长'
+            },
+            'booking[mobile]': {
+                required: "请输入手机号码",
+                isMobile: '请输入正确的中国手机号码!'
+            },
+            'booking[verify_code]': {
+                required: "请输入短信验证码",
+                digits: "请输入正确的短信验证码",
+                maxlength: "请输入正确的短信验证码",
+                minlength: "请输入正确的短信验证码"
             },
             'booking[disease_name]': {
                 required: '请填写疾病诊断',
@@ -97,17 +117,16 @@ jQuery(function () {
                 type: 'post',
                 url: actionUrl,
                 before: function () {
-                    $("#btnSubmit").attr("disabled", true);
+                    
                 },
                 success: function (data) {
                     if (data.status == 'ok') {
                         //弹框提示
-                        location.href = returnUrl + data.booking.id;
-//                        $('#bookingModal').modal('hide');
-//                        $("#successModal .modal-body").html("<h4>预约成功!</h4><p>我们的工作人员会尽快联系您!</p>");
-//                        $("#successModal .modal-footer").show();
-//                        $("#successModal").modal();
-//                        confirmbtnTimerStart($("#successModal .modal-footer .btn"), 5000);
+                        $('#qucikbookingModal').modal('hide');
+                        $("#successModal .modal-body").html("<h4>预约成功!</h4><p>我们的工作人员会尽快联系您!</p>");
+                        $("#successModal .modal-footer").show();
+                        $("#successModal").modal();
+                        confirmbtnTimerStart($("#successModal .modal-footer .btn"), 5000);
                     } else {
                         // 错误, data.
                         // clear previous error msg
@@ -117,9 +136,9 @@ jQuery(function () {
                         for (error in data.errors) {
                             errerMsg = data.errors[error];
                             inputKey = '#booking_' + error;
-                            //    $(inputKey).focus();
-                            $(inputKey).parent().after("<div class='error'>" + errerMsg + "</div> ");
-                            $(inputKey).parent().addClass("error");
+                            //$(inputKey).focus();
+                            domForm.find(inputKey).parent().after("<div class='error'>" + errerMsg + "</div>");
+                            //$(inputKey).parent().addClass("error");
                         }
 
                     }
@@ -135,10 +154,5 @@ jQuery(function () {
                 }
             });
         }
-    });
-    //modal关闭时初始化表单
-    $('#bookingModal').on('hide.bs.modal', function (event) {
-        $("#bookingModal form div.error").remove();
-        $("#bookingModal form input[type=reset]").trigger("click");
     });
 });

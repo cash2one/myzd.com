@@ -1,6 +1,7 @@
 .color-25aea6{color:#25aea6;}
 .color-red{color:#e50011;}
 .color-status{color:#185396;}
+a.color-status:hover{cursor: pointer;}
 .color-statement{color:#595757;}
 .btn-yes1 {color: #fff;background-color: #19aea5;border:0!important;border-radius: 5px!important;width:120px;font-size:16px;}
 .btn-yes1:hover, .btn-yes:focus ,.btn-yes:active{color: #fff;background-color: #7bc9ca;border:0;}
@@ -18,12 +19,14 @@
 .login-menu ul>li>a .icon-img{width: 19px;height: 20px;background-repeat: no-repeat;margin-right: 3px;display: inline-block;line-height: 1em;position: absolute;left: 3em;}
 .login-menu ul>li>.bookinglist .icon-img{background-image: url(../images/user/icon_user.png);background-position: 0 -20px;}
 .login-menu ul>li>.settings .icon-img{background-image: url(../images/user/icon_user.png);background-position: -20px -20px;}
-.login-menu ul>li>.back .icon-img{background-image: url(../images/user/icon_user.png);background-position: -40px -20px;}
+.login-menu ul>li>.help .icon-img{background-image: url(../images/user/icon_user.png);background-position: -40px -20px;}
+.login-menu ul>li>.back .icon-img{background-image: url(../images/user/icon_user.png);background-position: -60px -20px;}
 .login-menu ul>li>.bookinglist.active .icon-img{background-image: url(../images/user/icon_user.png);background-position: 0px 0px;}
 .login-menu ul>li>.settings.active .icon-img{background-image: url(../images/user/icon_user.png);background-position: -20px 0;}
-.login-menu ul>li>.back.active .icon-img{background-image: url(../images/user/icon_user.png);background-position: -40px 0;}
+.login-menu ul>li>.help.active .icon-img{background-image: url(../images/user/icon_user.png);background-position: -40px 0;}
+.login-menu ul>li>.back.active .icon-img{background-image: url(../images/user/icon_user.png);background-position: -60px 0;}
 .login-menu ul .menu-header{text-align: left;font-size: 15px;font-weight: bold;padding: 10px 10px;}
-.user-header{border: 1px solid #78c7bb;min-height: 100px;}
+.user-header{border: 1px solid #21a59c;min-height: 100px;}
 /**** bookinglist ****/
 .bookinglist{padding-bottom: 20px;}
 .bookinglist .table{font-size: 14px;}
@@ -50,7 +53,7 @@
 .paySuccess .user-header .tooltip-inner {max-width: 140px;padding: 3px 8px;color: #f00;text-align: left;text-decoration: none;background-color: #fff;border-radius: 4px;border: 1px solid #31708f;}
 .paySuccess ul{padding-left: 18px;}
 .paySuccess ul li{list-style: disc;font-size: 15px;color: #9f9fa0;margin-bottom: 15px;}
-.paySuccess .bookingInfo{padding: 20px;border: 1px solid #78c7bb;border-radius: 15px;margin:0 50px;}
+.paySuccess .bookingInfo{padding: 20px;border: 1px solid #9f9fa0;border-radius: 15px;margin:10px 100px 0;}
 /**** payment ****/
 .payment .user-header{min-height:113px;padding-top:10px;}
 .payment .radio input[type=radio]{margin: 15px 0 0 -20px;}

@@ -5,7 +5,8 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/joi
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <style>.ml44{margin-left:44px;}</style>
-<div class="container-fluid bg-gray h400">
+<div class="container-fluid aboutus-header h400">
+    <img src="<?php echo $urlResImage; ?>aboutus/our-header.png"/>
 </div>
 <div class="container-fluid">
     <div class="row">

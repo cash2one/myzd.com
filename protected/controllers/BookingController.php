@@ -28,7 +28,7 @@ class BookingController extends WebsiteController {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('ajaxCreate', 'update', 'userBooking', 'bookingFile'),
+                'actions' => array('ajaxCreate', 'update', 'userBooking', 'bookingFile','cancelbook'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users

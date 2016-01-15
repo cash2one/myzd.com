@@ -41,7 +41,7 @@ $bookinglist = $data->results;
                         if ($bookinglist) {
                             foreach ($bookinglist as $booking) {
                                 ?>
-                                <tr>
+                                <tr id="<?php echo $booking->id; ?>">
                                     <td class="text-center"><?php echo $booking->refNo; ?></td>
                                     <td class="text-center"><?php echo $booking->contact_name; ?></td>
                                     <td>
@@ -49,10 +49,20 @@ $bookinglist = $data->results;
                                         <div class="ml15"><?php echo $booking->hpName == '' ? '无' : $booking->hpName; ?></div>
                                     </td>
                                     <td class="">
-                                        <div class="color-red"><?php echo $booking->bkStatus; ?></div>
+                                        <div class="color-red bkStatus"><?php echo $booking->bkStatus; ?></div>
                                         <div><a target="_blank" href="<?php echo $this->createUrl('booking/userBooking', array('id' => $booking->id)); ?>" class="color-status">详情</a></div>
                                     </td>
-                                    <td class="text-center"><a class="color-status" href="javascript:void(0);" data-toggle="modal" data-target="#cancelOrder">取消订单</a></td>
+                                    <td class="text-center">
+                                        <?php
+                                        if ($booking->bkStatusId == 9) {
+                                            echo '已取消';
+                                        } else {
+                                            ?>
+                                            <a class="color-status" data-id="<?php echo $booking->id; ?>" data-href="<?php echo $this->createUrl('booking/cancelbook', array('id' => $booking->id)); ?>" data-toggle="modal" data-target="#cancelOrder">取消订单</a>
+                                            <?php
+                                        }
+                                        ?>
+                                    </td>
                                 </tr>
                                 <?php
                             }
@@ -74,10 +84,34 @@ $bookinglist = $data->results;
                     <h4 class="text-center color-green">您好！您确认要取消订单吗？</h4>
                     <div class="text-center mt20">
                         <a class="btn btn-default" data-dismiss="modal">取消</a>
-                        <a class="btn btn-yes">确认</a>
+                        <a id="cancelSubmit" class="btn btn-yes">确认</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+        $('#cancelOrder').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var href = button.attr('data-href');
+            var booingId = button.attr('data-id');
+            $('#cancelSubmit').attr({'data-href': href, 'data-id': booingId});
+        });
+        $('#cancelSubmit').click(function (e) {
+            e.preventDefault();
+            var urlSubmit = $(this).attr('data-href');
+            var trId = '#' + $(this).attr('data-id');
+            $.ajax({
+                url: urlSubmit,
+                success: function (data) {
+                    if (data.status == 'ok') {
+                        $('#cancelOrder').modal('hide');
+                        $(trId).find('.bkStatus').text('已取消');
+                    }
+                }
+            });
+        });
+    });
+</script>

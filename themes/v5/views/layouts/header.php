@@ -2,19 +2,24 @@
 Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.form.js', CClientScript::POS_END);
 Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.validate.min.js', CClientScript::POS_END);
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login.js", CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/register.js", CClientScript::POS_HEAD);
 $siteMenu = $this->loadSiteMenu();
 $facultyMenu = $siteMenu["faculty"];
 $aboutusMenu = $this->loadSiteMenu()["site"];
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $loginUrl = $this->createUrl('user/login');
 $ajaxLoginUrl = $this->createUrl('user/ajaxLogin');
+$ajaxRegisterUrl = $this->createUrl('user/ajaxRegister');
+$urlGetSmsVerifyCode = $this->createAbsoluteUrl('/auth/sendSmsVerifyCode');
+$authActionType = AuthSmsVerify::ACTION_USER_REGISTER;
 $registerUrl = $this->createUrl('user/register');
 $urlLogout = $this->createUrl('user/logout');
 $bookinglist = $this->createUrl('booking/list');
 $urlDownloadApp = $this->createUrl('download/app');
-$urlDoctorSearch = $this->createUrl('doctor/search',array('disease_category'=>1));
-$urlHopitalSearch = $this->createUrl('hospital/search',array('disease_category'=>1));
+$urlDoctorSearch = $this->createUrl('doctor/search', array('disease_category' => 1));
+$urlHopitalSearch = $this->createUrl('hospital/search', array('disease_category' => 1));
 $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
+$urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'));
 ?>
 <section id="site-header">
     <div class="container-fluid bg-gray home-top">
@@ -27,7 +32,7 @@ $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
                     if (isset($user)) {
                         echo '<span class="user">您好！&nbsp;<a target="_blank" href="' . $bookinglist . '">' . $user->getUsername() . '</a>&nbsp;</span>|<a id="logout" href="' . $urlLogout . '">&nbsp;退出&nbsp;</a>|<a target="_blank" href="' . $bookinglist . '">&nbsp;我的手术&nbsp;|</a>';
                     } else {
-                        echo '<span class="user">您好！&nbsp;请&nbsp;<a data-toggle="modal" data-target="#loginModal">登陆</a>/<a target="_blank" href="' . $registerUrl . '">注册</a>&nbsp;</span>|';
+                        echo '<span class="user">您好！&nbsp;请&nbsp;<a data-toggle="modal" data-target="#loginModal">登陆</a>/<a target="_blank" data-toggle="modal" data-target="#registerModal">注册</a>&nbsp;</span>|';
                     }
                     ?>
                     <a data-toggle="modal" data-target="#qucikbookingModal">&nbsp;快速预约&nbsp;</a>|<a target="_blank" href="<?php echo $urlDownloadApp; ?>">&nbsp;下载APP</a>
@@ -88,14 +93,14 @@ $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
                         <label class="col-sm-3 control-label required" for="UserLoginForm_username">用户名 <span class="required">*</span></label>                
                         <div class="col-sm-8">
                             <input class="form-control" placeholder="输入手机号" name="UserLoginForm[username]" id="UserLoginForm_username" type="text">                        
-                            <div class="errorMessage" id="UserLoginForm_username_em_" style="display:none"></div>                    
+                            <div class="Message" id="UserLoginForm_username_em_" style="display:none"></div>                    
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label required" for="UserLoginForm_password">登录密码 <span class="required">*</span></label>
                         <div class="col-sm-8">
                             <input class="form-control" autocomplete="off" placeholder="输入密码" name="UserLoginForm[password]" id="UserLoginForm_password" type="password">                    
-                            <div class="errorMessage" id="UserLoginForm_password_em_" style="display:none"></div>                    
+                            <div class="Message" id="UserLoginForm_password_em_" style="display:none"></div>                    
                         </div>
                     </div>
                     <div class="form-group">
@@ -103,7 +108,7 @@ $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
                             <input id="ytUserLoginForm_rememberMe" type="hidden" value="0" name="UserLoginForm[rememberMe]">
                             <input class="radio-checkbox" name="UserLoginForm[rememberMe]" id="UserLoginForm_rememberMe" value="1" type="checkbox">                        
                             <label class="radio-label" for="UserLoginForm_rememberMe">下次记住我</label>
-                            <div class="errorMessage" id="UserLoginForm_rememberMe_em_" style="display:none"></div>
+                            <div class="Message" id="UserLoginForm_rememberMe_em_" style="display:none"></div>
                             <div class="pull-right hide">
                                 <a class="nostyle strong" href="/mingyizhudao/user/forgetPassword">&gt;&gt;忘记密码？</a>
                             </div>
@@ -119,3 +124,115 @@ $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
         </div>
     </div>
 </div>
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="loginModal">注册</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" id="register-form" action="<?php echo $ajaxRegisterUrl; ?>" method="post">
+                    <div>
+                        <input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
+                        <input type="hidden" value="<?php echo $authActionType; ?>" name="smsverify[actionType]" id="smsverify_actionType">
+                        <input class="hide" type="text">
+                        <input class="hide" type="password">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label required" for="UserRegisterForm_username">手机号 <span class="required">*</span></label>    
+                        <div class="col-sm-8 controls">
+                            <input class="form-control" maxlength="11" placeholder="请输入有效的中国手机号码" name="UserRegisterForm[username]" id="UserRegisterForm_username" type="number">        
+                            <div class="Message" id="UserRegisterForm_username_em_" style="display: none;"></div>    </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="padright0 col-sm-3 col-md-3 control-label">验证码:</label>
+                        <div class="col-sm-8 controls">
+                            <div class="input-group">
+                                <input class="form-control" maxlength="6" name="UserRegisterForm[verify_code]" id="UserRegisterForm_verify_code" type="number">            
+                                <div id="btn-sendRegSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>
+                            </div>
+                            <div class="Message" id="UserRegisterForm_verify_code_em_" style="display:none"></div>    </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label required" for="UserRegisterForm_password">登录密码 <span class="required">*</span></label>    
+                        <div class="col-sm-8 controls">
+                            <input class="form-control" autocomplete="off" maxlength="40" placeholder="4至20位英文或数字" name="UserRegisterForm[password]" id="UserRegisterForm_password" type="password">                    
+                            <div class="Message" id="UserRegisterForm_password_em_" style="display:none"></div>    </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label required" for="UserRegisterForm_password_repeat">确认密码 <span class="required">*</span></label>    
+                        <div class="col-sm-8 controls">
+                            <input class="form-control" autocomplete="off" placeholder="请再次输入密码" name="UserRegisterForm[password_repeat]" id="UserRegisterForm_password_repeat" type="password">                    
+                            <div class="Message" id="UserRegisterForm_password_repeat_em_" style="display:none"></div>    </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-8 controls">
+                            <div class="checkbox pull-left">
+                                <label class="radio-label">
+                                    <input id="ytUserRegisterForm_terms" type="hidden" value="0" name="UserRegisterForm[terms]"><input class="radio-checkbox" value="1" name="UserRegisterForm[terms]" id="UserRegisterForm_terms" checked="checked" type="checkbox">同意名医主刀<a class="nostyle" href="<?php echo $urlTerms; ?>" target="_blank">《在线服务条款》</a>
+                                </label>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="Message" id="UserRegisterForm_terms_em_" style="display:none"></div>    </div>
+                    </div>
+                    <div class="form-group mt30 mb30">
+                        <div class="col-sm-offset-3 col-sm-4">
+                            <button id="btnRegisterSubmit" type="button" class="btn btn-yes btn-lg btn-block">注册</button>			
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btn-sendRegSmsCode").click(function (e) {
+            e.preventDefault();
+            sendSmsVerifyCode($(this));
+        });
+    });
+
+    function sendSmsVerifyCode(domBtn) {
+        var domMobile = $("#UserRegisterForm_username");
+        var mobile = domMobile.val();
+        if (mobile.length === 0) {
+            $("#UserRegisterForm_username-error").remove();
+            $("#UserRegisterForm_username").after('<div id="UserRegisterForm_username-error" class="error">请输入手机号码</div>');
+        } else if (domMobile.hasClass("error")) {
+            // mobile input field as , so do nothing.
+        } else {
+            buttonTimerStart(domBtn, 60000);
+            $domForm = $("#register-form");
+            var actionUrl = $domForm.find("input[name='smsverify[actionUrl]']").val();
+            var actionType = $domForm.find("input[name='smsverify[actionType]']").val();
+            var formData = new FormData();
+            formData.append("AuthSmsVerify[mobile]", mobile);
+            formData.append("AuthSmsVerify[actionType]", actionType);
+            $.ajax({
+                type: 'post',
+                url: actionUrl,
+                data: formData,
+                dataType: "json",
+                processData: false,
+                contentType: false,
+                'success': function (data) {
+                    if (data.status === true) {
+                        //domForm[0].reset();
+                    }
+                    else {
+                        console.log(data);
+                    }
+                },
+                '': function (data) {
+                    console.log(data);
+                },
+                'complete': function () {
+                }
+            });
+        }
+    }
+</script>

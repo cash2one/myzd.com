@@ -1,5 +1,30 @@
 $(document).ready(function () {
-
+    var adsbxslider = $('#homeads .bxslider').bxSlider({
+        slideMargin: 0,
+        controls: true,
+        auto: true
+    });
+    $("#homeads .bx-wrapper").mouseover(function () {
+        adsbxslider.stopAuto();
+        $("#homeads .bx-controls-direction").show();
+    });
+    $("#homeads .bx-wrapper").mouseout(function () {
+        adsbxslider.startAuto();
+        $("#homeads .bx-controls-direction").hide();
+    });
+    
+    $('.searchdoctor-tab').click(function () {
+        $('.search-top').removeClass('active');
+        $(this).addClass('active');
+        $('#home-doctor-search-form').show();
+        $('#home-hospital-search-form').hide();
+    });
+    $('.searchhospital-tab').click(function () {
+        $('.search-top').removeClass('active');
+        $(this).addClass('active');
+        $('#home-doctor-search-form').hide();
+        $('#home-hospital-search-form').show();
+    });
 });
 function ajaxLoadDoctor(urlLoadDoctor, urlDoctorView) {
     $.ajax({
@@ -24,8 +49,10 @@ function setDoctorHtml(data, urlDoctorView) {
             var doctors = disease_category[x];
             for (var i = 0; i < doctors.length; i++) {
                 var doctor = doctors[i];
+                var contractedImg = doctor.isContracted == 1 ? '<div class="pull-right contracted-img"></div>' : '';
                 innerHtml += '<div class="col-md-3 " ><a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                         '<div class="expInfo text-center bg-white explist-border">' +
+                        contractedImg +
                         '<div><img class="img100" src="' + doctor.imageUrl + '"/></div>' +
                         '<div class="expName color-black strong">' + doctor.name + '</div>' +
                         '<div class="expTitle">' + doctor.mTitle + ' ' + doctor.aTitle + '</div>' +

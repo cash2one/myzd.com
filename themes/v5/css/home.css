@@ -1,3 +1,14 @@
+/**** 轮播图 ****/
+.block-center{margin: 0 auto;display: block;}
+.bx-wrapper{margin-bottom: 0!important;}
+.bx-controls{width: 100%;}
+.bx-next{display: block;}
+.bx-prev:hover,.bx-next:hover{opacity: 0.7;}
+.bx-pager{bottom: 10px!important;width:100%!important;text-align: center!important;}
+.bx-controls-auto{display: none;}
+#homeads .bx-controls-direction{display: none;z-index: 1!important;}
+.bx-wrapper .bx-controls-direction a{display: block;text-indent: -9999px;font-size:0;line-height:0;}
+#homeads{background: url(../images/loading/loading02.gif) no-repeat center center;}
 .bg-lunbo{background-image:url('../images/home/bg_header.jpg');}
 .home-header{height:600px;}
 .home-slogn{margin-top:115px;}
@@ -20,6 +31,7 @@
 .nav-tabs>.neike1>a,.nav-tabs>.neike1.active>a{border-right:none!important;}
 .expert .nav-tabs>li{width: 16.66666667%;}
 .expert .nav-tabs>li>a{margin-right: 0;}
+.contracted-img {margin-top: 40px;margin-right: -12px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
 .title{background:url(../images/home/home_wire.png) no-repeat;background-position:center 40px;margin-top:40px;}
 .title .title-lg{font-size:45px;color:#3973ac;letter-spacing:8px;}
 .title .title-sm{letter-spacing:10px;color:#3973ac;margin-top:-4px;}
@@ -36,8 +48,10 @@
 .xiaoerwaike:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-1005px -180px;}
 .wuguanke:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-1340px -180px;}
 .neike:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-1675px -180px;}
-.recommend-area{width:100px;height:100px;line-height:100px;background-color:#efefef;}
+.recommend-area{width:100px;height:100px;background-color:#efefef;display: table-cell;vertical-align: middle;padding: 0 5px;overflow: hidden;}
 .color-blue{color:#3973ac;}
+.expInfo:hover{box-shadow: 1px 1px 3px 3px #ddd;}
+.expInfo:hover.explist-border{border-color: #19aea5;}
 .explist-border{border:3px solid #87ccc5;}
 .login{color:#595757;}
 .input-area{width:100%!important;padding:20px 45px;font-size:24px;height:60px;border-bottom-right-radius: 0;border-top-right-radius: 0;}
@@ -59,3 +73,16 @@
 .citylist span{display: inline-block;padding-right: 10px;padding-top: 10px;}
 .w83{width:83%;}
 .w17{width:17%;}
+/**** 专题色值 ****/
+.color1{background-color: #faf0dd;color: #686868;}
+.color2{background-color: #faf0dd;color: #686868;}
+.color3{background-color: #faf0dd;color: #686868;}
+.color4{background-color: #faf0dd;color: #686868;}
+.color5{background-color: #faf0dd;color: #686868;}
+.color6{background-color: #faf0dd;color: #686868;}
+.color7{background-color: #faf0dd;color: #686868;}
+.color8{background-color: #faf0dd;color: #686868;}
+.color9{background-color: #faf0dd;color: #686868;}
+.color10{background-color: #faf0dd;color: #686868;}
+.color11{background-color: #faf0dd;color: #686868;}
+.color12{background-color: #faf0dd;color: #686868;}

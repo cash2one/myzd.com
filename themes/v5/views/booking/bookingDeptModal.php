@@ -2,14 +2,18 @@
 Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.form.js', CClientScript::POS_END);
 Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.validate.min.js', CClientScript::POS_END);
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/booking.js', CClientScript::POS_END);
+
+$urlResImage = Yii::app()->theme->baseUrl . "/images/";
+$urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'));
 $urlSubmitForm = $this->createUrl("booking/ajaxCreate");
-$urlReturn = $this->createUrl('booking/success',array('id'=>''));
+$urlReturn = $this->createUrl('booking/success', array('id' => ''));
 ?>
 <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="text-center mybooking">
-                <div class="color-white mybooking-text">我要预约</div>
+            <div class="mybooking">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="mybooking-text text-center color-white"><img src="<?php echo $urlResImage; ?>general/booking.png"> 我要预约</div>
             </div>
             <div class="booking-form">
                 <div class="form-wrapper">
@@ -44,18 +48,18 @@ $urlReturn = $this->createUrl('booking/success',array('id'=>''));
                                 <textarea name="booking[disease_detail]" placeholder="请详细的描述患者的病情" class="form-control" maxlength="1000" rows="3" id="booking_disease_detail"></textarea>                              
                             </div>
                         </div>
-                        <div class="form-group mt50">
-                            <div class="col-sm-offset-3 col-sm-8">
+                        <div class="form-group mt30">
+                            <div class="col-sm-offset-3 col-sm-8 controls">
                                 <div class="checkbox">
                                     <label>
-                                        <input name="booking[terms]" type="checkbox">我已同意《名医主刀在线用户协议》
+                                        <input name="booking[terms]" type="checkbox" checked="checked">我已同意《<a href="<?php echo $urlTerms; ?>" target="_blank">名医主刀在线用户协议</a>》
                                     </label>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group mt20">
                             <div class="col-sm-6 col-sm-offset-3">
-                                <button id="btnSubmit" type="submit" class="btn btn-lg btn-yes btn-block state-pedding" name="">提&nbsp;交</button>
+                                <button id="btnSubmit" type="button" class="btn btn-lg btn-yes btn-block state-pedding" name="">提&nbsp;交</button>
                                 <input type="reset" name="reset" style="display: none;" />
                             </div>
                             <div class="clearfix"></div>

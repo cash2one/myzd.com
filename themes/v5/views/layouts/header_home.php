@@ -35,13 +35,17 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <script>
     $(document).ready(function () {
+        $('#show_top').click(function () {
+            $("html,body").animate({"scrollTop": 0}, 0);
+            $('#header_home').slideToggle(300);
+        });
         //滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定
         var navH = 396;
         $(window).scroll(function () {
             var scroH = $(this).scrollTop();
             var is_show = $("#header_home").is(':visible');
             if (is_show && scroH >= navH) {
-                $("#header_home").slideUp(0);
+                $("#header_home").slideUp(10);
                 $("html,body").animate({"scrollTop": 0}, 0);
             }
         });

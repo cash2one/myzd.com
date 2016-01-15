@@ -32,10 +32,10 @@ $booking = $data->results->booking;
             </div>
             <div class="pb40 border-green mt10">              
                 <div>
-                    <h3 class="text-center color-green"><img src="<?php echo $urlResImage; ?>user/TKCG.png"> 1000元预约金支付成功</h3>
+                    <h3 class="text-center color-green mb0"><img src="<?php echo $urlResImage; ?>user/TKCG.png"> 1000元预约金支付成功</h3>
                     <div class="text-center">预约单：<?php echo $booking->refNo; ?></div>
                     <div>
-                        <div class="pl70">您的预约单详情如下：</div>
+                        <div class="pl100">您的预约单详情如下：</div>
                         <div class="bookingInfo">
                             <ul>
                                 <li>患者姓名：<?php echo $booking->patientName; ?></li>

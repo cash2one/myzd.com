@@ -54,7 +54,7 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
         <div class="row">
             <div class="container">
                 <div class="text-center title">
-                    <div class="title-lg">签约专家</div>
+                    <div class="title-lg">权威专家</div>
                     <div class="title-sm">做手术就找名医主刀</div>			
                 </div>
                 <div class="expert">
@@ -80,8 +80,25 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
     <div class="container-fluid " >
         <div class="row">
             <div class="container">
-                <div id="propaganda" class="text-right mt50 mb50 img-responsive" >
-                    <img src="<?php echo $urlResImage; ?>homeslider/rectalcancer.png"/>
+                <div id="homeads" class="text-right mt50 mb50 img-responsive" >
+                    <div class="mt-fix">
+                        <ul class="bxslider">
+                            <li>
+                                <div class="xinyabang">
+                                    <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinyabang')); ?>" target="_blank">
+                                        <img src="<?php echo $urlResImage; ?>homeslider/xinyabang.jpg" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="xinyabang">
+                                    <a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank">
+                                        <img src="<?php echo $urlResImage; ?>homeslider/lujinsong.jpg" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,7 +151,9 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
             <div class="container mt50">
                 <div class="row">
                     <div class="col-md-8">
-                        <img class="img-responsive h300" src="<?php echo $urlResImage; ?>home/wanzheng.png"/>
+                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'rectalcancer')); ?>" target="_blank">
+                            <img class="img-responsive h300" src="<?php echo $urlResImage; ?>homeslider/rectalcancer.jpg"/>
+                        </a>
                     </div>
                     <div class="col-md-4 pl20">
                         <div class="pr20"><span class="text18 color-blue">精彩推荐</span><img class="ml10 mb5" src="<?php echo $urlResImage; ?>icons/icon_change.png"><div class="pull-right change" href="#carousel-example-generic" role="button" data-slide="next">换一批</div><div class="clearfix"></div></div>
@@ -145,70 +164,74 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
                                 <ol class="carousel-indicators">
                                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                                 </ol>
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
                                         <div class="col-sm-4 mt35 ">
-                                            <div class="recommend-area">111</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'tumor')); ?>" target="_blank">
+                                                <div class="recommend-area color1">当肿瘤遇上名医专家</div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-4 mt35 pl5">
-                                            <div class="recommend-area">111</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'preliverdisease')); ?>" target="_blank">
+                                                <div class="recommend-area color2">立秋之后怎样预防和治疗肝病</div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-4 mt35 pl0 ml-5">
-                                            <div class="recommend-area">111</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'rectalcancer')); ?>" target="_blank">
+                                                <div class="recommend-area color3">名医专家让你和大肠癌说再见</div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-4 mt35">
-                                            <div class="recommend-area">111</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'thyroid')); ?>" target="_blank">
+                                                <div class="recommend-area color4">甲状腺相关疾病需及早手术</div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-4 mt35 pl5">
-                                            <div class="recommend-area">111</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'ruxianai')); ?>" target="_blank">
+                                                <div class="recommend-area color5">关爱女性，关爱乳房</div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-4 mt35 pl0 ml-5">
-                                            <div class="recommend-area">111</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinxueguan')); ?>" target="_blank">
+                                                <div class="recommend-area color6">警惕心血管疾病突发</div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="col-sm-4 mt35 ">
-                                            <div class="recommend-area">112</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'guanxinbing')); ?>" target="_blank">
+                                                <div class="recommend-area color7">预防冠心病发作，名医专家有妙招</div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-4 mt35 pl5">
-                                            <div class="recommend-area">112</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'ertai')); ?>" target="_blank">
+                                                <div class="recommend-area color8">名医专家为您“宝”驾护航</div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-4 mt35 pl0 ml-5">
-                                            <div class="recommend-area">112</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'doctorInterview')); ?>" target="_blank">
+                                                <div class="recommend-area color9">泌尿疾病的克星：“达芬奇手术机器人”</div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-4 mt35">
-                                            <div class="recommend-area">112</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank">
+                                                <div class="recommend-area color10">专访乳腺癌专家——陆劲松</div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-4 mt35 pl5">
-                                            <div class="recommend-area">1121</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'dididoctor')); ?>" target="_blank">
+                                                <div class="recommend-area color11">“滴滴医生”驾到</div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-4 mt35 pl0 ml-5">
-                                            <div class="recommend-area">1121</div>
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'nationalday')); ?>" target="_blank">
+                                                <div class="recommend-area color12">欢乐出游却不小心摔伤？</div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <div class="col-sm-4 mt35 ">
-                                            <div class="recommend-area">1131</div>
-                                        </div>
-                                        <div class="col-sm-4 mt35 pl5">
-                                            <div class="recommend-area">111</div>
-                                        </div>
-                                        <div class="col-sm-4 mt35 pl0 ml-5">
-                                            <div class="recommend-area">111</div>
-                                        </div>
-                                        <div class="col-sm-4 mt35">
-                                            <div class="recommend-area">111</div>
-                                        </div>
-                                        <div class="col-sm-4 mt35 pl5">
-                                            <div class="recommend-area">111</div>
-                                        </div>
-                                        <div class="col-sm-4 mt35 pl0 ml-5">
-                                            <div class="recommend-area">111</div>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -220,23 +243,8 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
 </section>
 <script>
     $(document).ready(function () {
-        $('#show_top').click(function () {
-            $('#header_home').slideToggle(500);
-        });
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
-        $('.searchdoctor-tab').click(function () {
-            $('.search-top').removeClass('active');
-            $(this).addClass('active');
-            $('#home-doctor-search-form').show();
-            $('#home-hospital-search-form').hide();
-        });
-        $('.searchhospital-tab').click(function () {
-            $('.search-top').removeClass('active');
-            $(this).addClass('active');
-            $('#home-doctor-search-form').hide();
-            $('#home-hospital-search-form').show();
-        });
         $('#searchdoctor-btn').click(function (e) {
             e.preventDefault();
             var disease_name = $('#home-doctor-search-form .disease-name').val();
