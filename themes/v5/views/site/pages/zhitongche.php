@@ -196,7 +196,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                             <div class="clearfix"></div>
                         </div>
                         <div class="mt30">
-                            <div class="mt10 pull-left story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-1.png"></div>
+                            <div class="mt10 pull-left story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-2.png"></div>
                             <div class="pt10 pl90">
                                 <div class="story-content-title">父亲两次抗癌,只为...</div>
                                 <div class="text12">我们接到孟先生女儿电话的时候，孟先生癌细胞已经恶化的非常严重了，随时会大规模扩散危急...<a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'kangai')); ?>" class="color-red-ff0000">详情></a></div>
@@ -204,59 +204,13 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                             <div class="clearfix"></div>
                         </div>
                         <div class="mt30">
-                            <div class="mt10 pull-left story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-1.png"></div>
+                            <div class="mt10 pull-left story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-3.png"></div>
                             <div class="pt10 pl90">
                                 <div class="story-content-title">年轻妈妈的生命倒...</div>
                                 <div class="text12">在大家准备和亲人团聚欢度十一长假的时候，有一个家庭却在承受亲人命悬一线的折磨。36岁...<a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'mamajixufeiyuan')); ?>" class="color-red-ff0000">详情></a></div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                    </div>
-
-                    <div class="mt20 message-content text12">
-                        <div class="divide-dashed-green">
-                            <span class="answers-title">患者留言&nbsp;|</span>
-
-                        </div>
-                        <div class="pb20 divide-dashed68">
-                            <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名123</div></div></div>
-                            <div class="pt20 appraise">
-                                <div><div class="mt5">主刀专家：<strong>戴永明</strong>&nbsp;|&nbsp;确诊疾病：<strong>先天性...</strong></div></div>
-                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
-                                <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
-
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="mt20 h54p">感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢</div>
-                            <div class="pull-right">2015年12月12日</div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="pb20 divide-dashed68">
-                            <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名123</div></div></div>
-                            <div class="pt20 appraise">
-                                <div><div class="mt5">主刀专家：<strong>戴永明</strong>&nbsp;|&nbsp;确诊疾病：<strong>先...</strong></div></div>
-                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
-                                <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
-
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="mt20 h54p">感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢</div>
-                            <div class="pull-right">2015年12月12日</div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="pb20">
-                            <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名123</div></div></div>
-                            <div class="pt20 appraise">
-                                <div><div class="mt5">主刀专家：<strong>戴永明</strong>&nbsp;|&nbsp;确诊疾病：<strong>先...</strong></div></div>
-                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
-                                <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="mt20 h54p">感谢感谢感谢感感谢感谢感谢感谢感谢谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢感谢</div>
-                            <div class="pull-right">2015年12月12日</div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="color-green text-center mt20 mb20"><img src="<?php echo $urlResImage; ?>zhitongche/loading.png"></div>
                     </div>
                 </div>
             </div>
