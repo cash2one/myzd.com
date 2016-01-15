@@ -67,12 +67,19 @@ class DoctorSearchV7 extends ESearchModel {
             }
             // disease_sub_category.
             if (isset($this->queryParams['disease_sub_category'])) {
+
                 $category_id= $this->queryParams['disease_sub_category'];
-                $this->criteria->join = 'left join category_doctor_join b on t.id=b.doctor_id ';
-                $this->criteria->addCondition("b.sub_cat_id=:sub_cat_id");
-                $this->criteria->params[":sub_cat_id"] = $category_id;
-//                $this->criteria->order = 'expteam_id desc';
+                $this->criteria->join = 'left join disease_doctor_join b on t.id=b.doctor_id left join category_disease_join c on c.disease_id=b.disease_id ';
+                $this->criteria->addCondition("c.sub_cat_id=:category_id");
+                $this->criteria->params[":category_id"] = $category_id;
                 $this->criteria->distinct = true;
+
+//                $category_id= $this->queryParams['disease_sub_category'];
+//                $this->criteria->join = 'left join category_doctor_join b on t.id=b.doctor_id ';
+//                $this->criteria->addCondition("b.sub_cat_id=:sub_cat_id");
+//                $this->criteria->params[":sub_cat_id"] = $category_id;
+////                $this->criteria->order = 'expteam_id desc';
+//                $this->criteria->distinct = true;
             }
         }
     }
