@@ -157,8 +157,8 @@ form span.required {color: #E21E1A;}
 /**** btn ****/
 .btn-verifycode {color: #fff;background-color: #EFA429;border-color: #eea236;}
 .btn-verifycode:hover {color: #fff;background-color: #ec971f;border-color: #d58512;}
-.btn-yes {color: #fff;background-color: #19aea5;border:0!important;border-radius: 5px!important;}
-.btn-yes:hover, .btn-yes:focus ,.btn-yes:active{color: #fff;background-color: #7bc9ca;border:0;}
+.btn-yes {color: #fff!important;background-color: #19aea5;border:0!important;border-radius: 5px!important;}
+.btn-yes:hover{color: #fff;background-color: #7bc9ca;border:0;}
 .btn-disabled,.btn-disabled:hover{background-color: #ddd;border-radius: 5px!important;padding: 5px 20px;letter-spacing: 2px;color: #333;}
 .abs-btn {display: block;margin: 10px;padding: 3px 20px;font-size: 15px;border-radius: 5px;}
 .btn-booking {background-color: #EFA429;border: 1px solid #EFA429;border-radius: 5px!important;padding: 5px 20px;letter-spacing: 2px;color: #fff;}

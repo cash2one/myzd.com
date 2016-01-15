@@ -2,6 +2,7 @@
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <div class="container-fluid pt50 collapse bg-home-top" id="header_home">
+    <div id="close-header" class="pull-right"><img src="<?php echo $urlResImage ?>home/close.png"/></div>
     <div class="row">
         <div class="container">	
             <div class="row">
@@ -26,7 +27,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                 <div class="col-sm-3">
                     <div class="h180"><img src="<?php echo $urlResImage; ?>icons/icon_love.png"></div>
                     <div class="mt30 color-white text16">了解更多</div>
-                    <div class="mt10 color-white text13"><span class="learn-more">了解更多</span>关于名医主刀平台信息，</div>
+                    <div class="mt10 color-white text13"><a target="_blank" href="<?php echo $this->createUrl('site/page', array('view' => 'aboutus')); ?>" class="learn-more">了解更多</a>关于名医主刀平台信息，</div>
                     <div class="color-white text13">让名医随时有，手术不再难。</div>
                 </div>
             </div>
@@ -37,6 +38,9 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     $(document).ready(function () {
         $('#show_top').click(function () {
             $("html,body").animate({"scrollTop": 0}, 0);
+            $('#header_home').slideToggle(300);
+        });
+        $('#close-header').click(function () {
             $('#header_home').slideToggle(300);
         });
         //滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定

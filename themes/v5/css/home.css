@@ -14,7 +14,10 @@
 .home-slogn{margin-top:115px;}
 .slogan-lg{font-size:58px;}
 .slogan-sm{font-size:36px;}
-.bg-home-top{background-color:#5ec1b9;padding-bottom:45px;}
+#header_home{position: fixed;height: 450px;z-index: 9999;width: 100%;}
+#close-header{margin-right: 20px;margin-top: -30px;color: #fff;opacity: 1;}
+#close-header img:hover{opacity: .8;cursor: pointer;}
+.bg-home-top{background-color:#5ec1b9;padding:50px 0;}
 .search-top{margin-top:-17px;font-size:14px;height:35px;width:100px;background-color:#fff;color:#19aea5;line-height:35px;text-align:center;}
 .search-top:hover{cursor: pointer;}
 .search-top.active{background-color:#19aea5;color:#fff;}
