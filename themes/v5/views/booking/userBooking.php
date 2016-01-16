@@ -26,22 +26,28 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
                 <div class="color-status text12">预约单：<?php echo $booking->refNo; ?></div>
                 <div>
                     <?php
-                    if (isset($data->results->salesOrder) && count($data->results->salesOrder) > 0) {
-                        $salesOrder = $data->results->salesOrder;
-                        foreach ($salesOrder as $order) {
-                            echo '<h4 class="text-center color-green text20">';
-                            echo '<span>状态：' . $order->subject . ' ' . $order->finalAmount . '元</span>';
-                            if ($order->isPaid == 0) {
-                                echo '<a target="_blank" href="' . $this->createUrl('order/view', array('refno' => $order->refNo)) . '" class="pay-btn btn btn-yes">立即支付</a>';
-                            } else {
-                                echo '<span class="pay-btn btn btn-disabled">已支付</span>';
+                    if ($booking->status == 9) {
+                        echo '<h4 class="text-center color-green text20">';
+                        echo '<span>' . $booking->statusText . '</span>';
+                        echo '</h4>';
+                    } else {
+                        if (isset($data->results->salesOrder) && count($data->results->salesOrder) > 0) {
+                            $salesOrder = $data->results->salesOrder;
+                            foreach ($salesOrder as $order) {
+                                echo '<h4 class="text-center color-green text20">';
+                                echo '<span>状态：' . $order->subject . ' ' . $order->finalAmount . '元</span>';
+                                if ($order->isPaid == 0) {
+                                    echo '<a target="_blank" href="' . $this->createUrl('order/view', array('refno' => $order->refNo)) . '" class="pay-btn btn btn-yes">立即支付</a>';
+                                } else {
+                                    echo '<span class="pay-btn btn btn-disabled">已支付</span>';
+                                }
+                                echo '</h4>';
                             }
+                        } else {
+                            echo '<h4 class="text-center color-green text20">';
+                            echo '<span>无支付信息</span>';
                             echo '</h4>';
                         }
-                    } else {
-                        echo '<h4 class="text-center color-green text20">';
-                        echo '<span>无支付信息</span>';
-                        echo '</h4>';
                     }
                     ?>
                 </div>
@@ -97,7 +103,7 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
         });
     });
     function setImgHtml(data) {
-        if (data.results.files && data.results.files.length>0) {
+        if (data.results.files && data.results.files.length > 0) {
             var innerHtml = '';
             var files = data.results.files;
             for (var i = 0; i < files.length; i++) {
