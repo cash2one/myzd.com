@@ -259,6 +259,10 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
             var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease_name=' + fullName;
             window.open(urlHopitalSearch);
         });
+        
+        $('.category a').mouseover(function(){
+            $(this).trigger("click");
+        });
     });
     //根据疾病名称获取疾病全称
     function getDisFullNameByDisName(disease_name) {

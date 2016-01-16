@@ -29,7 +29,7 @@
 .home-search .container{position: relative;}
 .nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{border-bottom:3px solid #3973ac;background-color:#efefef;border-top:none;border-left:none;color:#19aea5;font-size:22px;}
 .nav-tabs>li>a,.nav-tabs>li>a:hover{color:#19aea5;font-size:22px;border-right:1px solid #ddd;background-color: #efefef;}
-.nav-tabs>li.last>a,.nav-tabs>li.last>a:hover,.nav-tabs>li.last>a:focus{color:#19aea5;font-size:22px;border-right:0;background-color: #efefef;}
+.nav-tabs>li.last>a,.nav-tabs>li.last>a:hover,.nav-tabs>li.last>a:focus{color:#19aea5;font-size:22px;border-right:0;background-color: #efefef;cursor: pointer;}
 .nav-tabs>li:hover,.nav-tabs>li:focus,.nav-tabs>li>a:hover,.nav-tabs>li>a:focus{border-bottom:none;}
 .nav-tabs>.neike1>a,.nav-tabs>.neike1.active>a{border-right:none!important;}
 .expert .nav-tabs>li{width: 16.66666667%;}
@@ -76,6 +76,7 @@
 .citylist span{display: inline-block;padding-right: 10px;padding-top: 10px;}
 .w83{width:83%;}
 .w17{width:17%;}
+.nav-tabs .category:hover,.nav-tabs .category:focus{cursor: pointer!important;}
 /**** 专题色值 ****/
 .color1{background-color: #faf0dd;color: #686868;}
 .color2{background-color: #faf0dd;color: #686868;}
