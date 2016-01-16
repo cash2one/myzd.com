@@ -161,6 +161,7 @@ function initDiseaseFunction() {
         condition["disease_sub_category"] = '';
         urlLoadDoctor = url;
         $('.department-name>span').html(condition["disease_name"]);
+        $('.disease-list a.all').removeClass('active');
         $('.disease-list a.disease').removeClass('active');
         $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
