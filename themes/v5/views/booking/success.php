@@ -30,7 +30,7 @@ $booking = $data->results->booking;
                             <h4 class="color-green">提交成功！请您上传病例资料：</h4>
                             <div class="mt20">
                                 <a href="<?php echo $this->createUrl('booking/uploadFile',array('id'=>$booking->id)); ?>" class="btn btn-yes mr20 w150p">上传影像资料</a>
-                                <a href="<?php echo $this->createUrl('booking/view',array('id'=>$booking->id)); ?>" class="color-status text12 somewhat-add">稍后添加</a>
+                                <a href="<?php echo $this->createUrl('booking/userBooking',array('id'=>$booking->id)); ?>" class="color-status text12 somewhat-add">稍后添加</a>
                             </div>
                             <div class="mt100">
                                 <a href="<?php echo $this->createUrl('booking/view',array('id'=>$booking->id)); ?>" class="showBookingInfo color-status">查看预约详情 <i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></a>
