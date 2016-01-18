@@ -35,19 +35,20 @@
 .hinfo .more-desc>a,.hinfo .retract>a{color: #EFA429;}
 .hinfo .more-desc .fa,.hinfo .retract .fa{font-size: 18px;}
 .hinfo .decs-last,.hinfo .retract{display: none;}
-.container-title{font-size:24px;font-weight:bold;}
+.container-title{font-size:24px;}
 .dept-describe{border:1px solid #efefef;padding:10px;}
 .departments{padding: 10px;}
 .departments ul>li{float: right;}
 .departments .header{font-size: 24px;margin-top: 3px;color: #19aea5;}
 .departments ul>li>a{border-radius: 0;border: 1px solid #19aea5;margin: 0;min-width: 7em;text-align: center;}
 .departments ul>li>a:hover{border-color: #19aea5;background-color: #e0f1f2;}
-.departments ul>li.active>a,.departments ul>li.active>a:hover,.departments ul>li.active>a:focus{background-color: #19aea5;color: #fff;border-color: #19aea5;}
+.departments ul>li.active>a,.departments ul>li.active>a:hover,.departments ul>li.active>a:focus{background-color: #5ebfb8;color: #fff;border-color: #19aea5;}
 .departments .dept{border: 1px solid #ddd;padding: 5px 10px 10px;}
 .departments .tab-content .btn{margin-top: -10px;}
 .nav-tabs{border:none;}
 .divide-color-ddd{border-top:1px solid #ddd;}
-.dept-title{font-size:18px;font-weight:bold;}
+.dept-title{font-size:18px;}
+.flowChart{border: 1px solid #5ebfb8;padding: 10px 0 0}
 /*.departments{padding: 10px;}
 .departments h4{padding: 5px 25px;background-color: #b1dcd6;color: #19aea5;}
 .dept>a:hover{text-decoration: underline;color: #19aea5;}

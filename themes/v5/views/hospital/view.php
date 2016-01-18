@@ -112,10 +112,10 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                                 }
                                 echo '<div role="tabpanel" class="tab-pane ' . $active . '" id="' . $j . '">';
                                 foreach ($dept as $faculty) {
-                                    $description = $faculty->description =='' ? '暂无信息' : $faculty->description;
+                                    $description = $faculty->description == '' ? '暂无信息' : $faculty->description;
                                     echo '<div class="mt20 dept-describe">' .
                                     '<div class="dept-title">' . $faculty->name . '<div class="pull-right mt5"><button class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' . $hName . '" data-dept="' . $faculty->name . '" data-hospitalid="' . $hid . '" data-deptid="' . $faculty->id . '" data-toggle="modal" data-target="#booking">预 约</button></div><div class="clearfix"></div></div>' .
-                                    '<div class="mt10 strong"><strong>科室介绍：</strong>' . $description . '</div>' .
+                                    '<div class="mt10"><span>科室介绍：</span>' . $description . '</div>' .
                                     '</div>';
                                 }
                                 echo '</div>';
@@ -126,7 +126,9 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                     <?php } ?>
                 </div>
                 <div class="col-lg-3 sol-sm-4 col-xs-12">
-                    <img src="<?php echo $urlResImage; ?>hospital/flowChart.png">
+                    <div class="flowChart">
+                        <img src="<?php echo $urlResImage; ?>doctor/flowChart.png">
+                    </div>
                 </div>
             </div>
         </div>

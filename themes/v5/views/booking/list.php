@@ -27,13 +27,13 @@ $bookinglist = $data->results;
             </div>
             <div class="bookinglist border-green mt10">
                 <table class="table">
-                    <thead class="text-center">
+                    <thead>
                         <tr>
-                            <td>订单号</td>
-                            <td>就诊人</td>
-                            <td>意向就诊专家</td>
-                            <td>状态</td>
-                            <td>操作</td>
+                            <td class="text-center">订单号</td>
+                            <td class="text-center">就诊人</td>
+                            <td class="text-center">意向就诊专家</td>
+                            <td class="pad8">状态</td>
+                            <td class="text-center">操作</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -82,9 +82,9 @@ $bookinglist = $data->results;
                 </div>
                 <div class="modal-body">
                     <h4 class="text-center color-green">您好！您确认要取消订单吗？</h4>
-                    <div class="text-center mt20">
-                        <a class="btn btn-default" data-dismiss="modal">取消</a>
-                        <a id="cancelSubmit" class="btn btn-yes">确认</a>
+                    <div class="text-center mt40">
+                        <a class="btn btn-default mr20 pl20 pr20" data-dismiss="modal">取消</a>
+                        <a id="cancelSubmit" class="btn btn-yes pl20 pr20">确认</a>
                     </div>
                 </div>
             </div>

@@ -49,12 +49,12 @@ function setDoctorHtml(data, urlDoctorView) {
             var doctors = disease_category[x];
             for (var i = 0; i < doctors.length; i++) {
                 var doctor = doctors[i];
-                var contractedImg = doctor.isContracted == 1 ? '<div class="pull-right contracted-img"></div>' : '';
+                var contractedImg = doctor.isContracted == 1 ? '<div class="contracted-img"></div>' : '';
                 innerHtml += '<div class="col-md-3 " ><a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                         '<div class="expInfo text-center bg-white explist-border">' +
                         contractedImg +
                         '<div><img class="img100" src="' + doctor.imageUrl + '"/></div>' +
-                        '<div class="expName color-black strong">' + doctor.name + '</div>' +
+                        '<div class="expName color-black">' + doctor.name + '</div>' +
                         '<div class="expTitle">' + doctor.mTitle + ' ' + doctor.aTitle + '</div>' +
                         '<div class="expHospital mt30">' + doctor.hpName + '</div>' +
                         '<div class="mt10 color-black mb50">' + doctor.hpDeptName + '</div>' +

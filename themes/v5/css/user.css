@@ -34,7 +34,9 @@ a.color-status:hover{cursor: pointer;}
 .bookinglist .table>thead>tr>td{line-height: 1.5em;padding: 10px 0;}
 .bookinglist .table>tbody>tr{border-bottom: 1px solid #eeefef;}
 .bookinglist .table>tbody>tr>td{vertical-align: middle;}
-@media (min-width: 768px){.modal-dialog.modal-sm {margin: 200px auto 30px;}}
+@media (min-width: 768px){#cancelOrder .modal-dialog.modal-sm {margin: 200px auto 30px;width: 400px;}}
+#cancelOrder .modal-dialog.modal-sm .modal-body{padding-bottom: 40px;}
+.pad8{padding: 10px 8px!important;}
 //.bookinglist .table>tbody>tr>td a{color: #31708f;}
 /**** bookingView ****/
 .bookingView .user-header{min-height:113px;padding-top:10px;}

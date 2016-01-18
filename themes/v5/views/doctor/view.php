@@ -38,7 +38,7 @@ $doctor = $data->results->doctor;
                         </ul>
                     </div>
                     <div>
-                        <div class="docinfo-title experience">执业经验</div>
+                        <div class="docinfo-title experience">执业经历</div>
                         <div class="pl30">
                             <?php echo $doctor->careerExp == null ? '暂无信息' : $doctor->careerExp; ?>
                         </div>

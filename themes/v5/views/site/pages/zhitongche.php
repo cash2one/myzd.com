@@ -19,8 +19,10 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
         <div class="container-fluid" >
             <div class="row ztc-header">
                 <div class="col-sm-offset-4 mt50">		
-                    <div class="color-green ztc-title-lg">手术直通车</div>
-                    <div class="ztc-title-text">“手术直通车”是名医主刀平台联合各大临床医疗专家，协助患者快捷手术的服务。名医主刀医疗助手将为患者整理资料、联系医生确认病情。符合手术直通车要求的患者，医院医生助理将为患者预约好入院日期、排队留床，患者在约好的日期来医院、直接入院。避免反复奔波、长时间院外待床，减少不必要的花费。</div>
+                    <div class="ml-50">
+                        <div class="color-green ztc-title-lg">手术直通车</div>
+                        <div class="ztc-title-text">“手术直通车”是名医主刀平台联合各大临床医疗专家，协助患者快捷手术的服务。名医主刀医疗助手将为患者整理资料、联系医生确认病情。符合手术直通车要求的患者，医院医生助理将为患者预约好入院日期、排队留床，患者在约好的日期来医院、直接入院。避免反复奔波、长时间院外待床，减少不必要的花费。</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,7 +82,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                     <div class="ztc-answers-content mt20">
                         <div class="divide-dashed-green">
                             <span class="answers-title">常见问题&nbsp;|</span>
-                            <div class="clearfix"></div>
+                            <div class="clearfix mt5"></div>
                         </div>
                         <div class="line-height34">
                             <div><strong>1.手术直通车为什么是收费服务？</strong></div>
