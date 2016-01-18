@@ -49,7 +49,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                     <img src="<?php echo $urlResImage ?>aboutus/picture5-01.png">
                                 </div>
                                 <div class="col-md-6 text-right pt142 font-20p color-blue">
-                                    2015年10月8日
+                                    2015年8月
                                 </div>
                             </div>
                             <div class="div-left mt4 pt10 pl10 pr10 pb40">
@@ -61,7 +61,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                     <img src="<?php echo $urlResImage ?>aboutus/picture7-01.png">
                                 </div>
                                 <div class="col-md-6 text-right pt142 font-20p color-blue">
-                                    2015年10月7日
+                                    2015年7月
                                 </div>
                             </div>
                             <div class="div-left mt4 pt10 pl10 pr10 pb20">

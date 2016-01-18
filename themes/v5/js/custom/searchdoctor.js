@@ -6,10 +6,11 @@ function setDoctorHtml(data, urlDoctorView) {
         for (var i = 0; i < doctors.length; i++) {
             var doctor = doctors[i];
             var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
+            var docdesc = '';
             if (doctor.desc) {
-                var docdesc = doctor.desc.length > 100 ? doctor.desc.substr(0, 100) + '...' : doctor.desc;
+                docdesc = doctor.desc.length > 100 ? doctor.desc.substr(0, 100) + '...' : doctor.desc;
             } else {
-                var docdesc = '暂无信息';
+                docdesc = '暂无信息';
             }
             var isContractedImg = doctor.isContracted == 0 ? '' : '<div class="pull-right contracted-img"></div><div class="clearfix"></div>';
             innerHtml += '<div class="col-md-4 col-sm-6 mt30">' +
@@ -17,7 +18,7 @@ function setDoctorHtml(data, urlDoctorView) {
                     '<div class="border-gray expert-list">' +
                     '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '"></div>' +
                     isContractedImg +
-                    '<div class="text-center strong">' + doctor.name + '</div>' +
+                    '<div class="text-center">' + doctor.name + '</div>' +
                     '<div class="text-center color-gray mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</div>' +
                     '<div class="mt10 docdesc"><span class="strong">擅长：</span>' + docdesc + '</div>' +
                     '<div class="text-center mt10"></div>' +
@@ -27,7 +28,7 @@ function setDoctorHtml(data, urlDoctorView) {
         }
         $('.doclist').html(innerHtml);
     } else {
-        $('.doclist').html('<div class="mt150 text-center">没有相关医生，请重新查找！</div>');
+        $('.doclist').html('<div class="mt150 text-center color-gray">没有相关医生，请重新查找！</div>');
     }
 }
 /**** 设置分页 ****/

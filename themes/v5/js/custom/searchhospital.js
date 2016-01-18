@@ -22,7 +22,7 @@ function setHospitalHtml(data, urlHospitalView) {
         }
         $('.hospital-list').html(innerHtml);
     } else {
-        $('.hospital-list').html('<div class="mt150 text-center">没有相关科室，请重新查找！</div>');
+        $('.hospital-list').html('<div class="mt150 text-center color-gray">没有相关科室，请重新查找！</div>');
     }
     setLocationUrl();
     initBookingBtn();

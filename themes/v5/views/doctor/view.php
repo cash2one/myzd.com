@@ -20,10 +20,10 @@ $doctor = $data->results->doctor;
                     <div class="media-left media-middle pull-left">
                         <img class="media-object doc-img" src="<?php echo $doctor->imageUrl; ?>" alt="<?php echo $doctor->name; ?>">
                     </div>
-                    <div class="media-body">
+                    <div class="media-body pl10">
                         <h4 class="media-heading mt15"><?php echo $doctor->name; ?>&nbsp;&nbsp;<span class="color-gray"><?php echo $doctor->mTitle; ?>&nbsp;&nbsp;<?php echo $doctor->aTitle; ?></span></h4>
                         <div class="mt15">
-                            <span class="expert-faculty text-center"><?php echo $doctor->hpDeptName; ?></span>
+                            <?php echo $doctor->hpDeptName == '' ? '' : '<span class="expert-faculty text-center">' . $doctor->hpDeptName . '</span>'; ?>
                         </div>
                         <div class="mt15"><?php echo $doctor->hospitalName . $doctor->hpDeptName . $doctor->name . $doctor->aTitle; ?>领衔</div>
                     </div>
@@ -105,7 +105,7 @@ $doctor = $data->results->doctor;
                     </div>
                 </div>
             </div>
-            <div class="pt40 pb30 border-green">
+            <div class="pt30 pb30 border-green">
                 <img class="" src="<?php echo $urlResImage; ?>doctor/flowChart.png">
 
                 <div class="clearfix"></div>
@@ -136,7 +136,7 @@ $doctor = $data->results->doctor;
                             </a>  
                             <?php
                         }
-                    }else{
+                    } else {
                         echo '<div class="expInfo last"><div class="mt20 mb50">暂无其他推荐</div></div>';
                     }
                     ?>

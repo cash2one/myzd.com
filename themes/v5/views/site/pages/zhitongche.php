@@ -107,85 +107,87 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="text-center booking-header">
-                        <div class="color-white booking-title"><img src="<?php echo $urlResImage; ?>general/booking.png"><span class="ml10">快速预约</span></div>
+                    <div class="text-center booking-header zhitongcheBookingBtn">
+                        <a data-toggle="modal" data-target="#qucikbookingModal">
+                            <div class="color-white booking-title"><img src="<?php echo $urlResImage; ?>general/booking.png"><span class="ml10">快速预约</span></div>
+                        </a>
                     </div>
-                    <div class="booking-form">
-                        <div class="form-wrapper">
-                            <form enctype="multipart/form-data" data-url-return="<?php echo $urlReturn; ?>" id="zhitongche-form" action="<?php echo $urlSubmitForm; ?>" method="post">
-                                <input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
-                                <input type="hidden" value="<?php echo $authActionType; ?>" name="smsverify[actionType]" id="smsverify_actionType">
-                                <div class="form-group">
-                                    <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>
-                                    <div class="col-sm-9 controls">
-                                        <input name="booking[contact_name]" placeholder="请填写患者的真实姓名" class="form-control" maxlength="50" id="booking_contact_name" type="text">                                </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机:</label>
-                                    <div class="col-sm-9 controls">
-                                        <input name="booking[mobile]" placeholder="请输入手机号" class="form-control booking-mobile" maxlength="11" id="booking_mobile" type="text">                     
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">验证码:</label>
-                                    <div class="col-sm-9 controls">
-                                        <div class="input-group">
-                                            <input name="booking[verify_code]" placeholder="请输入验证码" class="form-control" maxlength="6" id="booking_verify_code" type="text">                                        
-                                            <div id="btn-sendZhiTongCheSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">疾病诊断:</label>
-                                    <div class="col-sm-9 controls">            
-                                        <input name="booking[disease_name]" placeholder="请填写确诊疾病" class="form-control" maxlength="50" id="booking_disease_name" type="text">                
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="padright0 col-sm-3 control-label pr0 mt5">病情描述:</label>
-                                    <div class="col-sm-9 controls">   
-                                        <textarea name="booking[disease_detail]" placeholder="为了让专家对您的病情有更好的初判，请您尽量详细填写（至少10个字）。" class="form-control" maxlength="1000" rows="3" id="booking_disease_detail"></textarea>                              
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">就诊专家:</label>
-                                    <div class="col-sm-9 controls">
-                                        <input name="booking[doctor_name]" placeholder="可不填，名义助手会为您匹配" class="form-control" maxlength="50" id="booking_doctor_name" type="text">                                </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">就诊专家:</label>
-                                    <div class="col-sm-9 controls">
-                                        <input name="booking[hospital_name]" placeholder="可不填，名义助手会为您匹配" class="form-control" maxlength="50" id="booking_hospital_name" type="text">                                </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="form-group mt30">
-                                    <div class="col-sm-offset-1 col-sm-11 controls">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input name="booking[terms]" type="checkbox" checked="checked">我已同意《<a href="<?php echo $urlTerms; ?>" target="_blank">名医主刀在线用户协议</a>》
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-6 col-sm-offset-3">
-                                        <button id="btnZhiTongCheSubmit" type="button" class="btn btn-lg btn-yes btn-block" name="">提&nbsp;交</button>       
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    <!--                    <div class="booking-form">
+                                            <div class="form-wrapper">
+                                                <form enctype="multipart/form-data" data-url-return="<?php echo $urlReturn; ?>" id="zhitongche-form" action="<?php echo $urlSubmitForm; ?>" method="post">
+                                                    <input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
+                                                    <input type="hidden" value="<?php echo $authActionType; ?>" name="smsverify[actionType]" id="smsverify_actionType">
+                                                    <div class="form-group">
+                                                        <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>
+                                                        <div class="col-sm-9 controls">
+                                                            <input name="booking[contact_name]" placeholder="请填写患者的真实姓名" class="form-control" maxlength="50" id="booking_contact_name" type="text">                                </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机:</label>
+                                                        <div class="col-sm-9 controls">
+                                                            <input name="booking[mobile]" placeholder="请输入手机号" class="form-control booking-mobile" maxlength="11" id="booking_mobile" type="text">                     
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">验证码:</label>
+                                                        <div class="col-sm-9 controls">
+                                                            <div class="input-group">
+                                                                <input name="booking[verify_code]" placeholder="请输入验证码" class="form-control" maxlength="6" id="booking_verify_code" type="text">                                        
+                                                                <div id="btn-sendZhiTongCheSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">疾病诊断:</label>
+                                                        <div class="col-sm-9 controls">            
+                                                            <input name="booking[disease_name]" placeholder="请填写确诊疾病" class="form-control" maxlength="50" id="booking_disease_name" type="text">                
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="" class="padright0 col-sm-3 control-label pr0 mt5">病情描述:</label>
+                                                        <div class="col-sm-9 controls">   
+                                                            <textarea name="booking[disease_detail]" placeholder="为了让专家对您的病情有更好的初判，请您尽量详细填写（至少10个字）。" class="form-control" maxlength="1000" rows="3" id="booking_disease_detail"></textarea>                              
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">就诊专家:</label>
+                                                        <div class="col-sm-9 controls">
+                                                            <input name="booking[doctor_name]" placeholder="可不填，名义助手会为您匹配" class="form-control" maxlength="50" id="booking_doctor_name" type="text">                                </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="" class="padright0 col-sm-3 col-md-3 control-label pr0 mt5">就诊专家:</label>
+                                                        <div class="col-sm-9 controls">
+                                                            <input name="booking[hospital_name]" placeholder="可不填，名义助手会为您匹配" class="form-control" maxlength="50" id="booking_hospital_name" type="text">                                </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="form-group mt30">
+                                                        <div class="col-sm-offset-1 col-sm-11 controls">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input name="booking[terms]" type="checkbox" checked="checked">我已同意《<a href="<?php echo $urlTerms; ?>" target="_blank">名医主刀在线用户协议</a>》
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6 col-sm-offset-3">
+                                                            <button id="btnZhiTongCheSubmit" type="button" class="btn btn-lg btn-yes btn-block" name="">提&nbsp;交</button>       
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>-->
                     <div class="mt20 story-content">
                         <div class="divide-dashed-green">
                             <span class="answers-title">患者故事&nbsp;|</span>
-                            <div class="clearfix"></div>
+                            <div class="clearfix mt5"></div>
                         </div>
                         <div class="mt30">
                             <div class="mt10 pull-left story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-1.png"></div>

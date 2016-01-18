@@ -1,9 +1,9 @@
 .ztc-header{background:url(../images/zhitongche/bg-shouShuZhiTongChe.jpg) no-repeat;height:400px;}
-.ztc-title-lg{font-size:58px;letter-spacing:1em;font-weight:bold;}
-.ztc-title-text{width:525px;}
+.ztc-title-lg{font-size:68px;letter-spacing:1em;font-weight:bold;}
+.ztc-title-text{width:620px;line-height: 2em;margin-top: 20px;}
 .ztc-main-content{border:1px solid #60c0bd;padding:30px 20px;min-height:800px;color:#686868;}
 .ztc-content-img{border:1px solid #efefef;width:200px;height:175px;}
-.content-title{font-size:16px;color:#333;font-weight:bold;}
+.content-title{font-size:16px;color:#333;margin-bottom: 5px;}
 .search-button{height:80px;border-radius:5px;font-size:16px;font-weight:bold;letter-spacing:3px;}
 .line2-5em{line-height:2.5em;}
 .ztc-answers-content{border:1px solid #60c0bd;padding:30px 20px;min-height:1266px;color:#686868;}
@@ -47,3 +47,5 @@ strong{color:#333;}
 .pr0{padding-right:0!important;}
 .w100{width:100%;}
 .ml10{margin-left:10px;}
+.zhitongcheBookingBtn{border-radius: 5px;}
+a:hover>.bg-green-5ebfb7,.zhitongcheBookingBtn:hover{background-color: rgba(94,191,184,0.7);}

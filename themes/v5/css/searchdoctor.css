@@ -9,7 +9,7 @@
 .expert-list{padding:0px 5px 10px 5px;}
 .department-list{padding:0 15px 20px;}
 .department-list .department{padding-left: 10px;margin-top: 20px;}
-.department-list .department .dept-header{font-size: 15px;}
+.department-list .department .dept-header{font-size: 15px;margin-bottom: 5px;}
 .department-list .department .dept-header .fa{font-size: 16px;margin-right: 3px;}
 .department-list .department .dept-header:hover{cursor: pointer;}
 .department-list .department .fa{color: #19aea5;}
@@ -18,7 +18,7 @@
 .department-list .department.active .fa-caret-right{display: none;}
 .department-list .department ul{padding-left: 14px;display: none;}
 .department-list .department.active ul{display: block;}
-.department-list .department ul>li{margin-top: 3px;}
+.department-list .department ul>li{margin-top: 10px;}
 .department-list .department ul>li>a.active{color: #19aea5;}
 .ad-area{height:140px;line-height:140px;}
 .find-navi{color:#fff;font-size:16px;padding:10px 0px 5px 15px;}
