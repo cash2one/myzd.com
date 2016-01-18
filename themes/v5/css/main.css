@@ -93,7 +93,7 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 @media (min-width: 768px){#site-header #header-nav>li{width: 20%;}}
 #site-header #header-nav>li{font-size:1.2em;}
 #site-header #header-nav>li *{text-align:center;}
-#site-header #header-nav>li>a{padding:10px 12px;color: #3e3a39;letter-spacing: 3px;font-size:16px;font-weight:bold;}
+#site-header #header-nav>li>a{padding:10px 12px;color: #3e3a39;letter-spacing: 3px;font-size:20px;}
 #site-header #header-nav>li>a:hover{color: #19aea5;}
 #site-header #header-nav>li.open>a{background:none;}
 #site-header #header-nav>.dropdown>.dropdown-menu{border:none;background-color:#fff;width: 20%;}
