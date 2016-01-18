@@ -37,6 +37,7 @@ jQuery(function () {
     });
     function formAjaxSubmit() {
         //form插件的异步无刷新提交
+        disabledBtn(btnSubmit);
         var formdata = domForm.serialize();
         var requestUrl = domForm.attr('data-action');
         var accountUrl = domForm.attr('data-url-account');
@@ -62,8 +63,10 @@ jQuery(function () {
                     }
                     //error.
                 }
+                enableBtn(btnSubmit);
             },
             error: function (XmlHttpRequest, textStatus, errorThrown) {
+                enableBtn(btnSubmit);
                 console.log(XmlHttpRequest);
                 console.log(textStatus);
                 console.log(errorThrown);

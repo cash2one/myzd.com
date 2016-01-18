@@ -18,8 +18,8 @@ class BookingManager {
         $output = array('status' => 'no');
         $model = Booking::model()->getById($id);
         if (isset($model)) {
-            $model->bk_type = StatCode::BK_STATUS_CANCELLED;
-            if ($model->update(array('bk_type'))) {
+            $model->bk_status = StatCode::BK_STATUS_CANCELLED;
+            if ($model->update(array('bk_status'))) {
                 $output['status'] = 'ok';
                 $output['id'] = $model->getId();
             } else {

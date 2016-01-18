@@ -53,10 +53,10 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                         <div class="w20 contactus">
                             <h4>联系我们</h4>
                             <ul class="mt10">
-                                <li>人事招聘（谢小姐）：</li>
-                                <li><span class="strong">186-1620-5157</span></li>
-                                <li>市场合作（龙小姐）：</li>
-                                <li>Q Q：<span class="strong">974790339</span></li>
+                                <li>人事招聘：</li>
+                                <li><span class="strong">hr@mingyizhudao.com</span></li>
+                                <li>市场合作：</li>
+                                <li><span class="strong">marketing@mingyizhudao.com</span></li>
                                 <li>公司邮箱：</li>
                                 <li><span class="strong">service@mingyizhudao.com</span></li>
                             </ul>
@@ -65,7 +65,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                             <div>
                                 <h4>关于我们</h4>
                                 <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
-                                <a class="text-info" href="<?php echo $siteMenu["terms"]["url"]; ?>" target="_blank">免责声明</a>
+                                <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help','page'=>'terms')); ?>" target="_blank">免责声明</a>
     <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];      ?>" target="_blank">联系我们</a>-->
                                 <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>
                             </div>
@@ -113,7 +113,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div class="mt35 mb20">
                                     <h4>关于我们</h4>
                                     <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
-                                    <a class="text-info" href="<?php echo $siteMenu["terms"]["url"]; ?>" target="_blank">免责声明</a>
+                                    <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help','page'=>'terms')); ?>" target="_blank">免责声明</a>
         <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];      ?>" target="_blank">联系我们</a>-->
                                     <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>
                                 </div>
@@ -121,12 +121,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                             <div class="col-md-3  col-sm-4 contactus">
                                 <h4>联系我们</h4>
                                 <ul class="mt10">
-                                    <li>人事招聘（谢小姐）：</li>
-                                    <li><span class="strong">186-1620-5157</span></li>
-                                    <li>市场合作（龙小姐）：</li>
-                                    <li>Q Q：<span class="strong">974790339</span></li>
-                                    <li>公司邮箱：<span class="strong">service@mingyizhudao.com</span></li>
-                                </ul>
+                                <li>人事招聘：</li>
+                                <li><span class="strong">hr@mingyizhudao.com</span></li>
+                                <li>市场合作：</li>
+                                <li><span class="strong">marketing@mingyizhudao.com</span></li>
+                                <li>公司邮箱：</li>
+                                <li><span class="strong">service@mingyizhudao.com</span></li>
+                            </ul>
                             </div>
                             <div class="col-md-3  col-sm-3 logo-footer border0">
                                 <a href="<?php echo Yii::app()->homeUrl; ?>">

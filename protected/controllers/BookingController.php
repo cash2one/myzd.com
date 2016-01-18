@@ -24,11 +24,11 @@ class BookingController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'test', 'quickbook', 'create', 'ajaxCreate', 'ajaxUploadFile', 'list', 'success', 'get', 'uploadFile'),
+                'actions' => array('index', 'view', 'test', 'quickbook', 'ajaxQuickbook', 'create', 'ajaxCreate', 'ajaxUploadFile', 'list', 'success', 'get', 'uploadFile'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('ajaxCreate', 'update', 'userBooking', 'bookingFile'),
+                'actions' => array('ajaxCreate', 'update', 'userBooking', 'bookingFile','cancelbook'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -179,20 +179,91 @@ class BookingController extends WebsiteController {
             //    $data = $this->testDataDoctorBook();
             //    $form->setAttributes($data, true);
             $this->render('doctor', array('model' => $form));
-        } else {
+        }
+    }
+
+    /**
+     * 快速预约
+     */
+    public function actionQuickbook() {
+        $form = new BookQuickForm();
+        $form->initModel();
+        $userId = $this->getCurrentUserId();
+        if (isset($userId)) {
+            $form->setUserId($userId);
+        }
+        $form->user_agent = StatCode::USER_AGENT_WEIXIN;
+        $this->render('quickbook', array('model' => $form));
+    }
+
+    public function actionAjaxQuickbook() {
+        $output = array('status' => 'no');
+        if (isset($_POST['booking'])) {
+            $values = $_POST['booking'];
             // 快速预约
             $form = new BookQuickForm();
+            $form->setAttributes($values, true);
             $form->initModel();
-            $userId = $this->getCurrentUserId();
-            if (isset($userId)) {
-                $form->setUserId($userId);
+            $form->validate();
+            //验证码校验
+            $authMgr = new AuthManager();
+            $authSmsVerify = $authMgr->verifyCodeForBooking($form->mobile, $form->verify_code, null);
+            if ($authSmsVerify->isValid() === false) {
+                $form->addError('verify_code', $authSmsVerify->getError('code'));
             }
-            //@TEST:
-            //    $data = $this->testDataQuickBook();
-            //    $form->setAttributes($data, true);
-
-            $this->render('quickbook', array('model' => $form));
+            try {
+                if ($form->hasErrors() === false) {
+                    $booking = new Booking();
+                    // 处理booking.user_id
+                    $userId = $this->getCurrentUserId();
+                    $bookingUser = null;
+                    if (isset($userId)) {
+                        $bookingUser = $userId;
+                        $user = $this->getCurrentUser();
+                        $form->mobile = $user->mobile;
+                    } else {
+                        $mobile = $form->mobile;
+                        $user = User::model()->getByUsernameAndRole($mobile, StatCode::USER_ROLE_PATIENT);
+                        if (isset($user)) {
+                            $bookingUser = $user->getId();
+                        } else {
+                            // create new user.
+                            $userMgr = new UserManager();
+                            $user = $userMgr->createUserPatient($mobile);
+                            if (isset($user)) {
+                                $bookingUser = $user->getId();
+                            }
+                        }
+                    }
+                    $booking->setAttributes($form->attributes, true);
+                    $booking->user_agent = StatCode::USER_AGENT_WEBSITE;
+                    $booking->user_id = $bookingUser;
+                    if ($booking->save() === false) {
+                        $output['errors'] = $booking->getErrors();
+                        throw new CException('error saving data.');
+                    }
+                    //预约单保存成功  生成一张支付单
+                    $orderMgr = new OrderManager();
+                    $salesOrder = $orderMgr->createSalesOrder($booking);
+                    if ($salesOrder->hasErrors() === false) {
+                        $output['status'] = 'ok';
+                        $output['salesOrderRefNo'] = $salesOrder->getRefNo();
+                        $output['booking']['id'] = $booking->getId();
+                    } else {
+                        $output['errors'] = $salesOrder->getErrors();
+                        throw new CException('error saving data.');
+                    }
+                } else {
+                    $output['errors'] = $form->getErrors();
+                    throw new CException('error saving data.');
+                }
+            } catch (CException $cex) {
+                $output['status'] = 'no';
+            }
+        } else {
+            $output['error'] = 'missing parameters';
         }
+        $this->renderJsonOutput($output);
     }
 
     public function actionAjaxUploadFile() {
@@ -246,26 +317,27 @@ class BookingController extends WebsiteController {
      * Updates a particular model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id the ID of the model to be updated
+
+      public function actionQuickbook() {
+
+      $this->show_header = false;
+      $this->show_footer = false;
+      $userId = Yii::app()->user->id;
+
+      $form = new BookingForm();
+      $form->initModel($userId);
+
+      if (Yii::app()->request->isPostRequest === false) {
+      $form->setValuesFromRequest($_GET);
+      $form->loadData();
+      } else {
+      $this->createBooking($form);
+      }
+      $this->render('quickbook', array(
+      'model' => $form,
+      ));
+      }
      */
-    public function actionQuickbook() {
-
-        $this->show_header = false;
-        $this->show_footer = false;
-        $userId = Yii::app()->user->id;
-
-        $form = new BookingForm();
-        $form->initModel($userId);
-
-        if (Yii::app()->request->isPostRequest === false) {
-            $form->setValuesFromRequest($_GET);
-            $form->loadData();
-        } else {
-            $this->createBooking($form);
-        }
-        $this->render('quickbook', array(
-            'model' => $form,
-        ));
-    }
 
     /**
      * Creates a new model.
@@ -290,10 +362,6 @@ class BookingController extends WebsiteController {
                 $form = new BookDeptForm();
                 $form->setAttributes($values, true);
                 $form->setHpDeptlData();
-            } else {
-                // 快速预约
-                $form = new BookQuickForm();
-                $form->setAttributes($values, true);
             }
             $form->initModel();
             $user = $this->getCurrentUser();

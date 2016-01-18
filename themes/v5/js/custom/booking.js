@@ -43,6 +43,9 @@ jQuery(function () {
                 required: true,
                 minlength: 10,
                 maxlength: 1000
+            },
+            'booking[terms]': {
+                required: true
             }
         },
         messages: {
@@ -70,6 +73,9 @@ jQuery(function () {
                 required: '请填写病情',
                 minlength: '请至少填写10个字',
                 maxlength: '请将字数控制在1000以内'
+            },
+            'booking[terms]': {
+                required: '请同意《在线服务条款》'
             }
         },
 //        errorContainer: "div.error",
@@ -77,7 +83,7 @@ jQuery(function () {
 //        wrapper: "div",
         errorElement: "div",
         errorPlacement: function (error, element) {                             //错误信息位置设置方法  
-            element.parents(".controls").find("div.error").remove();
+            //element.parents(".controls").find("div.error").remove();
             error.appendTo(element.parents(".controls"));     //这里的element是录入数据的对象  
             //error.appendTo(element); 
         },
@@ -85,6 +91,7 @@ jQuery(function () {
             //form插件的异步无刷新提交
             actionUrl = domForm.attr('action');
             returnUrl = domForm.attr("data-url-return");
+            disabledBtn(btnSubmit);
             //alert("asdf");
             //    btnSubmit.button("disable");
             domForm.ajaxSubmit({
@@ -117,8 +124,10 @@ jQuery(function () {
                         }
 
                     }
+                    enableBtn(btnSubmit);
                 },
                 error: function (XmlHttpRequest, textStatus, errorThrown) {
+                    enableBtn(btnSubmit);
                     console.log(XmlHttpRequest);
                     console.log(textStatus);
                     console.log(errorThrown);

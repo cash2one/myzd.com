@@ -51,7 +51,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     </h4>
 
                 </div>
-                <div class="text-center text-red">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>
+                <div class="text-center text-red text12">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>
             </div>
             <div class="pb40 border-green mt10">         
                 <div class="pl20 pr20">

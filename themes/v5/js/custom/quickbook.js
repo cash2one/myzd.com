@@ -35,6 +35,16 @@ jQuery(function () {
                 required: true,
                 maxlength: 50
             },
+            'booking[mobile]': {
+                required: true,
+                isMobile: true
+            },
+            'booking[verify_code]': {
+                required: true,
+                digits: true,
+                maxlength: 6,
+                minlength: 6
+            },
             'booking[disease_name]': {
                 required: true,
                 maxlength: 50
@@ -43,6 +53,9 @@ jQuery(function () {
                 required: true,
                 minlength: 10,
                 maxlength: 1000
+            },
+            'booking[terms]': {
+                required: true
             }
         },
         messages: {
@@ -62,6 +75,16 @@ jQuery(function () {
                 required: '请填写患者姓名',
                 maxlength: '患者姓名太长'
             },
+            'booking[mobile]': {
+                required: "请输入手机号码",
+                isMobile: '请输入正确的中国手机号码!'
+            },
+            'booking[verify_code]': {
+                required: "请输入短信验证码",
+                digits: "请输入正确的短信验证码",
+                maxlength: "请输入正确的短信验证码",
+                minlength: "请输入正确的短信验证码"
+            },
             'booking[disease_name]': {
                 required: '请填写疾病诊断',
                 maxlength: '请将字数控制在50以内'
@@ -70,6 +93,9 @@ jQuery(function () {
                 required: '请填写病情',
                 minlength: '请至少填写10个字',
                 maxlength: '请将字数控制在1000以内'
+            },
+            'booking[terms]': {
+                required: '请同意《在线服务条款》'
             }
         },
 //        errorContainer: "div.error",
@@ -77,12 +103,13 @@ jQuery(function () {
 //        wrapper: "div",
         errorElement: "div",
         errorPlacement: function (error, element) {                             //错误信息位置设置方法  
-            element.parents(".controls").find("div.error").remove();
+            //element.parents(".controls").find("div.error").remove();
             error.appendTo(element.parents(".controls"));     //这里的element是录入数据的对象  
             //error.appendTo(element); 
         },
         submitHandler: function () {
             //form插件的异步无刷新提交
+            disabledBtn(btnSubmit);
             actionUrl = domForm.attr('action');
             returnUrl = domForm.attr("data-url-return");
             //alert("asdf");
@@ -90,9 +117,6 @@ jQuery(function () {
             domForm.ajaxSubmit({
                 type: 'post',
                 url: actionUrl,
-                before: function () {
-                    $("#btnSubmit").attr("disabled", true);
-                },
                 success: function (data) {
                     if (data.status == 'ok') {
                         //弹框提示
@@ -116,8 +140,10 @@ jQuery(function () {
                         }
 
                     }
+                    enableBtn(btnSubmit);
                 },
                 error: function (XmlHttpRequest, textStatus, errorThrown) {
+                    enableBtn(btnSubmit);
                     console.log(XmlHttpRequest);
                     console.log(textStatus);
                     console.log(errorThrown);

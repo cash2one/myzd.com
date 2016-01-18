@@ -19,7 +19,10 @@
 .department-list .department ul{padding-left: 14px;display: none;}
 .department-list .department.active ul{display: block;}
 .department-list .department ul>li{margin-top: 3px;}
+.department-list .department ul>li>a.active{color: #19aea5;}
 .ad-area{height:140px;line-height:140px;}
 .find-navi{color:#fff;font-size:16px;padding:10px 0px 5px 15px;}
 .docdesc{height: 9em;overflow-y: hidden;}
 .contracted-img{margin-top:-90px;margin-right:-13px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
+.city-list a.active{color: #19aea5;}
+.disease-list a.active{color: #19aea5;}

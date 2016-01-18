@@ -4,26 +4,23 @@ Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyun
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/booking.js', CClientScript::POS_END);
 
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-
-$urlGetSmsVerifyCode = $this->createAbsoluteUrl('/auth/sendSmsVerifyCode');
-$authActionType = AuthSmsVerify::ACTION_USER_REGISTER;
+$urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'));
 $urlSubmitForm = $this->createUrl("booking/ajaxCreate");
-$urlReturn = $this->createUrl('booking/success',array('id'=>''));
+$urlReturn = $this->createUrl('booking/success', array('id' => ''));
 ?>
 <div class="modal fade " role="dialog" id="bookingModal" aria-labelledby="bookingModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div>
                 <div class="block-center">
-                    <div class="text-center mybooking">
-                        <div class="color-white">我要预约</div>
+                    <div class="mybooking">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="mybooking-text text-center color-white"><img src="<?php echo $urlResImage; ?>general/booking.png"> 我要预约</div>
                     </div>
-
                     <div class="booking-form">
                         <div class="form-wrapper">
                             <form class="form-horizontal" role="form" autocomplete="off" enctype="multipart/form-data" data-url-return="<?php echo $urlReturn; ?>" id="booking-form" action="<?php echo $urlSubmitForm; ?>" method="post" novalidate="novalidate">
-                                <input type="hidden" value="<?php echo $urlGetSmsVerifyCode ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
-                                <input type="hidden" value="<?php echo $authActionType ?>" name="smsverify[actionType]" id="smsverify_actionType">
+                                
                                 <input name="booking[doctor_id]" id="booking_doctor_id" type="hidden" value="">
                                 <div class="form-group mt10">
                                     <label class="col-sm-3 control-label">就诊专家:</label>
@@ -58,10 +55,10 @@ $urlReturn = $this->createUrl('booking/success',array('id'=>''));
                                     </div>
                                 </div>
                                 <div class="form-group mt30">
-                                    <div class="col-sm-offset-3 col-sm-8">
+                                    <div class="col-sm-offset-3 col-sm-8 controls">
                                         <div class="checkbox">
                                             <label>
-                                                <input name="booking[terms]" type="checkbox">我已同意《名医主刀在线用户协议》
+                                                <input name="booking[terms]" type="checkbox" checked="checked">我已同意《<a href="<?php echo $urlTerms; ?>" target="_blank">名医主刀在线用户协议</a>》
                                             </label>
                                         </div>
                                     </div>

@@ -18,9 +18,9 @@ $page = Yii::app()->request->getQuery('page', '');
 <div class="container">
     <div class="row mt30">
         <div class="col-sm-2">
-            <div class="strong text-center department-name color-green"><strong>全部</strong></div>
+            <div class="strong text-center department-name color-green"><span>全部</span></div>
             <div class="border-gray department-list mt20">
-                
+
             </div>
         </div>
         <div class="col-sm-10">
@@ -32,11 +32,11 @@ $page = Yii::app()->request->getQuery('page', '');
             </div>
             <div class="row">
                 <div class="mt20 findexp-nav city-list">
-                    地区:<a class="all">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a>其他</a>
+                    地区:<a class="all active city " data-id="">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a class="city" data-id="74">南京</a><a class="city" data-id="87">杭州</a><a class="city" data-id="134">济南</a><a class="city" data-id="202">深圳</a><a class="city" data-id="254">重庆</a><a class="city" data-id="255">成都</a>
                 </div>
                 <div class="loading loading02"></div>
                 <div class="hospital-list">
-                    
+
                 </div>
 
                 <!--分页-->
@@ -62,6 +62,7 @@ $page = Yii::app()->request->getQuery('page', '');
     condition["page"] = '<?php echo $page == '' ? 1 : $page; ?>';
     var urlLoadHospital = '<?php echo $urlLoadHospital; ?>';
     $(document).ready(function () {
+        setCityActive();
         ajaxLoadHopital('&getcount=1');
         ajaxLoadDiseaseCategory();
         $('.city-list a.all').click(function (e) {
@@ -69,6 +70,7 @@ $page = Yii::app()->request->getQuery('page', '');
             condition["city"] = '';
             condition["page"] = 1;
             ajaxLoadHopital('&getcount=1');
+            setCityActive();
         });
         $('.city-list .city').click(function (e) {
             e.preventDefault();
@@ -76,6 +78,7 @@ $page = Yii::app()->request->getQuery('page', '');
             condition["city"] = cityId;
             condition["page"] = 1;
             ajaxLoadHopital('&getcount=1');
+            setCityActive();
         });
         if (condition["disease_name"]) {
             $('.department-name>strong').html(condition["disease_name"]);
@@ -157,5 +160,14 @@ $page = Yii::app()->request->getQuery('page', '');
         urlCondition = "?" + urlCondition;
         var newUrl = "<?php echo $urlHopitalSearch; ?>" + urlCondition;
         history.pushState(stateObject, title, newUrl);
+    }
+    function setCityActive() {
+        $('.city-list a').each(function () {
+            var cityId = $(this).attr('data-id');
+            if (cityId == condition["city"]) {
+                $('.city-list a').removeClass('active');
+                $(this).addClass('active');
+            }
+        });
     }
 </script>

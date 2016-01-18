@@ -15,6 +15,7 @@
 .department-list .department .fa-caret-down{display: none;}
 .department-list .department.active .fa-caret-down{display: inline-block;}
 .department-list .department.active .fa-caret-right{display: none;}
+.department-list .department ul>li>a.active{color: #19aea5;}
 .city-sick-title{border-left:5px solid #19aea5;padding-bottom: 3px;line-height:1em;}
 .city-sick-title>span{margin-left:20px;}
 .border-gray{border:1px solid #ddd;}
@@ -43,3 +44,4 @@
 .dese-operate:hover{cursor: pointer;}
 .dese-last{display: none;}
 .dese-operate .desc-retract{display: none;}
+.city-list a.active{color: #19aea5;}

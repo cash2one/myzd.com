@@ -27,7 +27,19 @@ $page = Yii::app()->request->getQuery('page', '');
             <div class="strong text-center department-name"><span>全部</span></div>
         </div>
         <div class="col-sm-10">
-            <div class="city-sick-title city-list">所在城市：<a class="all">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a>其他</a></div>
+            <div class="city-sick-title city-list">所在城市：<a class="all city active">全部</a>
+                <a class="city" data-id="1">北京</a>
+                <a class="city" data-id="73">上海</a>
+                <a class="city" data-id="200">广州</a>
+                <a class="city" data-id="87">南京</a>
+                <a class="city" data-id="114">杭州</a>
+                <a class="city" data-id="74">福州</a>
+                <a class="city" data-id="134">济南</a>
+                <a class="city" data-id="186">长沙</a>
+                <a class="city" data-id="255">成都</a>
+                <a class="city" data-id="204">汕头</a>
+                <a class="city" data-id="218">潮州</a>
+            </div>
             <div class="city-sick-title disease-list"></div>
         </div>
     </div>
@@ -78,6 +90,7 @@ $page = Yii::app()->request->getQuery('page', '');
     var urlLoadDoctor = '<?php echo $urlLoadDoctor; ?>';
     $(document).ready(function () {
         ajaxLoadDoctor('&getcount=1');
+        setCityActive();
         ajaxLoadDiseaseCategory();
         var disease_category = condition["disease_sub_category"] == '' ? 1 : condition["disease_sub_category"];
         ajaxLoadDiseaseByCategory(disease_category);
@@ -93,6 +106,7 @@ $page = Yii::app()->request->getQuery('page', '');
             condition["city"] = cityId;
             condition["page"] = 1;
             ajaxLoadDoctor('&getcount=1');
+            setCityActive();
         });
         if(condition["disease_name"]){
             $('.department-name>span').html(condition["disease_name"]);
@@ -206,5 +220,14 @@ $page = Yii::app()->request->getQuery('page', '');
         urlCondition = "?" + urlCondition;
         var newUrl = "<?php echo $urlDoctorSearch; ?>" + urlCondition;
         history.pushState(stateObject, title, newUrl);
+    }
+    function setCityActive(){
+        $('.city-list a').each(function(){
+            var cityId = $(this).attr('data-id');
+            if(cityId == condition["city"]){
+                $('.city-list a').removeClass('active');
+                $(this).addClass('active');
+            }
+        });
     }
 </script>

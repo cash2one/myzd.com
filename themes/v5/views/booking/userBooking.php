@@ -1,6 +1,6 @@
 <?php
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
-$urlOrderView = $this->createUrl('order/viewweb');
+$urlOrderView = $this->createUrl('order/view');
 $urlBookingList = $this->createUrl('booking/list');
 $booking = $data->results->booking;
 $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking->id));
@@ -23,32 +23,37 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
         </div>
         <div class="col-sm-9 bookingView">
             <div class="user-header pl20">
-                <div class="color-status">预约单：<?php echo $booking->refNo; ?></div>
+                <div class="color-status text12">预约单：<?php echo $booking->refNo; ?></div>
                 <div>
                     <?php
-                    if (isset($data->results->salesOrder) && count($data->results->salesOrder) > 0) {
-                        $salesOrder = $data->results->salesOrder;
-                        foreach ($salesOrder as $order) {
+                    if ($booking->status == 9) {
+                        echo '<h4 class="text-center color-green text20">';
+                        echo '<span>' . $booking->statusText . '</span>';
+                        echo '</h4>';
+                    } else {
+                        if (isset($data->results->salesOrder) && count($data->results->salesOrder) > 0) {
+                            $salesOrder = $data->results->salesOrder;
+                            foreach ($salesOrder as $order) {
+                                echo '<h4 class="text-center color-green text20">';
+                                echo '<span>状态：' . $order->subject . ' ' . $order->finalAmount . '元</span>';
+                                if ($order->isPaid == 0) {
+                                    echo '<a target="_blank" href="' . $this->createUrl('order/view', array('refno' => $order->refNo)) . '" class="pay-btn btn btn-yes">立即支付</a>';
+                                } else {
+                                    echo '<span class="pay-btn btn btn-disabled">已支付</span>';
+                                }
+                                echo '</h4>';
+                            }
+                        } else {
                             echo '<h4 class="text-center color-green text20">';
-                            echo '<span>状态：' . $order->subject . ' ' . $order->finalAmount . '元</span>';
-                            echo '<a target="_blank" href="' . $this->createUrl('order/viewweb', array('bookingId' => $booking->id)) . '" class="pay-btn btn btn-yes">立即支付</a>';
+                            echo '<span>无支付信息</span>';
                             echo '</h4>';
                         }
-                    } else {
-                        echo '<h4 class="text-center color-green text20">';
-                        echo '<span>无支付信息</span>';
-                        echo '</h4>';
                     }
                     ?>
                 </div>
-                <div class="text-center text-red">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>
+                <div class="text-center text-red text12 mt10">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>
             </div>
             <div class="pb40 border-green mt10 pl20 pr20">
-                <div class="pt10"> 
-                    <div class="pull-right">
-                        <a class="color-status mr10" href=""><span class="mr10">修改</span>|<span class="pl10">完成</span></a>
-                    </div>
-                </div>
                 <div>
                     <div class="row mt30">
                         <div class="col-md-4 border-right">
@@ -75,10 +80,10 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
                     <div class="clearfix"></div>
                     <div class="pl20 mrfile mt40">
                         <div>
-                            <span class="strong text18">上传病历</span>
-                            <span>(影像资料、检查报告、门诊病历、住院病历、出院小结等病史资料)</span>
+                            <span class="text18">上传病历</span>
+                            <span class="color-gray">(影像资料、检查报告、门诊病历、住院病历、出院小结等病史资料)</span>
                         </div>
-                        <div class="row mt10 imgList">
+                        <div class="row mt20 imgList">
 
                         </div>
                     </div>
@@ -98,7 +103,7 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
         });
     });
     function setImgHtml(data) {
-        if (data.results.files) {
+        if (data.results.files && data.results.files.length > 0) {
             var innerHtml = '';
             var files = data.results.files;
             for (var i = 0; i < files.length; i++) {
@@ -109,6 +114,8 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
                 }
             }
             $('.imgList').html(innerHtml);
+        } else {
+            $('.imgList').html('<div class="col-sm-12">暂未上传图片</div>');
         }
     }
 </script>
