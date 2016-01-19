@@ -19,7 +19,7 @@ $urlDownloadApp = $this->createUrl('download/app');
 $urlDoctorSearch = $this->createUrl('doctor/top', array('disease_category' => 1));
 $urlHopitalSearch = $this->createUrl('hospital/top', array('disease_category' => 1));
 $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
-$urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'));
+$urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms'));
 ?>
 <section id="site-header">
     <div class="container-fluid bg-gray home-top hidden-xs">
@@ -118,6 +118,9 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'
                         <div class="col-sm-offset-3 col-sm-6">
                             <span id="btnLoginSubmit" class="btn btn-yes btn-lg btn-block">登录</span>			
                         </div>
+                        <div class="col-sm-offset-7 col-sm-4 mt20">
+                            <a id="toReg" class="text-right">没有账号？马上注册</a>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -179,8 +182,11 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'
                             <div class="Message" id="UserRegisterForm_terms_em_" style="display:none"></div>    </div>
                     </div>
                     <div class="form-group mt30 mb30">
-                        <div class="col-sm-offset-3 col-sm-4">
+                        <div class="col-sm-offset-3 col-sm-6">
                             <button id="btnRegisterSubmit" type="button" class="btn btn-yes btn-lg btn-block">注册</button>			
+                        </div>
+                        <div class="col-sm-offset-7 col-sm-4 mt20">
+                            <a id="toLogin" class="text-right">已有账号？去登录</a>
                         </div>
                     </div>
                 </form>
@@ -193,6 +199,14 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'
         $("#btn-sendRegSmsCode").click(function (e) {
             e.preventDefault();
             sendRegSmsVerifyCode($(this));
+        });
+        $('#toReg').click(function () {
+            $('#loginModal').modal('hide');
+            $('#registerModal').modal();
+        });
+        $('#toLogin').click(function () {
+            $('#registerModal').modal('hide');
+            $('#loginModal').modal();
         });
     });
 
