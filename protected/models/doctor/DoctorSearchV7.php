@@ -3,6 +3,7 @@
 class DoctorSearchV7 extends ESearchModel {
 
     public function __construct($searchInputs, $with = null) {
+        $searchInputs['order'] = 't.is_contracted DESC';
         parent::__construct($searchInputs, $with);
     }
 
