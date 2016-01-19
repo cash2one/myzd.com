@@ -6,7 +6,7 @@
 .content-title{font-size:16px;color:#333;margin-bottom: 5px;}
 .search-button{height:80px;border-radius:5px;font-size:16px;font-weight:bold;letter-spacing:3px;}
 .line2-5em{line-height:2.5em;}
-.ztc-answers-content{border:1px solid #60c0bd;padding:30px 20px;min-height:1266px;color:#686868;}
+.ztc-answers-content{border:1px solid #60c0bd;padding:30px 20px;min-height:1343px;color:#686868;}
 .divide-dashed-green{border-bottom:1px dashed #19aea5;}
 .answers-title{font-size:21px;color:#19aea5;font-weight:bold;}
 .booking-header{background-color:#5ebfb7;height:130px;line-height:130px;}
@@ -47,7 +47,9 @@ strong{color:#333;}
 .pr0{padding-right:0!important;}
 .w100{width:100%;}
 .ml10{margin-left:10px;}
-.zhitongcheBookingBtn{border-radius: 5px;}
+.zhitongcheBookingBtn{border-radius: 8px;}
 a:hover>.bg-green-5ebfb7,.zhitongcheBookingBtn:hover{background-color: rgba(94,191,184,0.7);}
+.bg-yellow-f8b62c{background-color: #f8b62c;}
+a:hover>.bg-yellow-f8b62c{background-color: rgba(248,182,44,0.7);}
 .ml-50{margin-left: -50px;}
-.message{text-indent: 2em;}
+.message{text-indent: 2em;line-height: 1.7em;}

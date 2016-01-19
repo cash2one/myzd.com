@@ -57,7 +57,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                                 让您快速找准医生，不耽误病情。</div>
                             <div class="col-md-3 col-sm-offset-1">
                                 <a href="<?php echo $urlDoctorSearch; ?>" target="_blank">
-                                    <div class="bg-green-5ebfb7 text-center color-white pt10 mt10 search-button">查看医生&nbsp;>
+                                    <div class="bg-yellow-f8b62c text-center color-white pt10 mt10 search-button">查看医生&nbsp;>
                                         <div>
                                             <img src="<?php echo $urlResImage; ?>zhitongche/icon-doctor.png">
                                         </div>
@@ -72,7 +72,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                                 免除您搜寻和预约医生的烦恼。</div>
                             <div class="col-md-3 col-sm-offset-1">
                                 <a href="<?php echo $urlHopitalSearch; ?>" target="_blank">
-                                    <div class="bg-green-5ebfb7 text-center color-white pt10 mt10 search-button">查看医院&nbsp;><div class="mt5"><img src="<?php echo $urlResImage; ?>zhitongche/icon-hospital.png"></div></div>
+                                    <div class="bg-yellow-f8b62c text-center color-white pt10 mt10 search-button">查看医院&nbsp;><div class="mt5"><img src="<?php echo $urlResImage; ?>zhitongche/icon-hospital.png"></div></div>
                                 </a>
                             </div>
                         </div>
@@ -81,7 +81,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
 
                     <div class="ztc-answers-content mt20">
                         <div class="divide-dashed-green">
-                            <span class="answers-title">常见问题&nbsp;|</span>
+                            <span class="answers-title">常见问题&nbsp;</span>
                             <div class="clearfix mt5"></div>
                         </div>
                         <div class="line-height34">
@@ -188,7 +188,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                                         </div>-->
                     <div class="mt20 story-content">
                         <div class="divide-dashed-green">
-                            <span class="answers-title">患者故事&nbsp;|</span>
+                            <span class="answers-title">患者故事&nbsp;</span>
                             <div class="clearfix mt5"></div>
                         </div>
                         <div class="mt30">
@@ -218,7 +218,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                     </div>
                     <div class="mt20 message-content text12">
                         <div class="divide-dashed-green">
-                            <span class="answers-title">患者留言&nbsp;|</span>
+                            <span class="answers-title">患者留言&nbsp;</span>
                             <div class="clearfix mt5"></div>
                         </div>
                         <div class="pb20 divide-dashed68">
@@ -244,7 +244,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                             <div class="mt20 message">我妈妈患宫颈癌，本来准备在外地手术。但我不放心，后来通过平台找到王教授。王教授虽然话语不多，但是感到很朴实，很踏实。精湛的技术更是在病友中间广受好评。后来手术也是非常顺利，宫颈椎切手术后行子宫全切及相关清扫术。现正在康复中。<div>再次感谢王教授，您真是患者的福音。衷心祝愿王教授万事顺遂！幸福健康！</div></div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="pb20">
+                        <div class="pb20 divide-dashed68">
                             <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名用户</div></div></div>
                             <div class="pt20 appraise">
                                 <div><div class="">主刀专家：<strong>姜格宁</strong>&nbsp;|&nbsp;确诊疾病：<strong>肺癌</strong></div></div>
