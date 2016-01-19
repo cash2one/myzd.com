@@ -74,7 +74,8 @@ class Doctor extends EActiveRecord {
             array('email, search_keywords', 'length', 'max' => 100),
             array('password', 'length', 'max' => 64),
             array('salt', 'length', 'max' => 40),
-//            array('honour', 'length', 'max' => 800),
+//            array('honour', 'length', 'max' => 1500),
+//            array('career_exp', 'length', 'max' => 1000),
             array('date_activated, date_verified, last_login_time, date_created, date_updated, date_deleted', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
@@ -128,6 +129,7 @@ class Doctor extends EActiveRecord {
             'surgery_specialty' => Yii::t('doctor', '擅长手术'),
             'specialty' => Yii::t('doctor', '关联疾病'),
             'search_keywords' => Yii::t('doctor', '搜索关键词'),
+            'career_exp' => Yii::t('doctor', '执业经历'),
             'description' => Yii::t('doctor', '擅长描述'),
             'role' => Yii::t('doctor', '角色'),
             'honour' => Yii::t('doctor', '荣誉'),
@@ -214,6 +216,7 @@ class Doctor extends EActiveRecord {
     public function afterFind() {
         // convert json string to array.
         $this->honour = CJSON::decode($this->honour);
+        $this->career_exp = CJSON::decode($this->career_exp);
         return parent::afterFind();
     }
 
@@ -221,6 +224,7 @@ class Doctor extends EActiveRecord {
         if (is_array($this->honour)) {
             // convert array to json string.
             $this->honour = CJSON::encode($this->honour);
+            $this->career_exp = CJSON::encode($this->career_exp);
         }
         return parent::beforeSave();
     }
@@ -551,6 +555,10 @@ class Doctor extends EActiveRecord {
 
     public function getHonourList() {
         return $this->honour;
+    }
+    
+    public function getCareerExpList() {
+        return $this->career_exp;
     }
 
     public function getDateCreated($format = null) {
