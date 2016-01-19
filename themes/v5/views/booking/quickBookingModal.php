@@ -93,7 +93,6 @@ $urlReturn = '';
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <br/>
                     </form>
                 </div>
             </div>

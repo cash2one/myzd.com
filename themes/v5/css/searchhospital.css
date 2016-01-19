@@ -1,3 +1,6 @@
+/*.search-header{background-image: url(../images/hospital/bg-header.jpg);background-position: center;background-repeat: no-repeat;height: 400px;}
+.search-header .header-content{color: #3e6090;font-size: 21px;letter-spacing: 6px;line-height: 1.5em;margin-top: 100px;margin-left: 50px;}
+.search-header .header-explanation{color: #e50011;margin-top: 80px;margin-left: 50px;}*/
 .department-name{border:1px solid #19aea5;height:70px;line-height:70px;font-size:16px;}
 .department-list{padding:0 15px 20px;}
 .department-list .department{padding-left: 10px;margin-top: 20px;}
@@ -45,3 +48,5 @@
 .dese-last{display: none;}
 .dese-operate .desc-retract{display: none;}
 .city-list a.active{color: #19aea5;}
+.hpName{color: #595757;}
+.hpName:hover{color: #19aea5;}

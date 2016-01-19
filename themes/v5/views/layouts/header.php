@@ -16,13 +16,13 @@ $registerUrl = $this->createUrl('user/register');
 $urlLogout = $this->createUrl('user/logout');
 $bookinglist = $this->createUrl('booking/list');
 $urlDownloadApp = $this->createUrl('download/app');
-$urlDoctorSearch = $this->createUrl('doctor/search', array('disease_category' => 1));
-$urlHopitalSearch = $this->createUrl('hospital/search', array('disease_category' => 1));
+$urlDoctorSearch = $this->createUrl('doctor/top', array('disease_category' => 1));
+$urlHopitalSearch = $this->createUrl('hospital/top', array('disease_category' => 1));
 $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
 $urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'));
 ?>
 <section id="site-header">
-    <div class="container-fluid bg-gray home-top">
+    <div class="container-fluid bg-gray home-top hidden-xs">
         <div class="row">
             <div class="container">
                 <div class="pull-left hidden-sm phone"><span class="site-phone">400-119-7900</span></div>
@@ -192,11 +192,11 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'
     $(document).ready(function () {
         $("#btn-sendRegSmsCode").click(function (e) {
             e.preventDefault();
-            sendSmsVerifyCode($(this));
+            sendRegSmsVerifyCode($(this));
         });
     });
 
-    function sendSmsVerifyCode(domBtn) {
+    function sendRegSmsVerifyCode(domBtn) {
         var domMobile = $("#UserRegisterForm_username");
         var mobile = domMobile.val();
         if (mobile.length === 0) {

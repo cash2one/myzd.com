@@ -11,9 +11,9 @@
 #homeads{background: url(../images/loading/loading02.gif) no-repeat center center;}
 .bg-lunbo{background-image:url('../images/home/bg_header.jpg');}
 .home-header{height:600px;}
-.home-slogn{margin-top:115px;}
-.slogan-lg{font-size:58px;}
-.slogan-sm{font-size:36px;}
+.home-slogn{margin-top:106px;}
+.slogan-lg{font-size:58px;letter-spacing: 8px;padding-left: 8px;}
+.slogan-sm{font-size:36px;letter-spacing: 6px;padding-left: 6px;}
 #header_home{position: fixed;height: 450px;z-index: 9999;width: 100%;}
 #close-header{margin-right: 20px;margin-top: -30px;color: #fff;opacity: 1;}
 #close-header img:hover{opacity: .8;cursor: pointer;}
@@ -71,7 +71,7 @@
 .h180{height:180px;}
 .text16{font-size:16px;}
 .text13{font-size:13px;}
-.home-title{background-color:rgba(255,255,255,0.5);width:550px;margin: 0 auto;}
+.home-title{background-color:rgba(255,255,255,0.5);width:650px;margin: 0 auto;padding-bottom: 7px;}
 .select-label{height:60px;width:335px!important;padding:0px 45px;font-size:24px;height:60px;}
 .search-size{height:60px;width:100%;font-size:24px;border-bottom-left-radius: 0!important;border-top-left-radius: 0!important;}
 .search-citys{position: relative;}
@@ -80,6 +80,8 @@
 .w83{width:83%;}
 .w17{width:17%;}
 .nav-tabs>li>a,.nav-tabs>li>a:hover{cursor: pointer!important;}
+.more-expert{margin-right: 2px;}
+.more-expert:hover{margin-right: 0px;}
 /**** 专题色值 ****/
 .color1{background-color: #faf0dd;color: #686868;}
 .color2{background-color: #faf0dd;color: #686868;}

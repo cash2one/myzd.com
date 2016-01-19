@@ -20,8 +20,14 @@ class HospitalController extends WebsiteController {
             'model' => $ihospital,
         ));
     }
+
     //搜索，根据科室找医院
     public function actionSearch() {
         $this->render('search');
     }
+
+    public function actionTop() {
+        $this->render('top');
+    }
+
 }

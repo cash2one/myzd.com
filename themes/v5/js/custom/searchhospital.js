@@ -10,7 +10,7 @@ function setHospitalHtml(data, urlHospitalView) {
             innerHtml += '<div class="row mt30">' +
                     '<div class="col-sm-3 col-lg-2"><img class="img-responsive" src="' + hospital.imageUrl + '"></div>' +
                     '<div class="col-sm-9 col-lg-10">' +
-                    '<div><strong><a target="_blank" href="' + urlHospitalView + hospital.hospital_id + '">' + hospital.name + '</a></strong><span class="color-green pl30">' + hospital.hp_dept_name + '</span>' +
+                    '<div><strong><a class="hpName" target="_blank" href="' + urlHospitalView + hospital.hospital_id + '">' + hospital.name + '</a></strong><span class="color-green pl30">' + hospital.hp_dept_name + '</span>' +
                     '<span class="pull-right"><button class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' + hospital.name + '" data-dept="' + hospital.hp_dept_name + '" data-hospitalId="' + hospital.hospital_id + '" data-deptId="' + hospital.hp_dept_id + '" data-toggle="modal" data-target="#booking">预 约</button></span></div>' +
                     '<div class="clearfix"></div>' +
                     '<div class="row mt10">' +

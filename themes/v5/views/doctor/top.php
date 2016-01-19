@@ -2,7 +2,7 @@
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/searchdoctor.css");
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchdoctor.js', CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-$urlDoctorSearch = $this->createUrl('doctor/search');
+$urlDoctorSearch = $this->createUrl('doctor/top');
 $urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 9));
 $urlLoadDoctorByDiseaseCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 9, 'disease_category' => ''));
 $urlLoadDoctorByDiseaseSubCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 9, 'disease_sub_category' => ''));
@@ -17,7 +17,9 @@ $page = Yii::app()->request->getQuery('page', '');
 ?>
 
 <div class="container-fluid bg-green">
-    <div class="container find-navi"><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a>&nbsp;&gt;&nbsp;找手术名医</div>
+    <div class="row">
+        <img src="<?php echo $urlResImage; ?>general/doc-team.jpg" alt=""/>
+    </div>
 </div>
 <div class="container pb20">
     <div class="row mt30">

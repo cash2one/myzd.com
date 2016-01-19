@@ -71,7 +71,7 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
                     <div class="tab-content expList">
 
                     </div>
-                    <a href="<?php echo $urlDoctorSearchCategory; ?>" class="pull-right mt20 color-blue" target="_blank">更多专家></a>
+                    <a href="<?php echo $urlDoctorSearchCategory; ?>" class="pull-right mt20 color-blue more-expert" target="_blank">更多专家></a>
                     <div class="clearfix"></div>
                 </div>
             </div>

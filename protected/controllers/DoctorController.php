@@ -24,7 +24,7 @@ class DoctorController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'view', 'search'),
+                'actions' => array('register', 'view', 'search','top'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -42,16 +42,21 @@ class DoctorController extends WebsiteController {
         $this->render('search');
     }
 
+    public function actionTop() {
+
+        $this->render('top');
+    }
+
     /**
      * Lists all models.
      */
     /*
-    public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('Doctor');
-        $this->render('index', array(
-            'dataProvider' => $dataProvider,
-        ));
-    }
+      public function actionIndex() {
+      $dataProvider = new CActiveDataProvider('Doctor');
+      $this->render('index', array(
+      'dataProvider' => $dataProvider,
+      ));
+      }
      * 
      */
 

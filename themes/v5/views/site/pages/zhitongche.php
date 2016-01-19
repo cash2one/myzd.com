@@ -216,10 +216,68 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                             <div class="clearfix"></div>
                         </div>
                     </div>
+                    <div class="mt20 message-content text12">
+                        <div class="divide-dashed-green">
+                            <span class="answers-title">患者留言&nbsp;|</span>
+                            <div class="clearfix mt5"></div>
+                        </div>
+                        <div class="pb20 divide-dashed68">
+                            <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名用户</div></div></div>
+                            <div class="pt20 appraise">
+                                <div><div class="">主刀专家：<strong>刘跃武</strong>&nbsp;|&nbsp;确诊疾病：<strong>甲状腺肿瘤</strong></div></div>
+                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="mt20 message">名医主刀是非常专业、敬业的团队，在知道我病情后三天之内帮我联系到了医院很刘跃武主任。刘主任了解了我的病情后果断决定为我做手术治疗，期间详细的给我解释分析了病情，热情的帮我疏导情绪，我在精神和身体上都得到了很大的帮助，我非常感动。刘主任医术精湛，我的手术很成功，切口也小，缝合得很美观。感谢名医主刀和刘主任，幸运的与你们相遇是我人生这段旅程中不幸中的万幸，谢谢你们。</div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="pb20 divide-dashed68">
+                            <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名用户</div></div></div>
+                            <div class="pt20 appraise">
+                                <div><div class="">主刀专家：<strong>王世军</strong>&nbsp;|&nbsp;确诊疾病：<strong>宫颈癌</strong></div></div>
+                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="mt20 message">我妈妈患宫颈癌，本来准备在外地手术。但我不放心，后来通过平台找到王教授。王教授虽然话语不多，但是感到很朴实，很踏实。精湛的技术更是在病友中间广受好评。后来手术也是非常顺利，宫颈椎切手术后行子宫全切及相关清扫术。现正在康复中。<div>再次感谢王教授，您真是患者的福音。衷心祝愿王教授万事顺遂！幸福健康！</div></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="pb20">
+                            <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名用户</div></div></div>
+                            <div class="pt20 appraise">
+                                <div><div class="">主刀专家：<strong>姜格宁</strong>&nbsp;|&nbsp;确诊疾病：<strong>肺癌</strong></div></div>
+                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="mt20 message">在上海工作，今年体检中发現右下肺有一小空洞结节，医生判断是肺癌。这就像晴天霹雳一样，我怎么都不愿意相信，后来通过平台推荐，前往姜主任处就诊，姜主任最后还是给出结论，说需要手术，并亲自主刀，一切按预定方案，手术后第六天出院回家。住院期间深深感受到：胸外科的手术量太多了，但有条不紊；那几天看到姜主任早上带队查病房，白天至深夜就是忙着开刀，我手术那天，看到姜主任凌晨1点半亲自将最后一台病人送到ICU室我旁边的观察床位，佩服他的精力与体力；这里的医生护士、护工态度都很好，感到温暖，姜主任管理水平高；姜主任的医疗水平就不说了，百度一下就知道。幸运的选择，期待着后续的跟踪检查医疗也能不负众望。</div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="pb20">
+                            <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名用户</div></div></div>
+                            <div class="pt20 appraise">
+                                <div><div class="">主刀专家：<strong>郑景浩</strong>&nbsp;|&nbsp;确诊疾病：<strong>先天性心脏病</strong></div></div>
+                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="mt20 message">
+                                <div>我是一名河南患者，今天我怀着感恩的心情感谢您医德高尚，医术精湛的好医生—心胸外科主任医师郑医生。</div>
+                                <div>宝宝的出生给家里带来了很大的欢喜，可是欢喜之后是无尽的恐慌，因为刚出生不久的宝宝被查出有先天性心脏病，无情的病魔让我们每一位亲人都不能接受！</div>
+                                <div>这是一个陌生而又恐怖的名字，它离我们那么遥远，我们一直都相信这是只有在电视剧里才会发生的事情，对病情的无知让我们失去方向，我们多希望有人告诉我们这是个误诊！后来在平台推荐下去了上海儿童医学中心，也就是您在的医院，是您郑医生专业的病情分析个医疗计划给我们吃了定心丸，事实证明了您的医术高明手术很成功，我家宝宝渐渐好起来了！</div>
+                                <div>郑医生用无私的爱心和高尚的医德为我家宝宝解除疼苦，您的一言一行诠释着当代医生的职责操守和医道本色。</div>
+                                <div>感谢您郑医生！</div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
