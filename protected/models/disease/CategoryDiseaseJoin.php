@@ -15,7 +15,7 @@
  * The followings are the available model relations:
  * @property Disease $disease
  */
-class CategoryDiseaseJoin extends CActiveRecord
+class CategoryDiseaseJoin extends EActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -123,5 +123,9 @@ class CategoryDiseaseJoin extends CActiveRecord
 
     public function getDisease(){
         return $this->cdDisease;
+    }
+
+    public function getSubCatId(){
+        return $this->sub_cat_id;
     }
 }

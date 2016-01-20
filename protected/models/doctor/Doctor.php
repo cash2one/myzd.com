@@ -343,6 +343,23 @@ class Doctor extends EActiveRecord {
         return $this->findAll($criteria);
     }
 
+    public function getByDoctorId($doctor_id){
+        $criteria = new CDbCriteria;
+        $criteria->addCondition('t.date_deleted is NULL');
+        $criteria->compare('doctor_id', $doctor_id);
+        $criteria->limit = 1;
+        return $this->find($criteria);
+    }
+    public function getByDiseaseId($diseaseId, $doctor_id){
+        $criteria = new CDbCriteria;
+        $criteria->join = 'left join disease_doctor_join b on (t.`id`=b.`doctor_id`)';
+        $criteria->addCondition('t.date_deleted is NULL');
+        $criteria->addNotInCondition('doctor_id', array($doctor_id));
+        $criteria->compare('b.disease_id', $diseaseId);
+        $criteria->limit = 3;
+        return $this->findAll($criteria);
+    }
+
     /*     * ****** Display Methods ******* */
 
     public function getAbsUrlAvatar($thumbnail = false) {

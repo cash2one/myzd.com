@@ -76,20 +76,24 @@ class ApiViewDoctorV7 extends EApiViewService {
     }
 
     private function loadRelatedDoctors(){
-        $categoryDoctorJoin = CategoryDoctorJoin::model()->getByDoctorId($this->doctor_id);
-        if(isset($categoryDoctorJoin)){
-            $this->subCatId = $categoryDoctorJoin->getSubCatId();
+        $diseaseDoctorJoin = DiseaseDoctorJoin::model()->getAllByDoctorId($this->doctor_id);
+        if(isset($diseaseDoctorJoin)){
+            $diseaseId = $diseaseDoctorJoin[0]->disease_id;
+            $categoryDiseaseJoin = CategoryDiseaseJoin::model()->getById($diseaseId);
+            if(isset($categoryDiseaseJoin)){
+                $this->subCatId = $categoryDiseaseJoin->getSubCatId();
+            }
             $this->setNavigation($this->subCatId);
-            $categoryDoctorJoins = CategoryDoctorJoin::model()->getBySubCatId($this->subCatId, $this->doctor_id);
-            if(isset($categoryDoctorJoins)){
-                $this->setRelatedDoctors($categoryDoctorJoins);
+            $doctors = Doctor::model()->getByDiseaseId($diseaseId, $this->doctor_id);
+            if(isset($doctors)){
+                $this->setRelatedDoctors($doctors);
             }
         }
+
     }
 
-    public function setRelatedDoctors($categoryDoctorJoins){
-        foreach($categoryDoctorJoins as $model){
-            $doctor = Doctor::model()->getById($model->getDoctorId());
+    public function setRelatedDoctors($doctors){
+        foreach($doctors as $doctor){
             $data = new stdClass();
             $data->id = $doctor->getId();
             $data->name = $doctor->getName();
