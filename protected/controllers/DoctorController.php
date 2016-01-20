@@ -65,7 +65,7 @@ class DoctorController extends WebsiteController {
      * @param integer $id the ID of the model to be displayed
      */
     public function actionView($id) {
-        $apiService = new apiViewDoctorV7($id);
+        $apiService = new ApiViewDoctorV7($id);
         $output = $apiService->loadApiViewData();
         $this->render('view', array(
             'data' => $output
