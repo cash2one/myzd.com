@@ -75,7 +75,7 @@ jQuery(function () {
                     //success.
                     if (data.status == 'ok') {
                         //弹框提示
-                        $("#ChangePedSuccessModal .modal-body").html("<h4>预约成功!</h4><p>我们的工作人员会尽快联系您!</p>");
+                        $("#ChangePedSuccessModal .modal-body").html("<h4>修改成功!</h4><p>点击确定登录!</p>");
                         $("#ChangePedSuccessModal .modal-footer").show();
                         $("#ChangePedSuccessModal").modal();
                         successbtnTimerStart($("ChangePedSuccessModal .modal-footer .btn"), 5000);
