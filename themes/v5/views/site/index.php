@@ -79,6 +79,13 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
                         <ul class="bxslider">
                             <li>
                                 <div class="xinyabang">
+                                    <a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')); ?>" target="_blank">
+                                        <img src="<?php echo $urlResImage; ?>homeslider/bg_mingYiZhuYi.jpg" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="xinyabang">
                                     <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinyabang')); ?>" target="_blank">
                                         <img src="<?php echo $urlResImage; ?>homeslider/xinyabang.jpg" alt="" class="img-responsive">
                                     </a>
@@ -107,32 +114,32 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
                 </div>         
                 <div class="row mt10 mb50">
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 1)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>">
                             <div class="faculty waike img-responsive"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 2)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>">
                             <div class="faculty guke block-center"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 3)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>">
                             <div class="faculty fuchanke pull-right"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 4)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>">
                             <div class="faculty xiaoerwaike"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 5)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>">
                             <div class="faculty wuguanke block-center"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 6)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>">
                             <div class="faculty neike pull-right"></div>
                         </a>
                     </div>
@@ -140,7 +147,7 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
             </div>
         </div>
     </div>
-    <div class="container-fluid " >
+    <div class="container-fluid ">
         <div class="row">
             <div class="container mt50">
                 <div class="row">

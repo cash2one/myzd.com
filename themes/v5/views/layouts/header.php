@@ -16,7 +16,7 @@ $registerUrl = $this->createUrl('user/register');
 $urlLogout = $this->createUrl('user/logout');
 $bookinglist = $this->createUrl('booking/list');
 $urlDownloadApp = $this->createUrl('download/app');
-$urlDoctorSearch = $this->createUrl('doctor/top', array('disease_category' => 1));
+$urlDoctorSearch = $this->createUrl('doctor/top', array('disease_sub_category' => 1));
 $urlHopitalSearch = $this->createUrl('hospital/top', array('disease_category' => 1));
 $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
 $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms'));
@@ -62,10 +62,10 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
                                 <a id="header-nav-home" href="<?php echo Yii::app()->homeUrl; ?>" class="dropdown-toggle">首页</a>
                             </li>
                             <li class="dropdown dropdown-hover">
-                                <a id="header-nav-hospital" href="<?php echo $urlDoctorSearch; ?>" class="dropdown-toggle" target="_blank">名医榜单</a>
+                                <a id="header-nav-hospital" href="<?php echo $urlDoctorSearch; ?>" class="dropdown-toggle" target="_blank">找名医</a>
                             </li>
                             <li class="dropdown dropdown-hover">
-                                <a id="header-nav-aboutus" href="<?php echo $urlHopitalSearch; ?>" class="dropdown-toggle" target="_blank">顶尖科室</a>
+                                <a id="header-nav-aboutus" href="<?php echo $urlHopitalSearch; ?>" class="dropdown-toggle" target="_blank">找科室</a>
                             </li>
                             <li class="dropdown dropdown-hover">
                                 <a id="header-nav-aboutus" href="<?php echo $urlZhiTongChe; ?>" class="dropdown-toggle" target="_blank">手术直通车</a>
@@ -107,7 +107,6 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
                     </div>
                     <div class="form-group">
                         <div class="col-sm-8 col-sm-offset-3">   
-                            <input id="ytUserLoginForm_rememberMe" type="hidden" value="0" name="UserLoginForm[rememberMe]">
                             <input class="radio-checkbox" name="UserLoginForm[rememberMe]" id="UserLoginForm_rememberMe" value="1" type="checkbox">                        
                             <label class="radio-label" for="UserLoginForm_rememberMe">下次记住我</label>
                             <div class="Message" id="UserLoginForm_rememberMe_em_" style="display:none"></div>

@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var adsbxslider = $('#homeads .bxslider').bxSlider({
+        mode: 'fade',
         slideMargin: 0,
         controls: true,
         auto: true

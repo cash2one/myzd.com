@@ -31,8 +31,6 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
             <ul>
                 <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
                 <li>></li>
-                <li><a href="<?php echo $this->createUrl('hospital/index', array('city' => $city->id)) ?>"><?php echo $city->name; ?></a></li>
-                <li>></li>
                 <li><?php echo $hName; ?></li>
             </ul>
         </div>
@@ -66,10 +64,10 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-4">
-                    <div class="border-gray pl10 pb20">
-                        <div class="mt20 pr10"><img src="<?php echo $urlImage; ?>" alt="<?php echo $hName; ?>"></div>
-                        <div>
-                            <div class="mt10 hospitalurl">官网：<a href="<?php echo $urlWebsite; ?>" target="_blank"><?php echo $urlWebsite; ?></a></div>
+                    <div class=" pl10 pb20">
+                        <div class="mt20"><img src="<?php echo $urlImage; ?>" alt="<?php echo $hName; ?>"></div>
+                        <div class="text-right pr15">
+                            <div class="mt10 hospitalurl"><a class="text12 color-green" href="<?php echo $urlWebsite; ?>" target="_blank"><?php echo '查看官网'; ?></a></div>
                         </div>
                         <div class="pr10">
                         </div>

@@ -25,7 +25,7 @@ $doctor = $data->results->doctor;
                         <div class="mt15">
                             <?php echo $doctor->hpDeptName == '' ? '' : '<span class="expert-faculty text-center">' . $doctor->hpDeptName . '</span>'; ?>
                         </div>
-                        <div class="mt15"><?php echo $doctor->hospitalName . $doctor->hpDeptName . $doctor->name . $doctor->aTitle; ?>领衔</div>
+                        <div class="mt15"><?php echo $doctor->hospitalName; ?></div>
                     </div>
                 </div>
                 <section class="main pb20">
@@ -80,7 +80,7 @@ $doctor = $data->results->doctor;
                                         <div class="mt15">
                                             <?php echo $member->hpDeptName == null ? '' : '<span class="expert-faculty text-center">' . hpDeptName . '</span>'; ?>
                                         </div>
-                                        <div class="mt15"><?php echo $doctor->hospitalName . $doctor->hpDeptName . $doctor->name . $doctor->aTitle; ?>领衔</div>
+                                        <div class="mt15"><?php echo $doctor->hospitalName; ?></div>
                                     </div>
                                 </div>
                                 <div class="expert-desc mt15 mb40"><?php echo $member->description == null ? '暂无信息' : $member->description; ?></div>
@@ -131,6 +131,7 @@ $doctor = $data->results->doctor;
                                     </div>	
                                     <div class="expName pt20"><span class="strong color-black"><?php echo $relateddoc->name; ?></span>&nbsp;&nbsp;<span class="color-gray"><?php echo $relateddoc->mTitle; ?> <?php echo $relateddoc->aTitle; ?></span></div>
                                     <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hospitalName; ?></div>
+                                    <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hpDeptName; ?></div>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>  

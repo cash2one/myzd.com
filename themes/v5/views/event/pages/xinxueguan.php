@@ -142,7 +142,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
         <div class="row mt20">
             <div class="col-md-6 col-sm-12">
                 <div class="border-gary pad20 expert-content">
-                    <a href="<?php echo $this->createUrl('expertteam/view', array('id' => '1')); ?>">
+                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '88')); ?>">
                         <img src="<?php echo $urlResImage; ?>doc-images/xujianping.png"/>
                         <div class="mt10"><span class="ename">许建屏</span> <span class="color-gray">主任|教授</span></div>
                         <div class="color-gray text12">北京阜外医院</div>
@@ -155,7 +155,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="border-gary pad20 expert-content">
-                    <a href="<?php echo $this->createUrl('expertteam/view', array('id' => '35')); ?>">
+                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '2906')); ?>">
                         <img src="<?php echo $urlResImage; ?>event/xinxueguan/fujianhua.jpg"/>
                         <div class="mt10"><span class="ename">傅剑华</span> <span class="color-gray">主任医师|教授</span></div>
                         <div class="color-gray text12">中山大学附属肿瘤医院</div>

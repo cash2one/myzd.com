@@ -142,7 +142,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                                     甲状腺与乳腺疾病的外科诊治，乳房整形与重建
                                 </div>
                                 <div class="text-center bookingbtn">
-                                    <span class="btn btn-booking" data-docid="269" data-docname="邹强" data-dochospital="上海复旦大学附属华山医院" data-docdept="普外科" data-toggle="modal" data-target="#bookingModal">预 约</span>
+                                    <span class="bookingBtn btn btn-booking" data-docid="269" data-docname="邹强" data-dochospital="上海复旦大学附属华山医院" data-docdept="普外科" data-toggle="modal" data-target="#booking">预 约</span>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +159,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                             <div class="doctor-disc">
                                 <div class="discontent" data-toggle="tooltip" data-placement="bottom" title="长期从事乳腺癌的一线临床和科研工作，尤其在乳腺癌早期发现、早期诊断、早期手术治疗，不能直接手术的局部晚期乳腺癌术前优化新辅助综合治疗缩小后手术治疗，术后辅助化疗、内分泌和靶向治疗等优化综合治疗提高治疗效果预防复发转移等方面具有丰富的临床经验。倡导疗效、功能和美学相统一的外科治疗理念，针对不同病情开展了各种早期或微小癌的钼靶、超声及乳管镜等多角度定位手术、乳腺癌保乳手术、前哨淋巴结活检、各种形式的乳腺癌全乳切除术后的乳腺重建等多种不同个体化手术方式。手术风格细腻鲜明、强调严格的无瘤原则和规范化的手术操作、倡">长期从事乳腺癌的一线临床和科研工作，尤其在乳腺癌早期发现、...</div>
                                 <div class="text-center bookingbtn">
-                                    <span class="btn btn-booking" data-docid="295" data-docname="陆劲松" data-dochospital="上海交通大学医学院附属仁济医院" data-docdept="乳腺外科" data-toggle="modal" data-target="#bookingModal">预 约</span>
+                                    <span class="bookingBtn btn btn-booking" data-docid="295" data-docname="陆劲松" data-dochospital="上海交通大学医学院附属仁济医院" data-docdept="乳腺外科" data-toggle="modal" data-target="#booking">预 约</span>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +178,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                                     肺、食管、贲门、纵隔、胸膜肿瘤的微创外科治疗。
                                 </div>
                                 <div class="text-center bookingbtn">
-                                    <span class="btn btn-booking" data-docid="326" data-docname="李鹤成 " data-dochospital="上海交通大学医学院附属瑞金医院" data-docdept="胸外科" data-toggle="modal" data-target="#bookingModal">预 约</span>
+                                    <span class="bookingBtn btn btn-booking" data-docid="326" data-docname="李鹤成 " data-dochospital="上海交通大学医学院附属瑞金医院" data-docdept="胸外科" data-toggle="modal" data-target="#booking">预 约</span>
                                 </div>
                             </div>
                         </div>

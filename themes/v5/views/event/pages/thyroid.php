@@ -109,7 +109,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="thyroid-eteam">
                     <h3>名医专家团队</h3>
                     <div class="teamlist">
-                        <a href="<?php echo $this->createUrl('expertteam/view', array('id' => 2)); ?>" target="_blank">
+                        <a href="<?php echo $this->createUrl('doctor/view', array('id' => 82)); ?>" target="_blank">
                             <div>
                                 <img src="<?php echo $urlResImage; ?>doc-images/liuyuewu.jpg"/>
                             </div>

@@ -104,7 +104,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     <div class="expertteam">
                         <div class="eteam-info">
                             <div class="expert-content">
-                                <a href="<?php echo $this->createUrl('expertteam/view', array('id' => '7')); ?>">
+                                <a href="<?php echo $this->createUrl('doctor/view', array('id' => '83')); ?>" target="_blank">
                                     <img src="<?php echo $urlResImage; ?>doc-images/gujin.png"/>
                                     <div class="mt10"><span class="ename">顾晋</span> <span class="color-gray">主任|教授</span></div>
                                     <div class="color-gray text12">北京肿瘤医院</div>
@@ -116,23 +116,10 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                             </div>
                         </div>
                         <div class="tumordivider"></div>
+                        
                         <div class="eteam-info pl0">
                             <div class="pad20 expert-content">
-                                <a href="<?php echo $this->createUrl('expertteam/view', array('id' => '6')); ?>">
-                                    <img src="<?php echo $urlResImage; ?>doc-images/guochuanbin.png"/>
-                                    <div class="mt10"><span class="ename">郭传瑸</span> <span class="color-gray">主任|教授</span></div>
-                                    <div class="color-gray text12">北大口腔医院</div>
-                                    <div class="color-yellow">口腔肿瘤手术国内顶级专家团队</div>
-                                    <div class="edesc">
-                                        <span class="strong">郭传瑸教授颌面外科疾病明星专家团队：</span>由北京大学口腔医学院院长，博士生导师颌面外科郭传瑸教授领衔。长期从事口腔颌面外科的教学、临床和基础研究，在口腔颌面及咽旁颅底肿瘤诊治方面有较高造诣。团队擅长于口腔颌面、咽旁颞下区及颅底肿瘤的诊断和手术治疗，数字外科技术在颅底区肿瘤诊治的应用。为国内神经外科疾病患者提供最专业、最权威、的个性化医疗服务。
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tumordivider"></div>
-                        <div class="eteam-info pl0">
-                            <div class="pad20 expert-content">
-                                <a href="<?php echo $this->createUrl('expertteam/view', array('id' => '9')); ?>">
+                                <a href="<?php echo $this->createUrl('doctor/view', array('id' => '116')); ?>">
                                     <img src="<?php echo $urlResImage; ?>doc-images/miaoyi.png"/>
                                     <div class="mt10"><span class="ename">苗毅</span> <span class="color-gray">主任|教授</span></div>
                                     <div class="color-gray text12">江苏省人民医院</div>

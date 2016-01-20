@@ -75,7 +75,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     <div class="expertteam">
                         <div class="eteam-info">
                             <div class="expert-content">
-                                <a href="<?php echo $this->createUrl('expertteam/view', array('id' => '7')); ?>">
+                                <a href="<?php echo $this->createUrl('doctor/view', array('id' => '83')); ?>">
                                     <img src="<?php echo $urlResImage; ?>doc-images/gujin.png"/>
                                     <div class="mt10"><span class="ename">顾晋</span> <span class="color-gray">主任|教授</span></div>
                                     <div class="color-gray text12">北京肿瘤医院</div>

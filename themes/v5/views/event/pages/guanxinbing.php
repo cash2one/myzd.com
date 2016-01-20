@@ -41,7 +41,7 @@ $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
         </div>
         <div class="row mb40 doc-list">
             <div class="col-sm-6">
-                <a href="javascript:;" data-url="<?php echo $urlBooking; ?>" data-toggle="modal" data-target="#bookingModal" data-docid="88" data-docname="许建屏" data-dochospital="阜外心血管病医院" data-docdept="心外科">
+                <a class="bookingBtn" href="javascript:;" data-url="<?php echo $urlBooking; ?>" data-toggle="modal" data-target="#booking" data-docid="88" data-docname="许建屏" data-dochospital="阜外心血管病医院" data-docdept="心外科">
                     <div class="doc-content">
                         <div>
                             <span class="strong">许建屏 </span><span class="doc-title">&nbsp;&nbsp;&nbsp;主任医师</span>
@@ -52,7 +52,7 @@ $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
                 </a>
             </div>
             <div class="col-sm-6">
-                <a href="javascript:;" data-url="<?php echo $urlBooking; ?>" data-toggle="modal" data-target="#bookingModal" data-docid="46" data-docname="王良旭" data-dochospital="上海同济大学附属第十人民医院" data-docdept="胸外科">
+                <a class="bookingBtn" href="javascript:;" data-url="<?php echo $urlBooking; ?>" data-toggle="modal" data-target="#booking" data-docid="46" data-docname="王良旭" data-dochospital="上海同济大学附属第十人民医院" data-docdept="胸外科">
                     <div class="doc-content">
                         <div>
                             <span class="strong">王良旭 </span><span class="doc-title">&nbsp;&nbsp;&nbsp;主任医师</span>
@@ -63,7 +63,7 @@ $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
                 </a>
             </div>
             <div class="col-sm-6">
-                <a href="javascript:;" data-url="<?php echo $urlBooking; ?>" data-toggle="modal" data-target="#bookingModal" data-docid="48" data-docname="梅举" data-dochospital="上海交通大学医学院附属新华医院" data-docdept="胸外科">
+                <a class="bookingBtn" href="javascript:;" data-url="<?php echo $urlBooking; ?>" data-toggle="modal" data-target="#booking" data-docid="48" data-docname="梅举" data-dochospital="上海交通大学医学院附属新华医院" data-docdept="胸外科">
                     <div class="doc-content">
                         <div>
                             <span class="strong">梅举 </span><span class="doc-title">&nbsp;&nbsp;&nbsp;主任医师</span>
@@ -74,7 +74,7 @@ $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
                 </a>
             </div>
             <div class="col-sm-6">
-                <a href="javascript:;" data-url="<?php echo $urlBooking; ?>" data-toggle="modal" data-target="#bookingModal" data-docid="135" data-docname="刘永民" data-dochospital="首都医科大学附属北京安贞医院" data-docdept="心外科">
+                <a class="bookingBtn" href="javascript:;" data-url="<?php echo $urlBooking; ?>" data-toggle="modal" data-target="#booking" data-docid="135" data-docname="刘永民" data-dochospital="首都医科大学附属北京安贞医院" data-docdept="心外科">
                     <div class="doc-content">
                         <div>
                             <span class="strong">刘永民 </span><span class="doc-title">&nbsp;&nbsp;&nbsp;主任医师</span>
