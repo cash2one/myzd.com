@@ -33,17 +33,11 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
         <div class="row">
             <div class="container">
                 <div class="search-top active search-top1 pull-left searchdoctor-tab">手术名医</div><div class="search-top search-top2 pull-left searchhospital-tab">顶尖科室</div><div class="clearfix"></div>
-                <form class="form-inline" id="home-doctor-search-form">
+                <form class="form-inline" id="home-search-form">
                     <div class="form-group w83">
                         <input type="text" class="form-control input-area disease-name" placeholder="请输入确诊疾病">
                     </div><div class="form-group btn-group w17">
                         <button id="searchdoctor-btn" class="btn btn-yes search-size">搜索</button>
-                    </div>
-                </form>
-                <form class="form-inline searchform" id="home-hospital-search-form">
-                    <div class="form-group w83">
-                        <input type="text" class="form-control input-area disease-name" placeholder="请输入确诊疾病">
-                    </div><div class="form-group btn-group w17">
                         <button id="searchhospital-btn" class="btn btn-yes search-size">搜索</button>
                     </div>
                 </form>
@@ -113,32 +107,32 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
                 </div>         
                 <div class="row mt10 mb50">
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 1)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 1)); ?>">
                             <div class="faculty waike img-responsive"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 2)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 2)); ?>">
                             <div class="faculty guke block-center"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 3)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 3)); ?>">
                             <div class="faculty fuchanke pull-right"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 4)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 4)); ?>">
                             <div class="faculty xiaoerwaike"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 5)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 5)); ?>">
                             <div class="faculty wuguanke block-center"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/search', array('disease_category' => 6)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_category' => 6)); ?>">
                             <div class="faculty neike pull-right"></div>
                         </a>
                     </div>
@@ -247,20 +241,20 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
         $('#searchdoctor-btn').click(function (e) {
             e.preventDefault();
-            var disease_name = $('#home-doctor-search-form .disease-name').val();
+            var disease_name = $('#home-search-form .disease-name').val();
             var fullName = disease_name == '' ? '' : getDisFullNameByDisName(disease_name);
             var urlDoctorSearch = '<?php echo $urlDoctorSearch; ?>?disease_name=' + fullName;
             window.open(urlDoctorSearch);
         });
         $('#searchhospital-btn').click(function (e) {
             e.preventDefault();
-            var disease_name = $('#home-hospital-search-form .disease-name').val();
+            var disease_name = $('#home-search-form .disease-name').val();
             var fullName = disease_name == '' ? '' : getDisFullNameByDisName(disease_name);
             var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease_name=' + fullName;
             window.open(urlHopitalSearch);
         });
-        
-        $('.category a').mouseover(function(){
+
+        $('.category a').mouseover(function () {
             $(this).trigger("click");
         });
     });

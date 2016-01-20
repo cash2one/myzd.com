@@ -9,9 +9,9 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
     <div class="container">
         <div class="user-crumbs">
             <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a>
-            >>
+            >
             <a href="<?php echo $urlBookingList; ?>">个人中心</a>
-            >>
+            >
             <a href="<?php echo $urlBookingList; ?>">预约单</a>
         </div>
     </div>
@@ -51,7 +51,12 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
                     }
                     ?>
                 </div>
-                <div class="text-center text-red text12 mt10">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>
+                <?php
+                if ($booking->status != 9) {
+                    echo '<div class="text-center text-red text12 mt10">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>';
+                }
+                ?>
+                
             </div>
             <div class="pb40 border-green mt10 pl20 pr20">
                 <div>

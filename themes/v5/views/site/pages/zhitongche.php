@@ -224,8 +224,9 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         <div class="pb20 divide-dashed68">
                             <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名用户</div></div></div>
                             <div class="pt20 appraise">
-                                <div><div class="">主刀专家：<strong>刘跃武</strong>&nbsp;|&nbsp;确诊疾病：<strong>甲状腺肿瘤</strong></div></div>
-                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                <div><div class="">主刀专家：<strong>刘跃武</strong></div></div>
+                                <div class="mt5">确诊疾病：<span class="strong">甲状腺肿瘤</span></div>
+                                <div class="mt10 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
                                 <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
                             </div>
                             <div class="clearfix"></div>
@@ -235,8 +236,9 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         <div class="pb20 divide-dashed68">
                             <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名用户</div></div></div>
                             <div class="pt20 appraise">
-                                <div><div class="">主刀专家：<strong>王世军</strong>&nbsp;|&nbsp;确诊疾病：<strong>宫颈癌</strong></div></div>
-                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                <div><div class="">主刀专家：<strong>王世军</strong></div></div>
+                                <div class="mt5">确诊疾病：<span class="strong">宫颈癌</span></div>
+                                <div class="mt10 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
                                 <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
 
                             </div>
@@ -247,8 +249,9 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         <div class="pb20 divide-dashed68">
                             <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名用户</div></div></div>
                             <div class="pt20 appraise">
-                                <div><div class="">主刀专家：<strong>姜格宁</strong>&nbsp;|&nbsp;确诊疾病：<strong>肺癌</strong></div></div>
-                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                <div><div class="">主刀专家：<strong>姜格宁</strong></div></div>
+                                <div class="mt5">确诊疾病：<span class="strong">肺癌</span></div>
+                                <div class="mt10 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
                                 <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
                             </div>
                             <div class="clearfix"></div>
@@ -258,8 +261,9 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         <div class="pb20">
                             <div class="pull-left mt20"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/photo-icon.png"><div class="color-green-5ebfb7">匿名用户</div></div></div>
                             <div class="pt20 appraise">
-                                <div><div class="">主刀专家：<strong>郑景浩</strong>&nbsp;|&nbsp;确诊疾病：<strong>先天性心脏病</strong></div></div>
-                                <div class="mt20 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                <div><div class="">主刀专家：<strong>郑景浩</strong></div></div>
+                                <div class="mt5">确诊疾病：<span class="strong">先天性心脏病</span></div>
+                                <div class="mt10 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
                                 <div class="mt10 text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
                             </div>
                             <div class="clearfix"></div>

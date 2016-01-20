@@ -119,10 +119,16 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 /**** loginModal ****/
 @media (min-width: 768px){#loginModal .modal-dialog,#registerModal .modal-dialog {width: 600px;margin: 100px auto 30px;}}
 /**** site-content ****/
+form .contrller{margin-bottom: 15px;}
+.text-right{text-align: right;}
+.form-group .text-right:hover a{color: #3bb8b6;}
+input:-webkit-autofill{-webkit-box-shadow: 0 0 0px 1000px white inset;border: 1px solid #CCC!important;}
+input:focus{-webkit-box-shadow: 0 0 0px 1000px white inset;border: 1px solid #CCC!important;}
 a:hover{cursor: pointer;}
 .label-booking {margin-top: 7px;}
 .nav-pills>li>a{color: #686868;}
 .text17{font-size: 17px;}
+.text15{font-size: 15px;}
 .text12{font-size: 12px;}
 .line-height2-5em{line-height: 2.4em;}
 .passage {line-height: 2;}
@@ -160,10 +166,11 @@ form span.required {color: #E21E1A;}
 .loading {position: absolute;left: 45%;top:40%;z-index: 999;display: none;margin: 0 auto;width: 48px;height: 48px;background-image: url("../images/loading/loading03.gif");background-repeat: no-repeat;background-position: center;background-size: contain;}
 .loading.loading02 {width: 48px;height: 48px;background-image: url("../images/loading/loading02.gif");}
 /**** btn ****/
+.btn:focus{outline: none;}
 .btn-verifycode {color: #fff;background-color: #EFA429;border-color: #eea236;}
 .btn-verifycode:hover {color: #fff;background-color: #ec971f;border-color: #d58512;}
-.btn-yes {color: #fff!important;background-color: #19aea5;border:0!important;border-radius: 5px!important;}
-.btn-yes:hover{color: #fff;background-color: #7bc9ca;border:0;}
+.btn-yes,.btn-yes:active,.btn-yes:visited{color: #fff!important;background-color: #19aea5;border-radius: 5px!important;}
+.btn-yes:hover{color: #fff;background-color: #7bc9ca;}
 .btn-disabled,.btn-disabled:hover{background-color: #ddd;border-radius: 5px!important;padding: 5px 20px;letter-spacing: 2px;color: #333;}
 .abs-btn {display: block;margin: 10px;padding: 3px 20px;font-size: 15px;border-radius: 5px;}
 .btn-booking {background-color: #EFA429;border: 1px solid #EFA429;border-radius: 5px!important;padding: 5px 20px;letter-spacing: 2px;color: #fff;}

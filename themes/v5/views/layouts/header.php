@@ -20,6 +20,8 @@ $urlDoctorSearch = $this->createUrl('doctor/top', array('disease_category' => 1)
 $urlHopitalSearch = $this->createUrl('hospital/top', array('disease_category' => 1));
 $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
 $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms'));
+$urlHelp = $this->createUrl('site/page', array('view' => 'help'));
+$urlForgetPassword = $this->createUrl('user/forgetPassword');
 ?>
 <section id="site-header">
     <div class="container-fluid bg-gray home-top hidden-xs">
@@ -32,10 +34,10 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'ter
                     if (isset($user)) {
                         echo '<span class="user">您好！&nbsp;<a target="_blank" href="' . $bookinglist . '">' . $user->getUsername() . '</a>&nbsp;</span>|<a id="logout" href="' . $urlLogout . '">&nbsp;退出&nbsp;</a>|<a target="_blank" href="' . $bookinglist . '">&nbsp;我的手术&nbsp;|</a>';
                     } else {
-                        echo '<span class="user">您好！&nbsp;请&nbsp;<a data-toggle="modal" data-target="#loginModal">登陆</a>/<a target="_blank" data-toggle="modal" data-target="#registerModal">注册</a>&nbsp;</span>|';
+                        echo '<span class="user">您好！&nbsp;请&nbsp;<a data-toggle="modal" data-target="#loginModal">登录</a>/<a target="_blank" data-toggle="modal" data-target="#registerModal">注册</a>&nbsp;</span>|';
                     }
                     ?>
-                    <a data-toggle="modal" data-target="#qucikbookingModal">&nbsp;快速预约&nbsp;</a>|<a target="_blank" href="<?php echo $urlDownloadApp; ?>">&nbsp;下载APP</a>
+                    <a data-toggle="modal" data-target="#qucikbookingModal">&nbsp;快速预约&nbsp;</a>|<a target="_blank" href="<?php echo $urlDownloadApp; ?>">&nbsp;下载APP&nbsp;</a>|<a target="_blank" href="<?php echo $urlHelp; ?>">&nbsp;常见问题</a>
                 </div>
             </div>
         </div>
@@ -69,7 +71,7 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'ter
                                 <a id="header-nav-aboutus" href="<?php echo $urlZhiTongChe; ?>" class="dropdown-toggle" target="_blank">手术直通车</a>
                             </li>
                             <li class="dropdown dropdown-hover">
-                                <a id="header-nav-aboutus" href="<?php echo $aboutusMenu["aboutus"]["url"]; ?>" class="dropdown-toggle">关于我们</a>
+                                <a id="header-nav-aboutus" href="<?php echo $aboutusMenu["aboutus"]["url"]; ?>" class="dropdown-toggle" target="_blank">关于我们</a>
                             </li>
                         </ul>
                     </div>											
@@ -88,7 +90,7 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'ter
                 <h4 class="modal-title text-center" id="loginModal">登录</h4>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal mt40" id="login-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" method="post">
+                <form class="form-horizontal mt40" id="login-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" method="post" autocomplete="off">
                     <div class="form-group">
                         <label class="col-sm-3 control-label required" for="UserLoginForm_username">用户名 <span class="required">*</span></label>                
                         <div class="col-sm-8">
@@ -109,16 +111,19 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'ter
                             <input class="radio-checkbox" name="UserLoginForm[rememberMe]" id="UserLoginForm_rememberMe" value="1" type="checkbox">                        
                             <label class="radio-label" for="UserLoginForm_rememberMe">下次记住我</label>
                             <div class="Message" id="UserLoginForm_rememberMe_em_" style="display:none"></div>
-                            <div class="pull-right hide">
-                                <a class="nostyle strong" href="/mingyizhudao/user/forgetPassword">&gt;&gt;忘记密码？</a>
-                            </div>
+
                         </div>
                     </div>
                     <div class="form-group mt30 mb30">
                         <div class="col-sm-offset-3 col-sm-6">
                             <span id="btnLoginSubmit" class="btn btn-yes btn-lg btn-block">登录</span>			
                         </div>
-                        <div class="col-sm-offset-7 col-sm-4 mt20">
+                        <div class="col-sm-2">
+                            <div class="mt20 text-right">
+                                <a class="nostyle" href="<?php echo $urlForgetPassword; ?>" target="_blank">忘记密码</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-offset-7 col-sm-4 mt20 text-right">
                             <a id="toReg" class="text-right">没有账号？马上注册</a>
                         </div>
                     </div>
@@ -136,7 +141,7 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'ter
                 <h4 class="modal-title text-center" id="loginModal">注册</h4>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" role="form" id="register-form" action="<?php echo $ajaxRegisterUrl; ?>" method="post">
+                <form class="form-horizontal" role="form" id="register-form" action="<?php echo $ajaxRegisterUrl; ?>" method="post" autocomplete="off">
                     <div>
                         <input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
                         <input type="hidden" value="<?php echo $authActionType; ?>" name="smsverify[actionType]" id="smsverify_actionType">
@@ -185,7 +190,7 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'ter
                         <div class="col-sm-offset-3 col-sm-6">
                             <button id="btnRegisterSubmit" type="button" class="btn btn-yes btn-lg btn-block">注册</button>			
                         </div>
-                        <div class="col-sm-offset-7 col-sm-4 mt20">
+                        <div class="col-sm-offset-7 col-sm-4 mt20 text-right">
                             <a id="toLogin" class="text-right">已有账号？去登录</a>
                         </div>
                     </div>

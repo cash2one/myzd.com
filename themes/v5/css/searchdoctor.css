@@ -1,6 +1,9 @@
 .img100{width: 100px;height: 100px;display: block;margin: 10px auto;border: 1px solid #e4e4e4;border-radius: 50%;}
 .department-name{background-color: #19aea5;height:65px;line-height:65px;font-size:16px;color: #fff;}
-.city-sick-title{border-left:5px solid #19aea5;line-height:1.5em;padding-left: 5px;}
+.city-sick-title-city{border-left:5px solid #19aea5;line-height:1.5em;padding-left: 5px;}
+.city-sick-title-city a{margin-right:20px;display: inline-block;}
+.city-sick-title{line-height:1.5em;padding-left: 85px;}
+.city-sick-title .dis-title{position: absolute;margin-left: -85px;border-left:5px solid #19aea5;padding-left: 5px;}
 .city-sick-title a{margin-right:20px;display: inline-block;}
 .city-sick-title a:hover{cursor: pointer;}
 .disease-list{margin-top: 17px;}
@@ -24,6 +27,6 @@
 .find-navi{color:#fff;font-size:16px;padding:10px 0px 5px 15px;}
 .find-navi a{color:#fff;}
 .docdesc{height: 9em;overflow-y: hidden;}
-.contracted-img{margin-top:-90px;margin-right:-13px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
+.contracted-img{margin-top:-90px;margin-right:-20px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
 .city-list a.active{color: #19aea5;}
 .disease-list a.active{color: #19aea5;}

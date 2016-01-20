@@ -24,9 +24,9 @@ $isTerms = Yii::app()->request->getQuery('page', '');
     <div class="container">
         <div class="user-crumbs">
             <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a>
-            >>
+            >
             <a href="<?php echo $urlBookingList; ?>">个人中心</a>
-            >>
+            >
             <a>帮助中心</a>
         </div>
     </div>

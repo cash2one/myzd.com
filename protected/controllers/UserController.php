@@ -22,7 +22,7 @@ class UserController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'login', 'captcha', 'ajaxLogin', 'ajaxRegister'),
+                'actions' => array('register', 'login', 'captcha', 'ajaxLogin', 'ajaxRegister','forgetPassword','ajaxForgetPassword'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -232,6 +232,41 @@ class UserController extends WebsiteController {
         $this->render('paySuccess', array(
             'data' => $output
         ));
+    }
+
+    //进入忘记密码页面
+    public function actionForgetPassword() {
+        $form = new ForgetPasswordForm();
+        $this->render('forgetPassword', array(
+            'model' => $form,
+        ));
+    }
+
+    //忘记密码功能
+    public function actionAjaxForgetPassword() {
+        $output = array('status' => 'no');
+        $form = new ForgetPasswordForm();
+        if (isset($_POST['ForgetPasswordForm'])) {
+            $form->attributes = $_POST['ForgetPasswordForm'];
+            if ($form->validate()) {
+                $userMgr = new UserManager();
+                $user = $userMgr->loadUserByUsername($form->username);
+                if (isset($user)) {
+                    $success = $userMgr->doResetPassword($user, null, $form->password_new);
+                    if ($success) {
+                        $output['status'] = 'ok';
+                    } else {
+                        $output['errors']['errorInfo'] = '密码修改失败!';
+                    }
+                } else {
+                    $output['errors']['username'] = '用户不存在';
+                }
+            } else {
+                $output['errors'] = $form->getErrors();
+            }
+        }
+
+        $this->renderJsonOutput($output);
     }
 
     /*

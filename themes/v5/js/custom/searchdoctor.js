@@ -18,7 +18,7 @@ function setDoctorHtml(data, urlDoctorView) {
                     '<div class="border-gray expert-list">' +
                     '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '"></div>' +
                     isContractedImg +
-                    '<div class="text-center">' + doctor.name + '</div>' +
+                    '<div class="text-center text15">' + doctor.name + '</div>' +
                     '<div class="text-center color-gray mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</div>' +
                     '<div class="mt10 docdesc"><span class="strong">擅长：</span>' + docdesc + '</div>' +
                     '<div class="text-center mt10"></div>' +
@@ -121,6 +121,7 @@ function initDeptFunction() {
         $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
         ajaxLoadDiseaseByCategory(subCat);
+        setCityActive();
     });
     $('.department ul>li>a.diseaseCategory').click(function (e) {
         e.preventDefault();
@@ -133,6 +134,7 @@ function initDeptFunction() {
         condition["disease_sub_category"] = '';
         urlLoadDoctor = url;
         ajaxLoadDoctor('&getcount=1');
+        setCityActive();
     });
 }
 function initDiseaseFunction() {
@@ -150,21 +152,25 @@ function initDiseaseFunction() {
         $('.disease-list a.disease').removeClass('active');
         $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
+        setCityActive();
     });
     $('.disease-list a.disease').click(function (e) {
         e.preventDefault();
         var disease_name = $(this).text();
+        var disease = $(this).attr('data-id');
         var url = $(this).attr('href');
         condition["page"] = 1;
         condition["city"] = '';
-        condition["disease_name"] = disease_name;
+        condition["disease"] = disease;
+        condition["disease_name"] = '';
         condition["disease_category"] = '';
         condition["disease_sub_category"] = '';
         urlLoadDoctor = url;
-        $('.department-name>span').html(condition["disease_name"]);
+        $('.department-name>span').html(disease_name);
         $('.disease-list a.all').removeClass('active');
         $('.disease-list a.disease').removeClass('active');
         $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
+        setCityActive();
     });
 }

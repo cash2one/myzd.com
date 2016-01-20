@@ -8,9 +8,9 @@ $booking = $data->results->booking;
     <div class="container">
         <div class="user-crumbs">
             <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a>
-            >>
+            >
             <a href="<?php echo $urlBookingList; ?>">个人中心</a>
-            >>
+            >
             <a href="<?php echo $urlBookingList; ?>">预约单</a>
         </div>
     </div>

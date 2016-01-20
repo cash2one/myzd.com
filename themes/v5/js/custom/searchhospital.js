@@ -132,5 +132,6 @@ function initDeptFunction() {
         $('.department ul>li>a.subCat').removeClass('active');
         $(this).addClass('active');
         ajaxLoadHopital('&getcount=1');
+        setCityActive();
     });
 }

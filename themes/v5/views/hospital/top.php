@@ -160,11 +160,15 @@ $page = Yii::app()->request->getQuery('page', '');
         history.pushState(stateObject, title, newUrl);
     }
     function setCityActive() {
+        $('.city-list a').removeClass('active');
         $('.city-list a').each(function () {
             var cityId = $(this).attr('data-id');
-            if (cityId == condition["city"]) {
-                $('.city-list a').removeClass('active');
-                $(this).addClass('active');
+            if (condition["city"]) {
+                if (cityId == condition["city"]) {
+                    $(this).addClass('active');
+                }
+            }else{
+                $('.all.city').addClass('active');
             }
         });
     }

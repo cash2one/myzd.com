@@ -16,14 +16,14 @@ $(document).ready(function () {
     $('.searchdoctor-tab').click(function () {
         $('.search-top').removeClass('active');
         $(this).addClass('active');
-        $('#home-doctor-search-form').show();
-        $('#home-hospital-search-form').hide();
+        $('#searchdoctor-btn').show();
+        $('#searchhospital-btn').hide();
     });
     $('.searchhospital-tab').click(function () {
         $('.search-top').removeClass('active');
         $(this).addClass('active');
-        $('#home-doctor-search-form').hide();
-        $('#home-hospital-search-form').show();
+        $('#searchdoctor-btn').hide();
+        $('#searchhospital-btn').show();
     });
 });
 function ajaxLoadDoctor(urlLoadDoctor, urlDoctorView) {

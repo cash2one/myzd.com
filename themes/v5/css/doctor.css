@@ -2,7 +2,7 @@
 .crumbs-doctor{color: #fff;font-size: 16px;padding: 10px 15px;}
 .crumbs-doctor>a{color: #fff;font-size: 16px;}
 .expert-faculty{border:1px solid #19aea5;padding:5px 15px;border-radius:4px;}
-.doctorInfo .docinfo-title{font-size: 16px;font-weight: bold;margin: 40px 0 10px;background-repeat: no-repeat;padding: 3px 0 5px 30px;}
+.doctorInfo .docinfo-title{font-size: 18px;margin: 40px 0 10px;background-repeat: no-repeat;padding: 3px 0 5px 30px;}
 .doctorInfo .docinfo-title.good{background-image: url(../images/icons/good.png);}
 .doctorInfo .docinfo-title.experience{background-image: url(../images/icons/experience.png);}
 .doctorInfo .docinfo-title.honor{background-image: url(../images/icons/honnor.png);}
