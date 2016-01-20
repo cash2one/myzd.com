@@ -67,7 +67,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             </div>
                         </div>
                     </div>
-                    <div class="row mb290">
+                    <div class="row mb100">
                         <div class="col-sm-5 ml44">
                             <div class="other-level mt60">
                                 <div class="text-center"><img src="<?php echo $urlResImage ?>aboutus/android.png"><img class="pull-right count-img" src="<?php echo $urlResImage ?>aboutus/02.png">

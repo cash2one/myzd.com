@@ -31,7 +31,7 @@ $news = array(
 <div class="container-fluid aboutus-header h400">
     <img src="<?php echo $urlResImage; ?>aboutus/our-header.png"/>
 </div>
-<div class="container-fluid bg-gray-f7">
+<div class="container-fluid bg-gray-f7" style="padding-bottom:35px;">
     <div class="row">
         <div class="container">
             <div class="mt-60">

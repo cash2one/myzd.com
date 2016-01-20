@@ -37,7 +37,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/min
                 </div>
             </div>
 
-            <div class="row mb40 mt160">
+            <div class="row mb100 mt160">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-9">
                     <div class="text-center text17 color-green mb40">
