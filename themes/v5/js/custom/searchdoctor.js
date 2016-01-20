@@ -112,6 +112,7 @@ function initDeptFunction() {
         var subCatName = $(this).text();
         condition["page"] = 1;
         condition["city"] = '';
+        condition["disease"] = '';
         condition["disease_name"] = '';
         condition["disease_category"] = '';
         condition["disease_sub_category"] = subCat;
@@ -129,6 +130,7 @@ function initDeptFunction() {
         var url = $(this).attr('href');
         condition["page"] = 1;
         condition["city"] = '';
+        condition["disease"] = '';
         condition["disease_name"] = '';
         condition["disease_category"] = diseaseCategory;
         condition["disease_sub_category"] = '';
@@ -144,6 +146,7 @@ function initDiseaseFunction() {
         var url = $(this).attr('href');
         condition["page"] = 1;
         condition["city"] = '';
+        condition["disease"] = '';
         condition["disease_name"] = '';
         condition["disease_category"] = '';
         condition["disease_sub_category"] = subCat;
