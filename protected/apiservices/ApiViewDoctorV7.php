@@ -77,7 +77,7 @@ class ApiViewDoctorV7 extends EApiViewService {
 
     private function loadRelatedDoctors(){
         $diseaseDoctorJoin = DiseaseDoctorJoin::model()->getAllByDoctorId($this->doctor_id);
-        if(isset($diseaseDoctorJoin)){
+        if(!empty($diseaseDoctorJoin){
             $diseaseId = $diseaseDoctorJoin[0]->disease_id;
             $categoryDiseaseJoin = CategoryDiseaseJoin::model()->getById($diseaseId);
             if(isset($categoryDiseaseJoin)){
