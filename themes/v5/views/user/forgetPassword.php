@@ -118,10 +118,12 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
         var domMobile = domForm.find("#ForgetPasswordForm_username");
         var mobile = domMobile.val();
         if (mobile.length === 0) {
-            $("#ForgetPasswordForm_username").parent().next().html("<div id='ForgetPasswordForm_username-error' class='error'>请输入手机号码</div>");
+            $('#ForgetPasswordForm_username-error').remove();
+            $("#ForgetPasswordForm_username").parents('.contrller').append("<div id='ForgetPasswordForm_username-error' class='error'>请输入手机号码</div>");
             //domMobile.parent().addClass("error");
         } else if (!validatorMobile(mobile)) {
-            $("#ForgetPasswordForm_username").parent().next().html("<div id='ForgetPasswordForm_username-error' class='error'>请输入正确的中国手机号码!</div>");
+            $('#ForgetPasswordForm_username-error').remove();
+            $("#ForgetPasswordForm_username").parents('.contrller').append("<div id='ForgetPasswordForm_username-error' class='error'>请输入正确的中国手机号码!</div>");
         } else {
             $(".error").html("");//删除错误信息
             buttonTimerStart(domBtn, 60000);
