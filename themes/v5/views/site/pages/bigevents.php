@@ -17,10 +17,10 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
         <div class="container-fluid big-event-bg">
             <div class="row">
-                <div class="container mt80">
+                <div class="container mt80" id="big-event">
                     <div class="row">
                         <div class="col-md-5 ml65 mr-65">
-                            <div class="row mt40">
+                            <div class="row event-151202">
                                 <div class="col-md-6">
                                     <img src="<?php echo $urlResImage ?>aboutus/picture1-01.png">
                                 </div>
@@ -32,7 +32,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div>名医主刀入选<strong class="text18">“第十届中国最具投资价值企业50强”</strong>榜单。该榜单由清科集团发起，是投资界首个专注高成长企业的年度评选活动，被誉为”投资界的风向标“。</div>
                                 <div class="tooltip-arrow tooltip-arrow-left top-1 right-15"></div>
                             </div>
-                            <div class="row pt50 mt55">
+                            <div class="row pt50 event-151016">
                                 <div class="col-md-6 mt5">
                                     <img src="<?php echo $urlResImage ?>aboutus/picture3-01.png">
                                 </div>
@@ -44,7 +44,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div>名医主刀完成<strong class="text18">A轮6000万</strong>元人民币融资。复星医药领投，高榕资本/真格基金跟投。</div>
                                 <div class="tooltip-arrow tooltip-arrow-left1 top-1 right-15"></div>
                             </div>
-                            <div class="row pt50 mt55">
+                            <div class="row pt50 event-1508-1">
                                 <div class="col-md-6">
                                     <img src="<?php echo $urlResImage ?>aboutus/picture5-01.png">
                                 </div>
@@ -56,7 +56,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div>名医主刀已实现北京、上海、天津、杭州、南京所有三甲医院，所有科室全覆盖。每个城市随时可以调用的公立医院及私立医院的床位超过<strong class="text18">1000张</strong>，满足医保患者和商业保险患者的多重需求。</div>
                                 <div class="tooltip-arrow tooltip-arrow-left top-1 right-15"></div>
                             </div>
-                            <div class="row pt50 mt75">
+                            <div class="row pt50 event-1507-1">
                                 <div class="col-md-6">
                                     <img src="<?php echo $urlResImage ?>aboutus/picture7-01.png">
                                 </div>
@@ -68,7 +68,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div>名医主刀独特的理念吸引<strong class="text18">央视《创业英雄汇》</strong>节目组，随之名医主刀受邀在央视平台进入全国人民视野。“名医主刀”平台创始人兼CEO苏舒路演随即播出，名医主刀将为中国医疗格局开启新的篇章。</div>
                                 <div class="tooltip-arrow tooltip-arrow-left top-1 right-15"></div>
                             </div>
-                            <div class="row pt50 mt70">
+                            <div class="row pt50 event-1505">
                                 <div class="col-md-6">
                                     <img src="<?php echo $urlResImage ?>aboutus/picture9-01.png">
                                 </div>
@@ -83,22 +83,24 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                         </div>
                         <div class="col-md-2">
                             <div class="circle h110p">
-                                <img src="<?php echo $urlResImage ?>aboutus/2015.png">
+                                <img src="<?php echo $urlResImage ?>aboutus/now.png">
                             </div>
                             <div class="h100p" >
                                 <div ></div>
                                 <div class="h100p bg-yellow yellow-line"></div>
                             </div>
-                            <div class="text-center">
+                             <div class="text-center">
                                 <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
                             </div>
-                            <div class="h160p">
-                                <div class="h160p bg-yellow yellow-line"></div>
+                            <div class="h170p" >
+                                <div ></div>
+                                <div class="h170p bg-yellow yellow-line"></div>
                             </div>
-                            <div class="text-center">
-                                <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
+                            <div class="circle h110p mt-7">
+                                <img src="<?php echo $urlResImage ?>aboutus/2016.png">
                             </div>
-                            <div class="h170p">
+                            <div class="h170p" >
+                                <div ></div>
                                 <div class="h170p bg-yellow yellow-line"></div>
                             </div>
                             <div class="text-center">
@@ -140,15 +142,39 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <div class="text-center">
                                 <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
                             </div>
-                            <div class="h80p">
-                                <div class="h80p bg-yellow yellow-line"></div>
+                            <div class="h170p">
+                                <div class="h170p bg-yellow yellow-line"></div>
                             </div>
-                            <div class="circle text-center">
-                                <img src="<?php echo $urlResImage ?>aboutus/2014.png">
+                            <div class="text-center">
+                                <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
+                            </div>
+                            <div class="h170p">
+                                <div class="h170p bg-yellow yellow-line"></div>
+                            </div>
+                            <div class="text-center">
+                                <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
+                            </div>
+                            <div class="h100p">
+                                <div class="h100p bg-yellow yellow-line"></div>
+                            </div>
+                            <div class="circle text-center mt-7">
+                                <img src="<?php echo $urlResImage ?>aboutus/2015.png">
                             </div>
                         </div>
                         <div class="col-md-5 ml-65">
-                            <div class="row mt235">
+                             <div class="row event-160108">
+                                <div class="col-md-6 pt142 font-20p color-blue mt5">
+                                    2016年1月8日
+                                </div>
+                                <div class="col-md-6 pl10 mt5">
+                                    <img src="<?php echo $urlResImage ?>aboutus/picture10-01.png">
+                                </div>
+                            </div>
+                            <div class="div-right mt4 pt10 pb10 pl10 pr10">
+                                <div>名医主刀荣获亿欧网举办的<strong class="text18">“2015年度中国互联网+最具创新力”</strong>奖。入围项目的创新不仅是模式创新、服务业务创新，还包括技术创新、体制机制创新和管理创新等，且主要根据全社会公开项目征集、亿欧网评测和参考第三方数据（艾瑞、Testin云测、TakingData）得出。</div>
+                                <div class="tooltip-arrow tooltip-arrow-right left-15 top-1"></div>
+                            </div>
+                            <div class="row event-151128">
                                 <div class="col-md-6 pt142 font-20p color-blue mt5">
                                     2015年11月28日
                                 </div>
@@ -160,7 +186,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div>在人民日报《健康时报》主办的第八届“健康中国”论坛上，名医主刀荣获<strong class="text18">“2015年度互联网+医疗行业创新贡献奖”</strong>；名医主刀与滴滴出行、阿里健康共同打造的“滴滴医生”项目获评2015年度十大健康新闻。名医主刀CEO苏舒受到全国人大常委会副委员长陈至立、原卫生部部长高强等领导同志接见。</div>
                                 <div class="tooltip-arrow tooltip-arrow-right left-15 top-1"></div>
                             </div>
-                            <div class="row mt110">
+                            <div class="row event-1508-2">
                                 <div class="col-md-6 pt142 font-20p color-blue">
                                     2015年8月
                                 </div>
@@ -172,7 +198,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div>名医主刀应邀参加《创新中国》总决赛，并获得创新中国9月份最受关注的<strong class="text18">10家新创公司之一。</strong></div>
                                 <div class="tooltip-arrow tooltip-arrow-right left-15 top-1"></div>
                             </div>
-                            <div class="row mt145">
+                            <div class="row event-1507-2">
                                 <div class="col-md-6 pt142 font-20p color-blue">
                                     2015年7月
                                 </div>
@@ -184,7 +210,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div>名医主刀受<strong class="text18">央视《华商论见》</strong>邀约，名医主刀CEO苏舒与央视一哥水均益进行一个深度的交流。水均益老师以其独特的视角深度剖析国内医疗资源配比，对名医主刀精准匹配专家，优化国内医疗资源给予充分肯定。与此同时，名医主刀与央视《华商论见》签订战略协议，继续深化合作。</div>
                                 <div class="tooltip-arrow tooltip-arrow-right left-15 top-1"></div>
                             </div>
-                            <div class="row mt115">
+                            <div class="row event-1507-3">
                                 <div class="col-md-6 pt142 font-20p color-blue">
                                     2015年7月
                                 </div>
