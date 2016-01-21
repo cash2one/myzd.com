@@ -216,7 +216,6 @@ class Doctor extends EActiveRecord {
     public function afterFind() {
         // convert json string to array.
         $this->honour = CJSON::decode($this->honour);
-        $this->career_exp = CJSON::decode($this->career_exp);
         return parent::afterFind();
     }
 
@@ -224,7 +223,6 @@ class Doctor extends EActiveRecord {
         if (is_array($this->honour)) {
             // convert array to json string.
             $this->honour = CJSON::encode($this->honour);
-            $this->career_exp = CJSON::encode($this->career_exp);
         }
         return parent::beforeSave();
     }
@@ -574,10 +572,6 @@ class Doctor extends EActiveRecord {
         return $this->honour;
     }
     
-    public function getCareerExpList() {
-        return $this->career_exp;
-    }
-
     public function getDateCreated($format = null) {
         return $this->getDateAttribute($this->date_created, $format);
     }
