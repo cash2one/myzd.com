@@ -6,7 +6,7 @@ $news = array(
     'dididoctor' => '滴滴医生火爆预约，名医抢单随车上门',
     'doctoronsite' => '足不出户、医生上门！------阿里健康、滴滴出行、名医主刀，三强联手推医生上门服务',
     'partnerofdocs' => '名医主刀：做医生和医生集团的合伙人',
-//    'mamajixufeiyuan' => '年轻妈妈的生命倒计时，急需寻找“续命”肺源',
+    'mamajixufeiyuan' => '年轻妈妈的生命倒计时，急需寻找“续命”肺源',
     'tiantanpuhua' => '"名医主刀＋北京天坛普华医院" 互联网诊疗新模式',
     'chuangyebang' => '"名医主刀"----"创业邦"推荐为9月值得关注的新创公司',
     'teacher' => '感恩教师，名医与慈善同行',
@@ -15,11 +15,11 @@ $news = array(
     '36ke' => '获真格基金青睐的“名医主刀”如何打造互联网O2O“飞刀”平台？',
     'mingyizhudao' => '名医主刀：移动医疗手术O2O',
     'fly-cutter' => '名医主刀：互联网式“飞刀”',
-//    'kangai' => '父亲两次抗癌，只为给女儿更久远的爱',
+    'kangai' => '父亲两次抗癌，只为给女儿更久远的爱',
     'qianyuedejiyiyuan' => '名医主刀成功签约德济医院 互联网医疗又一里程碑',
     'chuangyeyingxionghui' => '男儿英雄泪，志在“好看病，看好病”——“名医主刀”登陆央视《创业英雄汇》',
     'zhenfund' => '“名医主刀”获真格基金500万天使投资，打造国内最大的手术O2O平台',
-//    'hanayideganxiexin' => '韩阿姨的一封感谢信照亮千万患者就医路'
+    'hanayideganxiexin' => '韩阿姨的一封感谢信照亮千万患者就医路'
 );
 $this->pageTitle = $news[$data] . '_名医主刀';
 ?>
