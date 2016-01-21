@@ -1,24 +1,23 @@
 #site-content{padding-bottom: 0!important;}
 .bg-gray-f7{background-color:#f7f7f7;}
 .h400{height:400px;}
-.summary-one{background-color:#f7f7f7;height:400px;}
-.long-line{border-left:1px solid #fff;height:250px;}
-.white-point{margin-left:-2px;border-radius:50%;background-color:#fff;width:5px;height:5px;}
-.short-line{border-left:1px solid #fff;height:150px;margin-left:21px;}
-.summary-text{line-height:2.5em;margin-left:-60px;margin-top:130px;}
-.mingyi-title{font-size:21px;color:#fefefe;font-weight:bold;background-color:#42babc;padding-left:6px;padding-right:6px;}
+.ml-60{margin-left:-60px;}
+.summary-one{background-color:#f7f7f7;padding:100px 0;}
+.summary-text{line-height:2.5em;margin-left:-60px;margin-top:20px;}
+.mingyi-title{font-size:21px;color:#fefefe;font-weight:bold;background-color:#42babc;padding-left:6px;padding-right:6px;height:28px;width:100px;}
 .mt105{margin-top:105px;}
-.summary-two{background-color:#f7f7f7;height:420px;}
-.summary-two-img{margin-top:80px;;margin-left:-60px}
-.summary-two-text{line-height:2.5em;margin-left:-105px;margin-top:110px;}
+.summary-two{background-color:#f7f7f7;padding-bottom:100px;}
+.summary-two-img{margin-left:-50px}
+.summary-two-text{line-height:2.5em;margin-left:-105px;margin-top:20px;}
 .summary-two-title{font-size:22px;font-weight:bold;}
-.second-long-line{border-right:1px solid #fff;height:255px;margin-left:22px;}
-.second-short-line{border-right:1px solid #fff;height:150px;margin-right:21px;}
-.two-white-point{margin-right:-2px;border-radius:50%;background-color:#fff;width:5px;height:5px;}
-.two-white-point2{margin-right:19px;border-radius:50%;background-color:#fff;width:5px;height:5px;}
-.summary-three{background-color:#f7f7f7;height:155px;background-image:url(../images/aboutus/xinDianTu-01.png);background-repeat:no-repeat}
-.summary-three-text{margin-left:-15px;margin-top:250px;color:#fff;letter-spacing:2px;}
+
+.summary-three{background-color:#f7f7f7;padding-bottom:100px;}
+.summary-three-text{margin-left:-50px;margin-top:5px;line-height:2.5em;}
 .summary-three-img{margin-top:25px;margin-left:-5px;}
+.summary-three .mode-title{height:38px;background-color:#eac11d;font-size:21px;color:#fff;line-height:36px;width:200px;margin-left:-50px;}
+
+.summary-four{background-color:#f7f7f7;padding-bottom:100px;}
+.summary-four .mode-title{height:38px;background-color:#eac11d;font-size:21px;color:#fff;line-height:36px;width:200px;}
 .mt150{margin-top:150px;}
 .ml-45{margin-left:-45px;}
 .color-yellow{color:#FEF102}
