@@ -73,7 +73,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                     <img src="<?php echo $urlResImage ?>aboutus/picture9-01.png">
                                 </div>
                                 <div class="col-md-6 text-right pt142 font-20p color-red">
-                                    2015年10月5日
+                                    2015年5月
                                 </div>
                             </div>
                             <div class="div-left1 mt4 pt10 pl10 pr10 pb30">
