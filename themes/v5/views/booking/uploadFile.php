@@ -34,7 +34,7 @@ $urlReturn = $this->createUrl('booking/userBooking',array('id'=>$booking->id));
                                 <input id="bookingId" type="hidden" name="booking[id]" value="<?php echo $booking->id; ?>" />
                                 <input id="bookingReport_type" type="hidden" name="booking[report_type]" value="mr" />
                             </form>
-                            <h4 class="color-green">提交成功！请您上传病例资料：</h4>
+                            <h4 class="color-green">请您上传病例资料：</h4>
                             <div>
                                 <?php echo $this->renderPartial('_uploadFile'); ?>
                             </div>
@@ -61,15 +61,15 @@ $urlReturn = $this->createUrl('booking/userBooking',array('id'=>$booking->id));
                     <div class="col-md-4">
                         <div class="introduce">
                             <div class="introduce-title"><i class="fa fa-caret-right"></i> 什么是病例资料？</div>
-                            <div class="introduce-content"></div>
+                            <div class="introduce-content">病历资料包括影像资料（CT、磁共振、X光片）、检查报告单、门诊病例、住院病历、出院小结等病史资料。</div>
                         </div>
                         <div class="introduce">
                             <div class="introduce-title"><i class="fa fa-caret-right"></i> 为什么要上传影像资料？</div>
-                            <div class="introduce-content"></div>
+                            <div class="introduce-content">病历资料为医生的诊断和治疗方案提供了可靠有效的参考价值。可以让医生在最短的时间里，尽可能全面地对病情做个初判。所以请您提供清楚的照片。名医主刀会对此绝对保密，仅用于医生诊断。</div>
                         </div>
                         <div class="introduce">
                             <div class="introduce-title"><i class="fa fa-caret-right"></i> 暂时没有，稍后可以补充吗？</div>
-                            <div class="introduce-content"></div>
+                            <div class="introduce-content">可以。在您完成拍照后，您可以在个人中心——我的预约单列表里找到您的预约单，点击修改——上传病历，即可补充。最多可以上传9张。</div>
                         </div>
                     </div>
                 </div>
@@ -84,6 +84,9 @@ $urlReturn = $this->createUrl('booking/userBooking',array('id'=>$booking->id));
             $('.showBookingInfo .fa-angle-right').toggle();
             $('.showBookingInfo .fa-angle-down').toggle();
             $('.bookingInfo').toggle();
+        });
+        $('.introduce-title').click(function(){
+            $(this).parent().find('.introduce-content').toggle();
         });
     });
 </script>

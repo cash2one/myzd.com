@@ -119,6 +119,7 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 /**** loginModal ****/
 @media (min-width: 768px){#loginModal .modal-dialog,#registerModal .modal-dialog {width: 600px;margin: 100px auto 30px;}}
 /**** site-content ****/
+form label a:hover{text-decoration: underline!important;}
 form .contrller{margin-bottom: 15px;}
 .text-right{text-align: right;}
 .form-group .text-right:hover a{color: #3bb8b6;}

@@ -62,7 +62,9 @@ a.color-status:hover{cursor: pointer;}
 /**** bookingSuccess ****/
 .bookingSuccess{padding-bottom: 40px;}
 .bookingSuccess .introduce .introduce-title{font-size: 16px;margin: 10px 0 5px;padding-left: 15px;}
+.bookingSuccess .introduce .introduce-title:hover{cursor: pointer;}
 .bookingSuccess .introduce .introduce-title>.fa{color: #78c7bb;font-size: 24px;position: absolute;margin-left: -12px;}
+.bookingSuccess .introduce .introduce-content{padding-left: 16px;display: none;}
 .border-left-dashed{border-left: 1px dashed #ddd;}
 .border-right{border-right: 1px solid #ddd;}
 .bookingSuccess .showBookingInfo .fa-angle-down{display: none;}
