@@ -17,7 +17,7 @@ $urlLogout = $this->createUrl('user/logout');
 $bookinglist = $this->createUrl('booking/list');
 $urlDownloadApp = $this->createUrl('download/app');
 $urlDoctorSearch = $this->createUrl('doctor/top', array('disease_sub_category' => 1));
-$urlHopitalSearch = $this->createUrl('hospital/top', array('disease_category' => 1));
+$urlHopitalSearch = $this->createUrl('hospital/top', array('disease_sub_category' => 1));
 $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
 $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms'));
 $urlHelp = $this->createUrl('site/page', array('view' => 'help'));

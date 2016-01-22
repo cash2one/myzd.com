@@ -50,3 +50,4 @@
 .city-list a.active{color: #19aea5;}
 .hpName{color: #595757;}
 .hpName:hover{color: #19aea5;}
+.hospital-list .hospital-desc{line-height: 1.7em;}

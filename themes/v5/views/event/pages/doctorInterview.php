@@ -9,6 +9,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="header-content">
                     <div class="row">
                         <div class="main-text col-sm-offset-3 col-sm-9">
+                            <a class="pull-right mt10 mr30" href="<?php echo $this->createUrl('doctor/view', array('id' => 2887)); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>event/btn_doctor.png"/></a>
                             <div><h3 class="color-green">【医生专访 任善成】</h3></div>
                             <div><h4>“达芬奇手术机器人”为泌尿疾病患者带来福音</h4></div>
                             <div class="mt20"><span class="color-green">受访专家</span>：任善成（上海长海医院泌尿外科-泌尿外科） 副主任医师 副教授。美国加州大学旧金山分校(UCSF)联合培养博士，美国前列腺癌基金会(Prostate Cancer Foundation)优秀青年学者, 上海市浦江人才；临床专业方向，擅长泌尿系统肿瘤特别是前列腺癌的微创手术，2011年赴香港威尔士亲王医院接受达芬奇机器人手术培训，成为第一批获得手术资质的外科医生。</div>

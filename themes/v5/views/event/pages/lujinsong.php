@@ -13,6 +13,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="header-lu">
                 <div class="title-lu mt20 color-white">
                     <span class="strong text16">陆劲松</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="color-white text16">主任医师&nbsp;|&nbsp;教授</span>
+                    <a class="pull-right" href="<?php echo $this->createUrl('doctor/view', array('id' => 295)); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>event/btn_doctor.png"/></a>
                     <div class="mt10">医学博士（肿瘤外科专业）&nbsp;&nbsp;|&nbsp;&nbsp;博士生导师</div>
                     <div class="mt20">现任上海交通大学医学院附属仁济医院乳腺疾病诊治中心主任，乳腺外科主任。并兼任中国抗癌协会乳腺癌专业委员会委员，中国临床肿瘤学会（CSCO）执行委员会委员，CSCO青年专家委员会副主任委员，中国医药教育协会乳腺疾病专业委员会副主任委员，中国医师协会外科分会MDT委员会委员、中国医师协会外科分会乳腺外科委员会委员、上海市乳腺癌防治专业委员会常委、副主任委员。2012年获得“上海市十佳医生”荣誉称号。</div>
                 </div>

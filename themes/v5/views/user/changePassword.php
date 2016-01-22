@@ -28,8 +28,9 @@ $urlBookingList = $this->createUrl('booking/list');
                 <div class="mt50">
                     <?php $this->renderPartial('_formPassword', array('model' => $model)); ?>
                 </div>
-                
+                <br/><br/>
             </div>
         </div>
     </div>
 </div>
+<br/><br/><br/><br/>
