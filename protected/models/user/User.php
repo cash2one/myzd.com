@@ -44,13 +44,13 @@ class User extends EActiveRecord {
             array('username, password, role, salt, terms', 'required'),
             array('role, login_attempts, terms', 'numerical', 'integerOnly' => true),
             array('username', 'length', 'is' => 11),
-            array('uid', 'length', 'is'=>32),
             //    array('username', 'unique', 'message' => '{attribute}已被注册.'),
             array('name, qq, wechat', 'length', 'max' => 45),
             array('email', 'length', 'max' => 255),
             array('password', 'length', 'max' => 64),
             array('password', 'length', 'min' => 64),
             array('salt', 'length', 'min' => 40),
+            array('uid', 'length', 'is'=>32, 'on' => 'register'),
             array('password_raw', 'required', 'message' => '请填写{attribute}.', 'on' => 'register'),
             array('password_raw', 'length', 'min' => 4, 'max' => 40, 'tooShort' => '{attribute}不可少于4位.', 'tooLong' => '{attribute}不可超过40位', 'on' => 'register'),
             array('date_activated, last_login_time, date_created, date_updated, date_deleted', 'safe'),
@@ -137,12 +137,13 @@ class User extends EActiveRecord {
         ));
     }
 
-//    public function beforeValidate(){
-//        parent::beforeValidate();
-//        if(is_null($this->uid)){
-//            $this->createUID();
-//        }
-//    }
+    public function beforeValidate(){
+        parent::beforeValidate();
+        if(is_null($this->uid)){
+            $this->createUID();
+        }
+        return true;
+    }
 
     /**
      * Returns the static model of the specified AR class.
@@ -173,7 +174,7 @@ class User extends EActiveRecord {
     public function createNewModel() {
         $this->createSalt();
         $this->createPassword();
-        $this->createUID();
+//        $this->createUID();
     }
 
     public function checkLoginPassword($passwordInput) {
