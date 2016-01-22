@@ -109,7 +109,7 @@ $isTerms = Yii::app()->request->getQuery('page', '');
             </div> <div class="pb40 border-green mt10 support-content" id="answer8">  
 
                 <div class="content-header"><span class="ml20">预约金是否退还？</span></div>
-                <div class="mt50 ml40 mr40">
+                <div class="mt50 ml40 mr40"  style="line-height:2.5em;">
                     <span class="color-red-ff0000">  以下2种情况下退还一半预约金：</span><br/>
                     ①在所有专家诊断后都认为该患者不具备手术条件/手术风险过大/达不到病人期望而不接受手术时，退还一半预约金。<br/>
                     ②对于主刀医生确认需要手术后，若平台没有能在一周内安排到合适床位，退还一半预约金。<br/>
