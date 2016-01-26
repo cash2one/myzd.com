@@ -54,12 +54,12 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
                 <div class="expert">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs mt30" role="tablist">
-                        <li class="active category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank">外科</a></li>
-                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>" data-page="dept2" target="_blank">骨科</a></li>
-                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>" data-page="dept3" target="_blank">妇产科</a></li>
-                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>" data-page="dept4" target="_blank">小儿外科</a></li>
-                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>" data-page="dept5" target="_blank">五官科</a></li>
-                        <li class="category text-center last"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>" data-page="dept6" target="_blank">内科</a></li>
+                        <li class="active category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank"><img src="<?php echo $urlResImage; ?>icons/waike.png">外科</a></li>
+                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>" data-page="dept2" target="_blank"><img src="<?php echo $urlResImage; ?>icons/guke.png"> 骨科</a></li>
+                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>" data-page="dept3" target="_blank"><img src="<?php echo $urlResImage; ?>icons/fuchanke.png">妇产科</a></li>
+                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>" data-page="dept4" target="_blank"><img src="<?php echo $urlResImage; ?>icons/xiaoerke.png">小儿外科</a></li>
+                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>" data-page="dept5" target="_blank"><img src="<?php echo $urlResImage; ?>icons/wuguanke.png">五官科</a></li>
+                        <li class="category text-center last"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>" data-page="dept6" target="_blank"><img src="<?php echo $urlResImage; ?>icons/neike.png">内科</a></li>
                     </ul>
                     <!-- Tab panes -->
                     <div class="tab-content expList">
