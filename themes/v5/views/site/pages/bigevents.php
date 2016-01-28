@@ -25,7 +25,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                     <img src="<?php echo $urlResImage ?>aboutus/picture1-01.png">
                                 </div>
                                 <div class="col-md-6 text-right pt142 font-20p color-blue">
-                                    2015年12月2日
+                                    2015年12月
                                 </div>
                             </div>
                             <div class="div-left mt4 pt10 pr10 pl10 pb40">
@@ -37,7 +37,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                     <img src="<?php echo $urlResImage ?>aboutus/picture3-01.png">
                                 </div>
                                 <div class="col-md-6 text-right pt142 font-20p color-red mt5">
-                                    2015年10月16日
+                                    2015年10月
                                 </div>
                             </div>
                             <div class="div-left1 mt4 pt30 pr40 pl40 pb40 line-height2-5em">
@@ -164,7 +164,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                         <div class="col-md-5 ml-65">
                              <div class="row event-160108">
                                 <div class="col-md-6 pt142 font-20p color-blue mt5">
-                                    2016年1月8日
+                                    2016年1月
                                 </div>
                                 <div class="col-md-6 pl10 mt5">
                                     <img src="<?php echo $urlResImage ?>aboutus/picture10-01.png">
@@ -176,7 +176,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             </div>
                             <div class="row event-151128">
                                 <div class="col-md-6 pt142 font-20p color-blue mt5">
-                                    2015年11月28日
+                                    2015年11月
                                 </div>
                                 <div class="col-md-6 pl10 mt5">
                                     <img src="<?php echo $urlResImage ?>aboutus/picture2-01.png">
@@ -188,7 +188,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             </div>
                             <div class="row event-1508-2">
                                 <div class="col-md-6 pt142 font-20p color-blue">
-                                    2015年8月
+                                    2015年9月
                                 </div>
                                 <div class="col-md-6 pl10">
                                     <img src="<?php echo $urlResImage ?>aboutus/picture4-01.png">
