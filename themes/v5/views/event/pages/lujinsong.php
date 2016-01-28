@@ -55,7 +55,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="mt10"><div class="position-a"><img src="<?php echo $urlResImage; ?>event/lujinsong/A-icon.png">&nbsp;<span class="angle"></span></div><div class="answer">陆：你这么说是对的，焦躁和抑郁不光会引发乳腺癌，这样的情绪会引发各种疾病，之前报道有科学家做过小白鼠的实验，其中一组小白鼠可以尽情的玩耍，这组小白鼠的身上的接种的肿瘤就长得很慢，而另外一组被种种限制自由的小白鼠身上的移植肿瘤就长得很快。再给你举一个例子吧，我这边之前有一个60多岁的患者，她的腋窝淋巴转移数目达到了82个，共切除了88个，理论上说7个淋巴结转移以上就很严重了，但是她有82个了，严重度都不知道该怎么描述了，但是老人家的心态非常好，住在山里，每天乐呵呵的去山里采药摘菜，同时定期来我们这里配合有规范化的治疗和随访，目前术后九年了，什么问题都没有，身体倍棒。还有几位大姐，也是心态很好，根本不把这个放在心上，而且也是定期来检查接受规范化治疗随访，今天刚做完检查回去，12年了，都很健康。今天还有一个患者和丈夫一起来，我们一起拍照留念，我们团队有个传统就是治疗10年以后的患者都可以来和我们一起拍张照，她们都是抗击乳腺癌的英雄，她们也给其他的患者树立了学习的榜样。所以，好的治疗效果，来源于患者自身的战胜乳腺癌的信心和心态，同时接受规范化的手术为主的综合治疗和随访，二者缺一不可。</div></div>
 
             <div class="mt50"><img src="<?php echo $urlResImage; ?>event/lujinsong/Q-icon.png">&nbsp;<span class="color-blue text16">Q11：对于我们名医主刀的平台有什么意见吗？</span></div>
-            <div class="mt10"><div class="position-a"><img src="<?php echo $urlResImage; ?>event/lujinsong/A-icon.png">&nbsp;<span class="angle"></span></div><div class="answer">答：我觉得你们现在的很多想法都很不错的。我的一个意见就是，你们要去做实事，真正能够帮患者去解决实际的问题，架起医患之间的更加便捷的沟通桥梁，这样你们团队才能在帮助患者的过程中不断壮大起来，从而就可以为我们的患者提供更为完善的周到的服务。
+            <div class="mt10"><div class="position-a"><img src="<?php echo $urlResImage; ?>event/lujinsong/A-icon.png">&nbsp;<span class="angle"></span></div><div class="answer">陆：我觉得你们现在的很多想法都很不错的。我的一个意见就是，你们要去做实事，真正能够帮患者去解决实际的问题，架起医患之间的更加便捷的沟通桥梁，这样你们团队才能在帮助患者的过程中不断壮大起来，从而就可以为我们的患者提供更为完善的周到的服务。
                 </div>
             </div>
             <br/><br/><br/><br/><br/>
