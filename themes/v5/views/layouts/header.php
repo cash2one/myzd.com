@@ -68,7 +68,7 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
                                 <a id="header-nav-aboutus" href="<?php echo $urlHopitalSearch; ?>" class="dropdown-toggle" target="_blank">找科室</a>
                             </li>
                             <li class="dropdown dropdown-hover">
-                                <a id="header-nav-aboutus" href="<?php echo $urlZhiTongChe; ?>" class="dropdown-toggle" target="_blank">手术直通车</a>
+                                <a id="header-nav-aboutus" href="<?php echo $urlZhiTongChe; ?>" class="dropdown-toggle" target="_blank">患者故事</a>
                             </li>
                             <li class="dropdown dropdown-hover">
                                 <a id="header-nav-aboutus" href="<?php echo $aboutusMenu["aboutus"]["url"]; ?>" class="dropdown-toggle" target="_blank">关于我们</a>
