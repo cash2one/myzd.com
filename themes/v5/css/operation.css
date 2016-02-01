@@ -1,55 +1,25 @@
-.ztc-header{background:url(../images/zhitongche/bg-shouShuZhiTongChe.jpg) no-repeat;height:400px;}
-.ztc-title-lg{font-size:68px;letter-spacing:1em;font-weight:bold;}
-.ztc-title-text{width:620px;line-height: 2em;margin-top: 20px;}
-.ztc-main-content{border:1px solid #60c0bd;padding:30px 20px;min-height:800px;color:#686868;}
-.ztc-content-img{border:1px solid #efefef;width:200px;height:175px;}
-.content-title{font-size:16px;color:#333;margin-bottom: 5px;}
-.search-button{height:80px;border-radius:5px;font-size:16px;font-weight:bold;letter-spacing:3px;}
-.line2-5em{line-height:2.5em;}
-.ztc-answers-content{border:1px solid #60c0bd;padding:30px 20px;min-height:1343px;color:#686868;}
-.divide-dashed-green{border-bottom:1px dashed #19aea5;}
-.answers-title{font-size:21px;color:#19aea5;font-weight:bold;}
-.booking-header{background-color:#5ebfb7;height:130px;line-height:130px;}
-.booking-title{font-size:21px;letter-spacing:0.5em;font-weight:bold;}
-.booking-form{border:1px solid #60c0bd;padding:15px 5px 16px 5px;}
-.story-content{border:1px solid #60c0bd;padding:30px 20px;color:#686868;}
-.story-title{font-size:21px;color:#19aea5;font-weight:bold;border-right:3px solid #19aea5;padding:0 10px 0 0;}
-.story-img{width:80px;height:80px;border-radius:5px;}
-.story-content-title{font-weight:bold;font-size:14px;color:#333;}
-.message-content{border:1px solid #60c0bd;padding:30px 20px;}
-.message-title{font-size:22px;color:#19aea5;font-weight:bold;}
-.appraise{padding-left:90px;line-height:1.2em;color:#595757;}
-.pl90{padding-left:90px;}
-.line-height2-5em{line-height:2.5em;}
-.control-label{text-align:left!important;padding-left:25px;padding-right:0px;}
-.pr0{padding-right:0;}
-.pr25{padding-right:25px;}
-.pl25{padding-left:25px;}
-.border-r0{border-top-right-radius:0px;border-bottom-right-radius:0px;}
-.border-l0{border-top-left-radius:0px!important;border-bottom-left-radius:0px!important;}
-.color-red-e50044{color:#e50044;}
-.color-red-ff0000{color:#ff0000;}
-.ml-7{margin-left:-7px;}
-.line-height34{line-height:34px;}
+.mt80{margin-top:80px;}
+.pb15{padding-bottom:15px;}
+.pl0{padding-left:0;}
+.pd0{padding:0;}
+.message{line-height: 1.7em;font-size:14px;}
+.ztc-header{background:url(../images/zhitongche/header.jpg) no-repeat;height:400px;}
+.ztc-title-lg{font-size:36px;}
+.ztc-bg-green{background-color:#19aea5;}
+.ztc-divide-gray{border-bottom:1px dashed #c9c9ca;}
+.message-content{border:1px solid #60c0bd;padding:10px 20px 40px;;}
+.ztc-find-expert{background:url(../images/zhitongche/findexpert.jpg) no-repeat;height:120px;}
+.ztc-find-hospital{background:url(../images/zhitongche/findhospital.jpg) no-repeat;height:120px;width:100%;}
+.appraise{padding-left:90px;line-height:1.2em;color:#686868;margin-left:45px;font-size:15px;}
 .color-yellow-f8b62c{color:#f8b62c;}
-.bg-green-5ebfb7{background-color:#5ebfb7;}
-.btn-yes-zhitongche {color: #fff;background-color: #5ebfb7;border:0!important;border-radius: 5px!important;width:100%;font-size:16px;}
-.btn-yes-zhitongche:hover, .btn-yes-zhitongche:focus ,.btn-yes-zhitongche:active{color: #fff;background-color: #7bc9ca;border:0;}
 .color-green-5ebfb7{color:#5ebfb7;}
-.text12{font-size:12px;}
-.divide-dashed68{border-bottom:1px dashed #686868;}
-.h54p{height:54px;}
-.text14{font-size:14px;}
-strong{color:#333;}
-.text12{font-size:12px;}
 .color-white{color:#fff;}
-.pl0{padding-left:0!important;}
-.pr0{padding-right:0!important;}
-.w100{width:100%;}
-.ml10{margin-left:10px;}
-.zhitongcheBookingBtn{border-radius: 8px;}
-a:hover>.bg-green-5ebfb7,.zhitongcheBookingBtn:hover{background-color: rgba(94,191,184,0.7);}
-.bg-yellow-f8b62c{background-color: #f8b62c;}
-a:hover>.bg-yellow-f8b62c{background-color: rgba(248,182,44,0.7);}
-.ml-50{margin-left: -50px;}
-.message{text-indent: 2em;line-height: 1.7em;}
+.ztc-story-title{font-size:16px;font-weight:bold;color:#686868;}
+.color-gray-68{color:#686868;}
+.ztc-detail-one,.ztc-detail-one>a{color:#22326d!important;margin-top:100px;}
+.ztc-detail-two,.ztc-detail-two>a{margin-right:20px;margin-top:105px;color:#22326d!important;}
+.ztc-detail-three,.ztc-detail-three>a{margin-top:100px;color:#22326d!important;margin-right:7px;}
+.ztc-detail-four,.ztc-detail-four>a{color:#22326d!important;margin-top:58px;}
+.ztc-find-expert-btn,.ztc-find-expert-btn:hover{width:145px;height:38px;border:1px solid #eca4a4!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#eca4a4!important;font-size:16px!important;letter-spacing:4px;}
+.ztc-find-hospital-btn,.ztc-find-hospital-btn:hover{width:145px;height:38px;border:1px solid #095292!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#095292!important;font-size:16px!important;letter-spacing:4px;}
+.ztc-booking-btn:hover,.ztc-find-expert-btn:hover,.ztc-find-hospital-btn:hover{opacity:0.7;}
