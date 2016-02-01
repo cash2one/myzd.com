@@ -1,10 +1,21 @@
 .mt80{margin-top:80px;}
 .pb15{padding-bottom:15px;}
 .pl0{padding-left:0;}
-.pd0{padding:0;}
-.message{line-height: 1.7em;font-size:14px;}
-.ztc-header{background:url(../images/zhitongche/header.jpg) no-repeat;height:400px;}
+.pd0{padding:0!important;}
+.h320p{height:320px;}
+.ml-15{margin-left:-15px;}
+.ml-20{margin-left:-20px;}
+.ml-60{margin-left:-60px;}
+.ml-150{margin-left:-150px;}
+.mr-10{margin-right:-10px;}
+.border-gray-c9c9ca{border:1px solid #c9c9ca;}
+.message{line-height: 1.7em;font-size:14px;text-indent: 2em;margin-top:5px;}
+.ztc-header{background:url(../images/zhitongche/header.jpg) no-repeat center center;height:400px;}
+.ztc-title-text{padding-top:80px;line-height:1.5em;}
 .ztc-title-lg{font-size:36px;}
+.ztc-title-mid{font-size:18px;padding:20px 0;color:#fff;letter-spacing:0.5em;}
+.ztc-title-mid2{font-size:18px;color:#fff;padding:20px 30px;}
+.ztc-three-text{padding-left:0;margin-top:150px;padding-right:15px;}
 .ztc-bg-green{background-color:#19aea5;}
 .ztc-divide-gray{border-bottom:1px dashed #c9c9ca;}
 .message-content{border:1px solid #60c0bd;padding:10px 20px 40px;;}
@@ -16,10 +27,17 @@
 .color-white{color:#fff;}
 .ztc-story-title{font-size:16px;font-weight:bold;color:#686868;}
 .color-gray-68{color:#686868;}
-.ztc-detail-one,.ztc-detail-one>a{color:#22326d!important;margin-top:100px;}
+.ztc-detail-one,.ztc-detail-one>a{color:#22326d;margin-top:98px;}
+.ztc-detail-one:hover,.ztc-detail-one>a:hover{color:#355bbc!important;text-decoration:underline;}
 .ztc-detail-two,.ztc-detail-two>a{margin-right:20px;margin-top:105px;color:#22326d!important;}
-.ztc-detail-three,.ztc-detail-three>a{margin-top:100px;color:#22326d!important;margin-right:7px;}
+.ztc-detail-two:hover,.ztc-detail-two>a:hover{color:#355bbc!important;text-decoration:underline;}
+.ztc-detail-three,.ztc-detail-three>a{margin-top:98px;color:#22326d!important;margin-right:7px;}
+.ztc-detail-three:hover,.ztc-detail-three>a:hover{color:#355bbc!important;text-decoration:underline;}
 .ztc-detail-four,.ztc-detail-four>a{color:#22326d!important;margin-top:58px;}
+.ztc-detail-four:hover,.ztc-detail-four>a:hover{color:#355bbc!important;text-decoration:underline;}
 .ztc-find-expert-btn,.ztc-find-expert-btn:hover{width:145px;height:38px;border:1px solid #eca4a4!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#eca4a4!important;font-size:16px!important;letter-spacing:4px;}
 .ztc-find-hospital-btn,.ztc-find-hospital-btn:hover{width:145px;height:38px;border:1px solid #095292!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#095292!important;font-size:16px!important;letter-spacing:4px;}
 .ztc-booking-btn:hover,.ztc-find-expert-btn:hover,.ztc-find-hospital-btn:hover{opacity:0.7;}
+.ztc-booking-btn{color:#fff;letter-spacing:5px;background-color:#f8b62c;font-size:16px;height:60px;width:195px;border-radius: 6px;line-height:60px;text-align: center;display:inline-block;}
+.ztc-bottom-text{font-size:18px;color:#5db5b5;}
+.text-indent2em{text-indent: 2em;}
