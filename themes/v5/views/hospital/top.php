@@ -141,6 +141,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 innerHtml += '</ul></div>';
             }
             $('.department-list').html(innerHtml);
+            setDiseaseCategoryActive()
             initDeptFunction();
         }
     }
@@ -169,6 +170,17 @@ $page = Yii::app()->request->getQuery('page', '');
                 }
             }else{
                 $('.all.city').addClass('active');
+            }
+        });
+    }
+    function setDiseaseCategoryActive() {
+        $('.department-list .department').removeClass('active');
+        $('.department-list .subCat').each(function () {
+            var subCatId = $(this).attr('data-id');
+            if (subCatId == condition["disease_sub_category"]) {
+                $('.department-name>span').html($(this).text());
+                $(this).addClass('active');
+                $(this).parents('.department').addClass('active');
             }
         });
     }

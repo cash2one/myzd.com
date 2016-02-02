@@ -82,7 +82,7 @@ function initPageFunction(pageActive, totalPages) {
     });
     //上一页
     $(".pagePre").click(function () {
-        if (condition["page"] === 1) {
+        if (condition["page"] <= 1) {
             return;
         } else {
             condition["page"]--;
@@ -92,7 +92,7 @@ function initPageFunction(pageActive, totalPages) {
     });
     //下一页
     $(".pageNext").click(function () {
-        if (pageActive === totalPages) {
+        if (pageActive >= totalPages) {
             return;
         } else {
             condition["page"]++;

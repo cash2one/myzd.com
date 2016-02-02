@@ -7,7 +7,7 @@ $urlDiseaseName = $this->createUrl('api/diseasename', array('api' => 7, 'disease
 $urlDoctorView = $this->createUrl('doctor/view', array('id' => ''));
 $urlDoctorSearch = $this->createUrl('doctor/search');
 $urlHopitalSearch = $this->createUrl('hospital/search');
-$urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_category' => 1));
+$urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('disease_sub_category' => 1));
 ?>
 <section id="site-content">
     <div class="container-fluid bg-lunbo">
@@ -54,18 +54,18 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
                 <div class="expert">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs mt30" role="tablist">
-                        <li role="presentation" class="active category text-center"><a href="#dept1" aria-controls="dept1" role="tab" data-toggle="tab">外科</a></li>
-                        <li role="presentation" class="category text-center"><a href="#dept2" aria-controls="dept2" role="tab" data-toggle="tab">骨科</a></li>
-                        <li role="presentation" class="category text-center"><a href="#dept3" aria-controls="dept3" role="tab" data-toggle="tab">妇产科</a></li>
-                        <li role="presentation" class="category text-center"><a href="#dept4" aria-controls="dept4" role="tab" data-toggle="tab">小儿外科</a></li>
-                        <li role="presentation" class="category text-center"><a href="#dept5" aria-controls="dept5" role="tab" data-toggle="tab">五官科</a></li>
-                        <li role="presentation" class="category text-center last"><a href="#dept6" aria-controls="dept6" role="tab" data-toggle="tab">内科</a></li>
+                        <li class="active category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank"><img src="<?php echo $urlResImage; ?>icons/waike.png">外科</a></li>
+                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>" data-page="dept2" target="_blank"><img src="<?php echo $urlResImage; ?>icons/guke.png"> 骨科</a></li>
+                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>" data-page="dept3" target="_blank"><img src="<?php echo $urlResImage; ?>icons/fuchanke.png">妇产科</a></li>
+                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>" data-page="dept4" target="_blank"><img src="<?php echo $urlResImage; ?>icons/xiaoerke.png">小儿外科</a></li>
+                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>" data-page="dept5" target="_blank"><img src="<?php echo $urlResImage; ?>icons/wuguanke.png">五官科</a></li>
+                        <li class="category text-center last"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>" data-page="dept6" target="_blank"><img src="<?php echo $urlResImage; ?>icons/neike.png">内科</a></li>
                     </ul>
                     <!-- Tab panes -->
                     <div class="tab-content expList">
 
                     </div>
-                    <a href="<?php echo $urlDoctorSearchCategory; ?>" class="pull-right mt20 color-blue more-expert" target="_blank">更多专家></a>
+                    <a href="<?php echo $urlDoctorSearchByDiseaseSubCategory; ?>" class="pull-right mt20 color-blue more-expert" target="_blank">更多专家></a>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -114,32 +114,32 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
                 </div>         
                 <div class="row mt10 mb50">
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 1)); ?>">
                             <div class="faculty waike img-responsive"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 13)); ?>">
                             <div class="faculty guke block-center"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 18)); ?>">
                             <div class="faculty fuchanke pull-right"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 21)); ?>">
                             <div class="faculty xiaoerwaike"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 28)); ?>">
                             <div class="faculty wuguanke block-center"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>">
+                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 31)); ?>">
                             <div class="faculty neike pull-right"></div>
                         </a>
                     </div>
@@ -179,11 +179,6 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
                                                 <div class="recommend-area color2">立秋之后怎样预防和治疗肝病</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 pl0 ml-5">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'rectalcancer')); ?>" target="_blank">
-                                                <div class="recommend-area color3">名医专家让你和大肠癌说再见</div>
-                                            </a>
-                                        </div>
                                         <div class="col-sm-4 mt35">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'thyroid')); ?>" target="_blank">
                                                 <div class="recommend-area color4">甲状腺相关疾病需及早手术</div>
@@ -199,13 +194,13 @@ $urlDoctorSearchCategory = $this->createUrl('doctor/search', array('disease_cate
                                                 <div class="recommend-area color6">警惕心血管疾病突发</div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="item">
                                         <div class="col-sm-4 mt35 ">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'guanxinbing')); ?>" target="_blank">
                                                 <div class="recommend-area color7">预防冠心病发作，名医专家有妙招</div>
                                             </a>
                                         </div>
+                                    </div>
+                                    <div class="item">
                                         <div class="col-sm-4 mt35 pl5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'ertai')); ?>" target="_blank">
                                                 <div class="recommend-area color8">名医专家为您“宝”驾护航</div>

@@ -46,6 +46,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <li><a class="text-info" href="http://beijing.ufh.com.cn/?lang=zh" target="_blank">北京和睦家医院有限公司</a></li>
                                 <li><a class="text-info" href="http://www.shneuro.org/" target="_blank">上海德济医院</a></li>
                                 <li><a class="text-info" href="http://www.puhuachina.cn/" target="_blank">北京天坛普华医院</a></li>
+                                <li><a class="text-info" href="http://www.aqslyy.com.cn/" target="_blank">安庆市立医院</a></li>
                                 <li><a class="text-info" href="http://www.aqhospital.com/" target="_blank">安庆市第一人民医院</a></li>
                                 <li><a class="text-info" href="http://www.hssyy.com/" target="_blank">黄山市人民医院</a></li>
                             </ul>

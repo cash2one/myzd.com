@@ -4,7 +4,7 @@
 .department-name{border:1px solid #19aea5;height:70px;line-height:70px;font-size:16px;}
 .department-list{padding:0 15px 20px;}
 .department-list .department{padding-left: 10px;margin-top: 20px;}
-.department-list .department .dept-header:hover{cursor: pointer;margin-bottom: 5px;}
+.department-list .department .dept-header:hover{cursor: pointer;}
 .department-list .department .fa{color: #19aea5;}
 .department-list .department .fa-caret-down{display: none;}
 .department-list .department .dept-header{font-size: 15px;}
@@ -50,3 +50,4 @@
 .city-list a.active{color: #19aea5;}
 .hpName{color: #595757;}
 .hpName:hover{color: #19aea5;}
+.hospital-list .hospital-desc{line-height: 1.7em;}

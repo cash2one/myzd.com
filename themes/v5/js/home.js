@@ -26,6 +26,14 @@ $(document).ready(function () {
         $('#searchdoctor-btn').hide();
         $('#searchhospital-btn').show();
     });
+    /**** 推荐医生切换 ****/
+    $('.expert .nav-tabs .category').mouseover(function(){
+        $('.expert .nav-tabs .category').removeClass('active');
+        $(this).addClass('active');
+        var pageId = '#'+$(this).find('a').attr('data-page');
+        $('.expert .expList .tab-pane').removeClass('active');
+        $(pageId).addClass('active');
+    });
 });
 function ajaxLoadDoctor(urlLoadDoctor, urlDoctorView) {
     $.ajax({
