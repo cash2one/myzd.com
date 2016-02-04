@@ -1,10 +1,15 @@
 <?php
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
 $urlOrderView = $this->createUrl('order/view');
-$urlBookingList = $this->createUrl('booking/list');
 $booking = $data->results->booking;
 $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking->id));
+$urlBookingList = $this->createUrl('booking/list');
+$urlUploadFile = $this->createUrl("booking/ajaxUploadFile");
+$urlReturn = $this->createUrl('booking/userBooking',array('id'=>$booking->id));
 ?>
+<style>
+    #uploader .filelist li{width: 25%;}
+</style>
 <div class="bg-green">
     <div class="container">
         <div class="user-crumbs">
@@ -61,8 +66,7 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
             <div class="pb40 border-green mt10 pl20 pr20">
                 <?php
                 if ($booking->status != 9) {
-                    echo '<div class="pt10"> 
-                    <div class="pull-right"><a class="color-status" href="'.$this->createUrl('booking/uploadFile', array('id' => $booking->id)).'"><span class="">修改</span></a></div></div>';
+                    //echo '<div class="pt10"><div class="pull-right"><a class="color-status" href="' . $this->createUrl('booking/uploadFile', array('id' => $booking->id)) . '"><span class="">修改</span></a></div></div>';
                 }
                 ?>
 
@@ -73,7 +77,6 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
                                 <div class="bookingInfo">预约专家：<?php echo $booking->expertName == '' ? '未填写' : $booking->expertName; ?></div>
                                 <div class="bookingInfo">意向科室：<?php echo $booking->hpDeptName == '' ? '未填写' : $booking->hpDeptName; ?></div>
                                 <div class="bookingInfo">意向医院：<?php echo $booking->hpName == '' ? '未填写' : $booking->hpName; ?></div>
-                                <div class="bookingInfo">意向会诊时间：<?php echo $booking->dateStart . ' -- ' . $booking->dateEnd; ?></div>
                             </div>
                         </div>
                         <div class="col-md-4 border-right">
@@ -97,6 +100,13 @@ $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking
                         </div>
                         <div class="row mt20 imgList">
 
+                        </div>
+                        <form id="booking-form" data-url-uploadfile="<?php echo $urlUploadFile; ?>" data-url-return="<?php echo $urlReturn; ?>">
+                            <input id="bookingId" type="hidden" name="booking[id]" value="<?php echo $booking->id; ?>" />
+                            <input id="bookingReport_type" type="hidden" name="booking[report_type]" value="mr" />
+                        </form>
+                        <div class="mt20">
+                            <?php echo $this->renderPartial('_uploadFile'); ?>
                         </div>
                     </div>
                 </div>
