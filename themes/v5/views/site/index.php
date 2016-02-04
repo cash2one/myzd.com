@@ -32,7 +32,7 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
     <div class="container-fluid home-search">
         <div class="row">
             <div class="container">
-                <div class="search-top active search-top1 pull-left searchdoctor-tab">手术名医</div><div class="search-top search-top2 pull-left searchhospital-tab">顶尖科室</div><div class="clearfix"></div>
+                <div class="search-top active search-top1 pull-left searchdoctor-tab">找名医</div><div class="search-top search-top2 pull-left searchhospital-tab">找科室</div><div class="clearfix"></div>
                 <form class="form-inline" id="home-search-form">
                     <div class="form-group w83">
                         <input type="text" class="form-control input-area disease-name" placeholder="请输入确诊疾病">
@@ -237,8 +237,10 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
         </div>
     </div>
 </section>
+<?php $this->renderPartial('holidaysNotice') ?>
 <script>
     $(document).ready(function () {
+        $('#holidaysNoticeModal').modal();
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
         $('#searchdoctor-btn').click(function (e) {

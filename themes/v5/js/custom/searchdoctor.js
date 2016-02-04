@@ -13,13 +13,16 @@ function setDoctorHtml(data, urlDoctorView) {
                 docdesc = '暂无信息';
             }
             var isContractedImg = doctor.isContracted == 0 ? '' : '<div class="pull-right contracted-img"></div><div class="clearfix"></div>';
+            var academicianImg = doctor.id == 117 ? '<div class="pull-right academician-img"></div>' : '';
             innerHtml += '<div class="col-md-4 col-sm-6 mt30">' +
                     '<a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                     '<div class="border-gray expert-list">' +
                     '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '"></div>' +
-                    isContractedImg +
-                    '<div class="text-center text15">' + doctor.name + '</div>' +
-                    '<div class="text-center color-gray mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</div>' +
+                    isContractedImg + academicianImg +
+                    '<div class="text-center"><span class="strong">' + doctor.name + '</span>&nbsp;' +
+                    '<span class="text-center mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</span></div>' +
+                    '<div class="text-center mt5 hpDeptName">' + doctor.hpDeptName + '</div>' +
+                    '<div class="text-center mt5">' + doctor.hpName + '</div>' +
                     '<div class="mt10 docdesc"><span class="strong">擅长：</span>' + docdesc + '</div>' +
                     '<div class="text-center mt10"></div>' +
                     '</div>' +

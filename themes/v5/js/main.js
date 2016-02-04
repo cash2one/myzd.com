@@ -5,11 +5,20 @@ $(document).ready(function (e) {
         $("#site-header").css("margin-top", "20px");
     }
     initBookingBtn();
-    $('#logout').click(function(e){
+    $('#logout').click(function (e) {
         e.preventDefault();
         delCookie('user');
         var logoutUrl = $(this).attr('href');
         location.href = logoutUrl;
+    });
+    var navH = 50;
+    $(window).scroll(function () {
+        var scroH = $(this).scrollTop();
+        if (scroH >= navH) {
+            $('.home-top').addClass('boxShadow');
+        }else{
+            $('.home-top').removeClass('boxShadow');
+        }
     });
 });
 

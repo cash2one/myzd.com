@@ -79,8 +79,10 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 .color-white{color: #fff;}
 .color-red{color: #f00;}
 .border-bottom{border-bottom: 1px solid #e4e4e4;}
+.text-indent2em{text-indent: 2em;}
 /**** site-header ****/
-.home-top{height:50px;line-height:50px;}
+.home-top{height:50px;line-height:50px;position: fixed;width: 100%;z-index: 9999;}
+.boxShadow{box-shadow: 0px 0px 2px 2px #ddd;}
 .home-top a:hover{color: #19aea5;cursor: pointer;}
 #site-header{border-bottom:1px solid #ddd;}
 #site-header .navbar{margin-bottom: 0;border:none;background-color:#fff;}
@@ -119,6 +121,7 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 /**** loginModal ****/
 @media (min-width: 768px){#loginModal .modal-dialog,#registerModal .modal-dialog {width: 600px;margin: 100px auto 30px;}}
 /**** site-content ****/
+.modal-open .modal{margin-top: 50px;}
 form label a:hover{text-decoration: underline!important;}
 form .contrller{margin-bottom: 15px;}
 .text-right{text-align: right;}

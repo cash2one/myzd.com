@@ -75,6 +75,7 @@ $(function () {
         // 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
         //compress: true,
         chunked: true,
+        method: 'post',
         formData: {'booking[id]': domForm.find("input#bookingId").val()},
         // server: 'http://webuploader.duapp.com/server/fileupload.php',
         server: urlUploadFile,
@@ -469,7 +470,6 @@ $(function () {
 //提交按钮点击时间
     $upload.on('click', function () {
         disabledBtn(btnSubmit);
-        console.log(11);
         if ($(this).hasClass('disabled') || $(this).hasClass("ui-state-disabled")) {
             return false;
         }

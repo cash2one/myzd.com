@@ -42,7 +42,7 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
             </div>
         </div>
     </div>
-    <div class="container-fluid ">
+    <div class="container-fluid pt50">
         <div class="row">
             <div class="container mt30 mb20">
                 <nav class="navbar navbar-default bg-white no-border" role="navigation">
