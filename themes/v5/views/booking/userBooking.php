@@ -5,7 +5,7 @@ $booking = $data->results->booking;
 $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking->id));
 $urlBookingList = $this->createUrl('booking/list');
 $urlUploadFile = $this->createUrl("booking/ajaxUploadFile");
-$urlReturn = $this->createUrl('booking/userBooking',array('id'=>$booking->id));
+$urlReturn = $this->createUrl('booking/userBooking', array('id' => $booking->id));
 ?>
 <style>
     #uploader .filelist li{width: 25%;}
@@ -106,7 +106,11 @@ $urlReturn = $this->createUrl('booking/userBooking',array('id'=>$booking->id));
                             <input id="bookingReport_type" type="hidden" name="booking[report_type]" value="mr" />
                         </form>
                         <div class="mt20">
-                            <?php echo $this->renderPartial('_uploadFile'); ?>
+                            <?php
+                            if ($booking->status != 9) {
+                                $this->renderPartial('_uploadFile');
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
