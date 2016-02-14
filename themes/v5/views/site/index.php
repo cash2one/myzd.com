@@ -237,10 +237,10 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
         </div>
     </div>
 </section>
-<?php $this->renderPartial('holidaysNotice') ?>
+<?php// $this->renderPartial('holidaysNotice') ?>
 <script>
     $(document).ready(function () {
-        $('#holidaysNoticeModal').modal();
+     //  $('#holidaysNoticeModal').modal();
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
         $('#searchdoctor-btn').click(function (e) {
