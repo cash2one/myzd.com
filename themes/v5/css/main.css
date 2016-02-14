@@ -206,20 +206,20 @@ form span.required {color: #E21E1A;}
 .totop:hover{cursor: pointer;background-position:50px 0;}
 .pl0{padding-left: 0;}
 #site-footer{font-size: 12px;padding-top:20px;background-color: #eeefef;}
-#site-footer .w20{width: 20%;float: left;height: 100%;min-height: 181px;}
-@media screen and (max-width: 995px){#site-footer .w20{width: 50%;}#site-footer .logo-footer img{float: none!important;}}
-#site-footer .w20 h4{margin-top: 0!important;font-size: 16px;}
-#site-footer .w20.border0{border-right-color: #eeefef;}
+#site-footer .w25{width: 25%;float: left;height: 100%;min-height: 181px;}
+@media screen and (max-width: 995px){#site-footer .w25{width: 50%;}#site-footer .logo-footer img{float: none!important;}}
+#site-footer .w25 h4{margin-top: 0!important;font-size: 16px;}
+#site-footer .w25.border0{border-right-color: #eeefef;}
 #site-footer .footer-last{font-size: 12px;padding: 11px;background-color: #dcdcdd;}
 #site-footer .partner{padding: 0 30px;}
 #site-footer .partner .pl5{padding-left: 5px;}
 #site-footer .partner .pr5{padding-right: 5px;}
 #site-footer .corporationInfo .text-info{display: inline-block;}
 #site-footer .hospital{padding-left: 25px;line-height: 2em;}
-#site-footer .contactus{padding-left: 10px;line-height: 2em;}
+#site-footer .contactus{padding-left: 47px;line-height: 2em;}
 #site-footer .hospital ul,#site-footer .contactus ul{padding-left: 0px;}
-#site-footer .corporationInfo{padding-left: 35px;}
-#site-footer .logo-footer img{margin: 50px auto 0;display: block;float:right;}
+#site-footer .corporationInfo{padding-left: 80px;}
+#site-footer .logo-footer img{margin: 50px auto 0;display: block;}
 .mt35{margin-top: 35px;}
 /**** site-footer-old ****/
 /*#site-footer .br1{border-right:  1px solid #000;}

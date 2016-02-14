@@ -17,7 +17,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                 ?>
                 <div class="container pt30 pb30">
                     <div class="content">
-                        <div class="w20 partner">
+                        <div class="w25 partner">
                             <h4>战略合作伙伴</h4>
                             <div class="row">
                                 <div class="col-xs-6 pr5 mt10">
@@ -39,7 +39,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 </div>
                             </div>
                         </div>
-                        <div class="w20 hospital">
+<!--                        <div class="w20 hospital">
                             <h4>战略合作医院</h4>
                             <ul class="mt10">
                                 <li><a class="text-info" href="http://www.jsnydefy.com" target="_blank">南京医科大学第二附属医院</a></li>
@@ -50,8 +50,8 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <li><a class="text-info" href="http://www.aqhospital.com/" target="_blank">安庆市第一人民医院</a></li>
                                 <li><a class="text-info" href="http://www.hssyy.com/" target="_blank">黄山市人民医院</a></li>
                             </ul>
-                        </div>
-                        <div class="w20 contactus">
+                        </div>-->
+                        <div class="w25 contactus">
                             <h4>联系我们</h4>
                             <ul class="mt10">
                                 <li>人事招聘：</li>
@@ -62,7 +62,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <li><span class="strong">service@mingyizhudao.com</span></li>
                             </ul>
                         </div>
-                        <div class="w20 corporationInfo">
+                        <div class="w25 corporationInfo">
                             <div>
                                 <h4>关于我们</h4>
                                 <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
@@ -81,7 +81,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 
                             </div>
                         </div>
-                        <div class="w20 logo-footer border0">
+                        <div class="w25 logo-footer border0">
                             <a href="<?php echo Yii::app()->homeUrl; ?>">
                                 <img class="" src="<?php echo $baseUrlImage; ?>icons/logo.png"/>
                             </a>

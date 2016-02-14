@@ -157,8 +157,8 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
                         </a>
                     </div>
                     <div class="col-md-4 pl20">
-                        <div class="pr20"><span class="text18 color-blue">精彩推荐</span><img class="ml10 mb5" src="<?php echo $urlResImage; ?>icons/icon_change.png"><div class="pull-right change" href="#carousel-example-generic" role="button" data-slide="next">换一批</div><div class="clearfix"></div></div>
-                        <div class="pr20"><div class="divide-line-black"></div></div>
+                        <div><span class="text18 color-blue">精彩推荐</span><img class="ml10 mb5" src="<?php echo $urlResImage; ?>icons/icon_change.png"><div class="pull-right change" href="#carousel-example-generic" role="button" data-slide="next">换一批</div><div class="clearfix"></div></div>
+                        <div><div class="divide-line-black"></div></div>
                         <div class="row">
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                 <!-- Indicators -->
@@ -174,7 +174,7 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
                                                 <div class="recommend-area color1">当肿瘤遇上名医专家</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 pl5">
+                                        <div class="col-sm-4 mt35">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'preliverdisease')); ?>" target="_blank">
                                                 <div class="recommend-area color2">立秋之后怎样预防和治疗肝病</div>
                                             </a>
@@ -189,7 +189,7 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
                                                 <div class="recommend-area color5">关爱女性，关爱乳房</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 pl0 ml-5">
+                                        <div class="col-sm-4 mt35 pl5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinxueguan')); ?>" target="_blank">
                                                 <div class="recommend-area color6">警惕心血管疾病突发</div>
                                             </a>
@@ -206,7 +206,7 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
                                                 <div class="recommend-area color8">名医专家为您“宝”驾护航</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 pl0 ml-5">
+                                        <div class="col-sm-4 mt35 pl5 ml-5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'doctorInterview')); ?>" target="_blank">
                                                 <div class="recommend-area color9">泌尿疾病的克星：“达芬奇手术机器人”</div>
                                             </a>
@@ -221,7 +221,7 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
                                                 <div class="recommend-area color11">“滴滴医生”驾到</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 pl0 ml-5">
+                                        <div class="col-sm-4 mt35 pl5 ml-5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'nationalday')); ?>" target="_blank">
                                                 <div class="recommend-area color12">欢乐出游却不小心摔伤？</div>
                                             </a>
@@ -237,10 +237,10 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
         </div>
     </div>
 </section>
-<?php// $this->renderPartial('holidaysNotice') ?>
+<?php // $this->renderPartial('holidaysNotice') ?>
 <script>
     $(document).ready(function () {
-     //  $('#holidaysNoticeModal').modal();
+        //  $('#holidaysNoticeModal').modal();
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
         $('#searchdoctor-btn').click(function (e) {
