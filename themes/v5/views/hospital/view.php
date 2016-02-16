@@ -67,7 +67,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                     <div class=" pl10 pb20">
                         <div class="mt20"><img src="<?php echo $urlImage; ?>" alt="<?php echo $hName; ?>"></div>
                         <div class="text-right pr15">
-                            <div class="mt10 hospitalurl"><a class="text12 color-green" href="<?php echo $urlWebsite; ?>" target="_blank"><?php echo '查看官网'; ?></a></div>
+<!--                            <div class="mt10 hospitalurl"><a class="text12 color-green" href="<?php echo $urlWebsite; ?>" target="_blank"><?php echo '查看官网'; ?></a></div>-->
                         </div>
                         <div class="pr10">
                         </div>

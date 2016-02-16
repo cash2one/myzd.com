@@ -68,7 +68,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
                                 <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help','page'=>'terms')); ?>" target="_blank">免责声明</a>
     <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];      ?>" target="_blank">联系我们</a>-->
-                                <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>
+<!--                                <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                             </div>
                             <div class="mt40">
 
@@ -116,7 +116,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                     <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
                                     <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help','page'=>'terms')); ?>" target="_blank">免责声明</a>
         <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];      ?>" target="_blank">联系我们</a>-->
-                                    <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>
+<!--                                    <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                                 </div>
                             </div>
                             <div class="col-md-3  col-sm-4 contactus">
