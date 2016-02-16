@@ -167,9 +167,23 @@ $page = Yii::app()->request->getQuery('page', '');
                 } else {
                     active = '';
                 }
+                var imgname = '';
+                if (diseaseCategory.id == 1) {
+                    imgname = 'puwaike.png';
+                } else if (diseaseCategory.id == 2) {
+                    imgname = 'guke.png';
+                } else if (diseaseCategory.id == 3) {
+                    imgname = 'fuchanke.png';
+                } else if (diseaseCategory.id == 4) {
+                    imgname = 'xiaoerke.png';
+                } else if (diseaseCategory.id == 5) {
+                    imgname = 'wuguanke.png';
+                } else if (diseaseCategory.id == 6) {
+                    imgname = 'neike.png';
+                }
                 innerHtml += '<div class="department ' + active + '">' +
                         '<div class="dept-header">' +
-                        '<i class="fa fa-caret-right"></i>' +
+                        '<img class="mr5" src="<?php echo $urlResImage; ?>hospital/' + imgname + '"><i class="fa fa-caret-right"></i>' +
                         '<i class="fa fa-caret-down"></i>' +
                         '<span class="strong">' + diseaseCategory.name + '</span>' +
                         '</div>' +
@@ -178,7 +192,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 var subCats = diseaseCategory.subCat;
                 for (var j = 0; j < subCats.length; j++) {
                     var subCat = subCats[j];
-                    innerHtml += '<li><a class="subCat" data-id = "' + subCat.id + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCat.id + '">' + subCat.name + '</a></li>';
+                    innerHtml += '<li class="ml10"><a class="subCat" data-id = "' + subCat.id + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCat.id + '">' + subCat.name + '</a></li>';
                 }
                 innerHtml += '</ul></div>';
             }

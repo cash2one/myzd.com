@@ -28,13 +28,13 @@
 .ztc-story-title{font-size:16px;font-weight:bold;color:#686868;}
 .color-gray-68{color:#686868;}
 .ztc-detail-one,.ztc-detail-one>a{color:#39538e;margin-top:98px;}
-.ztc-detail-one:hover,.ztc-detail-one>a:hover{color:#355bbc!important;text-decoration:underline;}
+.ztc-detail-one>a:hover{color:#355bbc!important;text-decoration:underline;}
 .ztc-detail-two,.ztc-detail-two>a{margin-right:20px;margin-top:105px;color:#39538e!important;}
-.ztc-detail-two:hover,.ztc-detail-two>a:hover{color:#355bbc!important;text-decoration:underline;}
+.ztc-detail-two>a:hover{color:#355bbc!important;text-decoration:underline;}
 .ztc-detail-three,.ztc-detail-three>a{margin-top:98px;color:#39538e!important;margin-right:7px;}
-.ztc-detail-three:hover,.ztc-detail-three>a:hover{color:#355bbc!important;text-decoration:underline;}
+.ztc-detail-three>a:hover{color:#355bbc!important;text-decoration:underline;}
 .ztc-detail-four,.ztc-detail-four>a{color:#39538e!important;margin-top:58px;}
-.ztc-detail-four:hover,.ztc-detail-four>a:hover{color:#355bbc!important;text-decoration:underline;}
+.ztc-detail-four>a:hover{color:#355bbc!important;text-decoration:underline;}
 .ztc-find-expert-btn{width:145px;height:38px;border:1px solid #eca4a4!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#eca4a4!important;font-size:16px!important;letter-spacing:4px;}
 .ztc-find-expert-btn:hover{width:145px;height:38px;border:1px solid #eca4a4!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#fff!important;font-size:16px!important;letter-spacing:4px;background-color:#f3b8b7;}
 .ztc-find-hospital-btn{width:145px;height:38px;border:1px solid #095292!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#095292!important;font-size:16px!important;letter-spacing:4px;}

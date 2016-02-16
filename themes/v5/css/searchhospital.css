@@ -2,7 +2,7 @@
 .search-header .header-content{color: #3e6090;font-size: 21px;letter-spacing: 6px;line-height: 1.5em;margin-top: 100px;margin-left: 50px;}
 .search-header .header-explanation{color: #e50011;margin-top: 80px;margin-left: 50px;}*/
 .department-name{border:1px solid #19aea5;height:70px;line-height:70px;font-size:16px;}
-.department-list{padding:0 15px 20px;}
+/*.department-list{padding:0 0 20px 15px;}*/
 .department-list .department{padding-left: 10px;margin-top: 20px;}
 .department-list .department .dept-header:hover{cursor: pointer;}
 .department-list .department .fa{color: #19aea5;}
@@ -26,7 +26,7 @@
 .color-gray{color:#9f9fa0;}
 .expert-list{padding:0px 5px 10px 5px;}
 .bg-green{background-color:#19aea5;}
-.department-list{padding:0 15px 20px;min-height: 268px;}
+.department-list{padding:0 0 20px 10px;min-height: 268px;}
 .ad-area{height:140px;line-height:140px;}
 .find-navi{color:#fff;font-size:16px;padding:10px 0px 5px 15px;}
 .find-navi>a{color:#fff;font-size:16px;}

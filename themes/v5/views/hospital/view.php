@@ -85,6 +85,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                     <div class="header"><span>推荐科室</span></div>
                     <div class="divide-color-ddd"></div>
                     <?php if ($departments) { ?>
+                    <style>.nav-tabs{border-bottom:none;}</style>
                         <ul class="nav nav-tabs text-right mt20" role="tablist">
                             <?php
                             $i = 1;

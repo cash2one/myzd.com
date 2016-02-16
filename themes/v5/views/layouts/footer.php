@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
             <?php
             if (!$this->show_header_navbar) {
                 ?>
-                <div class="container pt30 pb30">
+                <div class="container pt30 pb30 show_header_main">
                     <div class="content">
                         <div class="w25 partner">
                             <h4>战略合作伙伴</h4>
