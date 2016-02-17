@@ -37,8 +37,8 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
                     <div class="form-group w83">
                         <input type="text" class="form-control input-area disease-name" placeholder="请输入确诊疾病">
                     </div><div class="form-group btn-group w17">
-                        <button id="searchdoctor-btn" class="btn btn-yes search-size">搜索</button>
-                        <button id="searchhospital-btn" class="btn btn-yes search-size">搜索</button>
+                        <button id="searchdoctor-btn" class="btn btn-yes search-size"><img class="mr10" src="<?php echo $urlResImage; ?>icons/search.png">搜&nbsp;索</button>
+                        <button id="searchhospital-btn" class="btn btn-yes search-size"><img class="mr10" src="<?php echo $urlResImage; ?>icons/search.png">搜&nbsp;索</button>
                     </div>
                 </form>
             </div>
@@ -169,61 +169,83 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <div class="col-sm-4 mt35 ">
+                                        <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'tumor')); ?>" target="_blank">
-                                                <div class="recommend-area color1">当肿瘤遇上名医专家</div>
+<!--                                                <div class="recommend-area color1">当肿瘤遇上名医专家</div>-->
+                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider1.png"/>
+                                                 <div class="slider-text">滚蛋吧肿瘤君</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35">
+                                        <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'preliverdisease')); ?>" target="_blank">
-                                                <div class="recommend-area color2">立秋之后怎样预防和治疗肝病</div>
+<!--                                                <div class="recommend-area color2">立秋之后怎样预防和治疗肝病</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider2.png"/>
+                                                <div class="slider-text">秋后肝病预防</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35">
+                                        <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'thyroid')); ?>" target="_blank">
-                                                <div class="recommend-area color4">甲状腺相关疾病需及早手术</div>
+<!--                                                <div class="recommend-area color4">甲状腺相关疾病需及早手术</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider3.png"/>
+                                                <div class="slider-text">甲状腺预防</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 pl5">
+                                        <div class="col-sm-4 mt30 pl5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'ruxianai')); ?>" target="_blank">
-                                                <div class="recommend-area color5">关爱女性，关爱乳房</div>
+<!--                                                <div class="recommend-area color5">关爱女性，关爱乳房</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider4.png"/>
+                                                 <div class="slider-text">关爱女性</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 pl5">
+                                        <div class="col-sm-4 mt30 pl5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinxueguan')); ?>" target="_blank">
-                                                <div class="recommend-area color6">警惕心血管疾病突发</div>
+<!--                                                <div class="recommend-area color6">警惕心血管疾病突发</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider5.png"/>
+                                                 <div class="slider-text">警惕心血管病</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 ">
+                                        <div class="col-sm-4 mt30 ">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'guanxinbing')); ?>" target="_blank">
-                                                <div class="recommend-area color7">预防冠心病发作，名医专家有妙招</div>
+<!--                                                <div class="recommend-area color7">预防冠心病发作，名医专家有妙招</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider6.png"/>
+                                                 <div class="slider-text">预防冠心病</div>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="col-sm-4 mt35 pl5">
+                                        <div class="col-sm-4 mt18 pl5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'ertai')); ?>" target="_blank">
-                                                <div class="recommend-area color8">名医专家为您“宝”驾护航</div>
+<!--                                                <div class="recommend-area color8">名医专家为您“宝”驾护航</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider7.png"/>
+                                                 <div class="slider-text">名医宝驾护航</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 pl5 ml-5">
+                                        <div class="col-sm-4 mt18 pl5 ml-5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'doctorInterview')); ?>" target="_blank">
-                                                <div class="recommend-area color9">泌尿疾病的克星：“达芬奇手术机器人”</div>
+<!--                                                <div class="recommend-area color9">泌尿疾病的克星：“达芬奇手术机器人”</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider8.png"/>
+                                                 <div class="slider-text">任善成专访</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35">
+                                        <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank">
-                                                <div class="recommend-area color10">专访乳腺癌专家——陆劲松</div>
+<!--                                                <div class="recommend-area color10">专访乳腺癌专家——陆劲松</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider9.png"/>
+                                                 <div class="slider-text">陆劲松专访</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 pl5">
+                                        <div class="col-sm-4 mt30 pl5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'dididoctor')); ?>" target="_blank">
-                                                <div class="recommend-area color11">“滴滴医生”驾到</div>
+<!--                                                <div class="recommend-area color11">“滴滴医生”驾到</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider10.png"/>
+                                                 <div class="slider-text">滴滴医生</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt35 pl5 ml-5">
+                                        <div class="col-sm-4 mt30 pl5 ml-5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'nationalday')); ?>" target="_blank">
-                                                <div class="recommend-area color12">欢乐出游却不小心摔伤？</div>
+<!--                                                <div class="recommend-area color12">欢乐出游却不小心摔伤？</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider11.png"/>
+                                                 <div class="slider-text">摔伤怎么办</div>
                                             </a>
                                         </div>
                                     </div>
