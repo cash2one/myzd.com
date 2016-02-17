@@ -1,6 +1,7 @@
 <?php
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/searchhospital.css");
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchhospital.js', CClientScript::POS_HEAD);
+$urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlHopitalSearch = $this->createUrl('hospital/search');
 $urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5));
 $urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5, 'disease_sub_category' => ''));
@@ -32,7 +33,18 @@ $page = Yii::app()->request->getQuery('page', '');
             </div>
             <div class="row">
                 <div class="mt20 findexp-nav city-list">
-                    地区:<a class="all active city " data-id="">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a class="city" data-id="74">南京</a><a class="city" data-id="87">杭州</a><a class="city" data-id="134">济南</a><a class="city" data-id="202">深圳</a><a class="city" data-id="254">重庆</a><a class="city" data-id="255">成都</a>
+                    地区:<a class="all city active">全部</a>
+                    <a class="city" data-id="1">北京</a>
+                    <a class="city" data-id="73">上海</a>
+                    <a class="city" data-id="200">广州</a>
+                    <a class="city" data-id="87">南京</a>
+                    <a class="city" data-id="114">杭州</a>
+                    <a class="city" data-id="74">福州</a>
+                    <a class="city" data-id="134">济南</a>
+                    <a class="city" data-id="186">长沙</a>
+                    <a class="city" data-id="255">成都</a>
+                    <a class="city" data-id="204">汕头</a>
+                    <a class="city" data-id="218">潮州</a>
                 </div>
                 <div class="loading loading02"></div>
                 <div class="hospital-list">
@@ -128,9 +140,23 @@ $page = Yii::app()->request->getQuery('page', '');
                 } else {
                     active = '';
                 }
+                var imgname = '';
+                if (diseaseCategory.id == 1) {
+                    imgname = 'puwaike.png';
+                } else if (diseaseCategory.id == 2) {
+                    imgname = 'guke.png';
+                } else if (diseaseCategory.id == 3) {
+                    imgname = 'fuchanke.png';
+                } else if (diseaseCategory.id == 4) {
+                    imgname = 'xiaoerke.png';
+                } else if (diseaseCategory.id == 5) {
+                    imgname = 'wuguanke.png';
+                } else if (diseaseCategory.id == 6) {
+                    imgname = 'neike.png';
+                }
                 innerHtml += '<div class="department ' + active + '">' +
                         '<div class="dept-header">' +
-                        '<i class="fa fa-caret-right"></i>' +
+                        '<img class="mr5" src="<?php echo $urlResImage; ?>hospital/' + imgname + '"><i class="fa fa-caret-right"></i>' +
                         '<i class="fa fa-caret-down"></i>' +
                         '<span class="strong">' + diseaseCategory.name + '</span>' +
                         '</div>' +
@@ -138,11 +164,12 @@ $page = Yii::app()->request->getQuery('page', '');
                 var subCats = diseaseCategory.subCat;
                 for (var j = 0; j < subCats.length; j++) {
                     var subCat = subCats[j];
-                    innerHtml += '<li><a class="subCat" data-id = "' + subCat.id + '" href="<?php echo $urlLoadHospitalByDiseaseSubCategory; ?>' + subCat.id + '">' + subCat.name + '</a></li>';
+                    innerHtml += '<li class="ml10"><a class="subCat" data-id = "' + subCat.id + '" href="<?php echo $urlLoadHospitalByDiseaseSubCategory; ?>' + subCat.id + '">' + subCat.name + '</a></li>';
                 }
                 innerHtml += '</ul></div>';
             }
             $('.department-list').html(innerHtml);
+            setDiseaseCategoryActive();
             initDeptFunction();
         }
     }
@@ -169,8 +196,19 @@ $page = Yii::app()->request->getQuery('page', '');
                 if (cityId == condition["city"]) {
                     $(this).addClass('active');
                 }
-            }else{
+            } else {
                 $('.all.city').addClass('active');
+            }
+        });
+    }
+    function setDiseaseCategoryActive() {
+        $('.department-list .department').removeClass('active');
+        $('.department-list .subCat').each(function () {
+            var subCatId = $(this).attr('data-id');
+            if (subCatId == condition["disease_sub_category"]) {
+                $('.department-name>span').html($(this).text());
+                $(this).addClass('active');
+                $(this).parents('.department').addClass('active');
             }
         });
     }

@@ -30,7 +30,18 @@ $page = Yii::app()->request->getQuery('page', '');
         <div class="col-sm-10">
             <div class="row">
                 <div class="mt20 findexp-nav city-list">
-                    地区:<a class="all active city " data-id="">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a class="city" data-id="74">南京</a><a class="city" data-id="87">杭州</a><a class="city" data-id="134">济南</a><a class="city" data-id="202">深圳</a><a class="city" data-id="254">重庆</a><a class="city" data-id="255">成都</a>
+                    地区:<a class="all city active">全部</a>
+                    <a class="city" data-id="1">北京</a>
+                    <a class="city" data-id="73">上海</a>
+                    <a class="city" data-id="200">广州</a>
+                    <a class="city" data-id="87">南京</a>
+                    <a class="city" data-id="114">杭州</a>
+                    <a class="city" data-id="74">福州</a>
+                    <a class="city" data-id="134">济南</a>
+                    <a class="city" data-id="186">长沙</a>
+                    <a class="city" data-id="255">成都</a>
+                    <a class="city" data-id="204">汕头</a>
+                    <a class="city" data-id="218">潮州</a>
                 </div>
                 <div class="loading loading02"></div>
                 <div class="hospital-list">
@@ -117,7 +128,6 @@ $page = Yii::app()->request->getQuery('page', '');
         if (data.results) {
             var innerHtml = '';
             var diseaseCategorys = data.results;
-            console.log(diseaseCategorys );
             var active = '';
             for (var i = 1; i <= diseaseCategorys.length; i++) {
                 var diseaseCategory = diseaseCategorys[i - 1];
@@ -127,25 +137,25 @@ $page = Yii::app()->request->getQuery('page', '');
                 } else {
                     active = '';
                 }
-                var imgname='';
-                if(diseaseCategory.id==1){
-                    imgname='puwaike.png';
-                }else if(diseaseCategory.id==2){
-                    imgname='guke.png';
-                }else if(diseaseCategory.id==3){
-                    imgname='fuchanke.png';
-                }else if(diseaseCategory.id==4){
-                    imgname='xiaoerke.png';
-                }else if(diseaseCategory.id==5){
-                    imgname='wuguanke.png';
-                }else if(diseaseCategory.id==6){
-                    imgname='neike.png';
+                var imgname = '';
+                if (diseaseCategory.id == 1) {
+                    imgname = 'puwaike.png';
+                } else if (diseaseCategory.id == 2) {
+                    imgname = 'guke.png';
+                } else if (diseaseCategory.id == 3) {
+                    imgname = 'fuchanke.png';
+                } else if (diseaseCategory.id == 4) {
+                    imgname = 'xiaoerke.png';
+                } else if (diseaseCategory.id == 5) {
+                    imgname = 'wuguanke.png';
+                } else if (diseaseCategory.id == 6) {
+                    imgname = 'neike.png';
                 }
                 innerHtml += '<div class="department' + active + '">' +
                         '<div class="dept-header">' +
-                        '<img class="mr5" src="<?php echo $urlResImage; ?>hospital/'+imgname+'"><i class="fa fa-caret-right"></i>' +
+                        '<img class="mr5" src="<?php echo $urlResImage; ?>hospital/' + imgname + '"><i class="fa fa-caret-right"></i>' +
                         '<i class="fa fa-caret-down"></i>' +
-                        '<span class="strong">' + diseaseCategory.name+ '</span>' +
+                        '<span class="strong">' + diseaseCategory.name + '</span>' +
                         '</div>' +
                         '<ul>';
                 var subCats = diseaseCategory.subCat;
@@ -156,7 +166,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 innerHtml += '</ul></div>';
             }
             $('.department-list').html(innerHtml);
-            setDiseaseCategoryActive()
+            setDiseaseCategoryActive();
             initDeptFunction();
         }
     }
@@ -183,7 +193,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 if (cityId == condition["city"]) {
                     $(this).addClass('active');
                 }
-            }else{
+            } else {
                 $('.all.city').addClass('active');
             }
         });
