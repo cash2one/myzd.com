@@ -47,21 +47,6 @@ $page = Yii::app()->request->getQuery('page', '');
     <div class="row ">
         <div class="col-md-2 col-sm-3 mt30">
             <div class="border-gray department-list">
-                <div class="department active">
-                    <div class="dept-header">
-                        <i class="fa fa-caret-right"></i>
-                        <i class="fa fa-caret-down"></i>
-                        <span class="strong">外科</span>
-                    </div>
-                    <ul>
-                        <li><a href="#">全部</a></li>
-                        <li><a href="#">普外科</a></li>
-                        <li><a href="#">心胸外科</a></li>
-                        <li><a href="#">神经外科</a></li>
-                        <li><a href="#">泌尿外科</a></li>
-                        <li><a href="#">整形外科</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
         <div class="col-sm-9 col-md-10">

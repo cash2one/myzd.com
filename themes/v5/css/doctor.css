@@ -1,13 +1,15 @@
 .bg-green{background-color: #19aea5;}
 .crumbs-doctor{color: #fff;font-size: 16px;padding: 10px 15px;}
 .crumbs-doctor>a{color: #fff;font-size: 16px;}
-.expert-faculty{border:1px solid #19aea5;padding:5px 15px;border-radius:4px;}
+.expert-faculty{color:#f39700;padding:5px 12px 5px 0;border-radius:4px;}
 .doctorInfo .docinfo-title{font-size: 18px;margin: 40px 0 10px;background-repeat: no-repeat;padding: 3px 0 2px 30px;background-position-y: center;}
 .doctorInfo .docinfo-title.good{background-image: url(../images/icons/good.png);}
 .doctorInfo .docinfo-title.experience{background-image: url(../images/icons/experience.png);}
 .doctorInfo .docinfo-title.honor{background-image: url(../images/icons/honnor.png);}
 .doctorInfo .docinfo-title.members{background-image:url(../images/icons/team.png);}
-.doctorInfo .doc-media{border-bottom: 1px solid #19aea5;padding-bottom: 10px;}
+.doctorInfo .docinfo-title.reason{background-image:url(../images/icons/reason-01.png);}
+.doctorInfo .docinfo-title.reason i{padding-right:10px;}
+.doctorInfo .doc-media{border-bottom: 1px solid #19aea5;padding-bottom: 21px;}
 .doctorInfo .expert-atitle{color: #9f9fa0;}
 .doctorInfo .doc-img{border-radius: 50%;border: 1px solid #e4e4e4;width: 100px;height: 100px;margin-top: 10px;}
 .doctorInfo .honour ul{padding-left: 30px;}
@@ -42,3 +44,7 @@
 .mybooking-text{font-size:18px;letter-spacing:0.5em;}
 .booking-form{border:1px solid #19aea5;padding:10px 5px;}
 .disTags ul>li{border-bottom: 1px dashed #19aea5;margin-top: 3px;background: url(../images/faculty/li-bullet.png) no-repeat 5px 10px;padding-left: 15px;}
+.color-yellow-f8b62c{color:#f8b62c;}
+.bookingBtn{cursor:pointer;}
+.doctor-menu .doc-booking{background:url(../images/doctor/booking-01.png) no-repeat 100% ;width:100%;height:70px;}
+.doctor-menu .doc-booking:hover{background:url(../images/doctor/booking-01.png) no-repeat 100% ;width:100%;height:70px;}

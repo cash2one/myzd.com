@@ -21,14 +21,25 @@ $doctor = $data->results->doctor;
                         <img class="media-object doc-img" src="<?php echo $doctor->imageUrl; ?>" alt="<?php echo $doctor->name; ?>">
                     </div>
                     <div class="media-body pl10">
-                        <h4 class="media-heading mt15"><?php echo $doctor->name; ?>&nbsp;&nbsp;<span class="color-gray"><?php echo $doctor->mTitle; ?>&nbsp;&nbsp;<?php echo $doctor->aTitle; ?></span></h4>
-                        <div class="mt15">
+                        <h4 class="media-heading mt30"><span><?php echo $doctor->name; ?></span><span class="color-gray ml20"><?php echo $doctor->mTitle; ?></span><span class="color-gray ml20"><?php echo $doctor->aTitle; ?></span></h4>
+                        <div class="mt20">
                             <?php echo $doctor->hpDeptName == '' ? '' : '<span class="expert-faculty text-center">' . $doctor->hpDeptName . '</span>'; ?>
+                            <span><?php echo $doctor->hospitalName; ?></span>
                         </div>
-                        <div class="mt15"><?php echo $doctor->hospitalName; ?></div>
                     </div>
                 </div>
                 <section class="main pb20">
+                      <?php
+                    //if (isset($doctor->careerExp) && !is_null($doctor->careerExp)) {
+                       // ?>
+                        <div>
+                        <div class="docinfo-title reason">推荐理由</div>
+                        <div class="pl30">
+                            
+                        </div>
+                    </div>
+                    <?php// }
+                    ?> 
                     <div class="disTags">
                         <div class="docinfo-title good">擅长手术</div>
                         <ul class="pl30">
@@ -36,29 +47,35 @@ $doctor = $data->results->doctor;
                             echo $doctor->description;
                             ?>
                         </ul>
-                    </div>
-                    <div>
-                        <div class="docinfo-title experience">执业经历</div>
-                        <div class="pl30">
-                            <?php echo $doctor->careerExp == null ? '暂无信息' : $doctor->careerExp; ?>
-                        </div>
-                    </div>
+                    </div> 
+                    <?php
+                    if (isset($doctor->honour) && !is_null($doctor->honour)) {
+                        ?>
                     <div class="honour">
                         <div class="docinfo-title honor">获得荣誉</div>
                         <div class="pl30">
-                            <?php
-                            if (isset($doctor->honour)) {
-                                echo '<ul>';
-                                foreach ($doctor->honour as $value) {
+                            <ul>
+                                <?php
+                               foreach ($doctor->honour as $value) {
                                     echo '<li>' . $value . '</li>';
-                                }
-                                echo '</ul>';
-                            } else {
-                                echo '暂无信息';
-                            }
-                            ?>
+                                } 
+                                ?>
+                            </ul>                       
                         </div>
                     </div>
+                     <?php }
+                    ?>
+                    <?php
+                    if (isset($doctor->careerExp) && !is_null($doctor->careerExp)) {
+                        ?>
+                        <div>
+                            <div class="docinfo-title experience">执业经历</div>
+                            <div class="pl30">
+                                <?php echo $doctor->careerExp; ?>
+                            </div>
+                        </div> 
+                    <?php }
+                    ?>                                     
                     <?php
                     if (isset($data->results->members) && !is_null($data->results->members)) {
                         $members = $data->results->members;
@@ -93,28 +110,20 @@ $doctor = $data->results->doctor;
             </div> 
         </div>
         <div class="col-sm-4 doctor-menu">
-            <div class="bg-green">
-                <div class="row">
-                    <div class="col-md-3 border-right">
-                        <div class="memu-title"><div>我要</div><div>预约</div></div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="mt25 text-center">
-                            <span class="bookingBtn btn btn-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>">预 约</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="mt20 text-center">
+                <div class="bookingBtn doc-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>"></div>
             </div>
-            <div class="pt30 pb30 border-green">
-                <img class="" src="<?php echo $urlResImage; ?>doctor/flowChart.png">
+            <div class="" style="margin-top:10px;font-size:21px;">立即预约的流程</div>       
+            <div class="pb30">
+                <img class="" src="<?php echo $urlResImage; ?>doctor/liucheng-01.png">
 
                 <div class="clearfix"></div>
             </div>
-<!--                        <div class="rec-title">
-                            <span>其他推荐</span>
-                        </div>
-                        <div class="border-green">
-                            <div class="rec-doc">-->
+            <!--                        <div class="rec-title">
+                                        <span>其他推荐</span>
+                                    </div>
+                                    <div class="border-green">
+                                        <div class="rec-doc">-->
             <?php
 //                    if (isset($data->results->related) && is_array($data->results->related)) {
 //                        $related = $data->results->related;
@@ -124,17 +133,17 @@ $doctor = $data->results->doctor;
 //                                $last = 'last';
 //                            }
             ?>
-            <!--                            <a href="<?php // echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));  ?>" target='_blank'>
-                                            <div class="expInfo <?php // echo $last;  ?>">
-                                                <div class="pull-left mr10" >
-                                                    <img src="<?php //echo $relateddoc->imageUrl;  ?>"/>
-                                                </div>	
-                                                <div class="expName pt20"><span class="strong color-black"><?php //echo $relateddoc->name;  ?></span>&nbsp;&nbsp;<span class="color-gray"><?php //echo $relateddoc->mTitle;  ?> <?php //echo $relateddoc->aTitle;  ?></span></div>
-                                                <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hospitalName;  ?></div>
-                                                <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hpDeptName;  ?></div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>  -->
+                        <!--                            <a href="<?php // echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));    ?>" target='_blank'>
+                                                        <div class="expInfo <?php // echo $last;    ?>">
+                                                            <div class="pull-left mr10" >
+                                                                <img src="<?php //echo $relateddoc->imageUrl;    ?>"/>
+                                                            </div>	
+                                                            <div class="expName pt20"><span class="strong color-black"><?php //echo $relateddoc->name;    ?></span>&nbsp;&nbsp;<span class="color-gray"><?php //echo $relateddoc->mTitle;    ?> <?php //echo $relateddoc->aTitle;    ?></span></div>
+                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hospitalName;    ?></div>
+                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hpDeptName;    ?></div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </a>  -->
             <?php
 //                        }
 //                    } else {

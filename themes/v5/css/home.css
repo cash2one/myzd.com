@@ -22,7 +22,6 @@
 .search-top{margin-top:-17px;font-size:14px;height:35px;width:100px;background-color:#fff;color:#19aea5;line-height:35px;text-align:center;}
 .search-top:hover{cursor: pointer;}
 .search-top.active{background-color:#19aea5;color:#fff;}
-.search-top2{}
 .searchform{display: none;}
 #searchhospital-btn{display: none;}
 .learn-more{color:yellow;text-decoration:underline;}
@@ -87,6 +86,7 @@
 .more-expert{margin-right: 2px;}
 .more-expert:hover{margin-right: 0px;text-decoration: underline;}
 .item .slider-text{text-align:center;font-size:12px;color:#686868;}
+#home-search-form .btn-group .btn-yes:active{border-top-left-radius:0!important;border-bottom-left-radius:0!important;}
 /**** 专题色值 ****/
 .color1{background-color: #faf0dd;color: #686868;}
 .color2{background-color: #faf0dd;color: #686868;}
