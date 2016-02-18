@@ -29,16 +29,24 @@ $doctor = $data->results->doctor;
                     </div>
                 </div>
                 <section class="main pb20">
-                      <?php
-                    //if (isset($doctor->careerExp) && !is_null($doctor->careerExp)) {
-                       // ?>
+                    <?php
+                    if (isset($doctor->reasons) && arrayNotEmpty($doctor->reasons)) {
+                        $reasons = $doctor->reasons;
+                        ?>
                         <div>
-                        <div class="docinfo-title reason">推荐理由</div>
-                        <div class="pl30">
-                            
+                            <div class="docinfo-title reason">推荐理由</div>
+                            <div class="pl30">
+                                <div class="row">
+                                    <?php
+                                    foreach ($reasons as $key => $reason) {
+                                        $textcenter = strlen($reason) <= 30 ? 'text-center' : '';
+                                        echo '<div class="col-sm-12 col-md-4"><div class="reason-content"><div class="reason-text '.$textcenter.'">' . $reason . '</div></div></div>';
+                                    }
+                                    ?>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <?php// }
+                    <?php }
                     ?> 
                     <div class="disTags">
                         <div class="docinfo-title good">擅长手术</div>
@@ -49,21 +57,21 @@ $doctor = $data->results->doctor;
                         </ul>
                     </div> 
                     <?php
-                    if (isset($doctor->honour) && !is_null($doctor->honour)) {
+                    if (isset($doctor->honour) && arrayNotEmpty($doctor->honour)) {
                         ?>
-                    <div class="honour">
-                        <div class="docinfo-title honor">获得荣誉</div>
-                        <div class="pl30">
-                            <ul>
-                                <?php
-                               foreach ($doctor->honour as $value) {
-                                    echo '<li>' . $value . '</li>';
-                                } 
-                                ?>
-                            </ul>                       
+                        <div class="honour">
+                            <div class="docinfo-title honor">获得荣誉</div>
+                            <div class="pl30">
+                                <ul>
+                                    <?php
+                                    foreach ($doctor->honour as $value) {
+                                        echo '<li>' . $value . '</li>';
+                                    }
+                                    ?>
+                                </ul>                       
+                            </div>
                         </div>
-                    </div>
-                     <?php }
+                    <?php }
                     ?>
                     <?php
                     if (isset($doctor->careerExp) && !is_null($doctor->careerExp)) {
@@ -114,9 +122,8 @@ $doctor = $data->results->doctor;
                 <div class="bookingBtn doc-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>"></div>
             </div>
             <div class="" style="margin-top:10px;font-size:21px;">立即预约的流程</div>       
-            <div class="pb30">
+            <div class="pb30 mt5">
                 <img class="" src="<?php echo $urlResImage; ?>doctor/liucheng-01.png">
-
                 <div class="clearfix"></div>
             </div>
             <!--                        <div class="rec-title">
@@ -133,14 +140,14 @@ $doctor = $data->results->doctor;
 //                                $last = 'last';
 //                            }
             ?>
-                        <!--                            <a href="<?php // echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));    ?>" target='_blank'>
-                                                        <div class="expInfo <?php // echo $last;    ?>">
+                        <!--                            <a href="<?php // echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));        ?>" target='_blank'>
+                                                        <div class="expInfo <?php // echo $last;        ?>">
                                                             <div class="pull-left mr10" >
-                                                                <img src="<?php //echo $relateddoc->imageUrl;    ?>"/>
+                                                                <img src="<?php //echo $relateddoc->imageUrl;        ?>"/>
                                                             </div>	
-                                                            <div class="expName pt20"><span class="strong color-black"><?php //echo $relateddoc->name;    ?></span>&nbsp;&nbsp;<span class="color-gray"><?php //echo $relateddoc->mTitle;    ?> <?php //echo $relateddoc->aTitle;    ?></span></div>
-                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hospitalName;    ?></div>
-                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hpDeptName;    ?></div>
+                                                            <div class="expName pt20"><span class="strong color-black"><?php //echo $relateddoc->name;        ?></span>&nbsp;&nbsp;<span class="color-gray"><?php //echo $relateddoc->mTitle;        ?> <?php //echo $relateddoc->aTitle;        ?></span></div>
+                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hospitalName;        ?></div>
+                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hpDeptName;        ?></div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </a>  -->
