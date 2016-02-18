@@ -12,8 +12,10 @@
 .doctorInfo .doc-media{border-bottom: 1px solid #19aea5;padding-bottom: 21px;}
 .doctorInfo .expert-atitle{color: #9f9fa0;}
 .doctorInfo .doc-img{border-radius: 50%;border: 1px solid #e4e4e4;width: 100px;height: 100px;margin-top: 10px;}
+.doctorInfo .reason-content{display: block;background-color: #5bbeb7;border-radius: 6px;}
+.doctorInfo .reason-content>.reason-text{display: table-cell;vertical-align: middle;height: 4em;margin: 0 auto;color: #fff;width: 200em;padding: 0 31px;}
 .doctorInfo .honour ul{padding-left: 30px;}
-.doctorInfo .honour ul>li{list-style: decimal;margin-bottom: 5px;}
+.doctorInfo .honour ul>li{list-style: disc;margin-bottom: 5px;}
 .doctorInfo .media img{border: 1px solid #e4e4e4;}
 .doctorInfo .booking{border: 1px solid #19aea5;}
 .doctorInfo .booking .booking-form .form-wrapper{border: 0!important;}
