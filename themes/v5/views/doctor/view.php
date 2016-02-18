@@ -126,11 +126,11 @@ $doctor = $data->results->doctor;
                 <img class="" src="<?php echo $urlResImage; ?>doctor/liucheng-01.png">
                 <div class="clearfix"></div>
             </div>
-            <!--                        <div class="rec-title">
+                                   <div class="rec-title">
                                         <span>其他推荐</span>
                                     </div>
                                     <div class="border-green">
-                                        <div class="rec-doc">-->
+                                        <div class="rec-doc">
             <?php
                     if (isset($data->results->related) && is_array($data->results->related)) {
                         $related = $data->results->related;
