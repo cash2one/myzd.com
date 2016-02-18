@@ -132,33 +132,33 @@ $doctor = $data->results->doctor;
                                     <div class="border-green">
                                         <div class="rec-doc">-->
             <?php
-//                    if (isset($data->results->related) && is_array($data->results->related)) {
-//                        $related = $data->results->related;
-//                        $last = '';
-//                        foreach ($related as $i => $relateddoc) {
-//                            if ($i == count($related) - 1) {
-//                                $last = 'last';
-//                            }
+                    if (isset($data->results->related) && is_array($data->results->related)) {
+                        $related = $data->results->related;
+                        $last = '';
+                        foreach ($related as $i => $relateddoc) {
+                            if ($i == count($related) - 1) {
+                                $last = 'last';
+                            }
             ?>
-                        <!--                            <a href="<?php // echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));        ?>" target='_blank'>
-                                                        <div class="expInfo <?php // echo $last;        ?>">
+                                                    <a href="<?php  echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));        ?>" target='_blank'>
+                                                        <div class="expInfo <?php  echo $last;        ?>">
                                                             <div class="pull-left mr10" >
-                                                                <img src="<?php //echo $relateddoc->imageUrl;        ?>"/>
-                                                            </div>	
-                                                            <div class="expName pt20"><span class="strong color-black"><?php //echo $relateddoc->name;        ?></span>&nbsp;&nbsp;<span class="color-gray"><?php //echo $relateddoc->mTitle;        ?> <?php //echo $relateddoc->aTitle;        ?></span></div>
-                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hospitalName;        ?></div>
-                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hpDeptName;        ?></div>
+                                                                <img src="<?php echo $relateddoc->imageUrl;        ?>"/>
+                                                            </div>
+                                                            <div class="expName pt20"><span class="strong color-black"><?php echo $relateddoc->name;        ?></span>&nbsp;&nbsp;<span class="color-gray"><?php echo $relateddoc->mTitle;        ?> <?php echo $relateddoc->aTitle;        ?></span></div>
+                                                            <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hospitalName;        ?></div>
+                                                            <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hpDeptName;        ?></div>
                                                             <div class="clearfix"></div>
                                                         </div>
-                                                    </a>  -->
+                                                    </a>
             <?php
-//                        }
-//                    } else {
-//                        echo '<div class="expInfo last"><div class="mt20 mb50">暂无其他推荐</div></div>';
-//                    }
+                        }
+                    } else {
+                        echo '<div class="expInfo last"><div class="mt20 mb50">暂无其他推荐</div></div>';
+                    }
             ?>
-            <!--                </div>
-                        </div>-->
+                            </div>
+                        </div>
         </div>
     </div>
 </div>
