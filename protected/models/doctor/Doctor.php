@@ -627,4 +627,12 @@ class Doctor extends EActiveRecord {
         return Yii::app()->getBaseUrl(true) . '/';
     }
 
+    public function getReasons() {
+        $data = array();
+        isset($this->reason_one) && $data[] = $this->reason_one;
+        isset($this->reason_two) && $data[] = $this->reason_two;
+        isset($this->reason_three) && $data[] = $this->reason_three;
+        return $data;
+    }
+
 }
