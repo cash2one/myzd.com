@@ -215,17 +215,18 @@ class Doctor extends EActiveRecord {
 
     public function afterFind() {
         // convert json string to array.
-        $this->honour = CJSON::decode($this->honour);
+//        $this->honour = CJSON::decode($this->honour);
+        $this->honour = isset($this->honour) ? explode('#', $this->honour) : null;
         return parent::afterFind();
     }
 
-    public function beforeSave() {
-        if (is_array($this->honour)) {
-            // convert array to json string.
-            $this->honour = CJSON::encode($this->honour);
-        }
-        return parent::beforeSave();
-    }
+//    public function beforeSave() {
+//        if (is_array($this->honour)) {
+//            // convert array to json string.
+//            $this->honour = CJSON::encode($this->honour);
+//        }
+//        return parent::beforeSave();
+//    }
 
     /*     * ****** Public Methods ******* */
 
