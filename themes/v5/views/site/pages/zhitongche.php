@@ -76,7 +76,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                 <div class="col-sm-7">
                     <div class="row">
                         <div class="col-sm-5 ztc-story-title ">接洽时间：2015年07月13日</div>
-                        <div class="col-sm-7 ztc-story-title">疾病名称：舌部鳞状细胞癌</div>
+                        <div class="col-sm-7 ztc-story-title">疾病名称：喉部鳞状细胞癌</div>
                         <div class="col-sm-5 mt30 ztc-story-title">入院时间：2015年07月15日</div>
                         <div class="col-sm-7 mt30 ztc-story-title">主刀医生：郭传斌院长（北大口腔医院）</div>
                         <div class="col-sm-5 mt30 ztc-story-title">出院时间：2015年07月29日</div>
@@ -104,7 +104,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                 <div class="col-sm-5 pl0">
                     <div class="row ml20">
                         <div class="col-sm-6 ztc-story-title pd0">接洽时间：2015年07月06日</div>
-                        <div class="col-sm-6 ztc-story-title pl0">疾病名称：舌部鳞状细胞癌</div>
+                        <div class="col-sm-6 ztc-story-title pl0">疾病名称：先天性心脏病</div>
                         <div class="col-sm-6 mt30 ztc-story-title pd0">入院时间：2015年07月09日</div>
                         <div class="col-sm-6 mt30 ztc-story-title pl0">主刀医生：王霄芳主任医生<div class="text-right mr10">（北大安贞医院）</div></div>                                                            
                         <div class="color-gray-68 ztc-three-text text-indent2em">韩阿姨开始觉得看病自己到医院挂号最让人放心，自己来到医院找到医生才是最真实的，但是到北京看病没有认识的医生，又不知如何选择医院，病情又急需手术，这让韩阿姨和她的家人陷入了困境。韩阿姨尝试了许多方法去医院挂号，每天很早去医院排队，当韩阿姨挂上专家号之后被专家告知需要手术却没有床位的时候，韩阿姨和她家人又一次陷入失望，直到联系了“名医主刀”...</div>
