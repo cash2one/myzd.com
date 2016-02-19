@@ -24,7 +24,7 @@ $doctor = $data->results->doctor;
                         <h4 class="media-heading mt30"><span><?php echo $doctor->name; ?></span><span class="color-gray ml20"><?php echo $doctor->mTitle; ?></span><span class="color-gray ml20"><?php echo $doctor->aTitle; ?></span></h4>
                         <div class="mt20">
                             <?php echo $doctor->hpDeptName == '' ? '' : '<span class="expert-faculty text-center">' . $doctor->hpDeptName . '</span>'; ?>
-                            <span><?php echo $doctor->hospitalName;?></span>
+                            <span><?php echo $doctor->hospitalName; ?></span>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ $doctor = $data->results->doctor;
                                     <?php
                                     foreach ($reasons as $key => $reason) {
                                         $textcenter = strlen($reason) <= 30 ? 'text-center' : '';
-                                        echo '<div class="col-sm-12 col-md-4"><div class="reason-content"><div class="reason-text '.$textcenter.'">' . $reason . '</div></div></div>';
+                                        echo '<div class="col-sm-12 col-md-4"><div class="reason-content"><div class="reason-text ' . $textcenter . '">' . $reason . '</div></div></div>';
                                     }
                                     ?>
                                 </div>
@@ -49,17 +49,17 @@ $doctor = $data->results->doctor;
                     <?php }
                     ?> 
                     <?php
-                    if (isset($doctor->description) && !is_null($doctor->description)) {                      
+                    if (isset($doctor->description) && !is_null($doctor->description)) {
                         ?>
-                    <div class="disTags">
-                        <div class="docinfo-title good">擅长手术</div>
-                        <ul class="pl30">
-                            <?php
-                            echo $doctor->description;
-                            ?>
-                        </ul>
-                    </div> 
-                     <?php }
+                        <div class="disTags">
+                            <div class="docinfo-title good">擅长手术</div>
+                            <ul class="pl30">
+                                <?php
+                                echo $doctor->description;
+                                ?>
+                            </ul>
+                        </div> 
+                    <?php }
                     ?>
                     <?php
                     if (isset($doctor->honour) && arrayNotEmpty($doctor->honour)) {
@@ -70,7 +70,9 @@ $doctor = $data->results->doctor;
                                 <ul>
                                     <?php
                                     foreach ($doctor->honour as $value) {
-                                        if(trim($value)!=""){echo '<li>' .$value . '</li>';}  
+                                        if (trim($value) != "") {
+                                            echo '<li>' . $value . '</li>';
+                                        }
                                     }
                                     ?>
                                 </ul>                       
@@ -84,7 +86,7 @@ $doctor = $data->results->doctor;
                         <div>
                             <div class="docinfo-title experience">执业经历</div>
                             <div class="pl30">
-                                <?php echo $doctor->careerExp; ?>
+                        <?php echo $doctor->careerExp; ?>
                             </div>
                         </div> 
                     <?php }
@@ -110,9 +112,8 @@ $doctor = $data->results->doctor;
                                     <div class="media-body pl10">
                                         <div class="media-heading mt15"><strong><?php echo $member->name; ?></strong><span class="expert-mtitle ml20"><?php echo $member->mTitle; ?>&nbsp;<?php echo $member->aTitle; ?></span></div>
                                         <div class="mt15">
-                                            <?php echo $member->hpDeptName == null ? '' : '<span class="expert-faculty text-center">' . hpDeptName . '</span>'; ?>
+        <?php echo $member->hpDeptName == null ? '' : '<span class="color-25aea6 text-center">' . $member->hpDeptName . '</span>'; ?>
                                         </div>
-                                        <div class="mt15 color-25aea6"><?php echo $doctor->hpDeptName; ?></div>
                                         <div class="mt15"><?php echo $doctor->hospitalName; ?></div>
                                     </div>
                                 </div>
@@ -148,14 +149,14 @@ $doctor = $data->results->doctor;
 //                                $last = 'last';
 //                            }
             ?>
-                        <!--                            <a href="<?php // echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));        ?>" target='_blank'>
-                                                        <div class="expInfo <?php // echo $last;        ?>">
+                        <!--                            <a href="<?php // echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));         ?>" target='_blank'>
+                                                        <div class="expInfo <?php // echo $last;         ?>">
                                                             <div class="pull-left mr10" >
-                                                                <img src="<?php //echo $relateddoc->imageUrl;        ?>"/>
+                                                                <img src="<?php //echo $relateddoc->imageUrl;         ?>"/>
                                                             </div>	
-                                                            <div class="expName pt20"><span class="strong color-black"><?php //echo $relateddoc->name;        ?></span>&nbsp;&nbsp;<span class="color-gray"><?php //echo $relateddoc->mTitle;        ?> <?php //echo $relateddoc->aTitle;        ?></span></div>
-                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hospitalName;        ?></div>
-                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hpDeptName;        ?></div>
+                                                            <div class="expName pt20"><span class="strong color-black"><?php //echo $relateddoc->name;         ?></span>&nbsp;&nbsp;<span class="color-gray"><?php //echo $relateddoc->mTitle;         ?> <?php //echo $relateddoc->aTitle;         ?></span></div>
+                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hospitalName;         ?></div>
+                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hpDeptName;         ?></div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </a>  -->
