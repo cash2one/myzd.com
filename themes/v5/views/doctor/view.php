@@ -48,6 +48,9 @@ $doctor = $data->results->doctor;
                         </div>
                     <?php }
                     ?> 
+                    <?php
+                    if (isset($doctor->description) && !is_null($doctor->description)) {                      
+                        ?>
                     <div class="disTags">
                         <div class="docinfo-title good">擅长手术</div>
                         <ul class="pl30">
@@ -56,6 +59,8 @@ $doctor = $data->results->doctor;
                             ?>
                         </ul>
                     </div> 
+                     <?php }
+                    ?>
                     <?php
                     if (isset($doctor->honour) && arrayNotEmpty($doctor->honour)) {
                         ?>
