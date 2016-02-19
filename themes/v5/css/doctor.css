@@ -6,7 +6,7 @@
 .doctorInfo .docinfo-title.good{background-image: url(../images/icons/good.png);}
 .doctorInfo .docinfo-title.experience{background-image: url(../images/icons/experience.png);}
 .doctorInfo .docinfo-title.honor{background-image: url(../images/icons/honnor.png);}
-.doctorInfo .docinfo-title.members{background-image:url(../images/icons/team.png);}
+.doctorInfo .docinfo-title.members{background-image:url(../images/icons/team.png);color:#25aea6;}
 .doctorInfo .docinfo-title.reason{background-image:url(../images/icons/reason-01.png);}
 .doctorInfo .docinfo-title.reason i{padding-right:10px;}
 .doctorInfo .doc-media{border-bottom: 1px solid #19aea5;padding-bottom: 21px;}
@@ -50,3 +50,6 @@
 .bookingBtn{cursor:pointer;}
 .doctor-menu .doc-booking{background:url(../images/doctor/booking-01.png) no-repeat 100% ;width:100%;height:70px;}
 .doctor-menu .doc-booking:hover{background:url(../images/doctor/booking-01.png) no-repeat 100% ;width:100%;height:70px;}
+.media-object.team-img{width:120px;height:120px;}
+.color-25aea6{color:#25aea6;}
+.media-body .media-heading{font-size:16px;}

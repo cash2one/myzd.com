@@ -24,7 +24,7 @@ $doctor = $data->results->doctor;
                         <h4 class="media-heading mt30"><span><?php echo $doctor->name; ?></span><span class="color-gray ml20"><?php echo $doctor->mTitle; ?></span><span class="color-gray ml20"><?php echo $doctor->aTitle; ?></span></h4>
                         <div class="mt20">
                             <?php echo $doctor->hpDeptName == '' ? '' : '<span class="expert-faculty text-center">' . $doctor->hpDeptName . '</span>'; ?>
-                            <span><?php echo $doctor->hospitalName; ?></span>
+                            <span><?php echo $doctor->hospitalName;?></span>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ $doctor = $data->results->doctor;
                                 <ul>
                                     <?php
                                     foreach ($doctor->honour as $value) {
-                                        echo '<li>' . $value . '</li>';
+                                        if(trim($value)!=""){echo '<li>' .$value . '</li>';}  
                                     }
                                     ?>
                                 </ul>                       
@@ -89,7 +89,9 @@ $doctor = $data->results->doctor;
                         $members = $data->results->members;
                         ?>
                         <div class="">
-                            <div class="docinfo-title members pull-left">专家团队成员简介</div>
+                            <div class="row"> 
+                                <div class="col-sm-3"><div class="docinfo-title members pull-left">团队成员简介</div></div><div class="col-sm-9"><div style="border-bottom:1px solid #25aea6;margin-top:57px;margin-left:-50px;"></div></div>                           
+                            </div>
                         </div>
                         <div class="clearfix"></div>
                         <?php
@@ -98,17 +100,18 @@ $doctor = $data->results->doctor;
                             <div class="pl30">
                                 <div class="media">
                                     <div class="media-left media-middle pull-left">
-                                        <img class="media-object" src="<?php echo $member->imageUrl; ?>" alt="<?php echo $member->name; ?>">
+                                        <img class="media-object team-img" src="<?php echo $member->imageUrl; ?>" alt="<?php echo $member->name; ?>">
                                     </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading mt15"><?php echo $member->name; ?>&nbsp;<span class="text15 expert-mtitle"><?php echo $member->mTitle; ?>&nbsp;<?php echo $member->aTitle; ?></span></h4>
+                                    <div class="media-body pl10">
+                                        <div class="media-heading mt15"><strong><?php echo $member->name; ?></strong><span class="expert-mtitle ml20"><?php echo $member->mTitle; ?>&nbsp;<?php echo $member->aTitle; ?></span></div>
                                         <div class="mt15">
                                             <?php echo $member->hpDeptName == null ? '' : '<span class="expert-faculty text-center">' . hpDeptName . '</span>'; ?>
                                         </div>
+                                        <div class="mt15 color-25aea6"><?php echo $doctor->hpDeptName; ?></div>
                                         <div class="mt15"><?php echo $doctor->hospitalName; ?></div>
                                     </div>
                                 </div>
-                                <div class="expert-desc mt15 mb40"><?php echo $member->description == null ? '暂无信息' : $member->description; ?></div>
+                                <div class="expert-desc mt15 mb40"><?php echo $member->description == null ? '' : $member->description; ?></div>
                             </div>
                             <?php
                         }
@@ -126,39 +129,39 @@ $doctor = $data->results->doctor;
                 <img class="" src="<?php echo $urlResImage; ?>doctor/liucheng-01.png">
                 <div class="clearfix"></div>
             </div>
-                                   <div class="rec-title">
+            <!--                        <div class="rec-title">
                                         <span>其他推荐</span>
                                     </div>
                                     <div class="border-green">
-                                        <div class="rec-doc">
+                                        <div class="rec-doc">-->
             <?php
-                    if (isset($data->results->related) && is_array($data->results->related)) {
-                        $related = $data->results->related;
-                        $last = '';
-                        foreach ($related as $i => $relateddoc) {
-                            if ($i == count($related) - 1) {
-                                $last = 'last';
-                            }
+//                    if (isset($data->results->related) && is_array($data->results->related)) {
+//                        $related = $data->results->related;
+//                        $last = '';
+//                        foreach ($related as $i => $relateddoc) {
+//                            if ($i == count($related) - 1) {
+//                                $last = 'last';
+//                            }
             ?>
-                                                    <a href="<?php  echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));        ?>" target='_blank'>
-                                                        <div class="expInfo <?php  echo $last;        ?>">
+                        <!--                            <a href="<?php // echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));        ?>" target='_blank'>
+                                                        <div class="expInfo <?php // echo $last;        ?>">
                                                             <div class="pull-left mr10" >
-                                                                <img src="<?php echo $relateddoc->imageUrl;        ?>"/>
-                                                            </div>
-                                                            <div class="expName pt20"><span class="strong color-black"><?php echo $relateddoc->name;        ?></span>&nbsp;&nbsp;<span class="color-gray"><?php echo $relateddoc->mTitle;        ?> <?php echo $relateddoc->aTitle;        ?></span></div>
-                                                            <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hospitalName;        ?></div>
-                                                            <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hpDeptName;        ?></div>
+                                                                <img src="<?php //echo $relateddoc->imageUrl;        ?>"/>
+                                                            </div>	
+                                                            <div class="expName pt20"><span class="strong color-black"><?php //echo $relateddoc->name;        ?></span>&nbsp;&nbsp;<span class="color-gray"><?php //echo $relateddoc->mTitle;        ?> <?php //echo $relateddoc->aTitle;        ?></span></div>
+                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hospitalName;        ?></div>
+                                                            <div class="expHospital mt10 text-overflow"><?php //echo $relateddoc->hpDeptName;        ?></div>
                                                             <div class="clearfix"></div>
                                                         </div>
-                                                    </a>
+                                                    </a>  -->
             <?php
-                        }
-                    } else {
-                        echo '<div class="expInfo last"><div class="mt20 mb50">暂无其他推荐</div></div>';
-                    }
+//                        }
+//                    } else {
+//                        echo '<div class="expInfo last"><div class="mt20 mb50">暂无其他推荐</div></div>';
+//                    }
             ?>
-                            </div>
-                        </div>
+            <!--                </div>
+                        </div>-->
         </div>
     </div>
 </div>
