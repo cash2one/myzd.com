@@ -29,6 +29,7 @@ abstract class WebsiteController extends Controller {
     public $breadcrumbs = array();
     public $content_container = 'container page-container';
     public $site_menu = null;
+    public $header_menu = null;
     public $show_header = true;
     public $show_header_navbar = true;
     public $show_footer = true;
@@ -274,6 +275,19 @@ abstract class WebsiteController extends Controller {
             );
         }
         return $this->site_menu;
+    }
+
+    public function getHeaderMenu() {
+        if ($this->header_menu === null) {
+            $this->header_menu = array(
+                'home' => array('label' => '首页', 'url' => array('/')),
+                'doctor' => array('label' => '找名医', 'url' => array('doctor/top', 'disease_sub_category' => '1')),
+                'hospital' => array('label' => '找科室', 'url' => array('hospital/top', 'disease_sub_category' => '1')),
+                'zhitongche' => array('label' => '患者故事', 'url' => array('site/page', 'view' => 'zhitongche')),
+                'aboutus' => array('label' => '关于我们', 'url' => array('site/page', 'view' => 'aboutus')),
+            );
+        }
+        return $this->header_menu;
     }
 
 }

@@ -4,6 +4,7 @@ Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyun
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login.js", CClientScript::POS_HEAD);
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/register.js", CClientScript::POS_HEAD);
 $siteMenu = $this->loadSiteMenu();
+$headerMenu = $this->getHeaderMenu();
 $facultyMenu = $siteMenu["faculty"];
 $aboutusMenu = $this->loadSiteMenu()["site"];
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
@@ -26,18 +27,41 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
 <section id="site-header">
     <div class="container-fluid bg-gray home-top hidden-xs">
         <div class="row">
-            <div class="container">
+            <div class="container relative">
                 <div class="pull-left hidden-sm phone"><span class="site-phone">400-119-7900</span></div>
                 <div class="pull-right " >
                     <?php
                     $user = $this->getCurrentUser();
                     if (isset($user)) {
-                        echo '<span class="user">您好！&nbsp;<a target="_blank" href="' . $bookinglist . '">' . $user->getUsername() . '</a>&nbsp;</span>|<a id="logout" href="' . $urlLogout . '">&nbsp;退出&nbsp;</a>|<a target="_blank" href="' . $bookinglist . '">&nbsp;我的手术&nbsp;|</a>';
+                        echo '<span class="user">您好！&nbsp;<a target="_blank" href="' . $bookinglist . '">' . $user->getUsername() . '</a>&nbsp;</span> | <a id="logout" href="' . $urlLogout . '">&nbsp;退出&nbsp;</a> | <a target="_blank" href="' . $bookinglist . '">&nbsp;我的手术&nbsp;</a> | ';
                     } else {
-                        echo '<span class="user">您好！&nbsp;请&nbsp;<a data-toggle="modal" data-target="#loginModal">登录</a>/<a target="_blank" data-toggle="modal" data-target="#registerModal">注册</a>&nbsp;</span>|';
+                        echo '<span class="user">您好！&nbsp;请&nbsp;<a data-toggle="modal" data-target="#loginModal">登录</a>/<a target="_blank" data-toggle="modal" data-target="#registerModal">注册</a>&nbsp;</span> |';
                     }
                     ?>
-                    <a data-toggle="modal" data-target="#qucikbookingModal">&nbsp;快速预约&nbsp;</a>|<a target="_blank" href="<?php echo $urlDownloadApp; ?>">&nbsp;下载APP&nbsp;</a>|<a target="_blank" href="<?php echo $urlHelp; ?>">&nbsp;常见问题</a>
+                    <a data-toggle="modal" data-target="#qucikbookingModal">&nbsp;快速预约&nbsp;</a>
+                    |
+                    <a id="appdownload">&nbsp;下载APP&nbsp;</a>
+                    <div id="qrcode" class="tooltip bottom">
+                        <div class="tooltip-arrow"></div>
+                        <div class="tooltip-inner">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a href="https://itunes.apple.com/cn/app/id1001032594" target="_blank">
+                                        <img src="<?php echo $urlResImage; ?>icons/ios-download.png"/>
+                                        <div class="mt5 text-center"><i class="fa fa-apple"></i> IOS</div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.mingyizhudao.app" target="_blank">
+                                        <img src="<?php echo $urlResImage; ?>icons/android-download.png"/>
+                                        <div class="mt5 text-center"><i class="fa fa-android"></i> Android</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    |
+                    <a target="_blank" href="<?php echo $urlHelp; ?>">&nbsp;常见问题</a>
                 </div>
             </div>
         </div>
@@ -58,21 +82,24 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
                     </div> 
                     <div class="collapse navbar-collapse" id="header-navbar-collapse">                
                         <ul id="header-nav" class="nav navbar-nav mt5">
-                            <li class="dropdown dropdown-hover">
-                                <a id="header-nav-home" href="<?php echo Yii::app()->homeUrl; ?>" class="dropdown-toggle">首页</a>
-                            </li>
-                            <li class="dropdown dropdown-hover">
-                                <a id="header-nav-hospital" href="<?php echo $urlDoctorSearch; ?>" class="dropdown-toggle" target="_blank">找名医</a>
-                            </li>
-                            <li class="dropdown dropdown-hover">
-                                <a id="header-nav-aboutus" href="<?php echo $urlHopitalSearch; ?>" class="dropdown-toggle" target="_blank">找科室</a>
-                            </li>
-                            <li class="dropdown dropdown-hover">
-                                <a id="header-nav-aboutus" href="<?php echo $urlZhiTongChe; ?>" class="dropdown-toggle" target="_blank">患者故事</a>
-                            </li>
-                            <li class="dropdown dropdown-hover">
-                                <a id="header-nav-aboutus" href="<?php echo $aboutusMenu["aboutus"]["url"]; ?>" class="dropdown-toggle" target="_blank">关于我们</a>
-                            </li>
+                            <?php
+                            $curView = Yii::app()->request->getParam('view');
+                            foreach ($headerMenu as $key => $menuItem) {
+                                if (($this->action->controller->id == 'doctor') && ($key == 'doctor') && ($this->action->id == 'top')) {
+                                    echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
+                                } else if (($this->action->controller->id == 'hospital') && ($key == 'hospital') && ($this->action->id == 'top')) {
+                                    echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
+                                } else if (($this->action->controller->id == 'site') && ($key == 'home') && ($this->action->id == 'index')) {
+                                    echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
+                                } else if (($this->action->controller->id == 'site') && ($key == 'aboutus') && ($curView == 'bigevents' || $curView == 'news' || $curView == 'mingyizhuyi' || $curView == 'joinus')) {
+                                    echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
+                                } else if ($key == $curView) {
+                                    echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
+                                } else {
+                                    echo '<li class="dropdown dropdown-hover">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('target' => '_blank')) . '</li>';
+                                }
+                            }
+                            ?>
                         </ul>
                     </div>											
                 </nav>
@@ -200,6 +227,16 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
+        $('#appdownload').mouseover(function () {
+            $('#qrcode').show();
+        }).mouseout(function () {
+            $('#qrcode').hide();
+        });
+        $('#qrcode').mouseover(function () {
+            $('#qrcode').show();
+        }).mouseout(function () {
+            $('#qrcode').hide();
+        });
         $("#btn-sendRegSmsCode").click(function (e) {
             e.preventDefault();
             sendRegSmsVerifyCode($(this));
@@ -245,7 +282,7 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
                         console.log(data);
                     }
                 },
-                '': function (data) {
+                'error': function (data) {
                     console.log(data);
                 },
                 'complete': function () {

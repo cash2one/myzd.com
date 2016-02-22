@@ -39,18 +39,18 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 </div>
                             </div>
                         </div>
-<!--                        <div class="w20 hospital">
-                            <h4>战略合作医院</h4>
-                            <ul class="mt10">
-                                <li><a class="text-info" href="http://www.jsnydefy.com" target="_blank">南京医科大学第二附属医院</a></li>
-                                <li><a class="text-info" href="http://beijing.ufh.com.cn/?lang=zh" target="_blank">北京和睦家医院有限公司</a></li>
-                                <li><a class="text-info" href="http://www.shneuro.org/" target="_blank">上海德济医院</a></li>
-                                <li><a class="text-info" href="http://www.puhuachina.cn/" target="_blank">北京天坛普华医院</a></li>
-                                <li><a class="text-info" href="http://www.aqslyy.com.cn/" target="_blank">安庆市立医院</a></li>
-                                <li><a class="text-info" href="http://www.aqhospital.com/" target="_blank">安庆市第一人民医院</a></li>
-                                <li><a class="text-info" href="http://www.hssyy.com/" target="_blank">黄山市人民医院</a></li>
-                            </ul>
-                        </div>-->
+                        <!--                        <div class="w20 hospital">
+                                                    <h4>战略合作医院</h4>
+                                                    <ul class="mt10">
+                                                        <li><a class="text-info" href="http://www.jsnydefy.com" target="_blank">南京医科大学第二附属医院</a></li>
+                                                        <li><a class="text-info" href="http://beijing.ufh.com.cn/?lang=zh" target="_blank">北京和睦家医院有限公司</a></li>
+                                                        <li><a class="text-info" href="http://www.shneuro.org/" target="_blank">上海德济医院</a></li>
+                                                        <li><a class="text-info" href="http://www.puhuachina.cn/" target="_blank">北京天坛普华医院</a></li>
+                                                        <li><a class="text-info" href="http://www.aqslyy.com.cn/" target="_blank">安庆市立医院</a></li>
+                                                        <li><a class="text-info" href="http://www.aqhospital.com/" target="_blank">安庆市第一人民医院</a></li>
+                                                        <li><a class="text-info" href="http://www.hssyy.com/" target="_blank">黄山市人民医院</a></li>
+                                                    </ul>
+                                                </div>-->
                         <div class="w25 contactus">
                             <h4>联系我们</h4>
                             <ul class="mt10">
@@ -66,9 +66,9 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                             <div>
                                 <h4>关于我们</h4>
                                 <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
-                                <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help','page'=>'terms')); ?>" target="_blank">免责声明</a>
-    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];      ?>" target="_blank">联系我们</a>-->
-<!--                                <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
+                                <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms')); ?>" target="_blank">免责声明</a>
+    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];       ?>" target="_blank">联系我们</a>-->
+                                <!--                                <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                             </div>
                             <div class="mt40">
 
@@ -114,21 +114,21 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div class="mt35 mb20">
                                     <h4>关于我们</h4>
                                     <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
-                                    <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help','page'=>'terms')); ?>" target="_blank">免责声明</a>
-        <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];      ?>" target="_blank">联系我们</a>-->
-<!--                                    <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
+                                    <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms')); ?>" target="_blank">免责声明</a>
+        <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];       ?>" target="_blank">联系我们</a>-->
+                                    <!--                                    <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                                 </div>
                             </div>
                             <div class="col-md-3  col-sm-4 contactus">
                                 <h4>联系我们</h4>
                                 <ul class="mt10">
-                                <li>人事招聘：</li>
-                                <li><span class="strong">hr@mingyizhudao.com</span></li>
-                                <li>市场合作：</li>
-                                <li><span class="strong">marketing@mingyizhudao.com</span></li>
-                                <li>公司邮箱：</li>
-                                <li><span class="strong">service@mingyizhudao.com</span></li>
-                            </ul>
+                                    <li>人事招聘：</li>
+                                    <li><span class="strong">hr@mingyizhudao.com</span></li>
+                                    <li>市场合作：</li>
+                                    <li><span class="strong">marketing@mingyizhudao.com</span></li>
+                                    <li>公司邮箱：</li>
+                                    <li><span class="strong">service@mingyizhudao.com</span></li>
+                                </ul>
                             </div>
                             <div class="col-md-3  col-sm-3 logo-footer border0">
                                 <a href="<?php echo Yii::app()->homeUrl; ?>">
@@ -160,9 +160,20 @@ if ($this->show_baidushangqiao) {
 <script>
     $(document).ready(function () {
         var speed = 500;//自定义滚动速度
+        var innerHeight = window.innerHeight;//获得浏览器高度
         //回到顶部
         $(".totop").click(function () {
+            $("html,body").stop();//多次点击停止之前动画
             $("html,body").animate({"scrollTop": 0}, speed);
+        });
+        $(window).scroll(function () {
+            var scroH = $(this).scrollTop();
+            //若下滑超过0.1倍浏览器高度则显示回到顶部按钮，否则隐藏
+            if (scroH >= 0.1 * innerHeight) {
+                $(".totop").show();
+            } else {
+                $(".totop").hide();
+            }
         });
     });
 </script>
