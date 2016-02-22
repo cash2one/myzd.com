@@ -238,7 +238,6 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
         </div>
     </div>
 </section>
-<?php // $this->renderPartial('holidaysNotice') ?>
 <script>
     $(document).ready(function () {
         $html = '<li><div class="cancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_cancer.jpg" alt="" class="img-responsive"></a></div></li>' +
@@ -260,7 +259,6 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
             adsbxslider.startAuto();
             $("#homeads .bx-controls-direction").hide();
         });
-        //  $('#holidaysNoticeModal').modal();
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
         $('#searchdoctor-btn').click(function (e) {
