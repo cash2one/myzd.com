@@ -99,6 +99,7 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 #site-header #header-nav>li>a{padding:10px 12px;color: #3e3a39;letter-spacing: 3px;font-size:20px;}
 #site-header #header-nav>li>a:hover{color: #19aea5;}
 #site-header #header-nav>li.open>a{background:none;}
+#site-header .navbar-nav>.active>a{background-color: #fff;color: #19aea5!important;}
 #site-header #header-nav>.dropdown>.dropdown-menu{border:none;background-color:#fff;width: 20%;}
 #site-header .collapse.in #header-nav>.dropdown>.dropdown-menu{background-color:rgba(87, 87, 87, 0.85);}
 #site-header #header-nav>.dropdown>.dropdown-menu>li>a{padding:6px 20px;}
@@ -112,6 +113,13 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 #site-header ul.nav-top-right>li.user-control>a:hover{text-decoration:underline;}
 .site-phone{color: #19aea5;font-size: 18px!important;display:inline-block; height:1.2em;line-height:1.2em;padding-left:1.5em;font-size:1em;background:url(../images/icons/ic_phone.png) no-repeat 0 0px;padding-top: 3px;background-size:contain;-webkit-background-size: contain;-moz-background-size: contain;-o-background-size: contain;}
 .header-sologan li{padding: 0px 30px; margin-left: 45px;font-size: 12px;margin-top: -3px;background: url(../images/icons/icon_gold.png) no-repeat 10px 2px;}
+#appdownload{padding: 12px 0;}
+#appdownload:hover{cursor: pointer;color: #19aea5;}
+#qrcode{opacity: 1;right: 26px;margin-top: -5px;display: none;}
+#qrcode .tooltip-inner{padding: 15px 10px 10px;color: #fff;background-color: #84cbc8;}
+#qrcode .tooltip-arrow{border-bottom-color: #84cbc8;}
+#qrcode .tooltip-inner a{color: #fff;}
+.relative{position: relative;}
 //.phone{margin-top: -5px;}
 //@media (min-width: 992px){#site-header #header-nav>li,#site-header #header-nav>.dropdown>.dropdown-menu{min-width: 150px;}}
 /**** quickBooking ****/
@@ -201,8 +209,8 @@ form span.required {color: #E21E1A;}
 /**** aboutus ****/
 .aboutus-header{background-color:#33cccc;text-align:center;}
 .aboutus-header img{display: block;margin: 0 auto;}
-/**** site-footer-old ****/
-.totop{position: fixed;bottom: 10%;right: 10px;width: 50px;height: 50px;background: url(../images/icons/totop.png);}
+/**** site-footer ****/
+.totop{position: fixed;bottom: 10%;right: 10px;width: 50px;height: 50px;background: url(../images/icons/totop.png);display: none;}
 .totop:hover{cursor: pointer;background-position:50px 0;}
 .pl0{padding-left: 0;}
 #site-footer{font-size: 12px;padding-top:20px;background-color: #eeefef;}
@@ -216,7 +224,7 @@ form span.required {color: #E21E1A;}
 #site-footer .partner .pr5{padding-right: 5px;}
 #site-footer .corporationInfo .text-info{display: inline-block;}
 #site-footer .hospital{padding-left: 25px;line-height: 2em;}
-#site-footer .contactus{padding-left: 0px;line-height: 2em;}
+#site-footer .contactus{line-height: 2em;}
 #site-footer .show_header_main .contactus{padding-left: 47px;line-height: 2em;}
 #site-footer .hospital ul,#site-footer .contactus ul{padding-left: 0px;}
 #site-footer .corporationInfo{padding-left: 80px;}
