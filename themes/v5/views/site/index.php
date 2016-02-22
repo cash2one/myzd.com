@@ -76,28 +76,7 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
             <div class="container">
                 <div id="homeads" class="text-right mt50 mb50 img-responsive" >
                     <div class="mt-fix">
-                        <ul class="bxslider">
-                            <li>
-                                <div class="xinyabang">
-                                    <a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')); ?>" target="_blank">
-                                        <img src="<?php echo $urlResImage; ?>homeslider/bg_mingYiZhuYi.jpg" alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="xinyabang">
-                                    <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinyabang')); ?>" target="_blank">
-                                        <img src="<?php echo $urlResImage; ?>homeslider/xinyabang.jpg" alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="xinyabang">
-                                    <a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank">
-                                        <img src="<?php echo $urlResImage; ?>homeslider/lujinsong.jpg" alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                            </li>
+                        <ul class="bxslider">                           
                         </ul>
                     </div>
                 </div>
@@ -171,81 +150,81 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
                                     <div class="item active">
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'tumor')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color1">当肿瘤遇上名医专家</div>-->
-                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider1.png"/>
-                                                 <div class="slider-text">滚蛋吧肿瘤君</div>
+                                                <!--                                                <div class="recommend-area color1">当肿瘤遇上名医专家</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider1.png"/>
+                                                <div class="slider-text">滚蛋吧肿瘤君</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'preliverdisease')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color2">立秋之后怎样预防和治疗肝病</div>-->
+                                                <!--                                                <div class="recommend-area color2">立秋之后怎样预防和治疗肝病</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider2.png"/>
                                                 <div class="slider-text">秋后肝病预防</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'thyroid')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color4">甲状腺相关疾病需及早手术</div>-->
+                                                <!--                                                <div class="recommend-area color4">甲状腺相关疾病需及早手术</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider3.png"/>
                                                 <div class="slider-text">甲状腺预防</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt30 pl5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'ruxianai')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color5">关爱女性，关爱乳房</div>-->
+                                                <!--                                                <div class="recommend-area color5">关爱女性，关爱乳房</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider4.png"/>
-                                                 <div class="slider-text">关爱女性</div>
+                                                <div class="slider-text">关爱女性</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt30 pl5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinxueguan')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color6">警惕心血管疾病突发</div>-->
+                                                <!--                                                <div class="recommend-area color6">警惕心血管疾病突发</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider5.png"/>
-                                                 <div class="slider-text">警惕心血管病</div>
+                                                <div class="slider-text">警惕心血管病</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt30 ">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'guanxinbing')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color7">预防冠心病发作，名医专家有妙招</div>-->
+                                                <!--                                                <div class="recommend-area color7">预防冠心病发作，名医专家有妙招</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider6.png"/>
-                                                 <div class="slider-text">预防冠心病</div>
+                                                <div class="slider-text">预防冠心病</div>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="col-sm-4 mt18 pl5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'ertai')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color8">名医专家为您“宝”驾护航</div>-->
+                                                <!--                                                <div class="recommend-area color8">名医专家为您“宝”驾护航</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider7.png"/>
-                                                 <div class="slider-text">名医宝驾护航</div>
+                                                <div class="slider-text">名医宝驾护航</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt18 pl5 ml-5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'doctorInterview')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color9">泌尿疾病的克星：“达芬奇手术机器人”</div>-->
+                                                <!--                                                <div class="recommend-area color9">泌尿疾病的克星：“达芬奇手术机器人”</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider8.png"/>
-                                                 <div class="slider-text">任善成专访</div>
+                                                <div class="slider-text">任善成专访</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color10">专访乳腺癌专家——陆劲松</div>-->
+                                                <!--                                                <div class="recommend-area color10">专访乳腺癌专家——陆劲松</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider9.png"/>
-                                                 <div class="slider-text">陆劲松专访</div>
+                                                <div class="slider-text">陆劲松专访</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt30 pl5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'dididoctor')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color11">“滴滴医生”驾到</div>-->
+                                                <!--                                                <div class="recommend-area color11">“滴滴医生”驾到</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider10.png"/>
-                                                 <div class="slider-text">滴滴医生</div>
+                                                <div class="slider-text">滴滴医生</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt30 pl5 ml-5">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'nationalday')); ?>" target="_blank">
-<!--                                                <div class="recommend-area color12">欢乐出游却不小心摔伤？</div>-->
+                                                <!--                                                <div class="recommend-area color12">欢乐出游却不小心摔伤？</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider11.png"/>
-                                                 <div class="slider-text">摔伤怎么办</div>
+                                                <div class="slider-text">摔伤怎么办</div>
                                             </a>
                                         </div>
                                     </div>
@@ -262,6 +241,25 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
 <?php // $this->renderPartial('holidaysNotice') ?>
 <script>
     $(document).ready(function () {
+        $html = '<li><div class="cancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_cancer.jpg" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="millionfund"><a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_mingYiZhuYi.jpg" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="xinyabang"><a href="<?php echo $this->createUrl('event/view', array('page' => 'xinyabang')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/xinyabang.jpg" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="lujinsong"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/lujinsong.jpg" alt="" class="img-responsive"></a></div></li>';
+        $('#homeads .bxslider').html($html);
+        var adsbxslider = $('#homeads .bxslider').bxSlider({
+            mode: 'fade',
+            slideMargin: 0,
+            controls: true,
+            auto: true
+        });
+        $("#homeads .bx-wrapper").mouseover(function () {
+            adsbxslider.stopAuto();
+            $("#homeads .bx-controls-direction").show();
+        });
+        $("#homeads .bx-wrapper").mouseout(function () {
+            adsbxslider.startAuto();
+            $("#homeads .bx-controls-direction").hide();
+        });
         //  $('#holidaysNoticeModal').modal();
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);

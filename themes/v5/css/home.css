@@ -43,18 +43,18 @@
 .title .title-lg{font-size:45px;color:#3973ac;letter-spacing:8px;}
 .title .title-sm{letter-spacing:10px;color:#3973ac;margin-top:-4px;}
 #propaganda{background-image:url('../images/homeslider/bg-rectalcancer.jpg');background-position:center;height:400px;width:100%;}
-.waike:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:0px -180px;}
-.guke:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:-335px -180px;}
-.fuchanke:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:-670px -180px;}
-.xiaoerwaike:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:-1005px -180px;}
-.wuguanke:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:-1340px -180px;}
-.neike:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:-1675px -180px;}
-.waike{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:0px 0px;}
-.guke{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:-335px 0px;}
-.fuchanke{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:-670px 0px;}
-.xiaoerwaike{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:-1005px 0px;}
-.wuguanke{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:-1340px 0px;}
-.neike{width:335px;height:180px;background-image:url(../images/icons/keshi_icon-01.png);background-position:-1675px 0px;}
+.waike:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:0px -180px;}
+.guke:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-335px -180px;}
+.fuchanke:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-670px -180px;}
+.xiaoerwaike:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-1005px -180px;}
+.wuguanke:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-1340px -180px;}
+.neike:hover{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-1675px -180px;}
+.waike{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:0px 0px;}
+.guke{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-335px 0px;}
+.fuchanke{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-670px 0px;}
+.xiaoerwaike{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-1005px 0px;}
+.wuguanke{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-1340px 0px;}
+.neike{width:335px;height:180px;background-image:url(../images/icons/keshi_icon.png);background-position:-1675px 0px;}
 .recommend-area{width:100px;height:100px;background-color:#efefef;display: table-cell;vertical-align: middle;padding: 0 5px;overflow: hidden;}
 .color-blue{color:#3973ac;}
 .expInfo:hover{box-shadow: 1px 1px 3px 3px #ddd;}

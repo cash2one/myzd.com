@@ -1,19 +1,4 @@
-$(document).ready(function () {
-    var adsbxslider = $('#homeads .bxslider').bxSlider({
-        mode: 'fade',
-        slideMargin: 0,
-        controls: true,
-        auto: true
-    });
-    $("#homeads .bx-wrapper").mouseover(function () {
-        adsbxslider.stopAuto();
-        $("#homeads .bx-controls-direction").show();
-    });
-    $("#homeads .bx-wrapper").mouseout(function () {
-        adsbxslider.startAuto();
-        $("#homeads .bx-controls-direction").hide();
-    });
-    
+$(document).ready(function () {  
     $('.searchdoctor-tab').click(function () {
         $('.search-top').removeClass('active');
         $(this).addClass('active');

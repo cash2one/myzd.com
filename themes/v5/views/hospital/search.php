@@ -13,6 +13,7 @@ $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
 $page = Yii::app()->request->getQuery('page', '');
 ?>
+
 <div class="container-fluid bg-green">
     <div class="container find-navi"><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a>&nbsp;&gt;&nbsp;找顶尖科室</div>
 </div>
