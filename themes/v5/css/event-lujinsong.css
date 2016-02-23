@@ -14,3 +14,5 @@
 .answer{margin-left:60px;background-color:#f7f5b0;border-radius:4px;padding:10px 10px 20px 10px;color:#231815;}
 .position-a{position:absolute;}
 .angle{width: 0;height: 0;border-top: 22px solid #f7f5b0;border-left: 29px solid transparent;position: absolute;margin-top: 12px;}
+.btn-doctor{width: 180px;height: 48px;background-image: url(../images/event/btn_doctor.png);}
+.btn-doctor:hover{background-image: url(../images/event/btn_doctor_hover.png);}

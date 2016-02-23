@@ -1,8 +1,10 @@
 <?php
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/doctor.css");
+Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jquery.qrcode.min.js', CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
 $doctor = $data->results->doctor;
+$urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
 //var_dump($data);
 ?>
 <div class="contaier-fluid bg-green">
@@ -25,6 +27,15 @@ $doctor = $data->results->doctor;
                         <div class="mt20">
                             <?php echo $doctor->hpDeptName == '' ? '' : '<span class="expert-faculty text-center">' . $doctor->hpDeptName . '</span>'; ?>
                             <span><?php echo $doctor->hospitalName; ?></span>
+                        </div>
+                        <div class="qrcode">
+                            <div><span class="qrcode-text">微信分享医生主页</span><span id="qrcode-sm"><span class="qrlogo-sm"></span></span> <i class="fa fa-caret-down"></i></div>
+                            <div id="qrcode-lg">
+                                <div><img src="<?php echo $urlResImage ?>icons/weixin.png"/></div>
+                                <div id="qrcode-weixin">
+                                    <div class="qrlogo-lg"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,7 +97,7 @@ $doctor = $data->results->doctor;
                         <div>
                             <div class="docinfo-title experience">执业经历</div>
                             <div class="pl30">
-                        <?php echo $doctor->careerExp; ?>
+                                <?php echo $doctor->careerExp; ?>
                             </div>
                         </div> 
                     <?php }
@@ -96,7 +107,7 @@ $doctor = $data->results->doctor;
                         $members = $data->results->members;
                         ?>
                         <div class="mb20 mt40 team">
-                           <span class="docinfo-title members" >团队成员简介</span><div class="pull-left team-line"></div><div class="clearfix"></div>                          
+                            <span class="docinfo-title members" >团队成员简介</span><div class="pull-left team-line"></div><div class="clearfix"></div>                          
                         </div>     
                         <?php
                         foreach ($members as $member) {
@@ -109,7 +120,7 @@ $doctor = $data->results->doctor;
                                     <div class="media-body pl10">
                                         <div class="media-heading mt15"><?php echo $member->name; ?><span class="color-gray ml20"><?php echo $member->mTitle; ?></span><span class="color-gray ml20"><?php echo $member->aTitle; ?></span></div>
                                         <div class="mt15">
-        <?php echo $member->hpDeptName == null ? '' : '<span class="color-25aea6 text-center">' . $member->hpDeptName . '</span>'; ?>
+                                            <?php echo $member->hpDeptName == null ? '' : '<span class="color-25aea6 text-center">' . $member->hpDeptName . '</span>'; ?>
                                         </div>
                                         <div class="mt15"><?php echo $doctor->hospitalName; ?></div>
                                     </div>
@@ -132,12 +143,12 @@ $doctor = $data->results->doctor;
                 <img class="" src="<?php echo $urlResImage; ?>doctor/liucheng-01.png">
                 <div class="clearfix"></div>
             </div>
-                                    <div class="rec-title">
-                                        <span>其他推荐</span>
-                                    </div>
-                                    <div class="border-green">
-                                        <div class="rec-doc">
-            <?php
+            <div class="rec-title">
+                <span>其他推荐</span>
+            </div>
+            <div class="border-green mt10">
+                <div class="rec-doc">
+                    <?php
                     if (isset($data->results->related) && is_array($data->results->related)) {
                         $related = $data->results->related;
                         $last = '';
@@ -145,27 +156,35 @@ $doctor = $data->results->doctor;
                             if ($i == count($related) - 1) {
                                 $last = 'last';
                             }
-            ?>
-                                                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => $relateddoc->id));         ?>" target='_blank'>
-                                                        <div class="expInfo <?php echo $last;         ?>">
-                                                            <div class="pull-left mr10" >
-                                                                <img src="<?php echo $relateddoc->imageUrl;         ?>"/>
-                                                            </div>	
-                                                            <div class="expName pt20"><span class="strong color-black"><?php echo $relateddoc->name;?></span>&nbsp;&nbsp;<span class="color-gray"><?php echo $relateddoc->mTitle;?> <?php echo $relateddoc->aTitle;?></span></div>
-                                                            <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hospitalName;         ?></div>
-                                                            <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hpDeptName;         ?></div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </a>  
-            <?php
+                            ?>
+                            <a href="<?php echo $this->createUrl('doctor/view', array('id' => $relateddoc->id)); ?>" target='_blank'>
+                                <div class="expInfo <?php echo $last; ?>">
+                                    <div class="pull-left mr10" >
+                                        <img src="<?php echo $relateddoc->imageUrl; ?>"/>
+                                    </div>	
+                                    <div class="expName pt20"><span class="color-black"><?php echo $relateddoc->name; ?></span>&nbsp;&nbsp;<span class="color-gray"><?php echo $relateddoc->mTitle; ?> <?php echo $relateddoc->aTitle; ?></span></div>
+                                    <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hpDeptName; ?></div>
+                                    <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hospitalName; ?></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>  
+                            <?php
                         }
                     } else {
                         echo '<div class="expInfo last"><div class="mt20 mb50">暂无其他推荐</div></div>';
                     }
-            ?>
-                            </div>
-                        </div>
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <?php $this->renderPartial("//booking/formModal"); ?>
+<script>
+    $(document).ready(function () {
+        //生成大小两个二维码
+        jQuery('#qrcode-sm').qrcode({width: 32, height: 32, text: '<?php echo $urlDoctorView.$doctor->id ?>'});
+        jQuery('#qrcode-weixin').qrcode({width: 94.5, height: 94.5, text: '<?php echo $urlDoctorView.$doctor->id ?>'});
+        
+    });
+</script>

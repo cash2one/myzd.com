@@ -13,3 +13,5 @@
 .color-yellow{color: #f8b62c;}
 .color-red{color: #e50011;}
 .color-gray{color: #595757;}
+.btn-doctor{width: 180px;height: 48px;background-image: url(../images/event/btn_doctor.png);}
+.btn-doctor:hover{background-image: url(../images/event/btn_doctor_hover.png);}
