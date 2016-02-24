@@ -1,22 +1,21 @@
 <?php
 
-class ApiViewBookingListV7 extends EApiViewService{
+class ApiViewBookingListV7 extends EApiViewService {
+
     private $user;
-    
+    private $commentMgr;
+
     //初始化类的时候将参数注入
     public function __construct($user) {
         parent::__construct();
+        $this->commentMgr = new CommentManager();
         $this->results = new stdClass();
         $this->user = $user;
-//        $this->bookingMgr = new BookingManager();
-//        $this->Bookings=array();
     }
 
     protected function loadData() {
-        // load PatientBooking by creatorId.
-        $this->loadBookings();        
+        $this->loadBookings();
     }
-
 
     //返回的参数
     protected function createOutput() {
@@ -29,17 +28,22 @@ class ApiViewBookingListV7 extends EApiViewService{
             );
         }
     }
-    
+
     //加载booking的数据
-    private function loadBookings(){
+    private function loadBookings() {
         $models = Booking::model()->getAllByUserIdOrMobile($this->user->getId(), $this->user->getMobile());
         $this->setBookings($models);
     }
-    
-    private function setBookings($models){
-        if(arrayNotEmpty($models)){
-            foreach($models as $model){
+
+    private function setBookings($models) {
+        if (arrayNotEmpty($models)) {
+            foreach ($models as $model) {
                 $data = new stdClass();
+                $data->bkComment = 0;
+                $comment = $model->getComment();
+                if (arrayNotEmpty($comment)) {
+                    $data->bkComment = 1;
+                }
                 $data->id = $model->getId();
                 $data->refNo = $model->getrefNo();
                 $data->contact_name = $model->getContactName();
@@ -50,12 +54,10 @@ class ApiViewBookingListV7 extends EApiViewService{
                 $data->dateEnd = $model->getDateEnd();
                 $data->bkStatus = $model->getBkStatus();
                 $data->bkStatusId = $model->bk_status;
-                $data->actionUrl = Yii::app()->createAbsoluteUrl('/api/userbooking/'.$data->id);
+                $data->actionUrl = Yii::app()->createAbsoluteUrl('/api/userbooking/' . $data->id);
                 $this->results->booking[] = $data;
             }
-        }
-        else
-        {
+        } else {
             $this->results->booking = array();
         }
     }

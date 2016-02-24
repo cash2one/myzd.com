@@ -95,6 +95,7 @@ class Booking extends EActiveRecord {
             'bkFiles' => array(self::HAS_MANY, 'BookingFile', 'booking_id'),
             'countFiles' => array(self::STAT, "BookingFile", 'booking_id'),
             'pbOrder' => array(self::HAS_MANY, 'SalesOrder', 'bk_id'),
+            'bkComment' => array(self::HAS_MANY, 'Comment', 'bk_id'),
         );
     }
 
@@ -250,6 +251,8 @@ class Booking extends EActiveRecord {
 
     public function getAllByUserIdOrMobile($userId, $mobile, $with = null, $options = null) {
         $criteria = new CDbCriteria();
+        $criteria->join = 'LEFT JOIN comment c ON (t.`id` = c.`bk_id` AND c.`bk_type` =' . StatCode::TRANS_TYPE_BK . ')';
+        $criteria->distinct = true;
         $criteria->compare("t.user_id", $userId, false, 'AND');
         $criteria->compare("t.mobile", $mobile, false, 'OR');
         $criteria->addCondition("t.date_deleted is NULL");
@@ -364,6 +367,10 @@ class Booking extends EActiveRecord {
     }
 
     /*     * ****** Accessors ******* */
+
+    public function getComment() {
+        return $this->bkComment;
+    }
 
     public function getExpertBooked() {
         if ($this->bk_type == StatCode::BK_TYPE_EXPERTTEAM) {
