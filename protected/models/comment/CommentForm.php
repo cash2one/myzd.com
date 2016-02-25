@@ -14,7 +14,8 @@ class CommentForm extends EFormModel {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('user_id, bk_type, bk_id, service, post_operative, display_order', 'numerical', 'integerOnly' => true),
+            array('user_id, user_name, bk_type, bk_id, service, post_operative, comment_text', 'required', 'message' => '请填写{attribute}'),
+            array('user_id, bk_type, bk_id, service, post_operative', 'numerical', 'integerOnly' => true),
             array('user_name', 'length', 'max' => 30),
             array('comment_text', 'length', 'max' => 1000),
             // The following rule is used by search().
