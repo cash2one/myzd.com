@@ -84,6 +84,7 @@ jQuery(function () {
         var requestUrl = domForm.attr('action');
         var accountUrl = domForm.attr('data-url-account');
         var logoutUrl = domForm.attr('data-url-logout');
+        var returnUrl = domForm.attr('data-url-return');
         $.ajax({
             type: 'post',
             url: requestUrl,
@@ -91,9 +92,9 @@ jQuery(function () {
             success: function (data) {
                 //success.
                 if (data.status == 'ok') {
-                    $('.user').html('<span class="user">您好！&nbsp;<a target="_blank" href="' + accountUrl + '">' + data.user.username + '</a>&nbsp;</span>|<a id="logout" href="' + logoutUrl + '">&nbsp;退出&nbsp;</a>|<a target="_blank" href="' + accountUrl + '">&nbsp;我的手术&nbsp;</a>');
+                    $('.user').html('<span class="user">您好！&nbsp;<a target="_blank" href="' + accountUrl + '">' + data.user.username + '</a>&nbsp;</span> | <a id="logout" href="' + logoutUrl + '">&nbsp;退出&nbsp;</a> | <a target="_blank" href="' + accountUrl + '">&nbsp;我的手术&nbsp;</a>');
                     setCookie('user', data.user.username, null);
-                    $('#registerModal').modal('hide');
+                    location.href = returnUrl;
                 } else {
                     domForm.find("div.error").remove();
                     for (error in data.errors) {

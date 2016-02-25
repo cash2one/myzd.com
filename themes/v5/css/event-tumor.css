@@ -3,7 +3,7 @@
 .arrow-r {top: 0px;right: -30px;border-right: 30px solid transparent;margin-left: 70px;}
 .tumor-header{background: url(../images/event/tumor.jpg) no-repeat center center;height: 400px;}
 #site-content{padding-bottom: 0!important;}
-.tumor-content{border: 1px solid #ddd;border-bottom: 0;padding-bottom: 40px;}
+.tumor-content{border: 1px solid #ddd;border-bottom: 0;padding-bottom: 100px;}
 .tumor-news{background: url(../images/event/bg-tumornews.png) no-repeat center 0;padding: 20px;margin-top: -44px;}
 .tumor-news .tnews-content{width: 79%;margin: 0 auto;padding: 20px;}
 .tumor-news .tnews-content .tnews-heaer{font-size: 30px;color: #19aea5;}

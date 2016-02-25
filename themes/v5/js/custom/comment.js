@@ -1,47 +1,41 @@
 jQuery(function () {
     var $ = jQuery,
-            domForm = $("#login-form"), // form - html dom object.;
-            btnSubmit = $("#btnLoginSubmit");
+            domForm = $("#comment-form"), // form - html dom object.;
+            btnSubmit = $("#btnCommentSubmit");
+
     btnSubmit.click(function () {
-        var bool = validator.form();
+        var bool = validator_comment.form();
         if (bool) {
             formAjaxSubmit();
         }
     });
-    //登陆页面表单验证模块
-    var validator = domForm.validate({
+    //表单验证模块
+    var validator_comment = domForm.validate({
         //focusInvalid: true,
         rules: {
-            'UserLoginForm[username]': {
-                required: true
-            },
-            'UserLoginForm[password]': {
+            'CommentForm[comment_text]': {
                 required: true,
-                minlength: 4
+                maxlength: 1000
             }
         },
         messages: {
-            'UserLoginForm[username]': {
-                required: "请输入手机号"
-            },
-            'UserLoginForm[password]': {
-                required: "请输入登录密码",
-                minlength: "登录密码最短为4个字符"
+            'CommentForm[comment_text]': {
+                required: "请输入其他分享与评价",
+                maxlength: '其他分享与评价最多1000个字!'
             }
         },
         errorElement: "div",
         errorPlacement: function (error, element) {                             //错误信息位置设置方法  
             element.parent().find("div.error").remove();
-            error.appendTo(element.parent());     //这里的element是录入数据的对象  
+            error.appendTo(element.parents('.controls'));     //这里的element是录入数据的对象  
         }
     });
     function formAjaxSubmit() {
         //form插件的异步无刷新提交
         disabledBtn(btnSubmit);
         var formdata = domForm.serialize();
-        var requestUrl = domForm.attr('data-action');
-        var accountUrl = domForm.attr('data-url-account');
-        var logoutUrl = domForm.attr('data-url-logout');
+        var requestUrl = domForm.attr('action');
+        var returnUrl = domForm.attr('data-url-return');
         $.ajax({
             type: 'post',
             url: requestUrl,
@@ -49,17 +43,14 @@ jQuery(function () {
             success: function (data) {
                 //success.
                 if (data.status == 'ok') {
-                    $('#loginModal').modal('hide');
-                    $('.user').html('<span class="">您好！&nbsp;<a target="_blank" href="' + accountUrl + '">' + data.user.username + '</a>&nbsp;</span>|<a id="logout" href="' + logoutUrl + '">&nbsp;退出&nbsp;</a>|<a target="_blank" href="' + accountUrl + '">&nbsp;我的手术&nbsp;</a>');
-                    setCookie('user', data.user.username, null);
-                    openBookingModal($('.bookingBtn'));
+                    $('#commentModal').modal();
                 } else {
                     domForm.find("div.error").remove();
                     for (error in data.errors) {
                         errerMsg = data.errors[error];
-                        inputKey = '#UserLoginForm_' + error;
+                        inputKey = '#CommentForm_' + error;
                         $(inputKey).focus();
-                        $(inputKey).parent().append("<div class='error'>" + errerMsg + "</div> ");
+                        $(inputKey).parents('.controls').append("<div class='error'>" + errerMsg + "</div> ");
                     }
                     //error.
                 }

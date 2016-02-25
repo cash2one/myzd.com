@@ -323,6 +323,27 @@ class UserManager {
         return ($form->validate() && $form->login());
     }
 
+//PC端验证码登录
+    public function doVerifyCodeLogin(UserVerifyCodeLoginForm $form) {
+        if ($form->validate()) {
+            $form->authenticate();
+            if ($form->autoRegister && $form->errorFormCode == UserIdentity::ERROR_USERNAME_INVALID) {
+                if ($form->role == StatCode::USER_ROLE_DOCTOR) {
+                    $this->createUserDoctor($form->username);
+                } elseif ($form->role == StatCode::USER_ROLE_PATIENT) {
+                    $this->createUserPatient($form->username);
+                }
+                //之前有错误 user为null  再次验证
+                $form->authenticate();
+            }
+            if ($form->errorFormCode == UserIdentity::ERROR_NONE) {
+                Yii::app()->user->login($form->_identity, $form->duration);
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * 手机用户登录
      * @param UserCerifyCodeLoginForm $form

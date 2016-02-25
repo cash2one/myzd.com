@@ -127,13 +127,24 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 .mybooking-text {font-size: 18px;letter-spacing: 0.5em;}
 .booking-form{padding-bottom: 50px;}
 /**** loginModal ****/
-@media (min-width: 768px){#loginModal .modal-dialog,#registerModal .modal-dialog {width: 600px;margin: 100px auto 30px;}}
+/**** login ****/
+#loginModal .login-form .title{color:#3bb8b6;font-size:26px;}
+#loginModal .login-form .login-change .phone-login{background:url(../images/user/gray-dot.png) no-repeat 0 center;padding-left:15px;cursor:pointer;}
+#loginModal .login-form .login-change .phone-login.active{background:url(../images/user/green-dot.png) no-repeat 0 center;padding-left:15px;cursor:pointer;}
+#loginModal .login-form .login-change .account-login{background:url(../images/user/gray-dot.png) no-repeat 0 center;padding-left:15px;margin-left:50px;cursor:pointer;}
+#loginModal .login-form .login-change .account-login.active{background:url(../images/user/green-dot.png) no-repeat 0 center;padding-left:15px;margin-left:50px;cursor:pointer;}
+#loginModal .login-form .agreement{color:#e50011;}
+#loginModal .login-form #account-login-form{display:none;}
+#login-form{display: none;}
+#login-verifycode-form .btn-yes{margin-top: 16px;}
+#loginModal .modal-dialog>.modal-content{min-height: 510px;}
+@media (min-width: 768px){#loginModal .modal-dialog,#registerModal .modal-dialog {width: 900px;margin: 100px auto 30px;}}
 /**** site-content ****/
 .modal-open .modal{margin-top: 50px;}
 form label a:hover{text-decoration: underline!important;}
 form .contrller{margin-bottom: 15px;}
 .text-right{text-align: right;}
-.form-group .text-right:hover a{color: #3bb8b6;}
+.form-group a:hover{color: #3bb8b6;}
 input[type='text']:-webkit-autofill,input[type='password']:-webkit-autofill{-webkit-box-shadow: 0 0 0px 1000px white inset;border: 1px solid #CCC!important;}
 a:hover{cursor: pointer;}
 .label-booking {margin-top: 7px;}
@@ -180,8 +191,8 @@ form span.required {color: #E21E1A;}
 .btn:focus{outline: none;}
 .btn-verifycode {color: #fff;background-color: #EFA429;border-color: #eea236;}
 .btn-verifycode:hover {color: #fff;background-color: #ec971f;border-color: #d58512;}
-.btn-yes,.btn-yes:active,.btn-yes:visited{color: #fff!important;background-color: #19aea5;border-radius: 5px!important;}
-.btn-yes:hover{color: #fff;background-color: #7bc9ca;}
+.btn-yes,.btn-yes:active,.btn-yes:visited{color: #fff!important;background-color: #3bb8b6;border-radius: 5px!important;border: 0;}
+.btn-yes:hover{color: #fff;background-color: #19aea5;border: 0;}
 .btn-disabled,.btn-disabled:hover{background-color: #ddd;border-radius: 5px!important;padding: 5px 20px;letter-spacing: 2px;color: #333;}
 .abs-btn {display: block;margin: 10px;padding: 3px 20px;font-size: 15px;border-radius: 5px;}
 .btn-booking {background-color: #EFA429;border: 1px solid #EFA429;border-radius: 5px!important;padding: 5px 20px;letter-spacing: 2px;color: #fff;}

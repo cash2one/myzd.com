@@ -4,6 +4,7 @@
  * $model RegisterForm.
  */
 $urlLogin = $this->createUrl('user/login');
+$urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <div class="container">
     <div class="">
@@ -13,26 +14,20 @@ $urlLogin = $this->createUrl('user/login');
         </div>
         -->
         <div>
-            <div class="clearfix">
-                <div class="col-sm-3 col-sm-offset-1 switch hidden-xs">
-                    <a href="<?php echo $this->createUrl("doctor/register"); ?>">
-                        <div class="switch-content">
-                            <div class="switch-btn">
-                                <i class="fa fa-user-md"></i>
-                                <div class="mt30"><i class="fa fa-angle-left"></i>&nbsp;医生注册</div>
-                            </div>
-                        </div>
-                    </a>
+            <div class="clearfix mt40">
+                <div class="col-sm-7">
+                    <div>
+                        <img src="<?php echo $urlResImage; ?>user/user-left.png"/>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="clearfix border-bottom">
-                        <div class="pull-left">
-                            <h3>用户注册</h3>
+                <div class="col-sm-4">
+                    <div class="clearfix">
+                        <div class="">
+                            <h3 class="color-green lettersp5">感谢您选择名医主刀！</h3>
                         </div>
-                        <div class="pull-right mt20 visible-xs">
-                            <a class="btn btn-info btn-small" href="<?php echo $this->createUrl("doctor/register"); ?>">医生注册&nbsp;<i class="fa fa-chevron-right"></i></a>
+                        <div class="mt20 text-right">
+                            <a id="toLogin" class="text-right">已有账号？去登录</a>
                         </div>
-
                     </div>
                     <div class="mt20">
                         <?php

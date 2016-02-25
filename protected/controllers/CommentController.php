@@ -56,8 +56,8 @@ class CommentController extends WebsiteController {
     public function actionAjaxCreate() {
         $output = array('status' => 'no');
         $user = $this->getCurrentUser();
-        if (isset($_POST['Comment'])) {
-            $values = $_POST['Comment'];
+        if (isset($_POST['CommentForm'])) {
+            $values = $_POST['CommentForm'];
             $values['user_id'] = $user->getId();
             $values['user_name'] = $user->username;
             $commentMgr = new CommentManager();

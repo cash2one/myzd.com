@@ -22,7 +22,7 @@ class UserController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'login', 'captcha', 'ajaxLogin', 'ajaxRegister','forgetPassword','ajaxForgetPassword'),
+                'actions' => array('register', 'login', 'captcha', 'ajaxLogin', 'ajaxRegister', 'forgetPassword', 'ajaxForgetPassword'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -58,13 +58,29 @@ class UserController extends WebsiteController {
 
     public function actionAjaxLogin() {
         $output = array('status' => 'no');
-        $form = new UserLoginForm();
-        $form->setRole(StatCode::USER_ROLE_PATIENT);
         // collect user input data
         if (isset($_POST['UserLoginForm'])) {
+            $form = new UserLoginForm();
+            $form->setRole(StatCode::USER_ROLE_PATIENT);
             $form->attributes = $_POST['UserLoginForm'];
             $userMgr = new UserManager();
             $userMgr->doLogin($form);
+            if ($form->hasErrors() === false) {
+                //$this->redirect(Yii::app()->user->returnUrl);
+                $output['status'] = 'ok';
+                $output['user'] = $this->getCurrentUser();
+            } else {
+                $output['errors'] = $form->getErrors();
+            }
+            $this->renderJsonOutput($output);
+        }
+        if (isset($_POST['UserVerifyCodeLoginForm'])) {
+            $form = new UserVerifyCodeLoginForm();
+            $form->setRole(StatCode::USER_ROLE_PATIENT);
+            $form->attributes = $_POST['UserVerifyCodeLoginForm'];
+            $form->autoRegister = true;
+            $userMgr = new UserManager();
+            $userMgr->doVerifyCodeLogin($form);
             if ($form->hasErrors() === false) {
                 //$this->redirect(Yii::app()->user->returnUrl);
                 $output['status'] = 'ok';

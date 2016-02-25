@@ -54,10 +54,16 @@ $bookinglist = $data->results;
                                     </td>
                                     <td class="text-center bookOperate">
                                         <?php
-                                        if ($booking->bkStatusId == 1) {
+                                        if ($booking->bkStatusId == StatCode::BK_STATUS_NEW) {
                                             ?>
                                             <a class="color-status" data-id="<?php echo $booking->id; ?>" data-href="<?php echo $this->createUrl('booking/cancelbook', array('id' => $booking->id)); ?>" data-toggle="modal" data-target="#cancelOrder">取消订单</a>
                                             <?php
+                                        } else if ($booking->bkStatusId == StatCode::BK_STATUS_DONE) {
+                                            if ($booking->bkComment == 1) {
+                                                echo '<a target="_blank" class="color-status" href="' . $this->createUrl('comment/view', array('bookingId' => $booking->id)) . '" >查看评价</a>';
+                                            }else{
+                                                echo '<a target="_blank" class="color-status" href="' . $this->createUrl('comment/create', array('bookingId' => $booking->id)) . '" >评价</a>';
+                                            }
                                         } else {
                                             echo '—';
                                         }
@@ -110,7 +116,7 @@ $bookinglist = $data->results;
                         $('#cancelOrder').modal('hide');
                         $(trId).find('.bkStatus').text('已取消');
                         $(trId).find('.bookOperate').html('—');
-                        
+
                     }
                 }
             });

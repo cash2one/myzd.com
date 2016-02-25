@@ -10,7 +10,7 @@
 #homeads .bx-controls-direction{display: none;z-index: 1!important;}
 .bx-wrapper .bx-controls-direction a{display: block;text-indent: -9999px;font-size:0;line-height:0;}
 #homeads{background: url(../images/loading/loading02.gif) no-repeat center center;}
-.bg-lunbo{background-image:url('../images/home/bg_header.jpg');}
+.bg-lunbo{background-image:url('../images/home/bg_header.jpg');background-position: center;}
 .home-header{height:600px;}
 .home-slogn{margin-top:106px;}
 .slogan-lg{font-size:58px;letter-spacing: 8px;padding-left: 8px;}

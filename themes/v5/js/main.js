@@ -63,7 +63,6 @@ function setCookie(c_name, value, expiredays) {
 function delCookie(c_name) {//为了删除指定名称的cookie，可以将其过期时间设定为一个过去的时间
     var date = new Date(0);
     date.setTime(date.getTime() - 100000);
-    console.log(date);
     document.cookie = c_name + "=0 ; expires=" + date.toGMTString() + "; path=/";
     //document.cookie = c_name + "=a; expires=" + date.toGMTString();
 }

@@ -52,6 +52,7 @@ class ApiViewComment extends EApiViewService {
         $data->service = $model->service;
         $data->postOperative = $model->post_operative;
         $data->commentText = $model->comment_text;
+        $data->dateCreated = $model->date_created;
         $this->comment = $data;
     }
 

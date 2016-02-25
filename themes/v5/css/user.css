@@ -70,6 +70,15 @@ a.color-status:hover{cursor: pointer;}
 .bookingSuccess .showBookingInfo .fa-angle-down{display: none;}
 .bookingSuccess .bookingInfo{display: none;}
 
+/**** appraise ****/
+.pl50{padding-left:50px;padding-right:50px;}.ml40{margin-left:40px;}.color-yellow{color:#f8b62a;}.ml-20{margin-left:-20px;}.ml5{margin-left:5px;}.minh700{min-height:700px;}.review-area{border-radius:4px;padding:10px;min-height:150px;}
+.divide{border-bottom:1px solid #efefef;}
+.review-modal{padding:10px 20px 20px;}.w150p{width:150px;}
+.mt300{margin-top:300px!important;}
+.fa.active{color: #EFA429;}
+.comment .fa{font-size: 16px;}
+.comment .fa:hover{cursor: pointer;}
+
 .personalcenter-title{padding:10px 0;font-size: 15px;color:#fff;border: 1px solid #78c7bb;background-color: #78c7bb;text-align: center;}
 .personalinfo{min-height: 295px;}
 .prompt{color: #999999;padding: 30px;}
@@ -87,3 +96,5 @@ a.color-status:hover{cursor: pointer;}
 .link-gray{color: #9f9fa0;vertical-align: middle;}
 .color-primary{color: #337ab7;}
 .min-h410p{min-height:410px!important;}
+.lettersp5{letter-spacing: 5px;}
+#register-form .form-control{height: 40px;}

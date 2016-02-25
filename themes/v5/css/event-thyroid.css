@@ -1,8 +1,9 @@
+#site-content{padding-bottom: 0!important;}
 .header-img{height: 400px;background-image: url(../images/event/thyroid/thyriod-header.jpg);background-repeat: no-repeat;background-position-x: center;}
 .thyroid .thyroid-header{padding: 30px 50px 30px;border: 1px solid #62edd9;margin-top: -190px;}
 @media (min-width: 1200px){.thyroid .thyroid-header .row .col-lg-3{width: 19%;}}
 .thyroid .thyroid-header h4{margin-top: 25px;}
-.thyroid .thyroid-content{padding:40px 30px 40px;border: 1px solid #19aea5;background-color: #fcf8f5;}
+.thyroid .thyroid-content{padding:40px 30px 100px;border: 1px solid #19aea5;background-color: #fcf8f5;}
 .thyroid .thyroid-content .text-content{border: 1px dotted #EFA429;padding: 10px 10px 20px;border-radius: 2px;}
 .thyroid .thyroid-content .text-content .text-title{background-repeat: no-repeat;padding: 5px 0 0 30px;font-size: 22px;color: #fff;letter-spacing: 2px;}
 .thyroid .thyroid-content .text-content .text-title>span{vertical-align: bottom;}

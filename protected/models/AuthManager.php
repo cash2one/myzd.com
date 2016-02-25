@@ -260,7 +260,7 @@ class AuthManager {
     }
 
     // verify code for mobile user login.
-    public function verifyCodeForMobileLogin($mobile, $code, $userHostIp) {
+    public function verifyCodeForUserLogin($mobile, $code, $userHostIp) {
         return $this->verifyAuthSmsCode($mobile, $code, AuthSmsVerify::ACTION_USER_LOGIN, $userHostIp);
     }
 
