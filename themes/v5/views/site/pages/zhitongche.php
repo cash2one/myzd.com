@@ -83,7 +83,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         <div class="col-sm-7 mt30"></div>                                        
                     </div>
                     <div class="mt30 mr30 color-gray-68 text-indent2em">我们接到孟先生女儿电话的时候，孟先生癌细胞已经恶化的非常严重了，随时会大规模扩散危急生命。孟先生的这次治疗，我们的帮助下，从预约到入院治疗只用了两天的时间，中间省去很多复杂的流程同时节约大量的宝贵时间。孟先生手术非常成功，这次郭院长给出的手术方案与孟先生当地医院给出的手术方案完全不同，避免了锯开下颌骨进行手术的高风险，让孟先生的女儿觉得无比欣慰和感激。</div>
-                        <div class="text-right ztc-detail-two"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'kangai')); ?>">查看详情></a></div>
+                    <div class="text-right ztc-detail-two"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'kangai')); ?>">查看详情></a></div>
                 </div>
                 <div class="col-sm-5 pd0"><img class="ml-15" src="<?php echo $urlResImage; ?>zhitongche/photo3.jpg"></div>
             </div>
@@ -108,9 +108,9 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         <div class="col-sm-6 mt30 ztc-story-title pd0">入院时间：2015年07月09日</div>
                         <div class="col-sm-6 mt30 ztc-story-title pl0">主刀医生：王霄芳主任医生<div class="text-right mr10">（北大安贞医院）</div></div>                                                            
                         <div class="color-gray-68 ztc-three-text text-indent2em">韩阿姨开始觉得看病自己到医院挂号最让人放心，自己来到医院找到医生才是最真实的，但是到北京看病没有认识的医生，又不知如何选择医院，病情又急需手术，这让韩阿姨和她的家人陷入了困境。韩阿姨尝试了许多方法去医院挂号，每天很早去医院排队，当韩阿姨挂上专家号之后被专家告知需要手术却没有床位的时候，韩阿姨和她家人又一次陷入失望，直到联系了“名医主刀”...</div>
-                    <div class="text-right ztc-detail-three"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'hanayideganxiexin')); ?>">查看详情></a></div>
+                        <div class="text-right ztc-detail-three"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'hanayideganxiexin')); ?>">查看详情></a></div>
                     </div>                  
-                    
+
                 </div>
             </div>
         </div>
@@ -132,10 +132,10 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         <div class="col-sm-7 mt30 ztc-story-title">主刀医生：刘跃武教授（北京协和医院）</div>                                      
                     </div>  
                     <div class="color-gray-68">
-                    <div class="mt50 ">术后，我们的医疗客服去看望她，发现她康复特别快。</div>
-                    <div>冯女士拉着医疗客服的手说：</div>
-                    <div>“如果她早一点联系名医主刀，在来北京看病的过程中，就不会耽搁这么多宝贵的时间；不会住这么多天的旅馆花这么多的冤枉钱；也不用整夜排队，疲惫辛苦；更不会挂错号挂不到号。”</div>
-                    <div class="text-right ztc-detail-four"><a href="<?php echo $this->createUrl('news/page', array('view' => 'jiazhuangxian')) ?>" target="_blank">查看详情></a></div>
+                        <div class="mt50 ">术后，我们的医疗客服去看望她，发现她康复特别快。</div>
+                        <div>冯女士拉着医疗客服的手说：</div>
+                        <div>“如果她早一点联系名医主刀，在来北京看病的过程中，就不会耽搁这么多宝贵的时间；不会住这么多天的旅馆花这么多的冤枉钱；也不用整夜排队，疲惫辛苦；更不会挂错号挂不到号。”</div>
+                        <div class="text-right ztc-detail-four"><a href="<?php echo $this->createUrl('news/page', array('view' => 'jiazhuangxian')) ?>" target="_blank">查看详情></a></div>
                     </div>
                 </div>
             </div>
@@ -196,35 +196,38 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
         </div>
         <div class="container">
             <div class="mt80 ztc-find-expert">
-                <div class="row">
-                    <div class="col-sm-5"></div>
-                    <div class="col-sm-5 ">
-                        <img class="mt20" src="<?php echo $urlResImage; ?>zhitongche/red-01.png">
-                        <a class="ztc-find-expert-btn btn" href="<?php echo $urlDoctorSearch; ?>" target="_blank">找医生<span class="ml10 mr-10">></a>
-                        <div class="text-center color-gray-68 ml-60">
-                            <div>名医主刀签约了三甲医院副主任医生级别以上的顶级专家，</div>
-                            <div>他们在各自擅长领域均有丰富的手术经验。</div>
-                            <div>让您快速找准医生，不耽误病情。</div>
+                <a href="<?php echo $urlDoctorSearch; ?>" target="_black">
+                    <div class="row h120p">
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-5 ">
+                            <img class="mt20" src="<?php echo $urlResImage; ?>zhitongche/red-01.png">
+                            <div class="ztc-find-expert-btn btn">找医生<span class="ml10 mr-10">&gt;</div>
+                            <div class="text-center color-gray-68 ml-60">
+                                <div>名医主刀签约了三甲医院副主任医生级别以上的顶级专家，</div>
+                                <div>他们在各自擅长领域均有丰富的手术经验。</div>
+                                <div>让您快速找准医生，不耽误病情。</div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="container">
             <div class="mt80 ztc-find-hospital">
-                <div class="row">
-                    <div class="col-sm-5"></div>
-                    <div class="col-sm-6">
-                        <img class="mt20" src="<?php echo $urlResImage; ?>zhitongche/blue-01.png">
-                        <a class="ztc-find-hospital-btn btn" href="<?php echo $urlHopitalSearch; ?>" target="_blank">找医院<span class="ml10 mr-10">></span></a>
-                        <div class="text-center color-gray-68 ml-150">
-                            <div>名医主刀为您精选出在综合及专科领域最强的医院，您只需预约目标医院的科室，</div>
-                            <div>名医助手会尽快与您确认，并根据您的具体病情推荐该科室里最合适的主刀医生，</div>
-                            <div>免除您搜寻和预约医生的烦恼。</div>
+                <a href="<?php echo $urlHopitalSearch; ?>" target="_black">
+                    <div class="row h120p">
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-6">
+                            <img class="mt20" src="<?php echo $urlResImage; ?>zhitongche/blue-01.png">
+                            <div class="ztc-find-hospital-btn btn">找医院<span class="ml10 mr-10">&gt;</span></div>
+                            <div class="text-center color-gray-68 ml-150">
+                                <div>名医主刀为您精选出在综合及专科领域最强的医院，您只需预约目标医院的科室，</div>
+                                <div>名医助手会尽快与您确认，并根据您的具体病情推荐该科室里最合适的主刀医生，</div>
+                                <div>免除您搜寻和预约医生的烦恼。</div>
+                            </div>
                         </div>
                     </div>
-
-                </div>
+                </a>
             </div>
         </div>
         <div class="container mb50">

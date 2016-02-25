@@ -20,6 +20,8 @@
 .ztc-divide-gray{border-bottom:1px dashed #c9c9ca;}
 .message-content{border:1px solid #60c0bd;padding:10px 20px 40px;;}
 .ztc-find-expert{background:url(../images/zhitongche/findexpert.jpg) no-repeat;height:120px;}
+.ztc-find-expert .row{margin-left:0;margin-right:0;}
+.ztc-find-hospital .row{margin-left:0;margin-right:0;}
 .ztc-find-hospital{background:url(../images/zhitongche/findhospital.jpg) no-repeat;height:120px;width:100%;}
 .appraise{padding-left:90px;line-height:1.2em;color:#686868;margin-left:45px;font-size:15px;}
 .color-yellow-f8b62c{color:#f8b62c;}
@@ -36,10 +38,11 @@
 .ztc-detail-four,.ztc-detail-four>a{color:#39538e!important;margin-top:58px;}
 .ztc-detail-four>a:hover{color:#355bbc!important;text-decoration:underline;}
 .ztc-find-expert-btn{width:145px;height:38px;border:1px solid #eca4a4!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#eca4a4!important;font-size:16px!important;letter-spacing:4px;}
-.ztc-find-expert-btn:hover{width:145px;height:38px;border:1px solid #eca4a4!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#fff!important;font-size:16px!important;letter-spacing:4px;background-color:#f3b8b7;}
+.ztc-find-expert:hover .ztc-find-expert-btn{width:145px;height:38px;border:1px solid #eca4a4!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#fff!important;font-size:16px!important;letter-spacing:4px;background-color:#f3b8b7;}
 .ztc-find-hospital-btn{width:145px;height:38px;border:1px solid #095292!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#095292!important;font-size:16px!important;letter-spacing:4px;}
-.ztc-find-hospital-btn:hover{width:145px;height:38px;border:1px solid #095292!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#fff!important;font-size:16px!important;letter-spacing:4px;background-color:#196bab;}
+.ztc-find-hospital:hover .ztc-find-hospital-btn{width:145px;height:38px;border:1px solid #095292!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#fff!important;font-size:16px!important;letter-spacing:4px;background-color:#196bab;}
 .ztc-booking-btn{color:#fff;letter-spacing:5px;background-color:#f8b62c;font-size:16px;height:60px;width:195px;border-radius: 6px;line-height:60px;text-align: center;display:inline-block;}
 .ztc-booking-btn:hover{opacity:0.7;}
 .ztc-bottom-text{font-size:18px;color:#5db5b5;}
 .text-indent2em{text-indent: 2em;}
+.h120p{height:120px;}
