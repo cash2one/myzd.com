@@ -29,7 +29,7 @@ echo CHtml::hiddenField("CommentForm[post_operative]", 5);
 <div class="form-group mt10">
     <div class="controls">   
         <?php
-        echo $form->textarea($model, 'comment_text', array('placeholder' => '请详细的描述患者的病情', 'class' => 'form-control', 'maxlength' => 1000, 'rows' => 3));
+        echo $form->textarea($model, 'comment_text', array('placeholder' => '请填写其他分享与评价', 'class' => 'form-control', 'maxlength' => 1000, 'rows' => 3));
         echo $form->error($model, 'comment_text');
         ?>                              
     </div>
