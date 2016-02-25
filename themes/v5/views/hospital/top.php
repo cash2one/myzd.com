@@ -34,9 +34,9 @@ $page = Yii::app()->request->getQuery('page', '');
                     <a class="city" data-id="1">北京</a>
                     <a class="city" data-id="73">上海</a>
                     <a class="city" data-id="200">广州</a>
-                    <a class="city" data-id="87">南京</a>
-                    <a class="city" data-id="114">杭州</a>
-                    <a class="city" data-id="74">福州</a>
+                    <a class="city" data-id="74">南京</a>
+                    <a class="city" data-id="87">杭州</a>
+                    <a class="city" data-id="114">福州</a>
                     <a class="city" data-id="134">济南</a>
                     <a class="city" data-id="186">长沙</a>
                     <a class="city" data-id="255">成都</a>
