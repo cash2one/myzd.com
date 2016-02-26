@@ -240,7 +240,8 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
 </section>
 <script>
     $(document).ready(function () {
-        $html = '<li><div class="cancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_cancer.jpg" alt="" class="img-responsive"></a></div></li>' +
+        $html = '<li><div class="prince"><a href="<?php echo $this->createUrl('event/view', array('page' => 'prince')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_prince.jpg" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="cancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_cancer.jpg" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="millionfund"><a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_mingYiZhuYi.jpg" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="xinyabang"><a href="<?php echo $this->createUrl('event/view', array('page' => 'xinyabang')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/xinyabang.jpg" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="lujinsong"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/lujinsong.jpg" alt="" class="img-responsive"></a></div></li>';
