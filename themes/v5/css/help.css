@@ -1,0 +1,19 @@
+.personalcenter-question>li.active>a,.personalcenter-question>li.active{color:#25aea6!important;}
+.personalcenter-question>li{background:url(../images/user/spot-gray.png) no-repeat 0px center;padding-left:10px;}
+.personalcenter-question>li.active{background:url(../images/user/spot.png) no-repeat 0px center;padding-left:10px;}
+.personalcenter-question>div{color:#5e9aca;}
+.personalcenter-question{padding-left:15px;}
+.color-5e9aca{color:#5e9aca;}
+.divide-dashd-green{border-bottom:1px dashed #25aea6;}
+.support-center{color:#fff;background-color:#78c7bb;padding:5px 0px;}
+.color-statement{color:#595757;}
+.divide-dashd-green{border-top:1px dashed #78c7bb;}
+.support-content{min-height:644px;display:none;}
+.personalcenter-question>li,.personalcenter-question>div{padding-right:10px;}
+.color-red-ff0000{color:#ff0000;}
+.ml50{margin-left:50px;}
+.question-divider{border-bottom: 3px solid #78c7bb;padding-top:5px;}
+.support-content>.agreement{line-height:32px;color:#3e3a39;}
+.text16{font-size:16px;}
+.payment .content-header{font-size: 16px;padding:10px 20px;border-bottom:none;color:#25aea6;background-color:#fff;margin-top:50px;}
+.pb21{padding-bottom:21px;}

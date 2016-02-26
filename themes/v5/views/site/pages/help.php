@@ -1,24 +1,13 @@
 <?php
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/help.css");
 $urlBookingList = $this->createUrl('booking/list');
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $isTerms = Yii::app()->request->getQuery('page', '');
 ?>
 
 <style>
-    .personalcenter-question>li.active>a{color:#25aea6!important;}
-    .personalcenter-question{padding-left:0;}
-    .divide-dashd-green{border-bottom:1px dashed #25aea6;}
-    .support-center{color:#fff;background-color:#78c7bb;padding:5px 0px;}
-    .color-statement{color:#595757;}
-    .divide-dashd-green{border-top:1px dashed #78c7bb;}
-    .support-content{min-height:644px;display:none;}
-    .personalcenter-question{margin-top:30px;}
-    .personalcenter-question>li,.personalcenter-question>div{padding-left:10px;padding-right:10px;}
-    .color-red-ff0000{color:#ff0000;}
-    .ml50{margin-left:50px;}
-    .question-divider{border-bottom: 3px solid #78c7bb;padding-top:5px;}
-    .support-content>.agreement{line-height:32px;color:#3e3a39;}
+   
 </style>
 <div class="bg-green">
     <div class="container">
@@ -32,28 +21,32 @@ $isTerms = Yii::app()->request->getQuery('page', '');
 <div class="container">
     <div class="row mt40">
         <div class="col-sm-3">
-            <div class="border-green pb50">
+            <div class="border-green pb21">
                 <div class="support-center">
                     <div class="row text-center">
                         <h4>常见问题</h4>
                     </div>
                 </div> 
                 <div class="question-divider"></div>
+                <div class="text16 text-center mt30"><strong>关于预约</strong></div>
                 <ul class="personalcenter-question">
-                    <div class="text16 "><strong>关于预约</strong></div>
                     <li class="mt20"><a href="#answer1">如果没有在48小时内收到平台回复怎么办？</a></li>
                     <li class="mt20"><a href="#answer2">手术可以指定医生吗？</a></li>
                     <li class="mt20"><a href="#answer3">是否一定可以预约到指定医生？</a></li>
                     <li class="mt20"><a href="#answer4">手术保证治疗效果吗？</a></li>
                     <li class="mt20"><a href="#answer5">是否能比别人更快入院？</a></li>
-                    <div class="mt20 ml10 mr10 divide-dashd-green"></div>           
-                    <div class="text16 mt20"><strong>关于费用</strong></div>
+                </ul>
+                <div class="mt20 ml10 mr10 divide-dashd-green"></div>
+                <div class="text16 mt30 text-center"><strong>关于费用</strong></div>
+                <ul class="personalcenter-question">      
                     <li class="mt20"><a href="#answer6">手术直通车为什么是收费服务？</a></li>
                     <li class="mt20"><a href="#answer7">手术预约金包括哪些？</a></li>
                     <li class="mt20"><a href="#answer8">手术预约金是否退还？</a></li>
                     <li class="mt20"><a href="#answer9">手术预约金与医生、医院有关吗？</a></li>
-                    <div class="mt20 ml10 mr10 divide-dashd-green"></div>
-                    <div class="text16 mt20"><strong>关于平台</strong></div>
+                </ul>
+                <div class="mt20 ml10 mr10 divide-dashd-green"></div>
+                <div class="text16 mt30 text-center"><strong>关于平台</strong></div>
+                <ul class="personalcenter-question"> 
                     <li class="mt20 color-gray mb50"><a href="#answer10">名医主刀服务协议</a></li>
                 </ul>
             </div>
@@ -63,54 +56,47 @@ $isTerms = Yii::app()->request->getQuery('page', '');
                 <img class="img-responsive" src="<?php echo $urlResImage; ?>user/question.png">
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer1">  
-                <div class="content-header"><span class="ml20">如果没有在48小时内收到平台回复怎么办？</span></div>
-                <div class="mt50 ml40 mr40">
-                    名医助手收到预约单后，首先会在第一时间联系患者，确认就诊意向和提交的影像资料，然后开始联系专家，将会在48小时内给予医生的初步反馈。
+                <div class="content-header"><span class="ml20">Q:&nbsp;如果没有在48小时内收到平台回复怎么办？</span></div>
+                <div class="ml40 mr40">
+                    A:名医助手收到预约单后，首先会在第一时间联系患者，确认就诊意向和提交的影像资料，然后开始联系专家，将会在48小时内给予医生的初步反馈。
                 </div>
                 <div class="color-red-ff0000 ml40 mr40 mt10">如果没有能在48小时内给予任何回复，您可以申请退款。</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer2">  
 
-                <div class="content-header"><span class="ml20">手术可以指定医生吗？</span></div>
-                <div class="mt50 ml40 mr40">
-                    名医助手会为每一个患者安排最合适的医生，患者无需指定手术医生。如果有指定需求，可以在预约单里填写或者助手电话回访时提出。				</div>
-
+                <div class="content-header"><span class="ml20">Q:&nbsp;手术可以指定医生吗？</span></div>
+                <div class="ml40 mr40">
+                    A:名医助手会为每一个患者安排最合适的医生，患者无需指定手术医生。如果有指定需求，可以在预约单里填写或者助手电话回访时提出。				</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer3">  
-
-                <div class="content-header"><span class="ml20">是否一定可以预约到指定医生？</span></div>
-                <div class="mt50 ml40 mr40">
-                    名医助手会优先满足患者的指定需求，但因为医生时间安排等特殊性，不保证一定可以预约成功。在这种情况下， 名医主刀会根据患者疾病情况匹配三甲医院副主任级别以上的名医主刀就诊。				</div>
+                <div class="content-header"><span class="ml20">Q:&nbsp;是否一定可以预约到指定医生？</span></div>
+                <div class="ml40 mr40">
+                    A:名医助手会优先满足患者的指定需求，但因为医生时间安排等特殊性，不保证一定可以预约成功。在这种情况下， 名医主刀会根据患者疾病情况匹配三甲医院副主任级别以上的名医主刀就诊。				</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer4">  
-
-                <div class="content-header"><span class="ml20">手术保证治疗效果吗？</span></div>
-                <div class="mt50 ml40 mr40">
-                    因医疗行为的特殊性，患者病情差异巨大，任何人（包括医生、名医主刀）都不能绝对性地对治疗方案、疗效、医疗意外、住院天数做出承诺。				</div>
-
+                <div class="content-header"><span class="ml20">Q:&nbsp;手术保证治疗效果吗？</span></div>
+                <div class="ml40 mr40">
+                    A:因医疗行为的特殊性，患者病情差异巨大，任何人（包括医生、名医主刀）都不能绝对性地对治疗方案、疗效、医疗意外、住院天数做出承诺。				</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer5">  
-
-                <div class="content-header"><span class="ml20">患者是否能比别人更快入院？</span></div>
-                <div class="mt50 ml40 mr40">
-                    名医主刀会全力帮助需要手术的患者尽快入院，但所有患者也都需要遵守医院规则和安排，听从专家的具体安排。				</div>				
+                <div class="content-header"><span class="ml20">Q:&nbsp;患者是否能比别人更快入院？</span></div>
+                <div class="ml40 mr40">
+                    A:名医主刀会全力帮助需要手术的患者尽快入院，但所有患者也都需要遵守医院规则和安排，听从专家的具体安排。				</div>				
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer6">  
-
-                <div class="content-header"><span class="ml20">手术直通车为什么是收费服务？</span></div>
-                <div class="mt50 ml40 mr40">
-                    手术直通车需要名医主刀指派专业人员，一对一协助患者分析、整理资料并联系医生，协调医患双方并安排就诊时间，工作人员需要付出大量工作时间和精力。				</div>
+                <div class="content-header"><span class="ml20">Q:&nbsp;手术直通车为什么是收费服务？</span></div>
+                <div class="ml40 mr40">
+                    A:手术直通车需要名医主刀指派专业人员，一对一协助患者分析、整理资料并联系医生，协调医患双方并安排就诊时间，工作人员需要付出大量工作时间和精力。				</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer7">  
-
-                <div class="content-header"><span class="ml20">手术预约金包括哪些？</span></div>
-                <div class="mt50 ml40 mr40 color-red-ff0000">
-                    包括术前专家咨询费、第一次面诊费（如有需要，安排门诊）和手术相关安排费用。				</div>
+                <div class="content-header"><span class="ml20">Q:&nbsp;手术预约金包括哪些？</span></div>
+                <div class="ml40 mr40 color-red-ff0000">
+                    A:包括术前专家咨询费、第一次面诊费（如有需要，安排门诊）和手术相关安排费用。				</div>
             </div> <div class="pb40 border-green mt10 support-content" id="answer8">  
 
-                <div class="content-header"><span class="ml20">预约金是否退还？</span></div>
-                <div class="mt50 ml40 mr40"  style="line-height:2.5em;">
-                    <span class="color-red-ff0000">  以下2种情况下退还一半预约金：</span><br/>
+                <div class="content-header"><span class="ml20">Q:&nbsp;预约金是否退还？</span></div>
+                <div class="ml40 mr40"  style="line-height:2.5em;">
+                    <span class="color-red-ff0000">A:以下2种情况下退还一半预约金：</span><br/>
                     ①在所有专家诊断后都认为该患者不具备手术条件/手术风险过大/达不到病人期望而不接受手术时，退还一半预约金。<br/>
                     ②对于主刀医生确认需要手术后，若平台没有能在一周内安排到合适床位，退还一半预约金。<br/>
                     在与患者确认取消服务后的48小时内，将500元退还到患者支付预约金的账户里。	<br/><span class="color-red-ff0000">	以下这种情况将全额退款：</span><br/>
@@ -118,15 +104,13 @@ $isTerms = Yii::app()->request->getQuery('page', '');
 
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer9">  
-
-                <div class="content-header"><span class="ml20">预约金与医院、医生有关吗？</span></div>
-                <div class="mt50 ml40 mr40">
-                    此预约金是名医主刀为了提供专业服务、保证服务质量而收取的，并非医院和医生收取的，医院和医生也不会在此服务中获得任何商业利益。				</div>
+                <div class="content-header"><span class="ml20">Q:&nbsp;预约金与医院、医生有关吗？</span></div>
+                <div class="ml40 mr40">
+                    A:此预约金是名医主刀为了提供专业服务、保证服务质量而收取的，并非医院和医生收取的，医院和医生也不会在此服务中获得任何商业利益。				</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer10">  
-
                 <div class="content-header"><span class="ml20">名医主刀服务协议</span></div>
-                <div class="mt50 ml40 mr40 agreement">
+                <div class="mt30 ml40 mr40 agreement">
                     <p style="margin-bottom: 8px; text-align: center; line-height: 150%; background-color: rgb(255, 255, 255); text-align: center;">
                         <span style=";font-family:微软雅黑;color:rgb(51,51,51);letter-spacing:1px;font-weight:bold;font-size:21px">“名医主刀”服务协议</span><span style=";font-family:微软雅黑;color:rgb(51,51,51);letter-spacing:1px;font-size:21px">&nbsp;</span>
                     </p>
