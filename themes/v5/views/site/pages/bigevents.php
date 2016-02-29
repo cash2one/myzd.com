@@ -20,6 +20,18 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                 <div class="container mt80" id="big-event">
                     <div class="row">
                         <div class="col-md-5 ml65 mr-65">
+                            <div class="row event-1602-1">
+                                <div class="col-md-6">
+                                    <img src="<?php echo $urlResImage ?>aboutus/picture160201.png">
+                                </div>
+                                <div class="col-md-6 text-right pt142 font-20p color-blue">
+                                    2016年2月
+                                </div>
+                            </div>
+                            <div class="div-left mt4 pt10 pr10 pl10 pb40">
+                                <div>名医主刀创始人、CEO苏舒入选福布斯<strong class="text18">“30位30岁以下亚洲年轻领袖榜（30 under 30）”</strong>。</div>
+                                <div class="tooltip-arrow tooltip-arrow-left top-1 right-15"></div>
+                            </div>
                             <div class="row event-151202">
                                 <div class="col-md-6">
                                     <img src="<?php echo $urlResImage ?>aboutus/picture1-01.png">
@@ -88,6 +100,20 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <div class="h100p" >
                                 <div ></div>
                                 <div class="h100p bg-yellow yellow-line"></div>
+                            </div>
+                            <div class="text-center">
+                                <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
+                            </div>
+                            <div class="h170p" >
+                                <div ></div>
+                                <div class="h170p bg-yellow yellow-line"></div>
+                            </div>
+                            <div class="text-center">
+                                <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
+                            </div>
+                            <div class="h170p" >
+                                <div ></div>
+                                <div class="h170p bg-yellow yellow-line"></div>
                             </div>
                              <div class="text-center">
                                 <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
@@ -162,6 +188,18 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             </div>
                         </div>
                         <div class="col-md-5 ml-65">
+                            <div class="row event-1602-2">
+                                <div class="col-md-6 pt142 font-20p color-blue mt5">
+                                    2016年2月
+                                </div>
+                                <div class="col-md-6 pl10 mt5">
+                                    <img src="<?php echo $urlResImage ?>aboutus/picture160202.png">
+                                </div>
+                            </div>
+                            <div class="div-right mt4 pt10 pb10 pl10 pr10">
+                                <div>中国互联网协会发布《中国分享经济发展报告（2016）》白皮书，名医主刀作为<strong class="text18">唯一一家移动医疗</strong>创业公司入选。名医主刀在配置闲置床位和医生碎片时间的过程中，践行着分享经济理念。</div>
+                                <div class="tooltip-arrow tooltip-arrow-right left-15 top-1"></div>
+                            </div>
                              <div class="row event-160108">
                                 <div class="col-md-6 pt142 font-20p color-blue mt5">
                                     2016年1月

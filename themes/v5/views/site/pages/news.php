@@ -6,6 +6,7 @@ $menu = $this->getPageMenu();
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/mingyizhuyi.css");
 $news = array(
+    'forbes' => '2016-2月 --------------------福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选',
     'firstaid' => '2015-12-08------------------8小时冒雪夜行驰援，医者仁心只为救死扶伤',
     'femalehealth' => '2015-11-06------------------关爱女性健康，名医主刀与公益同行',
     'mingyizhudaorongzi' => '2015-10-28------------------喜大普奔，名医主刀已完成A轮融资',
