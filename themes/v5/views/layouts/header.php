@@ -23,6 +23,11 @@ $urlZhiTongChe = $this->createUrl('site/page', array('view' => 'zhitongche'));
 $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms'));
 $urlHelp = $this->createUrl('site/page', array('view' => 'help'));
 $urlForgetPassword = $this->createUrl('user/forgetPassword');
+if (($this->action->controller->id == 'user') && ($this->action->id == 'register')) {
+    $returnUrl = $this->createUrl('site/index');
+}else{
+    $returnUrl = '';
+}
 ?>
 <section id="site-header">
     <div class="container-fluid bg-gray home-top hidden-xs">
@@ -124,7 +129,7 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
                         <div class="login-form">
                             <h3 class="color-green lettersp5">感谢您选择名医主刀！</h3>
                             <div class="login-change mt30"><span class="phone-login active">手机号快速登录</span><span class="account-login">帐号密码登录</span></div>
-                            <form class="form-horizontal mt10" id="login-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" method="post" autocomplete="off">
+                            <form class="form-horizontal mt10" id="login-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" data-url-return="<?php echo $returnUrl; ?>" method="post" autocomplete="off">
                                 <div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
@@ -159,7 +164,7 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
                                     </div>
                                 </div>
                             </form>
-                            <form class="form-horizontal mt10" id="login-verifycode-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" method="post" autocomplete="off">
+                            <form class="form-horizontal mt10" id="login-verifycode-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" data-url-return="<?php echo $returnUrl; ?>" method="post" autocomplete="off">
                                 <input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
                                 <input type="hidden" value="<?php echo $authActionType; ?>" name="smsverify[actionType]" id="smsverify_actionType">
                                 <div class="form-group">
@@ -205,7 +210,9 @@ $urlForgetPassword = $this->createUrl('user/forgetPassword');
 <script type="text/javascript">
     $(document).ready(function () {
 <?php
-if (!isset($user)) {
+if (isset($user)) {
+    echo "setCookie('user', ".$user->username.", null);";
+}else{
     echo "delCookie('user');";
 }
 ?>

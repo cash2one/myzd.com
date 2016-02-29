@@ -10,6 +10,7 @@ class UserVerifyCodeLoginForm extends EFormModel {
     public $_identity;
     public $authSmsVerify;    // AuthSmsVerify model.
     public $autoRegister = false;   // 自动注册
+    public $rememberMe;
 
     // public $userExists = false;     //用户是否存在
 
@@ -23,6 +24,7 @@ class UserVerifyCodeLoginForm extends EFormModel {
     public function rules() {
         return array(
             array('username, verify_code', 'required', 'message' => '请输入{attribute}'), // username and password are required
+            array('rememberMe', 'boolean'), // rememberMe needs to be a boolean
         );
     }
 

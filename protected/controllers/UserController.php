@@ -68,7 +68,9 @@ class UserController extends WebsiteController {
             if ($form->hasErrors() === false) {
                 //$this->redirect(Yii::app()->user->returnUrl);
                 $output['status'] = 'ok';
-                $output['user'] = $this->getCurrentUser();
+                $user = $this->getCurrentUser();
+                $output['user']['id'] = $user->id;
+                $output['user']['username'] = $user->username;
             } else {
                 $output['errors'] = $form->getErrors();
             }
@@ -84,7 +86,9 @@ class UserController extends WebsiteController {
             if ($form->hasErrors() === false) {
                 //$this->redirect(Yii::app()->user->returnUrl);
                 $output['status'] = 'ok';
-                $output['user'] = $this->getCurrentUser();
+                $user = $this->getCurrentUser();
+                $output['user']['id'] = $user->id;
+                $output['user']['username'] = $user->username;
             } else {
                 $output['errors'] = $form->getErrors();
             }

@@ -337,7 +337,8 @@ class UserManager {
                 $form->authenticate();
             }
             if ($form->errorFormCode == UserIdentity::ERROR_NONE) {
-                Yii::app()->user->login($form->_identity, $form->duration);
+                $duration = $form->rememberMe ? $form->duration : 0; // 30 days
+                Yii::app()->user->login($form->_identity, $duration);
                 return true;
             }
         }

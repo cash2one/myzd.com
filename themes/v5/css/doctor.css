@@ -63,7 +63,7 @@
 .qrcode .qrcode-text{display: inline-block;width: 4em;letter-spacing: 0;font-size: 14px;color: #777;margin-right: 5px;}
 .qrcode .fa{top: 1em;margin-left: 7.2em;position: absolute;color: #777;}
 #qrcode-sm>.qrlogo-sm{background-image: url(../images/icons/qrlogo-sm.png);height:32px;width:32px;position:absolute;background-position: center;background-repeat: no-repeat;margin-top: 5px;}
-#qrcode-lg{position: absolute;top: -26px;margin-left: 8.5em;background-color: #fff;display: none;}
+#qrcode-lg{position: absolute;top: -26px;margin-left: 8.5em;background-color: #fff;display: none;z-index: 999;}
 #qrcode-lg img{border: 0;}
 #qrcode-weixin{border: 1px solid #ddd;padding: 7px 8px 4px;width: 112px;height: 112px;margin-top: 3px;}
 #qrcode-lg .qrlogo-lg{background-image: url(../images/icons/qrlogo-lg.png);height:94px;width:94px;position:absolute;background-position: center;background-repeat: no-repeat;}

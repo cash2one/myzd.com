@@ -56,6 +56,7 @@ jQuery(function () {
         var requestUrl = domForm.attr('data-action');
         var accountUrl = domForm.attr('data-url-account');
         var logoutUrl = domForm.attr('data-url-logout');
+        var returnUrl = domForm.attr('data-url-return');
         $.ajax({
             type: 'post',
             url: requestUrl,
@@ -63,10 +64,14 @@ jQuery(function () {
             success: function (data) {
                 //success.
                 if (data.status == 'ok') {
-                    $('#loginModal').modal('hide');
-                    $('.user').html('<span class="">您好！&nbsp;<a target="_blank" href="' + accountUrl + '">' + data.user.username + '</a>&nbsp;</span>|<a id="logout" href="' + logoutUrl + '">&nbsp;退出&nbsp;</a>|<a target="_blank" href="' + accountUrl + '">&nbsp;我的手术&nbsp;</a>');
-                    setCookie('user', data.user.username, null);
-                    openBookingModal($('.bookingBtn'));
+                    if (returnUrl) {
+                        location.href = returnUrl;
+                    } else {
+                        $('#loginModal').modal('hide');
+                        $('.user').html('<span class="">您好！&nbsp;<a target="_blank" href="' + accountUrl + '">' + data.user.username + '</a>&nbsp;</span> | <a id="logout" href="' + logoutUrl + '">&nbsp;退出&nbsp;</a> | <a target="_blank" href="' + accountUrl + '">&nbsp;我的手术&nbsp;</a>');
+                        setCookie('user', data.user.username, null);
+                        openBookingModal($('.bookingBtn'));
+                    }
                 } else {
                     domForm.find("div.error").remove();
                     for (error in data.errors) {
