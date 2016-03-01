@@ -63,6 +63,43 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 预约Remebot机器人进行手术治疗<br/>
                 给他更健康的生活！
             </div>
+            <div class="row">
+                <div class="col-md-4"><a target="_blank" href="/mingyizhudao.com/doctor/3208">
+                        <div class="border-gray expert-list">
+                            <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03208.jpg" alt=""></div>
+                            <div class="pull-right contracted-img"></div><div class="clearfix"></div>
+                            <div class="pull-right roboticon-img"></div>
+                            <div class="text-center"><span class="strong ml20">田增民</span><span class="text-center mt5">&nbsp;主任医师&nbsp;教授</span></div>
+                            <div class="text-center mt5 hpDeptName">神经外科</div>
+                            <div class="text-center mt5">中国人民解放军海军总医院</div>
+                            <div class="mt10 docdesc"><span class="strong">擅长：</span>脑外伤救治、脑肿瘤及功能性疾病等领域的治疗，如机器人辅助脑定位手术、现代立体定向手术临床应用、脑肿瘤内放疗的系列研究、脑内窥镜手术。</div>                      
+                        </div>
+                    </a></div>
+                <div class="col-md-4"><a target="_blank" href="/mingyizhudao.com/doctor/3209">
+                        <div class="border-gray expert-list">
+                            <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03209.jpg" alt=""></div>
+                            <div class="pull-right contracted-img"></div><div class="clearfix"></div>
+                            <div class="pull-right roboticon-img"></div>
+                            <div class="text-center"><span class="strong ml20">赵全军</span><span class="text-center mt5">&nbsp;主任医师&nbsp;教授</span></div>
+                            <div class="text-center mt5 hpDeptName">神经外科</div>
+                            <div class="text-center mt5">中国人民解放军第306医院</div>
+                            <div class="mt10 docdesc"><span class="strong">擅长：</span>1.难治性癫痫的外科治疗，如癫痫、原发性癫痫、继发性癫痫、复杂癫痫发作时的急救措施；2.脑功能性疾病的立体定向手术治疗，如小儿脑瘫、帕金森、扭转痉挛、小脑萎缩、脑出血后遗症、脑梗塞后遗症、肌张力障碍、...</div>                      
+                        </div>
+                    </a></div>
+                <div class="col-md-4">
+                    <a target="_blank" href="/mingyizhudao.com/doctor/3207">
+                        <div class="border-gray expert-list">
+                            <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03207.JPG" alt=""></div>
+                            <div class="pull-right contracted-img"></div><div class="clearfix"></div>
+                            <div class="pull-right roboticon-img"></div>
+                            <div class="text-center"><span class="strong ml20">卢旺盛</span><span class="text-center mt5">&nbsp;主任医师&nbsp;副教授</span></div>
+                            <div class="text-center mt5 hpDeptName">神经外科</div>
+                            <div class="text-center mt5">北京天坛普华医院</div>
+                            <div class="mt10 docdesc"><span class="strong">擅长：</span>1.颅内动脉瘤、脑血管畸形和颈动脉狭窄、颅内动脉狭窄的介入治疗，脑血管病的外科治疗，以及外周血管介入治疗，肿瘤介入治疗，非血管内介入治疗；2.癫痫的外科治疗；脑卒中后遗症、帕金森病、脑瘫及肌张力障碍的...</div>                      
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

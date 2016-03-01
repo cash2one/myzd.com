@@ -14,3 +14,8 @@
 #prince .main-content .blue-text .tag-blue{background-color:#2896c3;color:#fff;width:160px;display:inline-block;font-weight:bold;}
 #prince .main-content .process-text{color:#777;line-height:2em;}
 #prince .main-content .process-text .big{font-weight:bold;font-size:20px;}
+.contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
+.roboticon-img{margin-top:-28px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/robot.png);background-repeat: no-repeat;}
+.expert-list{padding:0px 10px 10px 10px;}
+.hpDeptName{color: #f39700;}
+.docdesc{height: 9em;overflow-y: hidden;}
