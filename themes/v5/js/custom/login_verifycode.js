@@ -45,7 +45,7 @@ jQuery(function () {
         },
         errorElement: "div",
         errorPlacement: function (error, element) {                             //错误信息位置设置方法  
-            element.parent().find("div.error").remove();
+            element.parents('.controls').find("div.error").remove();
             error.appendTo(element.parents('.controls'));     //这里的element是录入数据的对象  
         }
     });
