@@ -15,7 +15,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
         -->
         <div>
             <div class="clearfix mt40">
-                <div class="col-sm-7">
+                <div class="col-sm-7 mt50">
                     <div>
                         <img src="<?php echo $urlResImage; ?>user/user-left.png"/>
                     </div>
@@ -26,7 +26,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <h3 class="color-green lettersp5">感谢您选择名医主刀！</h3>
                         </div>
                         <div class="mt20 text-right">
-                            <a id="toLogin" class="text-right">已有账号？去登录</a>
+                            <a id="toLogin" class="text-right toLogin">已有账号？去登录</a>
                         </div>
                     </div>
                     <div class="mt20">

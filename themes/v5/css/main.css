@@ -138,7 +138,11 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 #login-form{display: none;}
 #login-verifycode-form .btn-yes{margin-top: 16px;}
 #loginModal .modal-dialog>.modal-content{min-height: 510px;}
-@media (min-width: 768px){#loginModal .modal-dialog,#registerModal .modal-dialog {width: 900px;margin: 100px auto 30px;}}
+#loginModal .modal-dialog>.modal-content>.modal-body{padding-right:45px;padding-left:45px;}
+#loginModal .modal-dialog>.modal-content>.modal-body .hidden-xs{margin-top:80px;}
+#loginModal .modal-dialog>.modal-content>.modal-body .close{background:url(../images/user/cancel.png) no-repeat 0 center;width:25px;height:25px;display: inline-block;}
+#loginModal .modal-dialog>.modal-content>.modal-body .close:hover{background:url(../images/user/cancel-green.png) no-repeat 0 center;width:25px;height:25px;display: inline-block;}
+@media (min-width: 768px){#loginModal .modal-dialog,#registerModal .modal-dialog {width: 850px;margin: 100px auto 30px;}}
 /**** site-content ****/
 .modal-open .modal{margin-top: 50px;}
 form label a:hover{text-decoration: underline!important;}

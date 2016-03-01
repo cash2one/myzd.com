@@ -11,7 +11,9 @@ $ajaxRegisterUrl = $this->createUrl('user/ajaxRegister');
 $bookinglist = $this->createUrl('booking/list');
 $urlReturn = Yii::app()->homeUrl;
 $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms'));
+$urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
+<style>.input-group-addon.icon{padding:0px;background-color:#fff;width:9%;}.close{opacity:1;}.login-form .form-control{height:40px;}</style>
 <form class="form-horizontal" role="form" id="register-form" action="<?php echo $ajaxRegisterUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-return="<?php echo $urlReturn; ?>" method="post" autocomplete="off">
     <div>
         <input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
@@ -21,13 +23,17 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'ter
     </div>
     <div class="form-group">
         <div class="col-sm-12 controls">
-            <input class="form-control" maxlength="11" placeholder="请输入有效的中国手机号码" name="UserRegisterForm[username]" id="UserRegisterForm_username" type="text">        
+            <div class="input-group">
+                <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/user-icon.png"/></div>
+                <input class="form-control" maxlength="11" placeholder="请输入有效的中国手机号码" name="UserRegisterForm[username]" id="UserRegisterForm_username" type="text">
+            </div>       
             <div class="Message" id="UserRegisterForm_username_em_" style="display: none;"></div>    
         </div>
     </div>
     <div class="form-group">
         <div class="col-sm-12 controls">
             <div class="input-group">
+                <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div>
                 <input class="form-control" maxlength="6" placeholder="请输入验证码" name="UserRegisterForm[verify_code]" id="UserRegisterForm_verify_code" type="text">            
                 <div id="btn-sendRegSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>
             </div>
@@ -37,13 +43,19 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'ter
     </div>
     <div class="form-group">
         <div class="col-sm-12 controls">
-            <input class="form-control" autocomplete="off" maxlength="40" placeholder="4至20位英文或数字" name="UserRegisterForm[password]" id="UserRegisterForm_password" type="password">                    
+            <div class="input-group">
+                <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/password.png"/></div>
+                <input class="form-control" autocomplete="off" maxlength="40" placeholder="4至20位英文或数字" name="UserRegisterForm[password]" id="UserRegisterForm_password" type="password">
+            </div>
             <div class="Message" id="UserRegisterForm_password_em_" style="display:none"></div>    
         </div>
     </div>
     <div class="form-group">
         <div class="col-sm-12 controls">
-            <input class="form-control" autocomplete="off" placeholder="请再次输入密码" name="UserRegisterForm[password_repeat]" id="UserRegisterForm_password_repeat" type="password">                    
+            <div class="input-group">
+                <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/password.png"/></div>
+                <input class="form-control" autocomplete="off" placeholder="请再次输入密码" name="UserRegisterForm[password_repeat]" id="UserRegisterForm_password_repeat" type="password">
+            </div>
             <div class="Message" id="UserRegisterForm_password_repeat_em_" style="display:none"></div>    
         </div>
     </div>
@@ -62,7 +74,7 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'ter
         <div class="col-sm-12">
             <button id="btnRegisterSubmit" type="button" class="btn btn-yes btn-lg btn-block">注 册</button>			
         </div>
-        
+
     </div>
 </form>
 <script type="text/javascript">
@@ -71,13 +83,13 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'ter
             sendRegSmsVerifyCode($(this));
         });
     });
-    
+
     function sendRegSmsVerifyCode(domBtn) {
         var domMobile = $("#UserRegisterForm_username");
         var mobile = domMobile.val();
         if (mobile.length === 0) {
             $("#UserRegisterForm_username-error").remove();
-            $("#UserRegisterForm_username").after('<div id="UserRegisterForm_username-error" class="error">请输入手机号码</div>');
+            $("#UserRegisterForm_username").parents('.input-group').after('<div id="UserRegisterForm_username-error" class="error">请输入手机号码</div>');
         } else if (domMobile.hasClass("error")) {
             // mobile input field as , so do nothing.
         } else {

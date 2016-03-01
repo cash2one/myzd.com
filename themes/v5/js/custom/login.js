@@ -32,7 +32,7 @@ jQuery(function () {
         errorElement: "div",
         errorPlacement: function (error, element) {                             //错误信息位置设置方法  
             element.parent().find("div.error").remove();
-            error.appendTo(element.parent());     //这里的element是录入数据的对象  
+            error.appendTo(element.parent().parent());     //这里的element是录入数据的对象  
         }
     });
     function formAjaxSubmit() {
@@ -64,7 +64,7 @@ jQuery(function () {
                         errerMsg = data.errors[error];
                         inputKey = '#UserLoginForm_' + error;
                         $(inputKey).focus();
-                        $(inputKey).parent().append("<div class='error'>" + errerMsg + "</div> ");
+                        $(inputKey).parent().parent().append("<div class='error'>" + errerMsg + "</div> ");
                     }
                     //error.
                 }

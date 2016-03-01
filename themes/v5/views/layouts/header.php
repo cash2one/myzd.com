@@ -29,6 +29,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
     $returnUrl = '';
 }
 ?>
+<style>.input-group-addon.icon{padding:0px;background-color:#fff;width:9%;}.close{opacity:1;}.login-form .form-control{height:40px;}</style>
 <section id="site-header">
     <div class="container-fluid bg-gray home-top hidden-xs">
         <div class="row">
@@ -73,7 +74,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
     </div>
     <div class="container-fluid pt50">
         <div class="row">
-            <div class="container mt30 mb20">
+            <div class="container mt20 mb20">
                 <nav class="navbar navbar-default bg-white no-border" role="navigation">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -119,27 +120,33 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
         <div class="modal-content">
             <div class="modal-body">
                 <div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="row mt50 mb50">
-                    <div class="col-md-7 col-sm-6 hidden-xs">
-                        <img src="<?php echo $urlResImage; ?>user/user-left.png"/>
+                <div class="row mb40 mt40">
+                    <div class="col-md-6 col-sm-6 hidden-xs text-center">
+                        <img src="<?php echo $urlResImage; ?>user/heart.png"/>
                     </div>
-                    <div class="col-md-5 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="login-form">
-                            <h3 class="color-green lettersp5">感谢您选择名医主刀！</h3>
+                            <h3 class="color-green lettersp5">感谢您选择名医主刀!</h3>
                             <div class="login-change mt30"><span class="phone-login active">手机号快速登录</span><span class="account-login">帐号密码登录</span></div>
-                            <form class="form-horizontal mt10" id="login-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" data-url-return="<?php echo $returnUrl; ?>" method="post" autocomplete="off">
+							<form class="form-horizontal mt10" id="login-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" data-url-return="<?php echo $returnUrl; ?>" method="post" autocomplete="off">
                                 <div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <input class="form-control" placeholder="输入手机号" maxlength="11" name="UserLoginForm[username]" id="UserLoginForm_username" type="text">                        
+                                            <div class="input-group">
+                                                <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/user-icon.png"/></div>
+                                                <input class="form-control" placeholder="输入手机号" maxlength="11" name="UserLoginForm[username]" id="UserLoginForm_username" type="text"/>                        
+                                            </div>
                                             <div class="Message" id="UserLoginForm_username_em_" style="display:none"></div>                    
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <input class="form-control" autocomplete="off" placeholder="输入密码" name="UserLoginForm[password]" id="UserLoginForm_password" type="password">                    
+                                            <div class="input-group">
+                                                <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/password.png"/></div> 
+                                                <input class="form-control" autocomplete="off" placeholder="输入密码" name="UserLoginForm[password]" id="UserLoginForm_password" type="password" />                    
+                                            </div>
                                             <div class="Message" id="UserLoginForm_password_em_" style="display:none"></div>                    
                                         </div>
                                     </div>
@@ -149,7 +156,6 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                         <input class="radio-checkbox" name="UserLoginForm[rememberMe]" id="UserLoginForm_rememberMe" value="1" type="checkbox">                        
                                         <label class="radio-label" for="UserLoginForm_rememberMe">下次记住我</label>
                                         <div class="Message" id="UserLoginForm_rememberMe_em_" style="display:none"></div>
-
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -164,18 +170,22 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                     </div>
                                 </div>
                             </form>
-                            <form class="form-horizontal mt10" id="login-verifycode-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" data-url-return="<?php echo $returnUrl; ?>" method="post" autocomplete="off">
-                                <input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
+							<form class="form-horizontal mt10" id="login-verifycode-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" data-url-return="<?php echo $returnUrl; ?>" method="post" autocomplete="off">
+								<input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
                                 <input type="hidden" value="<?php echo $authActionType; ?>" name="smsverify[actionType]" id="smsverify_actionType">
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
-                                        <input class="form-control" placeholder="输入手机号" maxlength="11" name="UserVerifyCodeLoginForm[username]" id="UserVerifyCodeLoginForm_username" type="text">                        
+                                        <div class="input-group">
+                                            <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/user-icon.png"/></div>              
+                                            <input class="form-control" placeholder="输入手机号" maxlength="11" name="UserVerifyCodeLoginForm[username]" id="UserVerifyCodeLoginForm_username" type="text">                        
+                                        </div>
                                         <div class="Message" id="UserVerifyCodeLoginForm_username_em_" style="display:none"></div>                    
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
+                                            <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div> 
                                             <input class="form-control" maxlength="6" placeholder="请输入验证码" name="UserVerifyCodeLoginForm[verify_code]" id="UserVerifyCodeLoginForm_verify_code" type="text">            
                                             <div id="btn-sendLoginSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>
                                         </div>
@@ -196,7 +206,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                         <span id="btnLoginVerifycodeSubmit" class="btn btn-yes btn-lg btn-block">登录</span>			
                                     </div>
                                     <div class="col-sm-12 mt10">
-                                        <span class="color-red">*如未注册，将自动创建您的名医主刀账号</span>
+                                        <span class="color-red text12">*如未注册，将自动创建您的名医主刀账号</span>
                                     </div>
                                 </div>
                             </form>
@@ -252,7 +262,7 @@ if (isset($user)) {
         var mobile = domMobile.val();
         if (mobile.length === 0) {
             $("#UserVerifyCodeLoginForm_username-error").remove();
-            $("#UserVerifyCodeLoginForm_username").after('<div id="UserVerifyCodeLoginForm_username-error" class="error">请输入手机号码</div>');
+            $("#UserVerifyCodeLoginForm_username").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_username-error" class="error">请输入手机号码</div>');
         } else if (domMobile.hasClass("error")) {
             // mobile input field as , so do nothing.
         } else {
