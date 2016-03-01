@@ -64,7 +64,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 给他更健康的生活！
             </div>
             <div class="row">
-                <div class="col-md-4"><a target="_blank" href="/mingyizhudao.com/doctor/3208">
+                <div class="col-md-4"><a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3208')); ?>">
                         <div class="border-gray expert-list">
                             <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03208.jpg" alt=""></div>
                             <div class="pull-right contracted-img"></div><div class="clearfix"></div>
@@ -75,7 +75,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                             <div class="mt10 docdesc"><span class="strong">擅长：</span>脑外伤救治、脑肿瘤及功能性疾病等领域的治疗，如机器人辅助脑定位手术、现代立体定向手术临床应用、脑肿瘤内放疗的系列研究、脑内窥镜手术。</div>                      
                         </div>
                     </a></div>
-                <div class="col-md-4"><a target="_blank" href="/mingyizhudao.com/doctor/3209">
+                <div class="col-md-4"><a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3209')); ?>">
                         <div class="border-gray expert-list">
                             <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03209.jpg" alt=""></div>
                             <div class="pull-right contracted-img"></div><div class="clearfix"></div>
@@ -87,7 +87,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         </div>
                     </a></div>
                 <div class="col-md-4">
-                    <a target="_blank" href="/mingyizhudao.com/doctor/3207">
+                    <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3207')); ?>">
                         <div class="border-gray expert-list">
                             <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03207.JPG" alt=""></div>
                             <div class="pull-right contracted-img"></div><div class="clearfix"></div>
