@@ -276,7 +276,22 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
             var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease_name=' + fullName;
             window.open(urlHopitalSearch);
         });
-
+        $('#home-search-form .disease-name').keydown(function (event) {
+            if (event.keyCode == "13") {
+                event.preventDefault();
+                var disease_name = $('#home-search-form .disease-name').val();
+                var fullName = disease_name == '' ? '' : getDisFullNameByDisName(disease_name);
+                if ($('#searchdoctor-btn').is(':visible')) {
+                    var urlDoctorSearch = '<?php echo $urlDoctorSearch; ?>?disease_name=' + fullName;
+                    window.open(urlDoctorSearch);
+                } else if ($('#searchhospital-btn').is(':visible')) {
+                    var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease_name=' + fullName;
+                    window.open(urlHopitalSearch);
+                } else {
+                    return;
+                }
+            }
+        });
         $('.category a').mouseover(function () {
             $(this).trigger("click");
         });
