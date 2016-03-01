@@ -14,6 +14,9 @@ function setDoctorHtml(data, urlDoctorView) {
             }
             var isContractedImg = doctor.isContracted == 0 ? '' : '<div class="pull-right contracted-img"></div><div class="clearfix"></div>';
             var academicianImg = doctor.id == 117 ? '<div class="pull-right academician-img"></div>' : '';
+            academicianImg = doctor.id == 3209 ? '<div class="pull-right roboticon-img"></div>' : '';
+            academicianImg = doctor.id == 3208 ? '<div class="pull-right roboticon-img"></div>' : '';
+            academicianImg = doctor.id == 3207 ? '<div class="pull-right roboticon-img"></div>' : '';
             innerHtml += '<div class="col-md-4 col-sm-6 mt30">' +
                     '<a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                     '<div class="border-gray expert-list">' +

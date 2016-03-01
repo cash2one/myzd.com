@@ -29,6 +29,7 @@
 .docdesc{height: 9em;overflow-y: hidden;}
 .contracted-img{margin-top:-90px;margin-right:-20px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
 .academician-img{margin-top:-28px;margin-right:-20px;width: 48px;height: 52px;background-image: url(../images/doctor/academician.png);background-repeat: no-repeat;}
+.roboticon-img{margin-top:-28px;margin-right:-20px;width: 48px;height: 52px;background-image: url(../images/doctor/robot.png);background-repeat: no-repeat;}
 .city-list a.active{color: #19aea5;}
 .disease-list a.active{color: #19aea5;}
 .hpDeptName{color: #f39700;}
