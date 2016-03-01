@@ -56,47 +56,47 @@ $isTerms = Yii::app()->request->getQuery('page', '');
                 <img class="img-responsive" src="<?php echo $urlResImage; ?>user/question.png">
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer1">  
-                <div class="content-header"><span class="ml20">Q:&nbsp;如果没有在48小时内收到平台回复怎么办？</span></div>
+                <div class="content-header"><span class="ml20">Q：如果没有在48小时内收到平台回复怎么办？</span></div>
                 <div class="ml40 mr40">
-                    A:名医助手收到预约单后，首先会在第一时间联系患者，确认就诊意向和提交的影像资料，然后开始联系专家，将会在48小时内给予医生的初步反馈。
+                    A：名医助手收到预约单后，首先会在第一时间联系患者，确认就诊意向和提交的影像资料，然后开始联系专家，将会在48小时内给予医生的初步反馈。
                 </div>
                 <div class="color-red-ff0000 ml40 mr40 mt10">如果没有能在48小时内给予任何回复，您可以申请退款。</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer2">  
 
-                <div class="content-header"><span class="ml20">Q:&nbsp;手术可以指定医生吗？</span></div>
+                <div class="content-header"><span class="ml20">Q：手术可以指定医生吗？</span></div>
                 <div class="ml40 mr40">
-                    A:名医助手会为每一个患者安排最合适的医生，患者无需指定手术医生。如果有指定需求，可以在预约单里填写或者助手电话回访时提出。				</div>
+                    A：名医助手会为每一个患者安排最合适的医生，患者无需指定手术医生。如果有指定需求，可以在预约单里填写或者助手电话回访时提出。				</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer3">  
-                <div class="content-header"><span class="ml20">Q:&nbsp;是否一定可以预约到指定医生？</span></div>
+                <div class="content-header"><span class="ml20">Q：是否一定可以预约到指定医生？</span></div>
                 <div class="ml40 mr40">
-                    A:名医助手会优先满足患者的指定需求，但因为医生时间安排等特殊性，不保证一定可以预约成功。在这种情况下， 名医主刀会根据患者疾病情况匹配三甲医院副主任级别以上的名医主刀就诊。				</div>
+                    A：名医助手会优先满足患者的指定需求，但因为医生时间安排等特殊性，不保证一定可以预约成功。在这种情况下， 名医主刀会根据患者疾病情况匹配三甲医院副主任级别以上的名医主刀就诊。				</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer4">  
-                <div class="content-header"><span class="ml20">Q:&nbsp;手术保证治疗效果吗？</span></div>
+                <div class="content-header"><span class="ml20">Q：手术保证治疗效果吗？</span></div>
                 <div class="ml40 mr40">
-                    A:因医疗行为的特殊性，患者病情差异巨大，任何人（包括医生、名医主刀）都不能绝对性地对治疗方案、疗效、医疗意外、住院天数做出承诺。				</div>
+                    A：因医疗行为的特殊性，患者病情差异巨大，任何人（包括医生、名医主刀）都不能绝对性地对治疗方案、疗效、医疗意外、住院天数做出承诺。				</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer5">  
-                <div class="content-header"><span class="ml20">Q:&nbsp;患者是否能比别人更快入院？</span></div>
+                <div class="content-header"><span class="ml20">Q：患者是否能比别人更快入院？</span></div>
                 <div class="ml40 mr40">
-                    A:名医主刀会全力帮助需要手术的患者尽快入院，但所有患者也都需要遵守医院规则和安排，听从专家的具体安排。				</div>				
+                    A：名医主刀会全力帮助需要手术的患者尽快入院，但所有患者也都需要遵守医院规则和安排，听从专家的具体安排。				</div>				
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer6">  
-                <div class="content-header"><span class="ml20">Q:&nbsp;手术直通车为什么是收费服务？</span></div>
+                <div class="content-header"><span class="ml20">Q：手术直通车为什么是收费服务？</span></div>
                 <div class="ml40 mr40">
-                    A:手术直通车需要名医主刀指派专业人员，一对一协助患者分析、整理资料并联系医生，协调医患双方并安排就诊时间，工作人员需要付出大量工作时间和精力。				</div>
+                    A：手术直通车需要名医主刀指派专业人员，一对一协助患者分析、整理资料并联系医生，协调医患双方并安排就诊时间，工作人员需要付出大量工作时间和精力。				</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer7">  
-                <div class="content-header"><span class="ml20">Q:&nbsp;手术预约金包括哪些？</span></div>
+                <div class="content-header"><span class="ml20">Q：手术预约金包括哪些？</span></div>
                 <div class="ml40 mr40 color-red-ff0000">
-                    A:包括术前专家咨询费、第一次面诊费（如有需要，安排门诊）和手术相关安排费用。				</div>
+                    A：包括术前专家咨询费、第一次面诊费（如有需要，安排门诊）和手术相关安排费用。				</div>
             </div> <div class="pb40 border-green mt10 support-content" id="answer8">  
 
-                <div class="content-header"><span class="ml20">Q:&nbsp;预约金是否退还？</span></div>
+                <div class="content-header"><span class="ml20">Q：预约金是否退还？</span></div>
                 <div class="ml40 mr40"  style="line-height:2.5em;">
-                    <span class="color-red-ff0000">A:以下2种情况下退还一半预约金：</span><br/>
+                    <span class="color-red-ff0000">A：以下2种情况下退还一半预约金：</span><br/>
                     ①在所有专家诊断后都认为该患者不具备手术条件/手术风险过大/达不到病人期望而不接受手术时，退还一半预约金。<br/>
                     ②对于主刀医生确认需要手术后，若平台没有能在一周内安排到合适床位，退还一半预约金。<br/>
                     在与患者确认取消服务后的48小时内，将500元退还到患者支付预约金的账户里。	<br/><span class="color-red-ff0000">	以下这种情况将全额退款：</span><br/>
@@ -104,9 +104,9 @@ $isTerms = Yii::app()->request->getQuery('page', '');
 
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer9">  
-                <div class="content-header"><span class="ml20">Q:&nbsp;预约金与医院、医生有关吗？</span></div>
+                <div class="content-header"><span class="ml20">Q：预约金与医院、医生有关吗？</span></div>
                 <div class="ml40 mr40">
-                    A:此预约金是名医主刀为了提供专业服务、保证服务质量而收取的，并非医院和医生收取的，医院和医生也不会在此服务中获得任何商业利益。				</div>
+                    A：此预约金是名医主刀为了提供专业服务、保证服务质量而收取的，并非医院和医生收取的，医院和医生也不会在此服务中获得任何商业利益。				</div>
             </div>
             <div class="pb40 border-green mt10 support-content" id="answer10">  
                 <div class="content-header"><span class="ml20">名医主刀服务协议</span></div>
