@@ -8,6 +8,7 @@ $urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('a
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
 $urlHospitalView = $this->createUrl('hospital/view', array('id' => ''));
 $city = Yii::app()->request->getQuery('city', '');
+$disease = Yii::app()->request->getQuery('disease', '');
 $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
@@ -69,6 +70,7 @@ $page = Yii::app()->request->getQuery('page', '');
     //url参数数组
     var condition = new Array();
     condition["city"] = '<?php echo $city ?>';
+    condition["disease"] = '<?php echo $disease; ?>';
     condition["disease_name"] = '<?php echo $disease_name; ?>';
     condition["disease_category"] = '<?php echo $disease_category; ?>';
     condition["disease_sub_category"] = '<?php echo $disease_sub_category; ?>';

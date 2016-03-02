@@ -272,20 +272,21 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
         $('#searchhospital-btn').click(function (e) {
             e.preventDefault();
             var disease_name = $('#home-search-form .disease-name').val();
-            var fullName = disease_name == '' ? '' : getDisFullNameByDisName(disease_name);
-            var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease_name=' + fullName;
+            var disId = disease_name == '' ? '' : getDisIdByDisName(disease_name);
+            var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease=' + disId;
             window.open(urlHopitalSearch);
         });
         $('#home-search-form .disease-name').keydown(function (event) {
             if (event.keyCode == "13") {
                 event.preventDefault();
                 var disease_name = $('#home-search-form .disease-name').val();
+                var disId = disease_name == '' ? '' : getDisIdByDisName(disease_name);
                 var fullName = disease_name == '' ? '' : getDisFullNameByDisName(disease_name);
                 if ($('#searchdoctor-btn').is(':visible')) {
                     var urlDoctorSearch = '<?php echo $urlDoctorSearch; ?>?disease_name=' + fullName;
                     window.open(urlDoctorSearch);
                 } else if ($('#searchhospital-btn').is(':visible')) {
-                    var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease_name=' + fullName;
+                    var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease=' + disId;
                     window.open(urlHopitalSearch);
                 } else {
                     return;
@@ -296,6 +297,24 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
             $(this).trigger("click");
         });
     });
+    //根据疾病名称获取疾病id
+    function getDisIdByDisName(disease_name) {
+        var disId = '';
+        var urlDiseaseName = '<?php echo $urlDiseaseName; ?>' + disease_name;
+        $.ajax({
+            url: urlDiseaseName,
+            async: false,
+            success: function (data) {
+                if (data.results.name) {
+                    disId = data.results.id;
+                }
+            },
+            error: function () {
+                return disId = disease_name;
+            }
+        });
+        return disId;
+    }
     //根据疾病名称获取疾病全称
     function getDisFullNameByDisName(disease_name) {
         var disFullName = '';

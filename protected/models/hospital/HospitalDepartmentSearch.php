@@ -17,7 +17,7 @@ class HospitalDepartmentSearch extends ESearchModel {
     public function addQueryConditions() {
         $this->criteria->addCondition('t.date_deleted is NULL');
 
-        //$criteria->order = 't.display_order ASC';        
+        //$criteria->order = 't.display_order ASC';
         if ($this->hasQueryParams()) {
             // is_show
             if (isset($this->queryParams['is_show'])) {
@@ -34,15 +34,15 @@ class HospitalDepartmentSearch extends ESearchModel {
             // Disease.
             if (isset($this->queryParams['disease'])) {
                 $diseaseId = $this->queryParams['disease'];
-                $this->criteria->join = 'left join disease_hospital_join dhj on (t.`id`=dhj.`hospital_id`)';
-                $this->criteria->addCondition("dhj.disease_id=:diseaseId");
+                $this->criteria->join = 'left join hospital_department b on t.hp_dept_id=b.id left join category_disease_join cdj on (t.`sub_cat_id`=cdj.`sub_cat_id`)';
+                $this->criteria->addCondition("cdj.disease_id=:diseaseId");
                 $this->criteria->params[":diseaseId"] = $diseaseId;
                 $this->criteria->distinct = true;
             }
             // DiseaseName.
             if (isset($this->queryParams['disease_name'])) {
                 $disease_name = $this->queryParams['disease_name'];
-                $this->criteria->join = 'left join disease_hospital_join dhj on (t.`id`=dhj.`hospital_id`) left join disease d on d.id=dhj.disease_id';
+                $this->criteria->join = 'left join hospital_department b on t.hp_dept_id=b.id left join category_disease_join cdj on (t.`sub_cat_id`=cdj.`sub_cat_id`) left join disease d on d.id=cdj.disease_id';
                 $this->criteria->addSearchCondition('d.name', $disease_name);
                 $this->criteria->distinct = true;
             }
