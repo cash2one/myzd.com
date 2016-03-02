@@ -124,6 +124,7 @@ function initDeptFunction() {
         var subCatName = $(this).text();
         condition["page"] = 1;
         condition["city"] = '';
+        condition["disease"] = '';
         condition["disease_name"] = '';
         condition["disease_category"] = '';
         condition["disease_sub_category"] = subCat;
