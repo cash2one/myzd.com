@@ -10,7 +10,7 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
 <div class="contaier-fluid bg-green">
     <div class="container">
         <div class="crumbs-doctor">
-            <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <?php echo $doctor->hpDeptName; ?> > <?php echo $doctor->name; ?>
+            <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <?php echo $doctor->hpDeptName == '' ? '' : $doctor->hpDeptName . ' > '; ?><?php echo $doctor->name; ?>
         </div>
     </div>
 </div>
@@ -23,7 +23,7 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
                         <img class="media-object doc-img" src="<?php echo $doctor->imageUrl; ?>" alt="<?php echo $doctor->name; ?>">
                     </div>
                     <div class="media-body pl10">
-                        <h4 class="media-heading mt30"><span><?php echo $doctor->name; ?></span><span class="color-gray ml20"><?php echo $doctor->mTitle; ?></span><span class="color-gray ml20"><?php echo $doctor->aTitle; ?></span></h4>
+                        <h4 class="media-heading mt30"><span><?php echo $doctor->name; ?></span><span class="color-gray ml20"><?php echo $doctor->mTitle; ?></span><span class="color-gray ml20"><?php echo $doctor->aTitle == '无' ? '' : $doctor->aTitle; ?></span></h4>
                         <div class="mt20">
                             <?php echo $doctor->hpDeptName == '' ? '' : '<span class="expert-faculty text-center">' . $doctor->hpDeptName . '</span>'; ?>
                             <span><?php echo $doctor->hospitalName; ?></span>
@@ -50,8 +50,10 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
                                 <div class="row">
                                     <?php
                                     foreach ($reasons as $key => $reason) {
-                                        $textcenter = strlen($reason) <= 30 ? 'text-center' : '';
-                                        echo '<div class="col-sm-12 col-md-4"><div class="reason-content"><div class="reason-text ' . $textcenter . '">' . $reason . '</div></div></div>';
+                                        if (!strIsEmpty($reason)) {
+                                            $textcenter = strlen($reason) <= 30 ? 'text-center' : '';
+                                            echo '<div class="col-sm-12 col-md-4"><div class="reason-content"><div class="reason-text ' . $textcenter . '">' . $reason . '</div></div></div>';
+                                        }
                                     }
                                     ?>
                                 </div>
@@ -60,7 +62,7 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
                     <?php }
                     ?> 
                     <?php
-                    if (isset($doctor->description) && !is_null($doctor->description)) {
+                    if (isset($doctor->description) && !strIsEmpty($doctor->description)) {
                         ?>
                         <div class="disTags">
                             <div class="docinfo-title good">擅长手术</div>
@@ -183,8 +185,8 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
 <script>
     $(document).ready(function () {
         //生成大小两个二维码
-        jQuery('#qrcode-sm').qrcode({width: 32, height: 32, text: '<?php echo $urlDoctorView.$doctor->id ?>'});
-        jQuery('#qrcode-weixin').qrcode({width: 94.5, height: 94.5, text: '<?php echo $urlDoctorView.$doctor->id ?>'});
-        
+        jQuery('#qrcode-sm').qrcode({width: 32, height: 32, text: '<?php echo $urlDoctorView . $doctor->id ?>'});
+        jQuery('#qrcode-weixin').qrcode({width: 94.5, height: 94.5, text: '<?php echo $urlDoctorView . $doctor->id ?>'});
+
     });
 </script>
