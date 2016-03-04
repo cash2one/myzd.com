@@ -72,6 +72,8 @@ $bookinglist = $data->results;
                                 </tr>
                                 <?php
                             }
+                        }else{
+                            echo '<tr><td colspan="5">暂无预约</td></tr>';
                         }
                         ?>
                     </tbody>

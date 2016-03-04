@@ -8,6 +8,7 @@ $urlDoctorView = $this->createUrl('doctor/view', array('id' => ''));
 $urlDoctorSearch = $this->createUrl('doctor/search');
 $urlHopitalSearch = $this->createUrl('hospital/search');
 $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('disease_sub_category' => 1));
+$urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 ?>
 <section id="site-content">
     <div class="container-fluid bg-lunbo">
@@ -32,15 +33,18 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
     <div class="container-fluid home-search">
         <div class="row">
             <div class="container">
-                <div class="search-top active search-top1 pull-left searchdoctor-tab">找名医</div><div class="search-top search-top2 pull-left searchhospital-tab">找科室</div><div class="clearfix"></div>
-                <form class="form-inline" id="home-search-form">
-                    <div class="form-group w83">
-                        <input type="text" class="form-control input-area disease-name" placeholder="请输入确诊疾病">
-                    </div><div class="form-group btn-group w17">
-                        <button id="searchdoctor-btn" class="btn btn-yes search-size"><img class="mr10" src="<?php echo $urlResImage; ?>icons/search.png">搜&nbsp;索</button>
-                        <button id="searchhospital-btn" class="btn btn-yes search-size"><img class="mr10" src="<?php echo $urlResImage; ?>icons/search.png">搜&nbsp;索</button>
+                <div class="clearfix mt18"></div>
+                <div class="form-inline" id="home-search-form">
+                    <div class="form-group w100">
+                        <input type="text" class="form-control input-area disease-name" placeholder="请输入确诊疾病或医生姓名">
                     </div>
-                </form>
+                </div>
+                <div id="search-display">
+                    <div class="search-display-header"><span>您是不是想找</span><span class="pull-right clearhistory">清除历史记录</span></div>
+                    <div id="seach-result">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -228,7 +232,6 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
                                             </a>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -262,77 +265,96 @@ $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('dis
         });
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
-        $('#searchdoctor-btn').click(function (e) {
-            e.preventDefault();
-            var disease_name = $('#home-search-form .disease-name').val();
-            var fullName = disease_name == '' ? '' : getDisFullNameByDisName(disease_name);
-            var urlDoctorSearch = '<?php echo $urlDoctorSearch; ?>?disease_name=' + fullName;
-            window.open(urlDoctorSearch);
-        });
-        $('#searchhospital-btn').click(function (e) {
-            e.preventDefault();
-            var disease_name = $('#home-search-form .disease-name').val();
-            var disId = disease_name == '' ? '' : getDisIdByDisName(disease_name);
-            var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease=' + disId;
-            window.open(urlHopitalSearch);
-        });
-        $('#home-search-form .disease-name').keydown(function (event) {
-            if (event.keyCode == "13") {
-                event.preventDefault();
-                var disease_name = $('#home-search-form .disease-name').val();
-                var disId = disease_name == '' ? '' : getDisIdByDisName(disease_name);
-                var fullName = disease_name == '' ? '' : getDisFullNameByDisName(disease_name);
-                if ($('#searchdoctor-btn').is(':visible')) {
-                    var urlDoctorSearch = '<?php echo $urlDoctorSearch; ?>?disease_name=' + fullName;
-                    window.open(urlDoctorSearch);
-                } else if ($('#searchhospital-btn').is(':visible')) {
-                    var urlHopitalSearch = '<?php echo $urlHopitalSearch; ?>?disease=' + disId;
-                    window.open(urlHopitalSearch);
-                } else {
-                    return;
-                }
+        //搜索功能
+        var t;
+        $('#home-search-form .disease-name').keyup(function (event) {
+            var keyword = $(this).val();
+            keyword = $.trim(keyword);
+            if (!keyword) {
+                $('#search-display').hide();
             }
+            clearTimeout(t);
+            t = setTimeout(function () {
+                if (keyword) {
+                    ajaxSearchByKeyWord(keyword);
+                }
+            }, 300);
+
+        }).focus(function () {
+            var keyword = $(this).val();
+            keyword = $.trim(keyword);
+            if (!keyword) {
+                $('#search-display').hide();
+            } else {
+                ajaxSearchByKeyWord(keyword);
+            }
+        }).click(function (e) {
+            if ($('#search-display').is(':visible')) {
+                $('#search-display').show();
+            } else {
+                $('#search-display').hide();
+            }
+            e.stopPropagation();
         });
-        $('.category a').mouseover(function () {
-            $(this).trigger("click");
+        //清除记录
+        $('#search-display .clearhistory').click(function () {
+            $('#seach-result').html('');
         });
+        //search-display隐藏/显示
+        $('.home-search #search-display').click(function (e) {
+            $('#search-display').show();
+            e.stopPropagation();
+        });
+        $(document).click(function () {
+            $('#search-display').hide();
+        });
+
     });
-    //根据疾病名称获取疾病id
-    function getDisIdByDisName(disease_name) {
-        var disId = '';
-        var urlDiseaseName = '<?php echo $urlDiseaseName; ?>' + disease_name;
+    function ajaxSearchByKeyWord(keyword) {
+        var urlSearch = '<?php echo $urlSearchByKeyWord; ?>' + keyword;
         $.ajax({
-            url: urlDiseaseName,
-            async: false,
+            url: urlSearch,
             success: function (data) {
-                if (data.results.name) {
-                    disId = data.results.id;
-                }
-            },
-            error: function () {
-                return disId = disease_name;
+                setResultHtml(data.results, keyword);
             }
         });
-        return disId;
     }
-    //根据疾病名称获取疾病全称
-    function getDisFullNameByDisName(disease_name) {
-        var disFullName = '';
-        var urlDiseaseName = '<?php echo $urlDiseaseName; ?>' + disease_name;
-        $.ajax({
-            url: urlDiseaseName,
-            async: false,
-            success: function (data) {
-                if (data.results.name) {
-                    disFullName = data.results.name;
-                } else {
-                    disFullName = disease_name;
+    function setResultHtml(results, keyword) {
+        var innerHtml = '';
+        if (results) {
+            var resultsNum = 0;
+            if (results.doctors) {
+                var doctors = results.doctors;
+                resultsNum += doctors.length;
+                for (var i = 0; i < doctors.length; i++) {
+                    var doctor = doctors[i];
+                    var hpDeptName = doctor.hpDeptName == null ? '' : ' ' + doctor.hpDeptName;
+                    var aTitle = doctor.aTitle == '无' ? '' : ' ' + doctor.aTitle;
+                    innerHtml += '<div><a target="_blank" class="doctor" href="<?php echo $urlDoctorView ?>' + doctor.id + '"><span class="strong name">' + setResultsNameActive(doctor.name, keyword) + '</span> （' + doctor.hpName + hpDeptName + ' ' + doctor.mTitle + aTitle + '）</a><a target="_blank" href="<?php echo $urlDoctorView ?>' + doctor.id + '" class="pull-right detail">进入详情页</a></div>';
                 }
-            },
-            error: function () {
-                return disFullName = disease_name;
             }
-        });
-        return disFullName;
+            if (results.diseases) {
+                var diseases = results.diseases;
+                resultsNum += diseases.length;
+                for (var i = 0; i < diseases.length; i++) {
+                    var disease = diseases[i];
+                    innerHtml += '<div class="department"><span class="strong name">' + setResultsNameActive(disease.name, keyword) + '</span><a href="<?php echo $urlHopitalSearch ?>?disease=' + disease.id + '" target="_blank" class="pull-right detail">找医院</a><a href="<?php echo $urlDoctorSearch ?>?disease_name=' + disease.name + '" target="_blank" class="pull-right detail mr15">找名医</a></div>';
+                }
+
+            }
+            if (resultsNum <= 6) {
+                innerHtml += '<div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
+            }
+            if (!results.doctors && !results.diseases) {
+                innerHtml = '<div>没有搜到与<span class="keyword">"' + keyword + '"</span>相关信息</div><div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
+            }
+        } else {
+            innerHtml = '<div>没有搜到<span class="keyword">"' + keyword + '"</span>相关信息</div><div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
+        }
+        $('#seach-result').html(innerHtml);
+        $('#search-display').show();
+    }
+    function setResultsNameActive(name, keyword) {
+        return name.replace(keyword, '<span class="active">' + keyword + '</span>');
     }
 </script>

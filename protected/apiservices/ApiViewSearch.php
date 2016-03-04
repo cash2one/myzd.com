@@ -64,6 +64,8 @@ class ApiViewSearch extends EApiViewService {
             $data->name = $model->getName();
             $data->hpName = $model->getHospitalName();
             $data->hpDeptName = $model->getHpDeptName();
+            $data->mTitle = $model->getMedicalTitle();
+            $data->aTitle = $model->getAcademicTitle();
             $this->results->doctors[] = $data;
         }
     }
