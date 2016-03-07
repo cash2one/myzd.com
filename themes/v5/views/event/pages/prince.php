@@ -63,7 +63,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 预约Remebot机器人进行手术治疗<br/>
                 给他更健康的生活！
             </div>
-            <div class="row">
+            <div class="row mb50">
                 <div class="col-md-4"><a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3208')); ?>">
                         <div class="border-gray expert-list">
                             <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03208.jpg" alt=""></div>
