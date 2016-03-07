@@ -1,19 +1,32 @@
-.personalcenter-question>li.active>a,.personalcenter-question>li.active{color:#25aea6!important;}
-.personalcenter-question>li{background:url(../images/user/spot-gray.png) no-repeat 0px center;padding-left:10px;}
-.personalcenter-question>li.active{background:url(../images/user/spot.png) no-repeat 0px center;padding-left:10px;}
+.personalcenter-question>li>a.active,.personalcenter-question>li.active{color:#25aea6!important;}
+.personalcenter-question>li{margin-left:10px;}
+.personalcenter-question>li>a{background:url(../images/user/spot-gray.png) no-repeat 0px 8px;padding-left:10px;margin-left:-10px;}
+.personalcenter-question>li>a.active{background:url(../images/user/spot.png) no-repeat 0px 8px;padding-left:10px;margin-left:-10px;}
 .personalcenter-question>div{color:#5e9aca;}
 .personalcenter-question{padding-left:15px;}
 .color-5e9aca{color:#5e9aca;}
 .divide-dashd-green{border-bottom:1px dashed #25aea6;}
-.support-center{color:#fff;background-color:#78c7bb;padding:5px 0px;}
+.support-center{color:#fff;background-color:#78c7bb;padding:5px 0px;border:1px solid #78c7bb;}
 .color-statement{color:#595757;}
-.divide-dashd-green{border-top:1px dashed #78c7bb;}
-.support-content{min-height:644px;display:none;}
+.divide-dashd-gray{border-top:1px dashed #b5b5b5;}
+.support-content{min-height:500px;display:none;}
 .personalcenter-question>li,.personalcenter-question>div{padding-right:10px;}
 .color-red-ff0000{color:#ff0000;}
 .ml50{margin-left:50px;}
-.question-divider{border-bottom: 3px solid #78c7bb;padding-top:5px;}
+.question-divider{border-bottom: 3px solid #78c7bb;padding-top:5px;border-left:1px solid #b5b5b5;border-right:1px solid #b5b5b5;}
 .support-content>.agreement{line-height:32px;color:#3e3a39;}
 .text16{font-size:16px;}
 .payment .content-header{font-size: 16px;padding:10px 20px;border-bottom:none;color:#25aea6;background-color:#fff;margin-top:50px;}
 .pb21{padding-bottom:21px;}
+.ml26{margin-left:26px;}
+.lineh2-5em{line-height:2.5em;}
+.h300p{height:300px;}
+.h5-em{height:5em;}
+.border-grayb5{border:1px solid #b5b5b5;}
+.question-left{border:1px solid #b5b5b5;border-top:none;padding-bottom:20px;}
+.question-left>.problem-area>.title,.question-left>.problem-area.active>.title{cursor:pointer;color:#454545;}
+.problem-area.active>.personalcenter-question{display:block;}
+.problem-area>.personalcenter-question{display:none;}
+.problem-area.active>.title .fa-angle-right,.problem-area>.title .fa-angle-down{display: none;}
+.problem-area.active>.title .fa-angle-down,.problem-area>.title .fa-angle-right{display: inline-block;}
+.text20{font-size:20px;}
