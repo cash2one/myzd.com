@@ -19,16 +19,35 @@ class OrderManager {
         if ($model instanceof PatientBooking) {
             $order->createRefNo($model->refNo, $model->id, StatCode::TRANS_TYPE_PB);
             $order->user_id = $model->creator_id;
+            $order->travel_type = $model->travel_type;
+            //根据patient_id查询其资料
+            $patient = PatientInfo::model()->getById($model->patient_id);
+            if (isset($patient)) {
+                $order->patient_mobile = $patient->mobile;
+                $order->patient_age = $patient->age . '岁' . strIsEmpty($patient->age_month) ? 0 : $patient->age_month . '月';
+                $order->patient_name = $patient->name;
+                $order->patient_state = $patient->state_name;
+                $order->patient_city = $patient->city_name;
+                $order->disease_name = $patient->disease_name;
+                $order->disease_detail = $patient->disease_detail;
+            }
             //根据creator_id 查询其所在地址
-            $userDoctorPorfile = UserDoctorProfile::model()->getByUserId($model->creator_id);
-            if (isset($userDoctorPorfile)) {
-                $stateName = $userDoctorPorfile->getStateName();
+            $userCreator = UserDoctorProfile::model()->getByUserId($model->creator_id);
+            if (isset($userCreator)) {
+                $order->pb_creator_name = $userCreator->name;
+                $stateName = $userCreator->getStateName();
                 if ($stateName == '北京' || $stateName == '天津' || $stateName == '上海' || $stateName == '重庆') {
                     $bdCode = $stateName;
                 } else {
-                    $bdCode = $stateName . $userDoctorPorfile->getCityName();
+                    $bdCode = $stateName . $userCreator->getCityName();
                 }
                 $order->bd_code = $bdCode;
+            }
+            if (strIsEmpty($model->doctor_id) === FALSE) {
+                $userDoctor = UserDoctorProfile::model()->getByUserId($model->doctor_id);
+                if (isset($userDoctor)) {
+                    $order->pb_doctor_name = $userDoctor->name;
+                }
             }
             $order->bk_ref_no = $model->refNo;
             $order->bk_type = StatCode::TRANS_TYPE_PB;
@@ -43,6 +62,14 @@ class OrderManager {
             $order->bk_ref_no = $model->refNo;
             $order->bk_type = StatCode::TRANS_TYPE_BK;
             $order->subject = $order->getOrderType(true) . '-' . $model->getContactName();
+            $order->disease_name = $model->disease_name;
+            $order->disease_detail = $model->disease_detail;
+            $order->bk_doctor_name = $model->doctor_name;
+            $order->bk_expteam_name = $model->expteam_name;
+            $order->bk_hospital_name = $model->hospital_name;
+            $order->bk_hp_dept_name = $model->hp_dept_name;
+            $order->patient_name = $model->contact_name;
+            $order->patient_mobile = $model->mobile;
             if (strIsEmpty($model->getExpertNameBooked())) {
                 $description = $model->getDiseaseDetail();
             } else {
@@ -52,7 +79,6 @@ class OrderManager {
         } else {
             throw new CException('Unknown class');
         }
-        //相同的值
         $order->is_paid = SalesOrder::ORDER_UNPAIDED;
         $order->bk_id = $model->getId();
         $order->created_by = Yii::app()->user->id;

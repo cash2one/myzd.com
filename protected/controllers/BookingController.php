@@ -28,7 +28,7 @@ class BookingController extends WebsiteController {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('ajaxCreate', 'update', 'userBooking', 'bookingFile','cancelbook'),
+                'actions' => array('ajaxCreate', 'update', 'userBooking', 'bookingFile', 'cancelbook'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -377,9 +377,22 @@ class BookingController extends WebsiteController {
                         $output['errors'] = $booking->getErrors();
                         throw new CException('error saving data.');
                     }
+                    //自动生成一张adminbooking
+                    $bookingMgr = new BookingManager();
+                    $adminBooking = $bookingMgr->createAdminBooking($booking);
+                    if ($adminBooking->hasErrors()) {
+                        $output['errors'] = $adminBooking->getErrors();
+                        throw new CException('error saving data.');
+                    } else {
+                        $taskMgr = new TaskManager();
+                        $taskMgr->createTaskBooking($adminBooking);
+                    }
                     //预约单保存成功  生成一张支付单
                     $orderMgr = new OrderManager();
                     $salesOrder = $orderMgr->createSalesOrder($booking);
+//                    //预约单保存成功  生成一张支付单
+//                    $orderMgr = new OrderManager();
+//                    $salesOrder = $orderMgr->createSalesOrder($booking);
                     if ($salesOrder->hasErrors() === false) {
                         $output['status'] = 'ok';
                         $output['salesOrderRefNo'] = $salesOrder->getRefNo();
