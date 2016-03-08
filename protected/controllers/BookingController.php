@@ -242,9 +242,26 @@ class BookingController extends WebsiteController {
                         $output['errors'] = $booking->getErrors();
                         throw new CException('error saving data.');
                     }
+                    //自动生成一张adminbooking
+                    $bookingMgr = new BookingManager();
+                    $adminBooking = $bookingMgr->createAdminBooking($booking);
+                    if ($adminBooking->hasErrors()) {
+                        $output['errors'] = $adminBooking->getErrors();
+                        throw new CException('error saving data.');
+                    }
+
+                    $taskMgr = new TaskManager();
+                    $task = $taskMgr->createTaskBooking($adminBooking);
+                    if ($task == false) {
+                        $output['errors'] = 'task data error.';
+                        throw new CException('error saving data.');
+                    }
                     //预约单保存成功  生成一张支付单
                     $orderMgr = new OrderManager();
-                    $salesOrder = $orderMgr->createSalesOrder($booking);
+                    $salesOrder = $orderMgr->createSalesOrder($adminBooking);
+//                    //预约单保存成功  生成一张支付单
+//                    $orderMgr = new OrderManager();
+//                    $salesOrder = $orderMgr->createSalesOrder($booking);
                     if ($salesOrder->hasErrors() === false) {
                         $output['status'] = 'ok';
                         $output['salesOrderRefNo'] = $salesOrder->getRefNo();
@@ -387,7 +404,7 @@ class BookingController extends WebsiteController {
 
                     $taskMgr = new TaskManager();
                     $task = $taskMgr->createTaskBooking($adminBooking);
-                    if($task == false){
+                    if ($task == false) {
                         $output['errors'] = 'task data error.';
                         throw new CException('error saving data.');
                     }
