@@ -9,6 +9,7 @@
 .doctorInfo .docinfo-title.members{background-image:url(../images/icons/team.png);color:#25aea6;background-color:#fff;}
 .doctorInfo .docinfo-title.reason{background-image:url(../images/icons/reason-01.png);}
 .doctorInfo .docinfo-title.reason i{padding-right:10px;}
+.doctorInfo .docinfo-title.comment{background-image: url(../images/icons/comment.png);color:#25aea6;background-color:#fff;}
 .doctorInfo .doc-media{border-bottom: 1px solid #19aea5;padding-bottom: 21px;}
 .doctorInfo .expert-atitle{color: #9f9fa0;}
 .doctorInfo .doc-img{border-radius: 50%;border: 1px solid #e4e4e4;width: 100px;height: 100px;margin-top: 10px;}
@@ -23,6 +24,8 @@
 .doctorInfo .booking .booking-title{background-color: #19aea5;text-align: center;font-size: 16px;color:#fff;padding: 30px 0;}
 .doctorInfo .operation img{border: 1px solid #e4e4e4;}
 .doctorInfo .operation img:hover{border: 1px solid #19aea5;box-shadow:1px 1px 3px 3px #e4e4e4; }
+.doctorInfo .news .title{color:#036eb8;height:2em;}
+.doctorInfo .divide-gray{border-bottom:1px dashed #777;}
 .doctor-menu .bg-green{padding: 10px;}
 .doctor-menu .border-right{border-right: 1px solid #fff;margin: 10px 0;padding-bottom: 3px;}
 .doctor-menu .memu-title{font-size: 20px;color: #fff;text-align: center;}
@@ -34,12 +37,15 @@
 .expInfo>div>img{margin:10px 0px;}
 .doctor-menu .rec-doc .col-lg-4{padding: 0 10px;border-right: 1px dashed #e4e4e4;}
 .doctor-menu .rec-doc .col-lg-4.last{padding: 0 10px;border-right: 0;}
-.doctor-menu .rec-doc .expInfo{border-bottom:1px dashed #19aea5;margin: 10px 10px 0;padding-bottom: 10px;}
+.doctor-menu .rec-doc .expInfo{border-bottom:1px dashed #b5b5b5;margin: 10px 10px 0;padding-bottom: 10px;}
 .doctor-menu .rec-doc .expInfo.last{border-bottom:0;margin:10px 10px 0;}
 .doctor-menu .rec-doc .expInfo img{width: 100px;height: 100px;border-radius: 50%;display: block;border: 1px solid #e4e4e4;}
 .doctor-menu .rec-doc .expInfo .expTitle{color: #9f9fa0;}
 .border-green{border: 1px solid #19aea5;padding: 0px 5px;}
+.doctorInfo .border-gray{border: 1px solid #b5b5b5;padding: 0px 5px;}
 .ml30{margin-left: 30px;}
+.ml5{margin-left: 5px;}
+.ml15{margin-left:15px;}
 #btnSubmit{width:100%;}
 .modal-dialog{width:450px;}
 .label-booking{margin-top:3px;}
@@ -49,8 +55,8 @@
 .disTags ul>li{border-bottom: 1px dashed #19aea5;margin-top: 3px;background: url(../images/faculty/li-bullet.png) no-repeat 5px 10px;padding-left: 15px;}
 .color-yellow-f8b62c{color:#f8b62c;}
 .bookingBtn{cursor:pointer;}
-.doctor-menu .doc-booking{background:url(../images/doctor/booking-01.png) no-repeat 100%;background-position: center;width:100%;height:70px;}
-.doctor-menu .doc-booking:hover{background:url(../images/doctor/booking-02.png) no-repeat 100% ;width:100%;height:70px;}
+.doctor-menu .doc-booking{background-color:#f39700;width:100%;height:70px;border-radius:6px;color:#fff;line-height:70px;font-size:21px;letter-spacing:12px;}
+.doctor-menu .doc-booking:hover{background-color:#ef8f06;width:100%;height:70px;border-radius:6px;color:#fff;line-height:70px;font-size:21px;letter-spacing:12px;}
 .media-object.team-img{width:120px;height:120px;}
 .color-25aea6{color:#25aea6;}
 .media-body .media-heading{font-size:16px;}
@@ -67,3 +73,5 @@
 #qrcode-lg img{border: 0;}
 #qrcode-weixin{border: 1px solid #ddd;padding: 7px 8px 4px;width: 112px;height: 112px;margin-top: 3px;}
 #qrcode-lg .qrlogo-lg{background-image: url(../images/icons/qrlogo-lg.png);height:94px;width:94px;position:absolute;background-position: center;background-repeat: no-repeat;}
+.mt14{margin-top:14px;}
+.doctorInfo .mt0{margin-top:0;}
