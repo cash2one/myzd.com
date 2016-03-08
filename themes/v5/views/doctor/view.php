@@ -5,7 +5,6 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
 $doctor = $data->results->doctor;
 $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
-//var_dump($data);
 ?>
 <div class="contaier-fluid bg-green">
     <div class="container">
@@ -39,30 +38,9 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
                         </div>
                     </div>
                 </div>
-                <section class="main pb20">
+                <section class="main pb20"> 
                     <?php
-                    if (isset($doctor->reasons) && arrayNotEmpty($doctor->reasons)) {
-                        $reasons = $doctor->reasons;
-                        ?>
-                        <div>
-                            <div class="docinfo-title reason">推荐理由</div>
-                            <div class="pl30">
-                                <div class="row">
-                                    <?php
-                                    foreach ($reasons as $key => $reason) {
-                                        if (!strIsEmpty($reason)) {
-                                            $textcenter = strlen($reason) <= 30 ? 'text-center' : '';
-                                            echo '<div class="col-sm-12 col-md-4"><div class="reason-content"><div class="reason-text ' . $textcenter . '">' . $reason . '</div></div></div>';
-                                        }
-                                    }
-                                    ?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php }
-                    ?> 
-                    <?php
-                    if (isset($doctor->description) && !strIsEmpty($doctor->description)) {
+                    if (isset($doctor->description) && !is_null($doctor->description)) {
                         ?>
                         <div class="disTags">
                             <div class="docinfo-title good">擅长手术</div>
@@ -132,24 +110,98 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
                             <?php
                         }
                     }
-                    ?>
+                    ?>           
+                    <!--                        <div class="mt40 team">
+                                                <span class="docinfo-title comment" >患者评价</span><div class="pull-left team-line"></div><div class="clearfix"></div>                        
+                                            </div>
+                                            <div class="pl30">
+                                                <div class="pull-left"><img src="<?php //echo $urlResImage;   ?>doctor/user.png"><div class="text-center text12">1221</div></div>
+                                                <div class="pull-left ml10 mr30"><div><strong>主刀专家：刘跃武</strong></div>
+                                                    <div><strong>确诊疾病：甲状腺肿瘤</strong></div>
+                                                    <div class="mt10 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                                    <div class="text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
+                                                </div>
+                                                <div class="mt20 pl30">名医主刀非常专业名医主刀非常专业名医主刀非常专业名医主刀非常专业刀非常专业刀非常专业刀非常专业</div>
+                                                <div class="clearfix"></div>
+                                                <div class="divide-gray mt10"></div>
+                                            </div>
+                                            <div class="pl30">
+                                                <div class="pull-left"><img src="<?php //echo $urlResImage;   ?>doctor/user.png"><div class="text-center text12">1221</div></div>
+                                                <div class="pull-left ml10 mr30"><div><strong>主刀专家：刘跃武</strong></div>
+                                                    <div><strong>确诊疾病：甲状腺肿瘤</strong></div>
+                                                    <div class="mt10 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                                    <div class="text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
+                                                </div>
+                                                <div class="mt20 pl30">名医主刀非常专业名医主刀非常专业名医主刀非常专业名医主刀非常专业刀非常专业刀非常专业刀非常专业</div>
+                                                <div class="clearfix"></div>
+                                                <div class="divide-gray mt10"></div>
+                                            </div>
+                                            <div class="pl30">
+                                                <div class="pull-left"><img src="<?php //echo $urlResImage;   ?>doctor/user.png"><div class="text-center text12">1221</div></div>
+                                                <div class="pull-left ml10 mr30"><div><strong>主刀专家：刘跃武</strong></div>
+                                                    <div><strong>确诊疾病：甲状腺肿瘤</strong></div>
+                                                    <div class="mt10 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+                                                    <div class="text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
+                                                </div>
+                                                <div class="mt20 pl30">名医主刀非常专业名医主刀非常专业名医主刀非常专业名医主刀非常专业刀非常专业刀非常专业刀非常专业</div>
+                                                <div class="clearfix"></div>
+                                                <div class="divide-gray mt10"></div>
+                                            </div>-->                 
                 </section>									
             </div> 
         </div>
         <div class="col-sm-4 doctor-menu">
             <div class="mt20 text-center">
-                <div class="bookingBtn doc-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>"></div>
+                <div class="bookingBtn doc-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>"><div class="ml10"><img src="<?php echo $urlResImage; ?>/doctor/icon-booking.png"><span class="ml15">立即预约</span></div></div>
             </div>
-            <div class="mt10 text18">立即预约的流程</div>       
-            <div class="pb30 mt5">
-                <img class="" src="<?php echo $urlResImage; ?>doctor/liucheng-01.png">
-                <div class="clearfix"></div>
-            </div>
+            <?php
+            if (isset($doctor->reasons) && arrayNotEmpty($doctor->reasons)) {
+                $reasons = $doctor->reasons;
+                ?>
+                <div class="mt14 text18">推荐理由</div> 
+                <div class="border-gray">
+                    <div>
+                        <div class="pl10 pt10 pb10">
+                            <?php
+                            foreach ($reasons as $key => $reason) {
+                                echo '<div class="color-yellow-f8b62c"><span class="text18"><i class="fa fa-star"></i></span><span class="ml5">' . $reason . '</span></div>';
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            <?php }
+            ?> 
+
+            <!--                <div class="mt20 text18">相关资讯</div> 
+                            <div class="border-gray news">
+                                <div class="mt10 mb10">
+                                    <div class="pull-left title">【媒体报道】</div>
+                                    <div>福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="mt10 mb10">
+                                    <div class="pull-left title">【媒体报道】</div>
+                                    <div>福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="mt10 mb10">
+                                    <div class="pull-left title">【媒体报道】</div>
+                                    <div>福布斯发布亚洲年轻领袖榜单</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="mt10 mb10">
+                                    <div class="pull-left title">【媒体报道】</div>
+                                    <div>福布斯发布亚洲年轻领袖榜单</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>-->
+
             <div class="rec-title">
                 <span>其他推荐</span>
             </div>
-            <div class="border-green mt10">
-                <div class="rec-doc">
+            <div class="border-gray mt10">
+                <div class="rec-doc pl20 pr20">
                     <?php
                     if (isset($data->results->related) && is_array($data->results->related)) {
                         $related = $data->results->related;
