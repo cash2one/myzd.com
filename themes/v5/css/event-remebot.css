@@ -1,0 +1,24 @@
+#remebot .main-border{border-left:1px solid #b5b5b5;border-right:1px solid #b5b5b5;}
+#remebot .content{padding:50px 120px 100px;}
+#remebot .content .text-indent2em{text-indent:2em;}
+#remebot .content .big-title{background-color:#fff;color:#447cb7;font-size:28px;border-radius:4px;display:inline-block;height:46px;line-height:46px;letter-spacing:5px;}
+#remebot .content .title{background-color:#447cb7;color:#fff;height:35px;display:inline-block;font-size:24px;padding:0 20px;vertical-align:middle;}
+#remebot .content .white-block{background-color:#fff;width:20px;height:46px;color:#fff;display:inline-block;}
+#remebot .content .white-block-s{background-color:#fff;width:16px;height:46px;color:#fff;display:inline-block;}
+#remebot .content .title-line{border-top:1px solid #447cb7;margin-top:-23px;}
+#remebot .color-blue{color:#447cb7;}
+#remebot .content .contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
+#remebot .content .roboticon-img{margin-top:-28px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/robot.png);background-repeat: no-repeat;}
+#remebot .content .expert-list{padding:0px 10px 10px 10px;}
+#remebot .content .hpDeptName{color: #f39700;}
+#remebot .content .docdesc{height: 9em;overflow-y: hidden;}
+#remebot .content .title-line-s{border-bottom:1px solid #447cb7;width:100%;margin-top:-1px;}
+#remebot .content .tableone{padding-left:90px;padding-right:90px;margin-top:10px;}
+#remebot .content .tabletwo{padding-left:90px;padding-right:90px;margin-top:10px;}
+#remebot .content .firstcol{background-color:#fff!important;vertical-align:middle;}
+#site-content{padding-bottom:0!important;}
+#remebot .content .core{color:#444;box-shadow:2px 2px 5px #898a8d;}
+#remebot .content .core .blue-area{width:3%;border-radius:4px;background-color:#447cb7;height:81px;border-top-right-radius:0;border-bottom-right-radius:0;}
+#remebot .content .core .text-area{width:97%;background-color:#eeefef;height:81px;border-right:#eeefef}
+#remebot .line-h{line-height:2em;}
+.text15{font-size:15px;}

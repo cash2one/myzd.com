@@ -26,6 +26,7 @@ $page = Yii::app()->request->getQuery('page', '');
             <div class="border-gray department-list mt20">
 
             </div>
+             <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage;?>/homeslider/remebot.png"></a></div>
         </div>
         <div class="col-sm-10">
             <div class="row">
@@ -47,7 +48,6 @@ $page = Yii::app()->request->getQuery('page', '');
                 <div class="hospital-list">
 
                 </div>
-
                 <!--分页-->
                 <div class="mt30">
                     <nav class="text-center">

@@ -48,6 +48,7 @@ $page = Yii::app()->request->getQuery('page', '');
         <div class="col-md-2 col-sm-3 mt30">
             <div class="border-gray department-list">
             </div>
+            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage;?>/homeslider/remebot.png"></a></div>
         </div>
         <div class="col-sm-9 col-md-10">
             <div class="loading loading02"></div>

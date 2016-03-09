@@ -60,6 +60,7 @@ $page = Yii::app()->request->getQuery('page', '');
                     </ul>
                 </div>
             </div>
+            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>/homeslider/remebot.png"></a></div>
         </div>
         <div class="col-sm-9 col-md-10">
             <div class="loading loading02"></div>
@@ -205,7 +206,7 @@ $page = Yii::app()->request->getQuery('page', '');
             var innerHtml = '<span class="dis-title">具体疾病：</span><span><a class="all" data-id="' + subCatId + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCatId + '">全部</a></span>';
             for (var i = 0; i < diseases.length; i++) {
                 var disease = diseases[i];
-                innerHtml += '<span><a class="disease" data-id="'+disease.id+'" href = "<?php echo $urlLoadDoctor; ?>">' + disease.name + '</a></span>';
+                innerHtml += '<span><a class="disease" data-id="' + disease.id + '" href = "<?php echo $urlLoadDoctor; ?>">' + disease.name + '</a></span>';
             }
             $('.disease-list').html(innerHtml);
             initDiseaseFunction();
@@ -243,7 +244,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 if (cityId == condition["city"]) {
                     $(this).addClass('active');
                 }
-            }else{
+            } else {
                 $('.all.city').addClass('active');
             }
         });
