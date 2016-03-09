@@ -590,8 +590,15 @@ class BookingManager {
             $adminBooking->patient_name = $model->contact_name;
             $adminBooking->patient_mobile = $model->mobile;
             $adminBooking->booking_status = $model->bk_status;
-            $adminBooking->expected_doctor_id = $model->doctor_id;
-            $adminBooking->expected_doctor_name = $model->doctor_name;
+            if (strIsEmpty($model->expteam_id) == false) {
+                //根据团队id查询其leader
+                $team = ExpertTeam::model()->getById($model->expteam_id);
+                $adminBooking->expected_doctor_id = $team->leader_id;
+                $adminBooking->expected_doctor_name = $team->leader_name;
+            } else {
+                $adminBooking->expected_doctor_id = $model->doctor_id;
+                $adminBooking->expected_doctor_name = $model->doctor_name;
+            }
             $adminBooking->expected_hospital_id = $model->hospital_id;
             $adminBooking->expected_hospital_name = $model->hospital_name;
             $adminBooking->expected_hp_dept_name = $model->hp_dept_id;
