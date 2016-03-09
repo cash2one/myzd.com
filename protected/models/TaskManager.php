@@ -12,7 +12,7 @@ class TaskManager {
 
         $adminTask->subject = '您有一条新的任务，预约编号：' . $model->ref_no;
         $adminTask->content = $model->disease_detail;
-        $adminTask->url = Yii::app()->createAbsoluteUrl('/admin/adminBooking/view', array('id' => $model->getId()));
+        $adminTask->url = Yii::app()->params['baseUrlCrm'].'/admin/adminbooking/view/id/'.$model->getId();//Yii::app()->createAbsoluteUrl('/admin/adminBooking/view', array('id' => $model->getId()));
 
         $dbTran = Yii::app()->db->beginTransaction();
         try {
@@ -50,7 +50,7 @@ class TaskManager {
 
         $adminTask->subject = '您有一条新的任务，预约编号：' . $model->ref_no;
         $adminTask->content = $values['content'];
-        $adminTask->url = Yii::app()->createAbsoluteUrl('/admin/adminBooking/view', array('id' => $model->getId()));
+        $adminTask->url = Yii::app()->params['baseUrlCrm'].'/admin/adminbooking/view/id/'.$model->getId();//Yii::app()->createAbsoluteUrl('/admin/adminBooking/view', array('id' => $model->getId()));
 
         $dbTran = Yii::app()->db->beginTransaction();
         try {
