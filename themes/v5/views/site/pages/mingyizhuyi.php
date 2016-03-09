@@ -12,9 +12,9 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/min
             <div class="mt-60">
                 <?php $this->renderPartial('pages/_menu'); ?> 
             </div>
-            <div class="row">
-                <div class="col-sm-2"><img class="mt55" src="<?php echo $urlResImage ?>aboutus/mingYiZhuYi-01.png"></div>
-                <div class="col-sm-10"><div class="ml30 mt50 line2em">“名医主义”是名医主刀旗下的医疗公益项目，希望通过整合全国医疗资源，借助资本力量和品牌影响力，为有手术需求的患者提供公益支持和帮助。名医主义的组织精神是仁爱自信 、乐观积极、感同身受。在大量的日常手术对接服务中，我们发现求医无门、支付无援的病患家庭，需要的不仅仅是温暖的祝愿，更需要一双有力的手，与他们携手攻坚克难。<br/>
+            <div class="row mt100">
+                <div class="col-sm-2"><img src="<?php echo $urlResImage ?>aboutus/mingYiZhuYi-01.png"></div>
+                <div class="col-sm-10"><div class="ml30 line2em">“名医主义”是名医主刀旗下的医疗公益项目，希望通过整合全国医疗资源，借助资本力量和品牌影响力，为有手术需求的患者提供公益支持和帮助。名医主义的组织精神是仁爱自信 、乐观积极、感同身受。在大量的日常手术对接服务中，我们发现求医无门、支付无援的病患家庭，需要的不仅仅是温暖的祝愿，更需要一双有力的手，与他们携手攻坚克难。<br/>
                         “做手术就找名医主刀，做手术遇到困难有名医主义。”这是名医企业体系中最重要的组成部分。期冀通过我们的平台，让全天下患者不仅可以好看病，更要看好病。</div></div>
                 <div class="col-sm-10 col-sm-offset-1 dashed-line"></div>
             </div>
