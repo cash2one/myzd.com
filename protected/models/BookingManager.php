@@ -575,9 +575,9 @@ class BookingManager {
                 if (is_null($doctor) === false) {
                     //推送医生信息补全
                     $adminBooking->creator_doctor_id = $doctor->id;
-                    $adminBooking->creator_doctor_name = $patient->name;
-                    $adminBooking->creator_hospital_name = $patient->hospital_name;
-                    $adminBooking->creator_dept_name = $patient->hp_dept_name;
+                    $adminBooking->creator_doctor_name = $doctor->name;
+                    $adminBooking->creator_hospital_name = $doctor->hospital_name;
+                    $adminBooking->creator_dept_name = $doctor->hp_dept_name;
                     $cityId = $doctor->city_id;
                     $stateId = $doctor->state_id;
                 }
