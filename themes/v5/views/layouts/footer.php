@@ -37,6 +37,9 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div class="col-xs-6 pr5 mt10">
                                     <img src="<?php echo $baseUrlImage; ?>footer/36kr.jpg"/>
                                 </div>
+                                <div class="col-xs-6 pl5 mt10">
+                                    <img src="<?php echo $baseUrlImage; ?>footer/remebot.png"/>
+                                </div>
                             </div>
                         </div>
                         <!--                        <div class="w20 hospital">
@@ -109,6 +112,9 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                     </div>
                                     <div class="pull-left mr10 mt10">
                                         <img src="<?php echo $baseUrlImage; ?>footer/36kr.jpg"/>
+                                    </div>
+                                    <div class="pull-left mr10 mt10">
+                                        <img src="<?php echo $baseUrlImage; ?>footer/remebot.png"/>
                                     </div>
                                 </div>
                                 <div class="mt35 mb20">

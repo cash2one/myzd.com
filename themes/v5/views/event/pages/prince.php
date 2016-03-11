@@ -21,7 +21,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="title-line"></div>
             <div class="row mt50">
                 <div class="col-sm-5 process-text pr0">入院后，主任医师田增民、卢旺盛专家查看病情后，<br/>决定实施机器人辅助的微创型无框架立体定向手术。<br/>当日早晨，名医主刀战略合作平台Remebot 的工程师为王子粘贴标志点，<br/>随后进行 MRI 核磁扫描。<br/>专家观察王子的 MRI 图像后，<br/>初步讨论决定通过一个入颅点对两个病灶区域实施核团毁损,<br/>从而将创伤降低到最小。</div>
-                <div class="col-sm-7 text-right"><img src="<?php echo $urlResImage; ?>event/prince/photo.jpg" /></div>
+                <div class="col-sm-7 text-right"><img src="<?php echo $urlResImage; ?>event/prince/photo.png" /></div>
             </div>
             <div class="row mt30">
                 <div class="col-sm-6"><img src="<?php echo $urlResImage; ?>event/prince/photo1.png" /></div>

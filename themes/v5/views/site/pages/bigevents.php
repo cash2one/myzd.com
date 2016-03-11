@@ -1,7 +1,7 @@
 <?php
 $menu = $this->getPageMenu();
 $this->pageTitle = '大事记_名医主刀';
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/big-event.css");
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/big-event.css?v=" . time());
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <style>.pb50{padding-bottom:50px;}</style>
@@ -20,6 +20,18 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                 <div class="container mt100" id="big-event">
                     <div class="row">
                         <div class="col-md-5 ml65 mr-65">
+                            <div class="row event-1602-3">
+                                <div class="col-md-6">
+                                    <img src="<?php echo $urlResImage ?>aboutus/picture160203.png">
+                                </div>
+                                <div class="col-md-6 text-right pt142 font-20p color-blue">
+                                    2016年2月
+                                </div>
+                            </div>
+                            <div class="div-left mt4 pt10 pr10 pl10 pb40">
+                                <div>动脉网发布<strong class="text18">2014-2015全球互联网医疗投融百强榜单</strong>，名医主刀榜上有名，也是唯一一个<strong class="text18">专精于手术</strong>领域的互联网医疗公司。</div>
+                                <div class="tooltip-arrow tooltip-arrow-left top-1 right-15"></div>
+                            </div>
                             <div class="row event-1602-1">
                                 <div class="col-md-6">
                                     <img src="<?php echo $urlResImage ?>aboutus/picture160201.png">
@@ -100,6 +112,13 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <div class="h100p" >
                                 <div ></div>
                                 <div class="h100p bg-yellow yellow-line"></div>
+                            </div>
+                            <div class="text-center">
+                                <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
+                            </div>
+                            <div class="h170p" >
+                                <div ></div>
+                                <div class="h170p bg-yellow yellow-line"></div>
                             </div>
                             <div class="text-center">
                                 <img src="<?php echo $urlResImage ?>aboutus/point-01.png">

@@ -115,7 +115,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <div class="mt5">最后，<span class="color-blue">医生在机械臂末端安装作为手术操作平台的导向器</span>，用钻头在入颅点开1个2mm以内的小孔，换上适配的手术针，沿导向器将针推送至底部即为手术规划的路径和靶点位置。</div>
                     </div>
                 </div>
-                <div class="mt20">看似简短的几步操作，实际上经历了十几年的临床摸索和上万次的手术验证，方达到化繁为简的效果。</div>
+                <div class="mt20 text15">看似简短的几步操作，实际上经历了十几年的临床摸索和上万次的手术验证，方达到化繁为简的效果。</div>
                 <div class="mt50"><span class="title">机器人手术的适用症</span><img src="<?php echo $urlResImage; ?>event/remebot/div.png">
                     <div class="title-line-s"></div>
                 </div>

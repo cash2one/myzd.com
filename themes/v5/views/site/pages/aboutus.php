@@ -3,7 +3,7 @@ $menu = $this->getPageMenu();
 $this->pageTitle = '关于我们_公司简介_名医主刀';
 $this->htmlMetaKeywords = '关于我们,名医主刀';
 $this->htmlMetaDescription = '关于我们。【名医主刀】总部坐落于上海，现设北京、杭州、天津、广州、南京、成都等分部，业务范围覆盖全国。做手术就找名医主刀';
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css");
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <style>
