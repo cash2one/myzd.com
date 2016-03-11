@@ -40,7 +40,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                     </div>
                 </div>
                 <div id="search-display">
-                    <div class="search-display-header"><span>您是不是想找</span><span class="pull-right clearhistory">清除历史记录</span></div>
+                    <div class="search-display-header"><span>您是不是想找</span><span class="pull-right clearhistory">清除搜索记录</span></div>
                     <div id="seach-result">
 
                     </div>
@@ -286,7 +286,8 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             if (!keyword) {
                 $('#search-display').hide();
             } else {
-                ajaxSearchByKeyWord(keyword);
+                $('#search-display').show();
+                //ajaxSearchByKeyWord(keyword);
             }
         }).click(function (e) {
             if ($('#search-display').is(':visible')) {
@@ -299,6 +300,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
         //清除记录
         $('#search-display .clearhistory').click(function () {
             $('#seach-result').html('');
+            $('#home-search-form .disease-name').val('');
         });
         //search-display隐藏/显示
         $('.home-search #search-display').click(function (e) {
