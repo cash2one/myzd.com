@@ -27,4 +27,8 @@ class CommentManager {
         return Comment::model()->getByAttributes(array('bk_type' => StatCode::TRANS_TYPE_BK, 'bk_id' => $bookingId));
     }
 
+    public function loadCommentByDoctorId($doctorId) {
+        return Comment::model()->getAllByAttributes(array('doctor_id' => $doctorId));
+    }
+
 }

@@ -80,4 +80,8 @@ class CommentController extends WebsiteController {
         ));
     }
 
+    public function actionAjaxDoctorComment($doctorId) {
+        
+    }
+
 }

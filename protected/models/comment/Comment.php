@@ -34,7 +34,7 @@ class Comment extends EActiveRecord {
         // will receive user inputs.
         return array(
             array('date_created', 'required'),
-            array('user_id, bk_type, bk_id, service, post_operative, display_order', 'numerical', 'integerOnly' => true),
+            array('user_id, bk_type, bk_id, service, post_operative, display_order, doctor_id', 'numerical', 'integerOnly' => true),
             array('user_name', 'length', 'max' => 30),
             array('comment_text', 'length', 'max' => 1000),
             array('date_updated, date_deleted', 'safe'),
@@ -64,6 +64,7 @@ class Comment extends EActiveRecord {
             'user_name' => 'User Name',
             'bk_type' => '预约类型',
             'bk_id' => '关联预约表',
+            'doctor_id' => '关联医生',
             'service' => '服务效率',
             'post_operative' => '术后效果',
             'comment_text' => '其他分享与评价',
