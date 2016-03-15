@@ -98,12 +98,12 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 <div class="row mt10 mb50">
                     <div class="col-sm-6 col-md-4 mt20">
                         <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 1)); ?>">
-                            <div class="faculty waike img-responsive"></div>
+                            <div class="faculty waike pull-left"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
                         <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 13)); ?>">
-                            <div class="faculty guke block-center"></div>
+                            <div class="faculty guke" style="float:left;margin-left:17px;"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
@@ -113,12 +113,12 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
                         <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 21)); ?>">
-                            <div class="faculty xiaoerwaike"></div>
+                            <div class="faculty xiaoerwaike pull-left"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
                         <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 28)); ?>">
-                            <div class="faculty wuguanke block-center"></div>
+                            <div class="faculty wuguanke" style="float:left;margin-left:17px;"></div>
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 mt20">
@@ -135,23 +135,24 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             <div class="container mt50">
                 <div class="row">
                     <div class="col-md-8">
-                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'rectalcancer')); ?>" target="_blank">
-                            <img class="img-responsive h300" src="<?php echo $urlResImage; ?>homeslider/rectalcancer.jpg"/>
+                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')); ?>" target="_blank">
+                            <img class="img-responsive h300" src="<?php echo $urlResImage; ?>homeslider/millionfund.png"/>
                         </a>
                     </div>
                     <div class="col-md-4 pl20">
                         <div><span class="text18 color-blue">精彩推荐</span><img class="ml10 mb5" src="<?php echo $urlResImage; ?>icons/icon_change.png"><div class="pull-right change" href="#carousel-example-generic" role="button" data-slide="next">换一批</div><div class="clearfix"></div></div>
                         <div><div class="divide-line-black"></div></div>
-                        <div class="row">
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                </ol>
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
+
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="row">
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'tumor')); ?>" target="_blank">
                                                 <!--                                                <div class="recommend-area color1">当肿瘤遇上名医专家</div>-->
@@ -173,14 +174,16 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                                                 <div class="slider-text">甲状腺预防</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt30 pl5">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4 mt30">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'ruxianai')); ?>" target="_blank">
                                                 <!--                                                <div class="recommend-area color5">关爱女性，关爱乳房</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider4.png"/>
                                                 <div class="slider-text">关爱女性</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt30 pl5">
+                                        <div class="col-sm-4 mt30">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinxueguan')); ?>" target="_blank">
                                                 <!--                                                <div class="recommend-area color6">警惕心血管疾病突发</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider5.png"/>
@@ -195,15 +198,17 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <div class="col-sm-4 mt18 pl5">
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'ertai')); ?>" target="_blank">
                                                 <!--                                                <div class="recommend-area color8">名医专家为您“宝”驾护航</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider7.png"/>
                                                 <div class="slider-text">名医宝驾护航</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt18 pl5 ml-5">
+                                        <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'doctorInterview')); ?>" target="_blank">
                                                 <!--                                                <div class="recommend-area color9">泌尿疾病的克星：“达芬奇手术机器人”</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider8.png"/>
@@ -217,24 +222,34 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                                                 <div class="slider-text">陆劲松专访</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt30 pl5">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4 mt30">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'dididoctor')); ?>" target="_blank">
                                                 <!--                                                <div class="recommend-area color11">“滴滴医生”驾到</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider10.png"/>
                                                 <div class="slider-text">滴滴医生</div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-4 mt30 pl5 ml-5">
+                                        <div class="col-sm-4 mt30">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'nationalday')); ?>" target="_blank">
                                                 <!--                                                <div class="recommend-area color12">欢乐出游却不小心摔伤？</div>-->
                                                 <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider11.png"/>
                                                 <div class="slider-text">摔伤怎么办</div>
                                             </a>
                                         </div>
+                                        <div class="col-sm-4 mt30">
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'rectalcancer')); ?>" target="_blank">
+                                                <!--                                                <div class="recommend-area color12">欢乐出游却不小心摔伤？</div>-->
+                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider12.png"/>
+                                                <div class="slider-text">大肠癌</div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -243,9 +258,9 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 </section>
 <script>
     $(document).ready(function () {
-        $html = '<li><div class="prince"><a href="<?php echo $this->createUrl('event/view', array('page' => 'prince')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_prince.jpg" alt="" class="img-responsive"></a></div></li>' +
+        $html = '<li><div class="cataract"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cataract')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_cataract.png" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="prince"><a href="<?php echo $this->createUrl('event/view', array('page' => 'prince')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_prince.jpg" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="cancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_cancer.jpg" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="millionfund"><a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_mingYiZhuYi.jpg" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="xinyabang"><a href="<?php echo $this->createUrl('event/view', array('page' => 'xinyabang')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/xinyabang.jpg" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="lujinsong"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/lujinsong.jpg" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);

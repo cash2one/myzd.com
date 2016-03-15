@@ -15,7 +15,7 @@
 .home-slogn{margin-top:106px;}
 .slogan-lg{font-size:58px;letter-spacing: 8px;padding-left: 8px;}
 .slogan-sm{font-size:36px;letter-spacing: 6px;padding-left: 6px;}
-#header_home{position: fixed;height: 450px;z-index: 9999;width: 100%;}
+#header_home{position: fixed;height: 438px;z-index: 9999;width: 100%;}
 #close-header{margin-right: 20px;margin-top: -30px;color: #fff;opacity: 1;}
 #close-header img:hover{opacity: .8;cursor: pointer;}
 .bg-home-top{background-color:#5ec1b9;padding:50px 0;}
