@@ -43,6 +43,7 @@ class ApiViewUserBookingV7 extends EApiViewService {
         $data->id = $model->getId();
         $data->refNo = $model->getRefNo();
         $this->bk_id = $model->getId();
+        $data->doctor_id = $model->doctor_id;
         $data->expertName = $model->getExpertNameBooked();
         $data->patientName = $model->getContactName();
         $data->mobile = $model->getMobile();

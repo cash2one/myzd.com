@@ -31,7 +31,7 @@ $urlReturn = $this->createUrl('booking/userBooking', array('id' => $booking->id)
                 <div class="color-status text12">预约单：<?php echo $booking->refNo; ?></div>
                 <div>
                     <?php
-                    if ($booking->status == 9) {
+                    if ($booking->status == StatCode::BK_STATUS_INVALID) {
                         echo '<h4 class="text-center color-green text20">';
                         echo '<span>' . $booking->statusText . '</span>';
                         echo '</h4>';
