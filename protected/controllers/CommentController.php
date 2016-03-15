@@ -81,7 +81,9 @@ class CommentController extends WebsiteController {
     }
 
     public function actionAjaxDoctorComment($doctorId) {
-        
+        $apisvc = new ApiViewDoctorComment($doctorId);
+        $output = $apisvc->loadApiViewData();
+        $this->renderJsonOutput($output);
     }
 
 }
