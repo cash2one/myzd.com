@@ -65,6 +65,7 @@ class ApiViewDoctorComment extends EApiViewService {
             $data->service = $model->service;
             $data->postOperative = $model->post_operative;
             $data->commentText = $model->comment_text;
+            $data->detail = $model->detail;
             $data->dateCreated = $model->getDateCreated();
             $this->comments[] = $data;
         }
