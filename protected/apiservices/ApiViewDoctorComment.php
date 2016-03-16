@@ -14,12 +14,16 @@
 class ApiViewDoctorComment extends EApiViewService {
 
     private $doctorId;
+    private $page;
+    private $pagesize;
     private $commentMgr;
     private $comments;
 
-    public function __construct($doctorId) {
+    public function __construct($doctorId, $page, $pagesize) {
         parent::__construct();
         $this->doctorId = $doctorId;
+        $this->page = $page;
+        $this->pagesize = $pagesize;
         $this->commentMgr = new CommentManager();
         $this->comments = array();
     }
@@ -36,11 +40,18 @@ class ApiViewDoctorComment extends EApiViewService {
     }
 
     protected function loadData() {
+        $this->loadCount();
         $this->loadComment();
     }
 
+    public function loadCount() {
+        $dataCount = $this->commentMgr->loadCountByDoctorId();
+        $this->results->dataCount = $dataCount;
+    }
+
     private function loadComment() {
-        $models = $this->commentMgr->loadCommentByDoctorId($this->doctorId);
+        $options = array('limit' => $this->pagesize, 'offset' => (($this->page - 1) * $this->pagesize), 'order' => 't.date_created DESC');
+        $models = $this->commentMgr->loadCommentByDoctorId($this->doctorId, null, $options);
         if (arrayNotEmpty($models)) {
             $this->setComment($models);
         }

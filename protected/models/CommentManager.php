@@ -27,8 +27,15 @@ class CommentManager {
         return Comment::model()->getByAttributes(array('bk_type' => StatCode::TRANS_TYPE_BK, 'bk_id' => $bookingId));
     }
 
-    public function loadCommentByDoctorId($doctorId) {
-        return Comment::model()->getAllByAttributes(array('doctor_id' => $doctorId));
+    public function loadCommentByDoctorId($doctorId, $with = null, $options = null) {
+        return Comment::model()->getAllByAttributes(array('doctor_id' => $doctorId), $with, $options);
+    }
+
+    public function loadCountByDoctorId($doctorId) {
+        $criteria = new CDbCriteria;
+        $criteria->addCondition("doctor_id=:doctorId");
+        $criteria->params[":doctorId"] = $doctorId;
+        return Comment::model()->count($criteria);
     }
 
 }

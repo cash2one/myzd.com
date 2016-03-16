@@ -37,7 +37,8 @@ class Comment extends EActiveRecord {
             array('user_id, bk_type, bk_id, service, post_operative, display_order, doctor_id', 'numerical', 'integerOnly' => true),
             array('user_name', 'length', 'max' => 30),
             array('comment_text', 'length', 'max' => 1000),
-            array('date_updated, date_deleted', 'safe'),
+            array('detail', 'length', 'max' => 200),
+            array('date_updated, date_deleted, detail', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, user_id, user_name, bk_type, bk_id, service, post_operative, comment_text, display_order, date_created, date_updated, date_deleted', 'safe', 'on' => 'search'),
