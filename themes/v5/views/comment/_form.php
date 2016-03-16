@@ -22,6 +22,7 @@ $form = $this->beginWidget('CActiveForm', array(
 echo CHtml::hiddenField("CommentForm[bk_type]", StatCode::TRANS_TYPE_BK);
 echo CHtml::hiddenField("CommentForm[bk_id]", $booking->id);
 echo CHtml::hiddenField("CommentForm[doctor_id]", $booking->doctor_id);
+echo CHtml::hiddenField("CommentForm[detail]", $booking->diseaseName);
 echo CHtml::hiddenField("CommentForm[service]", 5);
 echo CHtml::hiddenField("CommentForm[post_operative]", 5);
 ?>

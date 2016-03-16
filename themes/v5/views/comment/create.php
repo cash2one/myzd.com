@@ -4,7 +4,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/use
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBookingList = $this->createUrl('booking/list');
 $booking = $data->results->booking;
-$urlConmmentView = $this->createUrl('comment/view',array('bookingId'=>$booking->id));
+$urlConmmentView = $this->createUrl('comment/view', array('bookingId' => $booking->id));
 ?>
 <div class="bg-green">
     <div class="container">
@@ -32,7 +32,7 @@ $urlConmmentView = $this->createUrl('comment/view',array('bookingId'=>$booking->
                 </div>
             </div>
             <div class="border-green mt10 pt50 pl50 pr50 minh700">
-                <div><span class="color-gray">主刀专家：</span><strong><?php echo $booking->expertName; ?></strong>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="color-gray">确诊疾病：</span><strong><?php echo $booking->diseaseName; ?></strong></div>
+                <div><span class="color-gray">主刀专家：</span><strong><?php echo $booking->expertName == null ? '无' : $booking->expertName; ?></strong>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="color-gray">确诊疾病：</span><strong><?php echo $booking->diseaseName; ?></strong></div>
                 <div id="service" class="mt50 comment">
                     <div class="text16 color-25aea6 mb20"><i class="fa fa-play ml-20"></i><strong class="ml5">请您对我们服务进行星级评价:</strong></div>
                     <strong>服务效率</strong><i data-fraction="1" class="fa fa-star active ml40 "></i><i data-fraction="2" class="fa fa-star active ml40 "></i><i data-fraction="3" class="fa fa-star active ml40 "></i><i data-fraction="4" class="fa fa-star active ml40 "></i><i data-fraction="5" class="fa fa-star active ml40 "></i><span class="fraction-text ml40 color-gray">5分</span>
