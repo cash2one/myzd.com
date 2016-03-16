@@ -45,7 +45,7 @@ class ApiViewDoctorComment extends EApiViewService {
     }
 
     public function loadCount() {
-        $dataCount = $this->commentMgr->loadCountByDoctorId();
+        $dataCount = $this->commentMgr->loadCountByDoctorId($this->doctorId);
         $this->results->dataCount = $dataCount;
     }
 
