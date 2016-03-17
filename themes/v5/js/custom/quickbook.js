@@ -135,8 +135,7 @@ jQuery(function () {
                             errerMsg = data.errors[error];
                             inputKey = '#booking_' + error;
                             //    $(inputKey).focus();
-                            $(inputKey).parent().after("<div class='error'>" + errerMsg + "</div> ");
-                            $(inputKey).parent().addClass("error");
+                            domForm.find(inputKey).parent().after("<div class='error'>" + errerMsg + "</div> ");
                         }
 
                     }
