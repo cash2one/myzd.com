@@ -216,7 +216,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 </div>
                             </div>
                             <div class="div-right mt4 pt10 pb20 pl10 pr10">
-                                <div>中国互联网协会发布《中国分享经济发展报告（2016）》白皮书，名医主刀作为<strong class="text18">唯一一家移动医疗</strong>创业公司入选。名医主刀在配置闲置床位和医生碎片时间的过程中，践行着分享经济理念。</div>
+                                <div>国家信息中心信息化研究部、中国互联网协会分享经济工作委员会联合发布《中国分享经济发展报告2016》。名医主刀作为<strong class="text18">唯一一家移动医疗</strong>创业公司入选。名医主刀在配置闲置床位和医生碎片时间的过程中，践行着分享经济理念。</div>
                                 <div class="tooltip-arrow tooltip-arrow-right left-15 top-1"></div>
                             </div>
                              <div class="row event-160108">
