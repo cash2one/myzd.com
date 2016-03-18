@@ -42,7 +42,7 @@
 .mt25{margin-top:25px;}
 .mb25{margin-bottom:25px;}
 .find-header{background-image:url('../images/hospital/bg.jpg');background-repeat:no-repeat;background-size:100% 100%;}
-.hospital-list img{width: 142px;height: 150px;}
+.hospital-list img{width: 120px;height: 130px;}
 .dese-operate{padding-right: 3px;color: #EFA429;}
 .dese-operate:hover{cursor: pointer;}
 .dese-last{display: none;}
@@ -50,4 +50,5 @@
 .city-list a.active{color: #19aea5;}
 .hpName{color: #595757;}
 .hpName:hover{color: #19aea5;}
-.hospital-list .hospital-desc{line-height: 1.7em;}
+.hospital-list .hospital-desc{line-height: 1.7em;color:#555;}
+.ml-30{margin-left:-30px;}

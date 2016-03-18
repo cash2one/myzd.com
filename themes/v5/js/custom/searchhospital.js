@@ -6,17 +6,15 @@ function setHospitalHtml(data, urlHospitalView) {
         for (var i = 0; i < hospitals.length; i++) {
             var hospital = hospitals[i];
             var hp_dept_desc = hospital.hp_dept_desc == '' ? '暂无信息' : hospital.hp_dept_desc;
-            hp_dept_desc = hp_dept_desc.length > 240 ? hp_dept_desc.substr(0, 240)+'<span class="ellipsis">...</span><span class="dese-last">'+hp_dept_desc.substr(240)+'</span><span class="dese-operate pull-right"><span class="desc-more">详情 <i class="fa fa-angle-down"></i></span><span class="desc-retract">收起 <i class="fa fa-angle-up"></i></span></span>' : hp_dept_desc;
+            hp_dept_desc = hp_dept_desc.length > 90 ? hp_dept_desc.substr(0, 90)+'<span class="ellipsis">...</span><span class="dese-last">'+hp_dept_desc.substr(90)+'</span>' : hp_dept_desc;
             innerHtml += '<div class="row mt30">' +
                     '<div class="col-sm-3 col-lg-2"><a target="_blank" href="' + urlHospitalView + hospital.hospital_id + '"><img class="img-responsive" src="' + hospital.imageUrl + '"></a></div>' +
-                    '<div class="col-sm-9 col-lg-10">' +
-                    '<div><strong><a class="hpName" target="_blank" href="' + urlHospitalView + hospital.hospital_id + '">' + hospital.name + '</a></strong><span class="color-green pl30">' + hospital.hp_dept_name + '</span>' +
-                    '<span class="pull-right"><button class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' + hospital.name + '" data-dept="' + hospital.hp_dept_name + '" data-hospitalId="' + hospital.hospital_id + '" data-deptId="' + hospital.hp_dept_id + '" data-toggle="modal" data-target="#booking">预 约</button></span></div>' +
+                    '<div class="col-sm-9 col-lg-10 ml-30">' +
+                    '<div><strong><a class="hpName" target="_blank" href="' + urlHospitalView+ hospital.hospital_id + '">' + hospital.name + '</a></strong>' +
+                     '<span class="pull-right"><a target="_blank" href="' + urlHospitalView + hospital.hospital_id + '"><button class="btn btn-yes pr30 pl30">查 看 详 情</button></a></span></div>' +
+                    '<div class="mt20"><span>医院科室名称：</span><span class="color-green ml10">' + hospital.hp_dept_name + '</span></div>'+
                     '<div class="clearfix"></div>' +
-                    '<div class="row mt10">' +
-                    '<div class="col-sm-1"><strong class="text15 color-green">科室介绍</strong></div>' +
-                    '<div class="col-sm-11 ml-15 hospital-desc">' + hp_dept_desc + '</div>' +
-                    '</div>' +
+                    '<div class="ml-15 hospital-desc mt20">' + hp_dept_desc + '</div>' +
                     '</div>' +
                     '</div>';
         }

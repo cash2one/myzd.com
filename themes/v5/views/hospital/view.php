@@ -17,7 +17,7 @@ $city = $model->getCity();
 $urlLoadDoctorsByDeptId = $this->createUrl('/api/list', array('model' => 'doctor', 'hpdept' => ''));    // append hpdeptId behind.
 ?>
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hospital.css");
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hospital.css?v=" . time());
 $urlQuickBook = $this->createUrl('booking/quickbook');
 $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
@@ -77,67 +77,137 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
         </div>
     </div>
 </div>
-<div class="container-fluid pt40">
+<div class="container-fluid pt40 hospital">
     <div class="container">
         <div class="departments">
             <div class="row">
-                <div class="col-lg-9 col-sm-8 col-xs-12">
-                    <div class="header"><span>推荐科室</span></div>
-                    <div class="divide-color-ddd"></div>
-                    <?php if ($departments) { ?>
-                    <style>.nav-tabs{border-bottom:none;}</style>
-                        <ul class="nav nav-tabs text-right mt20" role="tablist">
-                            <?php
-                            $i = 1;
-                            foreach ($departments as $key => $dept) {
-                                if ($i == count($departments)) {
-                                    $active = 'active';
-                                } else {
-                                    $active = '';
-                                }
-                                echo '<li role="presentation" class="' . $active . ' color-black col-sm-2 nopadding"><a href="#' . $i . '" aria-controls="' . $i . '" role="tab" data-toggle="tab">' . $key . '</a></li>';
-                                $i++;
+                <div class="col-lg-9 col-sm-8 col-xs-12 describable">
+                    <?php
+                    if ($departments) {
+                        foreach ($departments as $key => $dept) {
+                            if ($key == '外科') {
+                                $deptClass = "waike";
+                            } else if ($key == '内科') {
+                                $deptClass = "neike";
+                            } else if ($key == '妇产科') {
+                                $deptClass = "fuchanke";
+                            } else if ($key == '小儿外科') {
+                                $deptClass = "xiaoerke";
+                            } else if ($key == '五官科') {
+                                $deptClass = "wuguanke";
+                            } else if ($key == '骨科') {
+                                $deptClass = "guke";
                             }
                             ?>
-                        </ul>
-                        <div class="tab-content">
-                            <?php
-                            $j = 1;
-                            foreach ($departments as $key => $dept) {
-                                if ($j == count($departments)) {
-                                    $active = 'active';
-                                } else {
-                                    $active = '';
-                                }
-                                echo '<div role="tabpanel" class="tab-pane ' . $active . '" id="' . $j . '">';
+                            <!--Tab panes -->
+                            <div class="tab-content">
+                                <?php
+                                $j = 1;
                                 foreach ($dept as $faculty) {
                                     $description = $faculty->description == '' ? '暂无信息' : $faculty->description;
-                                    echo '<div class="mt20 dept-describe">' .
-                                    '<div class="dept-title">' . $faculty->name . '<div class="pull-right mt5"><button class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' . $hName . '" data-dept="' . $faculty->name . '" data-hospitalid="' . $hid . '" data-deptid="' . $faculty->id . '" data-toggle="modal" data-target="#booking">预 约</button></div><div class="clearfix"></div></div>' .
-                                    '<div class="mt10"><span>科室介绍：</span>' . $description . '</div>' .
-                                    '</div>';
+                                    echo '<div role="tabpanel" class="tab-pane" id="' . $deptClass . $j . '"><div class="dept-title"><div class="pull-left mr100">选择科室：' . $faculty->name . '</div><div><button class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' . $hName . '" data-dept="' . $faculty->name . '" data-hospitalid="' . $hid . '" data-deptid="' . $faculty->id . '" data-toggle="modal" data-target="#booking">预 约</button></div><div class="clearfix"></div><div class="divide-gray"></div></div><div class="faculty-desc">' . $description . '</div></div>';
+                                    $j++;
                                 }
-                                echo '</div>';
-                                $j++;
-                            }
+                                ?>
+                            </div><?php }
                             ?>
-                        </div>
-                    <?php } ?>
+                        <div><span class="title">为您精选出的本院最强科室</span><span class="pull-right blue-text" >*排名参考《中国最佳医院综合排名》和《中国医院最佳专科声誉排行榜》</span></div>
+                        <div class="clearfix"></div>
+                        <div class="divide-gray"></div>
+                        <div class="row mt20">
+
+                            <?php
+                            foreach ($departments as $key => $dept) {
+                                if ($key == '外科') {
+                                    $deptClass = "waike";
+                                } else if ($key == '内科') {
+                                    $deptClass = "neike";
+                                } else if ($key == '妇产科') {
+                                    $deptClass = "fuchanke";
+                                } else if ($key == '小儿外科') {
+                                    $deptClass = "xiaoerke";
+                                } else if ($key == '五官科') {
+                                    $deptClass = "wuguanke";
+                                } else if ($key == '骨科') {
+                                    $deptClass = "guke";
+                                }
+                                echo '<div class="col-sm-6 faculty-group mt20"><div class="row deptgroup"><div class="col-sm-4 pr0"><div class="first-faculty ' . $deptClass . '"></div></div><div class="pl0 col-sm-8"><ul class="nav nav-tabs" role="tablist">';
+                                $i = 1;
+                                foreach ($dept as $faculty) {
+                                    if ($i == 1 || $i == 2) {
+                                        $mt10 = '';
+                                    } else {
+                                        $mt10 = 'mt10';
+                                    }
+                                    echo '<li role="presentation" class="second-faculty ' . $mt10 . '"><a href="#' . $deptClass . $i . '" aria-controls="' . $deptClass . $i . '" role="tab" data-toggle="tab">' . $faculty->name . '</a></li>';
+                                    $i++;
+                                }
+                                echo '</ul></div></div></div>';
+                            }
+                        }
+                        ?>
+                        <?php
+                        ?>
+                    </div>
                 </div>
-                <div class="col-lg-3 sol-sm-4 col-xs-12">
+                <div class="col-lg-3 sol-sm-4 col-xs-12 pl0 pr0">
                     <div class="flowChart">
-                        <img src="<?php echo $urlResImage; ?>doctor/flowChart.png">
+                        <div class="text-center step">
+                            <div>提交预约申请</div>
+                            <div>（8小时内）</div>   
+                        </div>
+                        <div class="text-center mt10 mb10"><img src="<?php echo $urlResImage; ?>/hospital/arrow.png"></div>
+                        <div class="text-center step">
+                            <div>名医助手联系患者</div>
+                            <div>确认预约信息</div>
+                        </div>
+                        <div class="text-center mt10 mb10"><img src="<?php echo $urlResImage; ?>/hospital/arrow.png"></div>
+                        <div class="text-center step">
+                            <div>名医助手为患者整理病历资料，</div>
+                            <div>根据病情匹配对症专家（两个工作日内）</div>
+                        </div>
+                        <div class="text-center mt10 mb10"><img src="<?php echo $urlResImage; ?>/hospital/arrow.png"></div>
+                        <div class="text-center step">
+                            <div>平台工作人员与患者沟通，</div>
+                            <div>确定就诊时间</div>
+                        </div>
+                        <div class="text-center mt10 mb10"><img src="<?php echo $urlResImage; ?>/hospital/arrow.png"></div>
+                        <div class="text-center step">
+                            <div>携带相关证件资料，</div>
+                            <div>在预约时间由名医助手陪护至医院就诊</div>
+                        </div>
+                        <div class="text-center"><img src="<?php echo $urlResImage; ?>/hospital/branch.png"></div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div>就诊结果可以手术</div>
+                                <div class="text-center step">
+                                    <div>安排闲置</div>
+                                    <div>床位排期手术</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>就诊结果不宜手术</div>
+                                <div class="text-center step">
+                                    <div>专家给出</div>
+                                    <div>参考意见</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<?php //$this->renderPartial("//booking/_modalQuickBook"); ?>
-<?php //$this->renderPartial("//booking/_modalBooking"); ?>
+
+<?php //$this->renderPartial("//booking/_modalQuickBook");    ?>
+<?php //$this->renderPartial("//booking/_modalBooking");  ?>
 <?php $this->renderPartial("//booking/bookingDeptModal"); ?>
 <script>
     $(document).ready(function () {
+        $('.departments .describable').find('.tab-pane:first').addClass('active');
+        $('.faculty-group:first').find('.first-faculty').addClass('active');
+        $('.faculty-group:first').find('.second-faculty:first').addClass('active');
         $(".more-desc").click(function () {
             $(this).hide();
             $(".ellipsis").hide();
@@ -150,5 +220,12 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
             $(".ellipsis").show();
             $(".more-desc").show();
         });
+        $('.second-faculty a').click(function () {
+            $('.second-faculty').removeClass("active");
+            $('.tab-pane').removeClass("active");
+            $('.first-faculty').removeClass("active");
+            $(this).parents('.deptgroup').find('.first-faculty').addClass("active");
+        });
     });
+
 </script>

@@ -10,7 +10,7 @@
 #prince .main-content .title-line{border-top:1px solid #2896c3;margin-top:-23px;}
 #prince .main-content .number-tag{font-size:20px;text-align:center;line-height:25px;background-color:#2896c3;border-radius:25px;width:25px;height:25px;font-weight:bold;color:#fff;display:inline-block;}
 #prince .main-content .blue-text{font-size:20px;color:#2896c3;line-height:2em;}
-#prince .main-content .blue-text .tag{background-color:#fff000;color:#2896c3;font-size:20px;font-weight:bold;}
+#prince .main-content .blue-text .tag{background-color:#fff000;color:#2896c3;font-size:20px;font-weight:bold;padding:0 5px;}
 #prince .main-content .blue-text .tag-blue{background-color:#fff000;color:#2896c3;width:170px;display:inline-block;font-weight:bold;}
 #prince .main-content .process-text{color:#777;line-height:2em;}
 #prince .main-content .process-text .big{font-weight:bold;font-size:20px;}

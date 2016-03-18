@@ -38,17 +38,21 @@
 .container-title{font-size:24px;}
 .dept-describe{border:1px solid #efefef;padding:10px;}
 .departments{}
-.departments ul>li{float: right;}
+.departments ul>li{width:45%;margin-left:10px;}
 .departments .header{font-size: 24px;margin-top: 3px;color: #19aea5;}
-.departments ul>li>a{border-radius: 0;border: 1px solid #19aea5;margin: 0;min-width: 7em;text-align: center;}
-.departments ul>li>a:hover{border-color: #19aea5;background-color: #e0f1f2;}
-.departments ul>li.active>a,.departments ul>li.active>a:hover,.departments ul>li.active>a:focus{background-color: #5ebfb8;color: #fff;border-color: #19aea5;}
+.nav-tabs{border:none!important;}
+.nav>li>a{padding:0!important;}
+.nav-tabs>li>a{border:none!important;margin-right:0!important;}
+/*.departments ul>li>a{border-radius: 0;border: 1px solid #19aea5;margin: 0;min-width: 7em;text-align: center;}*/
+/*.departments ul>li>a:hover{border-color: #19aea5;background-color: #e0f1f2;}*/
+/*.departments ul>li.active>a,.departments ul>li.active>a:hover,.departments ul>li.active>a:focus{background-color: #5ebfb8;color: #fff;border-color: #19aea5;}*/
 .departments .dept{border: 1px solid #ddd;padding: 5px 10px 10px;}
-.departments .tab-content .btn{margin-top: -10px;}
+.departments .tab-content .btn{margin-top: -5px;}
 .nav-tabs{border:none;}
 .divide-color-ddd{border-top:1px solid #ddd;}
-.dept-title{font-size:18px;}
-.flowChart{border: 1px solid #5ebfb8;padding: 10px 0 0;margin-top: 18px;}
+.dept-title{font-size:24px;line-height:24px;height:24px;}
+.flowChart{border: 1px solid #b5b5b5;padding:25px 10px;margin-top: 18px;}
+.flowChart .step{background-color:#a0d6d5;border-radius:4px;color:#fff;height:55px;padding-top:7px;}
 /*.departments{padding: 10px;}
 .departments h4{padding: 5px 25px;background-color: #b1dcd6;color: #19aea5;}
 .dept>a:hover{text-decoration: underline;color: #19aea5;}
@@ -63,3 +67,37 @@
 .hospitalurl{overflow-x: hidden;}
 .hospitalurl>a{display: inline-block;}
 .hospitalurl>a:hover{text-decoration: underline;}
+.departments .divide-gray{border-top:1px solid #b5b5b5;margin-top:5px;}
+.departments .title{font-size:24px;}
+.img{background-image:url(../images/hospital/wuguan.png);width:100px;height:100px;background-color:red;}
+.hospital .departments .waike{background:url(../images/hospital/faculty/waike.png) center;width:100%;height:150px;background-color:#eeefef;}
+.hospital .departments .waike:hover,.hospital .departments .fuchanke:hover,.hospital .departments .xiaoerke:hover,.hospital .departments .wuguanke:hover,.hospital .departments .neike:hover,.hospital .departments .guke:hover{background-color:#dcdcdd;cursor:pointer;}
+.hospital .departments .waike.active{background:url(../images/hospital/faculty/waike01.png) center;width:100%;height:150px;background-color:#a0d6d5;cursor:pointer;}
+.hospital .departments .guke{background:url(../images/hospital/faculty/guke.png) center;width:100%;height:150px;background-color:#eeefef;}
+.hospital .departments .guke.active{background:url(../images/hospital/faculty/guke01.png) center;width:100%;height:150px;background-color:#a0d6d5;cursor:pointer;}
+.hospital .departments .fuchanke{background:url(../images/hospital/faculty/fuchanke.png) center;width:100%;height:150px;background-color:#eeefef;}
+.hospital .departments .fuchanke.active{background:url(../images/hospital/faculty/fuchanke01.png) center;width:100%;height:150px;background-color:#a0d6d5;cursor:pointer;}
+.hospital .departments .xiaoerke{background:url(../images/hospital/faculty/xiaoerke.png) center;width:100%;height:150px;background-color:#eeefef;}
+.hospital .departments .xiaoerke.active{background:url(../images/hospital/faculty/xiaoerke01.png) center;width:100%;height:150px;background-color:#a0d6d5;cursor:pointer;}
+.hospital .departments .wuguanke{background:url(../images/hospital/faculty/wuguanke.png) center;width:100%;height:150px;background-color:#eeefef;}
+.hospital .departments .wuguanke.active{background:url(../images/hospital/faculty/wuguanke01.png) center;width:100%;height:150px;background-color:#a0d6d5;cursor:pointer;}
+.hospital .departments .neike{background:url(../images/hospital/faculty/neike.png) center;width:100%;height:150px;background-color:#eeefef;}
+.hospital .departments .neike.active{background:url(../images/hospital/faculty/neike01.png) center;width:100%;height:150px;background-color:#a0d6d5;cursor:pointer;}
+.hospital .departments .second-faculty{background-color:#eeefef;text-align:center;height:30px;}
+.hospital .departments .second-faculty a{height:100%;padding-top:4px!important;}
+.hospital .departments .second-faculty:hover{background-color:#dcdcdd!important;text-align:center;color:#fff!important;cursor:pointer;}
+.hospital .departments .second-faculty.active{background-color:#f8b62c!important;text-align:center;color:#fff!important;cursor:pointer;}
+.hospital .departments .blue-text{color:#036eb8;padding-top:12px;}
+.hospital .departments .nav-tabs>li>a:hover{color:#333!important;}
+.hospital .departments .nav-tabs>li.active>a,.hospital .departments .nav-tabs>li.active>a:hover{background-color:#f8b62c!important;color:#fff!important;}
+.hospital .departments .nav-tabs>li>a:hover,.hospital .departments .nav-tabs>li:hover>a{color:#fff;}
+.hospital .departments .faculty-desc{min-height:220px;margin-top:20px;}
+.hospital .departments .nav-tabs>li>a:hover{background-color: #dcdcdd!important;}
+.color-036eb8{color:#036eb8;}
+.mr100{margin-right:100px;}
+/*.hospital .departments .*/
+/*蓝色字色值：036eb8
+点亮科室绿色背景：a0d6d5
+灰色背景：eeefef
+黄色背景：f8b62c
+二级科室字体：333*/

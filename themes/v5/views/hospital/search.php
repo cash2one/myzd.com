@@ -66,7 +66,7 @@ $page = Yii::app()->request->getQuery('page', '');
         </div>
     </div>
 </div>
-<?php $this->renderPartial("//booking/bookingDeptModal"); ?>
+<?php //$this->renderPartial("//booking/bookingDeptModal"); ?>
 <script>
     //url参数数组
     var condition = new Array();
