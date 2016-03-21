@@ -134,12 +134,19 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                                 echo '<div class="col-sm-6 faculty-group mt20"><div class="row deptgroup"><div class="col-sm-4 pr0"><div class="first-faculty ' . $deptClass . '"></div></div><div class="pl0 col-sm-8"><ul class="nav nav-tabs" role="tablist">';
                                 $i = 1;
                                 foreach ($dept as $faculty) {
+                                    $fuacultyName = $faculty->name;
+                                    if (mb_strlen($faculty->name) > 18) {
+                                        $fuacultyName = mb_substr($fuacultyName, 0, 5, 'utf-8');
+                                        $fuacultyName=$fuacultyName.'<span>...</span>';
+                                    } else {
+                                        $fuacultyName = $faculty->name;
+                                    }
                                     if ($i == 1 || $i == 2) {
                                         $mt10 = '';
                                     } else {
                                         $mt10 = 'mt10';
                                     }
-                                    echo '<li role="presentation" class="second-faculty ' . $mt10 . '"><a href="#' . $deptClass . $i . '" aria-controls="' . $deptClass . $i . '" role="tab" data-toggle="tab">' . $faculty->name . '</a></li>';
+                                    echo '<li role="presentation" class="second-faculty ' . $mt10 . '"><a href="#' . $deptClass . $i . '" aria-controls="' . $deptClass . $i . '" role="tab" data-toggle="tab" title='.$faculty->name.'>' . $fuacultyName . '</a></li>';
                                     $i++;
                                 }
                                 echo '</ul></div></div></div>';
