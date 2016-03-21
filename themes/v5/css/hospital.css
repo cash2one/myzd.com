@@ -21,14 +21,13 @@
 /**** view ***/
 .crumbs-header ul{padding: 10px; background-color: #19aea5;color: #fff;margin-bottom: 0;}
 .crumbs-header ul li>a{color: #fff!important;}
-.crumbs-header ul li{color: #fff;padding-left: 10px;}
+.crumbs-header ul li{color: #fff;}
 .crumbs-hospital{background-color: #19aea5;margin-bottom: 20px;}
 .crumbs ul{padding-left: 0px;}
 .crumbs ul li{display: inline-block;}
 .crumbs ul li>a{color: #19aea5;}
 .crumbs ul li>a:hover{text-decoration: underline;}
 .hinfo img{display: block;margin: 0 auto;}
-.hdecs{padding-left:10px;}
 .hdesc{font-size: 15px;text-indent: 2em;line-height: 1.7;margin-top: 10px;text-align:justify; text-justify: inter-ideograph;}
 .hinfo img{width: 100%;}
 .hinfo .more-desc,.hinfo .retract{margin-top: 3px;}
@@ -37,7 +36,6 @@
 .hinfo .decs-last,.hinfo .retract{display: none;}
 .container-title{font-size:24px;}
 .dept-describe{border:1px solid #efefef;padding:10px;}
-.departments{}
 .departments ul>li{width:45%;margin-left:10px;}
 .departments .header{font-size: 24px;margin-top: 3px;color: #19aea5;}
 .nav-tabs{border:none!important;}
