@@ -12,7 +12,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     <div class="row">
         <div class="container">
             <div class="mt-60">
-                <?php $this->renderPartial('pages/_menu'); ?> 
+                <?php $this->renderPartial('pages/_menu'); ?>
             </div>
         </div>
         <div class="container-fluid big-event-bg">
@@ -134,7 +134,14 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div ></div>
                                 <div class="h170p bg-yellow yellow-line"></div>
                             </div>
-                             <div class="text-center">
+                            <div class="text-center">
+                                <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
+                            </div>
+                            <div class="h170p" >
+                                <div ></div>
+                                <div class="h170p bg-yellow yellow-line"></div>
+                            </div>
+                            <div class="text-center">
                                 <img src="<?php echo $urlResImage ?>aboutus/point-01.png">
                             </div>
                             <div class="h170p" >
@@ -207,6 +214,18 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             </div>
                         </div>
                         <div class="col-md-5 ml-65">
+                            <div class="row event-1603-1">
+                                <div class="col-md-6 pt142 font-20p color-blue mt5">
+                                    2016年3月
+                                </div>
+                                <div class="col-md-6 pl10 mt5">
+                                    <img src="<?php echo $urlResImage ?>aboutus/picture160301.png">
+                                </div>
+                            </div>
+                            <div class="div-right mt4 pt10 pb20 pl10 pr10">
+                                <div>在由<strong class="text18">辉瑞中国、中国平安、腾讯、君联资本</strong>四大行业代表企业跨界联手主办的医疗合伙人创新合作方案大奖赛上，名医主刀力拔头筹，荣获<strong class="text18">服务类冠军</strong>。</div>
+                                <div class="tooltip-arrow tooltip-arrow-right left-15 top-1"></div>
+                            </div>
                             <div class="row event-1602-2">
                                 <div class="col-md-6 pt142 font-20p color-blue mt5">
                                     2016年2月
@@ -219,7 +238,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div>国家信息中心信息化研究部、中国互联网协会分享经济工作委员会联合发布《中国分享经济发展报告2016》。名医主刀作为<strong class="text18">唯一一家移动医疗</strong>创业公司入选。名医主刀在配置闲置床位和医生碎片时间的过程中，践行着分享经济理念。</div>
                                 <div class="tooltip-arrow tooltip-arrow-right left-15 top-1"></div>
                             </div>
-                             <div class="row event-160108">
+                            <div class="row event-160108">
                                 <div class="col-md-6 pt142 font-20p color-blue mt5">
                                     2016年1月
                                 </div>

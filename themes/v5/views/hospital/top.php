@@ -1,6 +1,6 @@
 <?php
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/searchhospital.css");
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchhospital.js', CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchhospital.js?v=' . time(), CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlHopitalSearch = $this->createUrl('hospital/top');
 $urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5));
@@ -26,7 +26,7 @@ $page = Yii::app()->request->getQuery('page', '');
             <div class="border-gray department-list mt20">
 
             </div>
-             <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage;?>/homeslider/remebot.png"></a></div>
+            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>/homeslider/remebot.png"></a></div>
         </div>
         <div class="col-sm-10">
             <div class="row">

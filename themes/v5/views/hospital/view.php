@@ -43,7 +43,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                 <div class="col-lg-9 col-sm-8 col-xs-12">
                     <div class="hdecs">
                         <div class="container-title"><?php echo $hName; ?></div>
-                        <span class="hdesc">
+                        <div class="hdesc">
                             <?php
                             if (mb_strlen($desc) > 900) {
                                 $subdesc = mb_substr($desc, 0, 300, 'utf-8');
@@ -56,18 +56,18 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                             $lastdesc = mb_substr($desc, 300, mb_strlen($desc), 'utf-8');
                             echo $lastdesc;
                             ?>
-                        </span>
+                        </div>
                         <?php if (mb_strlen($desc) > 900) { ?>
-                            <span class="pull-right more-desc"><a href="javascript:void(0);" alt="查看全部">详情&nbsp;<i class="fa fa fa-caret-down"></i></a></span>
+                            <div class="pull-right more-desc"><a href="javascript:void(0);" alt="查看全部">详情&nbsp;<i class="fa fa fa-caret-down"></i></a></div>
                         <?php } ?>
-                        <span class="pull-right retract"><a href="javascript:void(0);" alt="查看全部">收起&nbsp;<i class="fa fa fa-caret-up"></i></a></span>
+                        <div class="pull-right retract"><a href="javascript:void(0);" alt="查看全部">收起&nbsp;<i class="fa fa fa-caret-up"></i></a></div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-4">
                     <div class=" pl10 pb20">
                         <div class="mt20"><img src="<?php echo $urlImage; ?>" alt="<?php echo $hName; ?>"></div>
                         <div class="text-right pr15">
-<!--                            <div class="mt10 hospitalurl"><a class="text12 color-green" href="<?php echo $urlWebsite; ?>" target="_blank"><?php echo '查看官网'; ?></a></div>-->
+<!--                            <div class="mt10 hospitalurl"><a class="text12 color-green" href="<?php //echo $urlWebsite;   ?>" target="_blank"><?php echo '查看官网'; ?></a></div>-->
                         </div>
                         <div class="pr10">
                         </div>
@@ -105,7 +105,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                                 $j = 1;
                                 foreach ($dept as $faculty) {
                                     $description = $faculty->description == '' ? '暂无信息' : $faculty->description;
-                                    echo '<div role="tabpanel" class="tab-pane" id="' . $deptClass . $j . '"><div class="dept-title"><div class="pull-left mr100">选择科室：' . $faculty->name . '</div><div><button class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' . $hName . '" data-dept="' . $faculty->name . '" data-hospitalid="' . $hid . '" data-deptid="' . $faculty->id . '" data-toggle="modal" data-target="#booking">预 约</button></div><div class="clearfix"></div><div class="divide-gray"></div></div><div class="faculty-desc">' . $description . '</div></div>';
+                                    echo '<div role="tabpanel" class="tab-pane" id="' . $deptClass . $j . '"><div class="dept-title"><div class="pull-left">选择科室：<span class="color-666">' . $faculty->name . '</span></div><div class="text-right pr10"><button style="width:110px;" class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' . $hName . '" data-dept="' . $faculty->name . '" data-hospitalid="' . $hid . '" data-deptid="' . $faculty->id . '" data-toggle="modal" data-target="#booking">预 约</button></div><div class="clearfix"></div><div class="divide-gray"></div></div><div class="faculty-desc">' . $description . '</div></div>';
                                     $j++;
                                 }
                                 ?>
@@ -115,7 +115,6 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                         <div class="clearfix"></div>
                         <div class="divide-gray"></div>
                         <div class="row mt20">
-
                             <?php
                             foreach ($departments as $key => $dept) {
                                 if ($key == '外科') {
@@ -137,7 +136,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                                     $fuacultyName = $faculty->name;
                                     if (mb_strlen($faculty->name) > 18) {
                                         $fuacultyName = mb_substr($fuacultyName, 0, 5, 'utf-8');
-                                        $fuacultyName=$fuacultyName.'<span>...</span>';
+                                        $fuacultyName = $fuacultyName . '<span>...</span>';
                                     } else {
                                         $fuacultyName = $faculty->name;
                                     }
@@ -146,7 +145,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                                     } else {
                                         $mt10 = 'mt10';
                                     }
-                                    echo '<li role="presentation" class="second-faculty ' . $mt10 . '"><a href="#' . $deptClass . $i . '" aria-controls="' . $deptClass . $i . '" role="tab" data-toggle="tab" title='.$faculty->name.'>' . $fuacultyName . '</a></li>';
+                                    echo '<li role="presentation" class="second-faculty ' . $mt10 . '"><a href="#' . $deptClass . $i . '" aria-controls="' . $deptClass . $i . '" role="tab" data-toggle="tab" title=' . $faculty->name . '>' . $fuacultyName . '</a></li>';
                                     $i++;
                                 }
                                 echo '</ul></div></div></div>';
@@ -159,44 +158,36 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                 </div>
                 <div class="col-lg-3 sol-sm-4 col-xs-12 pl0 pr0">
                     <div class="flowChart">
-                        <div class="text-center step">
-                            <div>提交预约申请</div>
-                            <div>（8小时内）</div>   
-                        </div>
-                        <div class="text-center mt10 mb10"><img src="<?php echo $urlResImage; ?>/hospital/arrow.png"></div>
-                        <div class="text-center step">
-                            <div>名医助手联系患者</div>
-                            <div>确认预约信息</div>
-                        </div>
-                        <div class="text-center mt10 mb10"><img src="<?php echo $urlResImage; ?>/hospital/arrow.png"></div>
-                        <div class="text-center step">
-                            <div>名医助手为患者整理病历资料，</div>
-                            <div>根据病情匹配对症专家（两个工作日内）</div>
-                        </div>
-                        <div class="text-center mt10 mb10"><img src="<?php echo $urlResImage; ?>/hospital/arrow.png"></div>
-                        <div class="text-center step">
-                            <div>平台工作人员与患者沟通，</div>
-                            <div>确定就诊时间</div>
-                        </div>
-                        <div class="text-center mt10 mb10"><img src="<?php echo $urlResImage; ?>/hospital/arrow.png"></div>
-                        <div class="text-center step">
-                            <div>携带相关证件资料，</div>
-                            <div>在预约时间由名医助手陪护至医院就诊</div>
-                        </div>
-                        <div class="text-center"><img src="<?php echo $urlResImage; ?>/hospital/branch.png"></div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div>就诊结果可以手术</div>
-                                <div class="text-center step">
-                                    <div>安排闲置</div>
-                                    <div>床位排期手术</div>
-                                </div>
+                        <div class="title">服务流程介绍</div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-sm-3"><span class="step">STEP1</span></div>
+                                <div class="col-sm-9 pl0"><span>提交预约申请</span><span class="mark" data-toggle="tooltip" data-placement="top" title="相关检查资料：
+核磁（MRI）、CT、病理、B超及相关诊断检验报告等）">?</span></div>
                             </div>
-                            <div class="col-sm-6">
-                                <div>就诊结果不宜手术</div>
-                                <div class="text-center step">
-                                    <div>专家给出</div>
-                                    <div>参考意见</div>
+                            <div class="row mt20">
+                                <div class="col-sm-3"><span class="step">STEP2</span></div>
+                                <div class="col-sm-9 pl0"><span>名医助手联系患者确认预约信息</span><span class="color-555">（8小时内）</span></div>
+                            </div>
+                            <div class="row mt20">
+                                <div class="col-sm-3"><span class="step">STEP3</span></div>
+                                <div class="col-sm-9 pl0"><span>名医助手为患者整理病历资料，根据病情匹配对症专家</span><span class="color-555">（2个工作日内）</span></div>
+                            </div>
+                            <div class="row mt20">
+                                <div class="col-sm-3"><span class="step">STEP4</span></div>
+                                <div class="col-sm-9 pl0"><span>平台工作人员与患者沟通，确定就诊时间</span></div>
+                            </div>
+                            <div class="row mt20">
+                                <div class="col-sm-3"><span class="step">STEP5</span></div>
+                                <div class="col-sm-9 pl0"><span>携带相关证件资料，在预约时间由名医助手陪护至医院就诊</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3"><span class="step"></span></div>
+                                <div class="col-sm-9 pl0">
+                                    <div class="mt10"><strong>就诊结果可以手术</strong></div>
+                                    <div class="color-666"><span>（安排闲置床位排期手术）</span></div>
+                                    <div><strong>就诊结果不宜手术</strong></div>
+                                    <div class="color-666"><span>（专家给出参考意见）</span></div>
                                 </div>
                             </div>
                         </div>
@@ -233,6 +224,9 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
             $('.first-faculty').removeClass("active");
             $(this).parents('.deptgroup').find('.first-faculty').addClass("active");
         });
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
     });
 
 </script>

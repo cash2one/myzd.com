@@ -30,7 +30,7 @@
 .hinfo img{display: block;margin: 0 auto;}
 .hdesc{font-size: 15px;text-indent: 2em;line-height: 1.7;margin-top: 10px;text-align:justify; text-justify: inter-ideograph;}
 .hinfo img{width: 100%;}
-.hinfo .more-desc,.hinfo .retract{margin-top: 3px;}
+.hinfo .more-desc,.hinfo .retract{margin-top: -24px;}
 .hinfo .more-desc>a,.hinfo .retract>a{color: #EFA429;}
 .hinfo .more-desc .fa,.hinfo .retract .fa{font-size: 18px;}
 .hinfo .decs-last,.hinfo .retract{display: none;}
@@ -49,8 +49,16 @@
 .nav-tabs{border:none;}
 .divide-color-ddd{border-top:1px solid #ddd;}
 .dept-title{font-size:24px;line-height:24px;height:24px;}
-.flowChart{border: 1px solid #b5b5b5;padding:25px 10px;margin-top: 18px;}
-.flowChart .step{background-color:#a0d6d5;border-radius:4px;color:#fff;height:55px;padding-top:7px;}
+.flowChart{margin-top:-6px;}
+.flowChart .content .step{color:#666;font-weight:bold;}
+.flowChart .title{font-size:24px;margin-bottom:3px;}
+.flowChart .content{border: 1px solid #b5b5b5;padding:25px 10px;}
+.flowChart .content .tooltip-inner{color:#545454;background-color:#e5e6e6;}
+.flowChart .content .tooltip.top .tooltip-arrow{border-top-color:#e5e6e6;}
+.flowChart .content .mark{margin-top:-5px;background-color:#036eb8;display:inline-block;border-radius:16px;height:16px;width:16px;color:#fff;text-align:center;font-weight:bold;margin-left:5px;line-height:13px;font-size:12px;}
+.flowChart .content .mark:hover{cursor:pointer;}
+.flowChart .content .color-555{color:#555;}
+.flowChart .content .tooltip.in{opacity:1;}
 /*.departments{padding: 10px;}
 .departments h4{padding: 5px 25px;background-color: #b1dcd6;color: #19aea5;}
 .dept>a:hover{text-decoration: underline;color: #19aea5;}
@@ -89,13 +97,8 @@
 .hospital .departments .nav-tabs>li>a:hover{color:#333!important;}
 .hospital .departments .nav-tabs>li.active>a,.hospital .departments .nav-tabs>li.active>a:hover{background-color:#f8b62c!important;color:#fff!important;}
 .hospital .departments .nav-tabs>li>a:hover,.hospital .departments .nav-tabs>li:hover>a{color:#fff;}
-.hospital .departments .faculty-desc{min-height:220px;margin-top:20px;}
+.hospital .departments .faculty-desc{min-height:220px;margin-top:20px;text-align:justify;text-indent:2em;}
 .hospital .departments .nav-tabs>li>a:hover{background-color: #dcdcdd!important;}
 .color-036eb8{color:#036eb8;}
+.color-666{color:#666;}
 .mr100{margin-right:100px;}
-/*.hospital .departments .*/
-/*蓝色字色值：036eb8
-点亮科室绿色背景：a0d6d5
-灰色背景：eeefef
-黄色背景：f8b62c
-二级科室字体：333*/

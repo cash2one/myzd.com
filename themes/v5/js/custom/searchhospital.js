@@ -6,7 +6,7 @@ function setHospitalHtml(data, urlHospitalView) {
         for (var i = 0; i < hospitals.length; i++) {
             var hospital = hospitals[i];
             var hp_dept_desc = hospital.hp_dept_desc == '' ? '暂无信息' : hospital.hp_dept_desc;
-            hp_dept_desc = hp_dept_desc.length > 90 ? hp_dept_desc.substr(0, 90)+'<span class="ellipsis">...</span><span class="dese-last">'+hp_dept_desc.substr(90)+'</span>' : hp_dept_desc;
+            hp_dept_desc = hp_dept_desc.length > 105 ? hp_dept_desc.substr(0, 105)+'<span class="ellipsis">...</span><span class="dese-last">'+hp_dept_desc.substr(105)+'</span>' : hp_dept_desc;
             innerHtml += '<div class="row mt30">' +
                     '<div class="col-sm-3 col-lg-2"><a target="_blank" href="' + urlHospitalView + hospital.hospital_id + '"><img class="img-responsive" src="' + hospital.imageUrl + '"></a></div>' +
                     '<div class="col-sm-9 col-lg-10 ml-30">' +
