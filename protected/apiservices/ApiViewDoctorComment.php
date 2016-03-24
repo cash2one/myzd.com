@@ -62,10 +62,10 @@ class ApiViewDoctorComment extends EApiViewService {
         foreach ($models as $model) {
             $data = new stdClass();
             $data->userName = $model->user_name;
-            $data->service = $model->service;
-            $data->postOperative = $model->post_operative;
+            $data->effect = $model->effect;
+            $data->doctorAttitude = $model->doctor_attitude;
             $data->commentText = $model->comment_text;
-            $data->detail = $model->detail;
+            $data->diseaseDetail = $model->disease_detail;
             $data->dateCreated = $model->getDateCreated();
             $this->comments[] = $data;
         }

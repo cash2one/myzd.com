@@ -8,14 +8,19 @@
  * @property integer $user_id
  * @property string $user_name
  * @property integer $bk_type
+ * @property integer $doctor_id
  * @property integer $bk_id
- * @property integer $service
- * @property integer $post_operative
+ * @property integer $effect
+ * @property integer $doctor_attitude
  * @property string $comment_text
+ * @property string $disease_detail
  * @property integer $display_order
  * @property string $date_created
  * @property string $date_updated
  * @property string $date_deleted
+ *
+ * The followings are the available model relations:
+ * @property User $user
  */
 class Comment extends EActiveRecord {
 
@@ -34,14 +39,14 @@ class Comment extends EActiveRecord {
         // will receive user inputs.
         return array(
             array('date_created', 'required'),
-            array('user_id, bk_type, bk_id, service, post_operative, display_order, doctor_id', 'numerical', 'integerOnly' => true),
+            array('user_id, bk_type, doctor_id, bk_id, effect, doctor_attitude, display_order', 'numerical', 'integerOnly' => true),
             array('user_name', 'length', 'max' => 30),
             array('comment_text', 'length', 'max' => 1000),
-            array('detail', 'length', 'max' => 200),
-            array('date_updated, date_deleted, detail', 'safe'),
+            array('disease_detail', 'length', 'max' => 200),
+            array('date_updated, date_deleted', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, user_id, user_name, bk_type, bk_id, service, post_operative, comment_text, display_order, date_created, date_updated, date_deleted', 'safe', 'on' => 'search'),
+            array('id, user_id, user_name, bk_type, doctor_id, bk_id, effect, doctor_attitude, comment_text, disease_detail, display_order, date_created, date_updated, date_deleted', 'safe', 'on' => 'search'),
         );
     }
 
@@ -52,6 +57,7 @@ class Comment extends EActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
+            'user' => array(self::BELONGS_TO, 'User', 'user_id'),
         );
     }
 
@@ -60,15 +66,16 @@ class Comment extends EActiveRecord {
      */
     public function attributeLabels() {
         return array(
-            'id' => '主键',
-            'user_id' => '关联user',
+            'id' => 'ID',
+            'user_id' => 'User',
             'user_name' => 'User Name',
-            'bk_type' => '预约类型',
-            'bk_id' => '关联预约表',
-            'doctor_id' => '关联医生',
-            'service' => '服务效率',
-            'post_operative' => '术后效果',
-            'comment_text' => '其他分享与评价',
+            'bk_type' => 'Bk Type',
+            'doctor_id' => 'Doctor',
+            'bk_id' => 'Bk',
+            'effect' => 'Effect',
+            'doctor_attitude' => 'Doctor Attitude',
+            'comment_text' => 'Comment Text',
+            'disease_detail' => 'Disease Detail',
             'display_order' => 'Display Order',
             'date_created' => 'Date Created',
             'date_updated' => 'Date Updated',
@@ -97,10 +104,12 @@ class Comment extends EActiveRecord {
         $criteria->compare('user_id', $this->user_id);
         $criteria->compare('user_name', $this->user_name, true);
         $criteria->compare('bk_type', $this->bk_type);
+        $criteria->compare('doctor_id', $this->doctor_id);
         $criteria->compare('bk_id', $this->bk_id);
-        $criteria->compare('service', $this->service);
-        $criteria->compare('post_operative', $this->post_operative);
+        $criteria->compare('effect', $this->effect);
+        $criteria->compare('doctor_attitude', $this->doctor_attitude);
         $criteria->compare('comment_text', $this->comment_text, true);
+        $criteria->compare('disease_detail', $this->disease_detail, true);
         $criteria->compare('display_order', $this->display_order);
         $criteria->compare('date_created', $this->date_created, true);
         $criteria->compare('date_updated', $this->date_updated, true);

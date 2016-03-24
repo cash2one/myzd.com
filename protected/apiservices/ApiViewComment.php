@@ -49,10 +49,10 @@ class ApiViewComment extends EApiViewService {
 
     private function setComment($model) {
         $data = new stdClass();
-        $data->service = $model->service;
-        $data->postOperative = $model->post_operative;
+        $data->effect = $model->effect;
+        $data->doctorAttitude = $model->doctor_attitude;
         $data->commentText = $model->comment_text;
-        $data->detail = $model->detail;
+        $data->diseaseDetail = $model->disease_detail;
         $data->dateCreated = $model->date_created;
         $this->comment = $data;
     }
