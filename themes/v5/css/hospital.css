@@ -49,11 +49,12 @@
 .nav-tabs{border:none;}
 .divide-color-ddd{border-top:1px solid #ddd;}
 .dept-title{font-size:24px;line-height:24px;height:24px;}
-.flowChart{margin-top:-6px;}
+.dept-title .bookingBtn{font-size:18px;width:110px;}
+.flowChart{margin-top:-2px;}
 .flowChart .content .step{color:#666;font-weight:bold;}
 .flowChart .title{font-size:24px;margin-bottom:3px;}
 .flowChart .content{border: 1px solid #b5b5b5;padding:25px 10px;}
-.flowChart .content .tooltip-inner{color:#545454;background-color:#e5e6e6;}
+.flowChart .content .tooltip-inner{color:#545454;background-color:#e5e6e6;border-radius:5px;}
 .flowChart .content .tooltip.top .tooltip-arrow{border-top-color:#e5e6e6;}
 .flowChart .content .mark{margin-top:-5px;background-color:#036eb8;display:inline-block;border-radius:16px;height:16px;width:16px;color:#fff;text-align:center;font-weight:bold;margin-left:5px;line-height:13px;font-size:12px;}
 .flowChart .content .mark:hover{cursor:pointer;}

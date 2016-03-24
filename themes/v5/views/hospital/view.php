@@ -105,7 +105,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                                 $j = 1;
                                 foreach ($dept as $faculty) {
                                     $description = $faculty->description == '' ? '暂无信息' : $faculty->description;
-                                    echo '<div role="tabpanel" class="tab-pane" id="' . $deptClass . $j . '"><div class="dept-title"><div class="pull-left">选择科室：<span class="color-666">' . $faculty->name . '</span></div><div class="text-right pr10"><button style="width:110px;" class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' . $hName . '" data-dept="' . $faculty->name . '" data-hospitalid="' . $hid . '" data-deptid="' . $faculty->id . '" data-toggle="modal" data-target="#booking">预 约</button></div><div class="clearfix"></div><div class="divide-gray"></div></div><div class="faculty-desc">' . $description . '</div></div>';
+                                    echo '<div role="tabpanel" class="tab-pane" id="' . $deptClass . $j . '"><div class="dept-title"><div class="pull-left">选择科室：<span class="color-666">' . $faculty->name . '</span></div><div class="text-right pr10"><button class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' . $hName . '" data-dept="' . $faculty->name . '" data-hospitalid="' . $hid . '" data-deptid="' . $faculty->id . '" data-toggle="modal" data-target="#booking"><div>预 约</div></button></div><div class="clearfix"></div><div class="divide-gray"></div></div><div class="faculty-desc">' . $description . '</div></div>';
                                     $j++;
                                 }
                                 ?>

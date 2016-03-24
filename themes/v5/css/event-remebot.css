@@ -10,6 +10,7 @@
 #remebot .content .contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
 #remebot .content .roboticon-img{margin-top:-28px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/robot.png);background-repeat: no-repeat;}
 #remebot .content .expert-list{padding:0px 10px 10px 10px;}
+#remebot .content .expert-list:hover{background-color:#f7f7f7;box-shadow:2px 2px 5px #9f9e9e;}
 #remebot .content .hpDeptName{color: #f39700;}
 #remebot .content .docdesc{height: 9em;overflow-y: hidden;}
 #remebot .content .title-line-s{border-bottom:1px solid #447cb7;width:100%;margin-top:-1px;}

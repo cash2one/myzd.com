@@ -79,7 +79,7 @@ $urlDoctor = $this->createUrl('doctor/');
                         ?>
                         <div>
                             <div class="docinfo-title experience">执业经历</div>
-                            <div class="pl30">
+                            <div class="pl30 experience-text">
                                 <?php echo $doctor->careerExp; ?>
                             </div>
                         </div> 
@@ -256,7 +256,7 @@ $urlDoctor = $this->createUrl('doctor/');
             var detail = comment[i].diseaseDetail == null ? '' : comment[i].diseaseDetail;
             var userName = comment[i].userName == null ? '&nbsp;' : comment[i].userName;
             var commentText = comment[i].commentText.length > 90 ? comment[i].commentText.substr(0, 90) + '<span class="ellipsis">...</span><span class="dese-last" style="display:none;">' + comment[i].commentText.substr(90) + '</span><span class="dese-operate pull-right"><span class="desc-more">详情 <i class="fa fa-angle-down"></i></span><span class="desc-retract" style="display:none">收起 <i class="fa fa-angle-up"></i></span></span>' : comment[i].commentText;
-            innerHtml += '<div class="pl30 row mt20"><div class = "col-sm-2"><img src = "<?php echo $urlResImage; ?>doctor/user.png"><div class = "text-center text12">' + userName + '</div></div>' +
+            innerHtml += '<div class="pl30 row mt20"><div class = "col-sm-2 pr0"><div class="text-center"><img src = "<?php echo $urlResImage; ?>doctor/user.png"></div><div class = "text-center text12">' + userName + '</div></div>' +
                     '<div class = "col-sm-3"><div><strong>主刀专家：<?php echo $doctor->name; ?></strong></div><div><strong>确诊疾病：' + detail + '</strong></div>' +
                     '<div class = "mt10 text14">治疗效果：<span>';
             for (var j = 1; j < 6; j++) {
@@ -276,7 +276,7 @@ $urlDoctor = $this->createUrl('doctor/');
             }
             var date = comment[i].dateCreated.substr(0, 11);
             innerHtml += '</span></div></div>' +
-                    '<div class="col-sm-7"><div class = "comment-desc">' + commentText + '</div><div>' + date + '</div></div>' +
+                    '<div class="col-sm-7 pl0"><div class = "comment-desc">' + commentText + '</div><div class="mt15">' + date + '</div></div>' +
                     '<div class = "clearfix"></div>' +
                     '<div class = "divide-gray mt10"></div>' +
                     '</div> ';

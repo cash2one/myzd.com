@@ -4,18 +4,20 @@
 .mt70{margin-top:70px;}
 .mt51{margin-top:51px;}
 .text-indent2em{text-indent:2em;}
-#prince .main-content{padding-left:105px;padding-right:105px;}
+#site-content{padding-bottom:0!important;}
+#prince .main-content{padding:50px 105px 100px;border-left:1px solid #93d2db;border-right:1px solid #93d2db;}
 #prince .main-content .title{background-color:#2896c3;color:#fff;font-size:24px;border-radius:4px;display:inline-block;width:300px;height:46px;line-height:46px;letter-spacing:5px;}
 #prince .main-content .white-block{background-color:#fff;width:40px;height:46px;color:#fff;display:inline-block;}
 #prince .main-content .title-line{border-top:1px solid #2896c3;margin-top:-23px;}
 #prince .main-content .number-tag{font-size:20px;text-align:center;line-height:25px;background-color:#2896c3;border-radius:25px;width:25px;height:25px;font-weight:bold;color:#fff;display:inline-block;}
 #prince .main-content .blue-text{font-size:20px;color:#2896c3;line-height:2em;}
 #prince .main-content .blue-text .tag{background-color:#fff000;color:#2896c3;font-size:20px;font-weight:bold;padding:0 5px;}
-#prince .main-content .blue-text .tag-blue{background-color:#fff000;color:#2896c3;width:170px;display:inline-block;font-weight:bold;}
+#prince .main-content .blue-text .tag-blue{color:#2896c3;display:inline-block;font-weight:bold;}
 #prince .main-content .process-text{color:#777;line-height:2em;}
 #prince .main-content .process-text .big{font-weight:bold;font-size:20px;}
 .contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
 .roboticon-img{margin-top:-28px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/robot.png);background-repeat: no-repeat;}
 .expert-list{padding:0px 10px 10px 10px;}
+.expert-list:hover{background-color:#f7f7f7;box-shadow:2px 2px 5px #9f9e9e;}
 .hpDeptName{color: #f39700;}
 .docdesc{height: 9em;overflow-y: hidden;}

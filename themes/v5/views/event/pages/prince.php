@@ -6,7 +6,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
     <div class="container">
         <img src="<?php echo $urlResImage; ?>event/prince/header.png" class="img-responsive" />
         <div class="main-content">
-            <div class="text-center mt50">
+            <div class="text-center">
                 <span class="white-block"></span><span class="title">故事是这样的</span><span class="white-block"></span>                         
             </div>   
             <div class="title-line"></div>
@@ -59,11 +59,11 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="title-line"></div>
             <div class="text-center blue-text mt30 mb50">
                 如果您的身边也有像王子一样患扭转痉挛症的朋友或亲人<br/>
-                可拨打名医主刀热线电话<span class="tag-blue ml10">400-119-7900</span><br/>
+                可拨打名医主刀热线电话<span class="tag-blue">400-119-7900</span><br/>
                 预约Remebot机器人进行手术治疗<br/>
                 给他更健康的生活！
             </div>
-            <div class="row mb50">
+            <div class="row">
                 <div class="col-md-4"><a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3208')); ?>">
                         <div class="border-gray expert-list">
                             <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03208.jpg" alt=""></div>

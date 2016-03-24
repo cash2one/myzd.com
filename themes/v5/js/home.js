@@ -51,7 +51,7 @@ function setDoctorHtml(data, urlDoctorView) {
                         '<div class="expName color-black">' + doctor.name + '</div>' +
                         '<div class="expTitle">' + doctor.mTitle + ' ' + doctor.aTitle + '</div>' +
                         '<div class="expHospital mt30">' + doctor.hpName + '</div>' +
-                        '<div class="mt10 color-black mb50">' + doctor.hpDeptName + '</div>' +
+                        '<div class="mt10 color-green mb50">' + doctor.hpDeptName + '</div>' +
                         '</div>' +
                         '</a>' +
                         '</div>';
