@@ -5,6 +5,9 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
 $doctor = $data->results->doctor;
 $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
+$urlajaxComment = $this->createUrl('comment/ajaxDoctorComment', array('pagesize' => 3, 'doctorId' => ''));
+$page = Yii::app()->request->getQuery('page', '');
+$urlDoctor = $this->createUrl('doctor/');
 ?>
 <div class="contaier-fluid bg-green">
     <div class="container">
@@ -110,49 +113,23 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
                             <?php
                         }
                     }
-                    ?>           
-                    <!--                        <div class="mt40 team">
-                                                <span class="docinfo-title comment" >患者评价</span><div class="pull-left team-line"></div><div class="clearfix"></div>                        
-                                            </div>
-                                            <div class="pl30">
-                                                <div class="pull-left"><img src="<?php //echo $urlResImage;   ?>doctor/user.png"><div class="text-center text12">1221</div></div>
-                                                <div class="pull-left ml10 mr30"><div><strong>主刀专家：刘跃武</strong></div>
-                                                    <div><strong>确诊疾病：甲状腺肿瘤</strong></div>
-                                                    <div class="mt10 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
-                                                    <div class="text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
-                                                </div>
-                                                <div class="mt20 pl30">名医主刀非常专业名医主刀非常专业名医主刀非常专业名医主刀非常专业刀非常专业刀非常专业刀非常专业</div>
-                                                <div class="clearfix"></div>
-                                                <div class="divide-gray mt10"></div>
-                                            </div>
-                                            <div class="pl30">
-                                                <div class="pull-left"><img src="<?php //echo $urlResImage;   ?>doctor/user.png"><div class="text-center text12">1221</div></div>
-                                                <div class="pull-left ml10 mr30"><div><strong>主刀专家：刘跃武</strong></div>
-                                                    <div><strong>确诊疾病：甲状腺肿瘤</strong></div>
-                                                    <div class="mt10 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
-                                                    <div class="text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
-                                                </div>
-                                                <div class="mt20 pl30">名医主刀非常专业名医主刀非常专业名医主刀非常专业名医主刀非常专业刀非常专业刀非常专业刀非常专业</div>
-                                                <div class="clearfix"></div>
-                                                <div class="divide-gray mt10"></div>
-                                            </div>
-                                            <div class="pl30">
-                                                <div class="pull-left"><img src="<?php //echo $urlResImage;   ?>doctor/user.png"><div class="text-center text12">1221</div></div>
-                                                <div class="pull-left ml10 mr30"><div><strong>主刀专家：刘跃武</strong></div>
-                                                    <div><strong>确诊疾病：甲状腺肿瘤</strong></div>
-                                                    <div class="mt10 text14">服务效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
-                                                    <div class="text14">手术效果：<span class="color-yellow-f8b62c"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>	
-                                                </div>
-                                                <div class="mt20 pl30">名医主刀非常专业名医主刀非常专业名医主刀非常专业名医主刀非常专业刀非常专业刀非常专业刀非常专业</div>
-                                                <div class="clearfix"></div>
-                                                <div class="divide-gray mt10"></div>
-                                            </div>-->                 
+                    ?>
+                    <div class="comment-text">
+
+                    </div>
+                    <div class="mt30">
+                        <nav class="text-center">
+                            <ul class="pagination">
+
+                            </ul>
+                        </nav>
+                    </div>
                 </section>									
             </div> 
         </div>
         <div class="col-sm-4 doctor-menu">
             <div class="mt20 text-center">
-                <div class="bookingBtn doc-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>"><div class="ml10"><img src="<?php echo $urlResImage; ?>/doctor/icon-booking.png"><span class="ml15">立即预约</span></div></div>
+                <div class="bookingBtn doc-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>"><div class="ml10"><img src="<?php echo $urlResImage; ?>/doctor/icon-booking.png"><span class="ml15">预约<?php echo $doctor->name; ?></span></div></div>
             </div>
             <?php
             if (isset($doctor->reasons) && arrayNotEmpty($doctor->reasons)) {
@@ -171,37 +148,36 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
                     </div>
                 </div>
             <?php }
-            ?> 
-
-            <!--                <div class="mt20 text18">相关资讯</div> 
-                            <div class="border-gray news">
-                                <div class="mt10 mb10">
-                                    <div class="pull-left title">【媒体报道】</div>
-                                    <div>福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选</div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="mt10 mb10">
-                                    <div class="pull-left title">【媒体报道】</div>
-                                    <div>福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选</div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="mt10 mb10">
-                                    <div class="pull-left title">【媒体报道】</div>
-                                    <div>福布斯发布亚洲年轻领袖榜单</div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="mt10 mb10">
-                                    <div class="pull-left title">【媒体报道】</div>
-                                    <div>福布斯发布亚洲年轻领袖榜单</div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>-->
+            ?>
+            <!--                            <div class="mt20 text18">相关资讯</div> 
+                                        <div class="border-gray news">
+                                            <div class="mt10 mb10">
+                                                <div class="pull-left title">【媒体报道】</div>
+                                                <div>福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="mt10 mb10">
+                                                <div class="pull-left title">【媒体报道】</div>
+                                                <div>福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="mt10 mb10">
+                                                <div class="pull-left title">【媒体报道】</div>
+                                                <div>福布斯发布亚洲年轻领袖榜单</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="mt10 mb10">
+                                                <div class="pull-left title">【媒体报道】</div>
+                                                <div>福布斯发布亚洲年轻领袖榜单</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>-->
 
             <div class="rec-title">
                 <span>其他推荐</span>
             </div>
-            <div class="border-gray mt10">
-                <div class="rec-doc pl20 pr20">
+            <div class="border-gray">
+                <div class="rec-doc">
                     <?php
                     if (isset($data->results->related) && is_array($data->results->related)) {
                         $related = $data->results->related;
@@ -212,14 +188,16 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
                             }
                             ?>
                             <a href="<?php echo $this->createUrl('doctor/view', array('id' => $relateddoc->id)); ?>" target='_blank'>
-                                <div class="expInfo <?php echo $last; ?>">
-                                    <div class="pull-left mr10" >
-                                        <img src="<?php echo $relateddoc->imageUrl; ?>"/>
-                                    </div>	
-                                    <div class="expName pt20"><span class="color-black"><?php echo $relateddoc->name; ?></span>&nbsp;&nbsp;<span class="color-gray"><?php echo $relateddoc->mTitle; ?> <?php echo $relateddoc->aTitle; ?></span></div>
-                                    <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hpDeptName; ?></div>
-                                    <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hospitalName; ?></div>
-                                    <div class="clearfix"></div>
+                                <div class="expInfo ">
+                                    <div class="content <?php echo $last; ?>">
+                                        <div class="pull-left mr10" >
+                                            <img src="<?php echo $relateddoc->imageUrl; ?>"/>
+                                        </div>	
+                                        <div class="expName pt5"><span class="color-black"><?php echo $relateddoc->name; ?></span>&nbsp;&nbsp;<span class="color-gray"><?php echo $relateddoc->mTitle; ?> <?php echo $relateddoc->aTitle; ?></span></div>
+                                        <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hpDeptName; ?></div>
+                                        <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hospitalName; ?></div>
+                                        <div class="clearfix"></div>
+                                    </div>
                                 </div>
                             </a>  
                             <?php
@@ -236,9 +214,154 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
 <?php $this->renderPartial("//booking/formModal"); ?>
 <script>
     $(document).ready(function () {
+        $condition = new Array();
+        $condition["page"] = '<?php echo $page == '' ? 1 : $page; ?>';
         //生成大小两个二维码
         jQuery('#qrcode-sm').qrcode({width: 32, height: 32, text: '<?php echo $urlDoctorView . $doctor->id ?>'});
         jQuery('#qrcode-weixin').qrcode({width: 94.5, height: 94.5, text: '<?php echo $urlDoctorView . $doctor->id ?>'});
-
+        $doctorId = '<?php echo $doctor->id ?>';
+        ajaxComment($doctorId);
     });
+    function ajaxComment(doctorId) {
+        var urlajaxComment = '<?php echo $urlajaxComment; ?>' + doctorId + setUrlCondition();
+        $.ajax({
+            url: urlajaxComment,
+            success: function (data) {
+                console.log(data.results.comments);
+                if (data.results.dataCount > 3) {
+                    setPages(data);
+                }
+                setLocationUrl();
+                setComment(data);
+            }
+        });
+    }
+    //组合url参数
+    function setUrlCondition() {
+        var urlCondition = "";
+        for ($key in $condition) {
+            if ($condition[$key] && $condition[$key] !== "") {
+                urlCondition += "&" + $key + "=" + $condition[$key];
+            }
+        }
+        return urlCondition;
+    }
+    function setComment(data) {
+        var innerHtml = '';
+        var comment = data.results.comments;
+        if (comment.length != 0) {
+            innerHtml += '<div class="mt40 team"><span class="docinfo-title comment" >患者评价</span><div class="pull-left team-line"></div><div class="clearfix"></div></div>';
+        }
+        for (var i = 0; i < comment.length; i++) {
+            var detail = comment[i].diseaseDetail == null ? '' : comment[i].diseaseDetail;
+            var userName = comment[i].userName == null ? '&nbsp;' : comment[i].userName;
+            var commentText = comment[i].commentText.length > 90 ? comment[i].commentText.substr(0, 90) + '<span class="ellipsis">...</span><span class="dese-last" style="display:none;">' + comment[i].commentText.substr(90) + '</span><span class="dese-operate pull-right"><span class="desc-more">详情 <i class="fa fa-angle-down"></i></span><span class="desc-retract" style="display:none">收起 <i class="fa fa-angle-up"></i></span></span>' : comment[i].commentText;
+            innerHtml += '<div class="pl30 row mt20"><div class = "col-sm-2"><img src = "<?php echo $urlResImage; ?>doctor/user.png"><div class = "text-center text12">' + userName + '</div></div>' +
+                    '<div class = "col-sm-3"><div><strong>主刀专家：<?php echo $doctor->name; ?></strong></div><div><strong>确诊疾病：' + detail + '</strong></div>' +
+                    '<div class = "mt10 text14">治疗效果：<span>';
+            for (var j = 1; j < 6; j++) {
+                if (j <= comment[i].effect) {
+                    innerHtml += '<i class="fa fa-star active ml40 color-yellow-f8b62c"></i>';
+                } else {
+                    innerHtml += '<i class="fa fa-star-o ml40 "></i>';
+                }
+            }
+            innerHtml += '</span ></div><div class = "text14">医生态度：<span>';
+            for (var k = 1; k < 6; k++) {
+                if (k <= comment[i].doctorAttitude) {
+                    innerHtml += '<i class="fa fa-star active ml40 color-yellow-f8b62c"></i>';
+                } else {
+                    innerHtml += '<i class="fa fa-star-o ml40 "></i>';
+                }
+            }
+            var date = comment[i].dateCreated.substr(0, 11);
+            innerHtml += '</span></div></div>' +
+                    '<div class="col-sm-7"><div class = "comment-desc">' + commentText + '</div><div>' + date + '</div></div>' +
+                    '<div class = "clearfix"></div>' +
+                    '<div class = "divide-gray mt10"></div>' +
+                    '</div> ';
+        }
+        $('.comment-text').html(innerHtml);
+        $('.dese-operate').click(function () {
+            $(this).parents('.comment-desc').find('.ellipsis').toggle();
+            $(this).parents('.comment-desc').find('.dese-last').toggle();
+            $(this).parents('.comment-desc').find('.desc-more').toggle();
+            $(this).parents('.comment-desc').find('.desc-retract').toggle();
+        });
+    }
+    /**** 设置分页 ****/
+    function setPages(data) {
+        var datacount = Math.ceil(data.results.dataCount / 3);
+        var innerHtml = '';
+        var active = '';
+        var maxPages = datacount > 8 ? 8 : datacount;
+        var starPage = $condition['page'] > 5 ? $condition['page'] : 5;
+        var activePage = $condition['page'] > 5 ? 5 : $condition['page'];
+        var pageText = '';
+        innerHtml += '<li><a class="pagePre" href="javascript:;" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
+        if (datacount > 5) {
+            innerHtml += '<li class="page-item"><a data-page="' + 1 + '" href="javascript:;">首页</a></li>';
+        }
+        for (var i = 0; i < maxPages; i++) {
+            if (i === activePage - 1) {
+                active = 'active';
+            } else {
+                active = '';
+            }
+            pageText = starPage - 4 + i;
+            if (pageText > datacount) {
+                break;
+            }
+            innerHtml += '<li class="page-item ' + active + '"><a data-page="' + (starPage - 4 + i) + '" href="javascript:;">' + (starPage - 4 + i) + '</a></li>';
+        }
+        if (datacount > 8 & starPage < datacount - 4) {
+            innerHtml += '<li class=""><a href="javascript:;">...</a></li>' +
+                    '<li class="page-item"><a data-page="' + datacount + '" href="javascript:;">' + datacount + '</a></li>';
+        }
+        innerHtml += '<li><a class="pageNext" href="javascript:;" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>';
+        $('.pagination').html(innerHtml);
+        initPageFunction(datacount);
+    }
+    /*** 初始化分页点击方法 *****/
+    function initPageFunction(datacount) {
+        //分页点击加载医生
+        $(".page-item a").click(function () {
+            var page = $(this).attr("data-page");
+            $condition["page"] = page;
+            ajaxComment($doctorId);
+        });
+        //上一页
+        $(".pagePre").click(function () {
+            if ($condition["page"] <= 1) {
+                return;
+            } else {
+                $condition["page"]--;
+                ajaxComment($doctorId);
+            }
+        });
+//        下一页
+        $(".pageNext").click(function () {
+            if ($condition["page"] >= datacount) {
+                return;
+            } else {
+                $condition["page"]++;
+                ajaxComment($doctorId);
+            }
+        });
+    }
+    //更改url
+    function setLocationUrl() {
+        var stateObject = {};
+        var title = "";
+        var urlCondition = '';
+        for ($key in $condition) {
+            if ($condition[$key] && $condition[$key] !== "") {
+                urlCondition += "&" + $key + "=" + $condition[$key];
+            }
+        }
+        urlCondition = urlCondition.substring(1);
+        urlCondition = "?" + urlCondition;
+        var newUrl = '<?php echo $urlDoctor; ?>/' + $doctorId + urlCondition;
+        history.pushState(stateObject, title, newUrl);
+    }
 </script>

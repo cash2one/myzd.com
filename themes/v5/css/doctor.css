@@ -31,18 +31,23 @@
 .doctor-menu .memu-title{font-size: 20px;color: #fff;text-align: center;}
 .doctor-menu .btn{color: #fff;min-width: 160px;font-size: 17px;}
 .doctor-menu .btn:hover{color: #fff;}
-.doctor-menu .rec-title{margin-top: 25px;margin-bottom:5px;line-height:1em;font-size: 18px;}
+.doctor-menu .rec-title{margin-top: 14px;font-size: 18px;}
 .doctor-menu .rec-title>a{color: #19aea5;}
-.doctor-menu .rec-doc{margin: 0 -10px;}
+.doctor-menu .rec-doc{margin: 0;}
 .expInfo>div>img{margin:10px 0px;}
 .doctor-menu .rec-doc .col-lg-4{padding: 0 10px;border-right: 1px dashed #e4e4e4;}
 .doctor-menu .rec-doc .col-lg-4.last{padding: 0 10px;border-right: 0;}
-.doctor-menu .rec-doc .expInfo{border-bottom:1px dashed #b5b5b5;margin: 10px 10px 0;padding-bottom: 10px;}
-.doctor-menu .rec-doc .expInfo.last{border-bottom:0;margin:10px 10px 0;}
+.doctor-menu .rec-doc .expInfo{padding:20px 25px 0;}
+.doctor-menu .rec-doc .expInfo:hover{background-color:#f7f7f7;}
+.doctor-menu .rec-doc .expInfo .content{border-bottom:1px dashed #b5b5b5;padding-bottom:20px;}
+.doctor-menu .rec-doc .expInfo .content.last{border-bottom:1px solid #fff;}
+.doctor-menu .rec-doc .expInfo:hover .content{border-bottom:1px solid #fff;}
+.doctor-menu .rec-doc .expInfo.last{border-bottom:1px solid #fff;}
 .doctor-menu .rec-doc .expInfo img{width: 100px;height: 100px;border-radius: 50%;display: block;border: 1px solid #e4e4e4;}
 .doctor-menu .rec-doc .expInfo .expTitle{color: #9f9fa0;}
 .border-green{border: 1px solid #19aea5;padding: 0px 5px;}
-.doctorInfo .border-gray{border: 1px solid #b5b5b5;padding: 0px 5px;}
+.doctorInfo .border-gray{border: 1px solid #b5b5b5;}
+.doctorInfo .comment-text .comment-desc{min-height:120px;}
 .ml30{margin-left: 30px;}
 .ml5{margin-left: 5px;}
 .ml15{margin-left:15px;}
@@ -75,3 +80,4 @@
 #qrcode-lg .qrlogo-lg{background-image: url(../images/icons/qrlogo-lg.png);height:94px;width:94px;position:absolute;background-position: center;background-repeat: no-repeat;}
 .mt14{margin-top:14px;}
 .doctorInfo .mt0{margin-top:0;}
+.dese-operate{color:#EFA429;cursor:pointer;}
