@@ -434,8 +434,8 @@ $isTerms = Yii::app()->request->getQuery('page', '');
     $(document).ready(function () {
         $(".problem-area:first").addClass("active");
         $("ul.personalcenter-question li:first a").addClass("active");
-        $(".problem-area .title").click(function () {
-            $(".problem-area").removeClass("active");
+        $(".problem-area>.title").click(function () {
+            //$(".problem-area").removeClass("active");
             if ($(this).parent().hasClass("active")) {
                 $(".problem-area").removeClass("active");
             } else {

@@ -35,12 +35,12 @@ $urlConmmentView = $this->createUrl('comment/view', array('bookingId' => $bookin
                 <div><span class="color-gray">主刀专家：</span><strong><?php echo $booking->expertName == null ? '无' : $booking->expertName; ?></strong>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="color-gray">确诊疾病：</span><strong><?php echo $booking->diseaseName; ?></strong></div>
                 <div id="service" class="mt50 comment">
                     <div class="text16 color-25aea6 mb20"><i class="fa fa-play ml-20"></i><strong class="ml5">请您对我们服务进行星级评价:</strong></div>
-                    <strong>服务效率</strong><i data-fraction="1" class="fa fa-star active ml40 "></i><i data-fraction="2" class="fa fa-star active ml40 "></i><i data-fraction="3" class="fa fa-star active ml40 "></i><i data-fraction="4" class="fa fa-star active ml40 "></i><i data-fraction="5" class="fa fa-star active ml40 "></i><span class="fraction-text ml40 color-gray">5分</span>
+                    <strong>治疗效果</strong><i data-fraction="1" class="fa fa-star active ml40 "></i><i data-fraction="2" class="fa fa-star active ml40 "></i><i data-fraction="3" class="fa fa-star active ml40 "></i><i data-fraction="4" class="fa fa-star active ml40 "></i><i data-fraction="5" class="fa fa-star active ml40 "></i><span class="fraction-text ml40 color-gray">5分</span>
                 </div>
                 <div id="post_operative" class="mt20 comment ">
-                    <strong>术后效果</strong><i data-fraction="1" class="fa fa-star active ml40 "></i><i data-fraction="2" class="fa fa-star active ml40 "></i><i data-fraction="3" class="fa fa-star active ml40 "></i><i data-fraction="4" class="fa fa-star active ml40 "></i><i data-fraction="5" class="fa fa-star active ml40 "></i><span class="fraction-text ml40 color-gray">5分</span>
+                    <strong>医生态度</strong><i data-fraction="1" class="fa fa-star active ml40 "></i><i data-fraction="2" class="fa fa-star active ml40 "></i><i data-fraction="3" class="fa fa-star active ml40 "></i><i data-fraction="4" class="fa fa-star active ml40 "></i><i data-fraction="5" class="fa fa-star active ml40 "></i><span class="fraction-text ml40 color-gray">5分</span>
                 </div>
-                <div class="text16 color-25aea6 mt50"><i class="fa fa-play ml-20"></i><strong class="ml5">其他分享与评价:</strong></div>
+                <div class="text16 color-25aea6 mt50"><i class="fa fa-play ml-20"></i><strong class="ml5">评价内容:</strong></div>
                 <div>
                     <?php $this->renderPartial('_form', array('model' => $model, 'booking' => $booking)); ?>
                 </div>
@@ -85,11 +85,11 @@ $urlConmmentView = $this->createUrl('comment/view', array('bookingId' => $bookin
         });
         $('#service .fa').mouseover(function () {
             var fraction = $(this).attr('data-fraction');
-            $('#CommentForm_service').val(fraction);
+            $('#CommentForm_effect').val(fraction);
         });
         $('#post_operative .fa').mouseover(function () {
             var fraction = $(this).attr('data-fraction');
-            $('#CommentForm_post_operative').val(fraction);
+            $('#CommentForm_doctor_attitude').val(fraction);
         });
     });
 </script>

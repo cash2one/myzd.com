@@ -6,13 +6,13 @@ function setHospitalHtml(data, urlHospitalView) {
         for (var i = 0; i < hospitals.length; i++) {
             var hospital = hospitals[i];
             var hp_dept_desc = hospital.hp_dept_desc == '' ? '暂无信息' : hospital.hp_dept_desc;
-            hp_dept_desc = hp_dept_desc.length > 105 ? hp_dept_desc.substr(0, 105)+'<span class="ellipsis">...</span><span class="dese-last">'+hp_dept_desc.substr(105)+'</span>' : hp_dept_desc;
+            hp_dept_desc = hp_dept_desc.length > 105 ? hp_dept_desc.substr(0, 105) + '<span class="ellipsis">...</span><span class="dese-last">' + hp_dept_desc.substr(105) + '</span>' : hp_dept_desc;
             innerHtml += '<div class="row mt30">' +
                     '<div class="col-sm-3 col-lg-2"><a target="_blank" href="' + urlHospitalView + hospital.hospital_id + '"><img class="img-responsive" src="' + hospital.imageUrl + '"></a></div>' +
                     '<div class="col-sm-9 col-lg-10 ml-30">' +
-                    '<div><strong><a class="hpName" target="_blank" href="' + urlHospitalView+ hospital.hospital_id + '">' + hospital.name + '</a></strong>' +
-                     '<span class="pull-right"><a target="_blank" href="' + urlHospitalView + hospital.hospital_id + '"><button class="btn btn-yes pr30 pl30">查 看 详 情</button></a></span></div>' +
-                    '<div class="mt20"><span>医院科室名称：</span><span class="color-green ml10">' + hospital.hp_dept_name + '</span></div>'+
+                    '<div><strong><a class="hpName" target="_blank" href="' + urlHospitalView + hospital.hospital_id + '">' + hospital.name + '</a></strong>' +
+                    '<span class="pull-right"><a target="_blank" href="' + urlHospitalView + hospital.hospital_id + '"><button class="btn btn-yes pr30 pl30">查 看 详 情</button></a></span></div>' +
+                    '<div class="mt20"><span>医院科室名称：</span><span class="color-green ml10">' + hospital.hp_dept_name + '</span></div>' +
                     '<div class="clearfix"></div>' +
                     '<div class="ml-15 hospital-desc mt20">' + hp_dept_desc + '</div>' +
                     '</div>' +
@@ -24,7 +24,7 @@ function setHospitalHtml(data, urlHospitalView) {
     }
     setLocationUrl();
     initBookingBtn();
-    $('.dese-operate').click(function(){
+    $('.dese-operate').click(function () {
         $(this).parents('.hospital-desc').find('.ellipsis').toggle();
         $(this).parents('.hospital-desc').find('.dese-last').toggle();
         $(this).parents('.hospital-desc').find('.desc-more').toggle();
@@ -112,8 +112,12 @@ function setUrlCondition() {
 
 function initDeptFunction() {
     $(".department .dept-header").click(function () {
-        $(".department").removeClass("active");
-        $(this).parent().addClass("active");
+        if ($(this).parent().hasClass("active")) {
+            $(".department").removeClass("active");
+        } else {
+            $(".department").removeClass("active");
+            $(this).parent().addClass("active");
+        }
     });
     $('.department ul>li>a.subCat').click(function (e) {
         e.preventDefault();

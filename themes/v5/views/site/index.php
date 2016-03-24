@@ -329,6 +329,8 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
     });
     function ajaxSearchByKeyWord(keyword) {
         var urlSearch = '<?php echo $urlSearchByKeyWord; ?>' + keyword;
+        //解决IE搜索时编码问题
+        var urlSearch = encodeURI(urlSearch);
         $.ajax({
             url: urlSearch,
             success: function (data) {
@@ -355,7 +357,9 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 resultsNum += diseases.length;
                 for (var i = 0; i < diseases.length; i++) {
                     var disease = diseases[i];
-                    innerHtml += '<div class="department"><span class="strong name">' + setResultsNameActive(disease.name, keyword) + '</span><a href="<?php echo $urlHopitalSearch ?>?disease=' + disease.id + '" target="_blank" class="pull-right detail">找医院</a><a href="<?php echo $urlDoctorSearch ?>?disease_name=' + disease.name + '" target="_blank" class="pull-right detail mr15">找名医</a></div>';
+                    var urlSearchHp = encodeURI('<?php echo $urlHopitalSearch ?>?disease=' + disease.id);
+                    var urlSearchDoctor = encodeURI('<?php echo $urlDoctorSearch ?>?disease_name=' + disease.name);
+                    innerHtml += '<div class="department"><span class="strong name">' + setResultsNameActive(disease.name, keyword) + '</span><a href="' + urlSearchHp + '" target="_blank" class="pull-right detail">找医院</a><a href="' + urlSearchDoctor + '" target="_blank" class="pull-right detail mr15">找名医</a></div>';
                 }
 
             }

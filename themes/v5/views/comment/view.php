@@ -32,33 +32,33 @@ $commentInfo = $comment->results->comment;
                 </div>
             </div>
             <div class="border-green mt10 pt50 pl50 pr50 minh700">
-                <div><span class="color-gray">主刀专家：</span><strong><?php echo $bookingInfo->expertName; ?></strong>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="color-gray">确诊疾病：</span><strong><?php echo $bookingInfo->diseaseName; ?></strong></div>
+                <div><span class="color-gray">主刀专家：</span><strong><?php echo $bookingInfo->expertName == null ? '无' : $bookingInfo->expertName; ?></strong>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="color-gray">确诊疾病：</span><strong><?php echo $bookingInfo->diseaseName; ?></strong></div>
                 <div id="service" class="mt50 comment">
-                    <strong>服务效率</strong>
+                    <strong>治疗效果</strong>
                     <?php
-                    $service = $commentInfo->service;
+                    $effect = $commentInfo->effect;
                     for ($i = 1; $i < 6; $i++) {
-                        if ($i <= $service) {
+                        if ($i <= $effect) {
                             echo '<i class="fa fa-star active ml40 "></i>';
                         } else {
                             echo '<i class="fa fa-star-o ml40 "></i>';
                         }
                     }
-                    echo '<span class="fraction-text ml40 color-gray">' . $service . '分</span>';
+                    echo '<span class="fraction-text ml40 color-gray">' . $effect . '分</span>';
                     ?>
                 </div>
                 <div id="post_operative" class="mt20 comment ">
-                    <strong>术后效果</strong>
+                    <strong>医生态度</strong>
                     <?php
-                    $postOperative = $commentInfo->postOperative;
+                    $doctorAttitude = $commentInfo->doctorAttitude;
                     for ($i = 1; $i < 6; $i++) {
-                        if ($i <= $postOperative) {
+                        if ($i <= $doctorAttitude) {
                             echo '<i class="fa fa-star active ml40 "></i>';
                         } else {
                             echo '<i class="fa fa-star-o ml40 "></i>';
                         }
                     }
-                    echo '<span class="fraction-text ml40 color-gray">' . $postOperative . '分</span>';
+                    echo '<span class="fraction-text ml40 color-gray">' . $doctorAttitude . '分</span>';
                     ?>
                 </div>
                 <div class="mt100"><?php echo $commentInfo->commentText; ?></div>

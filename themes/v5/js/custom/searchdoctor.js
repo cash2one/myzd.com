@@ -110,8 +110,12 @@ function initPageFunction(pageActive, totalPages) {
 /**** 初始化方法 ****/
 function initDeptFunction() {
     $(".department .dept-header").click(function () {
-        $(".department").removeClass("active");
-        $(this).parent().addClass("active");
+        if ($(this).parent().hasClass("active")) {
+            $(".department").removeClass("active");
+        } else {
+            $(".department").removeClass("active");
+            $(this).parent().addClass("active");
+        }
     });
     $('.department ul>li>a.subCat').click(function (e) {
         e.preventDefault();
