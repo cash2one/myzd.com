@@ -31,7 +31,7 @@ $urlReturn = $this->createUrl('booking/userBooking', array('id' => $booking->id)
                 <div class="color-status text12">预约单：<?php echo $booking->refNo; ?></div>
                 <div>
                     <?php
-                    if ($booking->status == StatCode::BK_STATUS_INVALID) {
+                    if ($booking->status == StatCode::BK_STATUS_CANCELLED || $booking->status == StatCode::BK_STATUS_INVALID) {
                         echo '<h4 class="text-center color-green text20">';
                         echo '<span>' . $booking->statusText . '</span>';
                         echo '</h4>';
@@ -57,7 +57,7 @@ $urlReturn = $this->createUrl('booking/userBooking', array('id' => $booking->id)
                     ?>
                 </div>
                 <?php
-                if ($booking->status != 9) {
+                if ($booking->status != StatCode::BK_STATUS_CANCELLED && $booking->status != StatCode::BK_STATUS_INVALID) {
                     echo '<div class="text-center text-red text12 mt10">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>';
                 }
                 ?>
