@@ -14,7 +14,7 @@
 .color-red-ff0000{color:#ff0000;}
 .ml50{margin-left:50px;}
 .question-divider{border-bottom: 3px solid #78c7bb;padding-top:5px;border-left:1px solid #b5b5b5;border-right:1px solid #b5b5b5;}
-.support-content>.agreement{line-height:32px;color:#3e3a39;}
+.support-content>.agreement{line-height:32px;color:#3e3a39;text-align:justify;}
 .text16{font-size:16px;}
 .payment .content-header{font-size: 16px;padding:10px 20px;border-bottom:none;color:#25aea6;background-color:#fff;margin-top:50px;}
 .pb21{padding-bottom:21px;}
