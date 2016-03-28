@@ -40,6 +40,10 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div class="col-xs-6 pl5 mt10">
                                     <img src="<?php echo $baseUrlImage; ?>footer/remebot.png"/>
                                 </div>
+                                <div class="clearfix"></div>
+                                <div class="col-xs-6 pr5 mt10">
+                                    <img src="<?php echo $baseUrlImage; ?>footer/160.jpg"/>
+                                </div>
                             </div>
                         </div>
                         <!--                        <div class="w20 hospital">
@@ -70,7 +74,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <h4>关于我们</h4>
                                 <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
                                 <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms')); ?>" target="_blank">免责声明</a>
-    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];       ?>" target="_blank">联系我们</a>-->
+    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];         ?>" target="_blank">联系我们</a>-->
                                 <!--                                <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                             </div>
                             <div class="mt40">
@@ -110,18 +114,23 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                     <div class="pull-left mr10 mt10">
                                         <img src="<?php echo $baseUrlImage; ?>footer/cctv.jpg"/>
                                     </div>
+                                </div>
+                                <div class="clearfix">
                                     <div class="pull-left mr10 mt10">
                                         <img src="<?php echo $baseUrlImage; ?>footer/36kr.jpg"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
                                         <img src="<?php echo $baseUrlImage; ?>footer/remebot.png"/>
                                     </div>
+                                    <div class="pull-left mr10 mt10">
+                                        <img src="<?php echo $baseUrlImage; ?>footer/160.jpg"/>
+                                    </div>
                                 </div>
-                                <div class="mt35 mb20">
+                                <div class="mt25 mb20">
                                     <h4>关于我们</h4>
                                     <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
                                     <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms')); ?>" target="_blank">免责声明</a>
-        <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];       ?>" target="_blank">联系我们</a>-->
+        <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];         ?>" target="_blank">联系我们</a>-->
                                     <!--                                    <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                                 </div>
                             </div>
