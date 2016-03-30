@@ -16,17 +16,17 @@ class ApiViewTalkInformation extends EApiViewService {
         //判断itemparam并赋值，区别搜索医生或医院
         if (isset($this->searchInputs['itemparam']) && $this->searchInputs['itemparam'] == self::TYPE_DOCTOR) {
             $this->doctorId = $this->searchInputs['itemid'];
-            $this->url = Yii::app()->params['baseUrl'].'/doctor/view/id/'.$this->doctorId;
+            $this->url = Yii::app()->params['baseUrl'] . '/doctor/view/id/' . $this->doctorId;
         } else if (isset($this->searchInputs['itemparam']) && $this->searchInputs['itemparam'] == self::TYPE_HOSPITAL) {
             $this->hospitalId = $this->searchInputs['itemid'];
-            $this->url = Yii::app()->params['baseUrl'].'/hospital/view/id/'.$this->hospitalId;
+            $this->url = Yii::app()->params['baseUrl'] . '/hospital/view/id/' . $this->hospitalId;
         }
     }
 
     protected function loadData() {
         if (is_null($this->doctorId) === false) {
             $this->loadDoctor();
-        } else if (is_null($this->hospitalId) === false){
+        } else if (is_null($this->hospitalId) === false) {
             $this->loadHospital();
         }
     }
@@ -64,13 +64,23 @@ class ApiViewTalkInformation extends EApiViewService {
         $data->imageurl = $model->getAbsUrlAvatar();
         $data->url = $this->url;
         $data->category = "医生";
-        $data->custom1 = array('hpName' => $model->getHospitalName());
-        $data->custom2 = array('hpDeptName' => $model->getHpDeptName());
-        $data->custom3 = array('mTitle' => $model->getMedicalTitle());
-        $data->custom4 = array('aTitle' => $model->getAcademicTitle());
-        $data->custom5 = array('careerExp' => $model->getCareerExp());
-        $data->custom6 = array('honour' => $model->honour);
-        $data->custom7 = array('reasons' => $model->getReasons());
+        $data->custom1 = ['hpName', $model->getHospitalName()];
+        $data->custom2 = ['hpDeptName', $model->getHpDeptName()];
+        $data->custom3 = ['mTitle', $model->getMedicalTitle()];
+        $data->custom4 = ['aTitle', $model->getAcademicTitle()];
+        $data->custom5 = ['careerExp', $model->getCareerExp()];
+        $honour = '';
+        foreach ($model->honour as $value) {
+            $honour .= $value . ',';
+        }
+        $docHonour = substr($honour, 0, strlen($honour) - 1);
+        $data->custom6 = ['honour', $docHonour];
+        $reasons = '';
+        isset($model->reason_one) && $reasons .= $model->reason_one;
+        isset($model->reason_two) && $reasons = $reasons . ',' . $model->reason_two;
+        isset($model->reason_three) && $reasons = $reasons . ',' . $model->reason_three;
+        isset($model->reason_four) && $reasons = $reasons . ',' . $model->reason_four;
+        $data->custom7 = ['reasons', $reasons];
         $this->results = $data;
     }
 
@@ -81,11 +91,11 @@ class ApiViewTalkInformation extends EApiViewService {
         $data->imageurl = $model->getAbsUrlAvatar();
         $data->url = $this->url;
         $data->category = "医院";
-        $data->custom1 = array('type' => $model->getType());
-        $data->custom2 = array('class' => $model->getClass());
-        $data->custom3 = array('stateName' => $model->getStateName());
-        $data->custom4 = array('cityName' => $model->getCityName());
-        $data->custom5 = array('description' => $model->getDescription());
+        $data->custom1 = ['type', $model->getType()];
+        $data->custom2 = ['class', $model->getClass()];
+        $data->custom3 = ['stateName', $model->getStateName()];
+        $data->custom4 = ['cityName', $model->getCityName()];
+        $data->custom5 = ['description', $model->getDescription()];
         $this->results = $data;
     }
 
