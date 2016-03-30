@@ -64,23 +64,23 @@ class ApiViewTalkInformation extends EApiViewService {
         $data->imageurl = $model->getAbsUrlAvatar();
         $data->url = $this->url;
         $data->category = "医生";
-        $data->custom1 = ['hpName', $model->getHospitalName()];
-        $data->custom2 = ['hpDeptName', $model->getHpDeptName()];
-        $data->custom3 = ['mTitle', $model->getMedicalTitle()];
-        $data->custom4 = ['aTitle', $model->getAcademicTitle()];
-        $data->custom5 = ['careerExp', $model->getCareerExp()];
+        $data->custom1 = ['医院', $model->getHospitalName()];
+        $data->custom2 = ['科室', $model->getHpDeptName()];
+        $data->custom3 = ['临床职称', $model->getMedicalTitle()];
+        $data->custom4 = ['学术职称', $model->getAcademicTitle()];
+        $data->custom5 = ['执业经历', $model->getCareerExp()];
         $honour = '';
         foreach ($model->honour as $value) {
             $honour .= $value . ',';
         }
         $docHonour = substr($honour, 0, strlen($honour) - 1);
-        $data->custom6 = ['honour', $docHonour];
+        $data->custom6 = ['荣誉', $docHonour];
         $reasons = '';
         isset($model->reason_one) && $reasons .= $model->reason_one;
         isset($model->reason_two) && $reasons = $reasons . ',' . $model->reason_two;
         isset($model->reason_three) && $reasons = $reasons . ',' . $model->reason_three;
         isset($model->reason_four) && $reasons = $reasons . ',' . $model->reason_four;
-        $data->custom7 = ['reasons', $reasons];
+        $data->custom7 = ['推荐理由', $reasons];
         $this->results = $data;
     }
 
@@ -91,11 +91,11 @@ class ApiViewTalkInformation extends EApiViewService {
         $data->imageurl = $model->getAbsUrlAvatar();
         $data->url = $this->url;
         $data->category = "医院";
-        $data->custom1 = ['type', $model->getType()];
-        $data->custom2 = ['class', $model->getClass()];
-        $data->custom3 = ['stateName', $model->getStateName()];
-        $data->custom4 = ['cityName', $model->getCityName()];
-        $data->custom5 = ['description', $model->getDescription()];
+        $data->custom1 = ['医院类型', $model->getType()];
+        $data->custom2 = ['医院等级', $model->getClass()];
+        $data->custom3 = ['省份或地区', $model->getStateName()];
+        $data->custom4 = ['城市', $model->getCityName()];
+        $data->custom5 = ['医院描述', $model->getDescription()];
         $this->results = $data;
     }
 
