@@ -10,7 +10,7 @@ if ($this->getCurrentUser() !== null) {
     $uname = $this->getCurrentUser()->getUsername();
 }
 $itemparam = '';
-$itemid = '0';
+$itemid = '';
 if (($this->action->controller->id == 'doctor') && ($this->action->id == 'view')) {
     $itemid = Yii::app()->request->getQuery('id', '');
     $itemparam = 'doctor';
@@ -28,8 +28,8 @@ if (($this->action->controller->id == 'hospital') && ($this->action->id == 'view
         uname: "<?php echo $uname ?>", //用户名，未登录可以为空
         isvip: "", //是否为vip用户
         userlevel: "", //网站自定义会员级别
-        $itemid: '<?php echo $itemid ?>',
-        $itemparam: '<?php echo $itemparam ?>'
+        itemid: '<?php echo $itemid ?>',
+        itemparam: '<?php echo $itemparam ?>'
     }
 </script>
 <div class="ask" onclick="NTKF.im_openInPageChat('kf_9138_1451451713805');"></div>

@@ -56,7 +56,7 @@ jQuery(function () {
                         $('#loginModal').modal('hide');
                         $('.user').html('<span class="">您好！&nbsp;<a target="_blank" href="' + accountUrl + '">' + data.user.username + '</a>&nbsp;</span> | <a id="logout" href="' + logoutUrl + '">&nbsp;退出&nbsp;</a> | <a target="_blank" href="' + accountUrl + '">&nbsp;我的手术&nbsp;</a>');
                         setCookie('user', data.user.username, null);
-                        openBookingModal($('.bookingBtn'));
+//                      openBookingModal($('.bookingBtn'));
                     }
                 } else {
                     domForm.find("div.error").remove();

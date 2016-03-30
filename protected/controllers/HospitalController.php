@@ -6,7 +6,7 @@ class HospitalController extends WebsiteController {
         $this->render("index");
     }
 
-    public function actionView($id) {
+    public function actionView($id,$deptId=0) {
         //$ifaculty = $this->loadIFaculty($id);
         $hospitalMgr = new HospitalManager();
         $with = array('hospitalCity', 'hospitalDepartments' => array('on' => 'hospitalDepartments.is_show=1'));

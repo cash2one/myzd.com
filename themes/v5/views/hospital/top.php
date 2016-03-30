@@ -6,7 +6,7 @@ $urlHopitalSearch = $this->createUrl('hospital/top');
 $urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5));
 $urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5, 'disease_sub_category' => ''));
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
-$urlHospitalView = $this->createUrl('hospital/view', array('id' => ''));
+$urlHospitalView = $this->createUrl('hospital/view');
 $city = Yii::app()->request->getQuery('city', '');
 $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');

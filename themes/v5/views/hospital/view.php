@@ -24,6 +24,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $this->pageTitle = $hName . '手术预约,电话,地址,网址_名医主刀';
 $this->htmlMetaKeywords = $hName;
 $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'utf-8') : $desc;
+$deptId = Yii::app()->request->getQuery('deptId', '');
 ?>
 <div class="container-fluid crumbs crumbs-hospital">
     <div class="container">
@@ -67,7 +68,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                     <div class=" pl10 pb20">
                         <div class="mt20"><img src="<?php echo $urlImage; ?>" alt="<?php echo $hName; ?>"></div>
                         <div class="text-right pr15">
-<!--                            <div class="mt10 hospitalurl"><a class="text12 color-green" href="<?php //echo $urlWebsite;   ?>" target="_blank"><?php echo '查看官网'; ?></a></div>-->
+<!--                            <div class="mt10 hospitalurl"><a class="text12 color-green" href="<?php //echo $urlWebsite;         ?>" target="_blank"><?php echo '查看官网'; ?></a></div>-->
                         </div>
                         <div class="pr10">
                         </div>
@@ -105,7 +106,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                                 $j = 1;
                                 foreach ($dept as $faculty) {
                                     $description = $faculty->description == '' ? '暂无信息' : $faculty->description;
-                                    echo '<div role="tabpanel" class="tab-pane" id="' . $deptClass . $j . '"><div class="dept-title"><div class="pull-left">选择科室：<span class="color-666">' . $faculty->name . '</span></div><div class="text-right pr10"><button class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' . $hName . '" data-dept="' . $faculty->name . '" data-hospitalid="' . $hid . '" data-deptid="' . $faculty->id . '" data-toggle="modal" data-target="#booking"><div>预 约</div></button></div><div class="clearfix"></div><div class="divide-gray"></div></div><div class="faculty-desc">' . $description . '</div></div>';
+                                    echo '<div role="tabpanel" class="tab-pane" id="' . $deptClass . $j . '"><div class="dept-title"><div class="pull-left">选择科室：<span class="color-666">' . $faculty->name . '</span></div><div class="text-right pr10"><button class="bookingBtn btn btn-yes pr30 pl30" data-hospital="' . $hName . '" data-dept="' . $faculty->name . '" data-hospitalid="' . $hid . '" data-deptid="' . $faculty->id . '" data-toggle="modal" data-target="#booking"><div>预 约</div></button></div><div class="clearfix"></div><div class="divide-gray"></div></div><div class="faculty-desc mb20">' . $description . '</div></div>';
                                     $j++;
                                 }
                                 ?>
@@ -130,7 +131,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                                 } else if ($key == '骨科') {
                                     $deptClass = "guke";
                                 }
-                                echo '<div class="col-sm-6 faculty-group mt20"><div class="row deptgroup"><div class="col-sm-4 pr0"><div class="first-faculty ' . $deptClass . '"></div></div><div class="pl0 col-sm-8"><ul class="nav nav-tabs" role="tablist">';
+                                echo '<div class="col-sm-6 faculty-group mt20"><div class="row deptgroup"><div class="col-sm-4 pr0"><div class="first-faculty ' . $deptClass . '"></div></div><div class="pl0 col-sm-8 second-faculty-group"><ul class="nav nav-tabs" role="tablist">';
                                 $i = 1;
                                 foreach ($dept as $faculty) {
                                     $fuacultyName = $faculty->name;
@@ -145,7 +146,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                                     } else {
                                         $mt10 = 'mt10';
                                     }
-                                    echo '<li role="presentation" class="second-faculty ' . $mt10 . '"><a href="#' . $deptClass . $i . '" aria-controls="' . $deptClass . $i . '" role="tab" data-toggle="tab" title=' . $faculty->name . '>' . $fuacultyName . '</a></li>';
+                                    echo '<li role="presentation" id="' . $faculty->id . '" class="second-faculty ' . $mt10 . '"><a href="#' . $deptClass . $i . '" aria-controls="' . $deptClass . $i . '" role="tab" data-toggle="tab" title=' . $faculty->name . '>' . $fuacultyName . '</a></li>';
                                     $i++;
                                 }
                                 echo '</ul></div></div></div>';
@@ -163,7 +164,7 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
                             <div class="row">
                                 <div class="col-sm-3"><span class="step">STEP1</span></div>
                                 <div class="col-sm-9 pl0"><span>提交预约申请</span><span class="mark" data-toggle="tooltip" data-placement="top" title="相关检查资料：
-核磁（MRI）、CT、病理、B超及相关诊断检验报告等）">?</span></div>
+                                                                                   核磁（MRI）、CT、病理、B超及相关诊断检验报告等）">?</span></div>
                             </div>
                             <div class="row mt20">
                                 <div class="col-sm-3"><span class="step">STEP2</span></div>
@@ -203,9 +204,11 @@ $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'ut
 <?php $this->renderPartial("//booking/bookingDeptModal"); ?>
 <script>
     $(document).ready(function () {
-        $('.departments .describable').find('.tab-pane:first').addClass('active');
-        $('.faculty-group:first').find('.first-faculty').addClass('active');
-        $('.faculty-group:first').find('.second-faculty:first').addClass('active');
+        var dept =<?php echo $deptId ?>;
+        $("#"+dept+" a").trigger('click');
+        if ($('.second-faculty').hasClass('active')) {
+            $('.second-faculty.active').parents('.deptgroup').find('.first-faculty:first').addClass('active');
+        }
         $(".more-desc").click(function () {
             $(this).hide();
             $(".ellipsis").hide();

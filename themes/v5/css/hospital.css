@@ -19,8 +19,9 @@
 .process .step{text-align: center;color: #19aea5;padding: 10px 0 5px;font-size: 18px;}
 .process .step-content{text-align: center;padding: 10px 0;}
 /**** view ***/
-.crumbs-header ul{padding: 10px; background-color: #19aea5;color: #fff;margin-bottom: 0;}
+.crumbs-header ul{padding: 10px; background-color: #19aea5;color: #fff;margin-bottom: 0;font-size:16px;}
 .crumbs-header ul li>a{color: #fff!important;}
+.crumbs-header ul li>a:hover{text-decoration:none!important;}
 .crumbs-header ul li{color: #fff;}
 .crumbs-hospital{background-color: #19aea5;margin-bottom: 20px;}
 .crumbs ul{padding-left: 0px;}
