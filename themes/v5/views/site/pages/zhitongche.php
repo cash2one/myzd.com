@@ -203,7 +203,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                             <img class="mt20" src="<?php echo $urlResImage; ?>zhitongche/red-01.png">
                             <div class="ztc-find-expert-btn btn">找医生<span class="ml10 mr-10">&gt;</div>
                             <div class="text-center color-gray-68 ml-60">
-                                <div>名医主刀签约了三甲医院副主任医生级别以上的顶级专家，</div>
+                                <div>名医主刀签约了三甲医院副主任医师级别以上的顶级专家，</div>
                                 <div>他们在各自擅长领域均有丰富的手术经验。</div>
                                 <div>让您快速找准医生，不耽误病情。</div>
                             </div>
