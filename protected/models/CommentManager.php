@@ -19,6 +19,12 @@ class CommentManager {
             $output['status'] = 'ok';
             $output['id'] = $comment->getId();
             $output['bookingId'] = $comment->bk_id;
+            //评论成功，更改booking状态
+            $booking = Booking::model()->getByAttributes(array('id' => $comment->bk_id, 'bk_type' => $comment->bk_type));
+            if (isset($booking)) {
+                $booking->setBkStatus(StatCode::BK_STATUS_DONE);
+                $booking->save();
+            }
         }
         return $output;
     }
