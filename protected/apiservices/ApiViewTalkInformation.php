@@ -16,10 +16,10 @@ class ApiViewTalkInformation extends EApiViewService {
         //判断itemparam并赋值，区别搜索医生或医院
         if (isset($this->searchInputs['itemparam']) && $this->searchInputs['itemparam'] == self::TYPE_DOCTOR) {
             $this->doctorId = $this->searchInputs['itemid'];
-            $this->url = Yii::app()->params['baseUrlCrm'].'/doctor/view/id/'.$this->doctorId;
+            $this->url = Yii::app()->params['baseUrl'].'/doctor/view/id/'.$this->doctorId;
         } else if (isset($this->searchInputs['itemparam']) && $this->searchInputs['itemparam'] == self::TYPE_HOSPITAL) {
             $this->hospitalId = $this->searchInputs['itemid'];
-            $this->url = Yii::app()->params['baseUrlCrm'].'/hospital/view/id/'.$this->doctorId;
+            $this->url = Yii::app()->params['baseUrl'].'/hospital/view/id/'.$this->hospitalId;
         }
     }
 
