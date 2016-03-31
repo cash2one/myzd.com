@@ -88,6 +88,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                     <a class="text-info" href="http://bx.qdnrm.com/" target="_blank">百姓健康</a>
                                     <a class="text-info" href="http://jiancha.aikang.com/" target="_blank">爱康检查</a>
                                     <a class="text-info" href="http://www.51zsyl.com" target="_blank">远程门诊</a>
+                                    <a class="text-info" href="http://www.91160.com/" target="_blank">就医160</a>
                                 </div>
 
                             </div>
