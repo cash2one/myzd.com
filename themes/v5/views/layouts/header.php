@@ -46,26 +46,26 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                     ?>
                     <a data-toggle="modal" data-target="#qucikbookingModal">&nbsp;快速预约&nbsp;</a>
                     |
-                    <a id="appdownload">&nbsp;下载APP&nbsp;</a>
-                    <div id="qrcode" class="tooltip bottom">
+                    <a href="<?php echo $this->createUrl('download/app');?>">&nbsp;下载APP&nbsp;</a>
+<!--                    <div id="qrcode" class="tooltip bottom">
                         <div class="tooltip-arrow"></div>
                         <div class="tooltip-inner">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a href="https://itunes.apple.com/cn/app/id1001032594" target="_blank">
-                                        <img src="<?php echo $urlResImage; ?>icons/ios-download.png"/>
+                                        <img src="<?php //echo $urlResImage; ?>icons/ios-download.png"/>
                                         <div class="mt5 text-center"><i class="fa fa-apple"></i> IOS</div>
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
                                     <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.mingyizhudao.app" target="_blank">
-                                        <img src="<?php echo $urlResImage; ?>icons/android-download.png"/>
+                                        <img src="<?php //echo $urlResImage; ?>icons/android-download.png"/>
                                         <div class="mt5 text-center"><i class="fa fa-android"></i> Android</div>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     |
                     <a target="_blank" href="<?php echo $urlHelp; ?>">&nbsp;常见问题</a>
                 </div>

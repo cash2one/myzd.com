@@ -1,12 +1,19 @@
-#appdownload .phone-bxslider{background: url(../images/download/phone.png) no-repeat;background-size: 100% 100%;width: 258px;height: 531px;padding: 73px 21px 72px;margin: 0 auto;}
-.bx-controls-auto{display: none;}
-.bx-pager{bottom: 10px!important;width:100%!important;text-align: center!important;display: none;}
-#appdownload .qr-code{margin: 10px auto;width: 150px;height: 150px;background-size: 100%;}
-#appdownload .android-download{background-image: url(../images/icons/android-download.png);}
-#appdownload .ios-download{background-image: url(../images/icons/ios-download.png);}
-#appdownload .download-desc{width: 150px;padding: 7px;background-color: #19aea5;display: inline-block;color: #fff;}
-#appdownload .download-desc>.fa{font-size: 24px;}
-#site-content{padding-bottom: 0!important;}
-#site-footer{margin-top: -20px;}
-@media screen and (min-width:768px){#appdownload .download-img{margin-top: 120px;margin-left: 30px;}}
-@media screen and (max-width:768px){#appdownload .download-img{margin-top: 20px;}}
+#site-content{padding-bottom:0!important;}
+#downloadapp .main-body{background-color:#5ebfb8;padding:50px 0 80px;}
+#downloadapp .main-body .header{font-size:36px;color:#fff;margin-top:50px;margin-bottom:30px;}
+#downloadapp .main-content{background-color:#d8eded;padding:50px 0 100px;}
+#downloadapp .main-content .header{font-size:36px;color:#5ebfb8;margin-top:50px;margin-bottom:30px;}
+#downloadapp .main-content .stepone .step{color:#f29600;font-size:24px;}
+#downloadapp .main-content .stepone .content-text{color:#f29600;}
+#downloadapp .main-content .steptwo .step{color:#31a5df;font-size:24px;margin-top:40px;}
+#downloadapp .main-content .steptwo .content-text{color:#31a5df;}
+#downloadapp .main-content .stepthree .step{color:#e51973;font-size:24px;margin-top:40px;}
+#downloadapp .main-content .stepthree .content-text{color:#e51973;}
+#downloadapp .main-content .stepfour .step{color:#00a199;font-size:24px;margin-top:40px;}
+#downloadapp .main-content .stepfour .content-text{color:#00a199;}
+#downloadapp .prompt{color:#5ebfb8;background-color:#fff;margin-top:10px;border-radius:4px;font-size:16px;padding:7px 0;text-align:center;}
+.text16{font-size:16px;}
+.ml40{margin-left:40px;}
+.ml20{margin-left:20px;}
+.ml35{margin-left:35px;}
+.mt7{margin-top:7px;}
