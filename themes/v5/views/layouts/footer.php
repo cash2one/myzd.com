@@ -26,7 +26,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <img src="<?php echo $baseUrlImage; ?>footer/ali.jpg"/>
                             </div>
                             <div class="pull-left mt10">
-                                <img src="<?php echo $baseUrlImage; ?>footer/lingjiahaoyi.png"/>
+                                <a href="http://www.linjiahaoyi.com/" target="_blank"><img src="<?php echo $baseUrlImage; ?>footer/lingjiahaoyi.png"/></a>
                             </div>
                             <div class="clearfix"></div>
                             <div class="pull-left mr10 mt10">
@@ -114,7 +114,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                         <img src="<?php echo $baseUrlImage; ?>footer/ali.jpg"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="<?php echo $baseUrlImage; ?>footer/lingjiahaoyi.png"/>
+                                        <a href="http://www.linjiahaoyi.com/" target="_blank"><img src="<?php echo $baseUrlImage; ?>footer/lingjiahaoyi.png"/></a>
                                     </div>
                                     <div class="pull-left mr10 mt10">
                                         <img src="<?php echo $baseUrlImage; ?>footer/cctv.jpg"/>
