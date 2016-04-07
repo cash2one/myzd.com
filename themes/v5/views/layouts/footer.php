@@ -26,7 +26,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <img src="<?php echo $baseUrlImage; ?>footer/ali.jpg"/>
                             </div>
                             <div class="pull-left mt10">
-                                <a href="http://www.linjiahaoyi.com/" target="_blank"><img src="<?php echo $baseUrlImage; ?>footer/lingjiahaoyi.png"/></a>
+                                <img src="<?php echo $baseUrlImage; ?>footer/lingjiahaoyi.png"/>
                             </div>
                             <div class="clearfix"></div>
                             <div class="pull-left mr10 mt10">
@@ -85,6 +85,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 
                                 <h4>友情链接</h4>
                                 <div class="">
+                                    <a class="text-info" href="http://www.linjiahaoyi.com/" target="_blank">邻家好医</a>
                                     <a class="text-info" href="http://bx.qdnrm.com/" target="_blank">百姓健康</a>
                                     <a class="text-info" href="http://jiancha.aikang.com/" target="_blank">爱康检查</a>
                                     <a class="text-info" href="http://www.51zsyl.com" target="_blank">远程门诊</a>
@@ -114,7 +115,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                         <img src="<?php echo $baseUrlImage; ?>footer/ali.jpg"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <a href="http://www.linjiahaoyi.com/" target="_blank"><img src="<?php echo $baseUrlImage; ?>footer/lingjiahaoyi.png"/></a>
+                                        <img src="<?php echo $baseUrlImage; ?>footer/lingjiahaoyi.png"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
                                         <img src="<?php echo $baseUrlImage; ?>footer/cctv.jpg"/>
