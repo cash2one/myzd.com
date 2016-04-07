@@ -261,17 +261,17 @@ $urlDoctor = $this->createUrl('doctor/');
                     '<div class = "mt10 text14">治疗效果：<span>';
             for (var j = 1; j < 6; j++) {
                 if (j <= comment[i].effect) {
-                    innerHtml += '<i class="fa fa-star active ml40 color-yellow-f8b62c"></i>';
+                    innerHtml += '<i class="fa fa-star active color-yellow-f8b62c"></i>';
                 } else {
-                    innerHtml += '<i class="fa fa-star-o ml40 "></i>';
+                    innerHtml += '<i class="fa fa-star-o"></i>';
                 }
             }
             innerHtml += '</span ></div><div class = "text14">医生态度：<span>';
             for (var k = 1; k < 6; k++) {
                 if (k <= comment[i].doctorAttitude) {
-                    innerHtml += '<i class="fa fa-star active ml40 color-yellow-f8b62c"></i>';
+                    innerHtml += '<i class="fa fa-star active color-yellow-f8b62c"></i>';
                 } else {
-                    innerHtml += '<i class="fa fa-star-o ml40 "></i>';
+                    innerHtml += '<i class="fa fa-star-o"></i>';
                 }
             }
             var date = comment[i].dateCreated.substr(0, 11);
