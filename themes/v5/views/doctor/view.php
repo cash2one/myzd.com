@@ -7,6 +7,7 @@ $doctor = $data->results->doctor;
 $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
 $urlajaxComment = $this->createUrl('comment/ajaxDoctorComment', array('pagesize' => 3, 'doctorId' => ''));
 $page = Yii::app()->request->getQuery('page', '');
+$is_commonweal = Yii::app()->request->getQuery('is_commonweal', 0);
 $urlDoctor = $this->createUrl('doctor/');
 ?>
 <div class="contaier-fluid bg-green">
@@ -211,11 +212,12 @@ $urlDoctor = $this->createUrl('doctor/');
         </div>
     </div>
 </div>
-<?php $this->renderPartial("//booking/formModal"); ?>
+<?php $this->renderPartial("//booking/formModal",array('is_commonweal'=>$is_commonweal)); ?>
 <script>
     $(document).ready(function () {
         $condition = new Array();
         $condition["page"] = '<?php echo $page == '' ? 1 : $page; ?>';
+        $condition["is_commonweal"] = '<?php echo $is_commonweal; ?>';
         //生成大小两个二维码
         jQuery('#qrcode-sm').qrcode({width: 32, height: 32, text: '<?php echo $urlDoctorView . $doctor->id ?>'});
         jQuery('#qrcode-weixin').qrcode({width: 94.5, height: 94.5, text: '<?php echo $urlDoctorView . $doctor->id ?>'});

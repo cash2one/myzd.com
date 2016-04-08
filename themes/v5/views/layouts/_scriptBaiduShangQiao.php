@@ -32,7 +32,7 @@ if (($this->action->controller->id == 'hospital') && ($this->action->id == 'view
         itemparam: '<?php echo $itemparam ?>'
     }
 </script>
-<div class="ask" onclick="NTKF.im_openInPageChat('kf_9138_1451451713805');"></div>
+<div id="xiaoneng" class="ask" onclick="NTKF.im_openInPageChat('kf_9138_1451451713805');"></div>
 <style>
     .ask{z-index:100;cursor:pointer;position:fixed;bottom:45%;right:0px;width:45px;height:147px;background: url(http://s.qiao.baidu.com/style/754/121185754/1/iconbg.jpg);}   
 </style>

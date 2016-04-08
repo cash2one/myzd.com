@@ -29,7 +29,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
     $returnUrl = '';
 }
 ?>
-<style>.input-group-addon.icon{padding:0px;background-color:#fff;width:9%;}.close{opacity:1;}.login-form .form-control{height:40px;}</style>
+<style>.input-group-addon.icon{padding:0px;background-color:#fff;width:9%;}.close{opacity:1;}.login-form .form-control{height:40px;}.ml40{margin-left:40px;}</style>
 <section id="site-header">
     <div class="container-fluid bg-gray home-top hidden-xs">
         <div class="row">
@@ -87,7 +87,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                         <a href="<?php echo Yii::app()->homeUrl; ?>"><img src="<?php echo $urlResImage; ?>icons/logo.png"></a>
                     </div> 
                     <div class="collapse navbar-collapse" id="header-navbar-collapse">                
-                        <ul id="header-nav" class="nav navbar-nav mt5">
+                        <ul id="header-nav" class="nav navbar-nav mt5 ml40">
                             <?php
                             $curView = Yii::app()->request->getParam('view');
                             foreach ($headerMenu as $key => $menuItem) {
@@ -97,7 +97,10 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
                                 } else if (($this->action->controller->id == 'site') && ($key == 'home') && ($this->action->id == 'index')) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
-                                } else if (($this->action->controller->id == 'site') && ($key == 'aboutus') && ($curView == 'bigevents' || $curView == 'news' || $curView == 'mingyizhuyi' || $curView == 'joinus')) {
+                                }else if (($this->action->controller->id == 'site') && ($key == 'mygy') && ($this->action->id == 'mygy')) {
+                                    echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
+                                }  
+                                else if (($this->action->controller->id == 'site') && ($key == 'aboutus') && ($curView == 'bigevents' || $curView == 'news' || $curView == 'mingyizhuyi' || $curView == 'joinus')) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
                                 } else if ($key == $curView) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';

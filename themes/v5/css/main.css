@@ -235,7 +235,7 @@ form span.required {color: #E21E1A;}
 #site-footer .w25 h4{margin-top: 0!important;font-size: 16px;}
 #site-footer .w25.border0{border-right-color: #eeefef;}
 #site-footer .footer-last{font-size: 12px;padding: 11px;background-color: #dcdcdd;}
-#site-footer .partner{padding: 0 30px;}
+#site-footer .partner{padding-left:30px;}
 #site-footer .partner .pl5{padding-left: 5px;}
 #site-footer .partner .pr5{padding-right: 5px;}
 #site-footer .corporationInfo .text-info{display: inline-block;}
