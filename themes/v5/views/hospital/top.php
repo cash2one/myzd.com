@@ -3,8 +3,8 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/sea
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchhospital.js?v=' . time(), CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlHopitalSearch = $this->createUrl('hospital/top');
-$urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5));
-$urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5, 'disease_sub_category' => ''));
+$urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10));
+$urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10, 'disease_sub_category' => ''));
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
 $urlHospitalView = $this->createUrl('hospital/view');
 $city = Yii::app()->request->getQuery('city', '');

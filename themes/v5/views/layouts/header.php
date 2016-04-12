@@ -46,7 +46,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                     ?>
                     <a data-toggle="modal" data-target="#qucikbookingModal">&nbsp;快速预约&nbsp;</a>
                     |
-                    <a href="<?php echo $this->createUrl('download/app');?>">&nbsp;下载APP&nbsp;</a>
+                    <a href="<?php echo $this->createUrl('download/app');?>">&nbsp;下载关注&nbsp;</a>
 <!--                    <div id="qrcode" class="tooltip bottom">
                         <div class="tooltip-arrow"></div>
                         <div class="tooltip-inner">

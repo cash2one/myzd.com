@@ -3,9 +3,9 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/sea
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchdoctor.js', CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDoctorSearch = $this->createUrl('doctor/search');
-$urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 9));
-$urlLoadDoctorByDiseaseCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 9, 'disease_category' => ''));
-$urlLoadDoctorByDiseaseSubCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 9, 'disease_sub_category' => ''));
+$urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 24));
+$urlLoadDoctorByDiseaseCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 24, 'disease_category' => ''));
+$urlLoadDoctorByDiseaseSubCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 24, 'disease_sub_category' => ''));
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
 $urlLoadDiseaseByCategory = $this->createUrl('api/diseasebycategory', array('id' => ''));
 $urlDoctorView = $this->createUrl('doctor/view', array('id' => ''));
