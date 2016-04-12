@@ -113,21 +113,25 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             </div>
             <div class="row mt30">
                 <div class="col-sm-6">
-                    <div class="pull-left mr10">
-                        <img src="<?php echo $urlResImage; ?>mygy/qiaozhen.png">
+                    <div class="pull-left mr20">
+                        <img src="<?php echo $urlResImage; ?>mygy/langyongchun.png">
                     </div>
                     <div>
-                        <div class="text24">乔榛先生</div>
-                        <div class="mt20 text16">中国著名配音演员、导演</div>
-                        <div class="mt50">寄语：</div>
+                        <div class="text24">郎永淳先生</div>
+                        <div class="mt20 text16">
+                            <div>“爱永纯”健康中国基金发起人</div>
+                            <div>原中国中央电视台新闻播音员、主持人</div>
+                            <div>名医公益联盟启动仪式主持人</div>
+                        </div>
+                        <div class="mt20">寄语：</div>
                         <div>
-                            我也曾是和病魔斗争过的病人。可以感同身受到其中的痛苦。希望名医公益联盟的发起，能够聚集成强大的能量，帮助到更多的手术患者。
+                            站上舞台是公益活动的主持人，回归生活，希望能够继续主持公益。
                         </div>
                     </div>
                     <div class="clearfix"></div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="pull-left mr10">
+                    <div class="pull-left mr20">
                         <img src="<?php echo $urlResImage; ?>mygy/wangyan.png">
                     </div>
                     <div>
@@ -144,7 +148,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             </div>
             <div class="row mt30">
                 <div class="col-sm-6">
-                    <div class="pull-left mr10">
+                    <div class="pull-left mr20">
                         <img src="<?php echo $urlResImage; ?>mygy/qianjing.png">
                     </div>
                     <div>
@@ -162,17 +166,13 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
                     <div class="clearfix"></div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="pull-left mr10">
-                        <img src="<?php echo $urlResImage; ?>mygy/langyongchun.png">
+                    <div class="pull-left mr20">
+                        <img src="<?php echo $urlResImage; ?>mygy/qiaozhen.png">
                     </div>
                     <div>
-                        <div class="text24">郎永淳先生</div>
-                        <div class="mt20 text16">
-                            <div>“爱永纯”健康中国基金发起人</div>
-                            <div>原中国中央电视台新闻播音员、主持人</div>
-                            <div>名医公益联盟启动仪式主持人</div>
-                        </div>
-                        <div class="mt20">寄语：</div>
+                        <div class="text24">乔榛先生</div>
+                        <div class="mt20 text16">中国著名配音演员、导演</div>
+                        <div class="mt50">寄语：</div>
                         <div>
                             我也曾是和病魔斗争过的病人。可以感同身受到其中的痛苦。希望名医公益联盟的发起，能够聚集成强大的能量，帮助到更多的手术患者。
                         </div>
@@ -220,9 +220,9 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
     </div>
     <div class="test"></div>
 
-<!--    <link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
-    <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>-->
-    
+    <!--    <link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+        <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>-->
+
 </div>
 <script>
     $(document).ready(function () {

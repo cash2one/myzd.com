@@ -13,7 +13,7 @@
 #mygy .flowChart{background-color:#fff;}
 #mygy .news .title{text-align:center;font-size:24px;border-bottom:1px dashed #dcdcdd;margin-bottom:5px;border:1px solid #dcdcdd;}
 
-#mygy .cutover .line-btn{border-bottom:5px solid #dcdcdd;width:50px;display:inline-block;}
+#mygy .cutover .line-btn{border-bottom:5px solid #dcdcdd;width:50px;display:inline-block;height:10px;}
 #mygy .cutover .content .silder-area{display:none;}
 #mygy .cutover .content .silder-area.active{display:block;}
 #mygy .cutover .line-btn:hover{cursor:pointer;}
