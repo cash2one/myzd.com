@@ -1,7 +1,7 @@
 <?php
 $menu = $this->getPageMenu();
 $this->pageTitle = '加入我们_名医主刀';
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/joinus.css");
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <style>.ml44{margin-left:44px;}</style>
