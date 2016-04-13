@@ -139,21 +139,21 @@ $page = Yii::app()->request->getQuery('page', '');
                 }
                 var imgname = '';
                 if (diseaseCategory.id == 1) {
-                    imgname = 'puwaike.png';
+                    imgname = 'puwaike-small';
                 } else if (diseaseCategory.id == 2) {
-                    imgname = 'guke.png';
+                    imgname = 'guke-small';
                 } else if (diseaseCategory.id == 3) {
-                    imgname = 'fuchanke.png';
+                    imgname = 'fuchanke-small';
                 } else if (diseaseCategory.id == 4) {
-                    imgname = 'xiaoerke.png';
+                    imgname = 'xiaoerke-small';
                 } else if (diseaseCategory.id == 5) {
-                    imgname = 'wuguanke.png';
+                    imgname = 'wuguanke-small';
                 } else if (diseaseCategory.id == 6) {
-                    imgname = 'neike.png';
+                    imgname = 'neike-small';
                 }
                 innerHtml += '<div class="department' + active + '">' +
                         '<div class="dept-header">' +
-                        '<img class="mr5" src="<?php echo $urlResImage; ?>hospital/' + imgname + '"><i class="fa fa-caret-right"></i>' +
+                        '<span class="'+imgname+'"></span><i class="fa fa-caret-right"></i>' +
                         '<i class="fa fa-caret-down"></i>' +
                         '<span class="strong">' + diseaseCategory.name + '</span>' +
                         '</div>' +

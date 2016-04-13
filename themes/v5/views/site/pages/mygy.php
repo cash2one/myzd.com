@@ -243,6 +243,11 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             success: function (data) {
                 setCommonwealDoctors(data, urlDoctorView);
 
+            },
+            error: function (XmlHttpRequest, textStatus, errorThrown) {
+                console.log(XmlHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
             }
         });
     }

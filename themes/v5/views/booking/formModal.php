@@ -7,6 +7,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'));
 $urlSubmitForm = $this->createUrl("booking/ajaxCreate");
 $urlReturn = $this->createUrl('booking/success', array('id' => ''));
+$is_commonweal=isset($is_commonweal)?$is_commonweal:0;
 ?>
 <div class="modal fade " role="dialog" id="bookingModal" aria-labelledby="bookingModal">
     <div class="modal-dialog" role="document">
@@ -22,6 +23,7 @@ $urlReturn = $this->createUrl('booking/success', array('id' => ''));
                             <form class="form-horizontal" role="form" autocomplete="off" enctype="multipart/form-data" data-url-return="<?php echo $urlReturn; ?>" id="booking-form" action="<?php echo $urlSubmitForm; ?>" method="post" novalidate="novalidate">
                                 
                                 <input name="booking[doctor_id]" id="booking_doctor_id" type="hidden" value="">
+                                <input name="booking[is_commonweal]" id="booking_is_commonweal" type="hidden" value="<?php echo $is_commonweal;?>">
                                 <div class="form-group mt10">
                                     <label class="col-sm-3 control-label">就诊专家:</label>
                                     <div class="col-sm-8 text-left label-booking">

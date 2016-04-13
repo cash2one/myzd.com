@@ -224,12 +224,9 @@ $isTerms = Yii::app()->request->getQuery('page', '');
                 <div class="pb40  support-content" id="answer20">  
                     <div class="content-header"><span class="ml20">Q：预约金是否可以退还？</span></div>
                     <div class="ml40 mr40">
-                        <div class="pull-left h300p">A：</div><div>以下2种情况下退还一半预约金：<br/>
-                            <span class="color-red-ff0000"> ①权威专家面诊后都认为患者不具备手术条件/手术风险过大/达不到病人期望，而无法安排手术时，退还一半预约金。<br/>
-                                ②主刀医生确认需要手术后，若平台无法在一周内安排到合适床位，退还一半预约金。
-                                在与患者确认取消服务后的48小时内，将500元退还到患者支付预约金的账户里。<br/></span>
-                            以下这种情况将全额退款：<br/>
-                            平台无法对接到患者所指定的专家，而患者又不接受名医助手推荐的其他名医，则在与患者确认取消服务后的48小时内，将全部预约金退至患者支付的账户里。</div>
+                        <div class="pull-left h300p">A：</div><div>
+                            当平台无法对接到患者所指定的专家，而且患者又不接受名医助手推荐的其他名医，则在与患者确认取消服务后的48小时内，将全部预约金200元退至患者支付的账户里。
+                        </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>

@@ -235,6 +235,11 @@ $urlDoctor = $this->createUrl('doctor/');
                 }
                 setLocationUrl();
                 setComment(data);
+            },
+            error: function (XmlHttpRequest, textStatus, errorThrown) {
+                console.log(XmlHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
             }
         });
     }
