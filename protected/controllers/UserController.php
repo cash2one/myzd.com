@@ -22,7 +22,7 @@ class UserController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'login', 'captcha', 'ajaxLogin', 'ajaxRegister', 'forgetPassword', 'ajaxForgetPassword'),
+                'actions' => array('register', 'login', 'captcha', 'ajaxLogin', 'ajaxRegister', 'ajaxCaptchaCode', 'forgetPassword', 'ajaxForgetPassword'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -168,13 +168,14 @@ class UserController extends WebsiteController {
         $form = new UserRegisterForm();
         $form->role = $userRole;
         $form->terms = 1;
+//        Common::printr($_POST);
         //$form->sms_verify_code = 123456;
         $this->performAjaxValidation($form);
 
         if (isset($_POST['UserRegisterForm'])) {
             $form->attributes = $_POST['UserRegisterForm'];
             //   $form->scenario = 'getSmsCode';   //set this scenario when using sms verify code.
-
+//            print_r($form);exit;
             $userMgr = new UserManager();
             $userMgr->registerNewUser($form);
             if ($form->hasErrors() === false) {
@@ -367,6 +368,12 @@ class UserController extends WebsiteController {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
+    }
+
+    //获取验证码
+    public function actionGetCaptcha() {
+        $captcha = new CaptchaManage;
+        $captcha->showImg();
     }
 
 }
