@@ -41,8 +41,8 @@ function setDoctorHtml(data, urlDoctorView) {
 }
 /**** 设置分页 ****/
 function setPages(doctorCount, page) {
-    if (doctorCount > 9) {
-        var totalPages = Math.ceil(doctorCount / 9);
+    if (doctorCount > 24) {
+        var totalPages = Math.ceil(doctorCount / 24);
         var pageActive = page;
         setPageHtml(pageActive, totalPages);
     } else {

@@ -1,8 +1,8 @@
 #site-content{padding-bottom: 0!important;}
+/*aboutus*/
 .bg-gray-f7{background-color:#f7f7f7;}
 .h400{height:400px;}
 .ml-60{margin-left:-60px;}
-
 .mt105{margin-top:105px;}
 .mt150{margin-top:150px;}
 .ml-45{margin-left:-45px;}
@@ -13,7 +13,6 @@
 .ml19{margin-left:19px;}
 .bg-white{background-color:#fff;}
 .color-white{color:#fff;}
-
 #aboutus .mode-title{height:38px;background-color:#eac11d;font-size:21px;color:#fff;line-height:36px;display:inline-block;padding:0 15px;margin-bottom:20px;}
 #aboutus .summary{background-color:#f7f7f7;padding-top:100px;line-height:2em;}
 #aboutus .summary .content{padding-left:235px;padding-right:235px;}
@@ -22,3 +21,54 @@
 #aboutus .summary .aboutus-link{color:#036eb8;}
 #aboutus .summary .aboutus-link .text:hover{text-decoration:underline;}
 .mb100{margin-bottom:100px;}
+/*bigevents*/
+#big-events{background-color:#f7f7f7;}
+#big-events .main-content{padding:90px 65px 100px;}
+#big-events .main-content .event{padding:10px 15px;}
+#big-events .main-content .event .event-date{color:#e95666;font-size:24px;}
+#big-events .main-content .event .content{color:#717071;text-align:justify;}
+#big-events .main-content .event .divider-line{border-bottom:1px solid #c9c9ca;margin:10px 0;}
+.text21{font-size:18px;}
+.text18{font-size:18px;}
+.pl620{padding-left:620px;}
+@media (max-width: 990px){.pl620{padding-left:0!important;}}
+/*honor*/
+#honors .main-content{padding:90px 80px;}
+#honors .main-content .honor{padding:10px 0;}
+#honors .main-content .honor .summary{background-color:#eeefef;padding:10px 20px;min-height:170px;}
+#honors .main-content .honor .summary .honor-date,#company-news .news .news-content .news-date{color:#60c0bd;font-size:24px;}
+#honors .main-content .honor .summary .content{color:#717071;}
+.text16{font-size:16px;}
+.bg-gray-f7{background-color:#f7f7f7;}
+/*news*/
+#company-news .main-content{text-align:justify;padding:70px 30px 0 0;}
+#company-news .main-content .news{margin-top:10px;}
+#company-news .main-content .yellow-line-one{border-left:10px solid #eeca23;opacity:0.3;height:340px;margin-left:82px;margin-top:-36px;}
+#company-news .main-content .yellow-line-two{border-left:10px solid #eeca23;opacity:0.3;height:2465px;margin-left:82px;margin-top:-36px;}
+#company-news .main-content .news>.row{margin-top:20px;}
+#company-news .news .news-content{min-height:165px;background-color:#eeefef;padding:10px 20px;}
+#company-news .news .news-content .content{color:#717071;}
+.news .news-content .detail{color:#717071;position:absolute;bottom:10px;right:40px;font-size:15px;}
+.news .news-content .detail a{color:#717071;}
+.news .news-content .detail a:hover{color:#036eb8;cursor:pointer;text-decoration:underline;}
+.ml-50{margin-left:-50px;}
+.mt-25{margin-top:-25px;}
+@media (max-width: 768px){.ml-50{margin-left:0!important;}#company-news .main-content .time-line{display:none;}}
+/*joinus*/
+.divide-dashed-yellow{border-bottom:1px dashed #eeca23;}
+.header-img{float:right;}
+.php-high-level{background-color:#F7F3E8;padding:10px 35px;min-height:670px;}
+.other-level{background-color:#F7F3E8;padding:10px 35px 50px;min-height:670px;}
+.office-divide{border-top:15px solid #60c0b7;}
+.job-centent{line-height:2.5em;}
+.count-img{margin-top:-30px;margin-right:-68px;}
+.aboutus-btn{border-top-left-radius:20px;border-top-right-radius:20px;line-height:70px;background-color:#fff;height:70px;font-size:22px;}
+.w20{width:20%;}
+.mt-70{margin-top:-70px;}
+.mt55{margin-top:55px;}
+.mt60{margin-top:60px;}
+.mb100{margin-bottom:100px;}
+.h400{height:400px;}
+.ml-15{margin-left:-15px;}
+.mr15{margin-right:15px;}
+.office-name{font-size:24px;color:#60c0b7;}

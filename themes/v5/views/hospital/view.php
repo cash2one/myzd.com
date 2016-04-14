@@ -204,8 +204,12 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
 <?php $this->renderPartial("//booking/bookingDeptModal"); ?>
 <script>
     $(document).ready(function () {
-        var dept =<?php echo $deptId ?>;
-        $("#"+dept+" a").trigger('click');
+        var dept ='<?php echo $deptId ?>'; 
+        if(dept!=''){
+            $("#"+dept+" a").trigger('click');
+        }else{
+            $('.second-faculty:first a').trigger('click');
+        }
         if ($('.second-faculty').hasClass('active')) {
             $('.second-faculty.active').parents('.deptgroup').find('.first-faculty:first').addClass('active');
         }

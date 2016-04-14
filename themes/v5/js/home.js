@@ -25,6 +25,11 @@ function ajaxLoadDoctor(urlLoadDoctor, urlDoctorView) {
         url: urlLoadDoctor,
         success: function (data) {
             setDoctorHtml(data, urlDoctorView);
+        },
+        error: function (XmlHttpRequest, textStatus, errorThrown) {
+            console.log(XmlHttpRequest);
+            console.log(textStatus);
+            console.log(errorThrown);
         }
     });
 }

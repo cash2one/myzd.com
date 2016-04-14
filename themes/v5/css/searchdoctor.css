@@ -34,3 +34,9 @@
 .city-list a.active{color: #19aea5;}
 .disease-list a.active{color: #19aea5;}
 .hpDeptName{color: #f39700;}
+.department-list .department .dept-header .puwaike-small{width:20px;height:20px;background-image:url(../images/icons/dept-other.png);background-position:0px 0px;display:inline-block;margin-bottom:-5px;margin-right:5px;}
+.department-list .department .dept-header .guke-small{width:20px;height:20px;background-image:url(../images/icons/dept-other.png);background-position:100px 0px;display:inline-block;margin-bottom:-4px;margin-right:5px;}
+.department-list .department .dept-header .fuchanke-small{width:20px;height:20px;background-image:url(../images/icons/dept-other.png);background-position:80px 0px;display:inline-block;margin-bottom:-5px;margin-right:5px;}
+.department-list .department .dept-header .xiaoerke-small{width:20px;height:20px;background-image:url(../images/icons/dept-other.png);background-position:60px 0px;display:inline-block;margin-bottom:-5px;margin-right:5px;}
+.department-list .department .dept-header .wuguanke-small{width:20px;height:20px;background-image:url(../images/icons/dept-other.png);background-position:40px 0px;display:inline-block;margin-bottom:-5px;margin-right:5px;}
+.department-list .department .dept-header .neike-small{width:20px;height:20px;background-image:url(../images/icons/dept-other.png);background-position:20px 0px;display:inline-block;margin-bottom:-5px;margin-right:5px;}

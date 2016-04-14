@@ -35,8 +35,8 @@ function setHospitalHtml(data, urlHospitalView) {
 }
 /**** 设置分页 ****/
 function setPages(doctorCount, page) {
-    if (doctorCount > 5) {
-        var totalPages = Math.ceil(doctorCount / 5);
+    if (doctorCount > 10) {
+        var totalPages = Math.ceil(doctorCount / 10);
         var pageActive = page;
         setPageHtml(pageActive, totalPages);
     } else {

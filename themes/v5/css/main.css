@@ -235,7 +235,7 @@ form span.required {color: #E21E1A;}
 #site-footer .w25 h4{margin-top: 0!important;font-size: 16px;}
 #site-footer .w25.border0{border-right-color: #eeefef;}
 #site-footer .footer-last{font-size: 12px;padding: 11px;background-color: #dcdcdd;}
-#site-footer .partner{padding: 0 30px;}
+#site-footer .partner{padding-left:30px;}
 #site-footer .partner .pl5{padding-left: 5px;}
 #site-footer .partner .pr5{padding-right: 5px;}
 #site-footer .corporationInfo .text-info{display: inline-block;}
@@ -243,7 +243,7 @@ form span.required {color: #E21E1A;}
 #site-footer .contactus{line-height: 2em;}
 #site-footer .show_header_main .contactus{padding-left: 47px;line-height: 2em;}
 #site-footer .hospital ul,#site-footer .contactus ul{padding-left: 0px;}
-#site-footer .corporationInfo{padding-left: 80px;}
+#site-footer .corporationInfo{padding-left: 70px;}
 #site-footer .logo-footer img{margin: 50px auto 0;display: block;}
 .mt35{margin-top: 35px;}
 /**** site-footer-old ****/

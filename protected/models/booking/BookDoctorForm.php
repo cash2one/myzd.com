@@ -26,6 +26,7 @@ class BookDoctorForm extends EFormModel {
     public $user_agent;
     public $submit_via;
     public $verify_code;
+    public $is_commonweal;
 
     /**
      * @return array validation rules for model attributes.
@@ -44,7 +45,7 @@ class BookDoctorForm extends EFormModel {
             array('user_agent', 'length', 'max' => 20),
             array('remark', 'length', 'max' => 500),
             array('submit_via', 'length', 'max' => 10),
-            array('id, ref_no, user_id, mobile, contact_name, contact_email, bk_status, bk_type, doctor_id, doctor_name, city_id, hospital_id, hospital_name, hp_dept_id, hp_dept_name, disease_name, disease_detail, date_start, date_end, appt_date, remark, submit_via, date_created', 'safe'),
+            array('id, ref_no, user_id, mobile, contact_name, contact_email, bk_status, bk_type, doctor_id, doctor_name, city_id, hospital_id, hospital_name, hp_dept_id, hp_dept_name, disease_name, disease_detail, date_start, date_end, appt_date, remark, submit_via, date_created,is_commonweal', 'safe'),
         );
     }
 

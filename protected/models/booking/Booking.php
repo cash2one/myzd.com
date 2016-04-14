@@ -72,7 +72,7 @@ class Booking extends EActiveRecord {
             array('disease_detail', 'length', 'max' => 1000),
             array('remark', 'length', 'max' => 500),
             array('submit_via', 'length', 'max' => 10),
-            array('date_start, date_end, appt_date, date_created, date_updated, date_deleted, user_agent', 'safe'),
+            array('date_start, date_end, appt_date, date_created, date_updated, date_deleted, user_agent,is_commonweal', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, ref_no, user_id, mobile, contact_name, contact_email, bk_status, bk_type, doctor_id, doctor_name, expteam_id, expteam_name, city_id, hospital_id, hospital_name, hp_dept_id, hp_dept_name, disease_name, disease_detail, date_start, date_end, appt_date, remark, submit_via, date_created, date_updated, date_deleted', 'safe', 'on' => 'search'),
@@ -325,6 +325,30 @@ class Booking extends EActiveRecord {
         }
     }
 
+    public static function getOptionsBookingStatus() {
+        return array(
+            StatCode::BK_STATUS_NEW => '待付预约金',
+            StatCode::BK_STATUS_PROCESSING => '安排专家中',
+//            StatCode::BK_STATUS_CONFIRMED_DOCTOR => '专家已确认',
+//            StatCode::BK_STATUS_PATIENT_ACCEPTED => '患者已接受',
+            StatCode::BK_STATUS_SERVICE_UNPAID => '待付咨询费',
+            StatCode::BK_STATUS_SERVICE_PAIDED => '待评价',
+            StatCode::BK_STATUS_PROCESS_DONE => '跟进结束',
+            StatCode::BK_STATUS_DONE => '已评价',
+            StatCode::BK_STATUS_INVALID => '无效',
+            StatCode::BK_STATUS_CANCELLED => '已取消'
+        );
+    }
+
+    public function getBookingStatus() {
+        $options = self::getOptionsBookingStatus();
+        if (isset($options[$this->bk_status])) {
+            return $options[$this->bk_status];
+        } else {
+            return null;
+        }
+    }
+
     public function hasBookingTarget() {
         return (empty($this->booking_target) === false);
     }
@@ -433,7 +457,7 @@ class Booking extends EActiveRecord {
     }
 
     public function getBkStatus() {
-        return StatCode::getBookingStatus($this->bk_status);
+        return self::getBookingStatus($this->bk_status);
     }
 
     public function setBkStatus($v) {

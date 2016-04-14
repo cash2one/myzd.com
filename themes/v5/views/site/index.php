@@ -58,12 +58,12 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 <div class="expert">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs mt30" role="tablist">
-                        <li class="active category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank"><img src="<?php echo $urlResImage; ?>icons/waike.png">外科</a></li>
-                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>" data-page="dept2" target="_blank"><img src="<?php echo $urlResImage; ?>icons/guke.png"> 骨科</a></li>
-                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>" data-page="dept3" target="_blank"><img src="<?php echo $urlResImage; ?>icons/fuchanke.png">妇产科</a></li>
-                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>" data-page="dept4" target="_blank"><img src="<?php echo $urlResImage; ?>icons/xiaoerke.png">小儿外科</a></li>
-                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>" data-page="dept5" target="_blank"><img src="<?php echo $urlResImage; ?>icons/wuguanke.png">五官科</a></li>
-                        <li class="category text-center last"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>" data-page="dept6" target="_blank"><img src="<?php echo $urlResImage; ?>icons/neike.png">内科</a></li>
+                        <li class="active category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank"><span class="waike-small"></span>外科</a></li>
+                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>" data-page="dept2" target="_blank"><span class="guke-small"></span>骨科</a></li>
+                        <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>" data-page="dept3" target="_blank"><span class="fuchanke-small"></span>妇产科</a></li>
+                        <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>" data-page="dept4" target="_blank"><span class="xiaoerke-small"></span>小儿外科</a></li>
+                        <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>" data-page="dept5" target="_blank"><span class="wuguanke-small"></span>五官科</a></li>
+                        <li class="category last"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>" data-page="dept6" target="_blank"><span class="neike-small"></span>内科</a></li>
                     </ul>
                     <!-- Tab panes -->
                     <div class="tab-content expList">
@@ -257,7 +257,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 </section>
 <script>
     $(document).ready(function () {
-        $html = '<li><div class="robot"><a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg-robot.png" alt="" class="img-responsive"></a></div></li>' +
+        $html = '<li><div class="winegirl"><a href="<?php echo $this->createUrl('event/view', array('page' => 'winegirl')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg-winegirl.jpg" alt="" class="img-responsive"></a></div></li>' + '<li><div class="robot"><a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg-robot.png" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="cataract"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cataract')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_cataract.png" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="prince"><a href="<?php echo $this->createUrl('event/view', array('page' => 'prince')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_prince.jpg" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="cancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_cancer.jpg" alt="" class="img-responsive"></a></div></li>';
@@ -266,7 +266,9 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             mode: 'fade',
             slideMargin: 0,
             controls: true,
-            auto: true
+            auto: true,
+            pause:3000,
+            speed:0
         });
         $("#homeads .bx-wrapper").mouseover(function () {
             adsbxslider.stopAuto();

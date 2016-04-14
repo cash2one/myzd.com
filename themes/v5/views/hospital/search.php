@@ -3,8 +3,8 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/sea
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchhospital.js?v=' . time(), CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlHopitalSearch = $this->createUrl('hospital/search');
-$urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5));
-$urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 5, 'disease_sub_category' => ''));
+$urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10));
+$urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10, 'disease_sub_category' => ''));
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
 $urlHospitalView = $this->createUrl('hospital/view', array('id' => ''));
 $city = Yii::app()->request->getQuery('city', '');
@@ -25,7 +25,7 @@ $page = Yii::app()->request->getQuery('page', '');
             <div class="border-gray department-list mt20">
 
             </div>
-            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>/homeslider/remebot.png"></a></div>
+            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>/homeslider/remebot.gif"></a></div>
         </div>
         <div class="col-sm-10">
             <div class="row find-header">
@@ -146,21 +146,21 @@ $page = Yii::app()->request->getQuery('page', '');
                 }
                 var imgname = '';
                 if (diseaseCategory.id == 1) {
-                    imgname = 'puwaike.png';
+                    imgname = 'puwaike-small';
                 } else if (diseaseCategory.id == 2) {
-                    imgname = 'guke.png';
+                    imgname = 'guke-small';
                 } else if (diseaseCategory.id == 3) {
-                    imgname = 'fuchanke.png';
+                    imgname = 'fuchanke-small';
                 } else if (diseaseCategory.id == 4) {
-                    imgname = 'xiaoerke.png';
+                    imgname = 'xiaoerke-small';
                 } else if (diseaseCategory.id == 5) {
-                    imgname = 'wuguanke.png';
+                    imgname = 'wuguanke-small';
                 } else if (diseaseCategory.id == 6) {
-                    imgname = 'neike.png';
+                    imgname = 'neike-small';
                 }
                 innerHtml += '<div class="department ' + active + '">' +
                         '<div class="dept-header">' +
-                        '<img class="mr5" src="<?php echo $urlResImage; ?>hospital/' + imgname + '"><i class="fa fa-caret-right"></i>' +
+                        '<span class="'+imgname+'"></span><i class="fa fa-caret-right"></i>' +
                         '<i class="fa fa-caret-down"></i>' +
                         '<span class="strong">' + diseaseCategory.name + '</span>' +
                         '</div>' +

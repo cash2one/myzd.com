@@ -49,31 +49,19 @@ $this->htmlMetaDescription = '名医主刀是一个将“手术”环节互联�
                     <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">首先，医生端。苏舒之初是希望将三甲医院的主任、副主任医生均吸引进来，但之后他发现，看病不像打车，患者关注的是医生和平台的紧密程度，医生是否是业界顶尖，今年7月，他将方向改为建立100个名医专家团队。每个名医团队 5人，除去主刀名医，其他4人由专家自己选择，其中一人作为团队秘书长，同剩余3人负责同平台沟通、删选患者、协调医生就诊时间，同患者沟通病情、对接等，由名医主刀平台支付工资给团队。</span>
                 </p>
                 <p style="line-height: 2em; text-indent: 2em;">
-                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">这 100个顶尖医生如何筛选？苏舒和他的团队将其定位于大外科6大科室的top5。地域上，北京、上海、广州各个科室各有一个专家团队。“大外科大概有 40个细分科室，每个区域的每个科室一个专家团队，由于地域差别，目前定为北京、上海各 40个专家团队，广州 &nbsp;2 0个专家团队。其中北京团队主要覆盖华北、东三省患者业务，上海团队覆盖江浙沪地区，广州团队可覆盖华南区。”苏</span>
-                </p>
-                <p>
-                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">舒介绍。</span>
+                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">这 100个顶尖医生如何筛选？苏舒和他的团队将其定位于大外科6大科室的top5。地域上，北京、上海、广州各个科室各有一个专家团队。“大外科大概有 40个细分科室，每个区域的每个科室一个专家团队，由于地域差别，目前定为北京、上海各 40个专家团队，广州 &nbsp;2 0个专家团队。其中北京团队主要覆盖华北、东三省患者业务，上海团队覆盖江浙沪地区，广州团队可覆盖华南区。”苏舒介绍。</span>
                 </p>
                 <p style="line-height: 2em; text-indent: 2em;">
-                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">他计划在 3个月完成这 1 0 0 个医生团队，目前，国内肝胆领域泰斗级别的中国工程院院士王学浩，国内甲状腺顶级专家北京协和医院普外科主任刘跃武，国内白内障第一人北京同仁医院朱思泉主任等国内顶尖的名医专家均同该平台建立了合作。值得一提的是</span>
+                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">他计划在 3个月完成这 1 0 0 个医生团队，目前，国内肝胆领域泰斗级别的中国工程院院士王学浩，国内甲状腺顶级专家北京协和医院普外科主任刘跃武，国内白内障第一人北京同仁医院朱思泉主任等国内顶尖的名医专家均同该平台建立了合作。值得一提的是每次同各个名医谈合作，苏舒都强调签订“独家合作”。</span>
                 </p>
                 <p style="line-height: 2em; text-indent: 2em;">
-                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">每次同各个名医谈合作，苏舒都强调签订“独家合作”。</span>
-                </p>
-                <p style="line-height: 2em; text-indent: 2em;">
-                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">其次，医院端。苏舒和他的团队经过调研发现，国内人满为患的是三甲医院， &nbsp;但仍有大量二甲医院或者地理位置较偏的三甲医院、民营医院有空余床位。这些医院十分欢迎名医过来坐诊、 飞刀， 以吸引患者前往就医，增加收入。目前，海军 总医院、煤炭总</span>
-                </p>
-                <p>
-                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">医院、和睦家等均同其签订合作，“北京、上海各有4～5家医院提供床位，每个均有超过1000张空闲床位。”苏舒告诉创业邦。</span>
+                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">其次，医院端。苏舒和他的团队经过调研发现，国内人满为患的是三甲医院， &nbsp;但仍有大量二甲医院或者地理位置较偏的三甲医院、民营医院有空余床位。这些医院十分欢迎名医过来坐诊、 飞刀， 以吸引患者前往就医，增加收入。目前，海军总医院、煤炭总医院、和睦家等均同其签订合作，“北京、上海各有4～5家医院提供床位，每个均有超过1000张空闲床位。”苏舒告诉创业邦。</span>
                 </p>
                 <p style="line-height: 2em; text-indent: 2em;">
                     <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">名医主刀还同新加坡、美国的知名医院建立合作，“我们目前在新加坡签了 &nbsp;1 2家，远程会诊、转诊都可以；医生标准同样，要求 20年工作经验的名医。”苏舒告诉创业邦。</span>
                 </p>
-                <p style="line-height: 2em;">
-                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">&nbsp;&nbsp;最后，患者渠道端。</span>
-                </p>
                 <p style="line-height: 2em; text-indent: 2em;">
-                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">严格来说，名医主刀是标准的医疗 O2O模式，重线下。医生、医院在平台上没有自己的账号，平台用户均患者。患者可以通过 APP、网站、微信公众号寻找合适的医生，同平台建立起联系后，剩余流程均放在线下。</span>
+                    <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">最后，患者渠道端。严格来说，名医主刀是标准的医疗 O2O模式，重线下。医生、医院在平台上没有自己的账号，平台用户均患者。患者可以通过 APP、网站、微信公众号寻找合适的医生，同平台建立起联系后，剩余流程均放在线下。</span>
                 </p>
                 <p style="line-height: 2em; text-indent: 2em;">
                     <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">名医主刀还同美年大健康、快速问医生等平台合作，将其平台上需要手术的患者推荐到名医主刀平台上来。</span>

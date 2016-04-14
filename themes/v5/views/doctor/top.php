@@ -3,9 +3,9 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/sea
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchdoctor.js', CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDoctorSearch = $this->createUrl('doctor/top');
-$urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 9));
-$urlLoadDoctorByDiseaseCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 9, 'disease_category' => ''));
-$urlLoadDoctorByDiseaseSubCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 9, 'disease_sub_category' => ''));
+$urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 24));
+$urlLoadDoctorByDiseaseCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 24, 'disease_category' => ''));
+$urlLoadDoctorByDiseaseSubCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 24, 'disease_sub_category' => ''));
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
 $urlLoadDiseaseByCategory = $this->createUrl('api/diseasebycategory', array('id' => ''));
 $urlDoctorView = $this->createUrl('doctor/view', array('id' => ''));
@@ -48,7 +48,7 @@ $page = Yii::app()->request->getQuery('page', '');
         <div class="col-md-2 col-sm-3 mt30">
             <div class="border-gray department-list">
             </div>
-            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage;?>/homeslider/remebot.png"></a></div>
+            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage;?>/homeslider/remebot.gif"></a></div>
         </div>
         <div class="col-sm-9 col-md-10">
             <div class="loading loading02"></div>
@@ -155,26 +155,26 @@ $page = Yii::app()->request->getQuery('page', '');
                 }
                 var imgname = '';
                 if (diseaseCategory.id == 1) {
-                    imgname = 'puwaike.png';
+                    imgname = 'puwaike-small';
                 } else if (diseaseCategory.id == 2) {
-                    imgname = 'guke.png';
+                    imgname = 'guke-small';
                 } else if (diseaseCategory.id == 3) {
-                    imgname = 'fuchanke.png';
+                    imgname = 'fuchanke-small';
                 } else if (diseaseCategory.id == 4) {
-                    imgname = 'xiaoerke.png';
+                    imgname = 'xiaoerke-small';
                 } else if (diseaseCategory.id == 5) {
-                    imgname = 'wuguanke.png';
+                    imgname = 'wuguanke-small';
                 } else if (diseaseCategory.id == 6) {
-                    imgname = 'neike.png';
+                    imgname = 'neike-small';
                 }
                 innerHtml += '<div class="department ' + active + '">' +
                         '<div class="dept-header">' +
-                        '<img class="mr5" src="<?php echo $urlResImage; ?>hospital/' + imgname + '"><i class="fa fa-caret-right"></i>' +
+                        '<span class="'+imgname+'"></span><i class="fa fa-caret-right"></i>' +
                         '<i class="fa fa-caret-down"></i>' +
                         '<span class="strong">' + diseaseCategory.name + '</span>' +
                         '</div>' +
                         '<ul>';
-                //'<li><a class="diseaseCategory" data-id = "' + diseaseCategory.id + '" href="<?php echo $urlLoadDoctorByDiseaseCategory; ?>' + diseaseCategory.id + '">全部</a></li>';
+                //'<li><a class="diseaseCategory" data-id = "' + diseaseCategory.id + '" href="<?php //echo $urlLoadDoctorByDiseaseCategory; ?>' + diseaseCategory.id + '">全部</a></li>';
                 var subCats = diseaseCategory.subCat;
                 for (var j = 0; j < subCats.length; j++) {
                     var subCat = subCats[j];

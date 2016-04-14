@@ -1,59 +1,284 @@
 <?php
-$this->pageTitle = '新闻资讯中心_2015_名医主刀';
-$this->htmlMetaKeywords = '新闻中心';
-$this->htmlMetaDescription = '新闻中心。【名医主刀】汇聚国内外顶级名医资源和床位资源，利用互联网技术实现医患精准匹配，帮助广大患者得以在第一时间预约到名医专家进行主刀治疗。www.mingyizhudao.com';
-$menu = $this->getPageMenu();
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/mingyizhuyi.css");
-$news = array(
-    'forbes' => '2016-2月 --------------------福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选',
-    'firstaid' => '2015-12-08------------------8小时冒雪夜行驰援，医者仁心只为救死扶伤',
-    'femalehealth' => '2015-11-06------------------关爱女性健康，名医主刀与公益同行',
-    'mingyizhudaorongzi' => '2015-10-28------------------喜大普奔，名医主刀已完成A轮融资',
-    'dididoctor' => '2015-10-20------------------滴滴医生火爆预约，名医抢单随车上门',
-    'doctoronsite' => '2015-10-20------------------足不出户、医生上门！------阿里健康、滴滴出行、名医主刀，三强联手推医生上门服务',
-    'partnerofdocs' => '2015-09-29------------------名医主刀：做医生和医生集团的合伙人',
-//    'mamajixufeiyuan' => '2015-09-29------------------年轻妈妈的生命倒计时，急需寻找“续命”肺源',
-    'tiantanpuhua' => '2015-09-15------------------"名医主刀＋北京天坛普华医院" 互联网诊疗新模式',
-    'chuangyebang' => '2015-09-13------------------"名医主刀"----"创业邦"推荐为9月值得关注的新创公司',
-    'teacher' => '2015-09-10------------------感恩教师，名医与慈善同行',
-    'yinlianzhihui' => '2015-09-09------------------银联智惠与名医主刀携手，缓解患者经济负担',
-    'jiazhuangxian' => '2015-09-05------------------甲状腺肿瘤患者的求医经历',
-    '36ke' => '2015-09-05------------------获真格基金青睐的“名医主刀”如何打造互联网O2O“飞刀”平台？',
-    'mingyizhudao' => '2015-08-04------------------名医主刀：移动医疗手术O2O',
-    'fly-cutter' => '2015-07-30------------------名医主刀：互联网式“飞刀”',
-//    'kangai' => '2015-07-30------------------父亲两次抗癌，只为给女儿更久远的爱',
-    'qianyuedejiyiyuan' => '2015-07-30------------------名医主刀成功签约德济医院 互联网医疗又一里程碑',
-    'chuangyeyingxionghui' => '2015-07-28------------------男儿英雄泪，志在“好看病，看好病”——“名医主刀”登陆央视《创业英雄汇》',
-    'zhenfund' => '2015-05月 ------------------“名医主刀”获真格基金500万天使投资，打造国内最大的手术O2O平台',
-//    'hanayideganxiexin' => '2015-07-18------------------韩阿姨的一封感谢信照亮千万患者就医路'
-);
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
+$urlNews = $this->createUrl('news/page', array("view" => ""));
 ?>
 <div class="container-fluid aboutus-header h400">
     <img src="<?php echo $urlResImage; ?>aboutus/our-header.png"/>
 </div>
-<div class="container-fluid bg-gray-f7" style="padding-bottom:35px;">
+<div class="container-fluid bg-gray-f7">
     <div class="row">
         <div class="container">
             <div class="mt-60">
                 <?php $this->renderPartial('pages/_menu'); ?> 
             </div>
-
+        </div>
+        <div class="container-fluid" id="company-news">
             <div class="row">
-                <div class="col-sm-2 pr0 mt94"><img src="<?php echo $urlResImage ?>aboutus/215-01.png"></div>
-                <div class="col-sm-10 pl0 mt160"><div class="news-yellow-line"></div></div>
-            </div>
-            <div class="row ml-80 mt-35">
-                <?php
-                foreach ($news as $key => $value) {
-                    //echo "<li class='news-item'><i class='fa fa-star'></i>&nbsp;<a title='" . $value . "' href='" . $this->createUrl("news/page", array("view" => $key)) . "'>" . $value . "</a></li>";
-                    echo '<div class="col-sm-offset-3 mt30"><a target="_blank" title="' . $value . '" href="' . $this->createUrl("news/page", array("view" => $key)) . '"><span>'.$value.'</span></a></div>';
-                }
-                ?>
-                
+                <div class="container">
+                    <div class="main-content">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-3">
+                                <div class="time-line">
+                                    <div>
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/2016.png">
+                                    </div>
+                                    <div>
+                                        <div class="yellow-line-one"></div>
+                                    </div>
+                                    <div>
+                                        <img class="mt-25" src="<?php echo $urlResImage; ?>aboutus/news/2015.png">
+                                    </div>
+                                    <div>
+                                        <div class="yellow-line-two"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-10 col-sm-9 ml-50 news">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news160201.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年2月
+                                            </div>
+                                            <div class="content">
+                                                <div>中国互联网协会发布《中国分享经济发展报告2016》白皮书，名医主刀作为<span class="text21">唯一一家移动医疗</span>创业公司入选。名医主刀在配置闲置床位和医生碎片时间的过程中，践行着分享经济理念。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news160202.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年2月
+                                            </div>
+                                            <div class="content">
+                                                <div>2016年2月，福布斯发布<span class="text21" >“亚洲30位30岁以下年轻领袖（30 under 30）”</span>榜单，涉及多个领域。榜单评选的是年龄在30岁以下的亚洲青年才俊，入选的有丁俊晖、金秀贤等文体明星，也有各个行业的创业明星，其中在医疗科技领域，<span class="text16">名医主刀创始人、CEO苏舒</span>榜上有名。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>forbes" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news151201.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年12月
+                                            </div>
+                                            <div class="content">
+                                                <div>关爱女性健康,名医主刀与公益同行！名医主刀携手<span class="text16">北京天坛普华医院、上海德济医院</span>举办<span class="text21">免费乳腺B超筛查公益活动</span>。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>femalehealth" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news151001.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年10月
+                                            </div>
+                                            <div class="content">
+                                                <div class="text21">滴滴医生火爆预约，名医抢单随车上门。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>dididoctor" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news151002.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年10月
+                                            </div>
+                                            <div class="content">
+                                                <div>足不出户、医生上门！ 互联网公司正在用眼花缭乱的方式刷新人们的想象力。10月15日，阿里巴巴旗下阿里健康和滴滴出行、名医主刀共同宣布，将在10月18、19日两天，在北京、上海、杭州、南京四个城市推出<span class="text21">“一键呼叫医生，随车上门咨询”</span>的免费便民服务。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>doctoronsite" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news150901.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年9月
+                                            </div>
+                                            <div class="content">
+                                                <div class="text21">名医主刀：做医生和医生集团的合伙人。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>partnerofdocs" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news150902.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年9月
+                                            </div>
+                                            <div class="content">
+                                                <div><span class="text21">“名医主刀+北京天坛普华医院”</span>互联网诊疗新模式。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>tiantanpuhua" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news150903.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年9月
+                                            </div>
+                                            <div class="content">
+                                                <div>名医主刀被<span class="text21">“创业邦”</span>推荐为9月值得关注的新创公司</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>chuangyebang" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news150904.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年9月
+                                            </div>
+                                            <div class="content">
+                                                <div>自2014年以来上海市慈善基金会设立了大重病教师资助项目，今年在继续给予部分大重病教师资金援助的基础上，基金会还联合了首家手术O2O平台 “名医主刀”为此次的活动提供<span class="text21">免费的医疗专家咨询服务</span>，为患病教师上门义诊，基金会领导与专业医生一起走访身患大重疾病的教师，并有针对性的为他们提供医疗指导和援助。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>teacher" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news150801.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年8月
+                                            </div>
+                                            <div class="content">
+                                                <div>与大多数互联网医疗公司类似，名医主刀的商业模式仍然受到关注。在CEO苏舒的计划中，短期内，名医主刀的平台为<span class="text21">医院、医生、患者</span>三方提供资源对接的服务，目前的主要精力仍然是在服务的改进以及技术的提高。除此之外，由于是以手术为主切入医疗服务领域，其在相关器械、材料方面的商业前景也颇具想象力。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>mingyizhudao" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news150701.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年7月
+                                            </div>
+                                            <div class="content">
+                                                <div>名医主刀已经与心血管外科国内顶级专家<span class="text16">许建屏教授</span>、甲状腺外科国内顶级专家<span class="text16">刘跃武教授</span>、白内障国内顶级专家<span class="text16">朱思泉教授</span>、国内肝胆领域泰斗<span class="text16">王学浩院士</span>等百余位<span class="text21">国内顶尖知名专家</span>签订专家战略合作协议。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news150702.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年7月
+                                            </div>
+                                            <div class="content">
+                                                <div>名医主刀独特的理念吸引<span class="text21">央视《创业英雄汇》</span>节目组，随之名医主刀受邀在央视平台进入全国人民视野。“名医主刀”平台创始人兼CEO苏舒路演随即播出，名医主刀将为中国医疗格局开启新的篇章。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>chuangyeyingxionghui" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news150703.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年7月
+                                            </div>
+                                            <div class="content">
+                                                <div>名医主刀受<span class="text21">央视《华商论见》</span>邀约，名医主刀CEO苏舒与央视一哥水均益进行一个深度的交流。水均益老师以其独特的视角深度剖析国内医疗资源配比，对名医主刀精准匹配专家，优化国内医疗资源给予充分肯定。与此同时，名医主刀与央视《华商论见》签订战略协议，继续深化合作。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news150704.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年7月
+                                            </div>
+                                            <div class="content">
+                                                <div>具体来说，平台像是一个名医经纪人，一方面，整合顶尖的医生资源，为其打造<span class="text21">“名医工作室”</span>，整合二、三甲医院和高端民营医院的空闲床位资源，为名医异地行医提供场所；另一方面，患者可以通过平台去预约专家，专家利用自己业余时间为其进行手术治疗。患者向医生、就诊医院支付手术、住院费用。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>fly-cutter" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-5">
+                                        <img src="<?php echo $urlResImage; ?>aboutus/news/news150705.png">
+                                    </div>
+                                    <div class="col-md-9 col-sm-7">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2015年7月
+                                            </div>
+                                            <div class="content">
+                                                <div>名医主刀成功签约<span class="text16">上海德济医院</span>——<span class="text21">互联网的又一里程碑</span>。近日，名医主刀O2O互联网医疗平台与上海德济医院举行了合作签约仪式，启动了“名医主刀互联网+德济专家”的新型医疗合作模式，旨在打造移动医疗领域的Uber，用O2O创新模式为全国病患提供最专业及时的诊疗服务。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>qianyuedejiyiyuan" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
             </div>
         </div>
     </div>
-    <br/><br/><br/>
 </div>
 

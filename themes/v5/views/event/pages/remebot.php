@@ -173,7 +173,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     <div class="col-md-4 mt50">
                         <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3207')); ?>">
                             <div class="border-gray expert-list">
-                                <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03207.JPG" alt=""></div>
+                                <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03207.jpg" alt=""></div>
                                 <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                                 <div class="pull-right roboticon-img"></div>
                                 <div class="text-center"><span class="strong ml20">卢旺盛</span><span class="text-center mt5">&nbsp;主任医师&nbsp;副教授</span></div>

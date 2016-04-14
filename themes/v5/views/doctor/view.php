@@ -7,6 +7,7 @@ $doctor = $data->results->doctor;
 $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
 $urlajaxComment = $this->createUrl('comment/ajaxDoctorComment', array('pagesize' => 3, 'doctorId' => ''));
 $page = Yii::app()->request->getQuery('page', '');
+$is_commonweal = Yii::app()->request->getQuery('is_commonweal', 0);
 $urlDoctor = $this->createUrl('doctor/');
 ?>
 <div class="contaier-fluid bg-green">
@@ -211,11 +212,12 @@ $urlDoctor = $this->createUrl('doctor/');
         </div>
     </div>
 </div>
-<?php $this->renderPartial("//booking/formModal"); ?>
+<?php $this->renderPartial("//booking/formModal",array('is_commonweal'=>$is_commonweal)); ?>
 <script>
     $(document).ready(function () {
         $condition = new Array();
         $condition["page"] = '<?php echo $page == '' ? 1 : $page; ?>';
+        $condition["is_commonweal"] = '<?php echo $is_commonweal; ?>';
         //生成大小两个二维码
         jQuery('#qrcode-sm').qrcode({width: 32, height: 32, text: '<?php echo $urlDoctorView . $doctor->id ?>'});
         jQuery('#qrcode-weixin').qrcode({width: 94.5, height: 94.5, text: '<?php echo $urlDoctorView . $doctor->id ?>'});
@@ -233,6 +235,11 @@ $urlDoctor = $this->createUrl('doctor/');
                 }
                 setLocationUrl();
                 setComment(data);
+            },
+            error: function (XmlHttpRequest, textStatus, errorThrown) {
+                console.log(XmlHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
             }
         });
     }
@@ -261,17 +268,17 @@ $urlDoctor = $this->createUrl('doctor/');
                     '<div class = "mt10 text14">治疗效果：<span>';
             for (var j = 1; j < 6; j++) {
                 if (j <= comment[i].effect) {
-                    innerHtml += '<i class="fa fa-star active ml40 color-yellow-f8b62c"></i>';
+                    innerHtml += '<i class="fa fa-star active color-yellow-f8b62c"></i>';
                 } else {
-                    innerHtml += '<i class="fa fa-star-o ml40 "></i>';
+                    innerHtml += '<i class="fa fa-star-o"></i>';
                 }
             }
             innerHtml += '</span ></div><div class = "text14">医生态度：<span>';
             for (var k = 1; k < 6; k++) {
                 if (k <= comment[i].doctorAttitude) {
-                    innerHtml += '<i class="fa fa-star active ml40 color-yellow-f8b62c"></i>';
+                    innerHtml += '<i class="fa fa-star active color-yellow-f8b62c"></i>';
                 } else {
-                    innerHtml += '<i class="fa fa-star-o ml40 "></i>';
+                    innerHtml += '<i class="fa fa-star-o"></i>';
                 }
             }
             var date = comment[i].dateCreated.substr(0, 11);
