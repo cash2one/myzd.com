@@ -13,7 +13,7 @@ $urlReturn = Yii::app()->homeUrl;
 $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms'));
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
-<style>.input-group-addon.icon{padding:0px;background-color:#fff;width:9%;}.close{opacity:1;}.login-form .form-control{height:40px;}</style>
+<style>.input-group-addon.icon{padding:0px;background-color:#fff;width:9%;}.close{opacity:1;}#register-form .form-control{height:40px;}</style>
 <form class="form-horizontal" role="form" id="register-form" action="<?php echo $ajaxRegisterUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-return="<?php echo $urlReturn; ?>" method="post" autocomplete="off">
     <div>
         <input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
@@ -34,15 +34,14 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
         <div class="col-sm-12 controls">
             <div class="input-group">
                 <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div>
-                <input class="form-control" maxlength="6" placeholder="请输入验证码" name="UserRegisterForm[captcha_code_register]" id="UserRegisterForm_captcha_code_register" type="text">
-                 <!--<span class="btn input-group-addon  btn-verifycode"><a href="javascript:void(0);"><img src="<?php echo $this->createUrl('user/GetCaptcha')?>" onclick="this.src='<?php echo $this->createUrl('user/GetCaptcha');?>'/GetCaptcha/'+ Math.random() ?>"></a></span>-->
-<!--                <?php //$this->widget('CCaptcha'); ?> -->
-                 <span><?php $this->widget('CCaptcha',array('showRefreshButton'=>false,'clickableImage'=>true,'imageOptions'=>array('alt'=>'点击换图','title'=>'点击换图','style'=>'cursor:pointer'))); ?></span>
+                <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserRegisterForm[captcha_code_register]" id="UserRegisterForm_captcha_code_register" type="text">            
+                <div class="input-group-addon" style="width:131px;padding: 0;"><?php $this->widget('CCaptcha', array('showRefreshButton' => false, 'clickableImage' => true, 'imageOptions' => array('alt' => '点击换图', 'title' => '点击换图', 'style' => 'cursor:pointer;width:100%;height:100%;'))); ?></div>
             </div>
-            <div class="Message" id="UserRegisterForm_verify_code_em_" style="display:none"></div>    
+            <div class="Message" id="UserRegisterForm_captcha_code_register_em_" style="display:none"></div>    
         </div>
         <div class="clearfix"></div>
     </div>
+
     <div class="form-group">
         <div class="col-sm-12 controls">
             <div class="input-group">
@@ -99,13 +98,22 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 
     function sendRegSmsVerifyCode(domBtn) {
         var domMobile = $("#UserRegisterForm_username");
+        var domCaptchaCode = $("#UserRegisterForm_captcha_code_register");
         var mobile = domMobile.val();
+        var captchaCode = domCaptchaCode.val();
         if (mobile.length === 0) {
-            $("#UserRegisterForm_username-error").remove();
+            $("div.error").remove();
             $("#UserRegisterForm_username").parents('.input-group').after('<div id="UserRegisterForm_username-error" class="error">请输入手机号码</div>');
         } else if (domMobile.hasClass("error")) {
             // mobile input field as , so do nothing.
+        } else if (captchaCode.length == 0) {
+            $("div.error").remove();
+            $("#UserRegisterForm_captcha_code_register").parents('.input-group').after('<div id="UserRegisterForm_captcha_code_register-error" class="error">请输入图形验证码</div>');
+        } else if (ajaxValidateCaptchaCode() == false) {
+            $("div.error").remove();
+            $("#UserRegisterForm_captcha_code_register").parents('.input-group').after('<div id="UserRegisterForm_captcha_code_register-error" class="error">请输入正确的图形验证码</div>');
         } else {
+            $("div.error").remove();
             buttonTimerStart(domBtn, 60000);
             $domForm = $("#register-form");
             var actionUrl = $domForm.find("input[name='smsverify[actionUrl]']").val();
@@ -135,5 +143,25 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                 }
             });
         }
+    }
+    function ajaxValidateCaptchaCode() {
+        var validate = false;
+        var domForm = $("#register-form");
+        var formdata = domForm.serialize();
+        $.ajax({
+            type: 'post',
+            data: formdata,
+            async: false,
+            url: '<?php echo $ajaxRegisterUrl; ?>',
+            success: function (data) {
+                console.log(data.errors);
+                if (!data.errors['captcha_code_register']) {
+                    validate = true;
+                }
+            },
+            error: function () {
+            }
+        });
+        return validate;
     }
 </script>
