@@ -8,6 +8,7 @@ class UserRegisterForm extends EFormModel {
     public $password_repeat;
     public $verify_code;    // 短信验证码
     public $captcha_code;   // 图形验证码
+    public $captcha_code_register;
     public $terms;
 
     /**
@@ -29,6 +30,7 @@ class UserRegisterForm extends EFormModel {
             array('verify_code', 'length', 'is' => 6, 'message' => '{attribute}不正确'),
             array('verify_code', 'numerical', 'integerOnly' => true, 'message' => '{attribute}不正确'),
             array('captcha_code', 'captcha', 'allowEmpty' => !CCaptcha::checkRequirements(), 'caseSensitive' => false, 'on' => 'getSmsCode'),
+            array('captcha_code_register', 'captcha', 'allowEmpty' => !CCaptcha::checkRequirements()),
         );
     }
 
