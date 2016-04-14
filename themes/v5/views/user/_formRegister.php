@@ -34,6 +34,19 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
         <div class="col-sm-12 controls">
             <div class="input-group">
                 <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div>
+                <input class="form-control" maxlength="6" placeholder="请输入验证码" name="UserRegisterForm[captcha_code_register]" id="UserRegisterForm_captcha_code_register" type="text">
+                 <!--<span class="btn input-group-addon  btn-verifycode"><a href="javascript:void(0);"><img src="<?php echo $this->createUrl('user/GetCaptcha')?>" onclick="this.src='<?php echo $this->createUrl('user/GetCaptcha');?>'/GetCaptcha/'+ Math.random() ?>"></a></span>-->
+<!--                <?php //$this->widget('CCaptcha'); ?> -->
+                 <span><?php $this->widget('CCaptcha',array('showRefreshButton'=>false,'clickableImage'=>true,'imageOptions'=>array('alt'=>'点击换图','title'=>'点击换图','style'=>'cursor:pointer'))); ?></span>
+            </div>
+            <div class="Message" id="UserRegisterForm_verify_code_em_" style="display:none"></div>    
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-12 controls">
+            <div class="input-group">
+                <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div>
                 <input class="form-control" maxlength="6" placeholder="请输入验证码" name="UserRegisterForm[verify_code]" id="UserRegisterForm_verify_code" type="text">            
                 <div id="btn-sendRegSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>
             </div>
