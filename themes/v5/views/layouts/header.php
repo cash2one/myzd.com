@@ -185,6 +185,8 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                         <div class="Message" id="UserVerifyCodeLoginForm_username_em_" style="display:none"></div>                    
                                     </div>
                                 </div>
+                                
+                                
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
