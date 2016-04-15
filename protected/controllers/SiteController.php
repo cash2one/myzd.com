@@ -10,9 +10,13 @@ class SiteController extends WebsiteController {
     public function actions() {
         return array(
             // captcha action renders the CAPTCHA image displayed on the contact page
-            'captcha' => array(
+             'captcha' => array(
                 'class' => 'CCaptchaAction',
                 'backColor' => 0xFFFFFF,
+                'maxLength' => 6,
+                'offset' => 0,
+                'testLimit' => 0,
+                'height' => 34
             ),
             // page action renders "static" pages stored under 'protected/views/site/pages'
             // They can be accessed via: index.php?r=site/page&view=FileName
@@ -28,7 +32,6 @@ class SiteController extends WebsiteController {
      */
     public function actionIndex() {
         $this->handleMobileBrowserRedirect();
-
         $this->layout = 'layoutHome';
         // renders the view file 'protected/views/site/index.php'
         // using the default layout 'protected/views/layouts/layoutHome.php'
