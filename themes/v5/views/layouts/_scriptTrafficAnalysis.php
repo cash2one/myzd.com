@@ -26,4 +26,17 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+    <?php if (($this->action->controller->id == 'doctor') && ($this->action->id == 'top')) { ?>
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?d026f05173434b1c40fcdb46bfc9a8db";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    <?php } ?>
 </div>
+
+

@@ -19,13 +19,13 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                 <div class="container">
                     <div class="main-content">
                         <div class="event">
-                            <div class="pull-left">
-                                <img src="<?php echo $urlResImage; ?>aboutus/bigevents/event141001.png">
+                            <div class="pull-left mr30">
+                                <img src="<?php echo $urlResImage; ?>aboutus/bigevents/event151001.png">
                             </div>
                             <div class="pl620">
-                                <div class="event-date">2014年10月，名医主刀项目启动。</div>
+                                <div class="event-date">2015年10月</div>
                                 <div class="divider-line"></div>
-                                <div class="content">名医主刀希望通过互联网让更多患者<span class="text21">"好看病"、"看好病"</span>。</div>
+                                <div class="content">名医主刀完成<span class="text21">A轮6000万</span>元人民币融资。复星医药领投，高榕资本/真格基金跟投。</div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -41,13 +41,13 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <div class="clearfix"></div>
                         </div>
                         <div class="event">
-                            <div class="pull-left mr30">
-                                <img src="<?php echo $urlResImage; ?>aboutus/bigevents/event151001.png">
+                            <div class="pull-left">
+                                <img src="<?php echo $urlResImage; ?>aboutus/bigevents/event141001.png">
                             </div>
                             <div class="pl620">
-                                <div class="event-date">2015年10月</div>
+                                <div class="event-date">2014年10月，名医主刀项目启动。</div>
                                 <div class="divider-line"></div>
-                                <div class="content">名医主刀完成<span class="text21">A轮6000万</span>元人民币融资。复星医药领投，高榕资本/真格基金跟投。</div>
+                                <div class="content">名医主刀希望通过互联网让更多患者<span class="text21">"好看病"、"看好病"</span>。</div>
                             </div>
                             <div class="clearfix"></div>
                         </div>

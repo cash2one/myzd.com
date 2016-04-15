@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-$urlVideo = Yii::app()->theme->baseUrl . "/video/";
+$urlVideo = Yii::app()->theme->baseUrl . "/videos/";
 $urlCommonwealDoctors = $this->createUrl('api/commonwealdoctors');
 $urlDoctorView = $this->createUrl('doctor/view');
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/mygy.css" . "?v=" . time());
