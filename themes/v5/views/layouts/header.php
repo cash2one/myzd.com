@@ -11,6 +11,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $loginUrl = $this->createUrl('user/login');
 $ajaxLoginUrl = $this->createUrl('user/ajaxLogin');
 $ajaxRegisterUrl = $this->createUrl('user/ajaxRegister');
+$ajaxCaptchaCode = $this->createUrl('user/ajaxCaptchaCode');
 $urlGetSmsVerifyCode = $this->createAbsoluteUrl('/auth/sendSmsVerifyCode');
 $authActionType = AuthSmsVerify::ACTION_USER_LOGIN;
 $registerUrl = $this->createUrl('user/register');
@@ -25,7 +26,7 @@ $urlHelp = $this->createUrl('site/page', array('view' => 'help'));
 $urlForgetPassword = $this->createUrl('user/forgetPassword');
 if (($this->action->controller->id == 'user') && ($this->action->id == 'register')) {
     $returnUrl = $this->createUrl('site/index');
-}else{
+} else {
     $returnUrl = '';
 }
 ?>
@@ -46,26 +47,26 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                     ?>
                     <a data-toggle="modal" data-target="#qucikbookingModal">&nbsp;快速预约&nbsp;</a>
                     |
-                    <a href="<?php echo $this->createUrl('download/app');?>">&nbsp;下载关注&nbsp;</a>
-<!--                    <div id="qrcode" class="tooltip bottom">
-                        <div class="tooltip-arrow"></div>
-                        <div class="tooltip-inner">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <a href="https://itunes.apple.com/cn/app/id1001032594" target="_blank">
-                                        <img src="<?php //echo $urlResImage; ?>icons/ios-download.png"/>
-                                        <div class="mt5 text-center"><i class="fa fa-apple"></i> IOS</div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.mingyizhudao.app" target="_blank">
-                                        <img src="<?php //echo $urlResImage; ?>icons/android-download.png"/>
-                                        <div class="mt5 text-center"><i class="fa fa-android"></i> Android</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
+                    <a href="<?php echo $this->createUrl('download/app'); ?>">&nbsp;下载关注&nbsp;</a>
+                    <!--                    <div id="qrcode" class="tooltip bottom">
+                                            <div class="tooltip-arrow"></div>
+                                            <div class="tooltip-inner">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <a href="https://itunes.apple.com/cn/app/id1001032594" target="_blank">
+                                                            <img src="<?php //echo $urlResImage;   ?>icons/ios-download.png"/>
+                                                            <div class="mt5 text-center"><i class="fa fa-apple"></i> IOS</div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.mingyizhudao.app" target="_blank">
+                                                            <img src="<?php //echo $urlResImage;   ?>icons/android-download.png"/>
+                                                            <div class="mt5 text-center"><i class="fa fa-android"></i> Android</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>-->
                     |
                     <a target="_blank" href="<?php echo $urlHelp; ?>">&nbsp;常见问题</a>
                 </div>
@@ -97,10 +98,9 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
                                 } else if (($this->action->controller->id == 'site') && ($key == 'home') && ($this->action->id == 'index')) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
-                                }else if (($this->action->controller->id == 'site') && ($key == 'mygy') && ($this->action->id == 'mygy')) {
+                                } else if (($this->action->controller->id == 'site') && ($key == 'mygy') && ($this->action->id == 'mygy')) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
-                                }  
-                                else if (($this->action->controller->id == 'site') && ($key == 'aboutus') && ($curView == 'bigevents' || $curView == 'news' || $curView == 'mingyizhuyi' || $curView == 'joinus')) {
+                                } else if (($this->action->controller->id == 'site') && ($key == 'aboutus') && ($curView == 'bigevents' || $curView == 'news' || $curView == 'mingyizhuyi' || $curView == 'joinus')) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
                                 } else if ($key == $curView) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
@@ -133,7 +133,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                         <div class="login-form">
                             <h3 class="color-green lettersp5">感谢您选择名医主刀!</h3>
                             <div class="login-change mt30"><span class="phone-login active">手机号快速登录</span><span class="account-login">帐号密码登录</span></div>
-							<form class="form-horizontal mt10" id="login-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" data-url-return="<?php echo $returnUrl; ?>" method="post" autocomplete="off">
+                            <form class="form-horizontal mt10" id="login-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" data-url-return="<?php echo $returnUrl; ?>" method="post" autocomplete="off">
                                 <div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
@@ -173,8 +173,8 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                     </div>
                                 </div>
                             </form>
-							<form class="form-horizontal mt10" id="login-verifycode-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" data-url-return="<?php echo $returnUrl; ?>" method="post" autocomplete="off">
-								<input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
+                            <form class="form-horizontal mt10" id="login-verifycode-form" data-action="<?php echo $ajaxLoginUrl; ?>" data-url-account ="<?php echo $bookinglist; ?>" data-url-logout="<?php echo $urlLogout; ?>" data-url-return="<?php echo $returnUrl; ?>" method="post" autocomplete="off">
+                                <input type="hidden" value="<?php echo $urlGetSmsVerifyCode; ?>" name="smsverify[actionUrl]" id="smsverify_actionUrl">
                                 <input type="hidden" value="<?php echo $authActionType; ?>" name="smsverify[actionType]" id="smsverify_actionType">
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
@@ -185,21 +185,21 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                         <div class="Message" id="UserVerifyCodeLoginForm_username_em_" style="display:none"></div>                    
                                     </div>
                                 </div>
-                                
-                                
+
+
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
                                             <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div> 
                                             <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserVerifyCodeLoginForm[captcha_code]" id="UserVerifyCodeLoginForm_verify_code" type="text">            
-                                            <div id="btn-sendLoginSmsCode" class="btn-verifycode"><?php $this->widget('CCaptcha', array('showRefreshButton' => false, 'clickableImage' => true, 'imageOptions' => array('alt' => '点击换图', 'title' => '点击换图', 'style' => 'cursor:pointer'))); ?></div>
+                                            <div class="input-group-addon" style="width:131px;padding: 0;"><?php $this->widget('CCaptcha', array('showRefreshButton' => false, 'clickableImage' => true, 'imageOptions' => array('alt' => '点击换图', 'title' => '点击换图', 'style' => 'cursor:pointer'))); ?></div>
                                             <!--<div id="btn-sendLoginSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>-->
                                         </div>
                                         <div class="Message" id="UserVerifyCodeLoginForm_verify_code_em_" style="display:none"></div>    
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
-                                
+
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
@@ -239,8 +239,8 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
     $(document).ready(function () {
 <?php
 if (isset($user)) {
-    echo "setCookie('user', ".$user->username.", null);";
-}else{
+    echo "setCookie('user', " . $user->username . ", null);";
+} else {
     echo "delCookie('user');";
 }
 ?>
@@ -277,13 +277,22 @@ if (isset($user)) {
     });
     function sendLoginSmsVerifyCode(domBtn) {
         var domMobile = $("#UserVerifyCodeLoginForm_username");
+        var domCaptchaCode = $("#UserVerifyCodeLoginForm_verify_code");
         var mobile = domMobile.val();
+        var captchaCode = domCaptchaCode.val();
         if (mobile.length === 0) {
             $("#UserVerifyCodeLoginForm_username-error").remove();
             $("#UserVerifyCodeLoginForm_username").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_username-error" class="error">请输入手机号码</div>');
         } else if (domMobile.hasClass("error")) {
             // mobile input field as , so do nothing.
+        } else if (captchaCode.length == 0) {
+            $("div.error").remove();
+            $("#UserVerifyCodeLoginForm_verify_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_verify_code-error" class="error">请输入图形验证码</div>');
+        } else if (ajaxValidateCaptchaCodeLogin() == false) {
+            $("div.error").remove();
+            $("#UserVerifyCodeLoginForm_verify_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_verify_code-error" class="error">请输入正确的图形验证码</div>');
         } else {
+            $("div.error").remove();
             buttonTimerStart(domBtn, 60000);
             $domForm = $("#login-verifycode-form");
             var actionUrl = $domForm.find("input[name='smsverify[actionUrl]']").val();
@@ -313,5 +322,29 @@ if (isset($user)) {
                 }
             });
         }
+    }
+    function ajaxValidateCaptchaCodeLogin() {
+        var validate = false;
+        var domForm = $("#login-verifycode-form");
+        var formdata = domForm.serialize();
+        $.ajax({
+            type: 'post',
+            data: formdata,
+            async: false,
+            url: '<?php echo $ajaxCaptchaCode; ?>',
+            success: function (data) {
+                console.log(eval('(' + data + ')'));
+                var error = eval('(' + data + ')').UserLoginForm_captcha_code;
+//                alert(error);
+                if (error) {
+                    $('#UserVerifyCodeLoginForm_verify_code').after('<div id="LoginForm_captcha_code-error" class="error">' + error + '</div>');
+                } else {
+                    sendSmsVerifyCode(domBtn, mobile);
+                }
+            },
+            error: function () {
+            }
+        });
+        return validate;
     }
 </script>
