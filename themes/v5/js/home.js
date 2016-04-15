@@ -101,7 +101,40 @@ function setDoctorHtml(data, urlDoctorView) {
         $('.expList').html(innerHtml);
     }
 }
-
+function setResultsNameActive(name, keyword) {
+    return name.replace(keyword, '<span class="active">' + keyword + '</span>');
+}
+function setResultShow(results) {
+    var header_tab = '', result_tab = '';
+    if (results.hospitals) {
+        header_tab = '.hospital';
+        result_tab = '#hospital';
+    }
+    if (results.diseaseCategorys) {
+        header_tab = '.diseaseCategory';
+        result_tab = '#diseaseCategory';
+    }
+    if (results.diseases) {
+        header_tab = '.disease';
+        result_tab = '#disease';
+    }
+    if (results.doctors) {
+        header_tab = '.doctor';
+        result_tab = '#doctor';
+    }
+    $('.search-display-header .nav').find(header_tab).addClass('active');
+    console.log(result_tab);
+    $('#seach-result').find(result_tab).addClass('active');
+}
+function initSearchResultTab() {
+    $('.search-display-header .nav>li>a').mousemove(function () {
+        $('.search-display-header .nav>li>a').removeClass('active');
+        $(this).addClass('active');
+        var result_tab = '#' + $(this).attr('data-page');
+        $('#seach-result .result-tab').removeClass('active');
+        $('#seach-result').find(result_tab).addClass('active');
+    });
+}
 /*
  function ajaxLoadDoctor(urlLoadDoctor, urlDoctorView) {
  $.ajax({

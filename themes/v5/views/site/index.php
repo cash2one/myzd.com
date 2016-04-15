@@ -13,7 +13,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 ?>
 <section id="site-content">
     <div class="container-fluid bg-lunbo">
-        <div style="position:fixed;right:0;z-index:101;"><img src="<?php echo $urlResImage;?>mygy/banner.jpg"></div>
+        <div style="position:fixed;right:0;z-index:101;"><img src="<?php echo $urlResImage; ?>mygy/banner.jpg"></div>
         <div class="row">
             <div class="container home-header ">
                 <div class="home-slogn text-center">
@@ -42,7 +42,12 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                     </div>
                 </div>
                 <div id="search-display">
-                    <div class="search-display-header"><span>您是不是想找</span><span class="pull-right clearhistory">清除搜索记录</span></div>
+                    <div class="search-display-header">
+                        <span class="pull-right clearhistory mt10">清除搜索记录</span>
+                        <ul class="nav nav-tabs" role="tablist">
+                            
+                        </ul>
+                    </div>
                     <div id="seach-result">
 
                     </div>
@@ -272,8 +277,8 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             mode: 'fade',
             slideMargin: 0,
             controls: true,
-            pause:3000,
-            speed:0,
+            pause: 3000,
+            speed: 0,
             auto: true
         });
         $("#homeads .bx-wrapper").mouseover(function () {
@@ -302,60 +307,75 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
     }
     function setResultHtml(results, keyword) {
         var innerHtml = '';
+        var headerTabHtml = '';
         if (results) {
             var resultsNum = 0;
             if (results.doctors) {
                 var doctors = results.doctors;
                 resultsNum += doctors.length;
+                headerTabHtml += '<li class="category"><a class="doctor" data-page="doctor" target="_blank">医生</a></li>';
+                innerHtml += '<div id="doctor" class="result-tab">';
                 for (var i = 0; i < doctors.length; i++) {
                     var doctor = doctors[i];
                     var hpDeptName = doctor.hpDeptName == null ? '' : ' ' + doctor.hpDeptName;
                     var aTitle = doctor.aTitle == '无' ? '' : ' ' + doctor.aTitle;
                     innerHtml += '<div><a target="_blank" class="doctor" href="<?php echo $urlDoctorView ?>' + doctor.id + '"><span class="strong name">' + setResultsNameActive(doctor.name, keyword) + '</span> （' + doctor.hpName + hpDeptName + ' ' + doctor.mTitle + aTitle + '）</a><a target="_blank" href="<?php echo $urlDoctorView ?>' + doctor.id + '" class="pull-right detail">进入医生详情页</a></div>';
                 }
+                innerHtml += '</div>';
             }
             if (results.diseases) {
                 var diseases = results.diseases;
+                headerTabHtml += '<li class="category"><a class="disease" data-page="disease" target="_blank">疾病</a></li>';
                 resultsNum += diseases.length;
+                innerHtml += '<div id="disease" class="result-tab">';
                 for (var i = 0; i < diseases.length; i++) {
                     var disease = diseases[i];
                     var urlSearchHp = encodeURI('<?php echo $urlHopitalSearch ?>?disease=' + disease.id);
                     var urlSearchDoctor = encodeURI('<?php echo $urlDoctorSearch ?>?disease_name=' + disease.name);
                     innerHtml += '<div class="department"><span class="strong name">' + setResultsNameActive(disease.name, keyword) + '</span><a href="' + urlSearchHp + '" target="_blank" class="pull-right detail">找医院</a><a href="' + urlSearchDoctor + '" target="_blank" class="pull-right detail mr15">找名医</a></div>';
                 }
-
+                innerHtml += '</div>';
             }
             if (results.diseaseCategorys) {
                 var diseaseCategorys = results.diseaseCategorys;
+                headerTabHtml += '<li class="category"><a class="diseaseCategory" data-page="diseaseCategory" target="_blank">科室</a></li>';
                 resultsNum += diseaseCategorys.length;
+                innerHtml += '<div id="diseaseCategory" class="result-tab">';
                 for (var i = 0; i < diseaseCategorys.length; i++) {
                     var diseaseCategory = diseaseCategorys[i];
                     var urlSearchHp = encodeURI('<?php echo $urlHopitalSearch ?>?disease_sub_category=' + diseaseCategory.id);
                     var urlSearchDoctor = encodeURI('<?php echo $urlDoctorSearch ?>?disease_sub_category=' + diseaseCategory.id);
                     innerHtml += '<div class="department"><span class="strong name">' + setResultsNameActive(diseaseCategory.name, keyword) + '</span><a href="' + urlSearchHp + '" target="_blank" class="pull-right detail">找医院</a><a href="' + urlSearchDoctor + '" target="_blank" class="pull-right detail mr15">找名医</a></div>';
                 }
+                innerHtml += '</div>';
             }
             if (results.hospitals) {
                 var hospitals = results.hospitals;
+                headerTabHtml += '<li class="category"><a class="hospital" data-page="hospital" target="_blank">医院</a></li>';
                 resultsNum += hospitals.length;
+                innerHtml += '<div id="hospital" class="result-tab">';
                 for (var i = 0; i < hospitals.length; i++) {
                     var hospital = hospitals[i];
                     innerHtml += '<div><a target="_blank" class="doctor" href="<?php echo $urlHospitalView ?>' + hospital.id + '"><span class="strong name">' + setResultsNameActive(hospital.shortName, keyword) + '（' + setResultsNameActive(hospital.name, keyword) + '）</span></a><a target="_blank" href="<?php echo $urlHospitalView ?>' + hospital.id + '" class="pull-right detail">进入医院详情页</a></div>';
                 }
+                innerHtml += '</div>';
             }
             if (resultsNum <= 6) {
                 innerHtml += '<div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
             }
+            $('.search-display-header .nav-tabs').show();
             if (!results.doctors && !results.diseases && !results.diseaseCategorys && !results.hospitals) {
                 innerHtml = '<div>没有搜到与<span class="keyword">"' + keyword + '"</span>相关信息</div><div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
+                $('.search-display-header .nav-tabs').hide();
             }
         } else {
             innerHtml = '<div>没有搜到<span class="keyword">"' + keyword + '"</span>相关信息</div><div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
         }
         $('#seach-result').html(innerHtml);
+        $('.search-display-header .nav-tabs').html(headerTabHtml);
+        setResultShow(results);
+        initSearchResultTab();
         $('#search-display').show();
     }
-    function setResultsNameActive(name, keyword) {
-        return name.replace(keyword, '<span class="active">' + keyword + '</span>');
-    }
+    
 </script>
