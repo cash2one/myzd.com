@@ -197,6 +197,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
+                                
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
