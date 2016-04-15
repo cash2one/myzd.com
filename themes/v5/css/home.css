@@ -95,14 +95,16 @@
 .disease-name.form-control:focus{border: 1px solid #66afe9;border-bottom-color: #ddd;box-shadow: none!important;}
 #home-search-form .w100{width: 100%;}
 #home-search-form .disease-name{background-image: url(../images/home/search.png);background-repeat: no-repeat;background-position-y: center;background-position-x: 20px;}
-#search-display{display: none;height: 258px;box-shadow: 7px 7px 20px 1px #6d6f70;overflow-y: auto;padding: 15px 40px;margin-left: 125px;background-color: #f7f7f7;}
+#search-display{display: none;height: 258px;box-shadow: 7px 7px 20px 1px #6d6f70;padding: 0px 40px 15px;margin-left: 125px;background-color: #f7f7f7;}
 #search-display{scrollbar-track-color:#fff;scrollbar-face-color:#19aea5;}
 #search-display::-webkit-scrollbar{background-color: #fff;width: 6px;}
 #search-display::-webkit-scrollbar-thumb{background-color: #87ccc5;}
-.home-search .search-display-header{color: #555555;font-size: 18px;border-bottom: 1px solid #19aea5;}
+.home-search .search-display-header{color: #555555;font-size: 18px;min-height: 30px;}
 .home-search .search-display-header .clearhistory{font-size: 15px;color: #9f9fa0;}
 .home-search .search-display-header .clearhistory:hover{cursor: pointer;color: #555555;}
-#seach-result{margin-top: 10px;font-size: 15px;line-height: 2.2em;color: #555555;}
+#seach-result{margin-top: 10px;font-size: 15px;line-height: 2.2em;color: #555555;height: 197px;overflow-y: auto;padding-right: 5px;}
+#seach-result::-webkit-scrollbar{background-color: #fff;width: 6px;}
+#seach-result::-webkit-scrollbar-thumb{background-color: #87ccc5;}
 #seach-result a{color: #555555;}
 #seach-result .doctor:hover{color: #19aea5;}
 #seach-result .detail{color: #036eb8}
@@ -111,6 +113,13 @@
 #seach-result .search-tip{color: #9f9fa0;line-height: 1.5em;}
 #seach-result .name>span.active{color: #5ebfb8;}
 #seach-result .keyword{color: #5ebfb8;}
+#seach-result .result-tab{display: none;}
+#seach-result .result-tab.active{display: block;}
+.search-display-header .nav-tabs>li>a{color: #333;}
+.search-display-header .nav-tabs>li>a,.search-display-header .nav-tabs>li>a:hover{font-size: 17px;padding: 5px 41px;background-color: #f7f7f7;border-color: #f7f7f7;border-right: 1px solid #ddd;margin-right: 0;}
+.search-display-header .nav-tabs{border-bottom-color: #19aea5;border-left: 1px solid #ddd;}
+.search-display-header .nav-tabs>li>a:hover,.search-display-header .nav-tabs>li>a.active{border-bottom: 1px solid #f7f7f7;color: #036eb8;}
+.search-display-header .nav-tabs>li>a{border-bottom: 1px solid #19aea5;}
 .disease-name:-moz-placeholder {color: #9f9fa0;letter-spacing: 3px;}/* Mozilla Firefox 4 to 18 */
 .disease-name::-moz-placeholder {color: #9f9fa0;letter-spacing: 3px;}/* Mozilla Firefox 19+ */
 input.disease-name:-ms-input-placeholder{color: #9f9fa0;letter-spacing: 3px;}

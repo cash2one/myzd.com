@@ -34,6 +34,6 @@ if (($this->action->controller->id == 'hospital') && ($this->action->id == 'view
 </script>
 <div id="xiaoneng" class="ask" onclick="NTKF.im_openInPageChat('kf_9138_1451451713805');"></div>
 <style>
-    .ask{z-index:100;cursor:pointer;position:fixed;bottom:45%;right:0px;width:45px;height:147px;background: url(http://s.qiao.baidu.com/style/754/121185754/1/iconbg.jpg);}   
+    .ask{z-index:100;cursor:pointer;position:fixed;bottom:39%;right:0px;width:45px;height:147px;background: url(http://s.qiao.baidu.com/style/754/121185754/1/iconbg.jpg);}   
 </style>
 <script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9138" charset="utf-8"></script>

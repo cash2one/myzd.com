@@ -6,7 +6,7 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/c
 $siteMenu = $this->loadSiteMenu();
 $headerMenu = $this->getHeaderMenu();
 $facultyMenu = $siteMenu["faculty"];
-$aboutusMenu = $this->loadSiteMenu()["site"];
+$aboutusMenu = $siteMenu["site"];
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $loginUrl = $this->createUrl('user/login');
 $ajaxLoginUrl = $this->createUrl('user/ajaxLogin');

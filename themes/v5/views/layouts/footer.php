@@ -181,7 +181,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </section>
 <?php
 if ($this->show_baidushangqiao) {
-    $this->renderPartial("//layouts/_scriptBaiduShangQiao");
+    $this->renderPartial("//layouts/_scriptXiaoNeng");
 }
 ?>
 <script>
