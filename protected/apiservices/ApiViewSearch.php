@@ -10,6 +10,10 @@ class ApiViewSearch extends EApiViewService {
     private $doctorCount;     // count no. of Doctors.
     private $diseases;
     private $diseaseCount;     // count no. of Diseases.
+    private $diseaseCategory;
+    private $diseaseCategoryCount;     // count no. of DiseaseCategory.
+    private $hospital;
+    private $hospitalCount;     // count no. of DiseaseCategory.
 
     public function __construct($searchInputs) {
         parent::__construct();
@@ -20,12 +24,18 @@ class ApiViewSearch extends EApiViewService {
         $this->doctorSearch->addSearchCondition("t.date_deleted is NULL");
         $this->diseaseSearch = new DiseaseSearch($this->searchInputs);
         $this->diseaseSearch->addSearchCondition("t.date_deleted is NULL");
+        $this->diseaseCategorySearch = new DiseaseCategorySearch($this->searchInputs);
+        $this->diseaseCategorySearch->addSearchCondition("t.date_deleted is NULL");
+        $this->hospitalSearch = new HospitalSearch($this->searchInputs);
+        $this->hospitalSearch->addSearchCondition("t.date_deleted is NULL");
     }
 
     protected function loadData() {
         // load Doctors.
         $this->loadDoctors();
         $this->loadDiseases();
+        $this->loadDiseaseCategory();
+        $this->loadHospital();
     }
 
     protected function createOutput() {
@@ -57,6 +67,24 @@ class ApiViewSearch extends EApiViewService {
         }
     }
 
+    private function loadDiseaseCategory() {
+        if (is_null($this->diseaseCategory)) {
+            $models = $this->diseaseCategorySearch->search();
+            if (arrayNotEmpty($models)) {
+                $this->setDiseaseCategory($models);
+            }
+        }
+    }
+
+    private function loadHospital() {
+        if (is_null($this->hospital)) {
+            $models = $this->hospitalSearch->search();
+            if (arrayNotEmpty($models)) {
+                $this->setHospital($models);
+            }
+        }
+    }
+
     private function setDoctors(array $models) {
         foreach ($models as $model) {
             $data = new stdClass();
@@ -79,5 +107,23 @@ class ApiViewSearch extends EApiViewService {
         }
     }
 
+    private function setDiseaseCategory(array $models) {
+        foreach ($models as $model) {
+            $data = new stdClass();
+            $data->id = $model->getSubCategoryId();
+            $data->name = $model->getSubCategoryName();
+            $this->results->diseaseCategorys[] = $data;
+        }
+    }
+
+    private function setHospital(array $models) {
+        foreach ($models as $model) {
+            $data = new stdClass();
+            $data->id = $model->id;
+            $data->name = $model->getName();
+            $data->shortName = $model->getName(true);
+            $this->results->hospitals[] = $data;
+        }
+    }
 
 }

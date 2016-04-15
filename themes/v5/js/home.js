@@ -1,21 +1,55 @@
-$(document).ready(function () {  
-    $('.searchdoctor-tab').click(function () {
-        $('.search-top').removeClass('active');
-        $(this).addClass('active');
-        $('#searchdoctor-btn').show();
-        $('#searchhospital-btn').hide();
+$(document).ready(function () {
+    //搜索功能
+    var t;
+    $('#home-search-form .disease-name').keyup(function (event) {
+        var keyword = $(this).val();
+        keyword = $.trim(keyword);
+        if (!keyword) {
+            $('#search-display').hide();
+        }
+        clearTimeout(t);
+        t = setTimeout(function () {
+            if (keyword) {
+                ajaxSearchByKeyWord(keyword);
+            }
+        }, 300);
+
+    }).focus(function () {
+        var keyword = $(this).val();
+        keyword = $.trim(keyword);
+        if (!keyword) {
+            $('#search-display').hide();
+        } else {
+            $('#search-display').show();
+            //ajaxSearchByKeyWord(keyword);
+        }
+    }).click(function (e) {
+        if ($('#search-display').is(':visible')) {
+            $('#search-display').show();
+        } else {
+            $('#search-display').hide();
+        }
+        e.stopPropagation();
     });
-    $('.searchhospital-tab').click(function () {
-        $('.search-top').removeClass('active');
-        $(this).addClass('active');
-        $('#searchdoctor-btn').hide();
-        $('#searchhospital-btn').show();
+    //清除记录
+    $('#search-display .clearhistory').click(function () {
+        $('#seach-result').html('');
+        $('#home-search-form .disease-name').val('');
     });
+    //search-display隐藏/显示
+    $('.home-search #search-display').click(function (e) {
+        $('#search-display').show();
+        e.stopPropagation();
+    });
+    $(document).click(function () {
+        $('#search-display').hide();
+    });
+
     /**** 推荐医生切换 ****/
-    $('.expert .nav-tabs .category').mouseover(function(){
+    $('.expert .nav-tabs .category').mouseover(function () {
         $('.expert .nav-tabs .category').removeClass('active');
         $(this).addClass('active');
-        var pageId = '#'+$(this).find('a').attr('data-page');
+        var pageId = '#' + $(this).find('a').attr('data-page');
         $('.expert .expList .tab-pane').removeClass('active');
         $(pageId).addClass('active');
     });

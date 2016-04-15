@@ -5,6 +5,7 @@ $urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, '
 $urlRecommendedDoctors = $this->createUrl('api/recommendeddoctors');
 $urlDiseaseName = $this->createUrl('api/diseasename', array('api' => 7, 'disease_name' => '')); //api/diseasename?api=7&disease_name=
 $urlDoctorView = $this->createUrl('doctor/view', array('id' => ''));
+$urlHospitalView = $this->createUrl('hospital/view', array('id' => ''));
 $urlDoctorSearch = $this->createUrl('doctor/search');
 $urlHopitalSearch = $this->createUrl('hospital/search');
 $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('disease_sub_category' => 1));
@@ -136,11 +137,11 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 <div class="row">
                     <div class="col-md-8">
                         <a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')); ?>" target="_blank">
-                            <img class="img-responsive h300" src="<?php echo $urlResImage; ?>homeslider/millionfund.png"/>
+                            <img class="img-responsive h300" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009511426284"/>
                         </a>
                     </div>
                     <div class="col-md-4 pl20">
-                        <div><span class="text18 color-blue">精彩推荐</span><img class="ml10 mb5" src="<?php echo $urlResImage; ?>icons/icon_change.png"><div class="pull-right change" href="#carousel-example-generic" role="button" data-slide="next">换一批</div><div class="clearfix"></div></div>
+                        <div><span class="text18 color-blue">精彩推荐</span><img class="ml10 mb5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009740797424"><div class="pull-right change" href="#carousel-example-generic" role="button" data-slide="next">换一批</div><div class="clearfix"></div></div>
                         <div><div class="divide-line-black"></div></div>
 
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -156,19 +157,19 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                                     <div class="row">
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'tumor')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider1.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518876857"/>
                                                 <div class="slider-text">滚蛋吧肿瘤君</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'preliverdisease')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider2.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518887312"/>
                                                 <div class="slider-text">秋后肝病预防</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'thyroid')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider3.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518891924"/>
                                                 <div class="slider-text">甲状腺预防</div>
                                             </a>
                                         </div>
@@ -176,19 +177,19 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                                     <div class="row">
                                         <div class="col-sm-4 mt30">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'ruxianai')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider4.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518896777"/>
                                                 <div class="slider-text">关爱女性</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt30">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinxueguan')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider5.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518900968"/>
                                                 <div class="slider-text">警惕心血管病</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt30 ">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'guanxinbing')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider6.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518905090"/>
                                                 <div class="slider-text">预防冠心病</div>
                                             </a>
                                         </div>
@@ -198,19 +199,19 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                                     <div class="row">
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'ertai')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider7.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518910390"/>
                                                 <div class="slider-text">名医宝驾护航</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'doctorInterview')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider8.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518914152"/>
                                                 <div class="slider-text">任善成专访</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'dididoctor')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider10.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518938826"/>
                                                 <div class="slider-text">滴滴医生</div>
                                             </a>
                                         </div>
@@ -218,19 +219,19 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                                     <div class="row"> 
                                         <div class="col-sm-4 mt30">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'nationalday')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider11.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14600951894636"/>
                                                 <div class="slider-text">摔伤怎么办</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt30">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'rectalcancer')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider12.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518950937"/>
                                                 <div class="slider-text">大肠癌</div>
                                             </a>
                                         </div>
                                         <div class="col-sm-4 mt30">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider9.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518933336"/>
                                                 <div class="slider-text">陆劲松专访</div>
                                             </a>
                                         </div>
@@ -240,7 +241,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                                     <div class="row" style="margin-bottom:148px;">
                                         <div class="col-sm-4 mt18">
                                             <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinyabang')); ?>" target="_blank">
-                                                <img class="img-responsive" src="<?php echo $urlResImage; ?>homeslider/small/slider13.png"/>
+                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518955758"/>
                                                 <div class="slider-text">50强榜单</div>
                                             </a>
                                         </div>
@@ -257,18 +258,22 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 </section>
 <script>
     $(document).ready(function () {
-        $html = '<li><div class="winegirl"><a href="<?php echo $this->createUrl('event/view', array('page' => 'winegirl')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg-winegirl.jpg" alt="" class="img-responsive"></a></div></li>' + '<li><div class="robot"><a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg-robot.png" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="cataract"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cataract')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_cataract.png" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="prince"><a href="<?php echo $this->createUrl('event/view', array('page' => 'prince')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_prince.jpg" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="cancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>homeslider/bg_cancer.jpg" alt="" class="img-responsive"></a></div></li>';
+        $html = '<li><div class="robot"><a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492190148" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="cataract"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cataract')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492155191" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="prince"><a href="<?php echo $this->createUrl('event/view', array('page' => 'prince')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492168331" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="cancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14600949210083" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
+
+        var urlDoctorView = '<?php echo $urlDoctorView; ?>';
+        ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
+        //轮播
         var adsbxslider = $('#homeads .bxslider').bxSlider({
             mode: 'fade',
             slideMargin: 0,
             controls: true,
-            auto: true,
             pause:3000,
-            speed:0
+            speed:0,
+            auto: true
         });
         $("#homeads .bx-wrapper").mouseover(function () {
             adsbxslider.stopAuto();
@@ -277,53 +282,6 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
         $("#homeads .bx-wrapper").mouseout(function () {
             adsbxslider.startAuto();
             $("#homeads .bx-controls-direction").hide();
-        });
-        var urlDoctorView = '<?php echo $urlDoctorView; ?>';
-        ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
-        //搜索功能
-        var t;
-        $('#home-search-form .disease-name').keyup(function (event) {
-            var keyword = $(this).val();
-            keyword = $.trim(keyword);
-            if (!keyword) {
-                $('#search-display').hide();
-            }
-            clearTimeout(t);
-            t = setTimeout(function () {
-                if (keyword) {
-                    ajaxSearchByKeyWord(keyword);
-                }
-            }, 300);
-
-        }).focus(function () {
-            var keyword = $(this).val();
-            keyword = $.trim(keyword);
-            if (!keyword) {
-                $('#search-display').hide();
-            } else {
-                $('#search-display').show();
-                //ajaxSearchByKeyWord(keyword);
-            }
-        }).click(function (e) {
-            if ($('#search-display').is(':visible')) {
-                $('#search-display').show();
-            } else {
-                $('#search-display').hide();
-            }
-            e.stopPropagation();
-        });
-        //清除记录
-        $('#search-display .clearhistory').click(function () {
-            $('#seach-result').html('');
-            $('#home-search-form .disease-name').val('');
-        });
-        //search-display隐藏/显示
-        $('.home-search #search-display').click(function (e) {
-            $('#search-display').show();
-            e.stopPropagation();
-        });
-        $(document).click(function () {
-            $('#search-display').hide();
         });
 
     });
@@ -335,6 +293,9 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             url: urlSearch,
             success: function (data) {
                 setResultHtml(data.results, keyword);
+            },
+            error: function () {
+                setResultHtml('', keyword);
             }
         });
     }
@@ -349,7 +310,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                     var doctor = doctors[i];
                     var hpDeptName = doctor.hpDeptName == null ? '' : ' ' + doctor.hpDeptName;
                     var aTitle = doctor.aTitle == '无' ? '' : ' ' + doctor.aTitle;
-                    innerHtml += '<div><a target="_blank" class="doctor" href="<?php echo $urlDoctorView ?>' + doctor.id + '"><span class="strong name">' + setResultsNameActive(doctor.name, keyword) + '</span> （' + doctor.hpName + hpDeptName + ' ' + doctor.mTitle + aTitle + '）</a><a target="_blank" href="<?php echo $urlDoctorView ?>' + doctor.id + '" class="pull-right detail">进入详情页</a></div>';
+                    innerHtml += '<div><a target="_blank" class="doctor" href="<?php echo $urlDoctorView ?>' + doctor.id + '"><span class="strong name">' + setResultsNameActive(doctor.name, keyword) + '</span> （' + doctor.hpName + hpDeptName + ' ' + doctor.mTitle + aTitle + '）</a><a target="_blank" href="<?php echo $urlDoctorView ?>' + doctor.id + '" class="pull-right detail">进入医生详情页</a></div>';
                 }
             }
             if (results.diseases) {
@@ -363,10 +324,28 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 }
 
             }
+            if (results.diseaseCategorys) {
+                var diseaseCategorys = results.diseaseCategorys;
+                resultsNum += diseaseCategorys.length;
+                for (var i = 0; i < diseaseCategorys.length; i++) {
+                    var diseaseCategory = diseaseCategorys[i];
+                    var urlSearchHp = encodeURI('<?php echo $urlHopitalSearch ?>?disease_sub_category=' + diseaseCategory.id);
+                    var urlSearchDoctor = encodeURI('<?php echo $urlDoctorSearch ?>?disease_sub_category=' + diseaseCategory.id);
+                    innerHtml += '<div class="department"><span class="strong name">' + setResultsNameActive(diseaseCategory.name, keyword) + '</span><a href="' + urlSearchHp + '" target="_blank" class="pull-right detail">找医院</a><a href="' + urlSearchDoctor + '" target="_blank" class="pull-right detail mr15">找名医</a></div>';
+                }
+            }
+            if (results.hospitals) {
+                var hospitals = results.hospitals;
+                resultsNum += hospitals.length;
+                for (var i = 0; i < hospitals.length; i++) {
+                    var hospital = hospitals[i];
+                    innerHtml += '<div><a target="_blank" class="doctor" href="<?php echo $urlHospitalView ?>' + hospital.id + '"><span class="strong name">' + setResultsNameActive(hospital.shortName, keyword) + '（' + setResultsNameActive(hospital.name, keyword) + '）</span></a><a target="_blank" href="<?php echo $urlHospitalView ?>' + hospital.id + '" class="pull-right detail">进入医院详情页</a></div>';
+                }
+            }
             if (resultsNum <= 6) {
                 innerHtml += '<div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
             }
-            if (!results.doctors && !results.diseases) {
+            if (!results.doctors && !results.diseases && !results.diseaseCategorys && !results.hospitals) {
                 innerHtml = '<div>没有搜到与<span class="keyword">"' + keyword + '"</span>相关信息</div><div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
             }
         } else {
