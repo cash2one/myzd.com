@@ -10,7 +10,7 @@ class SiteController extends WebsiteController {
     public function actions() {
         return array(
             // captcha action renders the CAPTCHA image displayed on the contact page
-             'captcha' => array(
+            'captcha' => array(
                 'class' => 'CCaptchaAction',
                 'backColor' => 0xFFFFFF,
                 'maxLength' => 6,
@@ -32,6 +32,7 @@ class SiteController extends WebsiteController {
      */
     public function actionIndex() {
         $this->handleMobileBrowserRedirect();
+
         $this->layout = 'layoutHome';
         // renders the view file 'protected/views/site/index.php'
         // using the default layout 'protected/views/layouts/layoutHome.php'
@@ -168,9 +169,9 @@ class SiteController extends WebsiteController {
         if ($this->menu === null) {
             $this->menu = array(
                 'aboutus' => array('label' => '公司简介', 'url' => array('site/page', 'view' => 'aboutus')),
-                'bigevents' => array('label' => '大事记', 'url' => array('site/page', 'view' => 'bigevents')),
-                'news' => array('label' => '新闻中心', 'url' => array('site/page', 'view' => 'news')),
-                'mingyizhuyi' => array('label' => '名医主义', 'url' => array('site/page', 'view' => 'mingyizhuyi')),
+                'bigevents' => array('label' => '大事记', 'url' => array('site/page', 'view' => 'bigevents')), 
+                'honors' => array('label' => '所获荣誉', 'url' => array('site/page', 'view' => 'honors')),
+                'news' => array('label' => '公司资讯', 'url' => array('site/page', 'view' => 'news')),
                 'joinus' => array('label' => '加入我们', 'url' => array('site/page', 'view' => 'joinus')),
                     //'contactus' => array('label' => '联系我们', 'url' => array('site/contactus')),
                     //'enquiry' => array('label' => '我要预约', 'url' => array('site/enquiry')),
@@ -221,5 +222,4 @@ class SiteController extends WebsiteController {
         } else
             return '关于我们';
     }
-
 }
