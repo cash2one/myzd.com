@@ -13,6 +13,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 ?>
 <section id="site-content">
     <div class="container-fluid bg-lunbo">
+        <div style="position:fixed;right:0;z-index:101;"><img src="<?php echo $urlResImage;?>mygy/banner.jpg"></div>
         <div class="row">
             <div class="container home-header ">
                 <div class="home-slogn text-center">
