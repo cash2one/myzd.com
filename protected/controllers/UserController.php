@@ -22,7 +22,7 @@ class UserController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'login', 'captcha', 'ajaxLogin', 'ajaxRegister', 'ajaxCaptchaCode', 'forgetPassword', 'ajaxForgetPassword'),
+                'actions' => array('register', 'login', 'captcha', 'ajaxLogin', 'ajaxRegister', 'ajaxCaptchaCode','ajaxLoginCaptchaCode', 'forgetPassword', 'ajaxForgetPassword'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -54,6 +54,15 @@ class UserController extends WebsiteController {
                 'height' => 34
             ),
         );
+    }
+
+    public function actionAjaxLoginCaptchaCode() {
+        $model = new UserLoginForm();
+//        $values['captcha_code'] = 'mdtufa';
+        $values = $_POST['UserLoginForm'];
+        $model->setAttributes($values, true);
+        echo (CActiveForm::validate($model));
+        Yii::app()->end();
     }
 
     public function actionAjaxLogin() {
@@ -161,6 +170,15 @@ class UserController extends WebsiteController {
         $this->render('register', array(
             'model' => $form,
         ));
+    }
+
+    public function actionAjaxCaptchaCode() {
+        $model = new UserVerifyCodeLoginForm();
+//        $values['captcha_code'] = 'mdtufa';
+        $values = $_POST['UserVerifyCodeLoginForm'];
+        $model->setAttributes($values, true);
+        echo (CActiveForm::validate($model));
+        Yii::app()->end();
     }
 
     public function actionAjaxRegister() {
