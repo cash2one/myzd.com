@@ -192,7 +192,8 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                         <div class="input-group">
                                             <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div> 
                                             <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserVerifyCodeLoginForm[captcha_code]" id="UserVerifyCodeLoginForm_captcha_code" type="text">            
-                                            <div class="input-group-addon" style="width:131px;padding: 0;background-color:#fff;"><?php $this->widget('CCaptcha', array('showRefreshButton' => false, 'clickableImage' => true, 'imageOptions' => array('alt' => '点击换图', 'title' => '点击换图', 'style' => 'cursor:pointer'))); ?></div>
+                                                <div class="input-group-addon" style="width:131px;padding: 0;"><a href="javascript:void(0);"><img id="vailcode" src="" onclick="this.src='<?php echo Yii::app()->request->baseUrl;?>/Site/GetCaptcha/'+Math.random()"></a></div>
+
                                             <!--<div id="btn-sendLoginSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>-->
                                         </div>
                                         <div class="Message" id="UserVerifyCodeLoginForm_verify_code_em_" style="display:none"></div>    
@@ -236,7 +237,12 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
     </div>
 </div>
 <script type="text/javascript">
+    function vailcode(){
+         $("#vailcode").attr("src","<?php echo Yii::app()->request->baseUrl;?>/Site/GetCaptcha/"+Math.random());             
+    }
     $(document).ready(function () {
+        vailcode();
+        
 <?php
 if (isset($user)) {
     echo "setCookie('user', " . $user->username . ", null);";
