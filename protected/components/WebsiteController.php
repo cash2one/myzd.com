@@ -293,10 +293,10 @@ abstract class WebsiteController extends Controller {
 
     public function actionValiCaptcha() {
         if (strcmp($_REQUEST['co_code'], Yii::app()->session['code']) != 0) {
-            echo CJSON::encode(array('msg' => '验证码错误', 'error' => 0));
+            echo CJSON::encode(array('status' => 'no','error' =>'验证码错误'));
             exit;
         }
-        echo CJSON::encode(array('msg' => '', 'error' => 1));
+        echo CJSON::encode(array('status' => 'ok','error' =>''));
         exit;
     }
 
