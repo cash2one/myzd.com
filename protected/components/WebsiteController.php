@@ -292,7 +292,6 @@ abstract class WebsiteController extends Controller {
     }
 
     public function actionValiCaptcha() {
-        echo Yii::app()->session['code'];exit;
         if (strcmp($_REQUEST['co_code'], Yii::app()->session['code']) != 0) {
             echo CJSON::encode(array('msg' => '验证码错误', 'error' => 0));
             exit;
@@ -303,12 +302,9 @@ abstract class WebsiteController extends Controller {
 
     //获取验证码
     public function actionGetCaptcha() {
-//        phpinfo();exit;
-//        $testGD = get_extension_funcs("gd"); // Grab function list 
-//        if (!$testGD){ echo "GD not even installed."; exit; }
-//        echo"<pre>".print_r($testGD,true)."</pre>";  exit;
         $captcha = new CaptchaManage;
         $captcha->showImg();
+        
     }
 
 }
