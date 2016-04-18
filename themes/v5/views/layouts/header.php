@@ -191,8 +191,8 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
                                             <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div> 
-                                            <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserVerifyCodeLoginForm[captcha_code]" id="UserVerifyCodeLoginForm_verify_code" type="text">            
-                                            <div class="input-group-addon" style="width:131px;padding: 0;"><?php $this->widget('CCaptcha', array('showRefreshButton' => false, 'clickableImage' => true, 'imageOptions' => array('alt' => '点击换图', 'title' => '点击换图', 'style' => 'cursor:pointer'))); ?></div>
+                                            <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserVerifyCodeLoginForm[captcha_code]" id="UserVerifyCodeLoginForm_captcha_code" type="text">            
+                                            <div class="input-group-addon" style="width:131px;padding: 0;background-color:#fff;"><?php $this->widget('CCaptcha', array('showRefreshButton' => false, 'clickableImage' => true, 'imageOptions' => array('alt' => '点击换图', 'title' => '点击换图', 'style' => 'cursor:pointer'))); ?></div>
                                             <!--<div id="btn-sendLoginSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>-->
                                         </div>
                                         <div class="Message" id="UserVerifyCodeLoginForm_verify_code_em_" style="display:none"></div>    
@@ -277,7 +277,7 @@ if (isset($user)) {
     });
     function sendLoginSmsVerifyCode(domBtn) {
         var domMobile = $("#UserVerifyCodeLoginForm_username");
-        var domCaptchaCode = $("#UserVerifyCodeLoginForm_verify_code");
+        var domCaptchaCode = $("#UserVerifyCodeLoginForm_captcha_code");
         var mobile = domMobile.val();
         var captchaCode = domCaptchaCode.val();
         if (mobile.length === 0) {
@@ -287,10 +287,10 @@ if (isset($user)) {
             // mobile input field as , so do nothing.
         } else if (captchaCode.length == 0) {
             $("div.error").remove();
-            $("#UserVerifyCodeLoginForm_verify_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_verify_code-error" class="error">请输入图形验证码</div>');
+            $("#UserVerifyCodeLoginForm_captcha_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_captcha_code-error" class="error">请输入图形验证码</div>');
         } else if (ajaxValidateCaptchaCodeLogin() == false) {
             $("div.error").remove();
-            $("#UserVerifyCodeLoginForm_verify_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_verify_code-error" class="error">请输入正确的图形验证码</div>');
+            $("#UserVerifyCodeLoginForm_captcha_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_captcha_code-error" class="error">请输入正确的图形验证码</div>');
         } else {
             $("div.error").remove();
             buttonTimerStart(domBtn, 60000);
@@ -334,15 +334,13 @@ if (isset($user)) {
             url: '<?php echo $ajaxCaptchaCode; ?>',
             success: function (data) {
                 console.log(eval('(' + data + ')'));
-                var error = eval('(' + data + ')').UserLoginForm_captcha_code;
-//                alert(error);
-                if (error) {
-                    $('#UserVerifyCodeLoginForm_verify_code').after('<div id="LoginForm_captcha_code-error" class="error">' + error + '</div>');
-                } else {
-                    sendSmsVerifyCode(domBtn, mobile);
+                var error = eval('(' + data + ')').UserVerifyCodeLoginForm_captcha_code;
+                if (!error) {
+                    validate = true;
                 }
             },
-            error: function () {
+            error: function (data) {
+                console.log(data);
             }
         });
         return validate;
