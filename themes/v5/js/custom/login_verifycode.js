@@ -25,8 +25,6 @@ jQuery(function () {
             },
             'UserVerifyCodeLoginForm[captcha_code]': {
                 required: true,
-                maxlength: 6,
-                minlength: 6
             },
             'UserVerifyCodeLoginForm[verify_code]': {
                 required: true,
@@ -43,8 +41,6 @@ jQuery(function () {
             },
             'UserVerifyCodeLoginForm[captcha_code]': {
                 required: "请输入图形验证码",
-                maxlength: "请输入正确的图形验证码",
-                minlength: "请输入正确的图形验证码"
             },
             'UserVerifyCodeLoginForm[verify_code]': {
                 required: "请输入短信验证码",
