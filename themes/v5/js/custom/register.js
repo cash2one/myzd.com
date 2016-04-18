@@ -26,9 +26,7 @@ jQuery(function () {
                 isMobile: true
             },
             'UserRegisterForm[captcha_code_register]': {
-                required: true,
-                maxlength: 6,
-                minlength: 6
+                required: true
             },
             'UserRegisterForm[verify_code]': {
                 required: true,
@@ -57,9 +55,7 @@ jQuery(function () {
                 isMobile: '请输入正确的中国手机号码!'
             },
             'UserRegisterForm[captcha_code_register]': {
-                required: "请输入图形验证码",
-                maxlength: "请输入正确的图形验证码",
-                minlength: "请输入正确的图形验证码"
+                required: "请输入图形验证码"
             },
             'UserRegisterForm[verify_code]': {
                 required: "请输入短信验证码",

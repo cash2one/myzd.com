@@ -54,13 +54,13 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <a href="https://itunes.apple.com/cn/app/id1001032594" target="_blank">
-                                                            <img src="<?php //echo $urlResImage;     ?>icons/ios-download.png"/>
+                                                            <img src="<?php //echo $urlResImage;       ?>icons/ios-download.png"/>
                                                             <div class="mt5 text-center"><i class="fa fa-apple"></i> IOS</div>
                                                         </a>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.mingyizhudao.app" target="_blank">
-                                                            <img src="<?php //echo $urlResImage;     ?>icons/android-download.png"/>
+                                                            <img src="<?php //echo $urlResImage;       ?>icons/android-download.png"/>
                                                             <div class="mt5 text-center"><i class="fa fa-android"></i> Android</div>
                                                         </a>
                                                     </div>
@@ -192,7 +192,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                         <div class="input-group">
                                             <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div> 
                                             <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserVerifyCodeLoginForm[captcha_code]" id="UserVerifyCodeLoginForm_captcha_code" type="text">            
-                                            <div class="input-group-addon" style="width:131px;padding: 0;"><a href="javascript:void(0);"><img id="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
+                                            <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img id="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
 
                                             <!--<div id="btn-sendLoginSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>-->
                                         </div>
@@ -294,7 +294,7 @@ if (isset($user)) {
         } else if (captchaCode.length == 0) {
             $("div.error").remove();
             $("#UserVerifyCodeLoginForm_captcha_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_captcha_code-error" class="error">请输入图形验证码</div>');
-        } else if (ajaxValidateCaptchaCodeLogin(captchaCode) == false) {
+        } else if (ajaxValidateCaptchaCode(captchaCode) == false) {
             $("div.error").remove();
             $("#UserVerifyCodeLoginForm_captcha_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_captcha_code-error" class="error">请输入正确的图形验证码</div>');
         } else {
@@ -306,7 +306,7 @@ if (isset($user)) {
             var formData = new FormData();
             formData.append("AuthSmsVerify[mobile]", mobile);
             formData.append("AuthSmsVerify[actionType]", actionType);
-            formData.append("AuthSmsVerify[captcha_code]", captchaCode);
+            formData.append("captcha_code", captchaCode);
             $.ajax({
                 type: 'post',
                 url: actionUrl,
@@ -317,9 +317,14 @@ if (isset($user)) {
                 'success': function (data) {
                     if (data.status === true) {
                         //domForm[0].reset();
-                    }
-                    else {
+                    } else {
                         console.log(data);
+                        if (data.errors.captcha_code) {
+                            clearInterval(timerId);
+                            $("#UserVerifyCodeLoginForm_captcha_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_captcha_code-error" class="error">请输入正确的图形验证码</div>');
+                            domBtn.html("获取验证码");
+                            domBtn.attr("disabled", false);
+                        }
                     }
                 },
                 'error': function (data) {
@@ -330,7 +335,7 @@ if (isset($user)) {
             });
         }
     }
-    function ajaxValidateCaptchaCodeLogin(co_code) {
+    function ajaxValidateCaptchaCode(co_code) {
         var validate = false;
         $.ajax({
             type: 'post',
