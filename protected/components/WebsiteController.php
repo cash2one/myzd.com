@@ -292,19 +292,22 @@ abstract class WebsiteController extends Controller {
     }
 
     public function actionValiCaptcha() {
+        $output = array('status' => 'no');
         if (strcmp($_REQUEST['co_code'], Yii::app()->session['code']) != 0) {
-            echo CJSON::encode(array('status' => 'no','error' =>'验证码错误'));
-            exit;
+            //echo CJSON::encode(array('status' => 'no','error' =>'验证码错误'));
+            $output['status'] = 'no';
+            $output['error'] = '验证码错误';
+        } else {
+            $output['status'] = 'ok';
         }
-        echo CJSON::encode(array('status' => 'ok','error' =>''));
-        exit;
+        //echo CJSON::encode(array('status' => 'ok','error' =>''));
+        $this->renderJsonOutput($output);
     }
 
     //获取验证码
     public function actionGetCaptcha() {
         $captcha = new CaptchaManage;
         $captcha->showImg();
-        
     }
 
 }
