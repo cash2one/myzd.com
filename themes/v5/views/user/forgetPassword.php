@@ -62,7 +62,7 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
                     <label class=" required" for="ForgetPasswordForm_username" aria-required="true">图形验证码 <span class="required" aria-required="true">*</span></label>
                     <div class="input-group">
                         <input class="form-control" placeholder="请输入图形验证码" name="ForgetPasswordForm[captcha_code]" id="ForgetPasswordForm_captcha_code" type="text">            
-                        <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img id="vailcode-forgetPwd" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
+                        <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
                     </div>
                     <div></div>
                 </div>
@@ -112,7 +112,6 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
 </div>
 <script>
     $(document).ready(function () {
-        $("#vailcode-forgetPwd").attr("src", "<?php echo $this->createUrl('site/getCaptcha'); ?>/" + Math.random());
         $("#btn-sendChangePwdSmsCode").click(function (e) {
             e.preventDefault();
             sendChangePwdSmsVerifyCode($(this));

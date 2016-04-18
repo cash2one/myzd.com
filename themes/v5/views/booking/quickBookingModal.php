@@ -58,7 +58,7 @@ $urlReturn = '';
                             <div class="col-sm-7 controls">
                                 <div class="input-group">
                                     <input name="booking[captcha_code]" placeholder="请输入图形验证码" class="form-control" maxlength="6" id="booking_captcha_code" type="text">                                        
-                                    <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img id="vailcode_booking" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
+                                    <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
@@ -124,7 +124,9 @@ $urlReturn = '';
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
-        $("#vailcode_booking").attr("src", "<?php echo $this->createUrl('site/getCaptcha'); ?>/" + Math.random());
+        $('#qucikbookingModal').on('show.bs.modal', function (event) {
+            $('#loginModal').modal('hide');
+        });
         $("#btn-sendBookingSmsCode").click(function (e) {
             e.preventDefault();
             sendBookingSmsVerifyCode($(this));

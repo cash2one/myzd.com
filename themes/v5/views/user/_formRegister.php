@@ -36,7 +36,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
             <div class="input-group">
                 <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div>
                 <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserRegisterForm[captcha_code_register]" id="UserRegisterForm_captcha_code_register" type="text">            
-                <div class="input-group-addon vailcodeImg"><img id="vailcode-register" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></div>
+                <div class="input-group-addon vailcodeImg"><img class="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></div>
             </div>
             <div class="Message" id="UserRegisterForm_captcha_code_register_em_" style="display:none"></div>    
         </div>
@@ -92,7 +92,6 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 </form>
 <script type="text/javascript">
     $(document).ready(function () {
-        $("#vailcode-register").attr("src", "<?php echo $this->createUrl('site/getCaptcha'); ?>/" + Math.random());
         $("#btn-sendRegSmsCode").click(function () {
             sendRegSmsVerifyCode($(this));
         });
