@@ -19,6 +19,9 @@ jQuery(function () {
                 maxlength: 11,
                 isMobile: true
             },
+            'ForgetPasswordForm[captcha_code]': {
+                required: true
+            },
             'ForgetPasswordForm[verify_code]': {
                 required: true,
                 digits: true,
@@ -41,6 +44,9 @@ jQuery(function () {
                 required: "请输入手机号码",
                 maxlength: '请输入正确的中国手机号码!',
                 isMobile: '请输入正确的中国手机号码!'
+            },
+            'ForgetPasswordForm[captcha_code]': {
+                required: "请输入图形验证码"
             },
             'ForgetPasswordForm[verify_code]': {
                 required: "请输入短信验证码",
