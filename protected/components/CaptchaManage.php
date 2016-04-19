@@ -13,6 +13,8 @@ class CaptchaManage
         $this->width = $width;
         $this->height = $height;
         $this->codeNum = $codeNum;
+        ob_clean();
+      
     }
 
     public function showImg()
@@ -20,7 +22,7 @@ class CaptchaManage
         //创建图片
         $this->createImg();
         //设置干扰元素
-        //$this->setDisturb();
+        $this->setDisturb();
         //设置验证码
         $this->setCaptcha();
         //输出图片
@@ -134,27 +136,13 @@ class CaptchaManage
             $code = $mid_num.$oper.$left_num.$oper.$right_num;
             $code = $code.'=?';
         }        
-
         Yii::app()->session['code'] = $result;
-
         return $code;
     }
 
     private function setCaptcha()
     {
         $this->createCode();
-
-        /*$len = strlen($this->code);
-        for ($i = 0; $i < $len; $i++) {
-            //$color = imagecolorallocate($this->im, rand(50, 250), rand(100, 250), rand(128, 250));
-            $color = imagecolorallocate($this->im, 36, 85, 170);
-            //$size = rand(floor($this->height / 5), floor($this->height / 3));
-            $size = 200;   
-            $x = floor($this->width / $len) * $i + 4;
-            $y = rand(0, $this->height - 20);
-            imagechar($this->im, $size, $x, $y, $this->code{$i}, $color);           
-        }*/
-
         $len = strlen($this->code);
         for ($i = 0; $i < $len; $i++) 
         {
