@@ -39,6 +39,9 @@ jQuery(function () {
                 required: true,
                 isMobile: true
             },
+            'booking[captcha_code]': {
+                required: true
+            },
             'booking[verify_code]': {
                 required: true,
                 digits: true,
@@ -78,6 +81,9 @@ jQuery(function () {
             'booking[mobile]': {
                 required: "请输入手机号码",
                 isMobile: '请输入正确的中国手机号码!'
+            },
+            'booking[captcha_code]': {
+                required: "请输入图形验证码"
             },
             'booking[verify_code]': {
                 required: "请输入短信验证码",

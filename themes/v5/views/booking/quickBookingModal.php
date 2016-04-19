@@ -15,7 +15,7 @@ $urlReturn = '';
         <div class="modal-content">
             <div class="mybooking">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-                <div class="mybooking-text text-center color-white"><img src="<?php echo $urlResImage; ?>general/booking.png"> 我要预约</div>
+                <div class="mybooking-text text-center color-white"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010432282534"> 我要预约</div>
             </div>
             <div class="booking-form pt20">
                 <div class="form-wrapper">
@@ -50,6 +50,16 @@ $urlReturn = '';
                             <label for="" class="padright0 col-sm-offset-1 col-sm-3 col-md-3 control-label">手机:</label>
                             <div class="col-sm-7 controls">
                                 <input name="booking[mobile]" placeholder="请输入手机号" class="form-control" maxlength="11" id="booking_mobile" type="text">                     
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="padright0 col-sm-offset-1 col-sm-3 col-md-3 control-label">图形验证码:</label>
+                            <div class="col-sm-7 controls">
+                                <div class="input-group">
+                                    <input name="booking[captcha_code]" placeholder="请输入图形验证码" class="form-control" maxlength="6" id="booking_captcha_code" type="text">                                        
+                                    <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
+                                </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -114,6 +124,9 @@ $urlReturn = '';
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
+        $('#qucikbookingModal').on('show.bs.modal', function (event) {
+            $('#loginModal').modal('hide');
+        });
         $("#btn-sendBookingSmsCode").click(function (e) {
             e.preventDefault();
             sendBookingSmsVerifyCode($(this));
@@ -122,13 +135,22 @@ $urlReturn = '';
 
     function sendBookingSmsVerifyCode(domBtn) {
         var domMobile = $("#booking_mobile");
+        var domCaptchaCode = $("#booking_captcha_code");
         var mobile = domMobile.val();
+        var captchaCode = domCaptchaCode.val();
         if (mobile.length === 0) {
             $("#booking_mobile-error").remove();
             $("#booking_mobile").after('<div id="booking_mobile-error" class="error">请输入手机号码</div>');
         } else if (domMobile.hasClass("error")) {
             // mobile input field as error, so do nothing.
+        } else if (captchaCode.length == 0) {
+            $("div.error").remove();
+            $("#booking_captcha_code").parents('.input-group').after('<div id="booking_captcha_code-error" class="error">请输入图形验证码</div>');
+        } else if (ajaxValidateCaptchaCode(captchaCode) == false) {
+            $("div.error").remove();
+            $("#booking_captcha_code").parents('.input-group').after('<div id="booking_captcha_code-error" class="error">请输入正确的图形验证码</div>');
         } else {
+            $("div.error").remove();
             buttonTimerStart(domBtn, 60000);
             $domForm = $("#quickbook-form");
             var actionUrl = $domForm.find("input[name='smsverify[actionUrl]']").val();
@@ -136,6 +158,7 @@ $urlReturn = '';
             var formData = new FormData();
             formData.append("AuthSmsVerify[mobile]", mobile);
             formData.append("AuthSmsVerify[actionType]", actionType);
+            formData.append("captcha_code", captchaCode);
             $.ajax({
                 type: 'post',
                 url: actionUrl,
@@ -149,6 +172,12 @@ $urlReturn = '';
                     }
                     else {
                         console.log(data);
+                        if (data.errors.captcha_code) {
+                            clearInterval(timerId);
+                            $("#booking_captcha_code").parents('.input-group').after('<div id="booking_captcha_code-error" class="error">请输入正确的图形验证码</div>');
+                            domBtn.html("获取验证码");
+                            domBtn.attr("disabled", false);
+                        }
                     }
                 },
                 'error': function (data) {

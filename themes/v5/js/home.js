@@ -123,7 +123,6 @@ function setResultShow(results) {
         result_tab = '#doctor';
     }
     $('.search-display-header .nav').find(header_tab).addClass('active');
-    console.log(result_tab);
     $('#seach-result').find(result_tab).addClass('active');
 }
 function initSearchResultTab() {

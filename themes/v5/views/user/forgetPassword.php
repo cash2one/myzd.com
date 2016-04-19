@@ -26,7 +26,7 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
     <div class="row mt40">
         <div class="col-sm-7">
             <div>
-                <img src="<?php echo $urlResImage; ?>user/user-left.png"/>
+                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010389103757"/>
             </div>
         </div>
         <div class="col-sm-4 col-sm-offset-1">
@@ -56,6 +56,14 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
                     <?php echo $form->labelEx($model, 'username', array('class' => '')); ?>
                     <?php echo $form->numberField($model, 'username', array('placeholder' => '输入手机号码', 'class' => 'form-control')); ?>
                     <?php echo $form->error($model, 'username'); ?>
+                    <div></div>
+                </div>
+                <div class="contrller">
+                    <label class=" required" for="ForgetPasswordForm_username" aria-required="true">图形验证码 <span class="required" aria-required="true">*</span></label>
+                    <div class="input-group">
+                        <input class="form-control" placeholder="请输入图形验证码" name="ForgetPasswordForm[captcha_code]" id="ForgetPasswordForm_captcha_code" type="text">            
+                        <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
+                    </div>
                     <div></div>
                 </div>
                 <div class="contrller">
@@ -115,8 +123,10 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
     });
     function sendChangePwdSmsVerifyCode(domBtn) {
         var domForm = $("#changePwd-form");
+        var domCaptchaCode = $("#ForgetPasswordForm_captcha_code");
         var domMobile = domForm.find("#ForgetPasswordForm_username");
         var mobile = domMobile.val();
+        var captchaCode = domCaptchaCode.val();
         if (mobile.length === 0) {
             $('#ForgetPasswordForm_username-error').remove();
             $("#ForgetPasswordForm_username").parents('.contrller').append("<div id='ForgetPasswordForm_username-error' class='error'>请输入手机号码</div>");
@@ -124,14 +134,21 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
         } else if (!validatorMobile(mobile)) {
             $('#ForgetPasswordForm_username-error').remove();
             $("#ForgetPasswordForm_username").parents('.contrller').append("<div id='ForgetPasswordForm_username-error' class='error'>请输入正确的中国手机号码!</div>");
+        } else if (captchaCode.length == 0) {
+            $("div.error").remove();
+            $("#ForgetPasswordForm_captcha_code").parents('.input-group').after('<div id="ForgetPasswordForm_captcha_code-error" class="error">请输入图形验证码</div>');
+        } else if (ajaxValidateCaptchaCode(captchaCode) == false) {
+            $("div.error").remove();
+            $("#ForgetPasswordForm_captcha_code").parents('.input-group').after('<div id="ForgetPasswordForm_captcha_code-error" class="error">请输入正确的图形验证码</div>');
         } else {
-            $(".error").html("");//删除错误信息
+            $("div.error").html("");//删除错误信息
             buttonTimerStart(domBtn, 60000);
             var actionUrl = domForm.find("input[name='smsverify[actionUrl]']").val();
             var actionType = domForm.find("input[name='smsverify[actionType]']").val();
             var formData = new FormData();
             formData.append("AuthSmsVerify[mobile]", mobile);
             formData.append("AuthSmsVerify[actionType]", actionType);
+            formData.append("captcha_code", captchaCode);
             $.ajax({
                 type: 'post',
                 url: actionUrl,
@@ -145,6 +162,12 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
                     }
                     else {
                         console.log(data);
+                        if (data.errors.captcha_code) {
+                            clearInterval(timerId);
+                            $("#UserVerifyCodeLoginForm_captcha_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_captcha_code-error" class="error">请输入正确的图形验证码</div>');
+                            domBtn.html("获取验证码");
+                            domBtn.attr("disabled", false);
+                        }
                     }
                 },
                 'error': function (data) {
@@ -154,25 +177,6 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
                 }
             });
         }
-    }
-    function buttonTimerStart(domBtn, timer) {
-        timer = timer / 1000 //convert to second.
-        var interval = 1000;
-        var timerTitle = '秒后重发';
-        domBtn.attr("disabled", true);
-        domBtn.html(timer + timerTitle);
-
-        timerId = setInterval(function () {
-            timer--;
-            if (timer > 0) {
-                domBtn.html(timer + timerTitle);
-            } else {
-                clearInterval(timerId);
-                timerId = null;
-                domBtn.html("重新发送");
-                domBtn.attr("disabled", false);
-            }
-        }, interval);
     }
     function validatorMobile(mobile) {
         var mobileReg = /^(13[0-9]{9})|(18[0-9]{9})|(14[0-9]{9})|(17[0-9]{9})|(15[0-9]{9})$/;

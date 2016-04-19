@@ -111,7 +111,7 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 #site-header ul.nav-top-right>li.user-control>a{border-left:1px solid #19aea5;}
 #site-header ul.nav-top-right>li.user-control:last-child>a{border-left:none;padding-left:0;}
 #site-header ul.nav-top-right>li.user-control>a:hover{text-decoration:underline;}
-.site-phone{color: #19aea5;font-size: 18px!important;display:inline-block; height:1.2em;line-height:1.2em;padding-left:1.5em;font-size:1em;background:url(../images/icons/ic_phone.png) no-repeat 0 0px;padding-top: 3px;background-size:contain;-webkit-background-size: contain;-moz-background-size: contain;-o-background-size: contain;}
+.site-phone{color: #19aea5;font-size: 18px!important;display:inline-block; height:1.2em;line-height:1.2em;padding-left:1.5em;font-size:1em;background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010322917718') no-repeat 0 0px;padding-top: 3px;background-size:contain;-webkit-background-size: contain;-moz-background-size: contain;-o-background-size: contain;}
 .header-sologan li{padding: 0px 30px; margin-left: 45px;font-size: 12px;margin-top: -3px;background: url(../images/icons/icon_gold.png) no-repeat 10px 2px;}
 #appdownload{padding: 12px 0;}
 #appdownload:hover{cursor: pointer;color: #19aea5;}
@@ -129,10 +129,10 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 /**** loginModal ****/
 /**** login ****/
 #loginModal .login-form .title{color:#3bb8b6;font-size:26px;}
-#loginModal .login-form .login-change .phone-login{background:url(../images/user/gray-dot.png) no-repeat 0 center;padding-left:15px;cursor:pointer;}
-#loginModal .login-form .login-change .phone-login.active{background:url(../images/user/green-dot.png) no-repeat 0 center;padding-left:15px;cursor:pointer;}
-#loginModal .login-form .login-change .account-login{background:url(../images/user/gray-dot.png) no-repeat 0 center;padding-left:15px;margin-left:50px;cursor:pointer;}
-#loginModal .login-form .login-change .account-login.active{background:url(../images/user/green-dot.png) no-repeat 0 center;padding-left:15px;margin-left:50px;cursor:pointer;}
+#loginModal .login-form .login-change .phone-login{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010339334987') no-repeat 0 center;padding-left:15px;cursor:pointer;}
+#loginModal .login-form .login-change .phone-login.active{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010339346443') no-repeat 0 center;padding-left:15px;cursor:pointer;}
+#loginModal .login-form .login-change .account-login{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010339334987') no-repeat 0 center;padding-left:15px;margin-left:50px;cursor:pointer;}
+#loginModal .login-form .login-change .account-login.active{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010339346443') no-repeat 0 center;padding-left:15px;margin-left:50px;cursor:pointer;}
 #loginModal .login-form .agreement{color:#e50011;}
 #loginModal .login-form #account-login-form{display:none;}
 #login-form{display: none;}
@@ -140,11 +140,13 @@ body {color: #333;letter-spacing: 1px;line-height: 1.5;font-size: 14px;font-fami
 #loginModal .modal-dialog>.modal-content{min-height: 510px;}
 #loginModal .modal-dialog>.modal-content>.modal-body{padding-right:45px;padding-left:45px;}
 #loginModal .modal-dialog>.modal-content>.modal-body .hidden-xs{margin-top:80px;}
-#loginModal .modal-dialog>.modal-content>.modal-body .close{background:url(../images/user/cancel.png) no-repeat 0 center;background-size: 100%;width:21px;height:21px;display: inline-block;margin-right: -1.3em;}
-#loginModal .modal-dialog>.modal-content>.modal-body .close:hover{background:url(../images/user/cancel-green.png) no-repeat 0 center;background-size: 100%;width:21px;height:21px;display: inline-block;}
+#loginModal .modal-dialog>.modal-content>.modal-body .close{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010339208613') no-repeat 0 center;background-size: 100%;width:21px;height:21px;display: inline-block;margin-right: -1.3em;}
+#loginModal .modal-dialog>.modal-content>.modal-body .close:hover{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010339323172') no-repeat 0 center;background-size: 100%;width:21px;height:21px;display: inline-block;}
 @media (min-width: 768px){#loginModal .modal-dialog,#registerModal .modal-dialog {width: 850px;margin: 100px auto 30px;}}
-#qucikbookingModal .close{background:url(../images/home/close.png) no-repeat 0 center;background-size: 100%;width:21px;height:21px;display: inline-block;}
+#qucikbookingModal .close{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010032220519') no-repeat 0 center;background-size: 100%;width:21px;height:21px;display: inline-block;}
 /**** site-content ****/
+.vailcodeImg{width:131px;padding: 0;background-color: #fff;}
+.vailcodeImg>img{cursor: pointer;}
 .modal-open .modal{margin-top: 50px;}
 form label a:hover{text-decoration: underline!important;}
 form .contrller{margin-bottom: 15px;}
@@ -191,7 +193,7 @@ form span.required {color: #E21E1A;}
 .block-center{display: block;margin: 0 auto;}
 /**** loading ****/
 .loading {position: absolute;left: 45%;top:40%;z-index: 999;display: none;margin: 0 auto;width: 48px;height: 48px;background-image: url("../images/loading/loading03.gif");background-repeat: no-repeat;background-position: center;background-size: contain;}
-.loading.loading02 {width: 48px;height: 48px;background-image: url("../images/loading/loading02.gif");}
+.loading.loading02 {width: 48px;height: 48px;background-image: url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146043071365715");}
 /**** btn ****/
 .btn:focus{outline: none;}
 .btn-verifycode {color: #fff;background-color: #EFA429;border-color: #eea236;}
@@ -226,7 +228,7 @@ form span.required {color: #E21E1A;}
 .aboutus-header{background-color:#33cccc;text-align:center;}
 .aboutus-header img{display: block;margin: 0 auto;}
 /**** site-footer ****/
-.totop{position: fixed;bottom: 10%;right: 10px;width: 50px;height: 50px;background: url(../images/icons/totop.png);display: none;}
+.totop{position: fixed;bottom: 10%;right: 10px;width: 50px;height: 50px;display: none;background: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146009389300070');}
 .totop:hover{cursor: pointer;background-position:50px 0;}
 .pl0{padding-left: 0;}
 #site-footer{font-size: 12px;padding-top:20px;background-color: #eeefef;}
@@ -235,7 +237,7 @@ form span.required {color: #E21E1A;}
 #site-footer .w25 h4{margin-top: 0!important;font-size: 16px;}
 #site-footer .w25.border0{border-right-color: #eeefef;}
 #site-footer .footer-last{font-size: 12px;padding: 11px;background-color: #dcdcdd;}
-#site-footer .partner{padding-left:30px;}
+#site-footer .partner{padding-left: 30px;}
 #site-footer .partner .pl5{padding-left: 5px;}
 #site-footer .partner .pr5{padding-right: 5px;}
 #site-footer .corporationInfo .text-info{display: inline-block;}

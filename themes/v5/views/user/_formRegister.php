@@ -8,6 +8,7 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/c
 $urlGetSmsVerifyCode = $this->createAbsoluteUrl('auth/sendSmsVerifyCode');
 $authActionType = AuthSmsVerify::ACTION_USER_REGISTER;
 $ajaxRegisterUrl = $this->createUrl('user/ajaxRegister');
+$ajaxCaptchaCode = $this->createUrl('site/valiCaptcha');
 $bookinglist = $this->createUrl('booking/list');
 $urlReturn = Yii::app()->homeUrl;
 $urlTerms = $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms'));
@@ -35,7 +36,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
             <div class="input-group">
                 <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div>
                 <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserRegisterForm[captcha_code_register]" id="UserRegisterForm_captcha_code_register" type="text">            
-                <div class="input-group-addon" style="width:131px;padding: 0;"><?php $this->widget('CCaptcha', array('showRefreshButton' => false, 'clickableImage' => true, 'imageOptions' => array('alt' => '点击换图', 'title' => '点击换图', 'style' => 'cursor:pointer;width:100%;height:100%;'))); ?></div>
+                <div class="input-group-addon vailcodeImg"><img class="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></div>
             </div>
             <div class="Message" id="UserRegisterForm_captcha_code_register_em_" style="display:none"></div>    
         </div>
@@ -109,7 +110,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
         } else if (captchaCode.length == 0) {
             $("div.error").remove();
             $("#UserRegisterForm_captcha_code_register").parents('.input-group').after('<div id="UserRegisterForm_captcha_code_register-error" class="error">请输入图形验证码</div>');
-        } else if (ajaxValidateCaptchaCode() == false) {
+        } else if (ajaxValidateCaptchaCode(captchaCode) == false) {
             $("div.error").remove();
             $("#UserRegisterForm_captcha_code_register").parents('.input-group').after('<div id="UserRegisterForm_captcha_code_register-error" class="error">请输入正确的图形验证码</div>');
         } else {
@@ -121,6 +122,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
             var formData = new FormData();
             formData.append("AuthSmsVerify[mobile]", mobile);
             formData.append("AuthSmsVerify[actionType]", actionType);
+            formData.append("captcha_code", captchaCode);
             $.ajax({
                 type: 'post',
                 url: actionUrl,
@@ -134,6 +136,12 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     }
                     else {
                         console.log(data);
+                        if (data.errors.captcha_code) {
+                            clearInterval(timerId);
+                            $("#UserVerifyCodeLoginForm_captcha_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_captcha_code-error" class="error">请输入正确的图形验证码</div>');
+                            domBtn.html("获取验证码");
+                            domBtn.attr("disabled", false);
+                        }
                     }
                 },
                 'error': function (data) {
@@ -143,25 +151,5 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                 }
             });
         }
-    }
-    function ajaxValidateCaptchaCode() {
-        var validate = false;
-        var domForm = $("#register-form");
-        var formdata = domForm.serialize();
-        $.ajax({
-            type: 'post',
-            data: formdata,
-            async: false,
-            url: '<?php echo $ajaxRegisterUrl; ?>',
-            success: function (data) {
-                console.log(data.errors);
-                if (!data.errors['captcha_code_register']) {
-                    validate = true;
-                }
-            },
-            error: function () {
-            }
-        });
-        return validate;
     }
 </script>

@@ -17,7 +17,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
             <div class="clearfix mt40">
                 <div class="col-sm-7 mt50">
                     <div>
-                        <img src="<?php echo $urlResImage; ?>user/user-left.png"/>
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010389103757"/>
                     </div>
                 </div>
                 <div class="col-sm-4">
