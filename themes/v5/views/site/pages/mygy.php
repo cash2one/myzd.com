@@ -51,7 +51,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
                                 <div class="pull-left"><span class="step">第一步------</span></div>
                                 <div class="pull-left">
                                     <div>选择名医并预约，</div>
-                                    <div>或拨打400-119-7900</div>
+                                    <div>或拨打400-6277-120</div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -95,8 +95,10 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             </div>
             <div class="cutover">
                 <div class="content commonwealexpert">
+                    <ul class="bxslider">
+                    </ul>
                 </div>
-                <div class="text-center mt10"><span class="line-btn active" href="#slider0"></span><span class="line-btn ml10" href="#slider1"></span><span class="line-btn ml10" href="#slider2"></span><span class="line-btn ml10" href="#slider3"></span></div>
+<!--                <div class="text-center mt10"><span class="line-btn active" href="#slider0"></span><span class="line-btn ml10" href="#slider1"></span><span class="line-btn ml10" href="#slider2"></span><span class="line-btn ml10" href="#slider3"></span></div>-->
             </div>
             <div class="mt60">
                 <div class="pull-left title-picture">
@@ -218,7 +220,6 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             </div>
         </div>
     </div>
-    <div class="test"></div>
 
     <!--    <link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
         <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>-->
@@ -229,13 +230,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
         var urlLoadCommonwealDoctors = '<?php echo $urlCommonwealDoctors; ?>';
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadCommonwealDoctors(urlLoadCommonwealDoctors, urlDoctorView);
-        $('.line-btn').click(function () {
-            $('.line-btn').removeClass('active');
-            $(this).addClass('active');
-            $('.cutover .commonwealexpert .silder-area').hide();
-            var activeTab = $(this).attr('href');
-            $(activeTab).show();
-        });
+
     });
     function ajaxLoadCommonwealDoctors(urlLoadCommonwealDoctors, urlDoctorView) {
         $.ajax({
@@ -257,14 +252,9 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             innerHtml += "";
             var page = data.results.page;
             var active = "";
-            var x = 1;
+            var x = 0;
             for (x in page) {
-                if (x == 0) {
-                    active = 'active';
-                } else {
-                    active = '';
-                }
-                innerHtml += '<div class="silder-area ' + active + '" id="slider' + x + '"><div class="row expList" >';
+                innerHtml += '<li><div class="row expList" >';
                 var doctors = page[x];
                 for (var i = 0; i < doctors.length; i++) {
                     var doctor = doctors[i];
@@ -283,13 +273,22 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
                             '</a>' +
                             '</div>';
                 }
-                innerHtml += '</div></div>';
+                innerHtml += '</div></li>';
 
             }
-            $(".commonwealexpert").html(innerHtml);
+            $(".commonwealexpert .bxslider").html(innerHtml);
+
         }
-
-
-
+//轮播
+        var adsbxslider = $('.commonwealexpert .bxslider').bxSlider({
+            mode: 'fade',
+            slideMargin: 0,
+            controls: true,
+            pause: 5000,
+            speed: 0,
+            auto: true
+        });
+        $(".commonwealexpert .bx-controls-direction").hide();
     }
+
 </script>
