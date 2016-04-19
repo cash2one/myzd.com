@@ -23,7 +23,7 @@ class UserLoginForm extends EFormModel {
             array('username, password', 'required', 'message' => '请输入{attribute}'), // username and password are required
             array('rememberMe', 'boolean'), // rememberMe needs to be a boolean
             array('password', 'authenticate'), // password needs to be authenticated
-            array('captchaCode', 'captcha', 'allowEmpty' => !CCaptcha::checkRequirements()),
+            //array('captchaCode', 'captcha', 'allowEmpty' => !CCaptcha::checkRequirements()),
         );
     }
 

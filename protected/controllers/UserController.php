@@ -200,7 +200,7 @@ class UserController extends WebsiteController {
                 // success                
                 $loginForm = $userMgr->autoLoginUser($form->username, $form->password, $userRole, 1);
                 $output['status'] = 'ok';
-                $output['user'] = $this->getCurrentUser();
+                $output['username'] = $this->getCurrentUser()->username;
             } else {
                 $output['errors'] = $form->getErrors();
             }
