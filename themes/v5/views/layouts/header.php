@@ -35,7 +35,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
     <div class="container-fluid bg-gray home-top hidden-xs">
         <div class="row">
             <div class="container relative">
-                <div class="pull-left hidden-sm phone"><span class="site-phone">400-119-7900</span></div>
+                <div class="pull-left hidden-sm phone"><span class="site-phone">400-6277-120</span></div>
                 <div class="pull-right " >
                     <?php
                     $user = $this->getCurrentUser();

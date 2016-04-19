@@ -40,7 +40,7 @@ $resourceUrl = Yii::app()->theme->baseUrl . '/images/service';
                         <div class="h4">您可以通过以下渠道咨询我们或者留下你的手机和问题，我们会第一时间电话回访。</div>
                         <div clas="row">
                             <div class="col-sm-6">
-                                <div class="row"><div class="contact"><div class="icon icon-cm-phone"></div><div class="caption">400-119-7900</div></div></div>
+                                <div class="row"><div class="contact"><div class="icon icon-cm-phone"></div><div class="caption">400-6277-120</div></div></div>
                                 <div class="row"><div class="contact"><div class="icon icon-cm-qq"></div><div class="caption">3077068520</div></div></div>
                             </div>
                             <div class="col-sm-6">

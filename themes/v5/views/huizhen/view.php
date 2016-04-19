@@ -322,7 +322,7 @@ $cssClass = $model->code;
                         <div class="">
                             <h4>您可以通过以下方式联系我们：</h4>
                             <table class="table mb0">
-                                <tbody><tr class="noborder"><td><span class="strong">电话：</span></td><td class="strong color-green">400-119-7900</td></tr>
+                                <tbody><tr class="noborder"><td><span class="strong">电话：</span></td><td class="strong color-green">400-6277-120</td></tr>
                                     <tr class="noborder"><td><span class="strong">邮箱：</span></td><td><a class="text-info" href="mailto:service@mingyihz.com">service@mingyihz.com</a></td></tr>
                                     <tr class="noborder"><td><span class="strong">微信：</span></td><td><img class="img-responsive" src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg" width="100px"></td></tr>                                    
                                 </tbody>

@@ -64,7 +64,7 @@ $this->htmlMetaDescription = '看病难”的问题已经成为了当今社会�
                     <span style="box-sizing: border-box; font-weight: 700; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px;">【信与不信，幸与不幸】</span>
                 </p>
                 <p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Microsoft YaHei, 微软雅黑, Microsoft Yahei, 黑体, 宋体, Arial, Simsun, Helvetica, sans-serif; letter-spacing: 1px; line-height: 24px; white-space: normal; text-indent: 28px; background-color: rgb(255, 255, 255);">
-                    <span style="box-sizing: border-box; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px;">成立于2014年底的名医主刀，已经成功的为数百位手术患者提供快速全面的医疗服务。很多患者在最初都是抱着“怀疑”和“试一试”的态度下载了“名医主刀”的手机APP或拨通了名医主刀的联系电话（400-119-7900），当他们亲身体验了名医主刀专业快速全面的医疗服务之后，都改变了自己的观点，他们都深信因为有了名医主刀，“看病难”的问题终于找到了最佳的解决方案。</span>
+                    <span style="box-sizing: border-box; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px;">成立于2014年底的名医主刀，已经成功的为数百位手术患者提供快速全面的医疗服务。很多患者在最初都是抱着“怀疑”和“试一试”的态度下载了“名医主刀”的手机APP或拨通了名医主刀的联系电话（400-6277-120），当他们亲身体验了名医主刀专业快速全面的医疗服务之后，都改变了自己的观点，他们都深信因为有了名医主刀，“看病难”的问题终于找到了最佳的解决方案。</span>
                 </p>
                 <p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Microsoft YaHei, 微软雅黑, Microsoft Yahei, 黑体, 宋体, Arial, Simsun, Helvetica, sans-serif; letter-spacing: 1px; line-height: 24px; white-space: normal; text-indent: 28px; background-color: rgb(255, 255, 255);">
                     <span style="box-sizing: border-box; font-family: 微软雅黑, Microsoft YaHei; font-size: 14px;">&nbsp;</span>

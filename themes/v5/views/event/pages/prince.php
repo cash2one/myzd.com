@@ -59,7 +59,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="title-line"></div>
             <div class="text-center blue-text mt30 mb50">
                 如果您的身边也有像王子一样患扭转痉挛症的朋友或亲人<br/>
-                可拨打名医主刀热线电话<span class="tag-blue">400-119-7900</span><br/>
+                可拨打名医主刀热线电话<span class="tag-blue">400-6277-120</span><br/>
                 预约Remebot机器人进行手术治疗<br/>
                 给他更健康的生活！
             </div>

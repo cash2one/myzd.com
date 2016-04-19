@@ -56,7 +56,7 @@
   'text-align'      : eo.textAlign || 'inherit',
   'text-decoration' : eo.textDecoration || 'inherit',
   'color'           : (eo.color || theme.majorColor)
-} " ng-bind-html="eo.text | eol2br | unsafe"><section>会诊地址西院：山东中路145号诊楼4楼特诊部</section><section>详情咨询电话:400-119-7900</section></fieldset></div></div>
+} " ng-bind-html="eo.text | eol2br | unsafe"><section>会诊地址西院：山东中路145号诊楼4楼特诊部</section><section>详情咨询电话:400-6277-120</section></fieldset></div></div>
             </div><!-- end ngRepeat: slice in slices --><div class="x3-slice-plate clearfix ng-scope" ng-repeat="slice in slices">
                 <div class="tn-slice-loader ng-isolate-scope" tn-page-loader="" page="slice" tn-page-show-with-transition="true" theme="(slice.themeColor | clr2theme)" template-path="/templates/parts"><!-- ngInclude: (page.templateId) | templateIdToPath: templatePath --><div class="tn-page ng-scope" ng-include="(page.templateId) | templateIdToPath: templatePath"><fieldset style="border:0" class="ng-scope"><section style="margin: 0.5em 0px 2px; border-top-style: solid; border-top-width: 1px; border-color: rgb(142, 201, 101);" tn-page-editable="bdc0" tn-page-editable-type="border-color" ng-style=" {
   'border-color' : (eo.borderColor || theme.borderColor),

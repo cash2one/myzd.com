@@ -43,7 +43,7 @@ $resourceUrl = Yii::app()->theme->baseUrl . '/images/service';
                         <div class="clearfix">
                             <div class="wx-qrcode inline-block pull-left"><img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl ?>/images/icons/wx_qrcode_258x258.jpg" /></div>
                             <div class="inline-block pull-left">
-                                <div class="contact clearfix"><div class="icon icon-cm-phone"></div><div class="caption">400-119-7900</div></div>
+                                <div class="contact clearfix"><div class="icon icon-cm-phone"></div><div class="caption">400-6277-120</div></div>
                                 <div class="contact clearfix"><div class="icon icon-cm-qq"></div><div class="caption">3077068520</div></div>
                                 <div class="contact clearfix"><div class="icon icon-cm-email"></div><div class="caption">service@mingyihz.com</div></div>
                             </div>

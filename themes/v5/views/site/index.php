@@ -362,15 +362,15 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 innerHtml += '</div>';
             }
             if (resultsNum <= 6) {
-                innerHtml += '<div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
+                innerHtml += '<div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-6277-120，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
             }
             $('.search-display-header .nav-tabs').show();
             if (!results.doctors && !results.diseases && !results.diseaseCategorys && !results.hospitals) {
-                innerHtml = '<div>没有搜到与<span class="keyword">"' + keyword + '"</span>相关信息</div><div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
+                innerHtml = '<div>没有搜到与<span class="keyword">"' + keyword + '"</span>相关信息</div><div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-6277-120，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
                 $('.search-display-header .nav-tabs').hide();
             }
         } else {
-            innerHtml = '<div>没有搜到<span class="keyword">"' + keyword + '"</span>相关信息</div><div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-119-7900，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
+            innerHtml = '<div>没有搜到<span class="keyword">"' + keyword + '"</span>相关信息</div><div class="search-tip mt30"><div>没有找到您想要的结果？换个词再搜搜看。</div><div>您也可以拨打客服热线400-6277-120，名医助手将会为您提供一对一的服务，找到合适的顶尖专家为您主刀。</div></div>';
         }
         $('#seach-result').html(innerHtml);
         $('.search-display-header .nav-tabs').html(headerTabHtml);

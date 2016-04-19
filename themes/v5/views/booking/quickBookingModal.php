@@ -56,9 +56,9 @@ $urlReturn = '';
                         <div class="form-group">
                             <label for="" class="padright0 col-sm-offset-1 col-sm-3 col-md-3 control-label">图形验证码:</label>
                             <div class="col-sm-7 controls">
-                                <div class="input-group">
+                                <div class="input-group" style="width:100%;">
                                     <input name="booking[captcha_code]" placeholder="请输入图形验证码" class="form-control" maxlength="6" id="booking_captcha_code" type="text">                                        
-                                    <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
+                                    <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="<?php echo $this->createUrl('site/getCaptcha'); ?>" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

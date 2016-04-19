@@ -60,9 +60,9 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
                 </div>
                 <div class="contrller">
                     <label class=" required" for="ForgetPasswordForm_username" aria-required="true">图形验证码 <span class="required" aria-required="true">*</span></label>
-                    <div class="input-group">
-                        <input class="form-control" placeholder="请输入图形验证码" name="ForgetPasswordForm[captcha_code]" id="ForgetPasswordForm_captcha_code" type="text">            
-                        <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
+                    <div class="input-group" style="width:100%;">
+                        <input class="form-control" placeholder="请输入图形验证码" maxlength="6" name="ForgetPasswordForm[captcha_code]" id="ForgetPasswordForm_captcha_code" type="text">            
+                        <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="<?php echo $this->createUrl('site/getCaptcha'); ?>" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
                     </div>
                     <div></div>
                 </div>

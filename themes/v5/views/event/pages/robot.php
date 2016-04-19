@@ -95,7 +95,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 </div>
             </div>
             <div class="content mt50">3个故事就是3段人生，医学科技发展到现在，越来越多疾病的出现自然也催生了越来越多、越来越先进的治疗手段，名医主刀愿与达芬奇手术机器人一起在您需要的时候为您的身体保驾护航。</div>
-            <div class="content mt20 color-036eb7 text16">如果您对达芬奇手术机器人感兴趣，可以直接拨打客服热线400-119-7900，或者通过快速预约提交您的病历，我们专业的医疗客服人员将给您提供专业的意见和建议。</div>
+            <div class="content mt20 color-036eb7 text16">如果您对达芬奇手术机器人感兴趣，可以直接拨打客服热线400-6277-120，或者通过快速预约提交您的病历，我们专业的医疗客服人员将给您提供专业的意见和建议。</div>
         </div>
     </div>
 </section>

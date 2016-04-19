@@ -4,7 +4,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
 ?>
 <div class="container-fluid">
     <div class="row">
-        <img src="<?php echo $urlResImage; ?>event/winegirl/header.jpg">
+        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146071446098199">
     </div>
 </div>
 <div class="container" id="winegirl">

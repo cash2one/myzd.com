@@ -32,7 +32,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                             <div class="clearfix"></div>
                             <div class="mt25"><i class="fa fa-star yellow-star"></i><strong>受助对象</strong>：18-70岁，此前未接受过白内障手术，无医保、生活贫困患者。</div>
                             <div class="mt25"><i class="fa fa-star yellow-star"></i><strong>手术申请流程</strong>：</div>
-                            <div class="mt10"><strong class="text-red">①</strong> 拨打名医主刀热线电话<strong>400-119-7900</strong>报名。</div>
+                            <div class="mt10"><strong class="text-red">①</strong> 拨打名医主刀热线电话<strong>400-6277-120</strong>报名。</div>
                             <div class="mt10"><strong class="text-red">②</strong> 点击<strong class="color-036eb8">“<span class="booking" data-toggle="modal" data-target="#qucikbookingModal">快速预约</span>”</strong>上传患者病例，并注明<strong class="text-red">“白内障公益手术”</strong>。</div>
                             <div class="mt10"><strong class="text-red">③</strong> 由名医主刀专业客服与北京熙仁医院专家审核，双方筛选适合白内障单一疾病<strong>前10</strong>名患者。</div>
                             <div class="mt25"><i class="fa fa-star yellow-star"></i><strong>手术时间</strong>：报名成功，审核通过后，即通知手术时间。</div>
@@ -45,7 +45,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     </div>
                     <div class="tidy">
                         <div class="mt40 text-red"><strong>注</strong>：本次免费治疗白内障公益活动，入院后的一切手术医疗费用全免（包括住院费、药费、材料(晶体)费、检查费），不包含来往路费、食宿费以及其他费用。</div>
-                        <div class="mt25 text18">活动期间有任何疑问，可以微信后台留言或拨打名医主刀热线<strong>400-119-7900</strong>或熙仁医院咨询电话<strong>010-53828088</strong>，我们会在第一时间答复您。</div>
+                        <div class="mt25 text18">活动期间有任何疑问，可以微信后台留言或拨打名医主刀热线<strong>400-6277-120</strong>或熙仁医院咨询电话<strong>010-53828088</strong>，我们会在第一时间答复您。</div>
                     </div>
                 </div>
             </div>

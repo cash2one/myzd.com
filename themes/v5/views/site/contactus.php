@@ -23,7 +23,7 @@ $this->pageTitle = '联系我们_名医主刀';
                                 <img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/icons/ic_wx.png" width="150px"/>
                             </div>
                             <div class="media-body">
-                                <div>客服电话：<span class="color-green">400-119-7900</span></div>
+                                <div>客服电话：<span class="color-green">400-6277-120</span></div>
                                 <div>人事招聘：186-1620-5157（谢小姐）</div>
                                 <div>市场合作：电话：188-1758-2363  QQ：974790339（龙小姐）</div>
                                 <div>企业邮箱：service@mingyizhdao.com</div>

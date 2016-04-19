@@ -75,7 +75,7 @@ $isTerms = Yii::app()->request->getQuery('page', '');
                             <li class="mt20"><a href="#answer27">名医主刀能挂到专家号？收费吗？</a></li>
                             <li class="mt20"><a href="#answer28">名医主刀是医疗机构吗？医生通过名医主刀去异地飞刀，属于多点执业吗？</a></li>
                             <li class="mt20"><a href="#answer29">患者的病情提交至名医主刀，如何保护其隐私？</a></li>
-                            <li class="mt20"><a href="#answer30">拨打400-119-7900是免费的吗？</a></li>
+                            <li class="mt20"><a href="#answer30">拨打400-6277-120是免费的吗？</a></li>
                             <li class="mt20 pb20"><a href="#answer31">名医主刀服务协议</a></li>
                         </ul>
                     </div>
@@ -103,7 +103,7 @@ $isTerms = Yii::app()->request->getQuery('page', '');
                 <div class="pb40  support-content" id="answer3">  
                     <div class="content-header"><span class="ml20">Q：为什么注册不成功，提示“手机号已被注册”？</span></div>
                     <div class="ml40 mr40">
-                        <div class="pull-left h300p">A：</div><div>一个手机号只能被注册一次，该提示说明您的手机号已经注册过，不能再次注册。建议直接使用该手机号登录，可以在登录界面点击“获取验证码”，之后通过验证码登录。如仍不成功，请您拨打名医主刀客服电话400-119-7900，我们将为您解决。</div>
+                        <div class="pull-left h300p">A：</div><div>一个手机号只能被注册一次，该提示说明您的手机号已经注册过，不能再次注册。建议直接使用该手机号登录，可以在登录界面点击“获取验证码”，之后通过验证码登录。如仍不成功，请您拨打名医主刀客服电话400-6277-120，我们将为您解决。</div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ $isTerms = Yii::app()->request->getQuery('page', '');
                         <div class="ml26">（2）验证码的有效时间为60秒，过时将自动失效；</div>
                         <div class="ml26 pull-left h5-em">（3）</div><div>如果验证码填写正确且在有效时间内，还是一直提示验证码填写错误，建议您清除缓存后重试或卸载名医主刀重新安装；</div>
                         <div class="clearfix"></div>
-                        <div class="ml26">（4）若以上都不成功，请您拨打名医主刀客服电话400-119-7900。我们将为您解决。</div>
+                        <div class="ml26">（4）若以上都不成功，请您拨打名医主刀客服电话400-6277-120。我们将为您解决。</div>
                     </div>
                 </div>
                 <div class="pb40  support-content" id="answer5">  
@@ -289,9 +289,9 @@ $isTerms = Yii::app()->request->getQuery('page', '');
                     </div>
                 </div>
                 <div class="pb40  support-content" id="answer30">  
-                    <div class="content-header"><span class="ml20">Q：拨打400-119-7900是免费的吗？</span></div>
+                    <div class="content-header"><span class="ml20">Q：拨打400-6277-120是免费的吗？</span></div>
                     <div class="ml40 mr40">
-                        <div class="pull-left h300p">A：</div><div>拨打400-119-7900是免长途费的，您在国内任何地区拨打该电话，只需承担本地市话费，长途费由名医主刀承担。</div>
+                        <div class="pull-left h300p">A：</div><div>拨打400-6277-120是免长途费的，您在国内任何地区拨打该电话，只需承担本地市话费，长途费由名医主刀承担。</div>
                         <div class="clearfix"></div>
                     </div>
                 </div>

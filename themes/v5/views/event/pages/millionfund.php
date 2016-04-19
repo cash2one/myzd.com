@@ -36,7 +36,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     </div>
                     <div class="col-sm-1"></div>
                     <div class="col-sm-4" style="margin-left:20px;">
-                        <div class="text-left"><div class="mt32">1.网站</div><div class="mt14">2.APP</div><div class="mt14">3.微信公众号(在搜索栏中输入“名医主刀”即可)</div><div class="mt14">4.服务热线 <span class="color-21a59c strong">400-119-7900</span></div>
+                        <div class="text-left"><div class="mt32">1.网站</div><div class="mt14">2.APP</div><div class="mt14">3.微信公众号(在搜索栏中输入“名医主刀”即可)</div><div class="mt14">4.服务热线 <span class="color-21a59c strong">400-6277-120</span></div>
                         </div>
                     </div>
                     <div class="col-sm-4"></div>
