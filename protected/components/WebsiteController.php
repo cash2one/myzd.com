@@ -292,7 +292,6 @@ abstract class WebsiteController extends Controller {
     }
 
     public function actionValiCaptcha() {
-         echo Yii::app()->session['code'];exit;
         $output = array('status' => 'no');
         if (strcmp($_REQUEST['co_code'], Yii::app()->session['code']) != 0) {
             $output['status'] = 'no';
