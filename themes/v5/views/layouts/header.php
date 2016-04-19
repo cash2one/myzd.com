@@ -192,7 +192,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                         <div class="input-group">
                                             <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div> 
                                             <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserVerifyCodeLoginForm[captcha_code]" id="UserVerifyCodeLoginForm_captcha_code" type="text">            
-                                            <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
+                                            <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="<?php echo $this->createUrl('site/getCaptcha'); ?>" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
 
                                             <!--<div id="btn-sendLoginSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>-->
                                         </div>
@@ -238,7 +238,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
 </div>
 <script type="text/javascript">
     function vailcode() {
-        $(".vailcode").attr("src", "<?php echo $this->createUrl('site/getCaptcha'); ?>/" + Math.random());
+       // $(".vailcode").attr("src", "<?php echo $this->createUrl('site/getCaptcha'); ?>/" + Math.random());
     }
     $(document).ready(function () {
         vailcode();
