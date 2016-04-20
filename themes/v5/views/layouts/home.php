@@ -16,16 +16,19 @@
         <link rel="shortcut icon" type="image/ico" href="<?php echo Yii::app()->theme->baseUrl; ?>/images/icons/favicon.ico" />
         <link rel="canonical" href="http://www.mingyizhudao.com/"/>
         <?php
-        Yii::app()->clientScript->registerCssFile("http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/css/bootstrap.min.css");
-        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/font-awesome.min.css");
-        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/main.css" . "?v=" . time());
-        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/home.css" . "?v=" . time());
-        Yii::app()->clientScript->registerCssFile("http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery.bxslider/jquery.bxslider.css");
+//        Yii::app()->clientScript->registerCssFile("http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/css/bootstrap.min.css");
+//        Yii::app()->clientScript->registerCssFile("http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery.bxslider/jquery.bxslider.css");
+//        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/font-awesome.min.css");
+        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/pc_all.min.css");
+        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/main.min.css" . "?v=" . time());
+        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/home.min.css" . "?v=" . time());
         Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery-1.9.1.min.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/bootstrap.min.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery.bxslider/jquery.bxslider.min.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/unslider.min.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/holder.js', CClientScript::POS_HEAD);
+//        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/bootstrap.min.js', CClientScript::POS_HEAD);
+//        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery.bxslider/jquery.bxslider.min.js', CClientScript::POS_END);
+//        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/unslider.min.js', CClientScript::POS_HEAD);
+//        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/holder.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/pc_all.min.js', CClientScript::POS_HEAD);
+        
         Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/main.js', CClientScript::POS_HEAD);
 //        Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/home.js', CClientScript::POS_HEAD);
         ?>

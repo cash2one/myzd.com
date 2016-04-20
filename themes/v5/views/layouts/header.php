@@ -1,8 +1,9 @@
 <?php
-Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.form.js', CClientScript::POS_END);
-Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.validate.min.js', CClientScript::POS_END);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login.js", CClientScript::POS_HEAD);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login_verifycode.js", CClientScript::POS_HEAD);
+//Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.form.js', CClientScript::POS_END);
+//Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.validate.min.js', CClientScript::POS_END);
+//Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login.js", CClientScript::POS_HEAD);
+//Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login_verifycode.js", CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login_quickbooking.min.js", CClientScript::POS_END);
 $siteMenu = $this->loadSiteMenu();
 $headerMenu = $this->getHeaderMenu();
 $facultyMenu = $siteMenu["faculty"];
