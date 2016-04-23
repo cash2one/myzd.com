@@ -69,7 +69,7 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
                 <div class="contrller">
                     <?php echo $form->labelEx($model, 'verify_code', array('class' => '')); ?>
                     <div class="input-group">
-                        <?php echo $form->numberField($model, 'verify_code', array('class' => 'form-control', 'maxlength' => 6)); ?>
+                        <?php echo $form->numberField($model, 'verify_code', array('placeholder' => '请输入验证码','class' => 'form-control', 'maxlength' => 6)); ?>
                         <div id="btn-sendChangePwdSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>
                     </div>
                     <?php echo $form->error($model, 'verify_code'); ?>
@@ -89,7 +89,7 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
                 </div>
                 <div class="contrller">
                     <div class="">
-                        <button type="submit" class="btn btn-yes btn-lg btn-block">提交</button>			
+                        <button type="button" id="ForgetPasswordSubmit" class="btn btn-yes btn-lg btn-block">提交</button>			
                     </div>     
                 </div>
                 <?php $this->endWidget(); ?>

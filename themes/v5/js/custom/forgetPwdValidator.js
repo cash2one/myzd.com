@@ -1,8 +1,21 @@
 jQuery(function () {
     var $ = jQuery,
             domForm = $("#changePwd-form"), // form - html dom object.;
-            btnSubmit = $("#btnSubmit"),
+            btnSubmit = $("#ForgetPasswordSubmit"),
             returnUrl = domForm.attr("data-returnUrl");
+    btnSubmit.click(function (e) {
+        e.preventDefault();
+        var bool = validator.form();
+        if (bool) {
+            var captchaCode = domForm.find("#ForgetPasswordForm_captcha_code").val();
+            if (ajaxValidateCaptchaCode(captchaCode) == false) {
+                $("div.error").remove();
+                $("#ForgetPasswordForm_captcha_code").parents('.input-group').after('<div id="ForgetPasswordForm_captcha_code-error" class="error">请输入正确的图形验证码</div>');
+            } else {
+                domForm.submit();
+            }
+        }
+    });
     // 手机号码验证
     jQuery.validator.addMethod("isMobile", function (value, element) {
         var length = value.length;
@@ -84,7 +97,7 @@ jQuery(function () {
                         $("#ChangePedSuccessModal .modal-body").html("<h4>修改成功!</h4><p>点击确定登录!</p>");
                         $("#ChangePedSuccessModal .modal-footer").show();
                         $("#ChangePedSuccessModal").modal();
-                        successbtnTimerStart($("ChangePedSuccessModal .modal-footer .btn"), 5000);
+                        //successbtnTimerStart($("ChangePedSuccessModal .modal-footer .btn"), 5000);
                     } else {
                         //error.
                         enableBtn(btnSubmit);
