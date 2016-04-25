@@ -61,8 +61,6 @@ class SiteController extends WebsiteController {
                 unset(Yii::app()->session['vendorId']);
                 $this->renderJsonOutput(array('status'=>EApiViewService::RESPONSE_NO, 'errorCode'=>1, 'errorMsg'=>'the request has expired'));
             }
-        }else{
-            unset(Yii::app()->session['vendorId']);
         }
 
         $this->layout = 'layoutHome';
