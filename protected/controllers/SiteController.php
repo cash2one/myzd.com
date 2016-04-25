@@ -202,7 +202,7 @@ class SiteController extends WebsiteController {
             $this->menu = array(
                 'aboutus' => array('label' => '公司简介', 'url' => array('site/page', 'view' => 'aboutus')),
                 'bigevents' => array('label' => '大事记', 'url' => array('site/page', 'view' => 'bigevents')), 
-                'honors' => array('label' => '所获荣誉', 'url' => array('site/page', 'view' => 'honors')),
+                'honors' => array('label' => '企业荣誉', 'url' => array('site/page', 'view' => 'honors')),
                 'news' => array('label' => '公司资讯', 'url' => array('site/page', 'view' => 'news')),
                 'joinus' => array('label' => '加入我们', 'url' => array('site/page', 'view' => 'joinus')),
                     //'contactus' => array('label' => '联系我们', 'url' => array('site/contactus')),

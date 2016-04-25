@@ -2,12 +2,17 @@ jQuery(function () {
     var $ = jQuery,
             domForm = $("#register-form"), // form - html dom object.;
             btnSubmit = $("#btnRegisterSubmit");
-
-    btnSubmit.click(function () {
+    btnSubmit.click(function (e) {
+        e.preventDefault();
         var bool = validator_register.form();
-        console.log(bool);
         if (bool) {
-            formAjaxSubmit();
+            var captchaCode = domForm.find("#UserRegisterForm_captcha_code_register").val();
+            if (ajaxValidateCaptchaCode(captchaCode) == false) {
+                $("div.error").remove();
+                $("#UserRegisterForm_captcha_code_register").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_captcha_code-error" class="error">请输入正确的图形验证码</div>');
+            } else {
+                formAjaxSubmit();
+            }
         }
     });
     // 手机号码验证
@@ -80,7 +85,7 @@ jQuery(function () {
         errorElement: "div",
         errorPlacement: function (error, element) {                             //错误信息位置设置方法  
             element.parents('.controls').find("div.error").remove();
-            error.appendTo(element.parents('.controls'));     //这里的element是录入数据的对象  
+            error.appendTo(element.parents('.controls')); //这里的element是录入数据的对象  
         }
     });
     function formAjaxSubmit() {
