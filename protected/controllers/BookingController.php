@@ -236,6 +236,11 @@ class BookingController extends WebsiteController {
                         }
                     }
                     $booking->setAttributes($form->attributes, true);
+                    //第三方预约
+                    if(Yii::app()->session['vendorId']){
+                        $booking->is_vendor = 1;
+                        $booking->vendor_id = Yii::app()->session['vendorId'];
+                    }
                     $booking->user_agent = StatCode::USER_AGENT_WEBSITE;
                     $booking->user_id = $bookingUser;
                     if ($booking->save() === false) {
@@ -372,6 +377,11 @@ class BookingController extends WebsiteController {
                 if ($form->validate()) {
                     $booking = new Booking();
                     $booking->setAttributes($form->attributes, true);
+                    //第三方预约
+                    if(Yii::app()->session['vendorId']){
+                        $booking->is_vendor = 1;
+                        $booking->vendor_id = Yii::app()->session['vendorId'];
+                    }
                     $booking->user_agent = StatCode::USER_AGENT_WEBSITE;
                     if ($booking->save() === false) {
                         $output['errors'] = $booking->getErrors();
