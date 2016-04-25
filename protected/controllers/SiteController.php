@@ -33,6 +33,38 @@ class SiteController extends WebsiteController {
     public function actionIndex() {
         $this->handleMobileBrowserRedirect();
 
+        //第三方预约
+        if(isset($_GET['appId']) && isset($_GET['timestamp']) && isset($_GET['sign'])){
+            $now = time();
+            $oneDay = 3600*24;
+            $timestamp = $_GET['timestamp'];
+            if($timestamp <= ($now+$oneDay) && $timestamp >= ($now-$oneDay)){
+                $appVendor = new AppVendor();
+                $appKey = $appVendor->getByAppId($_GET['appId']);
+
+                if(isset($appKey)){
+                    if(checkSignature(array('appId'=>$_GET['appId'],'timestamp'=>$_GET['timestamp']), $appKey->app_secret, $_GET['sign'])){
+
+                        Yii::app()->session['vendorId'] = $appKey->id;
+                        $this->storeAppAccessInfo($appKey->id);
+                    }else{
+                        unset(Yii::app()->session['vendorId']);
+                        $this->renderJsonOutput(array('status'=>EApiViewService::RESPONSE_NO, 'errorCode'=>3, 'errorMsg'=>'sign error'));
+                    }
+
+                }else{
+                    unset(Yii::app()->session['vendorId']);
+                    $this->renderJsonOutput(array('status'=>EApiViewService::RESPONSE_NO, 'errorCode'=>2, 'errorMsg'=>'vendor error'));
+                }
+
+            }else{
+                unset(Yii::app()->session['vendorId']);
+                $this->renderJsonOutput(array('status'=>EApiViewService::RESPONSE_NO, 'errorCode'=>1, 'errorMsg'=>'the request has expired'));
+            }
+        }else{
+            unset(Yii::app()->session['vendorId']);
+        }
+
         $this->layout = 'layoutHome';
         // renders the view file 'protected/views/site/index.php'
         // using the default layout 'protected/views/layouts/layoutHome.php'

@@ -290,3 +290,39 @@ function getFileExtension($file) {
     $extension = substr($name, strrpos($name, "."));
     return $extension;
 }
+
+function createSignature($values, $secret)
+{
+//    sort($values, SORT_STRING);
+//    $values = implode($values);
+    ksort($values, SORT_STRING);
+    $tmpStr = '';
+    foreach($values as $k=>$v){
+        if($v !== ''){
+            $tmpStr .= $k.'='.$v.'&';
+        }
+
+    }
+    $tmpStr = rtrim($tmpStr, '&');
+    $tmpStr = md5($tmpStr.$secret);
+    return $tmpStr;
+}
+
+function checkSignature($values, $secret, $signature)
+{
+    ksort($values, SORT_STRING);
+    $tmpStr = '';
+    foreach($values as $k=>$v){
+        if($v !== ''){
+            $tmpStr .= $k.'='.$v.'&';
+        }
+
+    }
+    $tmpStr = rtrim($tmpStr, '&');
+    $tmpStr = md5($tmpStr.$secret);
+    if($tmpStr == $signature){
+        return true;
+    }else{
+        return false;
+    }
+}

@@ -212,6 +212,22 @@ abstract class WebsiteController extends Controller {
         $coreAccess->save();
     }
 
+    /**
+     * Stores user's access info for every request.
+     */
+    public function storeAppAccessInfo($vendorId=0) {
+        $coreAccess = new AppLog();
+        if($vendorId > 0){
+            $coreAccess->vendor_id = $vendorId;
+        }
+        $coreAccess->user_host_ip = Yii::app()->request->getUserHostAddress();
+        $coreAccess->url = Yii::app()->request->getUrl();
+        $coreAccess->url_referrer = Yii::app()->request->getUrlReferrer();
+        $coreAccess->user_agent = Yii::app()->request->getUserAgent();
+        $coreAccess->user_host = Yii::app()->request->getUserHost();
+        $coreAccess->save();
+    }
+
     /*
       public function isUserAgentWeixin() {
       $userAgent = Yii::app()->request->getUserAgent();
