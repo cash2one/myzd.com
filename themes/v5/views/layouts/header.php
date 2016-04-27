@@ -86,7 +86,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="<?php echo Yii::app()->homeUrl; ?>"><img src="<?php echo $urlResImage; ?>icons/logo.png"></a>
+                        <a href="<?php echo Yii::app()->homeUrl; ?>"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009415900025"></a>
                     </div> 
                     <div class="collapse navbar-collapse" id="header-navbar-collapse">                
                         <ul id="header-nav" class="nav navbar-nav mt5 ml40">
@@ -128,7 +128,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                 </div>
                 <div class="row mb40 mt40">
                     <div class="col-md-6 col-sm-6 hidden-xs text-center">
-                        <img src="<?php echo $urlResImage; ?>user/heart.png"/>
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353414245"/>
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="login-form">
@@ -139,7 +139,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <div class="input-group">
-                                                <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/user-icon.png"/></div>
+                                                <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14601035344900"/></div>
                                                 <input class="form-control" placeholder="输入手机号" maxlength="11" name="UserLoginForm[username]" id="UserLoginForm_username" type="text"/>                        
                                             </div>
                                             <div class="Message" id="UserLoginForm_username_em_" style="display:none"></div>                    
@@ -148,7 +148,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <div class="input-group">
-                                                <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/password.png"/></div> 
+                                                <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353443984"/></div> 
                                                 <input class="form-control" autocomplete="off" placeholder="输入密码" name="UserLoginForm[password]" id="UserLoginForm_password" type="password" />                    
                                             </div>
                                             <div class="Message" id="UserLoginForm_password_em_" style="display:none"></div>                    
@@ -180,7 +180,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
-                                            <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/user-icon.png"/></div>              
+                                            <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14601035344900"/></div>              
                                             <input class="form-control" placeholder="输入手机号" maxlength="11" name="UserVerifyCodeLoginForm[username]" id="UserVerifyCodeLoginForm_username" type="text">                        
                                         </div>
                                         <div class="Message" id="UserVerifyCodeLoginForm_username_em_" style="display:none"></div>                    
@@ -191,7 +191,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
-                                            <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div> 
+                                            <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353439754"/></div> 
                                             <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserVerifyCodeLoginForm[captcha_code]" id="UserVerifyCodeLoginForm_captcha_code" type="text">            
                                             <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="<?php echo $this->createUrl('site/getCaptcha'); ?>" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
 
@@ -205,7 +205,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
-                                            <div class="input-group-addon icon"><img src="<?php echo $urlResImage; ?>user/number.png"/></div> 
+                                            <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353439754"/></div> 
                                             <input class="form-control" maxlength="6" placeholder="请输入验证码" name="UserVerifyCodeLoginForm[verify_code]" id="UserVerifyCodeLoginForm_verify_code" type="text">            
                                             <div id="btn-sendLoginSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>
                                         </div>

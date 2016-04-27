@@ -237,7 +237,7 @@ class BookingController extends WebsiteController {
                     }
                     $booking->setAttributes($form->attributes, true);
                     //第三方预约
-                    if(Yii::app()->session['vendorId']){
+                    if (Yii::app()->session['vendorId']) {
                         $booking->is_vendor = 1;
                         $booking->vendor_id = Yii::app()->session['vendorId'];
                     }
@@ -360,6 +360,11 @@ class BookingController extends WebsiteController {
             } elseif (isset($values['doctor_id'])) {
                 // 预约医生
                 $form = new BookDoctorForm();
+                $doctor = Doctor::model()->getById($values['doctor_id']);
+                if (isset($doctor) && $doctor->is_free_clinic == 1) {
+                    $form->is_free_clinic = 1;
+                    $form->bk_status = StatCode::BK_STATUS_PROCESSING;
+                }
                 $form->setAttributes($values, true);
                 $form->setDoctorData();
             } elseif (isset($values['hp_dept_id'])) {
@@ -378,7 +383,7 @@ class BookingController extends WebsiteController {
                     $booking = new Booking();
                     $booking->setAttributes($form->attributes, true);
                     //第三方预约
-                    if(Yii::app()->session['vendorId']){
+                    if (Yii::app()->session['vendorId']) {
                         $booking->is_vendor = 1;
                         $booking->vendor_id = Yii::app()->session['vendorId'];
                     }

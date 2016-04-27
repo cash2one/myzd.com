@@ -20,33 +20,33 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                         <div class="w25 partner pr0">
                             <h4>战略合作伙伴</h4>
                             <div class="pull-left mr10 mt10">
-                                <img src="<?php echo $baseUrlImage; ?>footer/didi.jpg"/>
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550171630"/>
                             </div>
                             <div class="pull-left mr10 mt10">
-                                <img src="<?php echo $baseUrlImage; ?>footer/ali.jpg"/>
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550154718"/>
                             </div>
                             <div class="pull-left mt10">
-                                <img src="<?php echo $baseUrlImage; ?>footer/lingjiahaoyi.png"/>
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550177089"/>
                             </div>
                             <div class="clearfix"></div>
                             <div class="pull-left mr10 mt10">
-                                <img src="<?php echo $baseUrlImage; ?>footer/cctv.jpg"/>
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14600955016650"/>
                             </div>
                             <div class="pull-left mr10 mt10">
-                                <img src="<?php echo $baseUrlImage; ?>footer/36kr.jpg"/>
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550111140"/>
                             </div>
                             <div class="pull-left mt10">
-                                <img src="<?php echo $baseUrlImage; ?>footer/remebot.png"/>
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550181983"/>
                             </div>
                             <div class="clearfix"></div>
                             <div class="pull-left mr10 mt10">
-                                <img src="<?php echo $baseUrlImage; ?>footer/160.jpg"/>
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550145111"/>
                             </div>
                             <div class="pull-left mr10 mt10">
-                                <img src="<?php echo $baseUrlImage; ?>footer/120ask.jpg"/>
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550131922"/>
                             </div>
                             <div class="pull-left mt10">
-                                <img src="<?php echo $baseUrlImage; ?>footer/xingyi.jpg"/>
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550185756"/>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -78,7 +78,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <h4>关于我们</h4>
                                 <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
                                 <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms')); ?>" target="_blank">免责声明</a>
-    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];           ?>" target="_blank">联系我们</a>-->
+    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];            ?>" target="_blank">联系我们</a>-->
                                 <!--                                <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                             </div>
                             <div class="mt40">
@@ -96,7 +96,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                         </div>
                         <div class="w25 logo-footer border0">
                             <a href="<?php echo Yii::app()->homeUrl; ?>">
-                                <img class="" src="<?php echo $baseUrlImage; ?>icons/logo.png"/>
+                                <img class="" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009415900025"/>
                             </a>
                         </div>
                     </div>
@@ -109,40 +109,40 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <h4>战略合作伙伴</h4>
                                 <div class="clearfix">
                                     <div class="pull-left mr10 mt10">
-                                        <img src="<?php echo $baseUrlImage; ?>footer/didi.jpg"/>
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550171630"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="<?php echo $baseUrlImage; ?>footer/ali.jpg"/>
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550154718"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="<?php echo $baseUrlImage; ?>footer/lingjiahaoyi.png"/>
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550177089"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="<?php echo $baseUrlImage; ?>footer/cctv.jpg"/>
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14600955016650"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="<?php echo $baseUrlImage; ?>footer/36kr.jpg"/>
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550111140"/>
                                     </div>
                                 </div>
                                 <div class="clearfix">
                                     <div class="pull-left mr10 mt10">
-                                        <img src="<?php echo $baseUrlImage; ?>footer/remebot.png"/>
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550181983"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="<?php echo $baseUrlImage; ?>footer/160.jpg"/>
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550145111"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="<?php echo $baseUrlImage; ?>footer/120ask.jpg"/>
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550131922"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="<?php echo $baseUrlImage; ?>footer/xingyi.jpg"/>
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550185756"/>
                                     </div>
                                 </div>
                                 <div class="mt25 mb20">
                                     <h4>关于我们</h4>
                                     <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
                                     <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms')); ?>" target="_blank">免责声明</a>
-        <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];           ?>" target="_blank">联系我们</a>-->
+        <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];            ?>" target="_blank">联系我们</a>-->
                                     <!--                                    <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                                 </div>
                             </div>
@@ -159,7 +159,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                             </div>
                             <div class="col-md-3  col-sm-3 logo-footer border0">
                                 <a href="<?php echo Yii::app()->homeUrl; ?>">
-                                    <img class="" src="<?php echo $baseUrlImage; ?>icons/logo.png"/>
+                                    <img class="" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009415900025"/>
                                 </a>
                             </div>
                         </div>
