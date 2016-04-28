@@ -360,10 +360,12 @@ class BookingController extends WebsiteController {
             } elseif (isset($values['doctor_id'])) {
                 // 预约医生
                 $form = new BookDoctorForm();
-                $doctor = Doctor::model()->getById($values['doctor_id']);
-                if (isset($doctor) && $doctor->is_free_clinic == 1) {
-                    $form->is_free_clinic = 1;
-                    $form->bk_status = StatCode::BK_STATUS_PROCESSING;
+                $doctorId = $values['doctor_id'];
+                //是否义诊
+                $bookingServiceJoin = BookingServiceDoctorJoin::model()->getByDoctorIdAndBookingServiceId($doctorId, BookingServiceConfig::BOOKING_SERVICE_FREE_LIINIC);
+                if (isset($bookingServiceJoin)) {
+                    $form->booking_service_id = BookingServiceConfig::BOOKING_SERVICE_FREE_LIINIC;
+                    //$form->bk_status = StatCode::BK_STATUS_PROCESSING;
                 }
                 $form->setAttributes($values, true);
                 $form->setDoctorData();

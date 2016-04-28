@@ -57,7 +57,7 @@ class ApiViewUserBookingV7 extends EApiViewService {
         $data->diseaseDetail = $model->getDiseaseDetail();
         $data->dateUpdate = $model->getDateUpdated();
         $data->isDepositPaid = $model->is_deposit_paid;
-        
+        $data->bookingServiceId = $model->booking_service_id;
         $this->booking = $data;
     }
 
@@ -83,6 +83,7 @@ class ApiViewUserBookingV7 extends EApiViewService {
             $data->finalAmount = $model->getFinalAmount();
             $data->isPaid = $model->getIsPaid(false);
             $data->orderType = $model->getOrderType();
+            $data->orderTypeCode = $model->getOrderType(false);
             $this->salesOrder[] = $data;
         }
     }
