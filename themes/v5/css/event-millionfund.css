@@ -1,15 +1,17 @@
 #site-content{padding-bottom:0px!important;}
 .bg-millonfund{background-color:#f6e5cd;}
-#millonfund-content{line-height:1em;padding-bottom:300px;}
-#millonfund-content .header{font-size:21px;color:#21a59c;margin:0 auto;line-height:21px;}
-.mt14{margin-top:14px;}
-.mt16{margin-top:16px;}
-.mt25{margin-top:25px;}
-.mt32{margin-top:32px;}
-.mt46{margin-top:46px;}
-.ml44{margin-left:44px;}
-.color-21a59c{color:#21a59c;}
-.pl7{padding-left:7px!important;}
-.pr6{padding-right:6px!important;}
-#millonfund-content .tag{padding:5px 20px;background-color:#e73828;color:#fff;background-size:300px 200px; }
-#millonfund-content .ten-thousand{background-color:#e73828;color:#fff;}
+.w22{width:22%;}
+.text21{font-size:21px;}
+.color-e50011{color:#e50011;}
+.text16{font-size:16px;}
+.color-19aea5{color:#19aea5;}
+.mb100{margin-bottom:100px;}
+.mt-130{margin-top:-130px;}
+#millonfund .main-content .red-heading{font-size:21px;color:#e50011;}
+#millonfund .main-content .img-middle{margin-top:-215px;}
+#millonfund .main-content .img-middle>img{display:inline-block;}
+#millonfund .apply .number-mark{background-color:#f8b62c;width:20px;height:20px;border-radius:10px;color:#fff;display:inline-block;text-align:center;margin-left:-25px;margin-right:5px;}
+.table-top-yellow-mark{background-color:#f8b62c;color:#fff;display:inline-block;width:300px;height:40px;border-radius:4px;font-size:21px;padding-top:4px;margin-bottom:20px;}
+.millonfund-table>thead>tr>th{border-bottom:none!important;}
+.millonfund-table>tbody>tr>td{border-bottom:1px solid #777!important;}
+.bg-fad5a9{background-color:#fad5a9;}
