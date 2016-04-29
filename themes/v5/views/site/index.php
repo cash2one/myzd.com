@@ -13,7 +13,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 ?>
 <section id="site-content">
     <div class="container-fluid bg-lunbo">
-        <div style="position:fixed;right:0;z-index:101;"><a href="<?php echo $this->createUrl('site/page', array('view' => 'mygy')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>mygy/banner.jpg"></a></div>
+        <div style="position:fixed;right:0;z-index:101;"><a href="<?php echo $this->createUrl('event/view', array('page' => 'mingyiyizhen')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146140424966697"></a></div>
         <div class="row">
             <div class="container home-header ">
                 <div class="home-slogn text-center">
@@ -251,6 +251,18 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                                                 <div class="slider-text">50强榜单</div>
                                             </a>
                                         </div>
+                                        <div class="col-sm-4 mt18">
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'prince')); ?>" target="_blank">
+                                                <img style="border-radius:4px;" class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146174922041850"/>
+                                                <div class="slider-text">王子寻医记</div>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-4 mt18">
+                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank">
+                                                <img style="border-radius:4px;" class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146174922057390"/>
+                                                <div class="slider-text">肿块险成癌</div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -264,11 +276,10 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 </section>
 <script>
     $(document).ready(function () {
-        $html = '<li><div class="winegirl"><a href="<?php echo $this->createUrl('event/view', array('page' => 'winegirl')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14607127350956" alt="" class="img-responsive"></a></div></li>' +
+        $html = '<li><div class="shapinghealth"><a href="<?php echo $this->createUrl('event/view', array('page' => 'shapinghealth')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146156825972489" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="winegirl"><a href="<?php echo $this->createUrl('event/view', array('page' => 'winegirl')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14607127350956" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="robot"><a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492190148" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="cataract"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cataract')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492155191" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="prince"><a href="<?php echo $this->createUrl('event/view', array('page' => 'prince')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492168331" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="cancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14600949210083" alt="" class="img-responsive"></a></div></li>';
+                '<li><div class="cataract"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cataract')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492155191" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
 
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';

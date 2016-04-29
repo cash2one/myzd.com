@@ -14,6 +14,7 @@ function setDoctorHtml(data, urlDoctorView) {
             }
             var hpDeptName = doctor.hpDeptName == null ? '&nbsp;' : doctor.hpDeptName;
             var isContractedImg = doctor.isContracted == 0 ? '' : '<div class="pull-right contracted-img"></div><div class="clearfix"></div>';
+            var isMingyiyizhenImg=doctor.ServiceId==2? '<div class="pull-right mingyiyizhen-img"></div>':'';
             var academicianImg = doctor.id == 117 ? '<div class="pull-right academician-img"></div>' : '';
             var robotImg = '';
             if (doctor.id == 3209 || doctor.id == 3208 || doctor.id == 3207) {
@@ -23,7 +24,7 @@ function setDoctorHtml(data, urlDoctorView) {
                     '<a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                     '<div class="border-gray expert-list">' +
                     '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '"></div>' +
-                    isContractedImg + academicianImg + robotImg +
+                    isContractedImg + academicianImg + robotImg +isMingyiyizhenImg+
                     '<div class="text-center"><span class="strong">' + doctor.name + '</span>&nbsp;' +
                     '<span class="text-center mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</span></div>' +
                     '<div class="text-center mt5 hpDeptName">' + hpDeptName + '</div>' +

@@ -83,9 +83,10 @@ function setDoctorHtml(data, urlDoctorView) {
             for (var i = 0; i < doctors.length; i++) {
                 var doctor = doctors[i];
                 var contractedImg = doctor.isContracted == 1 ? '<div class="contracted-img"></div>' : '';
+                var isMingyiyizhenImg=doctor.ServiceId==2? '<div class="mingyiyizhen-img pull-right"></div>':'';
                 innerHtml += '<div class="col-md-3 " ><a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                         '<div class="expInfo text-center bg-white explist-border">' +
-                        contractedImg +
+                        contractedImg +isMingyiyizhenImg+
                         '<div><img class="img100" src="' + doctor.imageUrl + '"/></div>' +
                         '<div class="expName color-black">' + doctor.name + '</div>' +
                         '<div class="expTitle">' + doctor.mTitle + ' ' + doctor.aTitle + '</div>' +
