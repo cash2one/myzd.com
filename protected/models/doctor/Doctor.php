@@ -100,6 +100,7 @@ class Doctor extends EActiveRecord {
             'doctorCity' => array(self::BELONGS_TO, 'RegionCity', 'city_id'),
             'doctorFaculties' => array(self::MANY_MANY, 'Faculty', 'faculty_doctor_join(faculty_id, doctor_id)'),
             'doctorDiseases' => array(self::MANY_MANY, 'Disease', 'disease_doctor_join(disease_id, doctor_id)'),
+            'doctorServiceJoin' => array(self::HAS_MANY, 'BookingServiceDoctorJoin', 'doctor_id'),
                 //'doctorFacultyJoin' => array(self::HAS_MANY, 'FacultyDoctorJoin', 'doctor_id'),
         );
     }
@@ -589,6 +590,10 @@ class Doctor extends EActiveRecord {
         return isset($this->expteam_id) ? 1 : 0;
     }
 
+    public function getServiceJoin() {
+        return $this->doctorServiceJoin;
+    }
+    
     public function getExpteamId() {
         return $this->expteam_id;
     }

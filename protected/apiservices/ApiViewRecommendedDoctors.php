@@ -26,6 +26,7 @@ class ApiViewRecommendedDoctors extends EApiViewService {
             $criteria = new CDbCriteria();
             $criteria->addCondition('t.date_deleted is NULL');
             $criteria->addInCondition('t.id', $doctorIds);
+            $criteria->with = array('doctorServiceJoin');
             $models = Doctor::model()->findAll($criteria);
             if (arrayNotEmpty($models)) {
                 $this->setDoctors($models, $key);
@@ -47,6 +48,15 @@ class ApiViewRecommendedDoctors extends EApiViewService {
             $data->hpDeptId = $model->getHpDeptId();
             $data->hpDeptName = $model->getHpDeptName();
             $data->isContracted = $model->getIsContracted();
+            $data->ServiceId = BookingServiceConfig::BOOKING_SERVICE_REGULAR;
+            if (arrayNotEmpty($model->getServiceJoin())) {
+                $getServiceJoins = $model->getServiceJoin();
+                foreach ($getServiceJoins as $value) {
+                    if ($value->booking_service_id == BookingServiceConfig::BOOKING_SERVICE_FREE_LIINIC) {
+                        $data->ServiceId = BookingServiceConfig::BOOKING_SERVICE_FREE_LIINIC;
+                    }
+                }
+            }
             $temp[] = $data;
         }
         $this->results->disease_category[$key] = $temp;
