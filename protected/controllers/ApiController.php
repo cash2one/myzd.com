@@ -227,7 +227,7 @@ class ApiController extends Controller {
                 break;
             case 'freediagnosedoctors'://名医公益推荐的医生
                 $values = $_GET;
-                $apiService = new ApiViewfreediagnosedoctors($values);
+                $apiService = new ApiViewFreediagnoseDoctors($values);
                 $output = $apiService->loadApiViewData();
                 break;
             case 'search':

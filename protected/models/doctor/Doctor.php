@@ -343,14 +343,15 @@ class Doctor extends EActiveRecord {
         return $this->findAll($criteria);
     }
 
-    public function getByDoctorId($doctor_id){
+    public function getByDoctorId($doctor_id) {
         $criteria = new CDbCriteria;
         $criteria->addCondition('t.date_deleted is NULL');
         $criteria->compare('doctor_id', $doctor_id);
         $criteria->limit = 1;
         return $this->find($criteria);
     }
-    public function getByDiseaseId($diseaseId, $doctor_id){
+
+    public function getByDiseaseId($diseaseId, $doctor_id) {
         $criteria = new CDbCriteria;
         $criteria->join = 'left join disease_doctor_join b on (t.`id`=b.`doctor_id`)';
         $criteria->addCondition('t.date_deleted is NULL');
@@ -363,6 +364,9 @@ class Doctor extends EActiveRecord {
     /*     * ****** Display Methods ******* */
 
     public function getAbsUrlAvatar($thumbnail = false) {
+        if ($this->has_remote == 1) {
+            return $this->remote_domain . $this->remote_file_key;
+        }
         if (isset($this->avatar_url) && $this->avatar_url != '') {
             $url = $this->avatar_url;
             if (strStartsWith($url, 'http')) {
@@ -573,7 +577,7 @@ class Doctor extends EActiveRecord {
     public function getHonourList() {
         return $this->honour;
     }
-    
+
     public function getDateCreated($format = null) {
         return $this->getDateAttribute($this->date_created, $format);
     }
@@ -593,7 +597,7 @@ class Doctor extends EActiveRecord {
     public function getServiceJoin() {
         return $this->doctorServiceJoin;
     }
-    
+
     public function getExpteamId() {
         return $this->expteam_id;
     }
