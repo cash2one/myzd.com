@@ -3,13 +3,13 @@
 .crumbs-doctor>a{color: #fff;font-size: 16px;}
 .expert-faculty{color:#f39700;padding:5px 12px 5px 0;border-radius:4px;}
 .doctorInfo .docinfo-title{font-size: 18px;margin: 40px 0 10px;background-repeat: no-repeat;padding: 3px 0 2px 30px;background-position-y: center;}
-.doctorInfo .docinfo-title.good{background-image: url(../images/icons/good.png);}
-.doctorInfo .docinfo-title.experience{background-image: url(../images/icons/experience.png);}
-.doctorInfo .docinfo-title.honor{background-image: url(../images/icons/honnor.png);}
-.doctorInfo .docinfo-title.members{background-image:url(../images/icons/team.png);color:#25aea6;background-color:#fff;}
-.doctorInfo .docinfo-title.reason{background-image:url(../images/icons/reason-01.png);}
+.doctorInfo .docinfo-title.good{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146009710180621');}
+.doctorInfo .docinfo-title.experience{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146009710176910');}
+.doctorInfo .docinfo-title.honor{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146009710184219');}
+.doctorInfo .docinfo-title.members{background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146009710184219');color:#25aea6;background-color:#fff;}
+.doctorInfo .docinfo-title.reason{background-image:url(http://7xsq2z.com2.z0.glb.qiniucdn.com/146009710192361);}
 .doctorInfo .docinfo-title.reason i{padding-right:10px;}
-.doctorInfo .docinfo-title.comment{background-image: url(../images/icons/comment.png);color:#25aea6;background-color:#fff;}
+.doctorInfo .docinfo-title.comment{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146009710169411');color:#25aea6;background-color:#fff;}
 .doctorInfo .experience-text{text-align:justify;}
 .doctorInfo .doc-media{border-bottom: 1px solid #19aea5;padding-bottom: 21px;}
 .doctorInfo .expert-atitle{color: #9f9fa0;}
@@ -74,11 +74,11 @@
 .qrcode:hover #qrcode-lg{display: block;}
 .qrcode .qrcode-text{display: inline-block;width: 4em;letter-spacing: 0;font-size: 14px;color: #777;margin-right: 5px;}
 .qrcode .fa{top: 1em;margin-left: 7.2em;position: absolute;color: #777;}
-#qrcode-sm>.qrlogo-sm{background-image: url(../images/icons/qrlogo-sm.png);height:32px;width:32px;position:absolute;background-position: center;background-repeat: no-repeat;margin-top: 5px;}
+#qrcode-sm>.qrlogo-sm{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146009729095098');height:32px;width:32px;position:absolute;background-position: center;background-repeat: no-repeat;margin-top: 5px;}
 #qrcode-lg{position: absolute;top: -26px;margin-left: 8.5em;background-color: #fff;display: none;z-index: 999;}
 #qrcode-lg img{border: 0;}
 #qrcode-weixin{border: 1px solid #ddd;padding: 7px 8px 4px;width: 112px;height: 112px;margin-top: 3px;}
-#qrcode-lg .qrlogo-lg{background-image: url(../images/icons/qrlogo-lg.png);height:94px;width:94px;position:absolute;background-position: center;background-repeat: no-repeat;}
+#qrcode-lg .qrlogo-lg{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146009729086372');height:94px;width:94px;position:absolute;background-position: center;background-repeat: no-repeat;}
 .mt14{margin-top:14px;}
 .doctorInfo .mt0{margin-top:0;}
 .dese-operate{color:#EFA429;cursor:pointer;}

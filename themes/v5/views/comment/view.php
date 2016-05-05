@@ -27,7 +27,7 @@ $commentInfo = $comment->results->comment;
                 <div class="color-status">预约单：<?php echo $bookingInfo->refNo; ?></div>
                 <div>
                     <h4 class="text-center color-green text20" >
-                        <img src="<?php echo $urlResImage; ?>user/pingJia.png"> <strong>感谢您的评价！</strong>
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010469786484"> <strong>感谢您的评价！</strong>
                     </h4>
                 </div>
             </div>

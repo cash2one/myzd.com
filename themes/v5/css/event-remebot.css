@@ -7,8 +7,8 @@
 #remebot .content .white-block-s{background-color:#fff;width:16px;height:46px;color:#fff;display:inline-block;}
 #remebot .content .title-line{border-top:1px solid #447cb7;margin-top:-23px;}
 #remebot .color-blue{color:#447cb7;}
-#remebot .content .contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
-#remebot .content .roboticon-img{margin-top:-28px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/robot.png);background-repeat: no-repeat;}
+#remebot .content .contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146172568531110');background-repeat: no-repeat;}
+#remebot .content .roboticon-img{margin-top:-28px;margin-right:-19px;width: 48px;height: 52px;background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/14624278056950');background-repeat: no-repeat;}
 #remebot .content .expert-list{padding:0px 10px 10px 10px;}
 #remebot .content .expert-list:hover{background-color:#f7f7f7;box-shadow:2px 2px 5px #9f9e9e;}
 #remebot .content .hpDeptName{color: #f39700;}

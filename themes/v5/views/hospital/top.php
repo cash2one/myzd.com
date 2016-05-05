@@ -16,7 +16,7 @@ $page = Yii::app()->request->getQuery('page', '');
 <div class="container-fluid search-header">
 <!--    <div class="container find-navi"><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a>&nbsp;&gt;&nbsp;找顶尖科室</div>-->
     <div class="row">
-        <img src="<?php echo $urlResImage; ?>hospital/hp-header.jpg" alt=""/>
+        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146242794754985" alt=""/>
     </div>
 </div>
 <div class="container">
@@ -26,7 +26,7 @@ $page = Yii::app()->request->getQuery('page', '');
             <div class="border-gray department-list mt20">
 
             </div>
-            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>/homeslider/remebot.gif"></a></div>
+            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146242724592795"></a></div>
         </div>
         <div class="col-sm-10">
             <div class="row">

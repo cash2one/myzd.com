@@ -15,8 +15,8 @@
 #prince .main-content .blue-text .tag-blue{color:#2896c3;display:inline-block;font-weight:bold;}
 #prince .main-content .process-text{color:#777;line-height:2em;}
 #prince .main-content .process-text .big{font-weight:bold;font-size:20px;}
-.contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/signDoctor.png);background-repeat: no-repeat;}
-.roboticon-img{margin-top:-28px;margin-right:-19px;width: 48px;height: 52px;background-image: url(../images/doctor/robot.png);background-repeat: no-repeat;}
+.contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146172568531110');background-repeat: no-repeat;}
+.roboticon-img{margin-top:-28px;margin-right:-19px;width: 48px;height: 52px;background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/14624278056950');background-repeat: no-repeat;}
 .expert-list{padding:0px 10px 10px 10px;}
 .expert-list:hover{background-color:#f7f7f7;box-shadow:2px 2px 5px #9f9e9e;}
 .hpDeptName{color: #f39700;}

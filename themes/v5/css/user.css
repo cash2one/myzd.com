@@ -17,14 +17,14 @@ a.color-status:hover{cursor: pointer;}
 .login-menu ul>li.last{border: 0;}
 .login-menu ul>li>a.active{background-color: #78c7bb;color: #fff;}
 .login-menu ul>li>a .icon-img{width: 19px;height: 20px;background-repeat: no-repeat;margin-right: 3px;display: inline-block;line-height: 1em;position: absolute;left: 3em;}
-.login-menu ul>li>.bookinglist .icon-img{background-image: url(../images/user/icon_user.png);background-position: 0 -20px;}
-.login-menu ul>li>.settings .icon-img{background-image: url(../images/user/icon_user.png);background-position: -20px -20px;}
-.login-menu ul>li>.help .icon-img{background-image: url(../images/user/icon_user.png);background-position: -40px -20px;}
-.login-menu ul>li>.back .icon-img{background-image: url(../images/user/icon_user.png);background-position: -60px -20px;}
-.login-menu ul>li>.bookinglist.active .icon-img{background-image: url(../images/user/icon_user.png);background-position: 0px 0px;}
-.login-menu ul>li>.settings.active .icon-img{background-image: url(../images/user/icon_user.png);background-position: -20px 0;}
-.login-menu ul>li>.help.active .icon-img{background-image: url(../images/user/icon_user.png);background-position: -40px 0;}
-.login-menu ul>li>.back.active .icon-img{background-image: url(../images/user/icon_user.png);background-position: -60px 0;}
+.login-menu ul>li>.bookinglist .icon-img{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447545314');background-position: 0 -20px;}
+.login-menu ul>li>.settings .icon-img{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447545314');background-position: -20px -20px;}
+.login-menu ul>li>.help .icon-img{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447545314');background-position: -40px -20px;}
+.login-menu ul>li>.back .icon-img{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447545314');background-position: -60px -20px;}
+.login-menu ul>li>.bookinglist.active .icon-img{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447545314');background-position: 0px 0px;}
+.login-menu ul>li>.settings.active .icon-img{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447545314');background-position: -20px 0;}
+.login-menu ul>li>.help.active .icon-img{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447545314');background-position: -40px 0;}
+.login-menu ul>li>.back.active .icon-img{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447545314');background-position: -60px 0;}
 .login-menu ul .menu-header{text-align: left;font-size: 15px;font-weight: bold;padding: 10px 10px;}
 .user-header{border: 1px solid #21a59c;min-height: 100px;}
 /**** bookinglist ****/

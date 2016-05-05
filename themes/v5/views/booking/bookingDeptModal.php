@@ -13,7 +13,7 @@ $urlReturn = $this->createUrl('booking/success', array('id' => ''));
         <div class="modal-content">
             <div class="mybooking">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <div class="mybooking-text text-center color-white"><img src="<?php echo $urlResImage; ?>general/booking.png"> 我要预约</div>
+                <div class="mybooking-text text-center color-white"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010432282534"> 我要预约</div>
             </div>
             <div class="booking-form">
                 <div class="form-wrapper">

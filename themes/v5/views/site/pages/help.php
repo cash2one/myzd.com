@@ -84,7 +84,7 @@ $isTerms = Yii::app()->request->getQuery('page', '');
         </div>
         <div class="col-sm-9 payment">
             <div>
-                <img class="img-responsive" src="<?php echo $urlResImage; ?>user/question.png">
+                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14624356699601">
             </div>
             <div class="border-grayb5 mt10 lineh2-5em">
                 <div class="pb40  support-content" id="answer1">  

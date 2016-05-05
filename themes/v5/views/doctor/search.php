@@ -60,7 +60,7 @@ $page = Yii::app()->request->getQuery('page', '');
                     </ul>
                 </div>
             </div>
-            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>/homeslider/remebot.gif"></a></div>
+            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146242724592795"></a></div>
         </div>
         <div class="col-sm-9 col-md-10">
             <div class="loading loading02"></div>

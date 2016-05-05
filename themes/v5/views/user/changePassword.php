@@ -22,7 +22,7 @@ $urlBookingList = $this->createUrl('booking/list');
         </div>
         <div class="col-sm-9">
             <div>
-                <img class="img-responsive" src="<?php echo $urlResImage; ?>user/process.png">
+                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447580821">
             </div>
             <div class="bookinglist border-green mt10">
                 <div class="mt50">
