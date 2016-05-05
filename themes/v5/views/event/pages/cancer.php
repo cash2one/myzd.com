@@ -133,7 +133,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-md-3 col-sm-6 mt40">
                     <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3054')); ?>">
                         <div class="text-center expert">
-                            <img class="img100" src="http://mingyizhudao.com/resource/doctor/avatar/03054.jpg"/>
+                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/4089200A585E7232A77D28A2F5329610"/>
                             <div class="mt10"><span class="ename">李龙江</span><span class="color-gray ml10">主任医师&nbsp;教授</span></div>
                             <div class="department">口腔颌面外科</div>
                             <div class="hospital">四川大学华西口腔医院</div>
@@ -151,7 +151,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-md-3 col-sm-6 mt40">
                     <a href="<?php echo $this->createUrl('doctor/view', array('id' => '82')); ?>">
                         <div class="text-center expert">
-                            <img class="img100" src="http://mingyizhudao.com/resource/doctor/avatar/liuyuewu.jpg"/>
+                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/4B2E10B6A8B6B408EF2814019DF4F7B7"/>
                             <div class="mt10"><span class="ename">刘跃武</span><span class="color-gray ml10">主任医师&nbsp;教授</span></div>
                             <div class="department">基本外科</div>
                             <div class="hospital">北京协和医院</div>
@@ -169,7 +169,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-md-3 col-sm-6 mt40">
                     <a href="<?php echo $this->createUrl('doctor/view', array('id' => '369')); ?>">
                         <div class="text-center expert">
-                            <img class="img100" src="http://mingyizhudao.com/resource/doctor/avatar/0367.jpg"/>
+                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/C175A656BA51004689948F994954EF49"/>
                             <div class="mt10"><span class="ename">蔡三军</span><span class="color-gray ml10">主任医师&nbsp;教授</span></div>
                             <div class="department">大肠外科</div>
                             <div class="hospital">上海复旦大学附属肿瘤医院</div>
@@ -187,7 +187,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-md-3 col-sm-6 mt40">
                     <a href="<?php echo $this->createUrl('doctor/view', array('id' => '295')); ?>">
                         <div class="text-center expert">
-                            <img class="img100" src="http://mingyizhudao.com/resource/doctor/avatar/0219.jpg"/>
+                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/90CBC342F688341BADD18BA6209B8362"/>
                             <div class="mt10"><span class="ename">陆劲松</span><span class="color-gray ml10">主任医师&nbsp;教授</span></div>
                             <div class="department">乳腺外科</div>
                             <div class="hospital">上海交通大学医学院附属仁济医院</div>
@@ -206,8 +206,3 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
         </div>
     </div>
 </section>
-<script>
-    $(document).ready(function () {
-
-    });
-</script>

@@ -150,7 +150,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="row">
                     <div class="col-md-4 mt50"><a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3208')); ?>">
                             <div class="border-gray expert-list">
-                                <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03208.jpg" alt=""></div>
+                                <div><img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/1708545F08B27EAE7A1B6E40FE6AB599" alt=""></div>
                                 <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                                 <div class="pull-right roboticon-img"></div>
                                 <div class="text-center"><span class="strong ml20">田增民</span><span class="text-center mt5">&nbsp;主任医师&nbsp;教授</span></div>
@@ -161,7 +161,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         </a></div>
                     <div class="col-md-4 mt50"><a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3209')); ?>">
                             <div class="border-gray expert-list">
-                                <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03209.jpg" alt=""></div>
+                                <div><img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/9788AF9D2CA5A3117E37C6E9BE5276F3" alt=""></div>
                                 <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                                 <div class="pull-right roboticon-img"></div>
                                 <div class="text-center"><span class="strong ml20">赵全军</span><span class="text-center mt5">&nbsp;主任医师&nbsp;教授</span></div>
@@ -173,7 +173,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     <div class="col-md-4 mt50">
                         <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3207')); ?>">
                             <div class="border-gray expert-list">
-                                <div><img class="img100" src="http://admin.mingyizd.com/resource/doctor/avatar/03207.jpg" alt=""></div>
+                                <div><img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/6E10EAAA5E9F9AC82B84C55A68D659CA" alt=""></div>
                                 <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                                 <div class="pull-right roboticon-img"></div>
                                 <div class="text-center"><span class="strong ml20">卢旺盛</span><span class="text-center mt5">&nbsp;主任医师&nbsp;副教授</span></div>
