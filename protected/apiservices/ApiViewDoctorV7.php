@@ -5,6 +5,7 @@ class ApiViewDoctorV7 extends EApiViewService {
     private $doctor_id;
     private $members;
     private $subCatId;
+
     public function __construct($id) {
         parent::__construct();
         $this->doctor_id = $id;
@@ -13,6 +14,7 @@ class ApiViewDoctorV7 extends EApiViewService {
     protected function loadData() {
         $this->loadDoctor();
         $this->loadRelatedDoctors();
+        $this->loadDoctorArticle();
     }
 
     protected function createOutput() {
@@ -25,17 +27,18 @@ class ApiViewDoctorV7 extends EApiViewService {
             );
         }
     }
-    private function loadDoctor(){
+
+    private function loadDoctor() {
         $doctor = Doctor::model()->getById($this->doctor_id);
         $this->setDoctor($doctor);
-        if(isset($this->members)){
+        if (isset($this->members)) {
             $this->setMembers();
         }
     }
 
     private function setMembers() {
         array_shift($this->members);
-        foreach($this->members as $model){
+        foreach ($this->members as $model) {
             $data = new stdClass();
             $data->id = $model->getId();
             $data->name = $model->getName();
@@ -70,31 +73,30 @@ class ApiViewDoctorV7 extends EApiViewService {
         $data->careerExp = $model->getCareerExp();
         $data->honour = $model->getHonourList();
         $data->reasons = $model->getReasons();
-        if($data->isExpteam){
+        if ($data->isExpteam) {
             $this->members = ExpertTeam::model()->getById($model->getExpteamId())->getMembers();
         }
         $this->results->doctor = $data;
     }
 
-    private function loadRelatedDoctors(){
+    private function loadRelatedDoctors() {
         $diseaseDoctorJoin = DiseaseDoctorJoin::model()->getAllByDoctorId($this->doctor_id);
-        if(arrayNotEmpty($diseaseDoctorJoin)){
+        if (arrayNotEmpty($diseaseDoctorJoin)) {
             $diseaseId = $diseaseDoctorJoin[0]->disease_id;
             $categoryDiseaseJoin = CategoryDiseaseJoin::model()->getById($diseaseId);
-            if(isset($categoryDiseaseJoin)){
+            if (isset($categoryDiseaseJoin)) {
                 $this->subCatId = $categoryDiseaseJoin->getSubCatId();
             }
             $this->setNavigation($this->subCatId);
             $doctors = Doctor::model()->getByDiseaseId($diseaseId, $this->doctor_id);
-            if(isset($doctors)){
+            if (isset($doctors)) {
                 $this->setRelatedDoctors($doctors);
             }
         }
-
     }
 
-    public function setRelatedDoctors($doctors){
-        foreach($doctors as $doctor){
+    public function setRelatedDoctors($doctors) {
+        foreach ($doctors as $doctor) {
             $data = new stdClass();
             $data->id = $doctor->getId();
             $data->name = $doctor->getName();
@@ -111,7 +113,7 @@ class ApiViewDoctorV7 extends EApiViewService {
         }
     }
 
-    public function setNavigation($subCatId){
+    public function setNavigation($subCatId) {
         $model = DiseaseCategory::model()->getBySubCatId($subCatId);
         $data = new stdClass();
         $data->cate_id = $model->getCategoryId();
@@ -120,4 +122,23 @@ class ApiViewDoctorV7 extends EApiViewService {
         $data->getSubCategoryName = $model->getSubCategoryName();
         $this->results->navigation = $data;
     }
+
+    public function loadDoctorArticle() {
+        $doctorArticles = DoctorArticle::model()->getAllByAttributes(array('doctor_id' => $this->doctor_id));
+        if (isset($doctorArticles)) {
+            $this->setDoctorArticle($doctorArticles);
+        }
+    }
+
+    function setDoctorArticle($doctorArticles) {
+        foreach ($doctorArticles as $article) {
+            $data = new stdClass();
+            $data->id = $article->id;
+            $data->doctorId = $article->doctor_id;
+            $data->fileName = $article->file_name;
+            $data->title = $article->title;
+            $this->results->article[] = $data;
+        }
+    }
+
 }
