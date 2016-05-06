@@ -14,7 +14,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 
 </style>
 <div class="container-fluid aboutus-header h400">
-    <img src="<?php echo $urlResImage; ?>aboutus/our-header.png"/>
+    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625020116117"/>
 </div>
 <section id="aboutus">
     <div class="container-fluid">

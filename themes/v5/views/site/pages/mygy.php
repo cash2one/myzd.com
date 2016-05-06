@@ -4,12 +4,11 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
 $urlCommonwealDoctors = $this->createUrl('api/commonwealdoctors');
 $urlDoctorView = $this->createUrl('doctor/view');
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/mygy.css" . "?v=" . time());
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/home.css" . "?v=" . time());
 ?>
 <div class="container-fluid">
     <div class="row">
         <div class="mygy-header">
-            <div class="text-center"><img src="<?php echo $urlResImage; ?>mygy/header.png"></div>
+            <div class="text-center"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163981184576"></div>
         </div>
     </div>
 </div>
@@ -24,7 +23,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
                 </div>
                 <div class="col-sm-3 pl5">
                     <div class="news">
-                        <img src="<?php echo $urlResImage; ?>mygy/introduction.png" />
+                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')) ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14618119088653" /></a>
                     </div>
                 </div>
             </div>
@@ -82,7 +81,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             </div>
             <div class="mt60">
                 <div class="pull-left title-picture">
-                    <img src="<?php echo $urlResImage; ?>mygy/title01.png">
+                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163989449587">
                 </div>
                 <div class="pull-left w70">
                     <div>名医公益联盟里有着来自国内三甲医院的主任、副主任医师，</div>
@@ -93,16 +92,21 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
                 </div>
                 <div class="clearfix"></div>
             </div>
+        </div>
+        <div class="container">
             <div class="cutover">
                 <div class="content commonwealexpert">
                     <ul class="bxslider">
+
                     </ul>
                 </div>
 <!--                <div class="text-center mt10"><span class="line-btn active" href="#slider0"></span><span class="line-btn ml10" href="#slider1"></span><span class="line-btn ml10" href="#slider2"></span><span class="line-btn ml10" href="#slider3"></span></div>-->
             </div>
-            <div class="mt60">
+        </div>
+        <div class="container">
+            <div class="mt20">
                 <div class="pull-left title-picture">
-                    <img src="<?php echo $urlResImage; ?>mygy/title02.png">
+                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163989454528">
                 </div>
                 <div class="pull-left w70">
                     <div>他/她们是公众眼里的明星，</div>
@@ -116,7 +120,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             <div class="row mt30">
                 <div class="col-sm-6">
                     <div class="pull-left mr20">
-                        <img src="<?php echo $urlResImage; ?>mygy/langyongchun.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14616398934664">
                     </div>
                     <div>
                         <div class="text24">郎永淳先生</div>
@@ -134,7 +138,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
                 </div>
                 <div class="col-sm-6">
                     <div class="pull-left mr20">
-                        <img src="<?php echo $urlResImage; ?>mygy/wangyan.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163989463972">
                     </div>
                     <div>
                         <div class="text24">王艳女士</div>
@@ -151,7 +155,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             <div class="row mt30">
                 <div class="col-sm-6">
                     <div class="pull-left mr20">
-                        <img src="<?php echo $urlResImage; ?>mygy/qianjing.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14616398941791">
                     </div>
                     <div>
                         <div class="text24">钱婧女士</div>
@@ -169,7 +173,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
                 </div>
                 <div class="col-sm-6">
                     <div class="pull-left mr20">
-                        <img src="<?php echo $urlResImage; ?>mygy/qiaozhen.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163989429370">
                     </div>
                     <div>
                         <div class="text24">乔榛先生</div>
@@ -184,7 +188,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             </div>
             <div class="mt60">
                 <div class="pull-left title-picture">
-                    <img src="<?php echo $urlResImage; ?>mygy/title03.png">
+                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163989459141">
                 </div>
                 <div class="pull-left w70">
                     <div>名医公益联盟聚集着有着相同使命的公益组织，</div>
@@ -197,23 +201,23 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             </div>
             <div class="text-center mt30">
                 <div class="w20 pull-left">
-                    <div><img src="<?php echo $urlResImage; ?>mygy/organization01.png"></div>
+                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163989381589"></div>
                     <div>嫣然天使基金</div>
                 </div>
                 <div class="w20 pull-left">
-                    <div><img src="<?php echo $urlResImage; ?>mygy/organization02.png"></div>
+                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163989387142"></div>
                     <div>中国儿童少年基金</div>
                 </div>
                 <div class="w20 pull-left">
-                    <div><img src="<?php echo $urlResImage; ?>mygy/organization03.png"></div>
+                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14616398939429"></div>
                     <div>“爱永纯”健康中国基金</div>
                 </div>
                 <div class="w20 pull-left">
-                    <div><img src="<?php echo $urlResImage; ?>mygy/organization04.png"></div>
+                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163989403495"></div>
                     <div>中国红十字基金会暖阳基金</div>
                 </div>
                 <div class="w20 pull-left">
-                    <div><img src="<?php echo $urlResImage; ?>mygy/organization05.png"></div>
+                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163989411220"></div>
                     <div>春晖博爱儿童救助基金会</div>
                 </div>
                 <div class="clearfix"></div>
@@ -254,7 +258,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hom
             var active = "";
             var x = 0;
             for (x in page) {
-                innerHtml += '<li><div class="row expList" >';
+                innerHtml += '<li><div class="row expList">';
                 var doctors = page[x];
                 for (var i = 0; i < doctors.length; i++) {
                     var doctor = doctors[i];

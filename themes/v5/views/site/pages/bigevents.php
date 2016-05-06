@@ -5,7 +5,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <div class="container-fluid aboutus-header h400">
-    <img src="<?php echo $urlResImage; ?>aboutus/our-header.png"/>
+    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625020116117"/>
 </div>
 <div class="container-fluid">
     <div class="row">
@@ -20,18 +20,29 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     <div class="main-content">
                         <div class="event">
                             <div class="pull-left mr30">
-                                <img src="<?php echo $urlResImage; ?>aboutus/bigevents/event151001.png">
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146139395817078">
                             </div>
                             <div class="pl620">
-                                <div class="event-date">2015年10月</div>
+                                <div class="event-date">2016年4月</div>
                                 <div class="divider-line"></div>
-                                <div class="content">名医主刀完成<span class="text21">A轮6000万</span>元人民币融资。复星医药领投，高榕资本/真格基金跟投。</div>
+                                <div class="content">名医主刀完成<span class="text21">B轮1.5亿</span>元人民币融资。本轮由约印创投、国开汉富领投，复星医药、高榕资本、真格基金、美国凯瑟琳肿瘤中心与风和资本等机构跟投。</div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="event">
                             <div class="pull-left mr30">
-                                <img src="<?php echo $urlResImage; ?>aboutus/bigevents/event150501.png">
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146139399025115">
+                            </div>
+                            <div class="pl620">
+                                <div class="event-date">2015年10月</div>
+                                <div class="divider-line"></div>
+                                <div class="content">名医主刀完成<span class="text21">A轮6000万</span>元人民币融资。复星医药领投，高榕资本、真格基金跟投。</div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="event">
+                            <div class="pull-left mr30">
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146139399008732">
                             </div>
                             <div class="pl620">
                                 <div class="event-date">2015年5月</div>
@@ -42,7 +53,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                         </div>
                         <div class="event">
                             <div class="pull-left">
-                                <img src="<?php echo $urlResImage; ?>aboutus/bigevents/event141001.png">
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146139399004245">
                             </div>
                             <div class="pl620">
                                 <div class="event-date">2014年10月，名医主刀项目启动。</div>

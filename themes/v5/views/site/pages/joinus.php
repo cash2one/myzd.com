@@ -6,7 +6,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <style>.ml44{margin-left:44px;}</style>
 <div class="container-fluid aboutus-header h400">
-    <img src="<?php echo $urlResImage; ?>aboutus/our-header.png"/>
+    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625020116117"/>
 </div>
 <div class="container-fluid">
     <div class="row">
@@ -19,12 +19,12 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
             <div class="row">
                 <div class="container">
                     <div class="text-right" >
-                        <img src="<?php echo $urlResImage ?>aboutus/header.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250322624036">
                     </div>
                     <div class="row " >
                         <div class="col-sm-5 ml44">
                             <div class="php-high-level mt55">
-                                <div class="text-center"><img src="<?php echo $urlResImage ?>aboutus/php.png"><img class="pull-right count-img" src="<?php echo $urlResImage ?>aboutus/01.png">
+                                <div class="text-center"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250331272426"><img class="pull-right count-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250331237588">
                                     <div class="clearfix"></div>
                                     <div class="office-name mt10">PHP工程师（高级）</div>
                                 </div>
@@ -45,7 +45,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                         </div>
                         <div class="col-sm-5 col-sm-offset-1">
                             <div class="php-high-level mt55 ml-15 mr15">
-                                <div class="text-center"><img src="<?php echo $urlResImage ?>aboutus/php-x.png"><img class="pull-right count-img" src="<?php echo $urlResImage ?>aboutus/02.png">
+                                <div class="text-center"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250331275842"><img class="pull-right count-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250331248447">
                                     <div class="clearfix"></div>
                                     <div class="office-name mt10">PHP工程师（初级）</div>
                                 </div>
@@ -70,7 +70,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     <div class="row mb100">
                         <div class="col-sm-5 ml44">
                             <div class="other-level mt60">
-                                <div class="text-center"><img src="<?php echo $urlResImage ?>aboutus/android.png"><img class="pull-right count-img" src="<?php echo $urlResImage ?>aboutus/02.png">
+                                <div class="text-center"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250331252999"><img class="pull-right count-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250331248447">
                                     <div class="clearfix"></div>
                                     <div class="office-name mt10">安卓开发工程师</div>
                                 </div>
@@ -92,7 +92,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                         </div>
                         <div class="col-sm-5 col-sm-offset-1">
                             <div class="other-level mt60 ml-15 mr15">
-                                <div class="text-center"><img src="<?php echo $urlResImage ?>aboutus/keFu.png"><img class="pull-right count-img" src="<?php echo $urlResImage ?>aboutus/02.png">
+                                <div class="text-center"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625033125704"><img class="pull-right count-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250331248447">
                                     <div class="clearfix"></div>
                                     <div class="office-name mt10">客服专员</div>
                                 </div>
@@ -114,5 +114,4 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
             </div>
         </div>
     </div>
-</div>
 </div>

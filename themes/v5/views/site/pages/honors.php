@@ -5,7 +5,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
 $urlNews = $this->createUrl('news/page', array("view" => ""));
 ?>
 <div class="container-fluid aboutus-header h400">
-    <img src="<?php echo $urlResImage; ?>aboutus/our-header.png"/>
+    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625020116117"/>
 </div>
 <div class="container-fluid bg-gray-f7">
     <div class="row">
@@ -18,7 +18,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
             <div class="main-content">
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="<?php echo $urlResImage; ?>aboutus/picture160301.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172673436123">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -33,7 +33,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="<?php echo $urlResImage; ?>aboutus/picture160203.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172673415560">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -48,7 +48,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="<?php echo $urlResImage; ?>aboutus/picture160201.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172652186866">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -63,7 +63,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="<?php echo $urlResImage; ?>aboutus/picture10-01.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172652153787">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -78,7 +78,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="<?php echo $urlResImage; ?>aboutus/picture1-01.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172639888442">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -93,7 +93,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="<?php echo $urlResImage; ?>aboutus/picture2-01.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172651968057">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -108,7 +108,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="<?php echo $urlResImage; ?>aboutus/picture4-01.png">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172652112799">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">

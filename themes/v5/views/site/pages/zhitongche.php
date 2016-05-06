@@ -14,7 +14,7 @@ $this->pageTitle = '手术直通车_各大名医手术在线预约_名医主刀'
 $this->htmlMetaKeywords = '手术直通车';
 $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需求的患者提供的一项快速、便捷、高效、安全的服务。旨在帮助广大有手术需求的患者，第一时间预约全国知名专家，安排入院手术。名医主刀';
 ?>
-<div class="container-fluid">
+<div class="container-fluid" id="zhitongche">
     <div class="row">
         <div class="container-fluid" >
             <div class="row ztc-header">     
@@ -32,21 +32,21 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                     </div>
                 </div>
                 <div class="col-sm-4 text-right pl0">
-                    <img src="<?php echo $urlResImage; ?>zhitongche/liucheng-01.png">
+                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250428262945">
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="mt30 ztc-bg-green text-center ztc-title-mid">
+            <div class="mt60 ztc-title-mid">
                 在中国，一年里有很多的患者因等排队等床位延误病情。
             </div>
         </div>
         <div class="container">
-            <div class="row mt80">
+            <div class="row mt60">
                 <div class="col-sm-7">
                     <div class="row">
-                        <div class="col-sm-6"><img src="<?php echo $urlResImage; ?>zhitongche/photo1.jpg"></div>
-                        <div class="col-sm-6"><img src="<?php echo $urlResImage; ?>zhitongche/photo2.jpg"></div>
+                        <div class="col-sm-6"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250428273538"></div>
+                        <div class="col-sm-6"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250428290771"></div>
                     </div>
                 </div>
                 <div class="col-sm-5 color-gray-68" >
@@ -69,10 +69,10 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                     <div class="text-right ztc-detail-one"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'firstaid')); ?>">查看详情></a></div>
                 </div>
             </div>
-            <div class="ztc-divide-gray mt80"></div>
+            <div class="ztc-divide-gray mt60"></div>
         </div>
         <div class="container">
-            <div class="row mt80">
+            <div class="row mt60">
                 <div class="col-sm-7">
                     <div class="row">
                         <div class="col-sm-5 ztc-story-title ">接洽时间：2015年07月13日</div>
@@ -85,20 +85,20 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                     <div class="mt30 mr30 color-gray-68 text-indent2em">我们接到孟先生女儿电话的时候，孟先生癌细胞已经恶化的非常严重了，随时会大规模扩散危急生命。孟先生的这次治疗，我们的帮助下，从预约到入院治疗只用了两天的时间，中间省去很多复杂的流程同时节约大量的宝贵时间。孟先生手术非常成功，这次郭院长给出的手术方案与孟先生当地医院给出的手术方案完全不同，避免了锯开下颌骨进行手术的高风险，让孟先生的女儿觉得无比欣慰和感激。</div>
                     <div class="text-right ztc-detail-two"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'kangai')); ?>">查看详情></a></div>
                 </div>
-                <div class="col-sm-5 pd0"><img class="ml-15" src="<?php echo $urlResImage; ?>zhitongche/photo3.jpg"></div>
+                <div class="col-sm-5 pd0"><img class="ml-15" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250428305542"></div>
             </div>
         </div>
         <div class="container">
-            <div class="mt80 ztc-bg-green ztc-title-mid2">
+            <div class="mt60 ztc-title-mid2">
                 当越来越多的患者通过我们“名医主刀”的平台来预约专家，我们深知我们责任的重大，因为这些患者都是急需要进行手术，并且多方寻医都没有进展。他们焦虑、无助，甚至在拨打我们400-6277-120电话时抱着最后一丝希望。
             </div>
         </div>
         <div class="container">
-            <div class="row mt80">
+            <div class="row mt60">
                 <div class="col-sm-7">
                     <div class="row">
-                        <div class="col-sm-6"><img src="<?php echo $urlResImage; ?>zhitongche/photo5.jpg"></div>
-                        <div class="col-sm-6 pd0"><img class="border-gray-c9c9ca" src="<?php echo $urlResImage; ?>zhitongche/photo4.jpg"></div>
+                        <div class="col-sm-6"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250428340119"></div>
+                        <div class="col-sm-6 pd0"><img class="border-gray-c9c9ca" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250428326269"></div>
                     </div>
                 </div>
                 <div class="col-sm-5 pl0">
@@ -115,14 +115,14 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
             </div>
         </div>
         <div class="container">
-            <div class="mt80 ztc-bg-green ztc-title-mid2">
+            <div class="mt60 ztc-title-mid2">
                 这些传递健康与爱的经历，让我们更加坚信“名医主刀”我们可以给患者带去更多的希望，不仅可以帮助患者尽快预约到专家，还能大大节省患者等待床位的时间，让患者得到最快的治疗。同时，还降低了患者家属的往返就医的车费和住宿费。
             </div>
         </div>
         <div class="container ">
-            <div class="row mt80">
+            <div class="row mt60">
                 <div class="col-sm-4">
-                    <img src="<?php echo $urlResImage; ?>zhitongche/photo6.jpg">
+                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250428351831">
                 </div>
                 <div class="col-sm-8">
                     <div class="row">
@@ -139,14 +139,34 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                     </div>
                 </div>
             </div>
-        </div>     
+            <div class="ztc-divide-gray mt60"></div>
+        </div>
         <div class="container">
-            <div class="mt80">
+            <div class="row mt60">
+                <div class="col-sm-7">
+                    <div class="ztc-content">
+                        <div class="row">                        
+                            <div class="col-sm-5 ztc-story-title ">接洽时间：2016年3月22日</div>
+                            <div class="col-sm-7 ztc-story-title">疾病名称：甲状腺结节</div>
+                            <div class="col-sm-5 mt30 ztc-story-title">入院时间：2016年4月26日</div>
+                            <div class="col-sm-7 mt30 ztc-story-title">出院时间：2016年4月30日</div>
+                            <div class="col-sm-7 mt30"></div>                                        
+                        </div>
+                        <div class="mt30 mr40 color-gray-68 text-indent2em">和大部分患者一样，在来到名医主刀之前，患者李女士在看病的过程中并不顺利：被票贩子骗，被不明来历的“专家”骗，苦等床位不得等等。</div>
+                        <div class="mt30 mr40 color-gray-68 text-indent2em">经历过这一系列坎坷，正当灰心丧气、深感中国就医如此之难时，李女士丈夫在浏览网页时，无意中看到一篇介绍名医主刀平台的文章，于是与名医主刀取得了联系。</div>
+                        <div class="text-right ztc-detail-five"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'jiazhuanxianjiejie')); ?>">查看详情></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-5 pd0"><img class="ml-15" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250440658963"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mt60">
                 <div class="message-content">
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="pb15 ztc-divide-gray mt20">
-                                <div class="pull-left"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/icon.png"><div class="color-green-5ebfb7 text-center">匿名用户</div></div></div>
+                                <div class="pull-left"><div class="story-img"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625044074258"><div class="color-green-5ebfb7 text-center">匿名用户</div></div></div>
                                 <div class="appraise">
                                     <div><div class="">主刀专家：<strong>刘跃武</strong></div></div>
                                     <div class="mt5">确诊疾病：<span class="strong">甲状腺肿瘤</span></div>
@@ -160,10 +180,10 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         </div>
                         <div class="col-sm-4">
                             <div class="ztc-divide-gray text-center mt40 pb20">
-                                <span><img src="<?php echo $urlResImage; ?>zhitongche/appraise-01.png"></span>
+                                <span><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250449197153"></span>
                             </div>
                             <div class="pb15 ztc-divide-gray mt20">
-                                <div class="pull-left"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/icon.png"><div class="color-green-5ebfb7 text-center">匿名用户</div></div></div>
+                                <div class="pull-left"><div class="story-img"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625044074258"><div class="color-green-5ebfb7 text-center">匿名用户</div></div></div>
                                 <div class="pb15 appraise">
                                     <div><div class="">主刀专家：<strong>王世军</strong></div></div>
                                     <div class="mt5">确诊疾病：<span class="strong">宫颈癌</span></div>
@@ -178,7 +198,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         </div>
                         <div class="col-sm-4">
                             <div class="pb15 ztc-divide-gray mt20">
-                                <div class="pull-left"><div class="story-img"><img src="<?php echo $urlResImage; ?>zhitongche/icon.png"><div class="color-green-5ebfb7 text-center">匿名用户</div></div></div>
+                                <div class="pull-left"><div class="story-img"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625044074258"><div class="color-green-5ebfb7 text-center">匿名用户</div></div></div>
                                 <div class="appraise">
                                     <div><div class="">主刀专家：<strong>姜格宁</strong></div></div>
                                     <div class="mt5">确诊疾病：<span class="strong">肺癌</span></div>
@@ -195,12 +215,12 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
             </div>
         </div>
         <div class="container">
-            <div class="mt80 ztc-find-expert">
+            <div class="mt60 ztc-find-expert">
                 <a href="<?php echo $urlDoctorSearch; ?>" target="_black">
                     <div class="row h120p">
                         <div class="col-sm-5"></div>
                         <div class="col-sm-5 ">
-                            <img class="mt20" src="<?php echo $urlResImage; ?>zhitongche/red-01.png">
+                            <img class="mt20" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250462928143">
                             <div class="ztc-find-expert-btn btn">找医生<span class="ml10 mr-10">&gt;</div>
                             <div class="text-center color-gray-68 ml-60">
                                 <div>名医主刀签约了三甲医院副主任医师级别以上的顶级专家，</div>
@@ -213,12 +233,12 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
             </div>
         </div>
         <div class="container">
-            <div class="mt80 ztc-find-hospital">
+            <div class="mt60 ztc-find-hospital">
                 <a href="<?php echo $urlHopitalSearch; ?>" target="_black">
                     <div class="row h120p">
                         <div class="col-sm-5"></div>
                         <div class="col-sm-6">
-                            <img class="mt20" src="<?php echo $urlResImage; ?>zhitongche/blue-01.png">
+                            <img class="mt20" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250462921529">
                             <div class="ztc-find-hospital-btn btn">找医院<span class="ml10 mr-10">&gt;</span></div>
                             <div class="text-center color-gray-68 ml-150">
                                 <div>名医主刀为您精选出在综合及专科领域最强的医院，您只需预约目标医院的科室，</div>
@@ -231,7 +251,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
             </div>
         </div>
         <div class="container mb50">
-            <div class="text-center mt80">
+            <div class="text-center mt60">
                 <div class="ztc-bottom-text">一键预约，填写您的病情，名医为您推荐最适合您的专家。<a data-toggle="modal" data-target="#qucikbookingModal" class="ztc-booking-btn">立即预约</a></div>
             </div>
         </div>
