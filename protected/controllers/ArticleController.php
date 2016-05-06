@@ -2,13 +2,14 @@
 
 class ArticleController extends WebsiteController {
 
-    public function actionView($id) {
-        $list = array(1, 2, 3, 4, 5, 6,7,8,9);
-        if (in_array($id, $list)) {
-            $this->render('pages/article' . $id);
-        } else {
-            throw new CHttpException(404, 'The requested page does not exist.');
-        }
+   public function actions() {
+        return array(
+            // page action renders "static" pages stored under 'protectediews/site/pages'
+            // They can be accessed via: index.php?r=site/page&view=FileName
+            'page' => array(
+                'class' => 'CViewAction',
+            ),
+        );
     }
 
 }

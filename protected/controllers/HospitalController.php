@@ -29,5 +29,9 @@ class HospitalController extends WebsiteController {
     public function actionTop() {
         $this->render('top');
     }
+    
+    public function actionDepartment() {
+        $this->render('department');
+    }
 
 }
