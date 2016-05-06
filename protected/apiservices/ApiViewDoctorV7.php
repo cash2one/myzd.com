@@ -137,6 +137,7 @@ class ApiViewDoctorV7 extends EApiViewService {
             $data->doctorId = $article->doctor_id;
             $data->fileName = $article->file_name;
             $data->title = $article->title;
+            $data->type = $article->type;
             $this->results->article[] = $data;
         }
     }
