@@ -3,7 +3,8 @@
 .search-header .header-explanation{color: #e50011;margin-top: 80px;margin-left: 50px;}*/
 .department-name{border:1px solid #19aea5;height:70px;line-height:70px;font-size:16px;}
 /*.department-list{padding:0 0 20px 15px;}*/
-.department-list .department{padding-left: 10px;margin-top: 20px;}
+.department-list .department{padding-left: 10px;margin-top: 20px;display:none;}
+.department-list .department.active{padding-left: 10px;margin-top: 20px;display:block;}
 .department-list .department .dept-header:hover{cursor: pointer;}
 .department-list .department .fa{color: #19aea5;}
 .department-list .department .fa-caret-down{display: none;}
@@ -52,9 +53,44 @@
 .hpName:hover{color: #19aea5;}
 .hospital-list .hospital-desc{line-height: 1.7em;color:#555;}
 .ml-30{margin-left:-30px;}
+.department-list{background-color:#f7f7f7;}
 .department-list .department .dept-header .puwaike-small{width:20px;height:20px;background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146242743882616');background-position:0px 0px;display:inline-block;margin-bottom:-5px;margin-right:5px;}
 .department-list .department .dept-header .guke-small{width:20px;height:20px;background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146242743882616');background-position:100px 0px;display:inline-block;margin-bottom:-4px;margin-right:5px;}
 .department-list .department .dept-header .fuchanke-small{width:20px;height:20px;background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146242743882616');background-position:80px 0px;display:inline-block;margin-bottom:-5px;margin-right:5px;}
 .department-list .department .dept-header .xiaoerke-small{width:20px;height:20px;background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146242743882616');background-position:60px 0px;display:inline-block;margin-bottom:-5px;margin-right:5px;}
 .department-list .department .dept-header .wuguanke-small{width:20px;height:20px;background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146242743882616');background-position:40px 0px;display:inline-block;margin-bottom:-5px;margin-right:5px;}
 .department-list .department .dept-header .neike-small{width:20px;height:20px;background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146242743882616');background-position:20px 0px;display:inline-block;margin-bottom:-5px;margin-right:5px;}
+.dept-menu .flowChart{background-color:#f7f7f7;padding:10px 10px;}
+.dept-menu .flowChart .content .step{color:#666;font-weight:bold;}
+.dept-menu .flowChart .title{font-size:18px;margin-bottom:3px;border-bottom:1px dashed #b5b5b5;}
+.dept-menu .flowChart .content{}
+.dept-menu .flowChart .content .tooltip-inner{color:#545454;background-color:#e5e6e6;border-radius:5px;text-align:justify;}
+.dept-menu .flowChart .content .tooltip.top{margin-top:0px;}
+.dept-menu .flowChart .content .tooltip.top .tooltip-arrow{border-top-color:#e5e6e6;margin-left:0px;}
+.dept-menu .flowChart .content .mark{margin-top:-5px;background-color:#036eb8;display:inline-block;border-radius:16px;height:16px;width:16px;color:#fff;text-align:center;font-weight:bold;margin-left:5px;line-height:13px;font-size:12px;padding-left:5px;}
+.dept-menu .flowChart .content .mark:hover{cursor:pointer;}
+.dept-menu .flowChart .content .color-555{color:#555;}
+.dept-menu .flowChart .content .tooltip.in{opacity:1;}
+#hospital-list .city-cutover{background-color:#f7f7f7;height:45px;padding-top:7px;}
+#hospital-list .city-cutover .city-name{color:#5cb6af;font-size:21px;}
+#hospital-list .city-cutover .cutover-btn{border:1px solid #333;padding:0px 5px 1px;border-radius:2px;display:inline-block;position:relative;cursor:pointer;margin-top:-5px;}
+#hospital-list .city-cutover{padding-left:40px;}
+.search-hospital-header,.search-hospital-header ul li a{background-color:#19aea5;color:#fff;font-size:16px;}
+.search-hospital-header ul{-webkit-padding-start:0;}
+.search-hospital-header ul li{display:inline-block;}
+.search-hospital-header .crumbs-header{padding-top:10px;}
+.color-036eb8{color:#036eb8;}
+#hospital-list .open-city{display:none;background-color:#f7f7f7;width:300px;height:200px;border-radius:5px;padding:10px;box-shadow:1px 1px 5px #92908f;position:absolute;z-index:99;margin-left:185px;margin-top:-5px;}
+#hospital-list .open-city .heading{color:#9f9fa0;border-bottom:1px solid #9f9fa0;}
+#hospital-list .open-city .close-btn{cursor:pointer;}
+#hospital-list .open-city .hot-city .city{border:1px solid #19aea5;color:#19aea5;border-radius:4px;padding:0px 3px 2px;}
+#hospital-list .open-city .hot-city .city.active{border:1px solid #19aea5;color:#fff;border-radius:4px;padding:0px 3px 2px;background-color:#19aea5;}
+#hospital-list .open-city .other-city .city.active{color:#19aea5;}
+#hospital-list .open-city .close-btn{position:absolute;right:10px;top:0px;font-size:20px;}
+.mt-5{margin-top:-5px;}
+.ml15{margin-left:15px;}
+/*城市切换的高度：45
+背景色：f7f7f7
+上海：5cb6af     字号：21
+切换：555          字号：16
+热门城市：9f9fa0      字号：14*/

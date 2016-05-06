@@ -7,54 +7,83 @@ $urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize'
 $urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10, 'disease_sub_category' => ''));
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
 $urlHospitalView = $this->createUrl('hospital/view');
-$city = Yii::app()->request->getQuery('city', '');
+$city = Yii::app()->request->getQuery('city', '1');
 $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
 $page = Yii::app()->request->getQuery('page', '');
 ?>
-<div class="container-fluid search-header">
-<!--    <div class="container find-navi"><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a>&nbsp;&gt;&nbsp;找顶尖科室</div>-->
-    <div class="row">
-        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146242794754985" alt=""/>
+<div class="container-fluid search-hospital-header">
+    <div class="container">
+        <div class="crumbs-header">
+            <ul>
+                <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                <li>></li>
+                <li><a href="<?php echo $this->createUrl('hospital/department') ?>">找医院</a></li>
+                <li>></li>
+                <li>外科</li>
+            </ul>
+        </div>
     </div>
 </div>
-<div class="container">
-    <div class="row mt30">
-        <div class="col-sm-2">
-            <div class="strong text-center department-name color-green"><span>全部</span></div>
-            <div class="border-gray department-list mt20">
-
-            </div>
-            <div class="mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146242724592795"></a></div>
+</div>
+<div class="container" id="hospital-list">
+    <div class="city-cutover mt20">
+        <span><img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146253292660125"></span><span class="city-name ml10 mr20"></span><span class="cutover-btn">切换</span>
+    </div>
+    <div class="open-city city-list">
+        <div class="heading mt5">热门城市<span class="close-btn">&times;</span></div>
+        <div class="hot-city mt10">
+            <div><a class="city city-init" data-id="1">北京</a><a class="city ml15" data-id="73">上海</a><a class="city ml15" data-id="200">广州</a><a class="city ml15" data-id="74">南京</a><a class="city ml15" data-id="255">成都</a></div>
         </div>
-        <div class="col-sm-10">
-            <div class="row">
-                <div class="mt20 findexp-nav city-list">
-                    地区:<a class="all city active">全部</a>
-                    <a class="city" data-id="1">北京</a>
-                    <a class="city" data-id="73">上海</a>
-                    <a class="city" data-id="200">广州</a>
-                    <a class="city" data-id="74">南京</a>
-                    <a class="city" data-id="87">杭州</a>
-                    <a class="city" data-id="114">福州</a>
-                    <a class="city" data-id="134">济南</a>
-                    <a class="city" data-id="186">长沙</a>
-                    <a class="city" data-id="255">成都</a>
-                    <a class="city" data-id="204">汕头</a>
-                    <a class="city" data-id="218">潮州</a>
+        <div class="heading mt20">其他</div>
+        <div class="other-city mt5">
+            <a class="city" data-id="391">重庆</a><a class="city ml15" data-id="87">杭州</a><a class="city ml15" data-id="308">西安</a><a class="city ml15" data-id="169">武汉</a><a cl<a class="city ml15" data-id="186">长沙</a><a class="city ml15" data-id="134">济南</a><br/><a class="city" data-id="151">郑州</a> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="dept-menu">
+            <div class="col-sm-2">
+                <div class="border-gray department-list mt20">
                 </div>
-                <div class="loading loading02"></div>
-                <div class="hospital-list">
-
+                <div class="mt20 mb20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146242724592795"></a></div>
+                <div class="flowChart">
+                    <div class="title">服务流程：</div>
+                    <div class="content">
+                        <div class="text-center mt20"><span class="step">第一步</span></div>
+                        <div><span>用户提交预约申请</span><span class="mark" data-toggle="tooltip" data-placement="top" title="" data-original-title="相关检查资料：核磁（MRI）、CT、病理、B超及相关诊断检验报告等）">?</span></div>
+                        <div class="text-center mt20"><span class="step">第二步</span></div>
+                        <div><span>名医助手回访确认预约信息</span><span class="color-555">（8小时内）</span></div>
+                        <div class="text-center mt20"><span class="step">第三步</span></div>
+                        <div><span>名医助手协助整理病历资料，并根据病情匹配对症专家</span><span class="color-555">（2个工作日内）</span></div>
+                        <div class="text-center mt20"><span class="step">第四步</span></div>
+                        <div><span>回复并沟通就诊时间</span></div>
+                        <div class="text-center mt20"><span class="step">第五步</span></div>
+                        <div><span>携带相关证件资料，在预约时间由名医助手陪护至医院就诊：</span></div>
+                        <div>
+                            <div><span>如结果可以手术则</span></div>
+                            <div class="color-036eb8"><span>开始安排闲置床位排期手术</span></div>
+                            <div><span>如专家意见不宜手术则</span></div>
+                            <div class="color-036eb8"><span>给出诊疗意见</span></div>
+                        </div>
+                    </div>
                 </div>
-                <!--分页-->
-                <div class="mt30">
-                    <nav class="text-center">
-                        <ul class="pagination">
+            </div>
+            <div class="col-sm-10">
+                <div class="row">
+                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146253292644696" class="img-responsive mt20">
+                    <div class="loading loading02"></div>
+                    <div class="hospital-list">
 
-                        </ul>
-                    </nav>
+                    </div>
+                    <!--分页-->
+                    <div class="mt30">
+                        <nav class="text-center">
+                            <ul class="pagination">
+
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,6 +100,15 @@ $page = Yii::app()->request->getQuery('page', '');
     condition["page"] = '<?php echo $page == '' ? 1 : $page; ?>';
     var urlLoadHospital = '<?php echo $urlLoadHospital; ?>';
     $(document).ready(function () {
+        $("#hospital-list .open-city .close-btn").click(function () {
+            $("#hospital-list .open-city").hide();
+        });
+        $("#hospital-list .city-cutover .cutover-btn").click(function () {
+            $("#hospital-list .open-city").show();
+        });
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
         setCityActive();
         ajaxLoadHopital('&getcount=1');
         ajaxLoadDiseaseCategory();
@@ -119,6 +157,11 @@ $page = Yii::app()->request->getQuery('page', '');
             url: urlloadDiseaseCategory,
             success: function (data) {
                 setDiseaseCategory(data);
+            },
+            error: function (XmlHttpRequest, textStatus, errorThrown) {
+                console.log(XmlHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
             }
         });
     }
@@ -153,7 +196,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 }
                 innerHtml += '<div class="department' + active + '">' +
                         '<div class="dept-header">' +
-                        '<span class="'+imgname+'"></span><i class="fa fa-caret-right"></i>' +
+                        '<span class="' + imgname + '"></span><i class="fa fa-caret-right"></i>' +
                         '<i class="fa fa-caret-down"></i>' +
                         '<span class="strong">' + diseaseCategory.name + '</span>' +
                         '</div>' +
@@ -192,6 +235,8 @@ $page = Yii::app()->request->getQuery('page', '');
             if (condition["city"]) {
                 if (cityId == condition["city"]) {
                     $(this).addClass('active');
+                    var html = $(this).text();
+                    $("#hospital-list .city-cutover .city-name").html(html);
                 }
             } else {
                 $('.all.city').addClass('active');

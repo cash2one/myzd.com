@@ -95,7 +95,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                             foreach ($headerMenu as $key => $menuItem) {
                                 if (($this->action->controller->id == 'doctor') && ($key == 'doctor') && ($this->action->id == 'top')) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
-                                } else if (($this->action->controller->id == 'hospital') && ($key == 'hospital') && ($this->action->id == 'top')) {
+                                } else if (($this->action->controller->id == 'hospital') && ($key == 'hospital') && ($this->action->id == 'department')) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
                                 } else if (($this->action->controller->id == 'site') && ($key == 'home') && ($this->action->id == 'index')) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';

@@ -68,7 +68,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                     <div class=" pl10 pb20">
                         <div class="mt20"><img src="<?php echo $urlImage; ?>" alt="<?php echo $hName; ?>"></div>
                         <div class="text-right pr15">
-<!--                            <div class="mt10 hospitalurl"><a class="text12 color-green" href="<?php //echo $urlWebsite;         ?>" target="_blank"><?php echo '查看官网'; ?></a></div>-->
+<!--                            <div class="mt10 hospitalurl"><a class="text12 color-green" href="<?php //echo $urlWebsite;           ?>" target="_blank"><?php echo '查看官网'; ?></a></div>-->
                         </div>
                         <div class="pr10">
                         </div>
@@ -159,39 +159,8 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                 </div>
                 <div class="col-lg-3 sol-sm-4 col-xs-12 pl0 pr0">
                     <div class="flowChart">
-                        <div class="title">服务流程介绍</div>
-                        <div class="content">
-                            <div class="row">
-                                <div class="col-sm-3"><span class="step">STEP1</span></div>
-                                <div class="col-sm-9 pl0"><span>提交预约申请</span><span class="mark" data-toggle="tooltip" data-placement="top" title="相关检查资料：
-                                                                                   核磁（MRI）、CT、病理、B超及相关诊断检验报告等）">?</span></div>
-                            </div>
-                            <div class="row mt20">
-                                <div class="col-sm-3"><span class="step">STEP2</span></div>
-                                <div class="col-sm-9 pl0"><span>名医助手联系患者确认预约信息</span><span class="color-555">（8小时内）</span></div>
-                            </div>
-                            <div class="row mt20">
-                                <div class="col-sm-3"><span class="step">STEP3</span></div>
-                                <div class="col-sm-9 pl0"><span>名医助手为患者整理病历资料，根据病情匹配对症专家</span><span class="color-555">（2个工作日内）</span></div>
-                            </div>
-                            <div class="row mt20">
-                                <div class="col-sm-3"><span class="step">STEP4</span></div>
-                                <div class="col-sm-9 pl0"><span>平台工作人员与患者沟通，确定就诊时间</span></div>
-                            </div>
-                            <div class="row mt20">
-                                <div class="col-sm-3"><span class="step">STEP5</span></div>
-                                <div class="col-sm-9 pl0"><span>携带相关证件资料，在预约时间由名医助手陪护至医院就诊</span></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-3"><span class="step"></span></div>
-                                <div class="col-sm-9 pl0">
-                                    <div class="mt10"><strong>就诊结果可以手术</strong></div>
-                                    <div class="color-666"><span>（安排闲置床位排期手术）</span></div>
-                                    <div><strong>就诊结果不宜手术</strong></div>
-                                    <div class="color-666"><span>（专家给出参考意见）</span></div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="title">我们能为您做：</div>
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146096976063483" class="img-responsive">
                     </div>
                 </div>
             </div>
@@ -204,15 +173,15 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
 <?php $this->renderPartial("//booking/bookingDeptModal"); ?>
 <script>
     $(document).ready(function () {
-        var dept ='<?php echo $deptId ?>'; 
-        if(dept!=''){
-            $("#"+dept+" a").trigger('click');
-        }else{
+        var dept = '<?php echo $deptId ?>';
+        if (dept != '') {
+            $("#" + dept + " a").trigger('click');
+        } else {
             $('.second-faculty:first a').trigger('click');
         }
-        if ($('.second-faculty').hasClass('active')) {
-            $('.second-faculty.active').parents('.deptgroup').find('.first-faculty:first').addClass('active');
-        }
+//        if ($('.second-faculty').hasClass('active')) {
+//            $('.second-faculty.active').parents('.deptgroup').find('.first-faculty:first').addClass('active');
+//        }
         $(".more-desc").click(function () {
             $(this).hide();
             $(".ellipsis").hide();
@@ -229,7 +198,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
             $('.second-faculty').removeClass("active");
             $('.tab-pane').removeClass("active");
             $('.first-faculty').removeClass("active");
-            $(this).parents('.deptgroup').find('.first-faculty').addClass("active");
+//          $(this).parents('.deptgroup').find('.first-faculty').addClass("active");
         });
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()

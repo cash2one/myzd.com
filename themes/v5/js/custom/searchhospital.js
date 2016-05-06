@@ -114,12 +114,12 @@ function setUrlCondition() {
 
 function initDeptFunction() {
     $(".department .dept-header").click(function () {
-        if ($(this).parent().hasClass("active")) {
-            $(".department").removeClass("active");
-        } else {
-            $(".department").removeClass("active");
-            $(this).parent().addClass("active");
-        }
+//        if ($(this).parent().hasClass("active")) {
+//            $(".department").removeClass("active");
+//        } else {
+//            $(".department").removeClass("active");
+//            $(this).parent().addClass("active");
+//        }
     });
     $('.department ul>li>a.subCat').click(function (e) {
         e.preventDefault();
@@ -127,12 +127,13 @@ function initDeptFunction() {
         var url = $(this).attr('href');
         var subCatName = $(this).text();
         condition["page"] = 1;
-        condition["city"] = '';
+        condition["city"] = 1;
         condition["disease"] = '';
         condition["disease_name"] = '';
         condition["disease_category"] = '';
         condition["disease_sub_category"] = subCat;
         urlLoadHospital = url;
+        $("#hospital-list .city-cutover .city-name").html('北京');
         $('.department-name>span').html(subCatName);
         $('.department ul>li>a.subCat').removeClass('active');
         $(this).addClass('active');

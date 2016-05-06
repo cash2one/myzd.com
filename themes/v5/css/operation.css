@@ -1,4 +1,5 @@
 .mt80{margin-top:80px;}
+.mt60{margin-top:60px;}
 .pb15{padding-bottom:15px;}
 .pl0{padding-left:0;}
 .pd0{padding:0!important;}
@@ -11,10 +12,10 @@
 .border-gray-c9c9ca{border:1px solid #c9c9ca;}
 .message{line-height: 1.7em;font-size:14px;text-indent: 2em;margin-top:5px;}
 .ztc-header{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146009834607261') no-repeat center center;height:400px;}
-.ztc-title-text{padding-top:80px;line-height:1.5em;}
+.ztc-title-text{padding-top:80px;line-height:1.8em;}
 .ztc-title-lg{font-size:36px;}
-.ztc-title-mid{font-size:18px;padding:20px 0;color:#fff;letter-spacing:0.5em;}
-.ztc-title-mid2{font-size:18px;color:#fff;padding:20px 30px;}
+.ztc-title-mid{font-size:18px;color:#5db5b5;text-align:justify;}
+.ztc-title-mid2{font-size:18px;color:#5db5b5;text-align:justify;}
 .ztc-three-text{padding-left:0;margin-top:150px;padding-right:15px;}
 .ztc-bg-green{background-color:#19aea5;}
 .ztc-divide-gray{border-bottom:1px dashed #c9c9ca;}
@@ -37,6 +38,8 @@
 .ztc-detail-three>a:hover{color:#355bbc!important;text-decoration:underline;}
 .ztc-detail-four,.ztc-detail-four>a{color:#39538e!important;margin-top:58px;}
 .ztc-detail-four>a:hover{color:#355bbc!important;text-decoration:underline;}
+.ztc-detail-five,.ztc-detail-five>a{color:#39538e!important;margin-top:85px;margin-right:20px;}
+.ztc-detail-five>a:hover{color:#355bbc!important;text-decoration:underline;}
 .ztc-find-expert-btn{width:145px;height:38px;border:1px solid #eca4a4!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#eca4a4!important;font-size:16px!important;letter-spacing:4px;}
 .ztc-find-expert:hover .ztc-find-expert-btn{width:145px;height:38px;border:1px solid #eca4a4!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#fff!important;font-size:16px!important;letter-spacing:4px;background-color:#f3b8b7;}
 .ztc-find-hospital-btn{width:145px;height:38px;border:1px solid #095292!important;border-radius:6px;margin-top:-25px;margin-left:125px;color:#095292!important;font-size:16px!important;letter-spacing:4px;}
@@ -46,3 +49,4 @@
 .ztc-bottom-text{font-size:18px;color:#5db5b5;}
 .text-indent2em{text-indent: 2em;}
 .h120p{height:120px;}
+#zhitongche .ztc-content{text-align:justify;}

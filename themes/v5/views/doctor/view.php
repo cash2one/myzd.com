@@ -9,6 +9,7 @@ $urlajaxComment = $this->createUrl('comment/ajaxDoctorComment', array('pagesize'
 $page = Yii::app()->request->getQuery('page', '');
 $is_commonweal = Yii::app()->request->getQuery('is_commonweal', 0);
 $urlDoctor = $this->createUrl('doctor/');
+$urlLoadDoctorArticle = $this->createUrl('api/doctor', array('api' => 7));
 ?>
 <div class="contaier-fluid bg-green">
     <div class="container">
@@ -17,7 +18,7 @@ $urlDoctor = $this->createUrl('doctor/');
         </div>
     </div>
 </div>
-<div class="container mb50">
+<div class="container mb50" id="doctor-view">
     <div class="row doctorInfo mt20">
         <div class="col-md-8 col-sm-8">
             <div class="">
@@ -136,7 +137,7 @@ $urlDoctor = $this->createUrl('doctor/');
             if (isset($doctor->reasons) && arrayNotEmpty($doctor->reasons)) {
                 $reasons = $doctor->reasons;
                 ?>
-                <div class="mt14 text18">推荐理由</div> 
+<!--                <div class="mt14 text18">推荐理由</div> 
                 <div class="border-gray">
                     <div>
                         <div class="pl10 pt10 pb10">
@@ -147,33 +148,26 @@ $urlDoctor = $this->createUrl('doctor/');
                             ?>
                         </div>
                     </div>
-                </div>
+                </div>-->
             <?php }
             ?>
-            <!--                            <div class="mt20 text18">相关资讯</div> 
-                                        <div class="border-gray news">
-                                            <div class="mt10 mb10">
-                                                <div class="pull-left title">【媒体报道】</div>
-                                                <div>福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="mt10 mb10">
-                                                <div class="pull-left title">【媒体报道】</div>
-                                                <div>福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="mt10 mb10">
-                                                <div class="pull-left title">【媒体报道】</div>
-                                                <div>福布斯发布亚洲年轻领袖榜单</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="mt10 mb10">
-                                                <div class="pull-left title">【媒体报道】</div>
-                                                <div>福布斯发布亚洲年轻领袖榜单</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </div>-->
-
+            <?php
+            if (isset($data->results->article) && arrayNotEmpty($data->results->article)) {
+                $doctor_articles = $data->results->article;
+                ?>
+                <div class="text18 information">相关资讯</div> 
+                <div class="border-gray news">
+                    <?php foreach ($doctor_articles as $doctor_article) { ?>
+                        <div class="mt10 mb10">
+                            <div class="pull-left title">【<?php echo $doctor_article->type; ?>】</div>
+                            <div><a href="<?php echo $this->createUrl("article/page", array("view" => $doctor_article->fileName)); ?>" target="_blank" title="<?php echo $doctor_article->title; ?>"><?php echo $doctor_article->title; ?></a></div>
+                            <div class="clearfix"></div>
+                        </div> 
+                    <?php } ?>
+                </div>
+                <?php
+            }
+            ?>
             <div class="rec-title">
                 <span>其他推荐</span>
             </div>
@@ -212,7 +206,7 @@ $urlDoctor = $this->createUrl('doctor/');
         </div>
     </div>
 </div>
-<?php $this->renderPartial("//booking/formModal",array('is_commonweal'=>$is_commonweal)); ?>
+<?php $this->renderPartial("//booking/formModal", array('is_commonweal' => $is_commonweal)); ?>
 <script>
     $(document).ready(function () {
         $condition = new Array();
@@ -264,7 +258,7 @@ $urlDoctor = $this->createUrl('doctor/');
             var userName = comment[i].userName == null ? '&nbsp;' : comment[i].userName;
             var commentText = comment[i].commentText.length > 90 ? comment[i].commentText.substr(0, 90) + '<span class="ellipsis">...</span><span class="dese-last" style="display:none;">' + comment[i].commentText.substr(90) + '</span><span class="dese-operate pull-right"><span class="desc-more">详情 <i class="fa fa-angle-down"></i></span><span class="desc-retract" style="display:none">收起 <i class="fa fa-angle-up"></i></span></span>' : comment[i].commentText;
             innerHtml += '<div class="pl30 row mt20"><div class = "col-sm-2 pr0"><div class="text-center"><img src = "<?php echo $urlResImage; ?>doctor/user.png"></div><div class = "text-center text12">' + userName + '</div></div>' +
-                    '<div class = "col-sm-3"><div><strong>主刀专家：<?php echo $doctor->name; ?></strong></div><div><strong>确诊疾病：' + detail + '</strong></div>' +
+                    '<div class = "col-sm-3"><div><span>主刀专家：<?php echo $doctor->name; ?></span></div><div><span>确诊疾病：' + detail + '</span></div>' +
                     '<div class = "mt10 text14">治疗效果：<span>';
             for (var j = 1; j < 6; j++) {
                 if (j <= comment[i].effect) {

@@ -1,5 +1,6 @@
 <?php
 $news = array(
+    'jiazhuanxianjiejie' => '当甲状腺结节遇到达芬奇机器人',
     'forbes' => '福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选',
     'firstaid' => '8小时冒雪夜行驰援，医者仁心只为救死扶伤',
     'femalehealth' => '关爱女性健康，名医主刀与公益同行',

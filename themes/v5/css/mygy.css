@@ -31,5 +31,10 @@
 #mygy .title-picture{width:30%;}
 #mygy .line-83c4bd{border-bottom:3px solid #83c4bd;}
 .w70{width:70%;}
-#mygy .cutover .commonwealexpert .bx-pager{margin-bottom:-50px;}
+#mygy .cutover .commonwealexpert .bx-pager{margin-bottom:-20px;}
 #mygy .cutover .bx-viewport{overflow:visible!important;}
+#mygy .expList .expInfo:hover{box-shadow: 1px 1px 3px 3px #ddd;}
+#mygy .expList .expInfo:hover.explist-border{border-color: #19aea5;}
+#mygy .expList .explist-border{border:3px solid #87ccc5;}
+#mygy .expList .contracted-img {position: absolute;margin-top: 40px;right: 7px;width: 48px;height: 52px;background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146172568531110');background-repeat: no-repeat;}
+#mygy .cutover .commonwealexpert .bxslider{padding-left:0;min-height:680px;}
