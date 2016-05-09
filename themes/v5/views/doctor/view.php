@@ -137,7 +137,7 @@ $urlLoadDoctorArticle = $this->createUrl('api/doctor', array('api' => 7));
             if (isset($doctor->reasons) && arrayNotEmpty($doctor->reasons)) {
                 $reasons = $doctor->reasons;
                 ?>
-<!--                <div class="mt14 text18">推荐理由</div> 
+                <div class="mt14 text18">推荐理由</div> 
                 <div class="border-gray">
                     <div>
                         <div class="pl10 pt10 pb10">
@@ -148,7 +148,7 @@ $urlLoadDoctorArticle = $this->createUrl('api/doctor', array('api' => 7));
                             ?>
                         </div>
                     </div>
-                </div>-->
+                </div>
             <?php }
             ?>
             <?php
