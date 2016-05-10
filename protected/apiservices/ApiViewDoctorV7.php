@@ -84,9 +84,9 @@ class ApiViewDoctorV7 extends EApiViewService {
         if (arrayNotEmpty($diseaseDoctorJoin)) {
             $diseaseId = $diseaseDoctorJoin[0]->disease_id;
             $categoryDiseaseJoin = CategoryDiseaseJoin::model()->getById($diseaseId);
-            if (isset($categoryDiseaseJoin)) {
-                $this->subCatId = $categoryDiseaseJoin->getSubCatId();
-            }
+//            if (isset($categoryDiseaseJoin)) {
+//                $this->subCatId = $categoryDiseaseJoin->getSubCatId();
+//            }
             $this->setNavigation($this->subCatId);
             $doctors = Doctor::model()->getByDiseaseId($diseaseId, $this->doctor_id);
             if (isset($doctors)) {
