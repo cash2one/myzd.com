@@ -53,7 +53,7 @@ if (isClientWeixin()) {
 <div class="bg-green">
     <div class="container">
         <div class="user-crumbs">
-            <a href="<?php echo Yii::app()->homeUrl; ?>">首页666666</a>
+            <a href="<?php echo Yii::app()->homeUrl; ?>">首页777777777</a>
             >
             <a href="<?php echo $urlBookingList; ?>">个人中心</a>
             >
