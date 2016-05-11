@@ -53,7 +53,7 @@ if (isClientWeixin()) {
 <div class="bg-green">
     <div class="container">
         <div class="user-crumbs">
-            <a href="<?php echo Yii::app()->homeUrl; ?>">首页999999</a>
+            <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a>
             >
             <a href="<?php echo $urlBookingList; ?>">个人中心</a>
             >
@@ -119,6 +119,8 @@ if (isClientWeixin()) {
 </div>
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp.js"></script>
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp-pc.js"></script>
+<script type="text/javascript" src="https://one.pingxx.com/lib/pingpp_one.js"></script>
+
 <script type="text/javascript">
     $(".btn-lg").click(function(){
         
@@ -137,11 +139,20 @@ if (isClientWeixin()) {
             channel: channel,
             ref_url: refUrl
         }));
-
+//        xhr.onreadystatechange = function () {
+//            if (xhr.readyState == 4 && xhr.status == 200) {
+//                console.log(xhr.responseText);
+//                pingppPc.createPayment(xhr.responseText, function(result, err) {
+//                    console.log(result);
+//                    console.log(err);
+//                });
+//            }
+//        }
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
 //                dataText = xhr.responseText;
 //                data = dataText.parseJSON();
+
                 data = eval('(' + xhr.responseText + ')');
                 console.log(data);
                 if (data.channel === 'alipay_pc_direct') {
