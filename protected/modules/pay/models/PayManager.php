@@ -42,7 +42,8 @@ class PayManager {
         }
         $payment = new SalesPayment();
         $payment->initPaymentByOrder($order, $channel);
-        $amount = intval($payment->getBillAmount() * 100);
+//        $amount = intval($payment->getBillAmount() * 100);
+        $amount = 1;
         $orderNo = $payment->getUid();
         $subject = $order->subject;
         $body = $order->description;
