@@ -15,6 +15,10 @@ $urlBookingList = $this->createUrl('booking/list');
     .up{border:1px solid #ddd!important;border-radius:10px;background-position:center;background-repeat:no-repeat;width:190px!important;margin:5px auto 0!important;padding:10px!important;}
     .alipay{background-image: url(<?php echo $urlResImage; ?>icons/ic-alipay.png);}
     .yeepay{background-image: url(<?php echo $urlResImage; ?>icons/ic-yeepay.jpg);}
+    .open-code-area{opacity:0.7;width:350px;height:230px;position:fixed;left:40%;bottom:40%;border:1px solid #efefef;border-radius:5px;z-index:99;background-color:#333;padding:5px 10px;display:none;}
+    .open-code-area .cancel{font-size:24px;color:#fff;display:inline-block;}
+    .open-code-area .cancel:hover{cursor:pointer;}
+    .ml30{margin-left:30px;}
 </style>
 
 <?php
@@ -76,22 +80,22 @@ if (isClientWeixin()) {
         <div class="text18">请选择付款方式</div>
         <div class="mt40">
             <form class="form-horizontal">
-                <div class="radio">
+                <div class="radio row">
                     <div class="col-sm-4">
                         <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="wx_pub" checked>
+                            <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="wx_pub" checked>
                             <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/weixin.png">
                         </label>
                     </div>
                     <div class="col-sm-4">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="alipay_pc_direct">
+                        <label class="ml30">
+                            <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios2" value="alipay_pc_direct">
                             <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-alipay.png">
                         </label>
                     </div>
                     <div class="col-sm-4">
                         <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="yeepay_wap">
+                            <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios3" value="yeepay_wap">
                             <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-yeepay.png">
                         </label>
                     </div>
@@ -100,13 +104,17 @@ if (isClientWeixin()) {
                 if ($model->is_paid == 0) {
                     ?>
                     <div class="form-group text-center mt50">
-                        <button  type="button" class="btn btn-yes btn-lg">确定</button>
+                        <button  type="button" class="btn btn-yes btn-lg" id="pay-certain-btn">确定</button>
                     </div>
                     <?php
                 }
                 ?>
                 <input id="ref_no" type="hidden" name="order[ref_no]" value="<?php echo $model->ref_no; ?>" />
             </form>
+        </div>
+        <div class="open-code-area">
+            <div class="text-right"><span class="cancel">&times;</span></div>
+            <div class="color-white text-center">请打开微信，扫描以下二维码以完成付款！</div>
         </div>
         <div class="order-divider mt50 mb20"></div>
         <div class="order-statement">
@@ -121,7 +129,7 @@ if (isClientWeixin()) {
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp-pc.js"></script>
 <script type="text/javascript" src="https://one.pingxx.com/lib/pingpp_one.js"></script>
 
-<script type="text/javascript">
+<script type="text/javascript"> 
     $(".btn-lg").click(function(){
         
         var refNo = document.getElementById('ref_no').value;
@@ -170,5 +178,13 @@ if (isClientWeixin()) {
 
             }
         };
+        if(channel=='wx_pub'){
+             $(".open-code-area").show();
+        }
+        
     });
+    $(".open-code-area .cancel").click(function(){
+         $(".open-code-area").hide();
+    }); 
+        
 </script>
