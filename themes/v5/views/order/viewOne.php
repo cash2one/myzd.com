@@ -83,7 +83,7 @@ if (isClientWeixin()) {
                 <div class="radio row">
                     <div class="col-sm-4">
                         <label>
-                            <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="wx_pub" checked>
+                            <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="wx_pub_qr" checked>
                             <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/weixin.png">
                         </label>
                     </div>
@@ -114,7 +114,7 @@ if (isClientWeixin()) {
         </div>
         <div class="open-code-area">
             <div class="text-right"><span class="cancel">&times;</span></div>
-            <div class="color-white text-center">请打开微信，扫描以下二维码以完成付款！</div>
+            <div class="color-white text-center img_wx_pub_qr"></div>
         </div>
         <div class="order-divider mt50 mb20"></div>
         <div class="order-statement">
@@ -128,15 +128,16 @@ if (isClientWeixin()) {
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp.js"></script>
 <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp-pc.js"></script>
 <script type="text/javascript" src="https://one.pingxx.com/lib/pingpp_one.js"></script>
+<script type="text/javascript" src="http://cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 
-<script type="text/javascript"> 
-    $(".btn-lg").click(function(){
-        
+<script type="text/javascript">
+    $(".btn-lg").click(function () {
+
         var refNo = document.getElementById('ref_no').value;
-        
+
         var channel = $('input:radio[name=optionsRadios]:checked').val();
-        
-        
+
+
         var url = "<?php echo $payUrl; ?>";
         var refUrl = "<?php echo $refUrl . '?refno='; ?>" + refNo;
         var xhr = new XMLHttpRequest();
@@ -147,20 +148,8 @@ if (isClientWeixin()) {
             channel: channel,
             ref_url: refUrl
         }));
-//        xhr.onreadystatechange = function () {
-//            if (xhr.readyState == 4 && xhr.status == 200) {
-//                console.log(xhr.responseText);
-//                pingppPc.createPayment(xhr.responseText, function(result, err) {
-//                    console.log(result);
-//                    console.log(err);
-//                });
-//            }
-//        }
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
-//                dataText = xhr.responseText;
-//                data = dataText.parseJSON();
-
                 data = eval('(' + xhr.responseText + ')');
                 console.log(data);
                 if (data.channel === 'alipay_pc_direct') {
@@ -174,17 +163,22 @@ if (isClientWeixin()) {
 //                        console.log(err);
                     });
                 }
-
+                if (channel == 'wx_pub_qr') {
+                    $(".open-code-area").show();
+                      jQuery('.img_wx_pub_qr').text('');
+                      var img_wx_pub_qr = data.credential.wx_pub_qr;
+                    jQuery('.img_wx_pub_qr').qrcode({width: 200, height: 150, correctLevel: 0, text: img_wx_pub_qr});
+//                   $("#img_wx_pub_qr").attr('src',jQuery('.code').qrcode({width: 200, height: 200, correctLevel: 0, text: img_wx_pub_qr})); 
+//                    $("#img_wx_pub_qr").attr('src',jQuery('.code').qrcode({width: 200, height: 200, correctLevel: 0, text: img_wx_pub_qr})); 
+                }
 
             }
         };
-        if(channel=='wx_pub'){
-             $(".open-code-area").show();
-        }
-        
+
+
     });
-    $(".open-code-area .cancel").click(function(){
-         $(".open-code-area").hide();
-    }); 
-        
+    $(".open-code-area .cancel").click(function () {
+        $(".open-code-area").hide();
+    });
+
 </script>
