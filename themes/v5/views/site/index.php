@@ -11,9 +11,50 @@ $urlHopitalSearch = $this->createUrl('hospital/search');
 $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('disease_sub_category' => 1));
 $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 ?>
-<section id="site-content">
-    <div class="container-fluid bg-lunbo">
-        <div style="position:fixed;right:0;z-index:101;"><a href="<?php echo $this->createUrl('event/view', array('page' => 'mingyiyizhen')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146140424966697"></a></div>
+<style>
+    #home .department .dept-area .waike-home{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:0 0;width:195px;height:200px;display:inline-block;position:relative;}
+    #home .department .dept-area .guke-home{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:-195px 0;width:193px;height:200px;margin-right:2px;border-top:2px solid #f7f7f7;position:relative;}
+    #home .department .dept-area .fuchanke-home{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:-390px 0;width:193px;height:200px;margin-right:2px;border-top:2px solid #f7f7f7;position:relative;}
+    #home .department .dept-area .xiaoerke-home{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:-585px 0;width:193px;height:200px;margin-right:2px;border-top:2px solid #f7f7f7;position:relative;}
+    #home .department .dept-area .wuguanke-home{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:-780px 0;width:193px;height:200px;margin-right:2px;border-top:2px solid #f7f7f7;position:relative;}
+    #home .department .dept-area .neike-home{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:-975px 0;width:194px;height:200px;border-top:2px solid #f7f7f7;border-right:2px solid #f7f7f7;position:relative;}
+    #home .department .dept-area{float:left;}
+
+    #service-circuit-home .service-header{margin-top:50px;}
+    #service-circuit-home .service-header .content{background-color:#fff;text-align:center;font-size:21px;color:#555;border-left:1px solid #19aea5;border-right:1px solid #19aea5;width:100px;display:inline-block;line-height:21px;}
+    #service-circuit-home .service-header .short-line{border-top:1px solid #19aea5;width:20px;display:inline-block;margin-bottom:7px;}
+    #service-circuit-home .service-line{border:1px solid #dcdcdd;height:100px;margin-top:-13px;}
+    #service-circuit-home .service-circuit{margin-top:-19px;}
+    #service-circuit-home .service-circuit .step{float:left;width:20%;text-align:center;font-size:16px;}
+    #service-circuit-home .service-circuit .step .number-icon{background-color:#dcdcdd;color:#555;width:36px;height:36px;border-radius:18px;font-size:21px;text-align:center;display:inline-block;padding-top:3px;padding-left:1px;}
+    #service-circuit-home .service-circuit .step.active .number-icon{background-color:#5cb6af;color:#fff;width:36px;height:36px;border-radius:18px;font-size:21px;text-align:center;display:inline-block;padding-top:3px;padding-left:1px;}
+    #service-circuit-home .service-circuit .step.active .content{color:#5cb6af;}
+
+
+    @media (max-width: 1200px){.home-event-img{height:323px;}}
+    @media (max-width: 992px){.home-small-event-img{margin-left:15px!important;}}
+
+    .home-small-event-img{margin-left:-15px}
+    /*    搜索边框线色值：b4b5b5
+    搜索框里面的字段：9f9fa0
+    顶尖科室鼠标上去后效果：小儿外科字号：14      顶尖科室字号：18      GO：12      35x12
+    权威专家色值：87ccc5     150x400        科室：150x300
+    医生轮播背景色：f7f7f7*/
+
+    .home-expList .department-choose{background-color:#87ccc5;margin-left:1px;height:59px;line-height:73px;margin-bottom:1px;}
+    .home-expList .department-choose-last{background-color:#87ccc5;margin-left:1px;height:60px;line-height:73px;}
+    .home-expList .department-choose:hover,.home-expList .department-choose:hover .home-dept-small,.home-expList .category.active{opacity:0.7;}
+    .home-expList .department-choose-last:hover,.home-expList .department-choose-last:hover .home-dept-small{opacity:0.7;}
+    /*    .home-expList .department-choose:hover,.home-expList .department-choose-last:hover,.home-expList .department-choose:hover .home-waike-small{red}*/
+    .test{position:absolute;margin-left:120px;}
+
+    .home-event .learn-more-event a{color:#3973ac;}
+    .home-event .learn-more-event a:hover{text-decoration:underline;}
+    .home-expslider1,.home-expslider2,.home-expslider3{width:40px;height:5px;background-color:#87ccc5;display:inline-block;}
+</style>
+<section id="site-content" style="background-color:#fefefe;">
+    <div class="container-fluid bg-lunbo" style="height:500px;">
+<!--        <div style="position:fixed;right:0;z-index:101;"><a href="<?php echo $this->createUrl('event/view', array('page' => 'mingyiyizhen')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146140424966697"></a></div>-->
         <div class="row">
             <div class="container home-header ">
                 <div class="home-slogn text-center">
@@ -35,10 +76,9 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
     <div class="container-fluid home-search">
         <div class="row">
             <div class="container">
-                <div class="clearfix mt18"></div>
-                <div class="form-inline" id="home-search-form">
-                    <div class="form-group w100">
-                        <input type="text" class="form-control input-area disease-name" placeholder="请输入确诊疾病或医生姓名">
+                <div class="form-inline text-center" id="home-search-form">
+                    <div class="form-group search-frame">
+                        <input style="" type="text" class="form-control input-area disease-name" placeholder="请输入医生姓名、确诊疾病、医院名称">
                     </div>
                 </div>
                 <div id="search-display">
@@ -55,232 +95,244 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             </div>
         </div>
     </div>
-    <div class="container-fluid pb50 bg-gray">
+    <div class="container-fluid" id="home">
         <div class="row">
             <div class="container">
-                <div class="text-center title">
-                    <div class="title-lg">权威专家</div>
-                    <div class="title-sm">做手术就找名医主刀</div>			
-                </div>
-                <div class="expert">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs mt30" role="tablist">
-                        <li class="active category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank"><span class="waike-small"></span>外科</a></li>
-                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>" data-page="dept2" target="_blank"><span class="guke-small"></span>骨科</a></li>
-                        <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>" data-page="dept3" target="_blank"><span class="fuchanke-small"></span>妇产科</a></li>
-                        <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>" data-page="dept4" target="_blank"><span class="xiaoerke-small"></span>小儿外科</a></li>
-                        <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>" data-page="dept5" target="_blank"><span class="wuguanke-small"></span>五官科</a></li>
-                        <li class="category last"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>" data-page="dept6" target="_blank"><span class="neike-small"></span>内科</a></li>
-                    </ul>
-                    <!-- Tab panes -->
-                    <div class="tab-content expList">
-
-                    </div>
-                    <a href="<?php echo $urlDoctorSearchByDiseaseSubCategory; ?>" class="pull-right mt20 color-blue more-expert" target="_blank">更多专家></a>
+                <div class="department mt50">
+                    <div class="dept-area" style=""><div class="waike-home plline"><div class="waike-home-bottom dept-bottom-img"></div></div></div>
+                    <div class="dept-area"><div class="guke-home plline"><div class="guke-home-bottom dept-bottom-img"></div></div></div>
+                    <div class="dept-area"><div class="fuchanke-home plline"><div class="fuchanke-home-bottom dept-bottom-img"></div></div></div>
+                    <div class="dept-area"><div class="xiaoerke-home plline"><div class="xiaoerke-home-bottom dept-bottom-img"></div></div></div>
+                    <div class="dept-area"><div class="wuguanke-home plline"><div class="wuguanke-home-bottom dept-bottom-img"></div></div></div>
+                    <div class="dept-area"><div class="neike-home"><div class="neike-home-bottom dept-bottom-img"></div></div></div>
                     <div class="clearfix"></div>
+                </div>
+                <!--                <div class="expert">
+                                     Nav tabs 
+                                    <ul class="nav nav-tabs mt30" role="tablist">
+                                        <li class="active category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank"><span class="waike-small"></span>外科</a></li>
+                                        <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>" data-page="dept2" target="_blank"><span class="guke-small"></span>骨科</a></li>
+                                        <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>" data-page="dept3" target="_blank"><span class="fuchanke-small"></span>妇产科</a></li>
+                                        <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>" data-page="dept4" target="_blank"><span class="xiaoerke-small"></span>小儿外科</a></li>
+                                        <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>" data-page="dept5" target="_blank"><span class="wuguanke-small"></span>五官科</a></li>
+                                        <li class="category last"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>" data-page="dept6" target="_blank"><span class="neike-small"></span>内科</a></li>
+                                    </ul>
+                                     Tab panes 
+                                    <div class="tab-content expList">
+                
+                                    </div>
+                                    <a href="<?php echo $urlDoctorSearchByDiseaseSubCategory; ?>" class="pull-right mt20 color-blue more-expert" target="_blank">更多专家></a>
+                                    <div class="clearfix"></div>
+                                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="container mt50">
+                <div class="row">
+                    <div class="col-md-9 pr0">
+                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'shapinghealth')); ?>" target="_blank">
+                            <img class="img-responsive home-event-img" src="<?php echo $urlResImage; ?>home/zhuanti.jpg"/>
+                        </a>
+                    </div>
+                    <div class="col-md-3 pl0 pr0 home-small-event-img">
+                        <div><a href="<?php echo $this->createUrl('event/view', array('page' => 'mingyiyizhen')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>home/mingyiyizhen.jpg"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid " >
+
+    <!--   备份的医生切换 <div class="container-fluid mt50">
+            <div class="row">
+                <div class="container">
+                    <div class="row home-expList">
+                        <div class="col-md-3" style="">
+                            <div class="row">
+                                <div class="col-md-6 pr0"><div class="" style="background-color:#87ccc5;"><img src="<?php echo $urlResImage; ?>home/expert.png"></div></div>
+                                <div class="col-md-6 pl0 pr0">
+                                    <div class="text-center department-choose"><div class="home-waike-small home-dept-small"></div></div>
+                                    <div class="text-center department-choose"><div class="home-guke-small home-dept-small"></div></div>
+                                    <div class="text-center department-choose"><div class="home-wuguanke-small home-dept-small"></div></div>
+                                    <div class="text-center department-choose"><div class="home-fuchanke-small home-dept-small"></div></div>
+                                    <div class="text-center department-choose"><div class="home-xiaoerke-small home-dept-small"></div></div>
+                                    <div class="text-center department-choose-last"><div class="home-neike-small home-dept-small"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="tab-content expList">
+                                    <div role="tabpanel" class="tab-pane active" id="dept1">1</div>
+                                    <div role="tabpanel" class="tab-pane active" id="dept2">2</div>
+                                    <div role="tabpanel" class="tab-pane active" id="dept3">3</div>
+                                    <div role="tabpanel" class="tab-pane active" id="dept4">4</div>
+                                    <div role="tabpanel" class="tab-pane active" id="dept5">5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+    <div class="container-fluid mt50">
         <div class="row">
             <div class="container">
-                <div id="homeads" class="text-right mt50 mb50 img-responsive" >
+                <div class="row home-expList expert">
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-6 pr0"><div class="" style="background-color:#87ccc5;"><img src="<?php echo $urlResImage; ?>home/expert.png"></div></div>
+                            <div class="col-md-6 pl0">
+
+<!--                                <li class="active category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank"><span class="waike-small"></span>外科</a></li>
+                                <li class="category text-center"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>" data-page="dept2" target="_blank"><span class="guke-small"></span>骨科</a></li>
+                                <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>" data-page="dept3" target="_blank"><span class="fuchanke-small"></span>妇产科</a></li>
+                                <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>" data-page="dept4" target="_blank"><span class="xiaoerke-small"></span>小儿外科</a></li>
+                                <li class="category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>" data-page="dept5" target="_blank"><span class="wuguanke-small"></span>五官科</a></li>
+                                <li class="category last"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>" data-page="dept6" target="_blank"><span class="neike-small"></span>内科</a></li>-->
+
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <div class="text-center department-choose category active"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank"><div class="home-waike-small home-dept-small"></div></a></div>
+                                    <div class="text-center department-choose category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>" data-page="dept2" target="_blank"><div class="home-guke-small home-dept-small"></div></a></div>
+                                    <div class="text-center department-choose category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 21)); ?>" data-page="dept4" target="_blank"><div class="home-fuchanke-small home-dept-small"></div></a></div>
+                                    <div class="text-center department-choose category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>" data-page="dept3" target="_blank"><div class="home-wuguanke-small home-dept-small"></div></a></div>
+                                    <div class="text-center department-choose category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>" data-page="dept5" target="_blank"><div class="home-xiaoerke-small home-dept-small"></div></a></div>
+                                    <div class="text-center department-choose-last category"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 31)); ?>" data-page="dept6" target="_blank"><div class="home-neike-small home-dept-small"></div></a></div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content expList">
+                        </div>
+                        <div class="text-center"><span class="home-expslider1 ml10"></span><span class="home-expslider2 ml10"></span><span class="home-expslider3 ml10"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid " >
+        <div class="row">
+            <div class="container home-event">
+                <div id="homeads" class="text-right mt50 img-responsive" >
                     <div class="mt-fix">
                         <ul class="bxslider">                           
                         </ul>
                     </div>
                 </div>
+                <div class="text-right mt10"><div class="learn-more-event"><a href="<?php echo $this->createUrl('event/view', array('page' => 'eventList')); ?>" target="_blank">更多</a></div></div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bg-gray" >
+    <div class="container-fluid " >
         <div class="row">
-            <div class="container">           
-                <div class="text-center title">
-                    <div class="title-lg">顶尖科室</div>
-                    <div class="title-sm">做手术就找名医主刀</div>					
-                </div>         
-                <div class="row mt10 mb50">
-                    <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 1)); ?>">
-                            <div class="faculty waike pull-left"></div>
-                        </a>
+            <div class="container" id="service-circuit-home">
+                <div class="text-center service-header"><span class="short-line"></span><span class="content">服务流程</span><span class="short-line"></span></div>
+                <div class="service-line"></div>
+                <div class="service-circuit">
+                    <div class="step active" id="step1">
+                        <div class="number-icon">1</div>
+                        <div class="content">提交预约</div>
                     </div>
-                    <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 13)); ?>">
-                            <div class="faculty guke" style="float:left;margin-left:17px;"></div>
-                        </a>
+                    <div class="step" id="step2">
+                        <div class="number-icon">2</div>
+                        <div class="content">客服回访确认</div>
                     </div>
-                    <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 18)); ?>">
-                            <div class="faculty fuchanke pull-right"></div>
-                        </a>
+                    <div class="step" id="step3">
+                        <div class="number-icon">3</div>
+                        <div class="content">匹配对症专家</div>
                     </div>
-                    <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 21)); ?>">
-                            <div class="faculty xiaoerwaike pull-left"></div>
-                        </a>
+                    <div class="step" id="step4">
+                        <div class="number-icon">4</div>
+                        <div class="content">确定就诊时间</div>
                     </div>
-                    <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 28)); ?>">
-                            <div class="faculty wuguanke" style="float:left;margin-left:17px;"></div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4 mt20">
-                        <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 31)); ?>">
-                            <div class="faculty neike pull-right"></div>
-                        </a>
+                    <div class="step" id="step5">
+                        <div class="number-icon">5</div>
+                        <div class="content">前往医院就诊</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="container mt50">
+        <!--科室-->
+        <!--    <div class="container-fluid bg-gray" >
                 <div class="row">
-                    <div class="col-md-8">
-                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')); ?>" target="_blank">
-                            <img class="img-responsive h300" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009511426284"/>
-                        </a>
-                    </div>
-                    <div class="col-md-4 pl20">
-                        <div><span class="text18 color-blue">精彩推荐</span><img class="ml10 mb5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009740797424"><div class="pull-right change" href="#carousel-example-generic" role="button" data-slide="next">换一批</div><div class="clearfix"></div></div>
-                        <div><div class="divide-line-black"></div></div>
-
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-                            </ol>
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <div class="row">
-                                        <div class="col-sm-4 mt18">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'tumor')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518876857"/>
-                                                <div class="slider-text">滚蛋吧肿瘤君</div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-4 mt18">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'preliverdisease')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518887312"/>
-                                                <div class="slider-text">秋后肝病预防</div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-4 mt18">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'thyroid')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518891924"/>
-                                                <div class="slider-text">甲状腺预防</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-4 mt30">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'ruxianai')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518896777"/>
-                                                <div class="slider-text">关爱女性</div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-4 mt30">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinxueguan')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518900968"/>
-                                                <div class="slider-text">警惕心血管病</div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-4 mt30 ">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'guanxinbing')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518905090"/>
-                                                <div class="slider-text">预防冠心病</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-sm-4 mt18">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'ertai')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518910390"/>
-                                                <div class="slider-text">名医宝驾护航</div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-4 mt18">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'doctorInterview')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518914152"/>
-                                                <div class="slider-text">任善成专访</div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-4 mt18">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'dididoctor')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518938826"/>
-                                                <div class="slider-text">滴滴医生</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="row"> 
-                                        <div class="col-sm-4 mt30">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'nationalday')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14600951894636"/>
-                                                <div class="slider-text">摔伤怎么办</div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-4 mt30">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'rectalcancer')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518950937"/>
-                                                <div class="slider-text">大肠癌</div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-4 mt30">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518933336"/>
-                                                <div class="slider-text">陆劲松专访</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row" style="margin-bottom:148px;">
-                                        <div class="col-sm-4 mt18">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinyabang')); ?>" target="_blank">
-                                                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009518955758"/>
-                                                <div class="slider-text">50强榜单</div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-4 mt18">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'prince')); ?>" target="_blank">
-                                                <img style="border-radius:4px;" class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146174922041850"/>
-                                                <div class="slider-text">王子寻医记</div>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-4 mt18">
-                                            <a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank">
-                                                <img style="border-radius:4px;" class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146174922057390"/>
-                                                <div class="slider-text">肿块险成癌</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="container">           
+                        <div class="text-center title">
+                            <div class="title-lg">顶尖科室</div>
+                            <div class="title-sm">做手术就找名医主刀</div>					
+                        </div>         
+                        <div class="row mt10 mb50">
+                            <div class="col-sm-6 col-md-4 mt20">
+                                <a target="_blank" href="<?php //echo $this->createUrl('hospital/top', array('disease_sub_category' => 1));             ?>">
+                                    <div class="faculty waike pull-left"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt20">
+                                <a target="_blank" href="<?php //echo $this->createUrl('hospital/top', array('disease_sub_category' => 13));             ?>">
+                                    <div class="faculty guke" style="float:left;margin-left:17px;"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt20">
+                                <a target="_blank" href="<?php // echo $this->createUrl('hospital/top', array('disease_sub_category' => 18));             ?>">
+                                    <div class="faculty fuchanke pull-right"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt20">
+                                <a target="_blank" href="<?php //echo $this->createUrl('hospital/top', array('disease_sub_category' => 21));             ?>">
+                                    <div class="faculty xiaoerwaike pull-left"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt20">
+                                <a target="_blank" href="<?php // echo $this->createUrl('hospital/top', array('disease_sub_category' => 28));             ?>">
+                                    <div class="faculty wuguanke" style="float:left;margin-left:17px;"></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt20">
+                                <a target="_blank" href="<?php // echo $this->createUrl('hospital/top', array('disease_sub_category' => 31));             ?>">
+                                    <div class="faculty neike pull-right"></div>
+                                </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div>-->
+
 </section>
 <script>
     $(document).ready(function () {
+        $('#home .department .dept-area').hover(function () {
+            $('.dept-bottom-img', this).stop().animate({
+                height: '80px'
+            });
+        }, function () {
+            $('.dept-bottom-img', this).stop().animate({
+                height: '0'
+            });
+        });
         $html = '<li><div class="shapinghealth"><a href="<?php echo $this->createUrl('event/view', array('page' => 'shapinghealth')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146156825972489" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="winegirl"><a href="<?php echo $this->createUrl('event/view', array('page' => 'winegirl')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14607127350956" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="robot"><a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492190148" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="cataract"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cataract')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492155191" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
+        //服务流程步骤跳转
+        var i = 2;
+        function stepActive() {
+            if (i < 6) {
+                $(".service-circuit .step").removeClass("active");
+                $(".service-circuit #step" + i).addClass("active");
+                i++;
+            }
+            if (i == 6) {
+                i = 1;
+            }
+        }
+        setInterval(stepActive, 3000);
 
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
