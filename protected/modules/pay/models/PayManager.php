@@ -94,8 +94,8 @@ class PayManager {
         switch ($channel) {
             case 'alipay_pc_direct':
                 $extra = array(
-                    'success_url' => 'http://test.mingyizd.com/payment/alipayReturn'  //test
-//                    'success_url' => 'http://www.mingyizhudao.com/payment/alipayReturn' //prod
+//                    'success_url' => 'http://test.mingyizd.com/payment/alipayReturn'  //test
+                    'success_url' => 'http://pc.dev.mingyizd.com/payment/alipayReturn' //prod
                 );
                 break;
             case 'alipay_wap':
@@ -139,7 +139,8 @@ class PayManager {
                     'terminal_type' => 3,
                     'terminal_id' => 'chuangxian10012471338',
                     'user_ua' => Yii::app()->request->getUserAgent(),
-                    'result_url' => 'http://mingyizhudao.com/payment/yeepayReturn?outno=' . $payment->getUid()
+//                    'result_url' => 'http://mingyizhudao.com/payment/yeepayReturn?outno=' . $payment->getUid()
+                    'result_url' => 'http://pc.dev.mingyizd.com/payment/yeepayReturn?outno=' . $payment->getUid()
                 );
                 break;
             case 'jdpay_wap':
