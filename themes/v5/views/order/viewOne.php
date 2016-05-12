@@ -112,9 +112,10 @@ if (isClientWeixin()) {
                 <input id="ref_no" type="hidden" name="order[ref_no]" value="<?php echo $model->ref_no; ?>" />
             </form>
         </div>
-        <div class="open-code-area">
-            <div class="text-right"><span class="cancel">&times;</span></div>
+        <div class="open-code-area">      
+            <div class="text-right"><span class="color-white text-center">请打开微信，扫描以下二维码以完成付款</span><span class="cancel">&times;</span></div> 
             <div class="color-white text-center img_wx_pub_qr"></div>
+            <div class="color-white text-center">还剩<span class="test"></span>秒</div>
         </div>
         <div class="order-divider mt50 mb20"></div>
         <div class="order-statement">
@@ -132,6 +133,19 @@ if (isClientWeixin()) {
 
 <script type="text/javascript">
     $(".btn-lg").click(function () {
+        $(".btn-lg").attr("disabled", true);
+        var timer = 30;
+        timerId = setInterval(function () { 
+            timer--;
+            if (timer > 0) {
+                $('.test').html(timer);
+            } else {
+                $('.open-code-area').hide();
+                clearInterval(timerId);
+                timerId = null;
+                $(".btn-lg").attr("disabled", false);
+            }
+        }, 1000);
 
         var refNo = document.getElementById('ref_no').value;
 
@@ -165,8 +179,8 @@ if (isClientWeixin()) {
                 }
                 if (channel == 'wx_pub_qr') {
                     $(".open-code-area").show();
-                      jQuery('.img_wx_pub_qr').text('');
-                      var img_wx_pub_qr = data.credential.wx_pub_qr;
+                    jQuery('.img_wx_pub_qr').text('');
+                    var img_wx_pub_qr = data.credential.wx_pub_qr;
                     jQuery('.img_wx_pub_qr').qrcode({width: 200, height: 150, correctLevel: 0, text: img_wx_pub_qr});
 //                   $("#img_wx_pub_qr").attr('src',jQuery('.code').qrcode({width: 200, height: 200, correctLevel: 0, text: img_wx_pub_qr})); 
 //                    $("#img_wx_pub_qr").attr('src',jQuery('.code').qrcode({width: 200, height: 200, correctLevel: 0, text: img_wx_pub_qr})); 
@@ -178,6 +192,9 @@ if (isClientWeixin()) {
 
     });
     $(".open-code-area .cancel").click(function () {
+        clearInterval(timerId);
+        timerId = null;
+        $(".btn-lg").attr("disabled", false);
         $(".open-code-area").hide();
     });
 
