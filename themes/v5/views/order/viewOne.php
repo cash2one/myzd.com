@@ -30,6 +30,7 @@ $urlBookingList = $this->createUrl('booking/list');
 $this->show_baidushangqiao = false;
 $refno = $model->getRefNo();
 $payUrl = $this->createAbsoluteUrl('pay/payment/doPingxxPay');  // url of creating payment request.
+
 $refUrl = $this->createAbsoluteUrl('order/view', array('refno' => $refno)); // 
 //$currentUrl = Yii::app()->request->getHostInfo() . Yii::app()->request->getUrl();    // url of this currently requested page.
 
