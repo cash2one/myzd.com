@@ -162,6 +162,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <div class="pl20 mt30">
                                 <div class="bookingInfo">患者姓名：<?php echo $booking->patientName; ?></div>
                                 <div class="bookingInfo">联系方式：<?php echo $booking->mobile; ?></div>
+                                <?php if(empty($paid_count)):?><div class="bookingInfo"> 支付费用：已支付预约金<?php echo $paid_count; ?>元</div><?php endif;?>
                             </div>
                         </div>
                         <div class="col-md-4">
