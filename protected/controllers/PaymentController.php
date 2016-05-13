@@ -220,6 +220,7 @@ class PaymentController extends WebsiteController {
         $payment = SalesPayment::model()->getByAttributes(array('uid' => $paymentcode), array('paymentOrder'));
 //        print_r(CJSON::decode(CJSON::encode($payment)));exit;
         $order = $payment->paymentOrder;
+        print_r($order);exit;
         if ($order === NULL) {
             throw new CHttpException(404, 'The requested page does not exist.');
         }
