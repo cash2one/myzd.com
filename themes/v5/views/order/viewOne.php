@@ -21,7 +21,7 @@ $urlBookingList = $this->createUrl('booking/list');
     .ml30{margin-left:30px;}
     .mt5{margin-top:5px;}
     .img_wx_pub_qr>canvas{border:3px solid #fff;}
-/*    .img_wx_pub_qr{border:3px solid #fff;}*/
+    /*    .img_wx_pub_qr{border:3px solid #fff;}*/
 </style>
 
 <?php
@@ -80,38 +80,41 @@ if (isClientWeixin()) {
             <div><span>预约专家：</span><span><?php echo $model->expected_doctor_name ?>（<?php echo $model->expected_hospital_name ?> - <?php echo $model->expected_hp_dept_name ?>）</span></div>
         </div>
         <div class="order-divider mt20 mb20"></div>
-        <div class="text18">请选择付款方式</div>
-        <div class="mt40">
-            <form class="form-horizontal">
-                <div class="radio row">
-                    <div class="col-sm-4">
-                        <label>
-                            <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="wx_pub_qr" checked>
-                            <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/weixin.png">
-                        </label>
+        <?php
+        if ($model->is_paid == 0) {
+            ?>
+            <div class="text18">请选择付款方式</div>
+            <div class="mt40">
+                <form class="form-horizontal">
+                    <div class="radio row">
+                        <div class="col-sm-4">
+                            <label>
+                                <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="wx_pub_qr" checked>
+                                <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/weixin.png">
+                            </label>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <label>
+                                <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios2" value="alipay_pc_direct">
+                                <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-alipay.png">
+                            </label>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <label>
+                                <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios3" value="yeepay_wap">
+                                <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-yeepay.png">
+                            </label>
+                        </div>
                     </div>
-                    <div class="col-sm-4 text-center">
-                        <label>
-                            <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios2" value="alipay_pc_direct">
-                            <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-alipay.png">
-                        </label>
-                    </div>
-                    <div class="col-sm-4 text-center">
-                        <label>
-                            <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios3" value="yeepay_wap">
-                            <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-yeepay.png">
-                        </label>
-                    </div>
-                </div>
-                <?php
-                if ($model->is_paid == 0) {
-                    ?>
+
                     <div class="form-group text-center mt50">
                         <button  type="button" class="btn btn-yes btn-lg" id="pay-certain-btn">确定</button>
                     </div>
                     <?php
-                }
+                }else{
                 ?>
+                    付款成功
+                <?php }?>
                 <input id="ref_no" type="hidden" name="order[ref_no]" value="<?php echo $model->ref_no; ?>" />
             </form>
         </div>
@@ -139,7 +142,7 @@ if (isClientWeixin()) {
     $(".btn-lg").click(function () {
         $(".btn-lg").attr("disabled", true);
         var timer = 30;
-        timerId = setInterval(function () { 
+        timerId = setInterval(function () {
             timer--;
             if (timer > 0) {
                 $('.test').html(timer);
@@ -148,6 +151,7 @@ if (isClientWeixin()) {
                 clearInterval(timerId);
                 timerId = null;
                 $(".btn-lg").attr("disabled", false);
+                 location.reload();   
             }
         }, 1000);
 
@@ -200,6 +204,7 @@ if (isClientWeixin()) {
         timerId = null;
         $(".btn-lg").attr("disabled", false);
         $(".open-code-area").hide();
+        location.reload();   
     });
 
 </script>
