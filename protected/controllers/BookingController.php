@@ -71,13 +71,19 @@ class BookingController extends WebsiteController {
         $cri->condition = 'bk_id = :bk_id and is_paid = 1';
         $cri->params = array(':bk_id' => $id);
         $salesOrder_res = SalesOrder::model()->findAll($cri);
-        $paid_count = 0;
+        $data= array();
+        $data['paid_count'] = 0;
         if (!empty($salesOrder_res)) {
             foreach ($salesOrder_res as $val) {
-                $paid_count = $val['final_amount'] + $paid_count;
+                if($val->order_type != 'deposit'){
+                    $data['paid_count'] = $val['final_amount'] +  $data['paid_count'];
+                }else{
+                    $data['deposit_count'] = $val['final_amount'];
+                }
+                
             }
         }
-        return $paid_count;
+        return $data;
     }
 
     /**
