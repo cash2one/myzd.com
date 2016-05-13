@@ -227,7 +227,7 @@ class PaymentController extends WebsiteController {
         $this->show_baidushangqiao = false;
         header($this->createUrl('booking/userBooking').'/'.$order->bk_id);
         exit;
-        $this->render('result', array('model' => $order));
+//        $this->render('result', array('model' => $order));
     }
 
     /*
