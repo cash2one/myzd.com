@@ -49,9 +49,13 @@ $(document).ready(function () {
     $('.expert .nav-tabs .category').mouseover(function () {
         $('.expert .nav-tabs .category').removeClass('active');
         $(this).addClass('active');
-        var pageId = '#' + $(this).find('a').attr('data-page');
-        $('.expert .expList .tab-pane').removeClass('active');
+        var pageId = '#' + $(this).attr('data-page');
+        $('.expert .expList-tab .tab-pane').removeClass('active');
         $(pageId).addClass('active');
+        $('.expgroup-slider').removeClass('active');
+        $('.first-expgroup').addClass('active');
+        $('.home-expslider').removeClass('active');
+        $('.home-expslider:first').addClass('active');
     });
 });
 function ajaxLoadDoctor(urlLoadDoctor, urlDoctorView) {
@@ -78,13 +82,16 @@ function setDoctorHtml(data, urlDoctorView) {
             } else {
                 active = '';
             }
-            innerHtml += '<div role="tabpanel" class="tab-pane ' + active + '" id="dept' + x + '"><div class="row expList mt15" ><ul class="bxslider">';
+            innerHtml += '<div role="tabpanel" class="tab-pane ' + active + '" id="dept' + x + '"><div class="row expList" >';
             var doctors = disease_category[x];
             for (var i = 0; i < doctors.length; i++) {
                 var doctor = doctors[i];
                 var contractedImg = doctor.isContracted == 1 ? '<div class="contracted-img"></div>' : '';
                 var isMingyiyizhenImg = doctor.ServiceId == 2 ? '<div class="mingyiyizhen-img pull-right"></div>' : '';
-                innerHtml += '<li><div class="col-md-4" ><a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
+                if(i==0){innerHtml+='<li class="first-expgroup expgroup-slider active">'}
+                if(i==3){innerHtml+='<li class="second-expgroup expgroup-slider">'}
+                if(i==6){innerHtml+='<li class="third-expgroup expgroup-slider">'}
+                innerHtml += '<div class="col-md-4" ><a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                         '<div class="expInfo text-center bg-white explist-border">' +
                         contractedImg + isMingyiyizhenImg +
                         '<div><img class="img100" src="' + doctor.imageUrl + '"/></div>' +
@@ -95,13 +102,13 @@ function setDoctorHtml(data, urlDoctorView) {
                         '</div>' +
                         '</a>' +
                         '</div>';
+                if(i==2 || i==5 || i==8){innerHtml+='</li>'}
             }
-            innerHtml += '</li></ul></div></div>';
+            innerHtml += '</div></div>';    
         }
-
-        $('.expList').html(innerHtml);
-    }
-
+        $('.expList-tab').html(innerHtml);
+    };
+    
 }
 
 

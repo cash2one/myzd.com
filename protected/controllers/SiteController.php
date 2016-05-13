@@ -34,32 +34,30 @@ class SiteController extends WebsiteController {
         $this->handleMobileBrowserRedirect();
 
         //第三方预约
-        if(isset($_GET['appId']) && isset($_GET['timestamp']) && isset($_GET['sign'])){
+        if (isset($_GET['appId']) && isset($_GET['timestamp']) && isset($_GET['sign'])) {
             $now = time();
-            $oneDay = 3600*24;
+            $oneDay = 3600 * 24;
             $timestamp = $_GET['timestamp'];
-            if($timestamp <= ($now+$oneDay) && $timestamp >= ($now-$oneDay)){
+            if ($timestamp <= ($now + $oneDay) && $timestamp >= ($now - $oneDay)) {
                 $appVendor = new AppVendor();
                 $appKey = $appVendor->getByAppId($_GET['appId']);
 
-                if(isset($appKey)){
-                    if(checkSignature(array('appId'=>$_GET['appId'],'timestamp'=>$_GET['timestamp']), $appKey->app_secret, $_GET['sign'])){
+                if (isset($appKey)) {
+                    if (checkSignature(array('appId' => $_GET['appId'], 'timestamp' => $_GET['timestamp']), $appKey->app_secret, $_GET['sign'])) {
 
                         Yii::app()->session['vendorId'] = $appKey->id;
                         $this->storeAppAccessInfo($appKey->id);
-                    }else{
+                    } else {
                         unset(Yii::app()->session['vendorId']);
-                        $this->renderJsonOutput(array('status'=>EApiViewService::RESPONSE_NO, 'errorCode'=>3, 'errorMsg'=>'sign error'));
+                        $this->renderJsonOutput(array('status' => EApiViewService::RESPONSE_NO, 'errorCode' => 3, 'errorMsg' => 'sign error'));
                     }
-
-                }else{
+                } else {
                     unset(Yii::app()->session['vendorId']);
-                    $this->renderJsonOutput(array('status'=>EApiViewService::RESPONSE_NO, 'errorCode'=>2, 'errorMsg'=>'vendor error'));
+                    $this->renderJsonOutput(array('status' => EApiViewService::RESPONSE_NO, 'errorCode' => 2, 'errorMsg' => 'vendor error'));
                 }
-
-            }else{
+            } else {
                 unset(Yii::app()->session['vendorId']);
-                $this->renderJsonOutput(array('status'=>EApiViewService::RESPONSE_NO, 'errorCode'=>1, 'errorMsg'=>'the request has expired'));
+                $this->renderJsonOutput(array('status' => EApiViewService::RESPONSE_NO, 'errorCode' => 1, 'errorMsg' => 'the request has expired'));
             }
         }
 
@@ -199,7 +197,7 @@ class SiteController extends WebsiteController {
         if ($this->menu === null) {
             $this->menu = array(
                 'aboutus' => array('label' => '公司简介', 'url' => array('site/page', 'view' => 'aboutus')),
-                'bigevents' => array('label' => '大事记', 'url' => array('site/page', 'view' => 'bigevents')), 
+                'bigevents' => array('label' => '大事记', 'url' => array('site/page', 'view' => 'bigevents')),
                 'honors' => array('label' => '企业荣誉', 'url' => array('site/page', 'view' => 'honors')),
                 'news' => array('label' => '公司资讯', 'url' => array('site/page', 'view' => 'news')),
                 'joinus' => array('label' => '加入我们', 'url' => array('site/page', 'view' => 'joinus')),
@@ -252,4 +250,28 @@ class SiteController extends WebsiteController {
         } else
             return '关于我们';
     }
+
+    public function actionDownLoadFile($fileName) {
+        $filename = iconv("utf-8", "gb2312", $fileName);
+        // print_r($filename);exit;
+        $file_sub_path = $_SERVER['DOCUMENT_ROOT'] . Yii::app()->theme->baseUrl . '/downloads/mygy/' . $filename;
+        $file = fopen($file_sub_path, "rb");
+        Header("Content-type:   application/octet-stream ");
+        Header("Accept-Ranges:   bytes ");
+        if ($filename == 'weituoshu.docx') {
+            $filename = '委托书.docx';
+        } else if ($filename == 'mygy_shenqing.docx') {
+            $filename = '公益活动申请表.docx';
+        } else if ($filename == 'tepin_shenqing.docx') {
+            $filename = '特贫申请资助表.docx';
+        }
+        Header("Content-Disposition:   attachment;   filename= " . $filename);
+        $contents = "";
+        while (!feof($file)) {
+            $contents .= fread($file, 8192);
+        }
+        echo $contents;
+        fclose($file);
+    }
+
 }
