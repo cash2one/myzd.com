@@ -60,7 +60,24 @@ class BookingController extends WebsiteController {
     public function actionUserbooking($id) {
         $apisvc = new ApiViewUserBookingV7($id);
         $output = $apisvc->loadApiViewData();
-        $this->render('userBooking', array('data' => $output));
+        $this->render('userBooking', array('data' => $output, 'paid_count' => $this->_paycost($id)));
+    }
+
+    /**
+     * 支付费用
+     */
+    public function _paycost($id) {
+        $cri = new CDbCriteria();
+        $cri->condition = 'bk_id = :bk_id and is_paid = 1';
+        $cri->params = array(':bk_id' => $id);
+        $salesOrder_res = SalesOrder::model()->findAll($cri);
+        $paid_count = 0;
+        if (!empty($salesOrder_res)) {
+            foreach ($salesOrder_res as $val) {
+                $paid_count = $val['final_amount'] + $paid_count;
+            }
+        }
+        return $paid_count;
     }
 
     /**
@@ -248,8 +265,8 @@ class BookingController extends WebsiteController {
                         throw new CException('error saving data.');
                     }
                     $apiRequest = new ApiRequestUrl();
-                    //$remote_url = $apiRequest->getUrlAdminSalesBookingCreate() . '?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
-                     $remote_url =  'http://test.mingyizd.com/api/adminbooking?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
+//                    $remote_url = $apiRequest->getUrlAdminSalesBookingCreate() . '?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
+                    $remote_url = 'http://test.mingyizd.com/api/adminbooking?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
 //                     echo $remote_url;exit;
                     $data = $this->send_get($remote_url);
                     if ($data['status'] == "ok") {
