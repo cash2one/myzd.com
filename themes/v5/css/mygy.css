@@ -5,7 +5,7 @@
 #mygy .question .header{background-color:#87ccc5;padding:20px 20px 15px;font-size:24px;color:#fff;}
 #mygy .question .header .circle{line-height:20px;border-radius:8px;height:16px;width:16px;border:1px solid #fff;background-color:#87ccc5;display:inline-block;margin-right:5px;margin-bottom:-2px;}
 #mygy .question .content{border:1px solid #dcdcdd;padding:20px 30px;text-align:justify;}
-#mygy .flowChart{background-color:#fff;min-height:381px;}
+#mygy .flowChart{background-color:#fff;min-height:402px;}
 #mygy .flowChart .content .step{color:#666;}
 #mygy .flowChart .heading{font-size:24px;margin-bottom:5px;text-align:center;padding:20px 20px 15px;background-color:#87ccc5;color:#fff;}
 #mygy .flowChart .content{padding:25px 22px 0;}
@@ -38,3 +38,5 @@
 #mygy .expList .explist-border{border:3px solid #87ccc5;}
 #mygy .expList .contracted-img {position: absolute;margin-top: 40px;right: 7px;width: 48px;height: 52px;background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146172568531110');background-repeat: no-repeat;}
 #mygy .cutover .commonwealexpert .bxslider{padding-left:0;min-height:680px;}
+#mygy .mygy-textdownload{color:#036eb8;}
+#mygy .mygy-textdownload:hover{text-decoration:underline;}
