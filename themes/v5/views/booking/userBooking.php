@@ -134,7 +134,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 } else {
                                     $count_money= 0;
                                      foreach ($salesOrder as $i => $order) {
-                                         if($order->isPaid == 1){
+                                         if($order->isPaid == 1 && $order->orderTypeCode == 'service'){
                                              $count_money = $order->finalAmount + $count_money;
                                          }
                                          
