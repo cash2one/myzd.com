@@ -2,8 +2,7 @@
 
 class ApiRequestUrl {
 
-//    public $hostInfoProd = 'http://admin.mingyizd.com';
-    public $hostInfoProd = 'http://test.mingyizd.com';
+    public $hostInfoProd = 'http://admin.mingyizd.com';
     private $admin_salesbooking_create = 'api/adminbooking';
 
     public function getHostInfo() {
