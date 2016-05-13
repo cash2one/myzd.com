@@ -271,8 +271,8 @@ class BookingController extends WebsiteController {
                         throw new CException('error saving data.');
                     }
                     $apiRequest = new ApiRequestUrl();
-//                    $remote_url = $apiRequest->getUrlAdminSalesBookingCreate() . '?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
-                    $remote_url = 'http://test.mingyizd.com/api/adminbooking?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
+                    $remote_url = $apiRequest->getUrlAdminSalesBookingCreate() . '?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
+//                    $remote_url = 'http://test.mingyizd.com/api/adminbooking?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
 //                     echo $remote_url;exit;
                     $data = $this->send_get($remote_url);
                     if ($data['status'] == "ok") {
