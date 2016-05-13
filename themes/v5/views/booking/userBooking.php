@@ -74,20 +74,17 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
             <div class="pb40 border-gray mt10 pl20 pr20">
                 <div>
                     <?php
-                    if ($booking->status == StatCode::BK_STATUS_CANCELLED || $booking->status == StatCode::BK_STATUS_INVALID)
-                        {
+                    if ($booking->status == StatCode::BK_STATUS_CANCELLED || $booking->status == StatCode::BK_STATUS_INVALID) {
                         echo '<h4 class="text-center color-green text20 mt30">';
                         echo '<span >' . $booking->statusText . '</span>';
                         echo '</h4>';
-                    } else if ($booking->status == StatCode::BK_STATUS_PROCESSING)
-                        {
+                    } else if ($booking->status == StatCode::BK_STATUS_PROCESSING) {
                         echo '<div class="mt30"><h4 class="text-center color-green text20">
                         <span>状态：对接专家中... <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146286350628653"></span>
                         <span class="detail" data-toggle="tooltip" data-placement="right" title="*客服确认信息并匹配专家 ，如有需要会安排面诊 *因专家个人原因（如出国参加会议）无法按原有协商时间赴约的，名医助手会第一时间与您沟通其他时间，或为您推荐其他同级别专家名医。该情况不算违约。">声明</span>
                     </h4></div>';
                     } else {
-                        if (isset($data->results->salesOrder) && count($data->results->salesOrder) > 0)
-                            {
+                        if (isset($data->results->salesOrder) && count($data->results->salesOrder) > 0) {
                             $salesOrder = $data->results->salesOrder;
                             if ($booking->status == StatCode::BK_STATUS_NEW) {
                                 $order = $salesOrder[0];
@@ -107,24 +104,41 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             }
                             if ($booking->status == StatCode::BK_STATUS_SERVICE_UNPAID) {
                                 echo '<h4 class="text-center mt30 color-green text20 pb10"><span>状态：待付平台咨询费</span></h4>';
+                                $paid_all = 0;
                                 foreach ($salesOrder as $i => $order) {
-                                    if ($order->orderTypeCode == SalesOrder::ORDER_TYPE_SERVICE) {
-                                        if ($i == 0) {
-                                            $first = 'first';
-                                        } else {
-                                            $first = '';
-                                        }
-                                        if ($order->isPaid == 0) {
-                                            echo '<h4 class="text-center color-green text16 pb10 ' . $first . '">';
-                                            echo '<span>→请您支付' . $order->finalAmount . '元</span>';
-                                            echo '<span class="mt-26 ml10"><a target="_blank" href="' . $this->createUrl('order/view', array('refno' => $order->refNo)) . '" class="pay-btn btn btn-yes">立即支付</a></span>';
-                                        } else {
-                                            echo '<h4 class="text-center color-green text16 pb10 ' . $first . '">';
-                                            echo '<span>→请您支付' . $order->finalAmount . '元</span>';
-                                            echo '<span class="mt-26 ml10"><span class="pay-btn btn btn-disabled">已支付</span></span>';
-                                        }
-                                        echo '</h4>';
+                                    if ($order->is_paid == 0) {
+                                        $paid_all = 1;
                                     }
+                                }
+                                if ($paid_all == 1) {
+                                    foreach ($salesOrder as $i => $order) {
+                                        if ($order->orderTypeCode == SalesOrder::ORDER_TYPE_SERVICE) {
+                                            if ($i == 0) {
+                                                $first = 'first';
+                                            } else {
+                                                $first = '';
+                                            }
+                                            if ($order->isPaid == 0) {
+                                                echo '<h4 class="text-center color-green text16 pb10 ' . $first . '">';
+                                                echo '<span>→请您支付' . $order->finalAmount . '元</span>';
+                                                echo '<span class="mt-26 ml10"><a target="_blank" href="' . $this->createUrl('order/view', array('refno' => $order->refNo)) . '" class="pay-btn btn btn-yes">立即支付</a></span>';
+                                            } else {
+                                                echo '<h4 class="text-center color-green text16 pb10 ' . $first . '">';
+                                                echo '<span>→请您支付' . $order->finalAmount . '元</span>';
+                                                echo '<span class="mt-26 ml10"><span class="pay-btn btn btn-disabled">已支付</span></span>';
+                                            }
+                                            echo '</h4>';
+                                        }
+                                    }
+                                } else {
+                                    $count_money= 0;
+                                     foreach ($salesOrder as $i => $order) {
+                                         if($order->isPaid == 1){
+                                             $count_money = $order->final_amount + $count_money;
+                                         }
+                                         
+                                     }
+                                         echo '<h4 class="text-center mt30 color-green text20 pb10"><span>您已成功支付平台咨询费'. $count_money .'元</span></h4>';
                                 }
                             }
                         } else {
@@ -135,14 +149,14 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     }
                     ?>
                 </div>
-                <?php
-                if ($booking->status == StatCode::BK_STATUS_NEW) {
-                    echo '<div class="text-center text-red text12 mt10">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>';
-                }
-                if ($booking->status == StatCode::BK_STATUS_SERVICE_PAIDED || $booking->status == StatCode::BK_STATUS_DONE) {
-                    echo '<div class="text20 color-green text-center mt30">感谢您选择名医主刀！祝您手术顺利，早日康复！</div>';
-                }
-                ?>
+                    <?php
+                    if ($booking->status == StatCode::BK_STATUS_NEW) {
+                        echo '<div class="text-center text-red text12 mt10">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>';
+                    }
+                    if ($booking->status == StatCode::BK_STATUS_SERVICE_PAIDED || $booking->status == StatCode::BK_STATUS_DONE) {
+                        echo '<div class="text20 color-green text-center mt30">感谢您选择名医主刀！祝您手术顺利，早日康复！</div>';
+                    }
+                    ?>
                 <?php
                 if ($booking->status != 9) {
                     //echo '<div class="pt10"><div class="pull-right"><a class="color-status" href="' . $this->createUrl('booking/uploadFile', array('id' => $booking->id)) . '"><span class="">修改</span></a></div></div>';
@@ -162,8 +176,8 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <div class="pl20 mt30">
                                 <div class="bookingInfo">患者姓名：<?php echo $booking->patientName; ?></div>
                                 <div class="bookingInfo">联系方式：<?php echo $booking->mobile; ?></div>
-                                <span>支付费用：</span><?php if(!empty($paid_count['deposit_count'])):?><span class="bookingInfo"> 已支付预约金<?php echo $paid_count['deposit_count']; ?>元</span><?php endif;?>
-                                 <?php if(!empty($paid_count['deposit_count'])):?><span class="user-bookinginfo-white-block"></span><?php endif;?><?php if(!empty($paid_count['paid_count'])):?><span class="bookingInfo"> 已支付咨询费<?php echo $paid_count['paid_count']; ?>元</span><?php endif;?>
+                                <span>支付费用：</span><?php if (!empty($paid_count['deposit_count'])): ?><span class="bookingInfo"> 已支付预约金<?php echo $paid_count['deposit_count']; ?>元</span><?php endif; ?>
+<?php if (!empty($paid_count['deposit_count'])): ?><span class="user-bookinginfo-white-block"></span><?php endif; ?><?php if (!empty($paid_count['paid_count'])): ?><span class="bookingInfo"> 已支付咨询费<?php echo $paid_count['paid_count']; ?>元</span><?php endif; ?>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -187,11 +201,11 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <input id="bookingReport_type" type="hidden" name="booking[report_type]" value="mr" />
                         </form>
                         <div class="mt20">
-                            <?php
-                            if ($booking->status >= StatCode::BK_STATUS_NEW && $booking->status < StatCode::BK_STATUS_SERVICE_UNPAID) {
-                                $this->renderPartial('_uploadFile');
-                            }
-                            ?>
+<?php
+if ($booking->status >= StatCode::BK_STATUS_NEW && $booking->status < StatCode::BK_STATUS_SERVICE_UNPAID) {
+    $this->renderPartial('_uploadFile');
+}
+?>
                         </div>
                     </div>
                 </div>
