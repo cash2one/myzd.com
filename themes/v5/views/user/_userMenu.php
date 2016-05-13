@@ -26,7 +26,7 @@ $menus = array(
             </div>
         </div>
     </a>
-    <div class="mt10 border-green">
+    <div class="mt10 usermenu-border">
         <ul>
             <?php
             foreach ($menus as $key => $value) {

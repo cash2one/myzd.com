@@ -67,7 +67,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     </div> 
                 <?php } else if ($booking->status == StatCode:: BK_STATUS_INVALID || $booking->status == StatCode:: BK_STATUS_CANCELLED) {
                     ?>
-                    <div class="mt15"><img src="<?php echo $urlResImage; ?>user/cancel-step.png"></div>
+                    <div class="mt15"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146312719792390"></div>
                 <?php }
                 ?>
             </div>
