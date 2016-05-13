@@ -57,8 +57,8 @@ class PayManager {
             }
         }
         $extra = $this->createPingxxExtra($payment, $channel, $refurl, $yeepayIndentity);
-        \Pingpp\Pingpp::setApiKey('sk_test_W14qv9uPGuP4rbrnHKizLOaT');  // Ping++ test key.
-//        \Pingpp\Pingpp::setApiKey($config_res['setApiKey']);  // Ping++ live key.
+//        \Pingpp\Pingpp::setApiKey('sk_test_W14qv9uPGuP4rbrnHKizLOaT');  // Ping++ test key.
+        \Pingpp\Pingpp::setApiKey($config_res['setApiKey']);  // Ping++ live key.
 
         $requestArray = array(
             'subject' => $subject,
@@ -95,7 +95,8 @@ class PayManager {
             case 'alipay_pc_direct':
                 $extra = array(
 //                    'success_url' => 'http://test.mingyizd.com/payment/alipayReturn'  //test
-                    'success_url' => 'http://pc.dev.mingyizd.com/payment/alipayReturn' //prod
+                  //  'success_url' => 'http://pc.dev.mingyizd.com/payment/alipayReturn' //prod
+                     'success_url' => 'http://www.mingyizhudao.com/payment/alipayReturn' //prod
                 );
                 break;
             case 'alipay_wap':
