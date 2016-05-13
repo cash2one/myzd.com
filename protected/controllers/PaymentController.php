@@ -218,6 +218,7 @@ class PaymentController extends WebsiteController {
 
     public function actionPayResult($paymentcode) {
         $payment = SalesPayment::model()->getByAttributes(array('uid' => $paymentcode), array('paymentOrder'));
+//        print_r(CJSON::decode(CJSON::encode($payment)));exit;
         $order = $payment->paymentOrder;
         print_r($order);exit;
         if ($order === NULL) {
@@ -226,7 +227,7 @@ class PaymentController extends WebsiteController {
         $this->show_header = true;
         $this->show_footer = false;
         $this->show_baidushangqiao = false;
-        header($this->createUrl('booking/userBooking').'/'.$order->attributes->bk_id);
+
         $this->render('result', array('model' => $order));
     }
 
