@@ -15,10 +15,13 @@ $urlBookingList = $this->createUrl('booking/list');
     .up{border:1px solid #ddd!important;border-radius:10px;background-position:center;background-repeat:no-repeat;width:190px!important;margin:5px auto 0!important;padding:10px!important;}
     .alipay{background-image: url(<?php echo $urlResImage; ?>icons/ic-alipay.png);}
     .yeepay{background-image: url(<?php echo $urlResImage; ?>icons/ic-yeepay.jpg);}
-    .open-code-area{opacity:0.7;width:350px;height:230px;position:fixed;left:40%;bottom:40%;border:1px solid #efefef;border-radius:5px;z-index:99;background-color:#333;padding:5px 10px;display:none;}
+    .open-code-area{opacity:0.7;width:350px;height:250px;position:fixed;left:41%;bottom:40%;border:1px solid #efefef;border-radius:5px;z-index:99;background-color:#333;padding:0 10px;display:none;}
     .open-code-area .cancel{font-size:24px;color:#fff;display:inline-block;}
     .open-code-area .cancel:hover{cursor:pointer;}
     .ml30{margin-left:30px;}
+    .mt5{margin-top:5px;}
+    .img_wx_pub_qr>canvas{border:3px solid #fff;}
+/*    .img_wx_pub_qr{border:3px solid #fff;}*/
 </style>
 
 <?php
@@ -87,13 +90,13 @@ if (isClientWeixin()) {
                             <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/weixin.png">
                         </label>
                     </div>
-                    <div class="col-sm-4">
-                        <label class="ml30">
+                    <div class="col-sm-4 text-center">
+                        <label>
                             <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios2" value="alipay_pc_direct">
                             <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-alipay.png">
                         </label>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 text-center">
                         <label>
                             <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios3" value="yeepay_wap">
                             <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-yeepay.png">
@@ -112,10 +115,11 @@ if (isClientWeixin()) {
                 <input id="ref_no" type="hidden" name="order[ref_no]" value="<?php echo $model->ref_no; ?>" />
             </form>
         </div>
-        <div class="open-code-area">      
-            <div class="text-right"><span class="color-white text-center">请打开微信，扫描以下二维码以完成付款</span><span class="cancel">&times;</span></div> 
-            <div class="color-white text-center img_wx_pub_qr"></div>
-            <div class="color-white text-center">还剩<span class="test"></span>秒</div>
+        <div class="open-code-area">
+            <div class="text-right"><span class="cancel">&times;</span></div>
+            <div class="text-center"><span class="color-white text-center">请打开微信，扫描以下二维码以完成付款</span></div> 
+            <div class="color-white text-center img_wx_pub_qr mt15"></div>
+            <div class="color-white text-center mt5">还剩<span class="test"></span>秒</div>
         </div>
         <div class="order-divider mt50 mb20"></div>
         <div class="order-statement">
@@ -181,7 +185,7 @@ if (isClientWeixin()) {
                     $(".open-code-area").show();
                     jQuery('.img_wx_pub_qr').text('');
                     var img_wx_pub_qr = data.credential.wx_pub_qr;
-                    jQuery('.img_wx_pub_qr').qrcode({width: 200, height: 150, correctLevel: 0, text: img_wx_pub_qr});
+                    jQuery('.img_wx_pub_qr').qrcode({width: 130, height: 130, correctLevel: 0, text: img_wx_pub_qr});
 //                   $("#img_wx_pub_qr").attr('src',jQuery('.code').qrcode({width: 200, height: 200, correctLevel: 0, text: img_wx_pub_qr})); 
 //                    $("#img_wx_pub_qr").attr('src',jQuery('.code').qrcode({width: 200, height: 200, correctLevel: 0, text: img_wx_pub_qr})); 
                 }
