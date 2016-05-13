@@ -219,7 +219,6 @@ class PaymentController extends WebsiteController {
     public function actionPayResult($paymentcode) {
         $payment = SalesPayment::model()->getByAttributes(array('uid' => $paymentcode), array('paymentOrder'));
         $order = $payment->paymentOrder;
-        print_r($order);exit;
         if ($order === NULL) {
             throw new CHttpException(404, 'The requested page does not exist.');
         }
