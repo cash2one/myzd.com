@@ -17,31 +17,47 @@ $booking = $data->results->booking;
 <div class="container">
     <div class="row mt40">
         <div class="col-sm-3">
-            <?php $this->renderPartial('//user/_userMenu',array('pageActive'=>'bookinglist')); ?>
+            <?php $this->renderPartial('//user/_userMenu', array('pageActive' => 'bookinglist')); ?>
         </div>
         <div class="col-sm-9">
             <div class="">
-                <img class="img-responsive" src="<?php echo $urlResImage; ?>user/process.png">
+                <div class="user-header pl20 pr20">
+                    <div class="color-status text12 pull-left">预约单：<?php echo $booking->refNo; ?></div>
+                    <div class="pull-right color-status">*客服确认信息并匹配专家，如有需要会安排面诊</div>
+                    <div class="clearfix"></div>
+                    <div class="row ml20 mr20">
+                        <div class="col-sm-3 pr0"><div class="user-titleline"></div><div class="step-spot active"></div></div>
+                        <div class="col-sm-3 pr0 pl0"><div class="user-titleline"></div><div class="step-spot"></div></div>
+                        <div class="col-sm-3 pr0 pl0"><div class="user-titleline"></div><div class="step-spot"></div></div>
+                        <div class="col-sm-3 pl0"><div class="user-titleline"></div><div class="step-spot"></div><div class="step-spot-last pull-right"></div></div>
+                    </div>
+                    <div class="row ml20">
+                        <div class="col-sm-3 pr0 stepone color-78c7bb">提交订单</div>
+                        <div class="col-sm-3 pr0 pl0 steptwo">支付费用</div>
+                        <div class="col-sm-3 pr0 pl0 stepthree">安排中</div>
+                        <div class="col-sm-3 pl0 stepfour">确定手术时间<div class="pull-right stepfive">入院手术</div></div>
+                    </div>
+                </div>
             </div>
-            <div class="bookingSuccess border-green mt10 pl40 pr40 minh700">
+            <div class="bookingSuccess border-gray mt10 pl40 pr40 minh700">
                 <div class="row mt40">
                     <div class="col-md-8 min-h410p border-right mt10">
                         <div>
                             <h4 class="color-green">提交成功！请您上传病例资料：</h4>
                             <style>h4{margin-top:0!important;}</style>
                             <div class="mt20">
-                                <a href="<?php echo $this->createUrl('booking/uploadFile',array('id'=>$booking->id)); ?>" class="btn btn-yes mr20 w150p">上传影像资料</a>
-                                <a href="<?php echo $this->createUrl('booking/userBooking',array('id'=>$booking->id)); ?>" class="color-status text12 somewhat-add">稍后添加</a>
+                                <a href="<?php echo $this->createUrl('booking/uploadFile', array('id' => $booking->id)); ?>" class="btn btn-yes mr20 w150p">上传影像资料</a>
+                                <a href="<?php echo $this->createUrl('booking/userBooking', array('id' => $booking->id)); ?>" class="color-status text12 somewhat-add">稍后添加</a>
                             </div>
                             <div class="mt100">
-                                <a href="<?php echo $this->createUrl('booking/view',array('id'=>$booking->id)); ?>" class="showBookingInfo color-status text12">查看预约详情 <i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></a>
+                                <a href="<?php echo $this->createUrl('booking/view', array('id' => $booking->id)); ?>" class="showBookingInfo color-status text12">查看预约详情 <i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></a>
                             </div>
                             <div class="row mt10 bookingInfo">
                                 <div class="col-md-6">
-                                    <div>意向专家：<?php echo $booking->expertName ==''?'未填写':$booking->expertName; ?></div>
-                                    <div class="mt30">专家科室：<?php echo $booking->hpDeptName ==''?'未填写':$booking->hpDeptName; ?></div>
-                                    <div class="mt30">专家医院：<?php echo $booking->hpName ==''?'未填写':$booking->hpName; ?></div>
-                                    <div class="mt30">意向日期：<?php echo $booking->dateStart.' -- '.$booking->dateEnd; ?></div>
+                                    <div>意向专家：<?php echo $booking->expertName == '' ? '未填写' : $booking->expertName; ?></div>
+                                    <div class="mt30">专家科室：<?php echo $booking->hpDeptName == '' ? '未填写' : $booking->hpDeptName; ?></div>
+                                    <div class="mt30">专家医院：<?php echo $booking->hpName == '' ? '未填写' : $booking->hpName; ?></div>
+                                    <div class="mt30">意向日期：<?php echo $booking->dateStart . ' -- ' . $booking->dateEnd; ?></div>
                                 </div>
                                 <div class="col-md-6 border-left-dashed">
                                     <div>患者姓名：<?php echo $booking->patientName; ?></div>
@@ -72,8 +88,8 @@ $booking = $data->results->booking;
     </div>
 </div>
 <script>
-    $(document).ready(function(){
-        $('.showBookingInfo').click(function(e){
+    $(document).ready(function () {
+        $('.showBookingInfo').click(function (e) {
             e.preventDefault();
             $('.showBookingInfo .fa-angle-right').toggle();
             $('.showBookingInfo .fa-angle-down').toggle();

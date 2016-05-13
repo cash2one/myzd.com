@@ -26,7 +26,7 @@ $urlReturn = $this->createUrl('booking/userBooking',array('id'=>$booking->id));
             <div class="">
                 <img class="img-responsive" src="<?php echo $urlResImage; ?>user/process.png">
             </div>
-            <div class="bookingSuccess border-green mt10 pl40 pr40 minh700">
+            <div class="bookingSuccess border-gray mt10 pl40 pr40 minh700">
                 <div class="row mt40">
                     <div class="col-md-8 border-right mt10 min-h410p">
                         <div>

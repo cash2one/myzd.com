@@ -8,11 +8,12 @@ a.color-status:hover{cursor: pointer;}
 .mt-20{margin-top:-20px;}
 .lineheight2-5em{line-height:2em;}
 .color-status:hover,.color-status:visited,.color-status:focus{color:#185396;}
-.user-crumbs{padding: 10px 0;color: #fff;}
+.user-crumbs{padding: 10px 0;color: #fff;font-size:16px;}
 .user-crumbs>a{color: #fff;}
-.login-menu .personalcenter{padding:15px 0;font-size: 15px;border: 1px solid #78c7bb;color: #78c7bb;min-height: 113px;}
+.login-menu .usermenu-border{border:1px solid #e4e4e4;border-bottom:0!important;}
+.login-menu .personalcenter{padding:15px 0;font-size: 15px;border: 1px solid #e4e4e4;color: #78c7bb;min-height: 113px;}
 .login-menu ul{padding: 0;margin-bottom: 0;font-size: 14px;}
-.login-menu ul>li{border-bottom: 1px solid #78c7bb;}
+.login-menu ul>li{border-bottom: 1px solid #e4e4e4;}
 .login-menu ul>li>a{display:block;padding: 10px 0;font-size: 16px;padding-left: 5em;color:#25aea6;}
 .login-menu ul>li.last{border: 0;}
 .login-menu ul>li>a.active{background-color: #78c7bb;color: #fff;}
@@ -26,20 +27,20 @@ a.color-status:hover{cursor: pointer;}
 .login-menu ul>li>.help.active .icon-img{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447545314');background-position: -40px 0;}
 .login-menu ul>li>.back.active .icon-img{background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447545314');background-position: -60px 0;}
 .login-menu ul .menu-header{text-align: left;font-size: 15px;font-weight: bold;padding: 10px 10px;}
-.user-header{border: 1px solid #21a59c;min-height: 100px;}
+.user-header{border: 1px solid #e4e4e4;min-height: 100px;}
 /**** bookinglist ****/
 .bookinglist{padding-bottom: 20px;}
 .bookinglist .table{font-size: 14px;}
 .bookinglist .table thead{padding: 10px 0;background-color: #78c7bb;color: #fff;border: 1px solid #78c7bb;font-size: 16px;}
 .bookinglist .table>thead>tr>td{line-height: 1.5em;padding: 10px 0;}
-.bookinglist .table>tbody>tr{border-bottom: 1px solid #eeefef;}
+.bookinglist .table>tbody>tr{border-bottom: 1px solid #e4e4e4;}
 .bookinglist .table>tbody>tr>td{vertical-align: middle;}
 @media (min-width: 768px){#cancelOrder .modal-dialog.modal-sm {margin: 200px auto 30px;width: 400px;}}
 #cancelOrder .modal-dialog.modal-sm .modal-body{padding-bottom: 40px;}
 .pad8{padding: 10px 8px!important;}
 //.bookinglist .table>tbody>tr>td a{color: #31708f;}
 /**** bookingView ****/
-.bookingView .user-header{min-height:113px;padding-top:10px;}
+.bookingView .user-header{min-height:113px;padding-top:20px;}
 .bookingView .user-header .pay-btn{position: absolute;margin-left: 20px;margin-top: -5px;}
 .bookingView{padding-bottom: 40px;}
 .content-header{font-size: 16px;background-color: #78c7bb;color: #fff;padding: 10px 20px;border-bottom: 1px solid #78c7bb;}
@@ -47,12 +48,14 @@ a.color-status:hover{cursor: pointer;}
 .bookingView .border-right{border-right: 1px dashed #ddd;}
 .bookingView .row>.col-md-4{min-height: 235px;}
 .bookingView .mrfile span{vertical-align: bottom;}
+.bookingView .booking-order{font-weight:bold;font-size:16px;margin-top:50px;padding-left:20px;}
 /**** paySuccess ****/
 .user-header{min-height:113px;padding-top:10px;}
 .paySuccess .detail{position: absolute;border: 1px solid #31708f;color: #31708f;font-size: 12px;padding: 2px 3px;margin-top: -1em;}
 .paySuccess .detail:hover{cursor: pointer;}
-.paySuccess .user-header .tooltip.right .tooltip-arrow {border-right-color: #31708f;}
-.paySuccess .user-header .tooltip-inner {max-width: 140px;padding: 3px 8px;color: #f00;text-align: left;text-decoration: none;background-color: #fff;border-radius: 4px;border: 1px solid #31708f;}
+.paySuccess .tooltip.right .tooltip-arrow {border-right-color: #31708f;}
+.paySuccess .tooltip.bottom .tooltip-arrow{border-bottom-color: #31708f;}
+.paySuccess .tooltip-inner {max-width: 252px;padding: 3px 8px;color: #f00;text-align: left;text-decoration: none;background-color: #fff;border-radius: 4px;border: 1px solid #31708f;}
 .paySuccess ul{padding-left: 18px;}
 .paySuccess ul li{list-style: disc;font-size: 15px;color: #9f9fa0;margin-bottom: 15px;}
 .paySuccess .bookingInfo{padding: 20px;border: 1px solid #9f9fa0;border-radius: 15px;margin:10px 100px 0;}
@@ -87,7 +90,11 @@ a.color-status:hover{cursor: pointer;}
 .text-red{color: #f00;}
 .bg-green{background-color: #78c7bb;}
 .border-green{border: 1px solid #78c7bb;}
+/*.border-gray{border:1px solid #b5b5b5!important;}*/
 .color-gray{color: #9f9fa0;}
+.mt15{margin-top:15px;}
+.mt-26{margin-top:-26px;}
+.mt-39{margin-top:-39px;}
 .ml15{margin-left: 15px;}
 .ml40{margin-left: 40px;}
 .pl70{padding-left: 70px;}
@@ -99,3 +106,31 @@ a.color-status:hover{cursor: pointer;}
 .lettersp5{letter-spacing: 5px;}
 #register-form .form-control{height: 40px;}
 .toLogin:hover{color:#19aea5;cursor:pointer;}
+.user-titleline{border-top:5px solid #78c7bb;margin-top:20px;}
+.user-header .step-spot{background:url(../images/user/circle.png) no-repeat;height:26px;width:16px;display:inline-block;margin-top:-15px;}
+.user-header .step-spot-last{background:url(../images/user/circle.png) no-repeat;height:25px;width:16px;display:inline-block;margin-top:-10px;}
+.user-header .step-spot.active{background:url(../images/user/bigcircle.png) no-repeat;height:29px;width:21px;display:inline-block;margin-top:-15px;}
+.user-header .step-spot-last.active{background:url(../images/user/bigcircle.png) no-repeat;height:28px;width:21px;display:inline-block;margin-top:-13px;}
+.user-header .stepone{margin-top:-10px;margin-left:-23px;font-size:15px;}
+.user-header .stepone.active{color:#25aea6;}
+.user-header .steptwo{margin-top:-10px;margin-left:-8px;font-size:15px;}
+.user-header .steptwo.active{color:#25aea6;}
+.user-header .stepthree{margin-top:-10px;margin-left:1px;font-size:15px;}
+.user-header .stepthree.active{color:#25aea6;font-size:15px;}
+.user-header .stepfour{margin-top:-10px;margin-left:-35px;font-size:15px;}
+.user-header .stepfour.active{color:#25aea6;}
+.user-header .stepfive{margin-top:-1px;margin-right:-55px;font-size:15px;}
+.user-header .stepfive.active{color:#25aea6;}
+.color-78c7bb{color:#78c7bb;}
+.mt-40{margin-top:-40px;}
+#uploader .webuploader-pick{background:#00a2d4;} 
+#uploader .placeholder .webuploader-pick-hover{background:#00b7ee;}
+/**** orderView ****/
+#order-view .order-main-content{border:1px solid #e4e4e4;padding:20px 100px 50px;}
+#order-view .order-main-content .order-title{color:#19aea5;font-size:20px;text-align:center;}
+#order-view .order-main-content .order-detail{font-size:18px;}
+#order-view .order-main-content .order-content{color:#555;margin-top:20px;}
+#order-view .order-main-content .order-divider{border-top:1px solid #e4e4e4;}
+#order-view .order-main-content .order-statement{color:#555;}
+.mt-5{margin-top:-5px;}
+.mt-3{margin-top:-3px;}

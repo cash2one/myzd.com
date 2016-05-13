@@ -23,9 +23,9 @@ $bookinglist = $data->results;
         </div>
         <div class="col-sm-9">
             <div>
-                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447580821">
+                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146277800063795">
             </div>
-            <div class="bookinglist border-green mt10">
+            <div class="bookinglist border-gray mt10">
                 <table class="table">
                     <thead>
                         <tr>
@@ -54,15 +54,15 @@ $bookinglist = $data->results;
                                     </td>
                                     <td class="text-center bookOperate">
                                         <?php
-                                        if ($booking->bkStatusId == StatCode::BK_STATUS_NEW) {
+                                        if ($booking->bkStatusId == StatCode::BK_STATUS_NEW || $booking->bkStatusId == StatCode::BK_STATUS_PROCESSING) {
                                             ?>
                                             <a class="color-status" data-id="<?php echo $booking->id; ?>" data-href="<?php echo $this->createUrl('booking/cancelbook', array('id' => $booking->id)); ?>" data-toggle="modal" data-target="#cancelOrder">取消订单</a>
                                             <?php
+                                        } else if ($booking->bkStatusId == StatCode::BK_STATUS_SERVICE_PAIDED) {
+                                            echo '<a target="_blank" class="color-status" href="' . $this->createUrl('comment/create', array('bookingId' => $booking->id)) . '" >评价</a>';
                                         } else if ($booking->bkStatusId == StatCode::BK_STATUS_DONE) {
                                             if ($booking->bkComment == 1) {
                                                 echo '<a target="_blank" class="color-status" href="' . $this->createUrl('comment/view', array('bookingId' => $booking->id)) . '" >查看评价</a>';
-                                            }else{
-                                                echo '<a target="_blank" class="color-status" href="' . $this->createUrl('comment/create', array('bookingId' => $booking->id)) . '" >评价</a>';
                                             }
                                         } else {
                                             echo '—';
@@ -72,7 +72,7 @@ $bookinglist = $data->results;
                                 </tr>
                                 <?php
                             }
-                        }else{
+                        } else {
                             echo '<tr><td colspan="5">暂无预约</td></tr>';
                         }
                         ?>
