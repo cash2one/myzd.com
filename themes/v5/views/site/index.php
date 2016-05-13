@@ -442,4 +442,16 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
         $('#search-display').show();
     }
 
+
+
+    function changeTab(index){
+        for (var i=1;i<=5;i++){
+            document.getElementById ("li_"+i).className ="normal";
+            document.getElementById ("li_"+index).className ="selected";
+
+            document.getElementById ("div"+i).style.display  ="none";
+        }
+        document.getElementById ("div1").innerText= "www.alixixi.com"+index;
+        document.getElementById ("div"+index).style.display  ="block";
+    }
 </script>
