@@ -162,8 +162,8 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <div class="pl20 mt30">
                                 <div class="bookingInfo">患者姓名：<?php echo $booking->patientName; ?></div>
                                 <div class="bookingInfo">联系方式：<?php echo $booking->mobile; ?></div>
-                                <?php if(!empty($paid_count['deposit_count'])):?><div class="bookingInfo">  支付费用：已支付预约金<?php echo $paid_count['deposit_count']; ?>元</div><?php endif;?>
-                                 <?php if(!empty($paid_count['paid_count'])):?><div class="bookingInfo"> 已支付预约金<?php echo $paid_count['paid_count']; ?>元</div><?php endif;?>
+                                <span>支付费用：</span><?php if(!empty($paid_count['deposit_count'])):?><span class="bookingInfo"> 已支付预约金<?php echo $paid_count['deposit_count']; ?>元</span><?php endif;?>
+                                 <?php if(!empty($paid_count['deposit_count'])):?><span class="user-bookinginfo-white-block"></span><?php endif;?><?php if(!empty($paid_count['paid_count'])):?><span class="bookingInfo"> 已支付咨询费<?php echo $paid_count['paid_count']; ?>元</span><?php endif;?>
                             </div>
                         </div>
                         <div class="col-md-4">
