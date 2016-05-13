@@ -103,14 +103,15 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 echo '</h4>';
                             }
                             if ($booking->status == StatCode::BK_STATUS_SERVICE_UNPAID) {
-                                echo '<h4 class="text-center mt30 color-green text20 pb10"><span>状态：待付平台咨询费</span></h4>';
+                                
                                 $paid_all = 0;
                                 foreach ($salesOrder as $i => $order) {
-                                    if ($order->is_paid == 0) {
+                                    if ($order->isPaid == 0 && $order->orderTypeCode == 'service') {
                                         $paid_all = 1;
                                     }
                                 }
                                 if ($paid_all == 1) {
+                                    echo '<h4 class="text-center mt30 color-green text20 pb10"><span>状态：待付平台咨询费</span></h4>';
                                     foreach ($salesOrder as $i => $order) {
                                         if ($order->orderTypeCode == SalesOrder::ORDER_TYPE_SERVICE) {
                                             if ($i == 0) {
@@ -134,7 +135,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                     $count_money= 0;
                                      foreach ($salesOrder as $i => $order) {
                                          if($order->isPaid == 1){
-                                             $count_money = $order->final_amount + $count_money;
+                                             $count_money = $order->finalAmount + $count_money;
                                          }
                                          
                                      }
