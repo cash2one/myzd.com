@@ -249,7 +249,8 @@ class BookingController extends WebsiteController {
                     }
                     $apiRequest = new ApiRequestUrl();
                     //$remote_url = $apiRequest->getUrlAdminSalesBookingCreate() . '?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
-                     $remote_url =  'http://test.mingyizd.com/admin/api/adminbooking?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
+                     $remote_url =  'http://test.mingyizd.com/api/adminbooking?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
+//                     echo $remote_url;exit;
                     $data = $this->send_get($remote_url);
                     if ($data['status'] == "ok") {
                         $output['status'] = 'ok';
