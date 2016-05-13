@@ -107,10 +107,10 @@ a.color-status:hover{cursor: pointer;}
 #register-form .form-control{height: 40px;}
 .toLogin:hover{color:#19aea5;cursor:pointer;}
 .user-titleline{border-top:5px solid #78c7bb;margin-top:20px;}
-.user-header .step-spot{background:url(../images/user/circle.png) no-repeat;height:26px;width:16px;display:inline-block;margin-top:-15px;}
-.user-header .step-spot-last{background:url(../images/user/circle.png) no-repeat;height:25px;width:16px;display:inline-block;margin-top:-10px;}
-.user-header .step-spot.active{background:url(../images/user/bigcircle.png) no-repeat;height:29px;width:21px;display:inline-block;margin-top:-15px;}
-.user-header .step-spot-last.active{background:url(../images/user/bigcircle.png) no-repeat;height:28px;width:21px;display:inline-block;margin-top:-13px;}
+.user-header .step-spot{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146312746584971') no-repeat;height:26px;width:16px;display:inline-block;margin-top:-15px;}
+.user-header .step-spot-last{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146312746584971') no-repeat;height:25px;width:16px;display:inline-block;margin-top:-10px;}
+.user-header .step-spot.active{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146312746568124') no-repeat;height:29px;width:21px;display:inline-block;margin-top:-15px;}
+.user-header .step-spot-last.active{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146312746568124') no-repeat;height:28px;width:21px;display:inline-block;margin-top:-13px;}
 .user-header .stepone{margin-top:-10px;margin-left:-23px;font-size:15px;}
 .user-header .stepone.active{color:#25aea6;}
 .user-header .steptwo{margin-top:-10px;margin-left:-8px;font-size:15px;}
