@@ -58,6 +58,7 @@ class PayManager {
         }
         $extra = $this->createPingxxExtra($payment, $channel, $refurl, $yeepayIndentity);
 //        \Pingpp\Pingpp::setApiKey('sk_test_W14qv9uPGuP4rbrnHKizLOaT');  // Ping++ test key.
+        
         \Pingpp\Pingpp::setApiKey($config_res['setApiKey']);  // Ping++ live key.
 
         $requestArray = array(
