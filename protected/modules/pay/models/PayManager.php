@@ -29,7 +29,7 @@ class PayManager {
     public function doPingxxPay($refNo, $channel, $refurl) {
         //获取支付配置文件信息
         $config_res = $this->getPayConfig();
-        
+
         $pingCharge = null;
         $apisvs = new ApiViewSalesOrder($refNo);
         $output = $apisvs->loadApiViewData();
@@ -57,9 +57,9 @@ class PayManager {
             }
         }
         $extra = $this->createPingxxExtra($payment, $channel, $refurl, $yeepayIndentity);
-//        \Pingpp\Pingpp::setApiKey('sk_test_W14qv9uPGuP4rbrnHKizLOaT');  // Ping++ test key.
-        
-        \Pingpp\Pingpp::setApiKey($config_res['setApiKey']);  // Ping++ live key.
+
+        \Pingpp\Pingpp::setApiKey('sk_test_W14qv9uPGuP4rbrnHKizLOaT');  // Ping++ test key.
+//        \Pingpp\Pingpp::setApiKey($config_res['setApiKey']);  // Ping++ live key.
 
         $requestArray = array(
             'subject' => $subject,
