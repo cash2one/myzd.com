@@ -103,7 +103,7 @@ if (isClientWeixin()) {
                         <div class="col-sm-4 text-center">
                             <label>
                                 <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios3" value="yeepay_wap">
-                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14631542229868">
+                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146337324530681">
                             </label>
                         </div>
                     </div>
