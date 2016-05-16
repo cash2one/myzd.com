@@ -31,7 +31,7 @@ $urlConmmentView = $this->createUrl('comment/view', array('bookingId' => $bookin
                     </h4>
                 </div>
             </div>
-            <div class="border-green mt10 pt50 pl50 pr50 minh700">
+            <div class="border-gray mt10 pt50 pl50 pr50 minh700">
                 <div><span class="color-gray">主刀专家：</span><strong><?php echo $booking->expertName == null ? '无' : $booking->expertName; ?></strong>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="color-gray">确诊疾病：</span><strong><?php echo $booking->diseaseName; ?></strong></div>
                 <div id="service" class="mt50 comment">
                     <div class="text16 color-25aea6 mb20"><i class="fa fa-play ml-20"></i><strong class="ml5">请您对我们服务进行星级评价:</strong></div>

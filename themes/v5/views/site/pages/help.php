@@ -86,7 +86,7 @@ $isTerms = Yii::app()->request->getQuery('page', '');
             <div>
                 <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14624356699601">
             </div>
-            <div class="border-grayb5 mt10 lineh2-5em">
+            <div class="border-gray mt10 lineh2-5em">
                 <div class="pb40  support-content" id="answer1">  
                     <div class="content-header"><span class="ml20">Q：如何注册名医主刀账号？</span></div>
                     <div class="ml40 mr40">
