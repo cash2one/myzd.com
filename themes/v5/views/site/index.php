@@ -181,7 +181,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 height: '0'
             });
         });
-        $html = '<li><div class="shapinghealth"><a href="<?php echo $this->createUrl('event/view', array('page' => 'shapinghealth')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146156825972489" alt="" class="img-responsive"></a></div></li>' +
+        $html = '<li><div class="lungcancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146338468582143" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="winegirl"><a href="<?php echo $this->createUrl('event/view', array('page' => 'winegirl')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14607127350956" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="robot"><a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492190148" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="cataract"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cataract')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492155191" alt="" class="img-responsive"></a></div></li>';
