@@ -91,19 +91,19 @@ if (isClientWeixin()) {
                         <div class="col-sm-4">
                             <label>
                                 <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="wx_pub_qr" checked>
-                                <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/weixin.png">
+                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146315422313844">
                             </label>
                         </div>
                         <div class="col-sm-4 text-center">
                             <label>
                                 <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios2" value="alipay_pc_direct">
-                                <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-alipay.png">
+                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14631542229868">
                             </label>
                         </div>
                         <div class="col-sm-4 text-center">
                             <label>
                                 <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios3" value="yeepay_wap">
-                                <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-yeepay.png">
+                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14631542229868">
                             </label>
                         </div>
                     </div>
