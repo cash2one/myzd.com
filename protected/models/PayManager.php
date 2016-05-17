@@ -7,11 +7,33 @@
  */
 class PayManager {
 
+    /**
+     * 获得ping++支付配置
+     */
+    public function getPayConfig($id = 1) {
+        //读取myzd-key数据库
+        $cri = new CDbCriteria();
+        $cri->addCondition('id=1');
+        $config_res = KeyConfig::model()->find($cri);
+        if (!empty($config_res)) {
+            if ($config_res->is_active == 1) {
+                return CJSON::decode($config_res->key_config);
+            } else {
+                Yii::log('该配置已经关闭，请开启');
+            }
+        } else {
+            Yii::log('该配置信息不存在');
+        }
+    }
+
     public function doPingxxPay($refNo, $channel, $refurl) {
+        //获取支付配置文件信息
+        $config_res = $this->getPayConfig();
+        
         $pingCharge = null;
         $apisvs = new ApiViewSalesOrder($refNo);
         $output = $apisvs->loadApiViewData();
-        
+
         $order = $output->results->salesOrder;
         $booking = $output->results->booking;
         if ($order === NULL) {
@@ -22,8 +44,8 @@ class PayManager {
         $payment->initPaymentByOrder($order, $channel);
         $amount = intval($payment->getBillAmount() * 100);
         $orderNo = $payment->getUid();
-        $subject = $order->subject;
-        $body = $order->description;
+        $subject = empty($order->subject)?'1':$order->subject;
+        $body = empty($order->description)?'1':$order->description;
         //获取手机号
         $yeepayIndentity = NULL;
         if ($channel == 'yeepay_wap') {
@@ -35,7 +57,7 @@ class PayManager {
         }
         $extra = $this->createPingxxExtra($payment, $channel, $refurl, $yeepayIndentity);
 //        \Pingpp\Pingpp::setApiKey('sk_test_W14qv9uPGuP4rbrnHKizLOaT');  // Ping++ test key.
-        \Pingpp\Pingpp::setApiKey('sk_live_bLGCW9m1aX5KvTSeT04G0KyP');  // Ping++ live key.
+        \Pingpp\Pingpp::setApiKey($config_res['setApiKey']);  // Ping++ live key.
 
         $requestArray = array(
             'subject' => $subject,
@@ -46,8 +68,9 @@ class PayManager {
             'extra' => $extra,
             'channel' => $channel,
             'client_ip' => $_SERVER['REMOTE_ADDR'],
-            'app' => array('id' => 'app_SWv9qLSGWj1GKqbn')      // Ping++ app id.
+            'app' => array('id' => $config_res['id'])      // Ping++ app id.
         );
+//        Common::printr($requestArray);
         if ($payment->save() === false) {
             //exception
             throw new CException($payment->getErrors());
@@ -71,7 +94,8 @@ class PayManager {
             case 'alipay_pc_direct':
                 $extra = array(
 //                    'success_url' => 'http://test.mingyizd.com/payment/alipayReturn'  //test
-                    'success_url' => 'http://www.mingyizhudao.com/payment/alipayReturn' //prod
+                  //  'success_url' => 'http://pc.dev.mingyizd.com/payment/alipayReturn' //prod
+                     'success_url' => 'http://www.mingyizhudao.com/payment/alipayReturn' //prod
                 );
                 break;
             case 'alipay_wap':
@@ -115,7 +139,8 @@ class PayManager {
                     'terminal_type' => 3,
                     'terminal_id' => 'chuangxian10012471338',
                     'user_ua' => Yii::app()->request->getUserAgent(),
-                    'result_url' => 'http://mingyizhudao.com/payment/yeepayReturn?outno=' . $payment->getUid()
+//                    'result_url' => 'http://mingyizhudao.com/payment/yeepayReturn?outno=' . $payment->getUid()
+                    'result_url' => 'http://pc.dev.mingyizd.com/payment/yeepayReturn?outno=' . $payment->getUid()
                 );
                 break;
             case 'jdpay_wap':
