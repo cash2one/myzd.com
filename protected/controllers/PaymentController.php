@@ -77,7 +77,6 @@ class PaymentController extends WebsiteController {
     public function actionDoPingxxPay() {
         require_once('protected/sdk/pingpp-php-master/init.php');
         $output = new stdClass();
-        //$output->status = 'no';
         $output->errorMsg = null;
         $output->pingCharge = null;
         try {
@@ -137,7 +136,6 @@ class PaymentController extends WebsiteController {
             }
         } else {
             //error.
-            //var_dump($output->errorMsg);
             throw new CHttpException(404, $output->errorMsg);
         }
     }
@@ -148,7 +146,6 @@ class PaymentController extends WebsiteController {
         $payMgr = new PayManager();
         $pingChargeId = $post['data']['object']['id'];
         $orderNo = $post['data']['object']['order_no'];
-        CoreLogPayment::log('orderNo: ' . $orderNo, CoreLogPayment::LEVEL_INFO, Yii::app()->request->url, __METHOD__);
         $payment = SalesPayment::model()->getByAttributes(array('uid' => $orderNo, 'ping_charge_id' => $pingChargeId), array('paymentOrder'));
         $order = $payment->paymentOrder;
         if (isset($payment) && $post['type'] == 'charge.succeeded') {
@@ -176,7 +173,6 @@ class PaymentController extends WebsiteController {
 				$emailMgr = new EmailManager();
 				$emailMgr->sendEmailSalesOrderPaid($data);
 			}
-			
         } else if (isset($payment) && $post['type'] != 'charge.succeeded') {
             //交易失败
             $payMgr->updateDataAfterTradeFail($payment, $post);
@@ -232,33 +228,6 @@ class PaymentController extends WebsiteController {
         $payment = SalesPayment::model()->getByAttributes(array('uid' => $outTradeNo), array('paymentOrder'));
 
         $this->redirect(array('payResult', 'paymentcode' => $payment->uid));
-
-        /*
-          $paymentMgr = new PaymentManager();
-          $payment = $paymentMgr->updateAlipayReturn();
-          //$uid = $_GET['out_trade_no'];
-          //$payment = $paymentMgr->loadPaymentByUID($uid);
-
-          if (isset($payment) === false) {
-          $error = new stdClass();
-          $error->code = '';
-          $error->msg = '请求链接不正确。';
-          $this->render("error", array(
-          'error' => $error
-          ));
-          } else {
-          //TODO: redirect to payment/result instead.
-          // reload payment from db.
-          $payment = $paymentMgr->loadPaymentByUID($payment->getUID(), array('mrbpUser', 'mrbpBooking'));
-          $ipayment = new IMrBookingPayment();
-          $ipayment->initModel($payment);
-          $ipayment->setBuyer($payment->getUser());
-          $ipayment->setBooking($payment->getBooking());
-          $this->render('return2', array(
-          'payment' => $ipayment
-          ));
-          }
-         */
     }
 
     public function actionYeepayReturn($outno) {
