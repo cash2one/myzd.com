@@ -85,6 +85,11 @@ class PaymentController extends WebsiteController {
             CoreLogPayment::log('pingxxPayJson: ' . CJSON::encode($post), CoreLogPayment::LEVEL_INFO, Yii::app()->request->url, __METHOD__);
             if (isset($post['order_no'])) {
                 $refno = $post['order_no'];
+                $order = new SalesOrder();
+                $order = SalesOrder::model()->getByRefNo($refNo);
+                if(isset($order) && $order->getIsPaid(false) == 1){
+                    throw new CException('该订单已支付');
+                }
             } else {
                 throw new CException('invalid parameters - missing order_no.');
             }
@@ -147,25 +152,31 @@ class PaymentController extends WebsiteController {
         $payment = SalesPayment::model()->getByAttributes(array('uid' => $orderNo, 'ping_charge_id' => $pingChargeId), array('paymentOrder'));
         $order = $payment->paymentOrder;
         if (isset($payment) && $post['type'] == 'charge.succeeded') {
-            //交易成功
-            $payMgr->updateDataAfterTradeSuccess($payment, $post);
-            //短信通知
-            if (isset($payment->user_id)) {
-                $user = User::model()->getById($payment->user_id);
-                if (isset($user->username)) {
-                    $sendMsg = new SmsManager();
-                    $data = new stdClass();
-                    $data->amount = $payment->paid_amount;
-                    $data->refno = $order->ref_no;
-                    $sendMsg->sendSmsBookingDepositPaid($user->username, $data);
-                }
-            }
-            //电邮提醒
-            $apiSvc = new ApiViewSalesOrder($order->getRefNo());
-            $output = $apiSvc->loadApiViewData();
-            $data = $output->results;
-            $emailMgr = new EmailManager();
-            $emailMgr->sendEmailSalesOrderPaid($data);
+            if ($payment->payment_status == StatCode::PAY_UNPAID) {
+				//交易成功
+				$payMgr->updateDataAfterTradeSuccess($payment, $post);
+				//推送第三方支付信息
+				CoreLogPayment::log('vendorOrder: ' . CJSON::encode($order), CoreLogPayment::LEVEL_INFO, Yii::app()->request->url, __METHOD__);
+				$this->sendVendor($order);
+				//短信通知
+				if (isset($payment->user_id)) {
+					$user = User::model()->getById($payment->user_id);
+					if (isset($user->username)) {
+						$sendMsg = new SmsManager();
+						$data = new stdClass();
+						$data->amount = $payment->paid_amount;
+						$data->refno = $order->ref_no;
+						$sendMsg->sendSmsBookingDepositPaid($user->username, $data);
+					}
+				}
+				//电邮提醒
+				$apiSvc = new ApiViewSalesOrder($order->getRefNo());
+				$output = $apiSvc->loadApiViewData();
+				$data = $output->results;
+				$emailMgr = new EmailManager();
+				$emailMgr->sendEmailSalesOrderPaid($data);
+			}
+			
         } else if (isset($payment) && $post['type'] != 'charge.succeeded') {
             //交易失败
             $payMgr->updateDataAfterTradeFail($payment, $post);
@@ -174,6 +185,47 @@ class PaymentController extends WebsiteController {
         }
     }
 
+	private function sendVendor($order){
+        $adminBooking = AdminBooking::model()->getById($order->admin_booking_id);
+        if($adminBooking->booking_type == StatCode::TRANS_TYPE_BK){
+            $booking = Booking::model()->getById($adminBooking->booking_id);
+            //往160推送消息
+            if($booking->vendor_id == VendorRest::VENDOR_ID_160){
+                switch($order->order_type){
+                    case 'deposit':
+                        $order_status = StatCode::BK_STATUS_PROCESSING;
+                        $type = VendorRest::DEPOSIT_160;
+                        $values = array(
+                            'yuyue_no'=>$adminBooking->ref_no,
+                            'reserve_money'=>$order->final_amount,
+                            'reserve_no'=>$order->id,
+                            'reserve_time'=>time(),
+                            'order_no'=>$order->ref_no,
+                            'order_status'=>$order_status,
+                            'phone'=>$order->patient_mobile,
+                        );
+                        break;
+                    case 'service':
+                        $order_status = StatCode::BK_STATUS_SERVICE_PAIDED;
+                        $type = VendorRest::CONFIRMED_160;
+                        $values = array(
+                            'yuyue_no'=>$adminBooking->ref_no,
+                            'pay_money'=>$order->final_amount,
+                            'pay_no'=>$order->id,
+                            'pay_time'=>time(),
+                            'order_no'=>$order->ref_no,
+                            'order_status'=>$order_status,
+                            'phone'=>$adminBooking->patient_mobile,
+                        );
+                        break;
+                    default:
+                        $order_status = StatCode::BK_STATUS_PROCESSING;
+                }
+                $result = VendorRest::send(VendorRest::VENDOR_ID_160, $values, $type);
+            }
+        }
+    }
+	
     public function actionAlipayReturn() {
         CoreLogPayment::log('AlipayReturnJson: ' . CJSON::encode($_GET), CoreLogPayment::LEVEL_INFO, Yii::app()->request->url, __METHOD__);
         $outTradeNo = $_GET['out_trade_no'];
@@ -218,7 +270,6 @@ class PaymentController extends WebsiteController {
 
     public function actionPayResult($paymentcode) {
         $payment = SalesPayment::model()->getByAttributes(array('uid' => $paymentcode), array('paymentOrder'));
-//        print_r(CJSON::decode(CJSON::encode($payment)));exit;
         $order = $payment->paymentOrder;
         if ($order === NULL) {
             throw new CHttpException(404, 'The requested page does not exist.');
