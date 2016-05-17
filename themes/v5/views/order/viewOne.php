@@ -29,7 +29,8 @@ $urlBookingList = $this->createUrl('booking/list');
 //$this->show_footer = false;
 $this->show_baidushangqiao = false;
 $refno = $model->getRefNo();
-$payUrl = $this->createAbsoluteUrl('pay/payment/doPingxxPay');  // url of creating payment request.
+//$payUrl = $this->createAbsoluteUrl('pay/payment/doPingxxPay');  // url of creating payment request.
+$payUrl = 'http://www.mingyizhudao.com/pay/payment/doPingxxPay';
 
 $refUrl = $this->createAbsoluteUrl('order/view', array('refno' => $refno)); // 
 //$currentUrl = Yii::app()->request->getHostInfo() . Yii::app()->request->getUrl();    // url of this currently requested page.
@@ -91,19 +92,19 @@ if (isClientWeixin()) {
                         <div class="col-sm-4">
                             <label>
                                 <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="wx_pub_qr" checked>
-                                <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/weixin.png">
+                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146315422313844">
                             </label>
                         </div>
                         <div class="col-sm-4 text-center">
                             <label>
                                 <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios2" value="alipay_pc_direct">
-                                <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-alipay.png">
+                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14631542229868">
                             </label>
                         </div>
                         <div class="col-sm-4 text-center">
                             <label>
                                 <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios3" value="yeepay_wap">
-                                <img class="mt-5" src="<?php echo $urlResImage; ?>user/order/ic-yeepay.png">
+                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146337324530681">
                             </label>
                         </div>
                     </div>
@@ -114,7 +115,7 @@ if (isClientWeixin()) {
                     <?php
                 }else{
                 ?>
-                    付款成功
+                    <div class="text-center color-green text20">付款成功！</div>
                 <?php }?>
                 <input id="ref_no" type="hidden" name="order[ref_no]" value="<?php echo $model->ref_no; ?>" />
             </form>
@@ -162,7 +163,7 @@ if (isClientWeixin()) {
 
 
         var url = "<?php echo $payUrl; ?>";
-        var refUrl = "<?php echo $refUrl . '?refno='; ?>" + refNo;
+        var refUrl = "<?php echo $refUrl;?>";
         var xhr = new XMLHttpRequest();
         xhr.open("POST", url, true);
         xhr.setRequestHeader("Content-type", "application/json");

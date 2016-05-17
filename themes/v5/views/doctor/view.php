@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/doctor.css");
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/doctor.css?v=" . time());
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jquery.qrcode.min.js', CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
@@ -8,8 +8,7 @@ $urlDoctorView = 'http://m.mingyizhudao.com/mobile/doctor/view/id/';
 $urlajaxComment = $this->createUrl('comment/ajaxDoctorComment', array('pagesize' => 3, 'doctorId' => ''));
 $page = Yii::app()->request->getQuery('page', '');
 $is_commonweal = Yii::app()->request->getQuery('is_commonweal', 0);
-$urlDoctor = $this->createUrl('doctor/');
-$urlLoadDoctorArticle = $this->createUrl('api/doctor', array('api' => 7));
+$urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
 ?>
 <div class="contaier-fluid bg-green">
     <div class="container">
@@ -159,8 +158,8 @@ $urlLoadDoctorArticle = $this->createUrl('api/doctor', array('api' => 7));
                 <div class="border-gray news">
                     <?php foreach ($doctor_articles as $doctor_article) { ?>
                         <div class="mt10 mb10">
-                            <div class="pull-left title">【<?php echo $doctor_article->type; ?>】</div>
-                            <div><a href="<?php echo $this->createUrl("article/page", array("view" => $doctor_article->fileName)); ?>" target="_blank" title="<?php echo $doctor_article->title; ?>"><?php echo $doctor_article->title; ?></a></div>
+                            <div class="pull-left title"><strong>【<?php echo $doctor_article->type; ?>】</strong></div>
+                            <div class="news-link"><a href="<?php echo $this->createUrl("article/page", array("view" => trim($doctor_article->fileName))); ?>" target="_blank" title="<?php echo $doctor_article->title; ?>"><?php echo $doctor_article->title; ?></a></div>
                             <div class="clearfix"></div>
                         </div> 
                     <?php } ?>
@@ -362,7 +361,7 @@ $urlLoadDoctorArticle = $this->createUrl('api/doctor', array('api' => 7));
         }
         urlCondition = urlCondition.substring(1);
         urlCondition = "?" + urlCondition;
-        var newUrl = '<?php echo $urlDoctor; ?>/' + $doctorId + urlCondition;
+        var newUrl = '<?php echo $urlDoctor; ?>' + $doctorId + urlCondition;
         history.pushState(stateObject, title, newUrl);
     }
 </script>

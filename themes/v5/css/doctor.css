@@ -25,7 +25,8 @@
 .doctorInfo .booking .booking-title{background-color: #19aea5;text-align: center;font-size: 16px;color:#fff;padding: 30px 0;}
 .doctorInfo .operation img{border: 1px solid #e4e4e4;}
 .doctorInfo .operation img:hover{border: 1px solid #19aea5;box-shadow:1px 1px 3px 3px #e4e4e4; }
-.doctorInfo .news .title{color:#036eb8;height:2em;}
+.doctorInfo .news .title{height:2em;}
+.doctorInfo .news .news-link a:hover{color:#036eb8;}
 .doctorInfo .divide-gray{border-bottom:1px dashed #777;}
 .doctor-menu .bg-green{padding: 10px;}
 .doctor-menu .border-right{border-right: 1px solid #fff;margin: 10px 0;padding-bottom: 3px;}

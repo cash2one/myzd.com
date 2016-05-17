@@ -1,5 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
+$urlDownloads = $this->createUrl('site/downLoadFile',array('fileName'=>''));
 $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
 $urlCommonwealDoctors = $this->createUrl('api/commonwealdoctors');
 $urlDoctorView = $this->createUrl('doctor/view');
@@ -35,10 +36,10 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/myg
                         </div>
                         <div class="content">
                             <div>名医公益联盟是名医主刀倡导发起，并联合公益组织、医生共建的一种可持续公益模式，旨在让更多患者有机会接受更好的治疗。</div>
-                            <div class="mt20">作为国内最大的移动医疗手术平台，名医主刀每天都能接触到大量需要手术的患者。在沟通中，我们注意到其中不少患者家境贫寒，难以全部承担平台服务费用。</div>
-                            <div class="mt20">名医主刀虽然是新生企业，但“仁爱”一直是我们的初心，我们希望通过名医公益联盟，汇聚社会的爱心力量，让更多贫困的患者也能找到名医进行手术。</div>
-                            <div class="mt20">名医公益联盟中，既有饱含仁爱之心的名医，也有有着丰富救助经验的公益组织。通过对资源的整合和优化配置，让患者好看病、看好病。</div>
-                            <div class="mt20">做手术找名医主刀，做手术遇到困难找名医公益联盟。</div>
+                            <div class="mt20">作为国内最大的移动医疗手术平台，名医主刀每天都能接触到大量需要手术的患者，其中不少患者家境贫寒难以全部承担手术服务费用。名医主刀一直将“仁爱”视为核心文化，希望通过名医公益联盟，汇聚社会爱心力量，帮助贫困患者解决“好看病，看好病”的切实需求。</div>
+                            <div class="mt20">您可以直接在线点击或拨打客服热线预约以下医生，名医助手会在1个工作日回访确认，并指导填写申请表格。 通过审核的申请者可以<span class="color-red">免支付</span>专家会诊费。（<a class="mygy-textdownload" href="<?php echo $urlDownloads;?>mygy_shenqing.docx">点击下载“名医公益申请表”</a>）</div>
+                            <div class="mt20">如有家庭条件特别困难的患者，可以申请“名医公益援助金”。通过审核的申请者可以获得<span class="color-red">5000-10000元的援助金</span>。（<a class="mygy-textdownload" href="<?php echo $urlDownloads;?>tepin_shenqing.docx">点击下载“名医公益援助申请表”</a>）</div>
+                            <div class="mt20">备注：如患者本人因病暂无能力自行申请，需指定委托人填写。（<a class="mygy-textdownload" href="<?php echo $urlDownloads;?>weituoshu.docx">点击下载“名医公益委托书”</a>）</div>
                         </div>
                     </div>
                 </div>
@@ -64,12 +65,19 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/myg
                             <div class="mt30">
                                 <div class="pull-left"><span class="step">第三步------</span></div>
                                 <div class="pull-left">
-                                    <div>确定资助方案</div>
+                                    <div>提交申请表格</div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="mt30">
                                 <div class="pull-left"><span class="step">第四步------</span></div>
+                                <div class="pull-left">
+                                    <div>确定资助方案</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="mt30">
+                                <div class="pull-left"><span class="step">第五步------</span></div>
                                 <div class="pull-left">
                                     <div>安排手术</div>
                                 </div>

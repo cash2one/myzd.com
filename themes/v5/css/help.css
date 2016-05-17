@@ -23,7 +23,7 @@
 .h300p{height:300px;}
 .h5-em{height:5em;}
 .border-grayb5{border:1px solid #b5b5b5;}
-.question-left{border:1px solid #b5b5b5;border-top:none;padding-bottom:20px;}
+.question-left{border:1px solid #e4e4e4;border-top:none;padding-bottom:20px;}
 .question-left>.problem-area>.title,.question-left>.problem-area.active>.title{cursor:pointer;color:#454545;}
 .problem-area.active>.personalcenter-question{display:block;}
 .problem-area>.personalcenter-question{display:none;}
