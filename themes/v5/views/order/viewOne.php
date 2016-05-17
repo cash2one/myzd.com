@@ -29,7 +29,8 @@ $urlBookingList = $this->createUrl('booking/list');
 //$this->show_footer = false;
 $this->show_baidushangqiao = false;
 $refno = $model->getRefNo();
-$payUrl = $this->createAbsoluteUrl('pay/payment/doPingxxPay');  // url of creating payment request.
+//$payUrl = $this->createAbsoluteUrl('pay/payment/doPingxxPay');  // url of creating payment request.
+$payUrl = 'http://www.mingyizhudao.com/pay/payment/doPingxxPay';
 
 $refUrl = $this->createAbsoluteUrl('order/view', array('refno' => $refno)); // 
 //$currentUrl = Yii::app()->request->getHostInfo() . Yii::app()->request->getUrl();    // url of this currently requested page.
@@ -114,7 +115,7 @@ if (isClientWeixin()) {
                     <?php
                 }else{
                 ?>
-                    付款成功
+                    <div class="text-center color-green text20">付款成功！</div>
                 <?php }?>
                 <input id="ref_no" type="hidden" name="order[ref_no]" value="<?php echo $model->ref_no; ?>" />
             </form>
@@ -162,7 +163,7 @@ if (isClientWeixin()) {
 
 
         var url = "<?php echo $payUrl; ?>";
-        var refUrl = "<?php echo $refUrl . '?refno='; ?>" + refNo;
+        var refUrl = "<?php echo $refUrl;?>";
         var xhr = new XMLHttpRequest();
         xhr.open("POST", url, true);
         xhr.setRequestHeader("Content-type", "application/json");
