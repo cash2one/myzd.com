@@ -130,11 +130,20 @@ class HospitalManager {
             $with = array('hospitalCity', 'hospitalDepartments');
         }
         $model = Hospital::model()->getById($id, $with);
+
         if (is_null($model)) {
             return null;
         }
+        
+//        $hd_res = $model->hospitalDepartments;
+//        if (is_array($hd_res)) {
+//            foreach ($hd_res as $val) {
+//                if (is_array($val)) {
+//                    $val->position;
+//                }
+//            }
+//        }
         $imodel = $this->convertToIHospital($model, null, $with);
-
         return $imodel;
     }
 
@@ -190,16 +199,16 @@ class HospitalManager {
      * 根据科室名查看是否存在
      * @param type $name
      */
-    public function checkDepartment($name,$hospitalId) {
-        $data = HospitalDepartment::model()->getByNameAndHostitalId($name,$hospitalId);
-        if(isset($data)){
+    public function checkDepartment($name, $hospitalId) {
+        $data = HospitalDepartment::model()->getByNameAndHostitalId($name, $hospitalId);
+        if (isset($data)) {
             return false;
-        }else{
+        } else {
             return true;
         }
     }
-    
-     public function addDepartment(DepartmentForm $form) {
+
+    public function addDepartment(DepartmentForm $form) {
         if ($form->validate()) {
             $model = new HospitalDepartment();
             $model->attributes = $form->attributes;
