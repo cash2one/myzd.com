@@ -15,7 +15,6 @@ class HospitalController extends WebsiteController {
         if (is_null($ihospital)) {
             $this->throwPageNotFoundException();
         }
-
         $this->render('view', array(
             'model' => $ihospital,
         ));
