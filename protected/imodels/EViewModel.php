@@ -4,7 +4,6 @@ abstract class EViewModel {
 
     public function initModel($model, $attributes = null) {
         $attributesMap = $this->getAttributesMapping($attributes);
-
         foreach ($attributesMap as $imodelAttr => $modelAttr) {
             $this->{$imodelAttr} = $model->{$modelAttr};
         }
