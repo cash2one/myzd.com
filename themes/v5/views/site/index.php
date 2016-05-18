@@ -24,9 +24,9 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                             <span class="slogan-sm color-green">国内最大的互联网医疗手术平台</span>
                         </div>
                     </div>
-                    <div class="mt40">
+<!--                    <div class="mt40">
                         <a id="show_top" class="btn btn-home color-green" >为什么选择名医主刀?</a>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
     <div class="container-fluid" id="home">
         <div class="row">
             <div class="container">
-                <div class="department mt50">
+                <div class="department">
                     <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 1)); ?>"><div class="dept-area"><div class="waike-home plline"><div class="waike-home-bottom dept-bottom-img"></div></div></div></a>
                     <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 13)); ?>"><div class="dept-area"><div class="guke-home plline"><div class="guke-home-bottom dept-bottom-img"></div></div></div></a>
                     <a target="_blank" href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 18)); ?>"><div class="dept-area"><div class="fuchanke-home plline"><div class="fuchanke-home-bottom dept-bottom-img"></div></div></div></a>
@@ -72,8 +72,8 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             <div class="container mt50">
                 <div class="row">
                     <div class="col-md-9 pr0">
-                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'shapinghealth')); ?>" target="_blank">
-                            <img class="img-responsive home-event-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146310854932050"/>
+                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'cancerdefecate')); ?>" target="_blank">
+                            <img class="img-responsive home-event-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146347892798242"/>
                         </a>
                     </div>
                     <div class="col-md-3 pl0 pr0 home-small-event-img">
@@ -126,7 +126,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                         </ul>
                     </div>
                 </div>
-                <div class="text-right"><a href="<?php echo $this->createUrl('event/view', array('page' => 'eventList')); ?>" target="_blank"><div class="learn-more-event">查看更多手术专题</div></a></div>
+                <div class="text-right"><a href="<?php echo $this->createUrl('event/view', array('page' => 'eventList')); ?>" target="_blank"><div class="learn-more-event">查看更多手术专题&gt;&gt;</div></a></div>
             </div>
         </div>
     </div>
@@ -182,6 +182,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             });
         });
         $html = '<li><div class="lungcancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146338468582143" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="shapinghealth"><a href="<?php echo $this->createUrl('event/view', array('page' => 'shapinghealth')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146347906251445" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="winegirl"><a href="<?php echo $this->createUrl('event/view', array('page' => 'winegirl')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14607127350956" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="robot"><a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492190148" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="cataract"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cataract')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492155191" alt="" class="img-responsive"></a></div></li>';
