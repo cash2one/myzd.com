@@ -12,7 +12,11 @@ class IHospitalDepartment extends EViewModel {
             'name' => 'name',
             'hid' => 'hospital_id',
             'group' => 'group',
-            'description' => 'description'
+            'description' => 'description',
+            'position' => 'position',
+            'scale' => 'scale',
+            'specialty' => 'specialty',
+            'honor' => 'honor',
         );
     }
 
