@@ -95,7 +95,6 @@ class IHospital extends EViewModel {
         if ($model instanceof RegionCity) {
             $imodel = new ILocationCity();
             $imodel->initModel($model, array('id', 'name'));
-
             $this->{$attrName} = $imodel;
         } else {
             $this->{$attrName} = $model;
@@ -131,7 +130,7 @@ class IHospital extends EViewModel {
         if (arrayNotEmpty($models)) {
             foreach ($models as $model) {
                 $imodel = new IHospitalDepartment();
-                $imodel->initModel($model, array('id', 'name', 'group','description'));
+                $imodel->initModel($model, array('id', 'name', 'group', 'description', 'position', 'scale', 'specialty','honor'));
                 $this->addIHospitalDepartment($imodel, $attrName);
             }
         }
@@ -142,6 +141,9 @@ class IHospital extends EViewModel {
      * @param IHospitalDepartment $imodel
      */
     public function addIHospitalDepartment(IHospitalDepartment $imodel, $attrname = 'departments') {
+        if(!empty($imodel->honor)){
+             $imodel->honor = explode('#', $imodel->honor);
+        }
         $this->{$attrname}[$imodel->group][] = $imodel;
     }
 
