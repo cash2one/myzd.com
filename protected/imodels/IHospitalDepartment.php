@@ -17,6 +17,7 @@ class IHospitalDepartment extends EViewModel {
             'scale' => 'scale',
             'specialty' => 'specialty',
             'honor' => 'honor',
+            'strength' => 'strength',
         );
     }
 
