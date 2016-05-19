@@ -130,7 +130,7 @@ class IHospital extends EViewModel {
         if (arrayNotEmpty($models)) {
             foreach ($models as $model) {
                 $imodel = new IHospitalDepartment();
-                $imodel->initModel($model, array('id', 'name', 'group', 'description', 'position', 'scale', 'specialty','honor'));
+                $imodel->initModel($model, array('id', 'name', 'group', 'description', 'position', 'scale', 'specialty','honor','strength'));
                 $this->addIHospitalDepartment($imodel, $attrName);
             }
         }
