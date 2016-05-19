@@ -49,6 +49,10 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550185756"/>
                             </div>
                             <div class="clearfix"></div>
+                            <div class="pull-left mt10">
+                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146348128150118"/>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
                         <!--                        <div class="w20 hospital">
                                                     <h4>战略合作医院</h4>
@@ -90,6 +94,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                     <a class="text-info" href="http://jiancha.aikang.com/" target="_blank">爱康检查</a>
                                     <a class="text-info" href="http://www.51zsyl.com" target="_blank">远程门诊</a>
                                     <a class="text-info" href="http://www.91160.com/" target="_blank">就医160</a>
+                                    <a class="text-info" href="http://www.7lk.com/" target="_blank">七乐康</a>
                                 </div>
 
                             </div>
@@ -136,6 +141,9 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                     </div>
                                     <div class="pull-left mr10 mt10">
                                         <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550185756"/>
+                                    </div>
+                                    <div class="pull-left mr10 mt10">
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146348128150118"/>
                                     </div>
                                 </div>
                                 <div class="mt25 mb20">
