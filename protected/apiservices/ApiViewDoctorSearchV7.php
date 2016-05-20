@@ -57,6 +57,7 @@ class ApiViewDoctorSearchV7 extends EApiViewService {
             // $data->hospital = $model->getHospitalId();
             $data->hpName = $model->getHospitalName();
             $data->hpDeptId = $model->getHpDeptId();
+            $data->cityId = $model->getCityId();
             $data->hpDeptName = $model->getHpDeptName();
             $data->desc = $model->getDescription();
             $data->imageUrl = $model->getAbsUrlAvatar();
