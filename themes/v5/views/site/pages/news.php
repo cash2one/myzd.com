@@ -47,6 +47,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                                             <div class="content">
                                                 <div>2016年5月14日，“名医主刀”与延安大学附属医院成功签约，双方将以延安大学附属医院为区域手术基地，合作共建<span class="text21">延安市第一家互联网手术中心</span>。以互联网手术中心为载体，采用“名医铸刀”模式，不但能提升地方医疗水准，还能让当地患者真正享受到“大病不出市，名医随时有”。</div>
                                             </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>yanancenter" target="_blank">查看详情 →</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -62,6 +63,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                                             <div class="content">
                                                 <div>2016年4月20日，<span class="text21">“共享名医资源、共铸健康中国；名医公益手术捐赠暨名医公益宣言发布会”</span>在人民大会堂举行。此次大型公益活动由名医主刀联合多家公益组织、企业家代表、医生代表、公益明星共同发起，力求在“全民健康，全面小康”的总方针下，创新性尝试共享公益资源的新模式！</div>
                                             </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>mingyigongyi" target="_blank">查看详情 →</a></div>
                                         </div>
                                     </div>
                                 </div>

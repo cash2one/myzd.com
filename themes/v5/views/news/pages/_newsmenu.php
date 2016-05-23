@@ -1,5 +1,7 @@
 <?php
 $news = array(
+    'yanancenter'=>'名医主刀开启“红色公益之旅” 互联网手术中心落地',
+    'mingyigongyi'=>'共享名医资源，共铸健康中国',
     'jiazhuanxianjiejie' => '当甲状腺结节遇到达芬奇机器人',
     'forbes' => '福布斯发布亚洲年轻领袖榜单,名医主刀CEO苏舒入选',
     'firstaid' => '8小时冒雪夜行驰援，医者仁心只为救死扶伤',
@@ -25,6 +27,7 @@ $news = array(
 );
 $this->pageTitle = $news[$data] . '_名医主刀';
 ?>
+<style>.news-item>a:hover{color:#EFA429;}</style>
 <div class="col-sm-3">
     <div class="newslist" style="border: 1px solid #e4e4e4;margin-right: -15px;">
         <div>
