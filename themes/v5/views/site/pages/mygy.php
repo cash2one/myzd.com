@@ -31,19 +31,15 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/myg
                 </div>
             </div>
             <div class="text-center">
-                <div class="image-link-one mt30"><a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>mygy/baiwangongyi.png" class="img-responsive"></a></div>
-                <div class="image-link-two mt30"><a href="<?php echo $this->createUrl('event/view', array('page' => 'mingyiyizhen')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>mygy/mingyiyizhen.jpg" class="img-responsive"></a></div>
+                <div class="image-link-one mt30"><a href="<?php echo $this->createUrl('event/view', array('page' => 'millionfund')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146416988880228" class="img-responsive"></a></div>
+                <div class="image-link-two mt30"><a href="<?php echo $this->createUrl('event/view', array('page' => 'mingyiyizhen')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146416989035924" class="img-responsive"></a></div>
                 <div class="clearfix"></div>
             </div>
             <div class="flowChart">
-                <div class="text-center flowChart-header"><span class="short-line"></span><span class="vertical-line"></span><span class="content"><img src="<?php echo $urlResImage; ?>mygy/renai.png"></span><span class="vertical-line"></span><span class="short-line"></span></div>
+                <div class="text-center flowChart-header"><span class="short-line"></span><span class="vertical-line"></span><span class="content"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146416989112483"></span><span class="vertical-line"></span><span class="short-line"></span></div>
                 <div class="flowChart-content">
-                    <div class="text-center">
-<!--                        <span class="number-icon">1</span><span class="step-arrow" style="line-height:40px;display:inline-block;"><img src="<?php echo $urlResImage; ?>mygy/step-arrow.png"></span><span class="number-icon">2</span><span class="number-icon">3</span><span class="number-icon">4</span><span class="number-icon">5</span>-->
-
-                    </div>
                     <div class="content">
-                        <div class="text-center"><img src="<?php echo $urlResImage; ?>mygy/flowChart.png" ></div>
+                        <div class="text-center"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146416997937999" ></div>
                         <div class="mt30">请在名医助手回访确认后填写下面相关表格。所有确认为公益项目的被资助者均可以<strong class="color-red">免支付专家会诊费</strong>。如有家庭条件特别困难的患者，可以申请“名医公益援助金”，通过审核的申请者可以获得<strong class="color-red">5000-10000元</strong>的援助金。如患者本人因病暂无能力自行申请，需指定委托人填写。</div>
                         <div class="text-center mt30 text16">请点击下载：<a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>mygy_shenqing.docx">名医公益申请表</a><a class="mygy-textdownload ml20" href="<?php echo $urlDownloads; ?>tepin_shenqing.docx">名医公益援助申请表</a><a class="mygy-textdownload ml20" href="<?php echo $urlDownloads; ?>weituoshu.docx">名医公益委托书</a></div>
                     </div>
@@ -57,13 +53,12 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/myg
 
                     </ul>
                 </div>
-<!--                <div class="text-center mt10"><span class="line-btn active" href="#slider0"></span><span class="line-btn ml10" href="#slider1"></span><span class="line-btn ml10" href="#slider2"></span><span class="line-btn ml10" href="#slider3"></span></div>-->
             </div>
         </div>
 
         <div class="container pr0">
             <div class="mygy-cooperation">
-                <div class="text-center cooperation-header"><span class="short-line"></span><span class="vertical-line"></span><span class="content"><img src="<?php echo $urlResImage; ?>mygy/cooperation.png"></span><span class="vertical-line"></span><span class="short-line"></span></div>
+                <div class="text-center cooperation-header"><span class="short-line"></span><span class="vertical-line"></span><span class="content"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14641698902646"></span><span class="vertical-line"></span><span class="short-line"></span></div>
             </div>
             <div class="mygy-cooperation-area mt30">
                 <div class="text-center cooperation"><div class="cooperation-one"></div><div class="cooperation-name">爱永纯</div></div>
@@ -85,17 +80,6 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/myg
 </div>
 <script>
     $(document).ready(function () {
-        var i = 0;
-        $('.image-link-one').hover(function () {
-            i++;
-            if (i == 0) {
-                $(".image-link-one").animate({height: '0'});
-                $(".image-link-one").animate({height: '120px'});
-            }
-            i++;
-        }, function () {
-            i=0;
-        });
         var urlLoadCommonwealDoctors = '<?php echo $urlCommonwealDoctors; ?>';
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadCommonwealDoctors(urlLoadCommonwealDoctors, urlDoctorView);
