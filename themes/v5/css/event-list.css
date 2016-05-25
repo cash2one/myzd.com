@@ -1,0 +1,18 @@
+#site-content{padding-bottom:100px!important;}
+#eventList .crumbs-event ul{padding: 10px; background-color: #19aea5;color: #fff;margin-bottom: 0;font-size:16px;padding-left: 0px;}
+#eventList .crumbs-event ul li>a{color: #fff!important;color: #19aea5;}
+#eventList .crumbs-event ul li>a:hover{text-decoration:none!important;text-decoration: underline;}
+#eventList .crumbs-event ul li{color: #fff;display: inline-block;}
+#eventList .crumbs-event{background-color: #19aea5;}
+#eventList .special-topic{border:1px solid #eeefef;padding-bottom:30px;margin-top:30px;}
+#eventList .special-topic:hover{border:1px solid #c9c9ca;}
+#eventList .special-topic .header-img{padding:5px;}
+#eventList .special-topic .content{text-align:justify;padding:10px;}
+#eventList .special-topic .learn-more{margin-top:5px;}
+#eventList .special-topic .learn-more a{color:#036eb8;font-size:16px;margin-top:5px;}
+#eventList .special-topic .learn-more a:hover{text-decoration:underline;}
+#eventList .special-topic .content .text-content{letter-spacing:0px;min-height:105px;}
+#eventList .special-topic .content .mark-activity{width:48px;height:29px;background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146311865747795');background-repeat:no-repeat;position:absolute;right:0;margin-right:7px;}
+#eventList .special-topic .content .mark-disease{width:48px;height:29px;background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146311865756050');background-repeat:no-repeat;position:absolute;right:0;margin-right:7px;}
+#eventList .special-topic .content .mark-visit{width:48px;height:29px;background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146311865761144');background-repeat:no-repeat;position:absolute;right:0;margin-right:7px;}
+@media (max-width: 1200px){#eventList .special-topic{min-height:356px;;}}
