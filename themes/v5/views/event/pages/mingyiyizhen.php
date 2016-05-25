@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-mingyiyizhen.css");
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-mingyiyizhen.min.css?v=" . time());
 $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
 $urlDoctorView = $this->createUrl('doctor/view', array('id' => ''));
 $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
@@ -14,7 +14,7 @@ $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
     <div class="city-search">
         <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403634015"><span class="city-name ml10">城市：</span><span><a class="mr20 city active all" data-id="">全部</a><a class="mr20 city" data-id="1">北京</a><a class="mr20 city" data-id="73">上海</a><a class="mr20 city" data-id="200">广州</a><a class="mr20 city" data-id="391">重庆</a><a class="mr20 city" data-id="255">成都</a><a class="mr20 city" data-id="186">长沙</a><a class="city" data-id="other">其他</a></span>
     </div>
-    <div class="text-center service-header"><span class="short-line"></span><span class="content">服务流程</span><span class="short-line"></span></div>
+<!--    <div class="text-center service-header"><span class="short-line"></span><span class="content">服务流程</span><span class="short-line"></span></div>
     <div class="service-line"></div>
     <div class="service-circuit">
         <div class="step active" id="step1">
@@ -37,7 +37,7 @@ $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
             <div class="number-icon">5</div>
             <div class="content">前往医院就诊</div>
         </div>
-    </div>
+    </div>-->
     <div class="department">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs mt30" role="tablist">
@@ -48,30 +48,31 @@ $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
             <li class="category" data-page="dept5" data-category="5"><div class="wuguanke plline"></div></li>
             <li class="category" data-page="dept6" data-category="6"><div class="neike"></div></li>
         </ul>
+        <div style="" class="text-center">
+            <div class="loading loading02" style="position:absolute;margin:120px auto;"></div>
+        </div>
         <!-- Tab panes -->
         <div class="tab-content expert-group">
             <!--分页-->
-
         </div>
     </div>
 </div>
 <script>
     $(document).ready(function () {
-        var i = 2;
-        function show() {
-            if (i < 6) {
-                $(".service-circuit .step").removeClass("active");
-                $(".service-circuit #step" + i).addClass("active");
-                i++;
-            }
-            if (i == 6) {
-                i = 1;
-            }
-        }
-        setInterval(show, 3000);
+//        var i = 2;
+//        function show() {
+//            if (i < 6) {
+//                $(".service-circuit .step").removeClass("active");
+//                $(".service-circuit #step" + i).addClass("active");
+//                i++;
+//            }
+//            if (i == 6) {
+//                i = 1;
+//            }
+//        }
+//        setInterval(show, 3000);
         $condition = new Array();
         $condition["pageCouont"] = '<?php echo $pageCouont == '' ? 1 : $pageCouont; ?>';
-//        alert($condition["page"]);
         $disease_category = 1;
         $cityId = '';
         $(".city-search .city").click(function () {
@@ -100,9 +101,11 @@ $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
     function ajaxLoadFreediagnoseDoctors(cityId, disease_category) {
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         var urlLoadFreediagnoseDoctors = '<?php echo $urlLoadFreediagnoseDoctors; ?>';
+        $('.loading').show();
         $.ajax({
             url: urlLoadFreediagnoseDoctors + '?city=' + cityId + '&disease_category=' + disease_category + '&pagesize=20' + '&page=' + $condition["pageCouont"] + '&getcount=1',
             success: function (data) {
+                $('.loading').hide();
                 setFreediagnoseDoctors(data, urlDoctorView);
                 if (data.dataNum > 20) {
                     setPages(data);
@@ -110,6 +113,7 @@ $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
                 setLocationUrl();
             },
             error: function (XmlHttpRequest, textStatus, errorThrown) {
+                $('.loading').hide();
                 console.log(XmlHttpRequest);
                 console.log(textStatus);
                 console.log(errorThrown);
@@ -134,7 +138,7 @@ $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
                     var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
                     innerHtml += '<div class="col-lg-3 col-md-6 col-sm-6 mt30" ><a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                             '<div class="expInfo text-center bg-white explist-border">' +
-                            contractedImg +'<div class="mingyiyizhen-img"></div>'+
+                            contractedImg + '<div class="mingyiyizhen-img"></div>' +
                             '<div><img class="img100" src="' + doctor.imageUrl + '"/></div>' +
                             '<div class="expName color-black">' + doctor.name + '</div>' +
                             '<div class="expTitle">' + doctor.mTitle + ' ' + aTitle + '</div>' +
@@ -145,7 +149,8 @@ $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
                             '</div>';
                 }
             } else {
-                innerHtml += '<div class="ml15">正在寻找中，敬请期待。</div>';;
+                innerHtml += '<div class="ml15 mt10">正在寻找中，敬请期待。</div>';
+                ;
             }
         }
         innerHtml += '</div><div class="mt30"><nav class="text-center"><ul class="pagination"></ul></nav></div>';

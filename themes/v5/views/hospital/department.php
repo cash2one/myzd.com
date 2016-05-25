@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hospital-home.css");
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hospital-home.css?v=" . time());
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <div class="container-fluid">

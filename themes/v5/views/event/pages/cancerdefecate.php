@@ -6,6 +6,13 @@
     .mb100{margin-bottom:100px;}
     .pl30{padding-left:30px;}
     .pr30{padding-right:30px;}
+    #defecatecancer .expert-list{padding:0px 10px 10px 10px;min-height:357px;}
+    #defecatecancer .expert-list:hover{box-shadow:1px 1px 1px 1px #ddd;}
+    #defecatecancer .hpDeptName{color: #f39700;}
+    #defecatecancer .contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146172568531110');background-repeat: no-repeat;}
+    #defecatecancer .expert-list .mingyiyizhen-img{margin-top:-30px;margin-right:-20px;width: 48px;height: 36px;background-image: url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146192319776424");background-repeat: no-repeat;}
+    #defecatecancer .learn-more a{color:#036eb8;}
+    #defecatecancer .learn-more:hover{text-decoration:underline;}
     @media (max-width: 768px){.pl30{padding-left:15px;}.pr30{padding-right:15px;}}
     @media (max-width: 992px){#defecatecancer .bg-header{height:270px;}}
 </style>
@@ -115,7 +122,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 mt50 mb100 pr30">
+                <div class="col-sm-6 mt50 pr30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>九、断食可杀死癌细胞？</strong></div>
                         <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14635370374695" alt=""/></div>
@@ -126,7 +133,7 @@
                         子宫内膜癌等癌症的发生率都与爱吃糖有关。美国哈佛大学医学院研究发现，爱吃高升糖指数食物的女性患大肠癌风险比正常人高3倍。精制糖类和精加工食品，如甜饮料、糖果、糕点等零食都属于这类食物，人们最好少吃。
                     </div>
                 </div>
-                <div class="col-sm-6 mt50 mb100 pl30">
+                <div class="col-sm-6 mt50 pl30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>十、放化疗一定会掉头发？</strong></div>
                         <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14635370375452" alt=""/></div>
@@ -139,6 +146,64 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container mb50">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mt50">
+                <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '1784')); ?>">
+                    <div class="border-gray expert-list">
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/D107E4DA373730D16AA7E8D48B11ED4E" alt=""></div>
+                        <div class="pull-right contracted-img"></div><div class="clearfix"></div>
+                        <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
+                        <div class="text-center"><span class="strong ml20">黄健</span><span class="text-center">&nbsp;主任医师&nbsp;教授</span></div>
+                        <div class="text-center mt5 hpDeptName">泌尿外科</div>
+                        <div class="text-center mt5">中山二院</div>
+                        <div class="mt10 docdesc"><span class="strong">擅长：</span>腹腔镜、输尿管镜、尿道电切镜、经皮肾镜等微创伤手术，以及肾移植、膀胱再造等高难度手术。</div>                      
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mt50">
+                <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3232')); ?>">
+                    <div class="border-gray expert-list">
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/F7BBF8244A72D5CBF144C4241177DD28" alt=""></div>
+                        <div class="pull-right contracted-img"></div><div class="clearfix"></div>
+                        <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
+                        <div class="text-center"><span class="strong ml20">曹旭晨</span><span class="text-center">&nbsp;主任医师&nbsp;教授</span></div>
+                        <div class="text-center mt5 hpDeptName">乳腺肿瘤一科</div>
+                        <div class="text-center mt5">天津市肿瘤医院</div>
+                        <div class="mt10 docdesc"><span class="strong">擅长：</span>各种乳腺疾病的诊断、治疗，尤其是乳腺癌的诊断、手术治疗及综合治疗。</div>                      
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mt50">
+                <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3059')); ?>">
+                    <div class="border-gray expert-list">
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/409FCA3EB755390D1CB80B2169CF3CD7" alt=""></div>
+                        <div class="pull-right contracted-img"></div><div class="clearfix"></div>
+                        <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
+                        <div class="text-center"><span class="strong ml20">叶颖江</span><span class="text-center">&nbsp;主任医师</span></div>
+                        <div class="text-center mt5 hpDeptName">普外科</div>
+                        <div class="text-center mt5">北大人民医院</div>
+                        <div class="mt10 docdesc"><span class="strong">擅长：</span>胃肠道恶性肿瘤的诊断、外科治疗、术后辅助治疗，中晚期肿瘤的综合治疗，胃肠道恶性肿瘤肝脏转移癌的诊断治疗，肠道起搏器治疗顽固便秘、大便失禁。</div>                      
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mt50">
+                <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '1357')); ?>">
+                    <div class="border-gray expert-list">
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/31347BAD5FF8B337B862586E98908407" alt=""></div>
+                        <div class="pull-right contracted-img"></div><div class="clearfix"></div>
+                        <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
+                        <div class="text-center"><span class="strong ml20">董频</span><span class="text-center">&nbsp;主任医师&nbsp;教授</span></div>
+                        <div class="text-center mt5 hpDeptName">头颈外科</div>
+                        <div class="text-center mt5">上海市第一人民医院</div>
+                        <div class="mt10 docdesc"><span class="strong">擅长：</span>头颈部肿瘤的手术治疗，对鼾症的诊断与治疗，嗓音的分析、诊断和治疗等有独特的医疗技术水平和经验。</div>                      
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+        <div class="text-right mt5"><span class="learn-more"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1));?>" target="_blank">查看更多</a></span></div>
     </div>
 </div>
 </section>
