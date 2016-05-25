@@ -1,0 +1,37 @@
+#site-content{padding-bottom: 100px!important;}
+.w100{width:100%;}
+.text16{font-size:16px;}
+#hospital-home .department-group .waike{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:0 0;width:195px;height:200px;border:1px solid #efefef;}
+#hospital-home .department-group .guke{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:-195px 0;width:195px;height:200px;border:1px solid #efefef;}
+#hospital-home .department-group .fuchanke{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:-390px 0;width:195px;height:200px;border:1px solid #efefef;}
+#hospital-home .department-group .xiaoerke{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:-585px 0;width:195px;height:200px;border:1px solid #efefef;}
+#hospital-home .department-group .wuguanke{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:-780px 0;width:195px;height:200px;border:1px solid #efefef;}
+#hospital-home .department-group .neike{background-color:#f7f7f7;background-image:url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403597886");background-repeat:no-repeat;background-position:-975px 0;width:195px;height:200px;border:1px solid #efefef;}
+#hospital-home .department-group{margin-top:30px;}
+#hospital-home .department-group.department-waike .waike:hover{border:1px solid #82c0ca;cursor:pointer;}
+#hospital-home .department-group.department-guke .guke:hover{border:1px solid #9581b6;cursor:pointer;}
+#hospital-home .department-group.department-fuchanke .fuchanke:hover{border:1px solid #f3b3be;cursor:pointer;}
+#hospital-home .department-group.department-xiaoerke .xiaoerke:hover{border:1px solid #8fc07b;cursor:pointer;}
+#hospital-home .department-group.department-wuguanke .wuguanke:hover{border:1px solid #f08a2e;cursor:pointer;}
+#hospital-home .department-group.department-neike .neike:hover{border:1px solid #d55a80;cursor:pointer;}
+#hospital-home .department-group .recommend-content{min-height:200px;border:1px solid #efefef;}
+#hospital-home .department-group .recommend-content .heading{text-align:center;font-size:16px;margin-top:10px;}
+#hospital-home .department-group .recommend-content .faculty-waike{color:#82c0ca;margin-left:10px;}
+#hospital-home .department-group .recommend-content .faculty-guke{color:#9581b6;margin-left:10px;}
+#hospital-home .department-group .recommend-content .faculty-fuchanke{color:#f3b3be;margin-left:10px;}
+#hospital-home .department-group .recommend-content .faculty-xiaoerke{color:#8fc07b;margin-left:10px;}
+#hospital-home .department-group .recommend-content .faculty-wuguanke{color:#f08a2e;margin-left:10px;}
+#hospital-home .department-group .recommend-content .faculty-neike{color:#d55a80;margin-left:10px;}
+#hospital-home .department-group .recommend-content .look-more a{color:#036eb8;position:absolute;bottom:10px;right:30px;}
+#hospital-home .department-group .recommend-content .look-more a:hover{text-decoration:underline;}
+#hospital-home .department-group .recommend-content .content{line-height:1.8em;}
+#hospital-home .department-group .recommend-content .content .arrow{display:none;}
+#hospital-home .department-group .recommend-content .content .hospital-dept:hover .arrow{display:inline-block;}
+#hospital-home .department-waike .recommend-content .content .hospital-dept:hover a{color:#82c0ca;cursor:pointer;}
+#hospital-home .department-guke .recommend-content .content .hospital-dept a:hover{color:#9581b6;cursor:pointer;}
+#hospital-home .department-fuchanke .recommend-content .content .hospital-dept a:hover{color:#f3b3be;cursor:pointer;}
+#hospital-home .department-xiaoerke .recommend-content .content .hospital-dept a:hover{color:#8fc07b;cursor:pointer;}
+#hospital-home .department-wuguanke .recommend-content .content .hospital-dept a:hover{color:#f08a2e;cursor:pointer;}
+#hospital-home .department-neike .recommend-content .content .hospital-dept a:hover{color:#d55a80;cursor:pointer;}
+
+
