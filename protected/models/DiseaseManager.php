@@ -29,7 +29,7 @@ class DiseaseManager {
         }
         return $output;
     }
-    
+
     public function loadListDiseaseV7() {
         $output = array();
         $dcList = DiseaseCategory::model()->getAllByInCondition('t.app_version', 7);
@@ -59,9 +59,18 @@ class DiseaseManager {
         $models = DiseaseCategory::model()->getAllByInCondition('t.app_version', 7);
         return $models;
     }
+
+    public function loadHospitalList($id) {
+        $connection = Yii::app()->db;
+        $sql = "SELECT * FROM hospital_department p WHERE p.`id` IN ( SELECT j.`hp_dept_id` FROM category_hp_dept_join j WHERE j.`sub_cat_id` IN ( SELECT d.`category_id` FROM disease d WHERE d.`date_deleted` IS NULL AND d.`app_version` = '7' AND d.`id` = 18));";
+        $command = $connection->createCommand($sql);
+        $result = $command->queryAll();
+        return $result;
+        
+    }
+
     public function loadDiseaseCategoryList() {
         $models = DiseaseCategory::model()->getAllByInCondition('t.app_version', null, array('dcDiseases'));
-
         return $models;
     }
 
