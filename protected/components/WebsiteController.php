@@ -233,7 +233,6 @@ abstract class WebsiteController extends Controller {
 
     //验证第三方
     public function checkVendor($site=0){
-        echo $site;die;
         if (isset($_GET['appId']) && isset($_GET['timestamp']) && isset($_GET['sign'])) {
             $now = time();
             $oneDay = 3600 * 24;
