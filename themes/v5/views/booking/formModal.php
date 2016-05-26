@@ -8,6 +8,7 @@ $urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'
 $urlSubmitForm = $this->createUrl("booking/ajaxCreate");
 $urlReturn = $this->createUrl('booking/success', array('id' => ''));
 $is_commonweal=isset($is_commonweal)?$is_commonweal:0;
+$bookingLog = $this->createUrl("booking/ajaxBookingLog");
 ?>
 <div class="modal fade " role="dialog" id="bookingModal" aria-labelledby="bookingModal">
     <div class="modal-dialog" role="document">
@@ -98,3 +99,23 @@ $is_commonweal=isset($is_commonweal)?$is_commonweal:0;
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $('#bookingModal').on('show.bs.modal', function (event) {
+            var actionUrl = '<?php echo $bookingLog?>';
+            $.ajax({
+                type: 'get',
+                url: actionUrl,
+                'success': function (data) {
+
+                },
+                'error': function (data) {
+                    console.log(data);
+                },
+                'complete': function () {
+                }
+            });
+        });
+    });
+</script>

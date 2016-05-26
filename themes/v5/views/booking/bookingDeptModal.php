@@ -7,6 +7,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'));
 $urlSubmitForm = $this->createUrl("booking/ajaxCreate");
 $urlReturn = $this->createUrl('booking/success', array('id' => ''));
+$bookingLog = $this->createUrl("booking/ajaxBookingLog");
 ?>
 <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -86,6 +87,19 @@ $urlReturn = $this->createUrl('booking/success', array('id' => ''));
 <script>
     $(document).ready(function () {
         $('#bookingModal').on('show.bs.modal', function (event) {
+            var actionUrl = '<?php echo $bookingLog; ?>';
+            $.ajax({
+                type: 'get',
+                url: actionUrl,
+                'success': function (data) {
+
+                },
+                'error': function (data) {
+                    console.log(data);
+                },
+                'complete': function () {
+                }
+            });
             var button = $(event.relatedTarget);
             var hospital = button.data('hospital');
             var dept = button.data('dept');

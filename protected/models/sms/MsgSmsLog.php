@@ -8,6 +8,7 @@
  * @property string $vendor_name
  * @property string $mobile
  * @property string $content
+ * @property integer $type
  * @property integer $is_success
  * @property string $user_host_ip
  * @property string $date_created
@@ -33,7 +34,7 @@ class MsgSmsLog extends EActiveRecord
 		// will receive user inputs.
 		return array(
 			array('content', 'required'),
-			array('is_success', 'numerical', 'integerOnly'=>true),
+			array('type, is_success', 'numerical', 'integerOnly'=>true),
 			array('vendor_name', 'length', 'max'=>50),
 			array('mobile', 'length', 'max'=>11),
 			array('content', 'length', 'max'=>500),
@@ -41,7 +42,7 @@ class MsgSmsLog extends EActiveRecord
 			array('date_created, date_updated, date_deleted', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, vendor_name, mobile, content, is_success, user_host_ip, date_created, date_updated, date_deleted', 'safe', 'on'=>'search'),
+			array('id, vendor_name, mobile, content, type, is_success, user_host_ip, date_created, date_updated, date_deleted', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,6 +67,7 @@ class MsgSmsLog extends EActiveRecord
 			'vendor_name' => '短信供应商的名称',
 			'mobile' => '手机号',
 			'content' => '短信内容',
+			'type' => '1通知类 2营销类',
 			'is_success' => 'Is Success',
 			'user_host_ip' => 'ip',
 			'date_created' => 'Date Created',
@@ -96,6 +98,7 @@ class MsgSmsLog extends EActiveRecord
 		$criteria->compare('vendor_name',$this->vendor_name,true);
 		$criteria->compare('mobile',$this->mobile,true);
 		$criteria->compare('content',$this->content,true);
+		$criteria->compare('type',$this->type);
 		$criteria->compare('is_success',$this->is_success);
 		$criteria->compare('user_host_ip',$this->user_host_ip,true);
 		$criteria->compare('date_created',$this->date_created,true);

@@ -24,7 +24,7 @@ class BookingController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'test', 'quickbook', 'ajaxQuickbook', 'create', 'ajaxCreate', 'ajaxUploadFile', 'list', 'success', 'get', 'uploadFile'),
+                'actions' => array('index', 'view', 'test', 'quickbook', 'ajaxQuickbook', 'create', 'ajaxCreate', 'ajaxUploadFile', 'list', 'success', 'get', 'uploadFile', 'ajaxBookingLog'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -558,6 +558,20 @@ class BookingController extends WebsiteController {
                 
             }
         }
+    }
+
+    /**
+     * 记录填出预约表单日志
+     */
+    public function actionAjaxBookingLog() {
+        $output['status'] = 'no';
+        //第三方预约
+        if (Yii::app()->session['vendorId']) {
+            $this->storeAppAccessInfo(Yii::app()->session['vendorId'], AppLog::SITE_BOOKING);
+            $output['status'] = 'ok';
+        }
+        $this->renderJsonOutput($output);
+
     }
 
     public function actionGet() {

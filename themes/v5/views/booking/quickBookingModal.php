@@ -9,6 +9,7 @@ $urlGetSmsVerifyCode = $this->createAbsoluteUrl('/auth/sendSmsVerifyCode');
 $authActionType = AuthSmsVerify::ACTION_BOOKING;
 $urlSubmitForm = $this->createUrl("booking/ajaxQuickbook");
 $urlReturn = '';
+$bookingLog = $this->createUrl("booking/ajaxBookingLog");
 ?>
 <div class="modal fade" id="qucikbookingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -125,6 +126,19 @@ $urlReturn = '';
 <script type="text/javascript">
     $(document).ready(function () {
         $('#qucikbookingModal').on('show.bs.modal', function (event) {
+            var actionUrl = '<?php echo $bookingLog; ?>';
+            $.ajax({
+                type: 'get',
+                url: actionUrl,
+                'success': function (data) {
+
+                },
+                'error': function (data) {
+                    console.log(data);
+                },
+                'complete': function () {
+                }
+            });
             $('#loginModal').modal('hide');
         });
         $("#btn-sendBookingSmsCode").click(function (e) {
