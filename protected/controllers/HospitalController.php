@@ -30,6 +30,7 @@ class HospitalController extends WebsiteController {
     }
     
     public function actionDepartment() {
+        $this->checkVendor(AppLog::SITE_DEPT);
         $this->render('department');
     }
 

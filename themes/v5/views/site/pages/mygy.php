@@ -5,6 +5,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
 $urlCommonwealDoctors = $this->createUrl('api/commonwealdoctors');
 $urlDoctorView = $this->createUrl('doctor/view');
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/mygy.min.css" . "?v=" . time());
+$this->checkVendor(AppLog::SITE_MYGY);
 ?>
 <div class="container-fluid">
     <div class="row">
