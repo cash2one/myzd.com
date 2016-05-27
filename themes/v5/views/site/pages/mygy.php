@@ -41,8 +41,24 @@ $this->checkVendor(AppLog::SITE_MYGY);
                 <div class="flowChart-content">
                     <div class="content">
                         <div class="text-center"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146416997937999" ></div>
-                        <div class="mt30">请在名医助手回访确认后填写下面相关表格。所有确认为公益项目的被资助者均可以<strong class="color-red">免支付专家会诊费</strong>。如有家庭条件特别困难的患者，可以申请“名医公益援助金”，通过审核的申请者可以获得<strong class="color-red">5000-10000元</strong>的援助金。如患者本人因病暂无能力自行申请，需指定委托人填写。</div>
-                        <div class="text-center mt30 text16">请点击下载：<a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>mygy_shenqing.docx">名医公益申请表</a><a class="mygy-textdownload ml20" href="<?php echo $urlDownloads; ?>tepin_shenqing.docx">名医公益援助申请表</a><a class="mygy-textdownload ml20" href="<?php echo $urlDownloads; ?>weituoshu.docx">名医公益委托书</a></div>
+                        <div class="row">
+                            <div class="col-md-8 information mt30">
+                                所有公益项目的被资助者（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>mygy_shenqing.docx">下载名医公益申请表</a></strong>）均可以<strong class="color-e50011 text16">免支付专家会诊费</strong>。如家庭条件特别困难，可以再申请“名医公益援助金”（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>tepin_shenqing.docx">下载名医公益援助申请表</a></strong>），通过审核者可获得<strong class="text16 color-e50011">5000-10000元</strong>的援助金。如患者本人因病暂无能力自行申请，需指定委托人填写（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>weituoshu.docx">下载名医公益委托书</a></strong>）。
+                            </div>
+                            <div class="col-md-4 mt30">
+                                <div class="text-right">
+                                    <div class="number-tips text-center">
+<!--                                        <ul class="text-bxslider" style="padding:0;">
+                                            <li>-->
+                                                <div><span class="text16">已捐赠手术的医生人数：</span><span class="text21 color-e50011 number">53位</span></div>
+                                                <div><span class="text16">已成功资助的患者人数：</span><span class="text21 color-e50011 number">58位</span></div>
+<!--                                            </li>
+                                        </ul>-->
+                                    </div>
+                                </div>
+                                <div class="text12 text-right mt5">截至2016.5.27</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -133,7 +149,7 @@ $this->checkVendor(AppLog::SITE_MYGY);
             $(".commonwealexpert .bxslider").html(innerHtml);
 
         }
-//轮播
+        //轮播
         var adsbxslider = $('.commonwealexpert .bxslider').bxSlider({
             mode: 'fade',
             slideMargin: 0,
@@ -142,6 +158,15 @@ $this->checkVendor(AppLog::SITE_MYGY);
             speed: 0,
             auto: true
         });
+//        $('#mygy .text-bxslider').bxSlider({
+//            mode: 'vertical',
+//            slideMargin: 0,
+//            controls: true,
+//            pause: 5000,
+//            speed: 1000,
+//            auto: true
+//        });
+//        $('#mygy .number-tips .bx-pager').hide();
         $(".commonwealexpert .bx-controls-direction").hide();
     }
 
