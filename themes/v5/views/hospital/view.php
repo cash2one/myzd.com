@@ -181,14 +181,14 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                 <div class="col-lg-3 col-sm-4 col-xs-12"> 
                     <div class="booking-circuit">
                         <div class="text-center heading">一键约科室流程</div>
-                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:8px;"><img src="<?php echo $urlResImage; ?>hospital/01.png"></div><div class="">点击预约科室</div><div class="clearfix"></div></div>
-                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:5px;"><img src="<?php echo $urlResImage; ?>hospital/02.png"></div><div class="">按要求填写并提交病例资料</div><div class="clearfix"></div></div>
-                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:5px;"><img src="<?php echo $urlResImage; ?>hospital/03.png"></div><div class="">名医助手8小时内回访确认预约和病例资料</div><div class="clearfix"></div></div>
-                        <div class="mt10"><div class="pull-left" style="height:4em;margin-right:5px;"><img src="<?php echo $urlResImage; ?>hospital/04.png"></div><div class="">两个工作日内回访给出最适合的主刀专家推荐和诊疗意见（如有需要会安排面诊）</div><div class="clearfix"></div></div>
-                        <div class="mt10"><div class="pull-left" style="height:4em;margin-right:5px;"><img src="<?php echo $urlResImage; ?>hospital/05.png"></div><div class="">如需要手术，名医助手会立刻开始安排手术床位，减少等待床位时间</div><div class="clearfix"></div></div>
+                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:8px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434442994569"></div><div class="">点击预约科室</div><div class="clearfix"></div></div>
+                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:5px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445111882"></div><div class="">按要求填写并提交病例资料</div><div class="clearfix"></div></div>
+                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:5px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445119581"></div><div class="">名医助手8小时内回访确认预约和病例资料</div><div class="clearfix"></div></div>
+                        <div class="mt10"><div class="pull-left" style="height:4em;margin-right:5px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445123129"></div><div class="">两个工作日内回访给出最适合的主刀专家推荐和诊疗意见（如有需要会安排面诊）</div><div class="clearfix"></div></div>
+                        <div class="mt10"><div class="pull-left" style="height:4em;margin-right:5px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445127681"></div><div class="">如需要手术，名医助手会立刻开始安排手术床位，减少等待床位时间</div><div class="clearfix"></div></div>
                     </div>
-                    <div class="event-link-img mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancerdefecate')); ?>" target="_blank"><img src="<?php echo $urlResImage; ?>hospital/1-01.png"></a></div>
-                    <div class="event-link-img mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')) ?>" target="_blank"><img src="<?php echo $urlResImage; ?>hospital/2-01.png"></a></div>
+                    <div class="event-link-img mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancerdefecate')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445103935"></a></div>
+                    <div class="event-link-img mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')) ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445115492"></a></div>
                 </div>
             </div>
         </div>
