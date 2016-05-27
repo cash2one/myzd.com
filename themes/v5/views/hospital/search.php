@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/searchhospital.css");
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/searchhospital.min.css?v=" . time());
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchhospital.js?v=' . time(), CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlHopitalSearch = $this->createUrl('hospital/search');
@@ -30,16 +30,16 @@ $page = Yii::app()->request->getQuery('page', '');
 </div>
 <div class="container" id="hospital-list">
     <div class="city-cutover mt20">
-        <span><img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146253292660125"></span><span class="city-name ml10 mr20"></span><span class="cutover-btn">切换</span>
+        <span><img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146253292660125"></span><span class="city-name"></span><span class="cutover-btn"></span>
     </div>
     <div class="open-city city-list">
-        <div class="heading mt5">热门城市<span class="close-btn">&times;</span></div>
+        <div class="heading mt5">热门城市<span class="close-btn"></span></div>
         <div class="hot-city mt10">
-            <div><a class="city city-init" data-id="1">北京</a><a class="city ml15" data-id="73">上海</a><a class="city ml15" data-id="200">广州</a><a class="city ml15" data-id="74">南京</a><a class="city ml15" data-id="255">成都</a></div>
+            <div><a class="city city-init" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a class="city" data-id="74">南京</a><a class="city last" data-id="255">成都</a></div>
         </div>
         <div class="heading mt20">其他</div>
         <div class="other-city mt5">
-            <a class="city" data-id="391">重庆</a><a class="city ml15" data-id="87">杭州</a><a class="city ml15" data-id="308">西安</a><a class="city ml15" data-id="169">武汉</a><a cl<a class="city ml15" data-id="186">长沙</a><a class="city ml15" data-id="134">济南</a><br/><a class="city" data-id="151">郑州</a> 
+            <a class="city" data-id="391">重庆</a><a class="city ml15" data-id="87">杭州</a><a class="city ml15" data-id="308">西安</a><a class="city ml15" data-id="169">武汉</a><a cl<a class="city ml15" data-id="186">长沙</a><a class="city ml15" data-id="134">济南</a><div class="mt5"><a class="city" data-id="151">郑州</a></div> 
         </div>
     </div>
     <div class="row">
@@ -71,20 +71,16 @@ $page = Yii::app()->request->getQuery('page', '');
                 </div>
             </div>
             <div class="col-sm-10">
-                <div class="row">
-                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146253292644696" class="img-responsive mt20">
-                    <div class="loading loading02"></div>
-                    <div class="hospital-list">
-
-                    </div>
-                    <!--分页-->
-                    <div class="mt30">
-                        <nav class="text-center">
-                            <ul class="pagination">
-
-                            </ul>
-                        </nav>
-                    </div>
+                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146371056784455" class="img-responsive mt20">
+                <div class="loading loading02"></div>
+                <div class="hospital-list">
+                </div>
+                <!--分页-->
+                <div class="mt30">
+                    <nav class="text-center">
+                        <ul class="pagination">
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -102,11 +98,18 @@ $page = Yii::app()->request->getQuery('page', '');
     condition["page"] = '<?php echo $page == '' ? 1 : $page; ?>';
     var urlLoadHospital = '<?php echo $urlLoadHospital; ?>';
     $(document).ready(function () {
-         $("#hospital-list .open-city .close-btn").click(function () {
+        $("#hospital-list .open-city .close-btn").click(function () {
+            $("#hospital-list .city-cutover .cutover-btn").removeClass('active');
             $("#hospital-list .open-city").hide();
         });
         $("#hospital-list .city-cutover .cutover-btn").click(function () {
-            $("#hospital-list .open-city").show();
+            if ($("#hospital-list .city-cutover .cutover-btn").hasClass('active')) {
+                $("#hospital-list .city-cutover .cutover-btn").removeClass('active');
+                $("#hospital-list .open-city").hide();
+            } else {
+                $(this).addClass('active');
+                $("#hospital-list .open-city").show();
+            }
         });
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
@@ -171,6 +174,7 @@ $page = Yii::app()->request->getQuery('page', '');
             var active = '';
             for (var i = 1; i <= diseaseCategorys.length; i++) {
                 var diseaseCategory = diseaseCategorys[i - 1];
+                console.log(diseaseCategory.id);
                 if (i == condition["disease_category"]) {
                     active = 'active';
                     $('.department-name>span').text(diseaseCategory.name);
@@ -193,7 +197,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 }
                 innerHtml += '<div class="department ' + active + '">' +
                         '<div class="dept-header">' +
-                        '<span class="'+imgname+'"></span><i class="fa fa-caret-right"></i>' +
+                        '<span class="' + imgname + '"></span><i class="fa fa-caret-right"></i>' +
                         '<i class="fa fa-caret-down"></i>' +
                         '<span class="strong">' + diseaseCategory.name + '</span>' +
                         '</div>' +
@@ -232,7 +236,7 @@ $page = Yii::app()->request->getQuery('page', '');
             if (condition["city"]) {
                 if (cityId == condition["city"]) {
                     $(this).addClass('active');
-                     var html = $(this).text();
+                    var html = $(this).text();
                     $("#hospital-list .city-cutover .city-name").html(html);
                 }
             } else {
