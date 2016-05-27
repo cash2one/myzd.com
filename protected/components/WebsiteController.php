@@ -221,14 +221,16 @@ abstract class WebsiteController extends Controller {
             $coreAccess->vendor_id = $vendorId;
         }
         if($site > 0){
-            $coreAccess->site = $site;
+            $coreAccess->setSitePosition($site);
         }
         $coreAccess->user_host_ip = Yii::app()->request->getUserHostAddress();
         $coreAccess->url = Yii::app()->request->getUrl();
         $coreAccess->url_referrer = Yii::app()->request->getUrlReferrer();
         $coreAccess->user_agent = Yii::app()->request->getUserAgent();
         $coreAccess->user_host = Yii::app()->request->getUserHost();
+
         $coreAccess->save();
+
     }
 
     //验证第三方
