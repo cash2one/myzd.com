@@ -31,9 +31,9 @@ class ApiViewDiseaseCategory extends EApiViewService {
 
     public function loadDiseaseCategory() {
         $disMgr = new DiseaseManager();
-        // $models = $disMgr->loadDiseaseCategoryListV7();
-        $disease = Yii::app()->request->getParam('disease');
-        $models = $disMgr->loadHospitalList($disease);
+         $models = $disMgr->loadDiseaseCategoryListV7();
+//        $disease = Yii::app()->request->getParam('disease');
+//        $models = $disMgr->loadHospitalList('18');
         $navList = array();
         foreach ($models as $model) {
             $data = new stdClass();
