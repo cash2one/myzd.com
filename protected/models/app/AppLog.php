@@ -9,7 +9,7 @@
  * @property string $user_host_ip
  * @property string $username
  * @property string $url
- * @property integer $site_position
+ * @property integer $site
  * @property string $url_referrer
  * @property string $user_agent
  * @property string $user_host
@@ -39,16 +39,14 @@ class AppLog extends EActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('vendor_id, site_position', 'numerical', 'integerOnly'=>true),
+			array('vendor_id, site', 'numerical', 'integerOnly'=>true),
 			array('user_host_ip, username', 'length', 'max'=>20),
-			array('url', 'length', 'max'=>100),
-			array('url_referrer', 'length', 'max'=>255),
-			array('user_agent', 'length', 'max'=>1000),
+			array('url, url_referrer, user_agent', 'length', 'max'=>255),
 			array('user_host', 'length', 'max'=>45),
 			array('date_created, date_updated, date_deleted', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, vendor_id, user_host_ip, username, url, site_position, url_referrer, user_agent, user_host, date_created, date_updated, date_deleted', 'safe', 'on'=>'search'),
+			array('id, vendor_id, user_host_ip, username, url, site, url_referrer, user_agent, user_host, date_created, date_updated, date_deleted', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -74,7 +72,7 @@ class AppLog extends EActiveRecord
 			'user_host_ip' => 'User Host Ip',
 			'username' => 'Username',
 			'url' => 'Url',
-			'site_position' => '位置',
+			'site' => '位置',
 			'url_referrer' => 'Url Referrer',
 			'user_agent' => 'User Agent',
 			'user_host' => 'User Host',
@@ -107,7 +105,7 @@ class AppLog extends EActiveRecord
 		$criteria->compare('user_host_ip',$this->user_host_ip,true);
 		$criteria->compare('username',$this->username,true);
 		$criteria->compare('url',$this->url,true);
-		$criteria->compare('site_position',$this->site_position);
+		$criteria->compare('site',$this->site);
 		$criteria->compare('url_referrer',$this->url_referrer,true);
 		$criteria->compare('user_agent',$this->user_agent,true);
 		$criteria->compare('user_host',$this->user_host,true);
@@ -130,8 +128,4 @@ class AppLog extends EActiveRecord
 	{
 		return parent::model($className);
 	}
-
-    public function setSitePosition($v){
-        $this->site_position = $v;
-    }
 }
