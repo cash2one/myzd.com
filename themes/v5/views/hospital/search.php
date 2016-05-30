@@ -13,7 +13,7 @@ $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
 $page = Yii::app()->request->getQuery('page', '');
-?>
+?> 
 <div class="container-fluid search-hospital-header">
     <div class="container">
         <div class="crumbs-header">
