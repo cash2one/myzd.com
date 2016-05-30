@@ -57,9 +57,9 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                     ?>
                 </div>
                 <?php if (mb_strlen($desc) > 900) { ?>
-                    <div class="pull-right more-desc"><a href="javascript:void(0);" alt="查看全部">详情&nbsp;<i class="fa fa fa-caret-down"></i></a></div>
+                    <div class="text-right more-desc"><a href="javascript:void(0);" alt="查看全部">详情&nbsp;<i class="fa fa fa-caret-down"></i></a></div>
                 <?php } ?>
-                <div class="pull-right retract"><a href="javascript:void(0);" alt="查看全部">收起&nbsp;<i class="fa fa fa-caret-up"></i></a></div>
+                <div class="text-right retract"><a href="javascript:void(0);" alt="查看全部">收起&nbsp;<i class="fa fa fa-caret-up"></i></a></div>
             </div>
         </div>
     </div>
