@@ -221,7 +221,7 @@ abstract class WebsiteController extends Controller {
             $coreAccess->vendor_id = $vendorId;
         }
         if($site > 0){
-            $coreAccess->setSitePosition($site);
+            $coreAccess->site = $site;
         }
         $coreAccess->user_host_ip = Yii::app()->request->getUserHostAddress();
         $coreAccess->url = Yii::app()->request->getUrl();
