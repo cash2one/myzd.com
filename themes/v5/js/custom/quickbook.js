@@ -3,14 +3,21 @@ jQuery(function () {
     var $ = jQuery, // just in case. Make sure it's not an other libaray.
             domForm = $("#quickbook-form"),
             btnSubmit = $("#btnQuickBookSubmit");
-//提交按钮点击时间
-
-    btnSubmit.click(function () {
-        //触发表单提交事件
-        domForm.submit();
+    btnSubmit.click(function (e) {
+        e.preventDefault();
+        var bool = validator.form();
+        if (bool) {
+            var captchaCode = domForm.find("#booking_captcha_code").val();
+            if (ajaxValidateCaptchaCode(captchaCode) == false) {
+                $("div.error").remove();
+                $("#booking_captcha_code").parents('.input-group').after('<div id="booking_captcha_code-error" class="error">请输入正确的图形验证码</div>');
+            } else {
+                domForm.submit();
+            }
+        }
     });
 // 手机号码验证
-    $.validator.addMethod("isMobile", function (value, element) {
+    jQuery.validator.addMethod("isMobile", function (value, element) {
         var length = value.length;
         var mobile = /^(13[0-9]{9})|(18[0-9]{9})|(14[0-9]{9})|(17[0-9]{9})|(15[0-9]{9})$/;
         return this.optional(element) || (length == 11 && mobile.test(value));

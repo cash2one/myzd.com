@@ -2,10 +2,17 @@ jQuery(function () {
     var $ = jQuery,
             domForm = $("#login-verifycode-form"), // form - html dom object.;
             btnSubmit = $("#btnLoginVerifycodeSubmit");
-    btnSubmit.click(function () {
+    btnSubmit.click(function (e) {
+        e.preventDefault();
         var bool = validator.form();
         if (bool) {
-            formAjaxSubmit();
+            var captchaCode = domForm.find("#UserVerifyCodeLoginForm_captcha_code").val();
+            if (ajaxValidateCaptchaCode(captchaCode) == false) {
+                $("div.error").remove();
+                $("#UserVerifyCodeLoginForm_captcha_code").parents('.input-group').after('<div id="UserVerifyCodeLoginForm_captcha_code-error" class="error">请输入正确的图形验证码</div>');
+            } else {
+                formAjaxSubmit();
+            }
         }
     });
     // 手机号码验证
