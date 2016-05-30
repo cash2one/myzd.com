@@ -1,21 +1,7 @@
-<style>
-    #defecatecancer .bg-header{background-image:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146353703763190');height:400px;}
-    #defecatecancer .main-content{margin: 0 auto;padding:0 105px;}
-    #defecatecancer .text-heading-color{color:#ed8f26;font-size:18px;word-spacing: -20px;}
-    #defecatecancer .text-little-content{text-align:justify;color:#075c96;font-size:14px;word-spacing: -20px;}
-    .mb100{margin-bottom:100px;}
-    .pl30{padding-left:30px;}
-    .pr30{padding-right:30px;}
-    #defecatecancer .expert-list{padding:0px 10px 10px 10px;min-height:357px;}
-    #defecatecancer .expert-list:hover{box-shadow:1px 1px 1px 1px #ddd;}
-    #defecatecancer .hpDeptName{color: #f39700;}
-    #defecatecancer .contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146172568531110');background-repeat: no-repeat;}
-    #defecatecancer .expert-list .mingyiyizhen-img{margin-top:-30px;margin-right:-20px;width: 48px;height: 36px;background-image: url("http://7xsq2z.com2.z0.glb.qiniucdn.com/146192319776424");background-repeat: no-repeat;}
-    #defecatecancer .learn-more a{color:#036eb8;}
-    #defecatecancer .learn-more:hover{text-decoration:underline;}
-    @media (max-width: 768px){.pl30{padding-left:15px;}.pr30{padding-right:15px;}}
-    @media (max-width: 992px){#defecatecancer .bg-header{height:270px;}}
-</style>
+<?php
+$urlResImage = Yii::app()->theme->baseUrl . "/images/";
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-main.min.css?v=" . time());
+?>
 <section id="defecatecancer">
     <div class="container-fluid bg-header">
         <div class="row">

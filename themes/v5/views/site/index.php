@@ -69,14 +69,14 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 
     <div class="container-fluid ">
         <div class="row">
-            <div class="container mt50">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-9 pr0">
+                    <div class="col-md-9 pr0 mt50">
                         <a href="<?php echo $this->createUrl('event/view', array('page' => 'cancerdefecate')); ?>" target="_blank">
                             <img class="img-responsive home-event-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146347892798242"/>
                         </a>
                     </div>
-                    <div class="col-md-3 pl0 pr0 home-small-event-img">
+                    <div class="col-md-3 pl0 pr0 home-small-event-img mt50">
                         <div><a href="<?php echo $this->createUrl('event/view', array('page' => 'mingyiyizhen')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146310859981873"></a></div>
                     </div>
                 </div>
@@ -88,13 +88,13 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
         <div class="row">
             <div class="container">
                 <div class="row home-expList expert">
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <div class="row">
                             <div class="col-md-6 pr0"><div class="expertlist-logo"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146310768121918"></div></div>
                             <div class="col-md-6 expertlist-deptmark">
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
-                                    <a  href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank" class="category active "><div class="text-center department-choose"><div class="home-waike-small home-dept-small"></div></div><div><img class="home-expcorner" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146312014238541"></div><div class="clearfix"></div></a>
+                                    <a  href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1)); ?>" data-page="dept1" target="_blank" class="category active "><div class="text-center department-choose department-choose-first"><div class="home-waike-small home-dept-small"></div></div><div><img class="home-expcorner" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146312014238541"></div><div class="clearfix"></div></a>
                                     <a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 13)); ?>" data-page="dept2" target="_blank" class="category"><div class="text-center department-choose"><div class="home-guke-small home-dept-small"></div></div><div><img class="home-expcorner" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146312014238541"></div><div class="clearfix"></div></a>
                                     <a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 18)); ?>" data-page="dept4" target="_blank" class="category"><div class="text-center department-choose"><div class="home-fuchanke-small home-dept-small"></div></div><div><img class="home-expcorner" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146312014238541"></div><div class="clearfix"></div></a>
                                     <a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 28)); ?>" data-page="dept3" target="_blank" class="category"><div class="text-center department-choose"><div class="home-wuguanke-small home-dept-small"></div></div><div><img class="home-expcorner" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146312014238541"></div><div class="clearfix"></div></a>
@@ -104,7 +104,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-9" >
+                    <div class="col-sm-9" >
                         <div class="bg-gray-f7 pb15">
                             <div class="tab-content expList-tab">
                             </div>
