@@ -8,10 +8,5 @@
 #shapinghealth .main-content .content-sixth{text-indent:2em;text-align:justify;margin-top:62px;font-size:15px;}
 .text18{font-size:18px;}
 #shapinghealth .main-content .content-fourth-total{margin-left:10px;}
-@media (max-width: 1200px){#shapinghealth .main-content .content-fourth-total{margin-left:0px;}#shapinghealth .main-content .content-third{padding-right:0px;}}
-@media (max-width: 768px){#shapinghealth .shapinghealth-img{text-align:center;margin-top:10px;}}
-/*文字字号：
-第一段：16
-最后一段：15
-其他都是：14（中间标题“名医公益模式之共铸健康中国”：18）
-所有正文色值：333*/
+@media (max-width: 1199px){#shapinghealth .main-content .content-fourth-total{margin-left:0px;}#shapinghealth .main-content .content-third{padding-right:0px;}}
+@media (max-width: 761px){#shapinghealth .shapinghealth-img{text-align:center;margin-top:10px;}}

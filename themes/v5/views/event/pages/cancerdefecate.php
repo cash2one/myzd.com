@@ -135,7 +135,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
     </div>
     <div class="container mb50">
         <div class="row">
-            <div class="col-md-3 col-sm-6 mt50">
+            <div class="col-sm-6 col-lg-3 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '1784')); ?>">
                     <div class="border-gray expert-list">
                         <div><img class="img100" src="http://dr.static.mingyizhudao.com/D107E4DA373730D16AA7E8D48B11ED4E" alt=""></div>
@@ -148,7 +148,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-sm-6 mt50">
+            <div class="col-sm-6 col-lg-3 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3232')); ?>">
                     <div class="border-gray expert-list">
                         <div><img class="img100" src="http://dr.static.mingyizhudao.com/F7BBF8244A72D5CBF144C4241177DD28" alt=""></div>
@@ -161,7 +161,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-sm-6 mt50">
+            <div class="col-sm-6 col-lg-3 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3059')); ?>">
                     <div class="border-gray expert-list">
                         <div><img class="img100" src="http://dr.static.mingyizhudao.com/409FCA3EB755390D1CB80B2169CF3CD7" alt=""></div>
@@ -174,7 +174,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-sm-6 mt50">
+            <div class="col-sm-6 col-lg-3 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '1357')); ?>">
                     <div class="border-gray expert-list">
                         <div><img class="img100" src="http://dr.static.mingyizhudao.com/31347BAD5FF8B337B862586E98908407" alt=""></div>

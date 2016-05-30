@@ -6,8 +6,8 @@
 #winegirl .main-content .title-line{border-top:1px solid #d77636;margin-top:-18px;}
 #winegirl .main-content .line-title{border-left:5px solid #d77636;padding-left:5px;font-size:21px;line-height:1em;margin-top:50px;margin-bottom:5px;}
 #winegirl .main-content .img-undertext{margin:10px 0 10px 29px;}
-@media (max-width: 1200px){#winegirl .main-content .img-undertext{margin:10px 0!important;}}
-@media (max-width: 992px){.text-right{text-align:left!important;}}
+@media (max-width: 1199px){#winegirl .main-content .img-undertext{margin:10px 0!important;}}
+@media (max-width: 991px){.text-right{text-align:left!important;}}
 #winegirl .main-content .contracted-img{margin-top:-90px;margin-right:-19px;width: 48px;height: 52px;background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146172568531110');background-repeat: no-repeat;}
 #winegirl .main-content .roboticon-img{margin-top:-28px;margin-right:-19px;width: 48px;height: 52px;background-image: url('http://7xsq2z.com2.z0.glb.qiniucdn.com/14624278056950');background-repeat: no-repeat;}
 #winegirl .main-content .expert-list{padding:0px 10px 10px 10px;}

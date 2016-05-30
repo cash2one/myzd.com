@@ -19,6 +19,36 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-md-3">
                 <div class="special-topic">
                     <div class="header-img">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146459511049131">
+                    </div>
+                    <div class="content">
+                        <div class="text-content">
+                            <div>共享名医资源、共铸健康中国：</div>
+                            <div>4月20日，名医公益手术捐赠暨名医公益宣言发布会 ”在人民大会堂如期举行。此次大型公益活动由名医主刀、国内多家公益基金等单位共同发起......</div>
+                        </div>
+                        <div class="learn-more"><a href="<?php echo $this->createUrl('event/view', array('page' => 'shapinghealth')); ?>" target="_blank">查看详情></a></div>
+                        <div class="mark-activity"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="special-topic">
+                    <div class="header-img">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146459508443619">
+                    </div>
+                    <div class="content">
+                        <div class="text-content">
+                            <div>白酒女孩的故事：</div>
+                            <div>家住江西省修水县的13岁女孩程欣是一名早产儿，出生6个月后被查出患有先天性脑瘫，疼痛难忍时程欣只能让家人用白酒麻痹自己。经媒体报道后......</div>
+                        </div>
+                        <div class="learn-more"><a href="<?php echo $this->createUrl('event/view', array('page' => 'winegirl')); ?>" target="_blank">查看详情></a></div>
+                        <div class="mark-activity"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="special-topic">
+                    <div class="header-img">
                         <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314974635016">
                     </div>
                     <div class="content">
@@ -75,8 +105,6 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-md-3">
                 <div class="special-topic">
                     <div class="header-img">
@@ -136,9 +164,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <div class="mark-disease"></div>
                     </div>
                 </div>
-            </div>    
-        </div>
-        <div class="row">
+            </div>
             <div class="col-md-3">
                 <div class="special-topic">
                     <div class="header-img">
@@ -198,9 +224,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <div class="mark-disease"></div>
                     </div>
                 </div>
-            </div>  
-        </div>
-        <div class="row">
+            </div>
             <div class="col-md-3">
                 <div class="special-topic">
                     <div class="header-img">
