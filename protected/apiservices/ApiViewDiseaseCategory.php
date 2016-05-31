@@ -29,11 +29,26 @@ class ApiViewDiseaseCategory extends EApiViewService {
         $res = RegionCity::model()->findAll($cri);
     }
 
+    public function secondaryDepartment($id) {
+        return CategoryDiseaseJoin::model()->find(array('condition' => 'disease_id=:disease_id', 'params' => array(':disease_id' => $id)));
+    }
+
     public function loadDiseaseCategory() {
         $disMgr = new DiseaseManager();
-         $models = $disMgr->loadDiseaseCategoryListV7();
-//        $disease = Yii::app()->request->getParam('disease');
+        $models = $disMgr->loadDiseaseCategoryListV7();
+        //$disease = Yii::app()->request->getParam('disease');
 //        $models = $disMgr->loadHospitalList('18');
+//        Common::printr($models);
+
+        $navList = array();
+//        if(!empty($models)){
+//            $navList[0]['name'] = $models[0]['group'];
+//            foreach ($models as $k=>$val){
+//                $navList[0]['subCat'][$k]['id'] = $val['id'];
+//                $navList[0]['subCat'][$k]['name'] = $val['name'];
+//            }
+//        }
+//        
         $navList = array();
         foreach ($models as $model) {
             $data = new stdClass();
@@ -52,6 +67,7 @@ class ApiViewDiseaseCategory extends EApiViewService {
                 $navList[$data->id]->subCat[] = $subGroup;
             }
         }
+
         $this->setDiseaseCategory(array_values($navList));
     }
 
