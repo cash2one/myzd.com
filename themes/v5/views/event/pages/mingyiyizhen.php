@@ -193,12 +193,20 @@ $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
     function initPageFunction(datacount) {
         //分页点击加载医生
         $(".page-item a").click(function () {
+            var speed = 500;//自定义滚动速度
+            //回到顶部
+            $("html,body").stop();//多次点击停止之前动画
+            $("html,body").animate({"scrollTop": $('#mingyiyizhen').offset().top+20}, speed);
             var page = $(this).attr("data-page");
             $condition["pageCouont"] = page;
             ajaxLoadFreediagnoseDoctors($cityId, $disease_category);
         });
         //上一页
         $(".pagePre").click(function () {
+            var speed = 500;//自定义滚动速度
+            //回到顶部
+            $("html,body").stop();//多次点击停止之前动画
+            $("html,body").animate({"scrollTop": $('#mingyiyizhen').offset().top+20}, speed);
             if ($condition["pageCouont"] <= 1) {
                 return;
             } else {
@@ -208,6 +216,10 @@ $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
         });
 //        下一页
         $(".pageNext").click(function () {
+            var speed = 500;//自定义滚动速度
+            //回到顶部
+            $("html,body").stop();//多次点击停止之前动画
+            $("html,body").animate({"scrollTop": $('#mingyiyizhen').offset().top+20}, speed);
             if ($condition["pageCouont"] >= datacount) {
                 return;
             } else {
