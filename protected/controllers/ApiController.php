@@ -38,7 +38,7 @@ class ApiController extends Controller {
                     'status' => EApiViewService::RESPONSE_OK,
                     'errorCode' => ErrorList::ERROR_NONE,
                     'errorMsg' => 'success',
-                    'results'=>array(
+                    'results' => array(
                         'version' => '20151215',
                         'localdataUrl' => Yii::app()->createAbsoluteUrl('/api/localdata'),
                     )
@@ -67,7 +67,7 @@ class ApiController extends Controller {
                 if ($api >= 6) {
                     $apiService = new ApiViewAppNav1V6();
                     $output = $apiService->loadApiViewData();
-                }elseif ($api == 5) {
+                } elseif ($api == 5) {
                     $apiService = new ApiViewAppNav1V5();
                     $output = $apiService->loadApiViewData();
                 } elseif ($api == 4) {
@@ -89,7 +89,7 @@ class ApiController extends Controller {
                     $values = $_GET;
                     $apiService = new ApiViewExpertTeamSearchV5($values);
                     $output = $apiService->loadApiViewData();
-                }elseif ($api == 4) {
+                } elseif ($api == 4) {
                     $values = $_GET;
                     $apiService = new ApiViewExpertTeamSearch($values);
                     $output = $apiService->loadApiViewData();
@@ -118,7 +118,7 @@ class ApiController extends Controller {
             case"hospital":
                 $values = $_GET;
 
-                if($api >= 7){
+                if ($api >= 7) {
                     $apiService = new ApiViewHospitalSearchV7($values);
                     $output = $apiService->loadApiViewData();
                 } else {
@@ -147,13 +147,13 @@ class ApiController extends Controller {
 
             case 'doctor':
                 $values = $_GET;
-                if($api >= 7){
+                if ($api >= 7) {
                     $apiService = new ApiViewDoctorSearchV7($values);
                     $output = $apiService->loadApiViewData();
-                }elseif ($api == 5 || $api == 6) {
+                } elseif ($api == 5 || $api == 6) {
                     $apiService = new ApiViewDoctorSearchV5($values);
                     $output = $apiService->loadApiViewData();
-                }elseif ($api == 4) {
+                } elseif ($api == 4) {
                     $apiService = new ApiViewDoctorSearchV4($values);
                     $output = $apiService->loadApiViewData();
                 } else {
@@ -163,7 +163,6 @@ class ApiController extends Controller {
 
                 //$query['hpdept'] = Yii::app()->request->getQuery('hpdept', null);                
                 //$apiService = new ApiViewDoctorByHpDept($query['hpdept']);
-
                 //isset($values['hpdept']) ? $values['hpdept'] : null;
                 /*  $doctorMgr = new DoctorManager();
                   $options = null;
@@ -216,6 +215,11 @@ class ApiController extends Controller {
             case 'diseasecategory'://获取疾病分类
                 $apiService = new ApiViewDiseaseCategory();
                 $output = $apiService->loadApiViewData();
+                break;
+            case 'secondarydepartment'://二级科室
+                $values = $_GET;
+                $apiService = new ApiViewDiseaseCategory();
+                $output = $apiService->secondaryDepartment($values['disease_id']);
                 break;
             case 'recommendeddoctors'://首页推荐的医生
                 $apiService = new ApiViewRecommendedDoctors();
@@ -306,24 +310,24 @@ class ApiController extends Controller {
                 $output['doctors'] = $ifaculty->doctors;
                 break;
             case 'expertteam':
-                if($api >= 5){
+                if ($api >= 5) {
                     $apiService = new ApiViewExpertTeamV5($id);
                     $output = $apiService->loadApiViewData();
-                }elseif($api == 4){
+                } elseif ($api == 4) {
                     $apiService = new ApiViewExpertTeamV4($id);
                     $output = $apiService->loadApiViewData();
-                }else{
+                } else {
                     $apiService = new ApiViewExpertTeam($id);
                     $output = $apiService->loadApiViewData();
                 }
                 break;
             case 'userbooking':
                 $values = $_GET;
-                if($api >= 4){
+                if ($api >= 4) {
                     $user = $this->userLoginRequired($values);
                     $apiService = new ApiViewBookingV4($user, $id);
                     $output = $apiService->loadApiViewData();
-                }else{
+                } else {
                     $user = $this->userLoginRequired($values);
                     $bookingMgr = new BookingManager();
                     $output = $bookingMgr->apiLoadIBookingJsonByUser($user, $id);
@@ -333,23 +337,23 @@ class ApiController extends Controller {
                 // $id HospitalDepartment.id                
                 //$queryOptions = $this->parseQueryOptions($_GET);
                 $searchInputs = $_GET;
-                if($api >= 5){
+                if ($api >= 5) {
                     $apiService = new ApiViewHospitalDeptV5($id, $searchInputs);
                     $output = $apiService->loadApiViewData();
-                }elseif($api == 4){
+                } elseif ($api == 4) {
                     $apiService = new ApiViewHospitalDeptV4($id, $searchInputs);
                     $output = $apiService->loadApiViewData();
-                }else{
+                } else {
                     $apiService = new ApiViewHospitalDept($id, $searchInputs);
                     $output = $apiService->loadApiViewData();
                 }
 
                 break;
             case'disease':
-                if($api >= 4){
+                if ($api >= 4) {
                     $apiSvc = new ApiViewDiseaseV4($id);
                     $output = $apiSvc->loadApiViewData();
-                }else{
+                } else {
                     $apiSvc = new ApiViewDisease($id);
                     $output = $apiSvc->loadApiViewData();
                 }
@@ -357,6 +361,7 @@ class ApiController extends Controller {
             case 'diseasebycategory'://根据疾病分类获取疾病
                 $apiService = new ApiViewDiseaseByCategory($id);
                 $output = $apiService->loadApiViewData();
+                Common::printr($output);
                 break;
             /*
               case 'diseaseinfo':
@@ -381,17 +386,17 @@ class ApiController extends Controller {
     public function actionCreate($model) {
         $get = $_GET;
 //        $post = $_POST;
-        if(empty($_POST)){
+        if (empty($_POST)) {
             // application/json
             $post = CJSON::decode($this->getPostData());
-        }else{
+        } else {
             // application/x-www-form-urlencoded
             $post = $_POST;
         }
         $api = $this->getApiVersionFromRequest();
         if ($api >= 4) {
             $output = array('status' => EApiViewService::RESPONSE_NO, 'errorCode' => ErrorList::BAD_REQUEST, 'errorMsg' => 'Invalid request.');
-        }else{
+        } else {
             $output = array('status' => false, 'error' => 'Invalid request.');
         }
 
@@ -411,10 +416,9 @@ class ApiController extends Controller {
                     $authMgr = new AuthManager();
                     if ($api >= 6) {
                         $output = $authMgr->apiSendVerifyCode($values);
-                    }else{
+                    } else {
                         $output = $authMgr->apiSendAuthSmsVerifyCode($values);
                     }
-
                 } else {
                     $output['error'] = 'Wrong parameters.';
                 }
@@ -464,7 +468,6 @@ class ApiController extends Controller {
                         $checkVerifyCode = true;    // checks verify_code before creating a new booking in db.
                         $sendEmail = true;  // send email to admin after booking is created.
                         $output = $bookingMgr->apiCreateBookingV4($user, $values, $checkVerifyCode, $sendEmail);
-
                     } else {
                         $output['errorMsg'] = 'Wrong parameters.';
                     }
@@ -522,16 +525,18 @@ class ApiController extends Controller {
     }
 
     public function actionUpdate($model, $id) {
+        
     }
 
     public function actionDelete($model, $id) {
+        
     }
 
     private function userLoginRequired($values) {
         if (isset($values['username']) === false || isset($values['token']) === false) {
             if ($this->getApiVersionFromRequest() >= 4) {
                 $this->renderJsonOutput(array('status' => EApiViewService::RESPONSE_NO, 'errorCode' => ErrorList::BAD_REQUEST, 'errorMsg' => '没有权限执行此操作'));
-            }else{
+            } else {
                 $this->_sendResponse(ErrorList::UNAUTHORIZED, '没有权限执行此操作', 'application/json; charset=utf-8');
             }
         }
@@ -542,7 +547,7 @@ class ApiController extends Controller {
         if (is_null($authUserIdentity) || $authUserIdentity->isAuthenticated === false) {
             if ($this->getApiVersionFromRequest() >= 4) {
                 $this->renderJsonOutput(array('status' => EApiViewService::RESPONSE_NO, 'errorCode' => ErrorList::BAD_REQUEST, 'errorMsg' => '用户名或token不正确'));
-            }else{
+            } else {
                 $this->_sendResponse(ErrorList::UNAUTHORIZED, '用户名或token不正确', 'application/json; charset=utf-8');
             }
         }
