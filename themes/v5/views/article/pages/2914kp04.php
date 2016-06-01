@@ -10,7 +10,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <!--所写内容  开始-->
 			
 		<p align="center">
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:18px;"><strong>不塌鼻的鼻中隔成形术。与鼻中隔矫正术的区别？（科普）</strong></span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:18px;"><strong>不塌鼻的鼻中隔成形术与鼻中隔矫正术的区别？（科普）</strong></span>
 </p>
 <p>
 	<br />
