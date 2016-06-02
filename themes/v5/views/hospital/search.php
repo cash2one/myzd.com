@@ -6,6 +6,7 @@ $urlHopitalSearch = $this->createUrl('hospital/search');
 $urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10));
 $urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10, 'disease_sub_category' => ''));
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
+$urlLoadSecondaryDepartment = $this->createUrl('api/secondarydepartment', array('api' => 7, 'disease_id' => ''));
 $urlHospitalView = $this->createUrl('hospital/view');
 $city = Yii::app()->request->getQuery('city', '1');
 $disease = Yii::app()->request->getQuery('disease', '');
@@ -72,7 +73,7 @@ $page = Yii::app()->request->getQuery('page', '');
             </div>
             <div class="col-sm-10">
                 <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146371056784455" class="img-responsive mt20">
-                <div class="loading loading02"></div>
+                <div class="loading loading02" style="margin-top:100px;"></div>
                 <div class="hospital-list">
                 </div>
                 <!--分页-->
@@ -150,8 +151,11 @@ $page = Yii::app()->request->getQuery('page', '');
                 setHospitalHtml(data, urlHospitalView);
                 $('.loading').hide();
             },
-            error: function () {
+            error: function (XmlHttpRequest, textStatus, errorThrown) {
                 $('.loading').hide();
+                console.log(XmlHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
             }
         });
     }
@@ -162,6 +166,27 @@ $page = Yii::app()->request->getQuery('page', '');
             url: urlloadDiseaseCategory,
             success: function (data) {
                 setDiseaseCategory(data);
+            },
+            error: function (XmlHttpRequest, textStatus, errorThrown) {
+                console.log(XmlHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
+            }
+        });
+    }
+    /**** 根据疾病获取二级科室 ****/
+    function ajaxLoadSecondaryDepartment() {
+        var urlLoadSecondaryDepartment = '<?php echo $urlLoadSecondaryDepartment ?>' + condition["disease"];
+        $.ajax({
+            url: urlLoadSecondaryDepartment,
+            success: function (data) {
+                var subId = data.sub_cat_id;
+                setSecondaryDepartmentActive(subId);
+            },
+            error: function (XmlHttpRequest, textStatus, errorThrown) {
+                console.log(XmlHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
             }
         });
     }
@@ -174,7 +199,6 @@ $page = Yii::app()->request->getQuery('page', '');
             var active = '';
             for (var i = 1; i <= diseaseCategorys.length; i++) {
                 var diseaseCategory = diseaseCategorys[i - 1];
-                console.log(diseaseCategory.id);
                 if (i == condition["disease_category"]) {
                     active = 'active';
                     $('.department-name>span').text(diseaseCategory.name);
@@ -210,6 +234,9 @@ $page = Yii::app()->request->getQuery('page', '');
                 innerHtml += '</ul></div>';
             }
             $('.department-list').html(innerHtml);
+            if (condition["disease"] != '') {
+                ajaxLoadSecondaryDepartment();
+            }
             setDiseaseCategoryActive();
             initDeptFunction();
         }
@@ -249,6 +276,17 @@ $page = Yii::app()->request->getQuery('page', '');
         $('.department-list .subCat').each(function () {
             var subCatId = $(this).attr('data-id');
             if (subCatId == condition["disease_sub_category"]) {
+                $('.department-name>span').html($(this).text());
+                $(this).addClass('active');
+                $(this).parents('.department').addClass('active');
+            }
+        });
+    }
+    function setSecondaryDepartmentActive(subId) {
+        $('.department-list .department').removeClass('active');
+        $('.department-list .subCat').each(function () {
+            var subCatId = $(this).attr('data-id');
+            if (subCatId == subId) {
                 $('.department-name>span').html($(this).text());
                 $(this).addClass('active');
                 $(this).parents('.department').addClass('active');
