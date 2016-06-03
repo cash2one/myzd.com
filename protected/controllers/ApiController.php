@@ -361,7 +361,6 @@ class ApiController extends Controller {
             case 'diseasebycategory'://根据疾病分类获取疾病
                 $apiService = new ApiViewDiseaseByCategory($id);
                 $output = $apiService->loadApiViewData();
-                Common::printr($output);
                 break;
             /*
               case 'diseaseinfo':
