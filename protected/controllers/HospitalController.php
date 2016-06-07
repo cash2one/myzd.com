@@ -3,6 +3,7 @@
 class HospitalController extends WebsiteController {
 
     public function actionIndex($city = null) {
+     
         $this->render("index");
     }
 
@@ -11,7 +12,6 @@ class HospitalController extends WebsiteController {
         $hospitalMgr = new HospitalManager();
         $with = array('hospitalCity', 'hospitalDepartments' => array('on' => 'hospitalDepartments.is_show=1'));
         $ihospital = $hospitalMgr->loadIHospitalById($id, $with);
-
         if (is_null($ihospital)) {
             $this->throwPageNotFoundException();
         }
