@@ -167,5 +167,35 @@ abstract class Controller extends CController {
         $result = file_get_contents($url, false);
         return json_decode($result, true);
     }
+    
+    /**
+     * rpc client
+     */
+    public function rpcClient($url){
+        require_once 'jsonRPCClient.php';       
+        //$url = 'http://localhost/rpc_server/server.php';
+        $myExample = new jsonRPCClient($url);
+        // 客户端调用
+        try {
+            $name = $myExample->getName();
+            var_dump($name);
+        } catch (Exception $e) {
+            echo nl2br($e->getMessage()).'<br />'."\n";
+        }
+    }
+    
+    /**
+     * rpc server
+     */
+    public function rpcServer($function){
+        require_once 'jsonRPCServer.php';
+        jsonRPCServer::handle($function) or print 'no request';
+        // member 为测试类
+        //require $class.'.php';
+        // 服务端调用
+        //$myExample = new $class;
+        // 注入实例
+        
+    }
 
 }
