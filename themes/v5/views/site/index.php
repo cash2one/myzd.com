@@ -72,8 +72,8 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 pr0 mt50">
-                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'cancerdefecate')); ?>" target="_blank">
-                            <img class="img-responsive home-event-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146347892798242"/>
+                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'centralpublicwelfare')); ?>" target="_blank">
+                            <img class="img-responsive home-event-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146535538360733"/>
                         </a>
                     </div>
                     <div class="col-md-3 pl0 pr0 home-small-event-img mt50">
@@ -181,9 +181,9 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 height: '0'
             });
         });
-        $html = '<li><div class="redcommonweal"><a href="<?php echo $this->createUrl('event/view', array('page' => 'redcommonweal')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146417164772626" alt="" class="img-responsive"></a></div></li>' +
+        $html = '<li><div class="catherine"><a href="<?php echo $this->createUrl('event/view', array('page' => 'catherine')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14653554028857" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="redcommonweal"><a href="<?php echo $this->createUrl('event/view', array('page' => 'redcommonweal')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146417164772626" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="lungcancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146338468582143" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="shapinghealth"><a href="<?php echo $this->createUrl('event/view', array('page' => 'shapinghealth')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146347906251445" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="robot"><a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492190148" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
         //服务流程步骤跳转
