@@ -38,6 +38,7 @@ class PaymentController extends WebsiteController {
 //            $post['ref_url'] = 'http://test.mingyizd.com/order/view?refno=test';
             CoreLogPayment::log('pingxxPayJson: ' . CJSON::encode($post), CoreLogPayment::LEVEL_INFO, Yii::app()->request->url, __METHOD__);
             if (isset($post['order_no'])) {
+		$refNo=$post['order_no'];
                 $order = new SalesOrder();
                 $order = SalesOrder::model()->getByRefNo($refNo);
                 if (isset($order) && $order->getIsPaid(false) == 1) {
@@ -62,7 +63,7 @@ class PaymentController extends WebsiteController {
                 $openid = '';
             }
             $payMgr = new PayManager();
-            $output->pingCharge = $payMgr->doPingxxPay($refno, $channel, $refurl, $openid);
+            $output->pingCharge = $payMgr->doPingxxPay($refNo, $channel, $refurl, $openid);
         } catch (\Pingpp\Error\Base $e) {
             header('Status: ' . $e->getHttpStatus());
             $output->errorMsg = $e->getHttpBody();
