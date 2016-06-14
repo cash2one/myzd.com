@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/doctor.css?v=" . time());
+Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/doctor.min.css?v=" . time());
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jquery.qrcode.min.js', CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
@@ -17,187 +17,231 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
         </div>
     </div>
 </div>
-<div class="container mb50" id="doctor-view">
-    <div class="row doctorInfo mt20">
-        <div class="col-md-8 col-sm-8">
-            <div class="">
-                <div class="media doc-media ml30">
-                    <div class="media-left media-middle pull-left">
-                        <img class="media-object doc-img" src="<?php echo $doctor->imageUrl; ?>" alt="<?php echo $doctor->name; ?>">
-                    </div>
-                    <div class="media-body pl10">
-                        <h4 class="media-heading mt30"><span><?php echo $doctor->name; ?></span><span class="color-gray ml20"><?php echo $doctor->mTitle; ?></span><span class="color-gray ml20"><?php echo $doctor->aTitle == '无' ? '' : $doctor->aTitle; ?></span></h4>
-                        <div class="mt20">
-                            <?php echo $doctor->hpDeptName == '' ? '' : '<span class="expert-faculty text-center">' . $doctor->hpDeptName . '</span>'; ?>
-                            <span><?php echo $doctor->hospitalName; ?></span>
-                        </div>
-                        <div class="qrcode">
-                            <div><span class="qrcode-text">微信分享医生主页</span><span id="qrcode-sm"><span class="qrlogo-sm"></span></span> <i class="fa fa-caret-down"></i></div>
-                            <div id="qrcode-lg">
-                                <div><img src="<?php echo $urlResImage ?>icons/weixin.png"/></div>
-                                <div id="qrcode-weixin">
-                                    <div class="qrlogo-lg"></div>
+<div class="container-fluid" id="doctor-view">
+    <div class="row">
+        <div class="container mb50">
+            <div class="doctorInfo mt20">
+                <div class="doc-media">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="media ml30">
+                                <div class="media-left media-middle pull-left">
+                                    <img class="media-object doc-img" src="<?php echo $doctor->imageUrl; ?>" alt="<?php echo $doctor->name; ?>">
                                 </div>
+                                <div class="media-body pl10">
+                                    <h4 class="media-heading mt30"><span><?php echo $doctor->name; ?></span><span class="color-gray ml20"><?php echo $doctor->mTitle; ?></span><span class="color-gray ml20"><?php echo $doctor->aTitle == '无' ? '' : $doctor->aTitle; ?></span></h4>
+                                    <div class="mt20">
+                                        <?php echo $doctor->hpDeptName == '' ? '' : '<span class="expert-faculty text-center">' . $doctor->hpDeptName . '</span>'; ?>
+                                        <span><?php echo $doctor->hospitalName; ?></span>
+                                    </div>
+                                    <div class="qrcode">
+                                        <div><span class="qrcode-text">微信分享医生主页</span><span id="qrcode-sm"><span class="qrlogo-sm"></span></span> <i class="fa fa-caret-down"></i></div>
+                                        <div id="qrcode-lg">
+                                            <div><img src="<?php echo $urlResImage ?>icons/weixin.png"/></div>
+                                            <div id="qrcode-weixin">
+                                                <div class="qrlogo-lg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mt20 text-center doctor-menu">
+                                <div class="bookingBtn doc-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>"><div class="ml10"><img src="<?php echo $urlResImage; ?>/doctor/icon-booking.png"><span class="ml15">预约<?php echo $doctor->name; ?></span></div></div>
                             </div>
                         </div>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
-                <section class="main pb20"> 
-                    <?php
-                    if (isset($doctor->description) && !is_null($doctor->description)) {
-                        ?>
-                        <div class="disTags">
-                            <div class="docinfo-title good">擅长手术</div>
-                            <ul class="pl30">
+            </div>
+            <div class="row doctorInfo">
+                <div class="col-sm-8">
+                    <section class="main pb20">
+                        <?php
+                        if (isset($doctor->reasons) && arrayNotEmpty($doctor->reasons)) {
+                            $reasons = $doctor->reasons;
+                            ?>
+                            <div class="docinfo-title good">推荐理由</div> 
+                            <div class="ml30">
                                 <?php
-                                echo $doctor->description;
+                                foreach ($reasons as $key => $reason) {
+                                    echo '<span class="recommend-reason">' . $reason . '</span>';
+                                }
                                 ?>
-                            </ul>
-                        </div> 
-                    <?php }
-                    ?>
-                    <?php
-                    if (isset($doctor->honour) && arrayNotEmpty($doctor->honour)) {
+                            </div>
+                        <?php }
                         ?>
-                        <div class="honour">
-                            <div class="docinfo-title honor">获得荣誉</div>
-                            <div class="pl30">
-                                <ul>
+                        <?php
+                        if (isset($doctor->description) && !is_null($doctor->description)) {
+                            ?>
+                            <div class="disTags">
+                                <div class="docinfo-title good">擅长手术</div>
+                                <ul class="pl30">
                                     <?php
-                                    foreach ($doctor->honour as $value) {
-                                        if (trim($value) != "") {
-                                            echo '<li><span>' . $value . '</span></li>';
+                                    echo $doctor->description;
+                                    ?>
+                                </ul>
+                            </div> 
+                        <?php }
+                        ?>
+                        <?php
+                        if (isset($doctor->careerExp) && !is_null($doctor->careerExp)) {
+                            ?>
+                            <div>
+                                <div class="docinfo-title experience">执业经历</div>
+                                <div class="pl30 experience-text">
+                                    <?php echo $doctor->careerExp; ?>
+                                </div>
+                            </div> 
+                        <?php }
+                        ?>
+                        <?php
+                        if (isset($doctor->honour) && arrayNotEmpty($doctor->honour)) {
+                            ?>
+                            <div class="honour">
+                                <div class="docinfo-title honor">获得荣誉</div>
+                                <div class="pl30">
+                                    <ul>
+                                        <?php
+                                        foreach ($doctor->honour as $value) {
+                                            if (trim($value) != "") {
+                                                echo '<li><span>' . $value . '</span></li>';
+                                            }
                                         }
+                                        ?>
+                                    </ul>                       
+                                </div>
+                            </div>
+                        <?php }
+                        ?>
+                        <?php
+                        if (isset($data->results->members) && !is_null($data->results->members)) {
+                            $members = $data->results->members;
+                            ?>
+                            <div class="mb20 mt40 team">
+                                <span class="docinfo-title members" >团队成员简介</span><div class="pull-left team-line"></div><div class="clearfix"></div>                          
+                            </div>     
+                            <?php
+                            foreach ($members as $member) {
+                                ?>
+                                <div class="pl30">
+                                    <div class="media">
+                                        <div class="media-left media-middle pull-left">
+                                            <img class="media-object team-img" src="<?php echo $member->imageUrl; ?>" alt="<?php echo $member->name; ?>">
+                                        </div>
+                                        <div class="media-body pl10">
+                                            <div class="media-heading mt15"><?php echo $member->name; ?><span class="color-gray ml20"><?php echo $member->mTitle; ?></span><span class="color-gray ml20"><?php echo $member->aTitle; ?></span></div>
+                                            <div class="mt15">
+                                                <?php echo $member->hpDeptName == null ? '' : '<span class="color-25aea6 text-center">' . $member->hpDeptName . '</span>'; ?>
+                                            </div>
+                                            <div class="mt15"><?php echo $doctor->hospitalName; ?></div>
+                                        </div>
+                                    </div>
+                                    <div class="expert-desc mt15 mb40"><?php echo $member->description == null ? '' : $member->description; ?></div>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
+                        <div class="comment-text">
+
+                        </div>
+                        <div class="mt30">
+                            <nav class="text-center">
+                                <ul class="pagination">
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-sm-4 doctor-menu">
+                    <div class="server-circuit">
+                        <div class="server-title">服务流程</div>
+                        <div class="server-step">
+                            <div>
+                                <div class="pull-left mr10"><span class="step">step</span><span class="step-number">1</span></div>
+                                <div class="pull-left server-line"></div>
+                                <div class="pull-left server-content">提交预约</div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <div class="pull-left mr10"><span class="step">step</span><span class="step-number">2</span></div>
+                                <div class="pull-left server-line"></div>
+                                <div class="pull-left server-content">客服回访确认</div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <div class="pull-left mr10"><span class="step">step</span><span class="step-number">3</span></div>
+                                <div class="pull-left server-line"></div>
+                                <div class="pull-left server-content">匹配对症专家</div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <div class="pull-left mr10"><span class="step">step</span><span class="step-number">4</span></div>
+                                <div class="pull-left server-line"></div>
+                                <div class="pull-left server-content">确认就诊时间</div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <div class="pull-left mr10"><span class="step">step</span><span class="step-number">5</span></div>
+                                <div class="pull-left server-line"></div>
+                                <div class="pull-left server-content">前往医院就诊</div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rec-title">
+                        <span>同科室推荐</span>
+                    </div>
+                    <div class="border-gray">
+                        <div class="rec-doc">
+                            <?php
+                            if (isset($data->results->related) && is_array($data->results->related)) {
+                                $related = $data->results->related;
+                                $last = '';
+                                foreach ($related as $i => $relateddoc) {
+                                    if ($i == count($related) - 1) {
+                                        $last = 'last';
                                     }
                                     ?>
-                                </ul>                       
-                            </div>
-                        </div>
-                    <?php }
-                    ?>
-                    <?php
-                    if (isset($doctor->careerExp) && !is_null($doctor->careerExp)) {
-                        ?>
-                        <div>
-                            <div class="docinfo-title experience">执业经历</div>
-                            <div class="pl30 experience-text">
-                                <?php echo $doctor->careerExp; ?>
-                            </div>
-                        </div> 
-                    <?php }
-                    ?>                                     
-                    <?php
-                    if (isset($data->results->members) && !is_null($data->results->members)) {
-                        $members = $data->results->members;
-                        ?>
-                        <div class="mb20 mt40 team">
-                            <span class="docinfo-title members" >团队成员简介</span><div class="pull-left team-line"></div><div class="clearfix"></div>                          
-                        </div>     
-                        <?php
-                        foreach ($members as $member) {
-                            ?>
-                            <div class="pl30">
-                                <div class="media">
-                                    <div class="media-left media-middle pull-left">
-                                        <img class="media-object team-img" src="<?php echo $member->imageUrl; ?>" alt="<?php echo $member->name; ?>">
-                                    </div>
-                                    <div class="media-body pl10">
-                                        <div class="media-heading mt15"><?php echo $member->name; ?><span class="color-gray ml20"><?php echo $member->mTitle; ?></span><span class="color-gray ml20"><?php echo $member->aTitle; ?></span></div>
-                                        <div class="mt15">
-                                            <?php echo $member->hpDeptName == null ? '' : '<span class="color-25aea6 text-center">' . $member->hpDeptName . '</span>'; ?>
+                                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => $relateddoc->id)); ?>" target='_blank'>
+                                        <div class="expInfo ">
+                                            <div class="content <?php echo $last; ?>">
+                                                <div class="pull-left mr10" >
+                                                    <img src="<?php echo $relateddoc->imageUrl; ?>"/>
+                                                </div>	
+                                                <div class="expName pt5"><span class="color-black"><?php echo $relateddoc->name; ?></span>&nbsp;&nbsp;<span class="color-gray"><?php echo $relateddoc->mTitle; ?> <?php echo $relateddoc->aTitle; ?></span></div>
+                                                <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hpDeptName; ?></div>
+                                                <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hospitalName; ?></div>
+                                                <div class="clearfix"></div>
+                                            </div>
                                         </div>
-                                        <div class="mt15"><?php echo $doctor->hospitalName; ?></div>
-                                    </div>
-                                </div>
-                                <div class="expert-desc mt15 mb40"><?php echo $member->description == null ? '' : $member->description; ?></div>
-                            </div>
-                            <?php
-                        }
-                    }
-                    ?>
-                    <div class="comment-text">
-
-                    </div>
-                    <div class="mt30">
-                        <nav class="text-center">
-                            <ul class="pagination">
-
-                            </ul>
-                        </nav>
-                    </div>
-                </section>									
-            </div> 
-        </div>
-        <div class="col-sm-4 doctor-menu">
-            <div class="mt20 text-center">
-                <div class="bookingBtn doc-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>"><div class="ml10"><img src="<?php echo $urlResImage; ?>/doctor/icon-booking.png"><span class="ml15">预约<?php echo $doctor->name; ?></span></div></div>
-            </div>
-            <?php
-            if (isset($doctor->reasons) && arrayNotEmpty($doctor->reasons)) {
-                $reasons = $doctor->reasons;
-                ?>
-                <div class="mt14 text18">推荐理由</div> 
-                <div class="border-gray">
-                    <div>
-                        <div class="pl10 pt10 pb10">
-                            <?php
-                            foreach ($reasons as $key => $reason) {
-                                echo '<div class="color-yellow-f8b62c"><span class="text18"><i class="fa fa-star"></i></span><span class="ml5">' . $reason . '</span></div>';
+                                    </a>  
+                                    <?php
+                                }
+                            } else {
+                                echo '<div class="expInfo last"><div class="mt20 mb50">暂无其他推荐</div></div>';
                             }
                             ?>
                         </div>
                     </div>
-                </div>
-            <?php }
-            ?>
-            <?php
-            if (isset($data->results->article) && arrayNotEmpty($data->results->article)) {
-                $doctor_articles = $data->results->article;
-                ?>
-                <div class="text18 information">相关资讯</div> 
-                <div class="border-gray news">
-                    <?php foreach ($doctor_articles as $doctor_article) { ?>
-                        <div class="mt10 mb10">
-                            <div class="pull-left title"><strong>【<?php echo $doctor_article->type; ?>】</strong></div>
-                            <div class="news-link"><a href="<?php echo $this->createUrl("article/page", array("view" => trim($doctor_article->fileName))); ?>" target="_blank" title="<?php echo $doctor_article->title; ?>"><?php echo $doctor_article->title; ?></a></div>
-                            <div class="clearfix"></div>
-                        </div> 
-                    <?php } ?>
-                </div>
-                <?php
-            }
-            ?>
-            <div class="rec-title">
-                <span>其他推荐</span>
-            </div>
-            <div class="border-gray">
-                <div class="rec-doc">
                     <?php
-                    if (isset($data->results->related) && is_array($data->results->related)) {
-                        $related = $data->results->related;
-                        $last = '';
-                        foreach ($related as $i => $relateddoc) {
-                            if ($i == count($related) - 1) {
-                                $last = 'last';
-                            }
-                            ?>
-                            <a href="<?php echo $this->createUrl('doctor/view', array('id' => $relateddoc->id)); ?>" target='_blank'>
-                                <div class="expInfo ">
-                                    <div class="content <?php echo $last; ?>">
-                                        <div class="pull-left mr10" >
-                                            <img src="<?php echo $relateddoc->imageUrl; ?>"/>
-                                        </div>	
-                                        <div class="expName pt5"><span class="color-black"><?php echo $relateddoc->name; ?></span>&nbsp;&nbsp;<span class="color-gray"><?php echo $relateddoc->mTitle; ?> <?php echo $relateddoc->aTitle; ?></span></div>
-                                        <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hpDeptName; ?></div>
-                                        <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hospitalName; ?></div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </a>  
-                            <?php
-                        }
-                    } else {
-                        echo '<div class="expInfo last"><div class="mt20 mb50">暂无其他推荐</div></div>';
+                    if (isset($data->results->article) && arrayNotEmpty($data->results->article)) {
+                        $doctor_articles = $data->results->article;
+                        ?>
+                        <div class="text18 information">相关资讯</div> 
+                        <div class="border-gray news">
+                            <?php foreach ($doctor_articles as $doctor_article) { ?>
+                                <div class="mt10 mb10">
+                                    <div class="pull-left title"><strong>【<?php echo $doctor_article->type; ?>】</strong></div>
+                                    <div class="news-link"><a href="<?php echo $this->createUrl("article/page", array("view" => trim($doctor_article->fileName))); ?>" target="_blank" title="<?php echo $doctor_article->title; ?>"><?php echo $doctor_article->title; ?></a></div>
+                                    <div class="clearfix"></div>
+                                </div> 
+                            <?php } ?>
+                        </div>
+                        <?php
                     }
                     ?>
                 </div>
@@ -222,7 +266,6 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
         $.ajax({
             url: urlajaxComment,
             success: function (data) {
-                console.log(data.results.comments);
                 if (data.results.dataCount > 3) {
                     setPages(data);
                 }
@@ -250,39 +293,22 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
         var innerHtml = '';
         var comment = data.results.comments;
         if (comment.length != 0) {
-            innerHtml += '<div class="mt40 team"><span class="docinfo-title comment" >患者评价</span><div class="pull-left team-line"></div><div class="clearfix"></div></div>';
+            innerHtml += '<div class="mt40 team"><span class="docinfo-title comment" >患者心声</span><div class="pull-left team-line"></div><div class="clearfix"></div></div>';
         }
         for (var i = 0; i < comment.length; i++) {
             var detail = comment[i].diseaseDetail == null ? '' : comment[i].diseaseDetail;
             var userName = comment[i].userName == null ? '&nbsp;' : comment[i].userName;
-            var commentText = comment[i].commentText.length > 90 ? comment[i].commentText.substr(0, 90) + '<span class="ellipsis">...</span><span class="dese-last" style="display:none;">' + comment[i].commentText.substr(90) + '</span><span class="dese-operate pull-right"><span class="desc-more">详情 <i class="fa fa-angle-down"></i></span><span class="desc-retract" style="display:none">收起 <i class="fa fa-angle-up"></i></span></span>' : comment[i].commentText;
+            var commentText = comment[i].commentText.length > 90 ? comment[i].commentText.substr(0, 90) + '<span class="ellipsis">...</span><span class="dese-last" style="display:none;">' + comment[i].commentText.substr(90) + '</span><div class="dese-operate text-right"><span class="desc-more">详情 <i class="fa fa-angle-down"></i></span><span class="desc-retract" style="display:none">收起 <i class="fa fa-angle-up"></i></span></div>' : comment[i].commentText;
             innerHtml += '<div class="pl30 row mt20"><div class = "col-sm-2 pr0"><div class="text-center"><img src = "<?php echo $urlResImage; ?>doctor/user.png"></div><div class = "text-center text12">' + userName + '</div></div>' +
-                    '<div class = "col-sm-3"><div><span>主刀专家：<?php echo $doctor->name; ?></span></div><div><span>确诊疾病：' + detail + '</span></div>' +
-                    '<div class = "mt10 text14">治疗效果：<span>';
-            for (var j = 1; j < 6; j++) {
-                if (j <= comment[i].effect) {
-                    innerHtml += '<i class="fa fa-star active color-yellow-f8b62c"></i>';
-                } else {
-                    innerHtml += '<i class="fa fa-star-o"></i>';
-                }
-            }
-            innerHtml += '</span ></div><div class = "text14">医生态度：<span>';
-            for (var k = 1; k < 6; k++) {
-                if (k <= comment[i].doctorAttitude) {
-                    innerHtml += '<i class="fa fa-star active color-yellow-f8b62c"></i>';
-                } else {
-                    innerHtml += '<i class="fa fa-star-o"></i>';
-                }
-            }
+                    '<div class = "col-sm-10"><div><span>主刀专家：<?php echo $doctor->name; ?></span><span class="ml30">确诊疾病：' + detail + '</span></div>';
             var date = comment[i].dateCreated.substr(0, 11);
-            innerHtml += '</span></div></div>' +
-                    '<div class="col-sm-7 pl0"><div class = "comment-desc">' + commentText + '</div><div class="mt15">' + date + '</div></div>' +
+            innerHtml += '<div class="mt20"><div class = "comment-desc">' + commentText + '</div><div class="text-right text12">' + date + '</div></div></div>' +
                     '<div class = "clearfix"></div>' +
-                    '<div class = "divide-gray mt10"></div>' +
+                    '<div class = "divide-gray mt10 mr15"></div>' +
                     '</div> ';
         }
         $('.comment-text').html(innerHtml);
-        $('.dese-operate').click(function () {
+        $('.dese-operate>span').click(function () {
             $(this).parents('.comment-desc').find('.ellipsis').toggle();
             $(this).parents('.comment-desc').find('.dese-last').toggle();
             $(this).parents('.comment-desc').find('.desc-more').toggle();
@@ -361,7 +387,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
 //        }
 //        urlCondition = urlCondition.substring(1);
 //        urlCondition = "?" + urlCondition;
-//        var newUrl = '<?php //echo $urlDoctor; ?>' + $doctorId + urlCondition;
+//        var newUrl = '<?php //echo $urlDoctor;                        ?>' + $doctorId + urlCondition;
 //        history.pushState(stateObject, title, newUrl);
     }
 </script>

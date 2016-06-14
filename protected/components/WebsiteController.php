@@ -57,7 +57,7 @@ abstract class WebsiteController extends Controller {
         if (isset($_GET['footer']) && $_GET['footer'] != 1) {
             $this->show_footer = false;
         }
-
+        $this->storeAppAccessInfo();
         return parent::init();
     }
 
@@ -334,7 +334,7 @@ abstract class WebsiteController extends Controller {
                 'doctor' => array('label' => '找名医', 'url' => array('doctor/top', 'disease_sub_category' => '1')),
                 'hospital' => array('label' => '找医院', 'url' => array('hospital/department')),
                 'zhitongche' => array('label' => '患者故事', 'url' => array('site/page', 'view' => 'zhitongche')),
-                'mygy' => array('label' => '名医公益', 'url' => array('site/page', 'view' => 'mygy')),
+                'mygy' => array('label' => '公益手术', 'url' => array('site/page', 'view' => 'mygy')),
                 'aboutus' => array('label' => '关于我们', 'url' => array('site/page', 'view' => 'aboutus')),
             );
         }
