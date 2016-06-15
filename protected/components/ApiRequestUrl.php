@@ -7,7 +7,7 @@ class ApiRequestUrl {
 
     public function getHostInfo() {
         $hostInfo = strtolower(Yii::app()->request->hostInfo);
-        if (strStartsWith($hostInfo, $this->hostInfoProd) === false) {
+        if (strStartsWith($hostInfo, $this->hostInfoProd) === TRUE) {
             $this->hostInfoProd = $hostInfo . '/admin';
         }
     }

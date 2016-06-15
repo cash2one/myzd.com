@@ -34,7 +34,7 @@ class OrderController extends WebsiteController {
     }
 
     //退款
-    public function actionRecede() {
+    public function actionRecede() {http://tmqd.me/h.ZbGDD4?cv=AAFoqQNQ&sm=b2b681
         $this->render('recede');
     }
 
