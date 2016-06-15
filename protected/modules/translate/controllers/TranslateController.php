@@ -38,6 +38,10 @@ class TranslateController extends TranslateBaseController{
         
         $this->render('index',$data);
 	}
+	function actionMember(){
+	    $this->rpcServer('member', 'translate');	
+	}
+	
     function actionSet(){
         $translator=TranslateModule::translator();
         if(Yii::app()->getRequest()->getIsPostRequest()){
