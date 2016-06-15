@@ -207,7 +207,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             mode: 'fade',
             slideMargin: 0,
             controls: true,
-            pause: 3000,
+            pause: 5000,
             speed: 0,
             auto: true
         });
