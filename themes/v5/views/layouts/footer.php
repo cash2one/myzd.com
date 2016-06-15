@@ -199,7 +199,7 @@ if ($this->getCurrentUser() !== null) {
                         <div class="close"></div>
                         <div class="text-left feedback-title-img"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125444173"></div>
                         <div class="feedback-form pt5" >
-                            <form enctype="multipart/form-data" id="feedback-form" action="<?php echo $urlSubmitForm;?>" method="post">
+                            <form enctype="multipart/form-data" id="feedback-form" action="<?php echo $urlSubmitForm;?>" method="post" onkeydown="if(event.keyCode==13){return false;}">
                                 <input type="hidden" value="<?php echo $user_id;?>" name="feedback[user_id]" id="FeedbackForm_user_id">
                                 <input type="hidden" value="website" name="feedback[source]" id="FeedbackForm_source">
                                 <div class="form-group">
