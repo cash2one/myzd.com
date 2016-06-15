@@ -22,7 +22,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
         </div>
         <div class="container main-content">
             <div class="row">
-                <div class="col-sm-9 pr10">
+                <div class="col-md-9 pr10">
                     <div class="heading"><span class="big-title">真实案例</span><span class="small-title">用仁爱之心</span><span class="small-title">解患者之难</span></div>
                     <div class="every-story mt15">
                         <div class="pull-left mr15"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146374348524210" /></div>
@@ -81,8 +81,32 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         </div>
                         <div class="clearfix"></div>
                     </div>
+                    <div class="every-story mt15">
+                        <div class="pull-left mr15"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146578926269576" /></div>
+                        <div class="story-content">
+                            <div class="text15">疾病名称：外层渗出性视网膜病变</div>
+                            <div class="text15 mt30">处理时间：3天</div>
+                            <div class="introduce mt30">
+                                <div>来自安徽的小伙子小马，确是一个大大的特例。21岁的年纪，却不幸患上Coats病（外层渗出性视网膜病变），双眼近视屈光不正，突遭这样的疾病，相信大多数人都难以接受，可阳光开朗的小马没有从此一蹶不振，而是积极寻找治疗方案，甚至还在手术前跟名医主刀客服专员开起玩笑来</div>
+                            </div>
+                            <div class="learn-more"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'coats')); ?>">查看详情></a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="every-story mt15">
+                        <div class="pull-left mr15"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146578926269576" /></div>
+                        <div class="story-content">
+                            <div class="text15">疾病名称：腰椎间盘突出</div>
+                            <div class="text15 mt30">处理时间：11天 （从接洽到安排入院）</div>
+                            <div class="introduce mt30">
+                                <div>曹先生的女儿了解到名医主刀平台上签约了全国各个科室的顶尖医生，抱着试一试的心态来到了名医主刀平台，经过了解，北京积水潭医院脊柱外科是全国有名的科室，于是在名医主刀平台提交了预约单，预约了北京积水潭医院脊柱外科的刘波教授。</div>
+                            </div>
+                            <div class="learn-more"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'lumbardisc')); ?>">查看详情></a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
-                <div class="col-sm-3 pl0 pr0">
+                <div class="col-md-3 ztc-right-area">
                     <div><div class="heading">名医助手说</div></div>
                     <div class="introduction-right" style="line-height:1.8em;">
                         <div>在中国，一年里有很多的患者因等排队等床位延误病情。</div>
@@ -93,66 +117,16 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                     <div class="mt15 text-center">
                         <a target="_blank" href="<?php echo $this->createUrl("site/page", array("view" => 'mygy')); ?>"><div class="ztc-mygy-img"></div></a>
                     </div>
-                    <div class="ztc-find-expert mt15">
-                        <a href="<?php echo $urlFindDoctor; ?>" target="_black">
-                            <div class="find-expert-btn"></div>
-                        </a>
-                    </div>
-                    <div class="ztc-find-hospital mt15">
-                        <a href="<?php echo $urlFindHopital; ?>" target="_black">
-                            <div class="find-hospital-btn"></div>
-                        </a>
-                    </div>
+                    <a href="<?php echo $urlFindDoctor; ?>" target="_black">
+                        <div class="ztc-find-expert mt15">
+                        </div>
+                    </a>
+                    <a href="<?php echo $urlFindHopital; ?>" target="_black">
+                        <div class="ztc-find-hospital mt15">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#btn-sendZhiTongCheSmsCode").click(function (e) {
-            e.preventDefault();
-            sendZhiTongCheSmsVerifyCode($(this));
-        });
-    });
-
-    function sendZhiTongCheSmsVerifyCode(domBtn) {
-        var domMobile = $(".booking-mobile");
-        var mobile = domMobile.val();
-        if (mobile.length === 0) {
-            $("#booking_mobile-error").remove();
-            $(".booking-mobile").after('<div id="booking_mobile-error" class="error">请输入手机号码</div>');
-        } else if (domMobile.hasClass("error")) {
-            // mobile input field as error, so do nothing.
-        } else {
-            buttonTimerStart(domBtn, 60000);
-            $domForm = $("#quickbook-form");
-            var actionUrl = $domForm.find("input[name='smsverify[actionUrl]']").val();
-            var actionType = $domForm.find("input[name='smsverify[actionType]']").val();
-            var formData = new FormData();
-            formData.append("AuthSmsVerify[mobile]", mobile);
-            formData.append("AuthSmsVerify[actionType]", actionType);
-            $.ajax({
-                type: 'post',
-                url: actionUrl,
-                data: formData,
-                dataType: "json",
-                processData: false,
-                contentType: false,
-                'success': function (data) {
-                    if (data.status === true) {
-                        //domForm[0].reset();
-                    }
-                    else {
-                        console.log(data);
-                    }
-                },
-                'error': function (data) {
-                    console.log(data);
-                },
-                'complete': function () {
-                }
-            });
-        }
-    }
-</script>
