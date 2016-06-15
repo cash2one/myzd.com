@@ -19,7 +19,7 @@
 //        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/font-awesome.min.css");
 //        Yii::app()->clientScript->registerCssFile("http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery.bxslider/jquery.bxslider.css");
         Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/pc_all.min.css");
-        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/main.css" . "?v=" . time());
+        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/main.min.css" . "?v=" . time());
         Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery-1.9.1.min.js', CClientScript::POS_HEAD);
 //        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/bootstrap.min.js', CClientScript::POS_HEAD);
 //        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery.bxslider/jquery.bxslider.min.js', CClientScript::POS_END);
