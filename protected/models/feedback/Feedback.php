@@ -22,7 +22,7 @@ class Feedback extends EActiveRecord {
         return array(
             array('content', 'required'),
             array('id, user_id', 'numerical', 'integerOnly' => true),
-            array('source, contact_mobile', 'length', 'max' => 20),
+            array('source, contact_mobile, user_host_ip', 'length', 'max' => 20),
             array('date_start, date_end, appt_date, date_created, date_updated, date_deleted', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
@@ -82,4 +82,7 @@ class Feedback extends EActiveRecord {
         return $this->content;
     }
     
+    public function getUserHostIp(){
+        return $this->user_host_ip;
+    }
 }
