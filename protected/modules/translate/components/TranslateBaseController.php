@@ -33,4 +33,7 @@ class TranslateBaseController extends Controller{
             return parent::renderPartial($view,$data,false,true);
         }
     }
+    
+    
+    
 }

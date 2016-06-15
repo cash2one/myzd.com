@@ -178,7 +178,7 @@ abstract class Controller extends CController {
         // 客户端调用
         try {
             $name = $myExample->getName();
-            var_dump($name);
+           return $name;
         } catch (Exception $e) {
             echo nl2br($e->getMessage()).'<br />'."\n";
         }
@@ -187,14 +187,16 @@ abstract class Controller extends CController {
     /**
      * rpc server
      */
-    public function rpcServer($function){
+    public function rpcServer($class,$module){
         require_once 'jsonRPCServer.php';
-        jsonRPCServer::handle($function) or print 'no request';
-        // member 为测试类
-        //require $class.'.php';
+       // member 为测试类
+       
+       require dirname(__FILE__).'/../modules/'.$module.'/server/'.$class.'.php';
         // 服务端调用
-        //$myExample = new $class;
+        $myExample = new $class();
         // 注入实例
+        jsonRPCServer::handle($myExample)
+        or print 'no request';
         
     }
 

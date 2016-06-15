@@ -12,7 +12,7 @@ class jsonRPCClient {
      * @param $url
      * @param bool $debug
      */
-    public function __construct($url,$debug = true) {
+    public function __construct($url,$debug = false) {
         // server URL
         $this->url = $url;
         // proxy
@@ -65,29 +65,29 @@ class jsonRPCClient {
         ));
         //  关键几部
         $context  = stream_context_create($opts);
-	    if ( $result = file_get_contents($this->url, false, $context)) {
-	  var_dump($result);exit;
-				$response = json_decode($result,true);
-	    } else {
-	      throw new Exception('Unable to connect to '.$this->url);
-	    }
-		// 输出调试信息
-	    if ($this->debug) {
-		   echo nl2br(($this->debug));
-	    }
-		// 检验response信息
-		if (!$this->notification) {
-		// check
-			if ($response['id'] != $currentId) {
-				throw new Exception('Incorrect response id (request id: '.$currentId.', response id: '.$response['id'].')');
-			}
-			if (!is_null($response['error'])) {
-				throw new Exception('Request error: '.$response['error']);
-			}
-			return $response['result'];	
-		} else {
-				return true;
-			}
-		}
+  if ( $result = file_get_contents($this->url, false, $context)) {
+            $response = json_decode($result,true);
+  } else {
+   throw new Exception('Unable to connect to '.$this->url);
+  }
+        // 输出调试信息
+        if ($this->debug) {
+            echo nl2br(($this->debug));
+        }
+        // 检验response信息
+        if (!$this->notification) {
+            // check
+            if ($response['id'] != $currentId) {
+                throw new Exception('Incorrect response id (request id: '.$currentId.', response id: '.$response['id'].')');
+            }
+            if (!is_null($response['error'])) {
+                throw new Exception('Request error: '.$response['error']);
+            }
+            return $response['result'];
+
+        } else {
+            return true;
+        }
+    }
 }
 ?>
