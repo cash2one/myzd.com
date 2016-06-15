@@ -2,7 +2,11 @@
 
 class OrderController extends WebsiteController {
 
-    public function actionView($refno) {
+    public function actionView() {
+        $refNo = Yii::app()->request->getParam('refNo');
+        if(empty($refNo)){
+            $refNo = Yii::app()->request->getParam('refno');
+        }
         $model = SalesOrder::model()->getByAttributes(array('ref_no' => $refno));
         $this->show_header = true;
         $this->show_footer = false;
