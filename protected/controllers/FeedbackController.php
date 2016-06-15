@@ -29,7 +29,7 @@ class FeedbackController extends WebsiteController {
     public function actionAjaxCreatFeedback() {
         if (isset($_POST['feedback'])) {
             $values = $_POST['feedback'];
-            //$values=array('user_id'=>1,'source'=>'web','contact_mobile'=>'13816439927','content'=>'test');
+            //$values=array('user_id'=>1,'user_host_ip'=>'127.0.0.1','source'=>'web','contact_mobile'=>'13816439927','content'=>'test');
             $user = $this->getCurrentUser();
             $feedbackMgr = new FeedbackManager();
             $output = $feedbackMgr->saveFeedback($values,$user);
