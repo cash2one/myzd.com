@@ -24,7 +24,13 @@ class PaymentController extends WebsiteController {
             ),
         );
     }
+    public function actionTest1(){
 
+        $url = 'http://pc.myzd.local/translate/translate/member';
+        $x=$this->rpcClient($url);
+       print_r($x);exit;
+        
+    }
     public function actionDoPingxxPay() {
         require_once('protected/sdk/pingpp-php-master/init.php');
         $output = new stdClass();
