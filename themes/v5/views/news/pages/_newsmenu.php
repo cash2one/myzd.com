@@ -23,7 +23,8 @@ $news = array(
     'qianyuedejiyiyuan' => '名医主刀成功签约德济医院 互联网医疗又一里程碑',
     'chuangyeyingxionghui' => '男儿英雄泪，志在“好看病，看好病”——“名医主刀”登陆央视《创业英雄汇》',
     'zhenfund' => '“名医主刀”获真格基金500万天使投资，打造国内最大的手术O2O平台',
-    'hanayideganxiexin' => '韩阿姨的一封感谢信照亮千万患者就医路'
+    'hanayideganxiexin' => '韩阿姨的一封感谢信照亮千万患者就医路',
+    'zhitongche'=>'患者故事',
 );
 $this->pageTitle = $news[$data] . '_名医主刀';
 ?>

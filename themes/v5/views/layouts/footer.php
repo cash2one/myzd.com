@@ -1,25 +1,20 @@
 <?php
 $siteMenu = $this->loadSiteMenu()["site"];
 $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
+Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/feedback.js", CClientScript::POS_HEAD);
+$urlSubmitForm = $this->createUrl("feedback/ajaxcreatfeedback");
+$user_id = '';
+if ($this->getCurrentUser() !== null) {
+    $user_id = $this->getCurrentUser()->getId();
+}
 ?>
-<!-- right-widget-list -->
-
-<!-- /.End  right-widget-list -->
-<style type="text/css">
-    .feedback{position:fixed;bottom:3%;right:10px;width:50px;height:50px;background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146569869640075')}.feedback:hover{cursor:pointer;background-position:50px 0}
-    .submit:hover{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125474078');width:85px;height:35px;}
-    .submit{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125457733');width:85px;height:35px;}
-    .logo-img{margin-bottom:-35px;}
-    #feedback-open .close{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146572092230786') no-repeat 0 center;background-size:100%;width:15px;height:15px;display:inline-block;margin-right:10px;}
-    #feedback-open .close:hover{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146572141129491') no-repeat 0 center;background-size:100%;width:15px;height:15px;display:inline-block}
-</style>
 <section id="site-footer" >
     <div class="container-fluid">
         <div class="">
             <!--  toTop  -->
             <div class="totop">
             </div>
-            <div class="feedback"></div>
+            <div class="feedback"></div> 
             <?php
             if (!$this->show_header_navbar) {
                 ?>
@@ -90,7 +85,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                 <h4>关于我们</h4>
                                 <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
                                 <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms')); ?>" target="_blank">免责声明</a>
-    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];                   ?>" target="_blank">联系我们</a>-->
+    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];                    ?>" target="_blank">联系我们</a>-->
                                 <!--                                <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                             </div>
                             <div class="mt40">
@@ -158,7 +153,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                                     <h4>关于我们</h4>
                                     <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
                                     <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms')); ?>" target="_blank">免责声明</a>
-        <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];                   ?>" target="_blank">联系我们</a>-->
+        <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];                    ?>" target="_blank">联系我们</a>-->
                                     <!--                                    <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                                 </div>
                             </div>
@@ -193,68 +188,32 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                 </div> 
             </div>
         </div>
-    </div>  
-    <!-- feedback Modal -->
-<!--    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel">
-        <div class="modal-dialog modal-sm" role="document" >
-            <div class="modal-content" style="width:422px;margin-top:200px;">
-                <div class="modal-body text-center">
-                    <div class="logo-img"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125395645"></div>
- 
-                    <div style="width:390px;height:260px;background-color:#b3dee1;padding-top:9px;">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-                        <div class="text-left" style="padding-left:7px;padding-right:7px;margin-top:30px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125444173"></div>
-                        <div class="feedback-form pt5" >
-                            <form enctype="multipart/form-data" data-url-return="<?php //echo $urlReturn;      ?>" id="feedback-form" action="<?php //echo $urlSubmitForm;     ?>" method="post">
-                                <input type="hidden" value="<?php //echo $urlGetSmsVerifyCode;     ?>" name="FeedbackForm[user_id]" id="FeedbackForm_user_id">
-                                <input type="hidden" value="<?php //echo $authActionType;     ?>" name="FeedbackForm[source]" id="FeedbackForm_source">
-                                <div class="form-group">
-                                    <div class="controls col-sm-12" style="padding-left:7px;padding-right:7px;">   
-                                        <textarea name="FeedbackForm[content]" placeholder="我是名医主刀的产品经理小南，把你遇到的问题，或是想要的功能告诉我吧（200字以内）" class="form-control" maxlength="200" rows="3" id="FeedbackForm_content"></textarea>                              
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-9 controls pr0" style="padding-left:7px;">
-                                        <input name="FeedbackForm[contact_mobile]" placeholder="欢迎您留下手机号，以便我们感谢（选填）" class="form-control" maxlength="11" id="FeedbackForm_contact_mobile" type="text">                     
-                                    </div>
-                                    <div class="col-sm-3" style="padding-right:7px;padding-left:5px;">
-                                        <div id="feedbackFormSubmit" type="button" class="btn btn-yes btn-block" name="" style="height:34px;">提交</div>       
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-<!--width:422px;margin-top:200px;-->
-<div id="feedback-open" style="position:fixed;right:0;bottom:0;display:none;">
+    </div>
+    <div id="feedback-success">反馈提交成功！</div>
+    <div id="feedback-open">
         <div >
             <div>
                 <div class="text-center">
-                    <div class="logo-img"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125395645"></div>
-                    <div style="width:390px;height:260px;background-color:#b3dee1;padding-top:9px;">
+                    <div class="feedback-icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125395645"></div>
+                    <div class="feedback-open-area">
                         <div class="close"></div>
-                        <div class="text-left" style="padding-left:7px;padding-right:7px;margin-top:30px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125444173"></div>
+                        <div class="text-left feedback-title-img"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125444173"></div>
                         <div class="feedback-form pt5" >
-                            <form enctype="multipart/form-data" data-url-return="<?php //echo $urlReturn;      ?>" id="feedback-form" action="<?php //echo $urlSubmitForm;     ?>" method="post">
-                                <input type="hidden" value="<?php //echo $urlGetSmsVerifyCode;     ?>" name="FeedbackForm[user_id]" id="FeedbackForm_user_id">
-                                <input type="hidden" value="<?php //echo $authActionType;     ?>" name="FeedbackForm[source]" id="FeedbackForm_source">
+                            <form enctype="multipart/form-data" id="feedback-form" action="<?php echo $urlSubmitForm;?>" method="post">
+                                <input type="hidden" value="<?php echo $user_id;?>" name="feedback[user_id]" id="FeedbackForm_user_id">
+                                <input type="hidden" value="website" name="feedback[source]" id="FeedbackForm_source">
                                 <div class="form-group">
-                                    <div class="controls col-sm-12" style="padding-left:7px;padding-right:7px;">   
-                                        <textarea name="FeedbackForm[content]" placeholder="我是名医主刀的产品经理小南，把你遇到的问题，或是想要的功能告诉我吧（200字以内）" class="form-control" maxlength="200" rows="3" id="FeedbackForm_content"></textarea>                              
+                                    <div class="controls col-sm-12 pr7 pl7">   
+                                        <textarea id="feedback-content" name="feedback[content]" placeholder="我是名医主刀的产品经理小南，把你遇到的问题，或是想要的功能告诉我吧（200字以内）" class="form-control" maxlength="200" rows="3" id="FeedbackForm_content"></textarea>                              
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-9 controls pr0" style="padding-left:7px;">
-                                        <input name="FeedbackForm[contact_mobile]" placeholder="欢迎您留下手机号，以便我们感谢（选填）" class="form-control" maxlength="11" id="FeedbackForm_contact_mobile" type="text">                     
+                                    <div class="col-sm-9 controls pr0 pl7">
+                                        <input id="feedback-mobile" name="feedback[contact_mobile]" placeholder="欢迎您留下手机号，以便我们感谢（选填）" class="form-control" maxlength="11" id="FeedbackForm_contact_mobile" type="text">                     
                                     </div>
-                                    <div class="col-sm-3" style="padding-right:7px;padding-left:5px;">
-                                        <div id="feedbackFormSubmit" type="button" class="btn btn-yes btn-block" name="" style="height:34px;">提交</div>       
+                                    <div class="col-sm-3 pr7 pl5">
+                                        <div id="feedbackFormSubmit" type="button" class="btn btn-yes btn-block h34" name="">提&nbsp;交</div>       
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>

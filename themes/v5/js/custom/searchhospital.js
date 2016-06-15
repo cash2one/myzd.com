@@ -3,7 +3,6 @@ function setHospitalHtml(data, urlHospitalView) {
     if (data.results && data.results.length > 0) {
         var innerHtml = '';
         var hospitals = data.results;
-        console.log(data);
         for (var i = 0; i < hospitals.length; i++) {
             var hospital = hospitals[i];
             var deptId = hospitals[i].hp_dept_id;
