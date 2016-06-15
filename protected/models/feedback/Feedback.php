@@ -20,7 +20,7 @@ class Feedback extends EActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('contact_mobile, content', 'required'),
+            array('content', 'required'),
             array('id, user_id', 'numerical', 'integerOnly' => true),
             array('source, contact_mobile', 'length', 'max' => 20),
             array('date_start, date_end, appt_date, date_created, date_updated, date_deleted', 'safe'),

@@ -8,7 +8,8 @@ class FeedbackManager {
     public function saveFeedback($values,$user) {
         $model = new Feedback();
         if($values['user_id']=="") $values['user_id']=null;
-        $model->setAttributes(array('user_id'=>$values['user_id'],'source'=>$values['source'],'contact_mobile'=>$values['contact_mobile'],'content'=>$values['content']), true);
+        $valuse['user_host_ip'] = Yii::app()->request->userHostAddress;
+        $model->setAttributes(array('user_id'=>$values['user_id'],'user_host_ip'=>$values['user_host_ip'],'source'=>$values['source'],'contact_mobile'=>$values['contact_mobile'],'content'=>$values['content']), true);
         if ($model->save()) {
            $output['status'] = 'ok';
            $output['errorCode'] = 0;
