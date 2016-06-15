@@ -22,11 +22,11 @@ class Feedback extends EActiveRecord {
         return array(
             array('content', 'required'),
             array('id, user_id', 'numerical', 'integerOnly' => true),
-            array('source, contact_mobile', 'length', 'max' => 20),
+            array('source, contact_mobile, user_host_ip', 'length', 'max' => 20),
             array('date_start, date_end, appt_date, date_created, date_updated, date_deleted', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, user_id, source, contact_mobile, content, date_start, date_end, appt_date, date_created, date_updated, date_deleted', 'safe', 'on' => 'search'),
+            array('id, user_id, user_host_ip, source, contact_mobile, content, date_start, date_end, appt_date, date_created, date_updated, date_deleted', 'safe', 'on' => 'search'),
         );
     }
 
@@ -37,6 +37,7 @@ class Feedback extends EActiveRecord {
         return array(
             'id' => 'ID',
             'user_id' => '用户',
+            'user_host_ip' => '用户IP',
             'source' => '来源',
             'contact_mobile' => '联系电话',
             'content' => '内容',
@@ -81,4 +82,7 @@ class Feedback extends EActiveRecord {
         return $this->content;
     }
     
+    public function getUserHostIp(){
+        return $this->user_host_ip;
+    }
 }
