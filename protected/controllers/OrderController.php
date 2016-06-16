@@ -15,7 +15,7 @@ class OrderController extends WebsiteController {
         $detect = Yii::app()->mobileDetect;
         // client is mobile and url is not mobile.
         if ($detect->isMobile()) {
-            $this->redirect(Yii::app()->params['baseUrlMobileDoctor'] . '/mobiledoctor/order/view/refNo/' . $refno);
+            $this->redirect(Yii::app()->params['baseUrlMobileDoctor'] . '/mobiledoctor/order/view/refNo/' . $refNo);
         } else {
             $this->render('viewOne', array('model' => $model));
         }
