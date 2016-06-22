@@ -5,6 +5,7 @@ class ApiViewDoctorV7 extends EApiViewService {
     private $doctor_id;
     private $members;
     private $subCatId;
+    private $doctors;
 
     public function __construct($id) {
         parent::__construct();
@@ -13,8 +14,10 @@ class ApiViewDoctorV7 extends EApiViewService {
 
     protected function loadData() {
         $this->loadDoctor();
+        if(!is_array($this->doctor_id)){
         $this->loadRelatedDoctors();
         $this->loadDoctorArticle();
+        }
     }
 
     protected function createOutput() {
@@ -29,8 +32,14 @@ class ApiViewDoctorV7 extends EApiViewService {
     }
 
     private function loadDoctor() {
-        $doctor = Doctor::model()->getById($this->doctor_id);
-        $this->setDoctor($doctor);
+        if(is_array($this->doctor_id)){
+            $doctor = Doctor::model()->getAllByIds($this->doctor_id);
+            //print_r($doctor);exit;
+        }else{
+            $doctor = Doctor::model()->getById($this->doctor_id);
+        }
+        $this->doctors=$doctor;
+        $this->setDoctor();
         if (isset($this->members)) {
             $this->setMembers();
         }
@@ -57,26 +66,51 @@ class ApiViewDoctorV7 extends EApiViewService {
         }
     }
 
-    private function setDoctor(Doctor $model) {
-        $data = new stdClass();
-        $data->id = $model->getId();
-        $data->name = $model->getName();
-        $data->hospitalId = $model->getHospitalId();
-        $data->hospitalName = $model->getHospitalName();
-        $data->mTitle = $model->getMedicalTitle();
-        $data->aTitle = $model->getAcademicTitle();
-        $data->imageUrl = $model->getAbsUrlAvatar();
-        $data->hpDeptId = $model->getHpDeptId();
-        $data->hpDeptName = $model->getHpDeptName();
-        $data->isExpteam = $model->getIsExpteam();
-        $data->description = $model->getDescription();
-        $data->careerExp = $model->getCareerExp();
-        $data->honour = $model->getHonourList();
-        $data->reasons = $model->getReasons();
-        if ($data->isExpteam) {
-            $this->members = ExpertTeam::model()->getById($model->getExpteamId())->getMembers();
-        }
-        $this->results->doctor = $data;
+    private function setDoctor() {
+      if(count($this->doctors)>1){
+          array_shift($this->doctors);
+          foreach($this->doctors as $model){
+            $data = new stdClass();
+            $data->id = $model->getId();
+            $data->name = $model->getName();
+            $data->hospitalId = $model->getHospitalId();
+            $data->hospitalName = $model->getHospitalName();
+            $data->mTitle = $model->getMedicalTitle();
+            $data->aTitle = $model->getAcademicTitle();
+            $data->imageUrl = $model->getAbsUrlAvatar();
+            $data->hpDeptId = $model->getHpDeptId();
+            $data->hpDeptName = $model->getHpDeptName();
+            $data->isExpteam = $model->getIsExpteam();
+            $data->description = $model->getDescription();
+            $data->careerExp = $model->getCareerExp();
+            $data->honour = $model->getHonourList();
+            $data->reasons = $model->getReasons();
+            if ($data->isExpteam) {
+                $this->members = ExpertTeam::model()->getById($model->getExpteamId())->getMembers();
+            }
+            $this->results->doctor[] = $data;
+          }
+      }else{
+          $data = new stdClass();
+          $data->id = $this->doctors->getId();
+          $data->name = $this->doctors->getName();
+          $data->hospitalId = $this->doctors->getHospitalId();
+          $data->hospitalName = $this->doctors->getHospitalName();
+          $data->mTitle = $this->doctors->getMedicalTitle();
+          $data->aTitle = $this->doctors->getAcademicTitle();
+          $data->imageUrl = $this->doctors->getAbsUrlAvatar();
+          $data->hpDeptId = $this->doctors->getHpDeptId();
+          $data->hpDeptName = $this->doctors->getHpDeptName();
+          $data->isExpteam = $this->doctors->getIsExpteam();
+          $data->description = $this->doctors->getDescription();
+          $data->careerExp = $this->doctors->getCareerExp();
+          $data->honour = $this->doctors->getHonourList();
+          $data->reasons = $this->doctors->getReasons();
+          if ($data->isExpteam) {
+              $this->members = ExpertTeam::model()->getById($this->doctors->getExpteamId())->getMembers();
+          }
+          $this->results->doctor = $data;
+      }
     }
 
     private function loadRelatedDoctors() {
