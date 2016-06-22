@@ -24,7 +24,7 @@ class DoctorController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'view', 'search','top'),
+                'actions' => array('register', 'view', 'search','top','doctorstaticcontent'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -286,5 +286,35 @@ class DoctorController extends WebsiteController {
             }
         }
     }
-
+    
+    /**
+     *  找医生页面静态内容（最新预约，每周推荐）
+     */
+    public function actionDoctorStaticContent(){
+       $date_now=date("j");
+       $cal_result=ceil($date_now/7);
+       $weeksDoctorId=$this->weeksDoctorId($cal_result);
+       $apisvc = new ApiViewDoctorV7($weeksDoctorId);
+       $output = $apisvc->loadApiViewData();
+       $this->renderJsonOutput($output);
+    }
+    
+    /**
+     * 每周推荐医生配置
+     */
+    protected function weeksDoctorId($week){
+        $list=array("1"=>array("2989","3017","3029","359","3223","3218","3124","803"),
+                    "2"=>array("3325","137","3153","295","3021","3217","3042","3130"),
+                    "3"=>array("3087","912","303","3031","3219","3020","3010","3054"),
+                    "4"=>array("2939","2913","267","2927","1750","3204","3053","2919")
+        );
+        return $list[$week];
+    }
+    
+    /**
+     * 最新预约单配置
+     */
+    protected  function newBookingList(){
+        //return $list=array("","78","456","542","789");
+    }
 }
