@@ -68,7 +68,6 @@ class ApiViewDoctorV7 extends EApiViewService {
 
     private function setDoctor() {
       if(count($this->doctors)>1){
-          array_shift($this->doctors);
           foreach($this->doctors as $model){
             $data = new stdClass();
             $data->id = $model->getId();
