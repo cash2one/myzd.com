@@ -168,36 +168,6 @@ abstract class Controller extends CController {
         return json_decode($result, true);
     }
     
-    /**
-     * rpc client
-     */
-    public function rpcClient($url){
-        require_once 'jsonRPCClient.php';       
-        //$url = 'http://localhost/rpc_server/server.php';
-        $myExample = new jsonRPCClient($url);
-        // 客户端调用
-        try {
-            $name = $myExample->getName();
-           return $name;
-        } catch (Exception $e) {
-            echo nl2br($e->getMessage()).'<br />'."\n";
-        }
-    }
     
-    /**
-     * rpc server
-     */
-    public function rpcServer($class,$module){
-        require_once 'jsonRPCServer.php';
-       // member 为测试类
-       
-       require dirname(__FILE__).'/../modules/'.$module.'/server/'.$class.'.php';
-        // 服务端调用
-        $myExample = new $class();
-        // 注入实例
-        jsonRPCServer::handle($myExample)
-        or print 'no request';
-        
-    }
 
 }

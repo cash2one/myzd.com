@@ -1,5 +1,9 @@
 <?php
 class TranslateController extends TranslateBaseController{
+    private $rpc;
+    function __construct(){
+        $this->rpc=new Rpc();
+    }
 	public function actionIndex(){
         if(isset($_POST['Message'])){
             foreach($_POST['Message'] as $id=>$message){
@@ -39,7 +43,7 @@ class TranslateController extends TranslateBaseController{
         $this->render('index',$data);
 	}
 	function actionMember(){
-	    $this->rpcServer('member', 'translate');	
+	    $this->rpc->rpcServer('member', 'translate');	
 	}
 	
     function actionSet(){
