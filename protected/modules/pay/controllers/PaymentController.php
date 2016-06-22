@@ -3,7 +3,10 @@
 class PaymentController extends WebsiteController {
 
     private $booking;
-
+    private $rpc;
+    function __construct(){
+        $this->rpc=new Rpc();
+    }
     /**
      * Specifies the access control rules.
      * This method is used by the 'accessControl' filter.
@@ -27,7 +30,7 @@ class PaymentController extends WebsiteController {
     public function actionTest1(){
 
         $url = 'http://pc.myzd.local/translate/translate/member';
-        $x=$this->rpcClient($url);
+        $x=$this->rpc->rpcClient($url);
        print_r($x);exit;
         
     }
