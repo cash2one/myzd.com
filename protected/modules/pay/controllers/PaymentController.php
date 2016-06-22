@@ -3,10 +3,7 @@
 class PaymentController extends WebsiteController {
 
     private $booking;
-    private $rpc;
-    function __construct(){
-        $this->rpc=new Rpc();
-    }
+
     /**
      * Specifies the access control rules.
      * This method is used by the 'accessControl' filter.
@@ -26,13 +23,6 @@ class PaymentController extends WebsiteController {
                 'users' => array('*'),
             ),
         );
-    }
-    public function actionTest1(){
-
-        $url = 'http://pc.myzd.local/translate/translate/member';
-        $x=$this->rpc->rpcClient($url);
-       print_r($x);exit;
-        
     }
     public function actionDoPingxxPay() {
         require_once('protected/sdk/pingpp-php-master/init.php');

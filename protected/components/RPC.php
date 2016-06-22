@@ -1,5 +1,5 @@
 <?php
-class Rpc
+class RPC
 {
     function __construct(){
         
@@ -14,8 +14,8 @@ class Rpc
         $myExample = new jsonRPCClient($url);
         // 客户端调用
         try {
-            $name = $myExample->getName();
-            return $name;
+
+            return $myExample;
         } catch (Exception $e) {
             echo nl2br($e->getMessage()).'<br />'."\n";
         }
