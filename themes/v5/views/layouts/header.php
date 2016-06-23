@@ -93,7 +93,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                             <?php
                             $curView = Yii::app()->request->getParam('view');
                             foreach ($headerMenu as $key => $menuItem) {
-                                if (($this->action->controller->id == 'doctor') && ($key == 'doctor') && ($this->action->id == 'top')) {
+                                if (($this->action->controller->id == 'doctor') && ($key == 'doctor') && ($this->action->id == 'findexpert')) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';
                                 } else if (($this->action->controller->id == 'hospital') && ($key == 'hospital') && ($this->action->id == 'department')) {
                                     echo '<li class="dropdown dropdown-hover active">' . CHtml::link('' . $menuItem['label'], $menuItem['url'], array('class' => '')) . '</li>';

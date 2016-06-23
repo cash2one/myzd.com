@@ -14,17 +14,17 @@ function setDoctorHtml(data, urlDoctorView) {
             }
             var hpDeptName = doctor.hpDeptName == null ? '&nbsp;' : doctor.hpDeptName;
             var isContractedImg = doctor.isContracted == 0 ? '' : '<div class="pull-right contracted-img"></div><div class="clearfix"></div>';
-            var isMingyiyizhenImg=doctor.ServiceId==2? '<div class="pull-right mingyiyizhen-img"></div>':'';
+            var isMingyiyizhenImg = doctor.ServiceId == 2 ? '<div class="pull-right mingyiyizhen-img"></div>' : '';
             var academicianImg = doctor.id == 117 ? '<div class="pull-right academician-img"></div>' : '';
             var robotImg = '';
             if (doctor.id == 3209 || doctor.id == 3208 || doctor.id == 3207) {
                 robotImg = '<div class="pull-right roboticon-img"></div>';
             }
-            innerHtml += '<div class="col-md-4 col-sm-6 mt30">' +
+            innerHtml += '<div class="col-lg-3 col-sm-4 mt30">' +
                     '<a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                     '<div class="border-gray expert-list">' +
                     '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '"></div>' +
-                    isContractedImg + academicianImg + robotImg +isMingyiyizhenImg+
+                    isContractedImg + academicianImg + robotImg + isMingyiyizhenImg +
                     '<div class="text-center"><span class="strong">' + doctor.name + '</span>&nbsp;' +
                     '<span class="text-center mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</span></div>' +
                     '<div class="text-center mt5 hpDeptName">' + hpDeptName + '</div>' +
@@ -118,7 +118,7 @@ function initDeptFunction() {
             $(this).parent().addClass("active");
         }
     });
-    $('.department ul>li>a.subCat').click(function (e) {
+    $('.department a.subCat').click(function (e) {
         e.preventDefault();
         var subCat = $(this).attr('data-id');
         var url = $(this).attr('href');
@@ -130,8 +130,8 @@ function initDeptFunction() {
         condition["disease_category"] = '';
         condition["disease_sub_category"] = subCat;
         urlLoadDoctor = url;
-        $('.department-name>span').html(subCatName);
-        $('.department ul>li>a.subCat').removeClass('active');
+        $('.department-list .main-subCat').html(subCatName);
+        $('.department a.subCat').removeClass('active');
         $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
         ajaxLoadDiseaseByCategory(subCat);
@@ -153,7 +153,7 @@ function initDeptFunction() {
     });
 }
 function initDiseaseFunction() {
-    $('.disease-list a.all').click(function (e) {
+    $('.select-disease a.all').click(function (e) {
         e.preventDefault();
         var subCat = $(this).attr('data-id');
         var url = $(this).attr('href');
@@ -165,12 +165,12 @@ function initDiseaseFunction() {
         condition["disease_sub_category"] = subCat;
         urlLoadDoctor = url;
         $('.department-name>span').html('全部');
-        $('.disease-list a.disease').removeClass('active');
+        $('.select-disease a.disease').removeClass('active');
         $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
         setCityActive();
     });
-    $('.disease-list a.disease').click(function (e) {
+    $('.select-disease a.disease').click(function (e) {
         e.preventDefault();
         var disease_name = $(this).text();
         var disease = $(this).attr('data-id');
@@ -183,8 +183,8 @@ function initDiseaseFunction() {
         condition["disease_sub_category"] = '';
         urlLoadDoctor = url;
         $('.department-name>span').html(disease_name);
-        $('.disease-list a.all').removeClass('active');
-        $('.disease-list a.disease').removeClass('active');
+        $('.select-disease a.all').removeClass('active');
+        $('.select-disease a.disease').removeClass('active');
         $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
         setCityActive();

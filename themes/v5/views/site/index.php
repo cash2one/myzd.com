@@ -261,7 +261,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 for (var i = 0; i < diseases.length; i++) {
                     var disease = diseases[i];
                     var urlSearchHp = encodeURI('<?php echo $urlHopitalSearch ?>?disease=' + disease.id);
-                    var urlSearchDoctor = encodeURI('<?php echo $urlDoctorSearch ?>?disease_name=' + disease.name);
+                    var urlSearchDoctor = encodeURI('<?php echo $urlDoctorSearch ?>?disease=' + disease.id);
                     innerHtml += '<div class="department"><span class="strong name">' + setResultsNameActive(disease.name, keyword) + '</span><a href="' + urlSearchHp + '" target="_blank" class="pull-right detail">找医院</a><a href="' + urlSearchDoctor + '" target="_blank" class="pull-right detail mr15">找名医</a></div>';
                 }
                 innerHtml += '</div>';
