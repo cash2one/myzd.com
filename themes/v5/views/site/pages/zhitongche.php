@@ -105,6 +105,18 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                         </div>
                         <div class="clearfix"></div>
                     </div>
+                    <div class="every-story mt15">
+                        <div class="pull-left mr15"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146578926269576" /></div>
+                        <div class="story-content">
+                            <div class="text15">疾病名称：左膝前交叉韧带断裂</div>
+                            <div class="text15 mt30">处理时间：4天</div>
+                            <div class="introduce mt30">
+                                <div>在刘翔主治医师陈世益教授的治疗下成功完成对小傅的手术治疗，整个手术过程进行接近4个小时，手术非常顺利。小傅的膝盖终于得到了专业的治疗，术后恢复也进行的非常好。名医主刀将继续践行公益之路，为患者提供更好的手术医疗援助，让公益的阳光照耀到每个角落。</div>
+                            </div>
+                            <div class="learn-more"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'returnstadium')); ?>">查看详情></a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
                 <div class="col-md-3 ztc-right-area">
                     <div><div class="heading">名医助手说</div></div>
