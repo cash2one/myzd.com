@@ -66,7 +66,7 @@ $this->checkVendor(AppLog::SITE_MYGY);
             <div class="recommend-expert mt20">
                 <div class="row">
                     <div class="col-sm-3">
-                        <div class="text-right"><img class="recommend-icon" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146578599042374" /></div>
+                        <div class="text-right"><img class="recommend-icon" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146664936386735" /></div>
                         <div class="pb10 expert-info">
                             <div><img class="img100" src="http://dr.static.mingyizhudao.com/F1060759BAAB7A08A1317DFB19151DC9" /></div>
                             <div class="text-center"><strong>梁益建</strong><span class="ml10">主任医师</span></div>

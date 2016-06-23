@@ -37,6 +37,22 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                             <div class="col-md-10 col-sm-9 ml-50 news">
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146640680208048">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年6月
+                                            </div>
+                                            <div class="content">
+                                                <div>近日，由健康界传媒、中国医学科学院北京协和医学院和中国研究型医院学会主办的健康界峰会，在上海隆重召开。国内外近百家三甲医院，著名医疗机构与会。名医主刀联合创始人兼副董事长吴勇应邀做了名为<span class="text21">“医生创业，周瑜等来了东风”</span>的主题演讲。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>entrepreneurship" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
                                         <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146356319786612">
                                     </div>
                                     <div class="col-md-9 col-sm-12">
