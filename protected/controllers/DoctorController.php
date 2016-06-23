@@ -24,7 +24,7 @@ class DoctorController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'view', 'search','top','doctorstaticcontent','scrollacceptbooking'),
+                'actions' => array('register', 'view', 'search', 'top', 'doctorstaticcontent', 'scrollacceptbooking', 'findexpert'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -45,6 +45,10 @@ class DoctorController extends WebsiteController {
     public function actionTop() {
 
         $this->render('top');
+    }
+
+    public function actionFindexpert() {
+        $this->render('findexpert');
     }
 
     /**
