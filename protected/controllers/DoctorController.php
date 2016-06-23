@@ -24,7 +24,7 @@ class DoctorController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'view', 'search','top','doctorstaticcontent'),
+                'actions' => array('register', 'view', 'search','top','doctorstaticcontent','scrollacceptbooking'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -288,7 +288,7 @@ class DoctorController extends WebsiteController {
     }
     
     /**
-     *  找医生页面静态内容（最新预约，每周推荐）
+     *  找医生页面静态内容（每周推荐）
      */
     public function actionDoctorStaticContent(){
        $date_now=date("j");
@@ -299,6 +299,14 @@ class DoctorController extends WebsiteController {
        $this->renderJsonOutput($output);
     }
     
+    /**
+     * 找医生页面最新预约单内容
+     */
+    public function actionScrollAcceptBooking(){
+       $apisvc = new ApiViewScrollAcceptBooking();
+       $output = $apisvc->loadApiViewData();
+       $this->renderJsonOutput($output);
+    }
     /**
      * 每周推荐医生配置
      */
