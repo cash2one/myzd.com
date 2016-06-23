@@ -34,14 +34,18 @@ class ApiViewScrollAcceptBooking extends EApiViewService {
      * @param array $models array of ExpertTeam models.
      */
     private function setBookings(array $models) {
-        foreach ($models as $model) {
+        $i=0;
+        foreach ($models as $key=>$model) {
+            if(is_int(($key/4))){
+                $i++;
+            }
             $data = new stdClass();
             $data->id = $model->getId();
             $data->patient_name = $model->getPatientName();
             $data->doctor_name = $model->getDoctorName();
             $data->doctor_hospital_name = $model->getDoctorHospitalName();
             $data->doctor_hp_dept_name = $model->getDoctorHpDeptName();
-            $this->bookings[] = $data;
+            $this->bookings[$i][] = $data;
         }
     }
 
