@@ -23,7 +23,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 <li>></li>
                 <li><a href="<?php echo $this->createUrl('hospital/department') ?>">找医院</a></li>
                 <li>></li>
-                <li>外科</li>
+                <li class="main-department"></li>
             </ul>
         </div>
     </div>
@@ -223,7 +223,7 @@ $page = Yii::app()->request->getQuery('page', '');
                         '<div class="dept-header">' +
                         '<span class="' + imgname + '"></span><i class="fa fa-caret-right"></i>' +
                         '<i class="fa fa-caret-down"></i>' +
-                        '<span class="strong">' + diseaseCategory.name + '</span>' +
+                        '<span class="strong dept-name">' + diseaseCategory.name + '</span>' +
                         '</div>' +
                         '<ul>';
                 var subCats = diseaseCategory.subCat;
@@ -276,7 +276,8 @@ $page = Yii::app()->request->getQuery('page', '');
         $('.department-list .subCat').each(function () {
             var subCatId = $(this).attr('data-id');
             if (subCatId == condition["disease_sub_category"]) {
-                $('.department-name>span').html($(this).text());
+//                $('.department-name>span').html($(this).text());
+                $('.main-department').html($(this).parents('.department').find('.dept-name').text());
                 $(this).addClass('active');
                 $(this).parents('.department').addClass('active');
             }
@@ -287,7 +288,8 @@ $page = Yii::app()->request->getQuery('page', '');
         $('.department-list .subCat').each(function () {
             var subCatId = $(this).attr('data-id');
             if (subCatId == subId) {
-                $('.department-name>span').html($(this).text());
+//                $('.department-name>span').html($(this).text());
+                $('.main-department').html($(this).parents('.department').find('.dept-name').text());
                 $(this).addClass('active');
                 $(this).parents('.department').addClass('active');
             }

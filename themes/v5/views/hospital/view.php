@@ -218,6 +218,9 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
             $('.department-info .faculty-open .second-faculty:first').parent().prev().addClass('active');
             $('.department-info .faculty-open .second-faculty:first').parent().prev().html(html);
         }
+        $('.faculty-desc .dept-slider .faculty-open').mouseleave(function () {
+            $(this).removeClass('active');
+        });
 //        二级科室弹出
         $('.faculty-desc .dept-slider .dept-name').click(function () {
             if ($(this).hasClass("active") && $(this).next().hasClass("active")) {
