@@ -2,7 +2,8 @@
 
 class ApiRequestUrl {
 
-    public $hostInfoProd = 'http://crm560.mingyizd.com';
+    public $hostInfoProd = 'http://crm.dev.mingyizd.com';
+//    public $hostInfoProd = 'http://crm560.mingyizd.com';
     private $admin_salesbooking_create = 'api/adminbooking';
     private $tasksalseorder = 'api/tasksalseorder';
 
@@ -21,7 +22,7 @@ class ApiRequestUrl {
     public function getUrlAdminSalesBookingCreate() {
         return $this->getUrl($this->admin_salesbooking_create);
     }
-    
+
     /**
      * crm客服通知提醒调用
      * @return string
