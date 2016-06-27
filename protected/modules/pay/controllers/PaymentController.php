@@ -128,6 +128,7 @@ class PaymentController extends WebsiteController {
                 $data = $output->results;
                 $emailMgr = new EmailManager();
                 $emailMgr->sendEmailSalesOrderPaid($data);
+                 CoreLogPayment::log('电邮提醒: ' . CJSON::encode($order), CoreLogPayment::LEVEL_INFO, Yii::app()->request->url, __METHOD__);
             }
         } else if (isset($payment) && $post['type'] != 'charge.succeeded') {
             //交易失败
