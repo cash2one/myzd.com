@@ -95,8 +95,8 @@ class PayManager {
         switch ($channel) {
             case 'alipay_pc_direct':
                 $extra = array(
-//                    'success_url' => 'http://test.mingyizd.com/payment/alipayReturn'  //test
-                    'success_url' => 'http://pc.dev.mingyizd.com/payment/alipayReturn' //prod
+                    'success_url' => 'http://pc.dev.mingyizd.com//payment/alipayReturn'  //test
+   //                 'success_url' => 'http://pc.dev.mingyizd.com/payment/alipayReturn' //prod
 //                     'success_url' => 'http://www.mingyizhudao.com/payment/alipayReturn' //prod
                 );
                 break;
