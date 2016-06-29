@@ -128,5 +128,9 @@ class Disease extends EActiveRecord {
     public function getDescription() {
         return $this->description;
     }
+    
+    public function getCategoryId(){
+        return $this->category_id;
+    }
 
 }

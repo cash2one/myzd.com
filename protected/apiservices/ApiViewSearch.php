@@ -103,6 +103,7 @@ class ApiViewSearch extends EApiViewService {
             $data = new stdClass();
             $data->id = $model->getId();
             $data->name = $model->getName();
+            $data->disease_sub_category = $model->getCategoryId();
             $this->results->diseases[] = $data;
         }
     }
