@@ -24,7 +24,7 @@ class DoctorController extends WebsiteController {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('register', 'view', 'search', 'top', 'doctorstaticcontent', 'scrollacceptbooking', 'findexpert'),
+                'actions' => array('register', 'view', 'search', 'top', 'doctorstaticcontent', 'scrollacceptbooking', 'findexpert','citybydoctor'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -333,5 +333,14 @@ class DoctorController extends WebsiteController {
      */
     protected  function newBookingList(){
         //return $list=array("","78","456","542","789");
+    }
+    
+    /**
+     * 获取有医生信息的城市列表
+     */
+    public function getCityByDoctor(){
+        $apisvc = new ApiViewCityByDoctor();
+        $output = $apisvc->loadApiViewData();
+        $this->renderJsonOutput($output);
     }
 }
