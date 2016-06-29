@@ -296,7 +296,7 @@ class DoctorController extends WebsiteController {
      */
     public function actionDoctorStaticContent(){
        $date_now=date("j");
-       $cal_result=ceil($date_now/7);
+       $cal_result=round($date_now/7);
        $weeksDoctorId=$this->weeksDoctorId($cal_result);
        $apisvc = new ApiViewDoctorV7($weeksDoctorId);
        $output = $apisvc->loadApiViewData();
@@ -320,7 +320,12 @@ class DoctorController extends WebsiteController {
                     "3"=>array("3087","912","303","3031","3219","3020","3010","3054"),
                     "4"=>array("2939","2913","267","2927","1750","3204","3053","2919")
         );
-        return $list[$week];
+        if($week>'4'){
+            return $list["4"];
+        }
+        else{
+            return $list[$week];
+        }
     }
     
     /**
