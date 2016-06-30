@@ -8,7 +8,7 @@ function setDoctorHtml(data, urlDoctorView) {
             var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
             var docdesc = '';
             if (doctor.desc) {
-                docdesc = doctor.desc.length > 100 ? doctor.desc.substr(0, 100) + '...' : doctor.desc;
+                docdesc = doctor.desc.length > 40 ? doctor.desc.substr(0, 40) + '...' : doctor.desc;
             } else {
                 docdesc = '暂无信息';
             }
@@ -29,7 +29,7 @@ function setDoctorHtml(data, urlDoctorView) {
                     '<span class="text-center mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</span></div>' +
                     '<div class="text-center mt5 hpDeptName">' + hpDeptName + '</div>' +
                     '<div class="text-center mt5">' + doctor.hpName + '</div>' +
-                    '<div class="mt10 docdesc"><span class="strong">擅长：</span>' + docdesc + '</div>' +
+                    '<div class="docdesc text12"><span class="strong">擅长：</span>' + docdesc + '</div>' +
                     '<div class="text-center mt10"></div>' +
                     '</div>' +
                     '</a>' +
@@ -132,6 +132,9 @@ function initDeptFunction() {
         urlLoadDoctor = url;
         $('.department-list .main-subCat').html(subCatName);
         $('.department a.subCat').removeClass('active');
+        $('.department-list .subCatList').hide();
+        $(this).parents('.department-list').find('.more-subCat').toggle();
+        $(this).parents('.department-list').find('.retract-subCat').toggle();
         $(this).addClass('active');
         ajaxLoadDoctor('&getcount=1');
         ajaxLoadDiseaseByCategory(subCat);
