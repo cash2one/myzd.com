@@ -2,8 +2,8 @@
 
 class ApiRequestUrl {
 
-    public $hostInfoProd = 'http://crm.dev.mingyizd.com';
-//    public $hostInfoProd = 'http://crm560.mingyizd.com';
+//    public $hostInfoProd = 'http://crm.dev.mingyizd.com';
+    public $hostInfoProd = 'http://crm560.mingyizd.com';
     private $admin_salesbooking_create = 'api/adminbooking';
     private $tasksalseorder = 'api/tasksalseorder';
 
