@@ -187,7 +187,7 @@ $page = Yii::app()->request->getQuery('page', '');
     }
     function setCityList(data) {
         if (data.results) {
-            var innerHtml = '<div class="pull-left" style="min-height:3em;"><span class="select-title">按照地区：</span></div><a class="all city active">全部</a>';
+            var innerHtml = '<div class="pull-left" style="height:7em;"><span class="select-title">按照地区：</span></div><a class="all city active">全部</a>';
             for (var i = 0; i < data.results.length; i++) {
                 var city = data.results[i];
                 innerHtml += '<a class="city" data-id="' + city.id + '">' + city.name + '</a>';
