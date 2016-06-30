@@ -338,7 +338,7 @@ class DoctorController extends WebsiteController {
     /**
      * 获取有医生信息的城市列表
      */
-    public function getCityByDoctor(){
+    public function actionCityByDoctor(){
         $apisvc = new ApiViewCityByDoctor();
         $output = $apisvc->loadApiViewData();
         $this->renderJsonOutput($output);
