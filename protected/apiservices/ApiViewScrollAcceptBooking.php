@@ -41,6 +41,7 @@ class ApiViewScrollAcceptBooking extends EApiViewService {
             }
             $data = new stdClass();
             $data->id = $model->getId();
+            $data->doctor_id = $model->getDoctorId();
             $data->patient_name = $model->getPatientName();
             $data->doctor_name = $model->getDoctorName();
             $data->doctor_hospital_name = $model->getDoctorHospitalName();

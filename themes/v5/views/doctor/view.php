@@ -63,7 +63,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                         if (isset($doctor->reasons) && arrayNotEmpty($doctor->reasons)) {
                             $reasons = $doctor->reasons;
                             ?>
-                            <div class="docinfo-title good">推荐理由</div> 
+                            <div class="docinfo-title good-reason">推荐理由</div> 
                             <div class="ml30">
                                 <?php
                                 foreach ($reasons as $key => $reason) {
