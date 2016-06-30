@@ -16,7 +16,7 @@ $this->checkVendor(AppLog::SITE_MYGY);
         </div>
     </div>
     <div class="container">
-        <div class="mt30"><span class="depttitle">科室：</span><span class="ml10 dept all active">全部</span><span class="ml10 dept" data-dept="group0">骨科</span><span class="ml10 dept" data-dept="group1">外科</span><span class="ml10 dept" data-dept="group2">五官科</span><span class="ml10 dept" data-dept="group3">小儿外科</span></div>
+        <div class="mt30"><span class="depttitle">科室：</span><span class="ml10 dept active" data-dept="group0">骨科</span><span class="ml10 dept" data-dept="group1">外科</span><span class="ml10 dept" data-dept="group2">五官科</span><span class="ml10 dept" data-dept="group3">小儿外科</span></div>
         <div class="mygyexpert"></div>
     </div>
 </section>
@@ -29,7 +29,7 @@ $this->checkVendor(AppLog::SITE_MYGY);
             $('.dept').removeClass('active');
             $(this).addClass('active');
             $('.deptgroup').removeClass('active');
-            var groupId = '#' +$(this).attr('data-dept');
+            var groupId = '#' + $(this).attr('data-dept');
             $(groupId).addClass('active');
         });
         $('.dept.all').click(function () {
@@ -60,12 +60,16 @@ $this->checkVendor(AppLog::SITE_MYGY);
             for (x in page) {
                 var doctors = page[x];
 //                $('.mygyexpert-number').html(doctors.length);
-                innerHtml += '<div class="deptgroup active" id="group' + x + '">';
+                var active = '';
+                if (x == 0) {
+                    active = 'active';
+                }
+                innerHtml += '<div class="deptgroup ' + active + '" id="group' + x + '">';
                 for (var i = 0; i < doctors.length; i++) {
                     var last = '';
-                    if ((i+1) %5==0) {
+                    if ((i + 1) % 5 == 0) {
                         last = 'last';
-                    }  
+                    }
                     var doctor = doctors[i];
                     var hpDeptName = doctor.hpDeptName == null ? "&nbsp;" : doctor.hpDeptName;
                     var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
