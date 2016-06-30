@@ -172,13 +172,14 @@ class PaymentController extends WebsiteController {
 				$data = $output->results;
 				$emailMgr = new EmailManager();
 				$emailMgr->sendEmailSalesOrderPaid($data);
-				//任务提醒
-				if ($payment->paid_amount > 0) {
+				
+			}
+                        //任务提醒
+				//if ($payment->paid_amount > 0) {
 				    $apiRequest = new ApiRequestUrl();
 				    $remote_url = $apiRequest->getUrlOrderPaidedTaskCreate() . '?refno=' . $order->ref_no;
 				    $data = $this->send_get($remote_url);
-				}
-			}
+				//}
         } else if (isset($payment) && $post['type'] != 'charge.succeeded') {
             //交易失败
             $payMgr->updateDataAfterTradeFail($payment, $post);
