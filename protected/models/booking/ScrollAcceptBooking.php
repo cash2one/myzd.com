@@ -18,6 +18,7 @@ class ScrollAcceptBooking extends EActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
+            'doctor_id' => '医生ID',
             'patient_name' => '患者名称',
             'doctor_name' => '理想医生名称',
             'doctor_hospital_name' => '理想医院',
@@ -47,6 +48,10 @@ class ScrollAcceptBooking extends EActiveRecord {
         return parent::beforeSave();
     }
 
+    public function getDoctorId() {
+        return $this->doctor_id;
+    }
+    
     public function getPatientName() {
         return $this->patient_name;
     }

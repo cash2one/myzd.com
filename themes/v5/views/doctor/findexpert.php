@@ -19,7 +19,7 @@ $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', ''
 $page = Yii::app()->request->getQuery('page', '');
 ?>
 <div class="container-fluid bg-green">
-    <div class="row">
+    <div class="row" style="text-decoration:underline;">
         <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146242718127132" alt=""/>
     </div>
 </div>
@@ -93,7 +93,8 @@ $page = Yii::app()->request->getQuery('page', '');
         });
     }
     /**** 设置预约单滚动html ****/
-    function setScrollAcceptBooking(data) {
+    function setScrollAcceptBooking(data, urlDoctorView) {
+        var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         var innerHtml = '';
         if (data.results) {
             var i = 1;
@@ -103,7 +104,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 var scrollBooking = scroll[i];
                 innerHtml += '<li><div class="scroll-list">';
                 for (j = 0; j < scrollBooking.length; j++) {
-                    innerHtml += '<div class="scrollBooking">' + scrollBooking[j].patient_name + '已接受' + scrollBooking[j].doctor_hospital_name + scrollBooking[j].doctor_name + '手术</div>';
+                    innerHtml += '<div class="scrollBooking"><a href="' + urlDoctorView + scrollBooking[j].doctor_id + '" target="_blank">' + scrollBooking[j].patient_name + '已接受' + scrollBooking[j].doctor_hospital_name + scrollBooking[j].doctor_name + '手术</a></div>';
                 }
                 innerHtml += '</div></li>';
             }
@@ -155,7 +156,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
                 var docdesc = '';
                 if (doctor.description) {
-                    docdesc = doctor.description.length > 80 ? doctor.description.substr(0, 80) + '...' : doctor.description;
+                    docdesc = doctor.description.length > 40 ? doctor.description.substr(0, 40) + '...' : doctor.description;
                 } else {
                     docdesc = '暂无信息';
                 }
@@ -206,7 +207,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 innerHtml += '<div class="second-faculty-area ' + active + '" id="dept' + i + '">';
                 for (var j = 0; j < subCats.length; j++) {
                     var subCat = subCats[j];
-                    innerHtml += '<span class="second-faculty mr10"><a href="' + urlDoctorByDiseaseSubCategory + subCat.id + '" target="_blank">' + subCat.name + '</a></span>';
+                    innerHtml += '<span class="second-faculty mr5"><a href="' + urlDoctorByDiseaseSubCategory + subCat.id + '" target="_blank">' + subCat.name + '</a></span>';
                 }
                 innerHtml += '</div>';
             }
