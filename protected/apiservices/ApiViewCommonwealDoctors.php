@@ -2,8 +2,13 @@
 
 class ApiViewCommonwealDoctors extends EApiViewService {
 
-    public function __construct() {
+    private $hp_dept_id;
+    private $searchInputs;
+    
+    public function __construct($searchInputs) {
         parent::__construct();
+        $this->hp_dept_id=$searchInputs['hp_dept_id'];
+        $this->page=$searchInputs['page'];
     }
 
     protected function loadData() {
@@ -22,16 +27,22 @@ class ApiViewCommonwealDoctors extends EApiViewService {
     }
 
     public function loadDoctors() {
+        //echo $this->hp_dept_id;exit;
         $doctorList = include dirname(__FILE__) . '/../config/commonwealdoctors.php';
-        foreach ($doctorList as $doctorIds) {
+        $pageSize=2;
+        $start=($this->page-1)*$pageSize;
             $criteria = new CDbCriteria();
             $criteria->addCondition('t.date_deleted is NULL');
+            if($this->hp_dept_id!="0"){
+              $criteria->addCondition('t.hp_dept_id = '.$this->hp_dept_id);
+            }
+            $doctorIds=array_slice($doctorList,$start,$pageSize);
+            
             $criteria->addInCondition('t.id', $doctorIds);
             $models = Doctor::model()->findAll($criteria);
             if (arrayNotEmpty($models)) {
                 $this->setDoctors($models);
             }
-        }
     }
 
     private function setDoctors($models) {
