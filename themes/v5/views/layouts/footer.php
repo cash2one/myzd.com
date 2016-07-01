@@ -102,10 +102,9 @@ if ($this->getCurrentUser() !== null) {
 
                             </div>
                         </div>
-                        <div class="w25 logo-footer border0">
-                            <a href="<?php echo Yii::app()->homeUrl; ?>">
-                                <img class="" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009415900025"/>
-                            </a>
+                        <div class="w25 logo-footer-home border0">
+                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146701300490769"/>
+                            <div class="text-center text12">扫码关注：名医主刀</div>
                         </div>
                     </div>
                 </div>
