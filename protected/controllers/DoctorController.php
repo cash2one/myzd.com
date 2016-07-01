@@ -296,7 +296,7 @@ class DoctorController extends WebsiteController {
      */
     public function actionDoctorStaticContent(){
        $date_now=date("j");
-       $cal_result=round($date_now/7);
+       $cal_result=ceil($date_now/7);
        $weeksDoctorId=$this->weeksDoctorId($cal_result);
        $apisvc = new ApiViewDoctorV7($weeksDoctorId);
        $output = $apisvc->loadApiViewData();
