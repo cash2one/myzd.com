@@ -61,7 +61,6 @@ class HospitalDepartmentSearch extends ESearchModel {
                 $this->criteria->addCondition("t.sub_cat_id=:cateId");
                 $this->criteria->params[":cateId"] = $cateId;
             }
-
         }
     }
 
