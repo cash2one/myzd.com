@@ -295,8 +295,8 @@ class DoctorController extends WebsiteController {
      *  找医生页面静态内容（每周推荐）
      */
     public function actionDoctorStaticContent(){
-       $date_now=date("j");
-       $cal_result=round($date_now/7);
+       $timestamp = time();
+       $cal_result= date("W", $timestamp) - date("W", strtotime(date("Y-m-01", $timestamp))) + 1;
        $weeksDoctorId=$this->weeksDoctorId($cal_result);
        $apisvc = new ApiViewDoctorV7($weeksDoctorId);
        $output = $apisvc->loadApiViewData();

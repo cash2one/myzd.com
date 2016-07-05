@@ -226,14 +226,7 @@ class ApiController extends Controller {
                 $output = $apiService->loadApiViewData();
                 break;
             case 'commonwealdoctors'://名医公益推荐的医生
-                $values = $_GET;
-                if(!array_key_exists("hp_dept_id",$values)){
-                    $values['hp_dept_id']=0;
-                }
-                if(!array_key_exists("page",$values)){
-                    $values['page']=1;
-                }
-                $apiService = new ApiViewCommonwealDoctors($values);
+                $apiService = new ApiViewCommonwealDoctors();
                 $output = $apiService->loadApiViewData();
                 break;
             case 'freediagnosedoctors'://名医公益推荐的医生

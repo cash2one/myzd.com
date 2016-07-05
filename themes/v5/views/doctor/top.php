@@ -9,6 +9,7 @@ $urlLoadDoctorByDiseaseSubCategory = $this->createUrl('api/doctor', array('api' 
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
 $urlLoadDiseaseByCategory = $this->createUrl('api/diseasebycategory', array('id' => ''));
 $urlLoadSecondaryDepartment = $this->createUrl('api/secondarydepartment', array('api' => 7, 'disease_id' => ''));
+$urlLoadCity = $this->createUrl('doctor/citybydoctor');
 $urlDoctorView = $this->createUrl('doctor/view', array('id' => ''));
 $city = Yii::app()->request->getQuery('city', '');
 $disease = Yii::app()->request->getQuery('disease', '');
@@ -22,15 +23,10 @@ $page = Yii::app()->request->getQuery('page', '');
         <div class="container">
             <div class="crumbs-doctor">
                 <div><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <a href="<?php echo $this->createUrl('doctor/findexpert'); ?>" target="_blank">找名医</a> > <span class="department main-department"></span></div>
-                <!--                <div class="department-open">
-                                    <div class="department">1</div>
-                                    <div class="department">1</div>
-                                    <div class="department">1</div>
-                                </div>-->
             </div>
         </div>
     </div>
-    <div class="container pb20 mt50">
+    <div class="container pb20 mt30">
         <div class="department-list">
             <div class=""><span  class="main-subCat"></span><span  class="pull-right more-subCat toggle-subCat">展开其他二级科室 <i class="fa fa-angle-right"></i></span><span  class="pull-right retract-subCat toggle-subCat">收起其他二级科室 <i class="fa fa-angle-down"></i></span></div>
             <div class="clearfix"></div>
@@ -40,8 +36,8 @@ $page = Yii::app()->request->getQuery('page', '');
             <div class="color-666 text12">为您找到<span class="color-5ebfb8 doctorNum"></span>位医生</div>
             <div class="divider-line-first" class="mt5"></div>
             <div class="mt20 select-disease"></div>
-            <div class="mt20 mb20 divider-line"></div>
-            <div class="city-list"><span class="select-title">按照地区：</span><a class="all city active">全部</a><a class="city" data-id="1">北京</a><a class="city" data-id="73">上海</a><a class="city" data-id="200">广州</a><a class="city" data-id="74">南京</a><a class="city" data-id="87">杭州</a><a class="city" data-id="114">福州</a><a class="city" data-id="134">济南</a><a class="city" data-id="186">长沙</a><a class="city" data-id="255">成都</a><a class="city" data-id="204">汕头</a><a class="city" data-id="218">潮州</a>
+            <div class="mt10 mb20 divider-line"></div>
+            <div class="city-list">
             </div>
             <div class="mt20 mb20 divider-line"></div>
             <div class="select-title">医生级别：</div><a class="mtitle active" data-id="">全部</a><a class="mtitle" data-id="1">主任医师</a><a class="mtitle" data-id="2">副主任医师</a>
@@ -75,6 +71,7 @@ $page = Yii::app()->request->getQuery('page', '');
     condition["page"] = '<?php echo $page == '' ? 1 : $page; ?>';
     var urlLoadDoctor = '<?php echo $urlLoadDoctor; ?>';
     $(document).ready(function () {
+        ajaxLoadCity();
         $('.toggle-subCat').click(function () {
             $(this).parents('.department-list').find('.more-subCat').toggle();
             $(this).parents('.department-list').find('.retract-subCat').toggle();
@@ -84,21 +81,9 @@ $page = Yii::app()->request->getQuery('page', '');
         setCityActive();
         ajaxLoadDiseaseCategory();
         var disease_category = condition["disease_sub_category"] == '' ? 1 : condition["disease_sub_category"];
-        if(condition["disease_sub_category"]!=''){ajaxLoadDiseaseByCategory(disease_category);}
-        $('.city-list .all').click(function (e) {
-            e.preventDefault();
-            condition["city"] = '';
-            condition["page"] = 1;
-            ajaxLoadDoctor('&getcount=1');
-        });
-        $('.city-list .city').click(function (e) {
-            e.preventDefault();
-            var cityId = $(this).attr('data-id');
-            condition["city"] = cityId;
-            condition["page"] = 1;
-            ajaxLoadDoctor('&getcount=1');
-            setCityActive();
-        });
+        if (condition["disease_sub_category"] != '') {
+            ajaxLoadDiseaseByCategory(disease_category);
+        }
         if (condition["disease_name"]) {
             $('.department-name>span').html(condition["disease_name"]);
         }
@@ -169,7 +154,49 @@ $page = Yii::app()->request->getQuery('page', '');
             }
         });
     }
-    /**** 设置左侧科室菜单html ****/
+    /**** ajax异步加载城市 ****/
+    function ajaxLoadCity() {
+        var urlLoadCity = '<?php echo $urlLoadCity; ?>';
+        $.ajax({
+            url: urlLoadCity,
+            success: function (data) {
+                setCityList(data);
+            },
+            error: function (XmlHttpRequest, textStatus, errorThrown) {
+                console.log(XmlHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
+            },
+            complete: function () {
+                $('.city-list .all').click(function (e) {
+                    e.preventDefault();
+                    condition["city"] = '';
+                    condition["page"] = 1;
+                    ajaxLoadDoctor('&getcount=1');
+                });
+                $('.city-list .city').click(function (e) {
+                    e.preventDefault();
+                    var cityId = $(this).attr('data-id');
+                    condition["city"] = cityId;
+                    condition["page"] = 1;
+                    ajaxLoadDoctor('&getcount=1');
+                    setCityActive();
+                });
+            }
+        });
+    }
+    function setCityList(data) {
+        if (data.results) {
+            var innerHtml = '<div class="pull-left" style="height:7em;"><span class="select-title">按照地区：</span></div><a class="all city active">全部</a>';
+            for (var i = 0; i < data.results.length; i++) {
+                var city = data.results[i];
+                innerHtml += '<a class="city" data-id="' + city.id + '">' + city.name + '</a>';
+            }
+            $('.city-list').html(innerHtml);
+        }
+    }
+
+    /**** 设置科室菜单html ****/
     function setDiseaseCategory(data) {
         if (data.results) {
             var innerHtml = '';

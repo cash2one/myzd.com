@@ -658,5 +658,128 @@ class BookingManager {
             }
         }
     }
-
+    
+    /**
+     * 创建预约单
+     */
+    public function creatBooking($values){
+        if (isset($values['ajax'])) {
+            $this->show_header = false;
+            $this->show_footer = false;
+            $this->show_traffic_script = false;
+            $this->show_baidushangqiao = false;
+        }        
+        if (isset($values['tid'])) {
+            // 预约专家团队
+            $form = new BookExpertTeamForm();
+            $form->initModel();
+            $form->setExpertTeamId($values['tid']);
+            $form->setExpertTeamData();
+            $userId = $this->getCurrentUserId();
+            if (isset($userId)) {
+                $form->setUserId($userId);
+            }
+            //$this->render('bookExpertteam', array('model' => $form));
+            return array('viewName'=>'bookExpertteam','form'=>$form);
+        } elseif (isset($values['did'])) {
+            // 预约医生
+            $form = new BookDoctorForm();
+            $form->initModel();
+            $form->setDoctorId($values['did']);
+            $form->setDoctorData();
+            $userId = $this->getCurrentUserId();
+            if (isset($userId)) {
+                $form->setUserId($userId);
+            }
+            //$this->render('doctor', array('model' => $form));
+            return array('viewName'=>'doctor','form'=>$form);
+        } elseif (isset($values['hp_dept_id'])) {
+            // 预约科室
+            $form = new BookDeptForm();
+            $form->initModel();
+            $form->setHpDeptId($values['hp_dept_id']);
+            $form->setHpDeptlData();
+            $userId = $this->getCurrentUserId();
+            if (isset($userId)) {
+                $form->setUserId($userId);
+            }
+            //$this->render('doctor', array('model' => $form));
+            return array('viewName'=>'doctor','form'=>$form);
+        }
+    }
+    
+    /**
+     * 快速预约
+     */
+    public function quickBooking($values){
+        $output = array('status' => 'no');
+            // 快速预约
+            $form = new BookQuickForm();
+            $form->setAttributes($values, true);
+            $form->initModel();
+            $form->validate();
+            //验证码校验
+            $authMgr = new AuthManager();
+            $authSmsVerify = $authMgr->verifyCodeForBooking($form->mobile, $form->verify_code, null);
+            if ($authSmsVerify->isValid() === false) {
+                $form->addError('verify_code', $authSmsVerify->getError('code'));
+            }
+            try {
+                if ($form->hasErrors() === false) {
+                    $booking = new Booking();
+                    // 处理booking.user_id
+                    $userId = $this->getCurrentUserId();
+                    $bookingUser = null;
+                    if (isset($userId)) {
+                        $bookingUser = $userId;
+                        $user = $this->getCurrentUser();
+                        $form->mobile = $user->mobile;
+                    } else {
+                        $mobile = $form->mobile;
+                        $user = User::model()->getByUsernameAndRole($mobile, StatCode::USER_ROLE_PATIENT);
+                        if (isset($user)) {
+                            $bookingUser = $user->getId();
+                        } else {
+                            // create new user.
+                            $userMgr = new UserManager();
+                            $user = $userMgr->createUserPatient($mobile);
+                            if (isset($user)) {
+                                $bookingUser = $user->getId();
+                            }
+                        }
+                    }
+                    $booking->setAttributes($form->attributes, true);
+                    //第三方预约
+                    if (Yii::app()->session['vendorId']) {
+                        $booking->is_vendor = 1;
+                        $booking->vendor_id = Yii::app()->session['vendorId'];
+                    }
+                    $booking->user_agent = StatCode::USER_AGENT_WEBSITE;
+                    $booking->user_id = $bookingUser;
+                    if ($booking->save() === false) {
+                        $output['errors'] = $booking->getErrors();
+                        throw new CException('error saving data.');
+                    }
+                    $apiRequest = new ApiRequestUrl();
+                    $remote_url = $apiRequest->getUrlAdminSalesBookingCreate() . '?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
+                    //                    $remote_url = 'http://test.mingyizd.com/api/adminbooking?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
+                    //                     echo $remote_url;exit;
+                    $data = $this->send_get($remote_url);
+                    if ($data['status'] == "ok") {
+                        $output['status'] = 'ok';
+                        $output['salesOrderRefNo'] = $data['salesOrderRefNo'];
+                        $output['booking']['id'] = $booking->getId();
+                    } else {
+                        //$output['errors'] = $salesOrder->getErrors();
+                        throw new CException('error saving data.');
+                    }
+                } else {
+                    $output['errors'] = $form->getErrors();
+                    throw new CException('error saving data.');
+                }
+            } catch (CException $cex) {
+                $output['status'] = 'no';
+           }
+           return $output;
+    }
 }

@@ -24,6 +24,7 @@ class PaymentController extends WebsiteController {
             ),
         );
     }
+
     public function actionDoPingxxPay() {
         require_once('protected/sdk/pingpp-php-master/init.php');
         $output = new stdClass();
@@ -37,7 +38,7 @@ class PaymentController extends WebsiteController {
 //            $post['ref_url'] = 'http://test.mingyizd.com/order/view?refno=test';
             CoreLogPayment::log('pingxxPayJson: ' . CJSON::encode($post), CoreLogPayment::LEVEL_INFO, Yii::app()->request->url, __METHOD__);
             if (isset($post['order_no'])) {
-		$refNo=$post['order_no'];
+                $refNo = $post['order_no'];
                 $order = new SalesOrder();
                 $order = SalesOrder::model()->getByRefNo($refNo);
                 if (isset($order) && $order->getIsPaid(false) == 1) {
@@ -128,8 +129,14 @@ class PaymentController extends WebsiteController {
                 $data = $output->results;
                 $emailMgr = new EmailManager();
                 $emailMgr->sendEmailSalesOrderPaid($data);
-                 CoreLogPayment::log('电邮提醒: ' . CJSON::encode($order), CoreLogPayment::LEVEL_INFO, Yii::app()->request->url, __METHOD__);
+                CoreLogPayment::log('电邮提醒: ' . CJSON::encode($order), CoreLogPayment::LEVEL_INFO, Yii::app()->request->url, __METHOD__);
+
+                
             }
+            //任务提醒
+                $apiRequest = new ApiRequestUrl();
+                $remote_url = $apiRequest->getUrlOrderPaidedTaskCreate() . '?refno=' . $order->ref_no;
+                $data = $this->send_get($remote_url);
         } else if (isset($payment) && $post['type'] != 'charge.succeeded') {
             //交易失败
             $payMgr->updateDataAfterTradeFail($payment, $post);
