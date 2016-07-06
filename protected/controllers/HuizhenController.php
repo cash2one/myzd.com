@@ -18,41 +18,16 @@ class HuizhenController extends WebsiteController {
     }
 
     public function actionView($id = null) {
-
         $this->content_container = "";
         if (is_null($id)) {
             $id = 'guke';
         }
         $this->current_page = $id;
-
         $ifaculty = $this->loadIFaculty($id);
         $this->render('view', array(
             'model' => $ifaculty,
         ));
     }
-
-    /*
-      public function actionView($id=null) {
-      $this->content_container = "";
-      $list = $this->getPageList();
-
-      if (isset($list[$id])) {
-      $view = $id;
-      $folder = $id;
-      $this->current_page = $id;
-      } else {
-      $this->redirect(array('view', 'id' => $this->default_page));
-      }
-      $this->resource_url = $this->resource_url . $folder . '/';
-
-      $this->setPageTitle('国内会诊 - ' . $list[$id]);
-
-      $this->render('pages/' . $view, array(
-      //'urlResource' => $this->resource_url . $folder . '/'
-      ));
-      }
-     * 
-     */
 
     public function getPageList() {
         if ($this->page_list === null) {
@@ -118,27 +93,12 @@ class HuizhenController extends WebsiteController {
                         $hospital = new IHospital();
                        // $hospital = new stdClass();
                         $hospital->initModel($hospitalModel);
-                        /*
-                        $hospital->id = $hospitalModel->getId();
-                        $hospital->name = $hospitalModel->getName();
-                        $hospital->class = $hospitalModel->getClass();
-                        $hospital->type = $hospitalModel->getType();
-                        $hospital->description = $join->getDescription();
-                         * 
-                         */
                         $this->ifaculty->addHospital($hospital);
                         break;
                     }
                 }
             }
         }
-        /*
-          if (arrayNotEmpty($hospitals)) {
-          foreach ($hospitals as $hospital) {
-          $this->ifaculty->addHospital($hospital);
-          }
-          }
-         */
         $listJoins = $faculty->getDoctorJoinsVisible();
         $doctors = $faculty->getVisibleDoctors();
         if (arrayNotEmpty($listJoins) && arrayNotEmpty($doctors)) {

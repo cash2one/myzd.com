@@ -40,26 +40,6 @@ class OverseasController extends WebsiteController {
         $this->render('surgery');
     }
 
-    /*
-      public function actionView($id=null) {
-      $this->redirect(array('hospital'));
-      $this->content_container = "container-fluid";
-      $list = $this->getPageList();
-
-      if (isset($list[$id])) {
-      $view = $id;
-      $folder = $id;
-      $this->current_page = $id;
-      } else {
-      $this->redirect(array('view', 'id' => $this->defaultPage));
-      }
-
-      $this->render('pages/' . $view, array(
-      'urlUpload' => $this->urlUpload . $folder . '/'
-      ));
-      }
-     */
-
     public function getPageList() {
         if ($this->page_list === null) {
             $this->page_list = array('elizabeth' => '伊丽莎白医院', 'neuroscience' => '神经外科专题');

@@ -575,44 +575,4 @@ class BookingController extends WebsiteController {
     public function actionGet() {
         print_r($this->getCurrentUser());
     }
-
-    private function testDataQuickBook() {
-        return array(
-            'hospital_name' => '肿瘤医院',
-            'hp_dept_name' => '肿瘤科',
-            'doctor_name' => '李医生',
-            'contact_name' => '王小明',
-            'mobile' => '18217531537',
-            'verify_code' => '123456',
-            'disease_name' => '小腿骨折',
-            'disease_detail' => '小腿都碎了啊！咋办啊'
-        );
-    }
-
-    private function testDataDoctorBook() {
-        return array(
-            //    'hospital_name' => '肿瘤医院',
-            //    'hp_dept_name' => '肿瘤科',
-            //    'doctor_name' => '李医生',
-            'contact_name' => '王小明',
-            'mobile' => '18217531537',
-            'verify_code' => '123456',
-            'disease_name' => '小腿骨折',
-            'disease_detail' => '小腿都碎了啊！咋办啊'
-        );
-    }
-
-    private function testDataExpertTeamBook() {
-        return array(
-            //    'hospital_name' => '肿瘤医院',
-            //    'hp_dept_name' => '肿瘤科',
-            //    'doctor_name' => '李医生',
-            'contact_name' => '王小明',
-            'mobile' => '18217531537',
-            'verify_code' => '123456',
-            'disease_name' => '小腿骨折',
-            'disease_detail' => '小腿都碎了啊！咋办啊'
-        );
-    }
-
 }

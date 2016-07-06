@@ -52,19 +52,6 @@ class DoctorController extends WebsiteController {
     }
 
     /**
-     * Lists all models.
-     */
-    /*
-      public function actionIndex() {
-      $dataProvider = new CActiveDataProvider('Doctor');
-      $this->render('index', array(
-      'dataProvider' => $dataProvider,
-      ));
-      }
-     * 
-     */
-
-    /**
      * Displays a particular model.
      * @param integer $id the ID of the model to be displayed
      */
@@ -79,11 +66,8 @@ class DoctorController extends WebsiteController {
     public function actionRegister() {
         $form = new DoctorForm("register");
         $form->initModel();
-
         $this->performAjaxValidation($form);
-
         $this->registerDoctor($form);
-
         $this->render('register', array(
             'model' => $form
         ));
@@ -95,16 +79,11 @@ class DoctorController extends WebsiteController {
      */
     public function actionCreate() {
         $model = new Doctor;
-
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
-
         if (isset($_POST['Doctor'])) {
             $model->attributes = $_POST['Doctor'];
             if ($model->save())
                 $this->redirect(array('view', 'id' => $model->id));
         }
-
         $this->render('create', array(
             'model' => $model,
         ));
@@ -119,7 +98,6 @@ class DoctorController extends WebsiteController {
         $model = $this->loadModel($id);
         $form = new DoctorForm();
         $form->initModel($model);
-
         // Uncomment the following line if AJAX validation is needed
         $this->performAjaxValidation($form);
 
@@ -134,7 +112,6 @@ class DoctorController extends WebsiteController {
                 $this->redirect(array('view', 'id' => $model->getId()));
             }
         }
-
         $this->render('update', array(
             'model' => $form,
         ));
@@ -147,14 +124,12 @@ class DoctorController extends WebsiteController {
      */
     public function actionDelete($id) {
         $this->loadModel($id)->delete();
-
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
         if (!isset($_GET['ajax']))
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
     }
 
     public function actionLoadAvatar($uid = null) {
-
         $fileUrl = '';
         if ($uid === null || $uid == '') {
             $fileUrl = DoctorAvatar::getAbsDefaultAvatarUrl();
@@ -197,7 +172,6 @@ class DoctorController extends WebsiteController {
 
     public function getListId() {
         if (is_array($this->listId) === false) {
-            //$this->listId = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 20, 21, 30, 31, 32);
             $this->listId = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25);
         }
         return $this->listId;

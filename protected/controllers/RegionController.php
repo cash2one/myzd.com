@@ -29,7 +29,6 @@ class RegionController extends WebsiteController {
             $code = $_GET['code'];
             $regionStates = $regionMgr->getAllStatesByCountryCode($code);
         }
-
         if (is_array($regionStates) && count($regionStates) > 0) {
             $listData = CHtml::listData($regionStates, 'id', 'name_cn');
             if (count($listData) === 1) {
@@ -61,7 +60,6 @@ class RegionController extends WebsiteController {
             $stateId = $_GET['state'];
             $models = $regionMgr->getAllCitiesByStateId($stateId);
         }
-
         if (is_array($models)) {
             if (count($models) == 1) {
                 $listData = CHtml::listData($models, 'id', 'name_cn');
