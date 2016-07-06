@@ -32,12 +32,10 @@ class ApiViewCommonwealDoctors extends EApiViewService {
                 $this->setDoctors($models);
             }
         }
-        print_r($this->results->page);exit;
     }
 
     private function setDoctors($models) {
         $temp = array();
-        $countNum=count($models);
         foreach ($models as $model) {
             $data = new stdClass();
             $data->id = $model->getId();
@@ -53,7 +51,6 @@ class ApiViewCommonwealDoctors extends EApiViewService {
             $data->isContracted = $model->getIsContracted();
             $temp[] = $data;
         }
-        $temp['countNum']=$countNum;
         $this->results->page[] = $temp;
     }
 
