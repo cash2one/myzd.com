@@ -204,5 +204,21 @@ class RegionCity extends EActiveRecord {
     public function getDescription() {
         return $this->description;
     }
+    
+    public function getAllByIdsAndOrder($ids,$with = null){
+        // return $this->getAllByInCondition('id', $ids, $with);
+        if (is_array($ids) === false) {
+            $ids = array($ids);
+        }
+        $criteria = new CDbCriteria;
+        $criteria->select = 'id,name,name_cn';
+        $criteria->addCondition('t.date_deleted is NULL');
+        $criteria->addInCondition('t.id', $ids); 
+        $criteria->order = "field(`name`,'北京','上海','广州') DESC , convert(`name` using gbk) ASC";
+        if (is_array($with)) {
+            $criteria->with = $with;
+        }
+        return $this->findAll($criteria);
+    }
 
 }

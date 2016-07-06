@@ -27,8 +27,12 @@ class ApiViewCityByDoctor extends EApiViewService {
             foreach($doctors as $k=>$v){
                 $cityIdList[]=$v['city_id'];
             }
-            $cityIdList=array_filter(array_unique($cityIdList));
-            $cityList=RegionCity::model()->getAllByIds($cityIdList);
+            $cityIdList=array_values(array_filter(array_unique($cityIdList)));
+            asort($cityIdList);
+            $cityList=RegionCity::model()->getAllByIdsAndOrder($cityIdList);
+            $one=$cityList[2];
+            $cityList[2]=$cityList[0];
+            $cityList[0]=$one;
             if (arrayNotEmpty($cityList)) {
                 $this->setCityList($cityList);
             }
