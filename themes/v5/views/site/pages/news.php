@@ -37,6 +37,22 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                             <div class="col-md-10 col-sm-9 ml-50 news">
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146770428220249">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年6月
+                                            </div>
+                                            <div class="content">
+                                                <div>日前，徐州市中心医院、徐州市高级医学专家会诊咨询服务中心与名医主刀移动医疗手术平台在徐州市中心医院签署三方战略合作协议，徐州市中心医院党委书记、医学专家会诊中心主任蒋明伟，名医主刀移动手术平台联合创始人兼首席医疗官李名伟出席了三方战略合作学术交流活动。北京天坛医院神经外科主任医师李学真教授应名医主刀之邀作了精彩的学术报告，它标志着三方战略合作迈出了实质性的第一步。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>xuzhou" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
                                         <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146640680208048">
                                     </div>
                                     <div class="col-md-9 col-sm-12">
