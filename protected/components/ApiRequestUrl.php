@@ -3,20 +3,21 @@
 class ApiRequestUrl {
 
 //    public $hostInfoProd = 'http://crm.dev.mingyizd.com';
-    public $hostInfoProd = 'http://crm560.mingyizd.com';
+    //public $hostInfoProd = Yii::app()->params['crmUrl'];
     private $admin_salesbooking_create = 'api/adminbooking';
     private $tasksalseorder = 'api/tasksalseorder';
 
     public function getHostInfo() {
+        $hostInfoProd = Yii::app()->params['crmUrl'];
         $hostInfo = strtolower(Yii::app()->request->hostInfo);
-        if (strStartsWith($hostInfo, $this->hostInfoProd) === TRUE) {
-            $this->hostInfoProd = $hostInfo . '/admin';
+        if (strStartsWith($hostInfo, $hostInfoProd) === TRUE) {
+            $hostInfoProd = $hostInfo . '/admin';
         }
     }
 
     public function getUrl($url) {
         $this->getHostInfo();
-        return $this->hostInfoProd . '/' . $url;
+        return Yii::app()->params['crmUrl'] . '/' . $url;
     }
 
     public function getUrlAdminSalesBookingCreate() {
