@@ -30,7 +30,9 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
     <div class="container">
         <div class="crumbs-header">
             <ul>
-                <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                <li><a href="<?php echo Yii::app()->homeUrl; ?>" target="_blank">首页</a></li>
+                <li>></li>
+                <li><a href="<?php echo $this->createUrl('hospital/department');?>" target="_blank">找医院</a></li>
                 <li>></li>
                 <li><?php echo $hName; ?></li>
             </ul>
@@ -124,7 +126,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                         if (isset($faculty->position) && !is_null($faculty->position)) {
                                             echo $faculty->position;
                                         } else {
-                                            echo '暂无明确信息，正在搜集中...';
+                                            echo '暂无明确信息';
                                         }
                                         ?>
                                     </div>
@@ -134,7 +136,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                         if (isset($faculty->scale) && !is_null($faculty->scale)) {
                                             echo $faculty->scale;
                                         } else {
-                                            echo '暂无明确信息，正在搜集中...';
+                                            echo '暂无明确信息';
                                         }
                                         ?>
                                     </div>
@@ -144,7 +146,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                         if (isset($faculty->specialty) && !is_null($faculty->specialty)) {
                                             echo $faculty->specialty;
                                         } else {
-                                            echo '暂无明确信息，正在搜集中...';
+                                            echo '暂无明确信息';
                                         }
                                         ?>
                                     </div>
@@ -154,7 +156,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                         if (isset($faculty->strength) && !is_null($faculty->strength)) {
                                             echo $faculty->strength;
                                         } else {
-                                            echo '暂无明确信息，正在搜集中...';
+                                            echo '暂无明确信息';
                                         }
                                         ?>
                                     </div>
@@ -167,7 +169,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                                 echo '<div class="honor"><img class="mr5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146424275010039"><span>' . $honors[$i] . '</span></div>';
                                             }
                                         } else {
-                                            echo '暂无明确信息，正在搜集中...';
+                                            echo '暂无明确信息';
                                         }
                                         ?>
                                     </div>

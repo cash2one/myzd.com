@@ -1,5 +1,6 @@
 <?php
 $news = array(
+    'xuzhou'=>'互联网+手术战略合作基地落地徐州',
     'entrepreneurship'=>'医生创业：周瑜等来了东风',
     'yanancenter'=>'名医主刀开启“红色公益之旅” 互联网手术中心落地',
     'mingyigongyi'=>'共享名医资源，共铸健康中国',
