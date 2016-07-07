@@ -14,9 +14,7 @@ class MrbookingController extends WebsiteController {
         } else if (isset($_POST['mrid'])) {
             $mrid = $_POST['mrid'];
         }
-
         $this->loadMedicalRecordByIdAndUserId($mrid, $user->getId());
-
         //complete the running of other filters and execute the requested action.
         $filterChain->run();
     }
@@ -90,23 +88,18 @@ class MrbookingController extends WebsiteController {
         } else {
             $this->redirect(array('medicalrecord/create', 'returnUrl' => $this->createUrl('mrbooking/create')));
         }
-
         $mRecord = $this->loadMedicalRecordByIdAndUserId($mrid, $user->id);
-
         $form = new MRBookingForm();
         $form->setUserId($user->getId());
         $form->setMrId($mRecord->getId());
         $form->initModel();
         // Uncomment the following line if AJAX validation is needed
         $this->performAjaxValidation($form);
-
         if (isset($_POST['MRBookingForm'])) {
             $values = $_POST['MRBookingForm'];
             $form->attributes = $values;
-
             $mrMgr = new MedicalRecordManager();
             $mrMgr->createNewBooking($form);
-
             if ($form->hasErrors() === false) { // store success id in session.
                 $this->setFlashMessage('mrbooking.success', $form->id);
                 // Send email to inform admin.
@@ -115,11 +108,9 @@ class MrbookingController extends WebsiteController {
                     $emailMgr = new EmailManager();
                     $emailMgr->sendEmailMrBooking($ibooking);
                 }
-
                 $this->refresh(true);   // terminate and refresh the current page.
             }
         }
-
         $this->render('create', array(
             'form' => $form,
             'mRecord' => $mRecord
@@ -133,16 +124,13 @@ class MrbookingController extends WebsiteController {
      */
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
-
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
-
         if (isset($_POST['MedicalRecordBooking'])) {
             $model->attributes = $_POST['MedicalRecordBooking'];
             if ($model->save())
                 $this->redirect(array('view', 'id' => $model->id));
         }
-
         $this->render('update', array(
             'model' => $model,
         ));
@@ -155,7 +143,6 @@ class MrbookingController extends WebsiteController {
      */
     public function actionDelete($id) {
         $this->loadModel($id)->delete();
-
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
         if (!isset($_GET['ajax']))
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));

@@ -94,14 +94,12 @@ class MedicalrecordController extends WebsiteController {
         if (isset($id)) {
             $model = $this->loadModelByIdAndUserId($id, $userId);   // load MedicalRecord from session.
         }
-
         if (isset($model)) {
             $form->initModel($model);   // assign model attributes to $form.
         } else {
             $form->setUserId($userId);  // create new record.
             $form->initModel(); // init new $form attributes.
         }
-
         // Uncomment the following line if AJAX validation is needed
         $this->performAjaxValidation($form);
 
@@ -109,20 +107,17 @@ class MedicalrecordController extends WebsiteController {
             $values = $_POST['MedicalRecordForm'];
             $form->attributes = $values;
             $mrMgr = new MedicalRecordManager();
-
             //  $this->headerUTF8();
             if ($form->isNewRecord) {
                 $mrMgr->createMedicalRecord($form);
             } else {
                 $mrMgr->updateMedicalRecord($form, $model);
             }
-
             if ($form->hasErrors() === false) {
                 $this->redirect(array('medicalrecord/create2', 'id' => $form->id));
             }
             $form->loadOptions();
         }
-
         $this->render('create', array(
             'form' => $form,
         ));
@@ -134,32 +129,15 @@ class MedicalrecordController extends WebsiteController {
      */
     public function actionCreate2($id) {
         $model = $this->model;
-
         if (isset($_POST['MedicalRecord'])) {
             $this->redirect(array('view', 'id' => $model->getId()));
         }
-
         $this->render('create2', array(
             'model' => $model,
                 )
         );
     }
-
-    /**
-     * $_POST input sample:
-     * array (size=1)
-      'filemetas' =>
-      array (size=2)
-      13 =>
-      array (size=3)
-      'fid' => int 13
-      'dateTaken' => string '2015-02-03'
-      'desc' => string 'some description'
-      5 =>
-      array (size=2)
-      'fid' => int 5
-      'dateTaken' => string '2015-05-03'
-     */
+    
     public function actionAjaxUpdateFileMeta() {
         $output = array();
         $urlNextStep = null;
@@ -167,7 +145,6 @@ class MedicalrecordController extends WebsiteController {
             $urlNextStep = $this->createUrl('mrbooking/create', array('mrid' => $_POST['id']));
         }
         if (isset($_POST['MRFile'])) {
-
             $values = $_POST['MRFile'];
             $model = $this->model;
             $mrMgr = new MedicalRecordManager();
@@ -196,12 +173,10 @@ class MedicalrecordController extends WebsiteController {
      * @param MedicalRecordFile[doc_type] MedicalRecordFile.doc_type
      */
     public function actionAjaxUploadFile() {
-
         $output = array();
         if (isset($_POST['MRFile']['mrid']) && isset($_POST['MRFile']['report_type'])) {
             $mrid = $_POST['MRFile']['mrid'];
             $rt = $_POST['MRFile']['report_type'];
-            
             //$userid = $this->getCurrentUserId();    //TODO: <= uncomment this line.            
             if (isset($_POST['MRFile']['user_id'])) {
                 $userid = $_POST['MRFile']['user_id'];
@@ -231,7 +206,6 @@ class MedicalrecordController extends WebsiteController {
      * @param integer $id the ID of the model to be updated
      */
     public function actionAjaxUpdate() {
-
         if (isset($_POST['MedicalRecordForm']) && isset($_POST['id'])) {
             $model = $this->loadModel($_POST['id']);
             $values = $_POST['MedicalRecordForm'];
@@ -239,16 +213,13 @@ class MedicalrecordController extends WebsiteController {
             $form->initModel($model);
             $form->scenario = 'updateDiseaseInfo';
             $form->attributes = $values;
-
             $mrMgr = new MedicalRecordManager();
             $success = $mrMgr->updateMedicalRecord($form, $model);
             $output = array();
             if ($success) {
                 // success.
                 $output['status'] = 'true';
-
                 echo CJSON::encode($output);
-
                 Yii::app()->end();
             } else {
                 // error message.
@@ -269,12 +240,10 @@ class MedicalrecordController extends WebsiteController {
      * @param MedicalRecordFile[id]
      */
     public function actionDeleteFile() {
-
         $output = array();
         if (isset($_POST['id']) && isset($_POST['fid'])) {
             $model = $this->model;
             $recordFileId = $_POST['fid'];
-
             $success = false;
             $recordFile = MedicalRecordFile::model()->getById($recordFileId);
             if (isset($recordFile)) {
@@ -303,7 +272,6 @@ class MedicalrecordController extends WebsiteController {
      */
     public function actionDelete($id) {
         $this->loadModel($id)->delete();
-
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
         if (!isset($_GET['ajax']))
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
@@ -315,11 +283,6 @@ class MedicalrecordController extends WebsiteController {
     public function actionIndex() {
         $this->current_page = 'index';
         $user = $this->loadUser();
-        //$mr = MedicalRecord::model()->with('mrBookings')->findAllByAttributes(array('user_id'=>$user->getId()));
-        //var_dump($mr);
-        // $mr2 = $user->userMedicalRecords(array('with' => 'mrBookings'));
-
-
         $criteria = $user->createCriteriaMedicalRecords();
         $dataProvider = new CActiveDataProvider('MedicalRecord', array(
             'criteria' => $criteria,
@@ -339,9 +302,7 @@ class MedicalrecordController extends WebsiteController {
      */
     public function actionAjaxLoadFiles($id, $rt) {
         $model = $this->model;
-
         $files = $model->getAllFilesByReportType($rt);
-
         $output = array();
         $data = array();
         if (emptyArray($files) === false) {
@@ -356,7 +317,6 @@ class MedicalrecordController extends WebsiteController {
         } else {
             $output = $data;
         }
-
         $this->renderJsonOutput($output);
         Yii::app()->end();
     }
@@ -402,7 +362,6 @@ class MedicalrecordController extends WebsiteController {
                 throw new CHttpException(404, 'The requested page does not exist.');
             }
         }
-
         return $this->model;
     }
 
