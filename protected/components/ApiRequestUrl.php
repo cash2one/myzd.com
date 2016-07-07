@@ -8,7 +8,7 @@ class ApiRequestUrl {
     private $tasksalseorder = 'api/tasksalseorder';
 
     public function getHostInfo() {
-        $hostInfoProd = Yii::app()->params['baseUrlCrm'];
+        $hostInfoProd = Yii::app()->params['crmUrl'];
         $hostInfo = strtolower(Yii::app()->request->hostInfo);
         if (strStartsWith($hostInfo, $hostInfoProd) === TRUE) {
             $hostInfoProd = $hostInfo . '/admin';
@@ -17,7 +17,7 @@ class ApiRequestUrl {
 
     public function getUrl($url) {
         $this->getHostInfo();
-        return Yii::app()->params['baseUrlCrm'] . '/' . $url;
+        return Yii::app()->params['crmUrl'] . '/' . $url;
     }
 
     public function getUrlAdminSalesBookingCreate() {
