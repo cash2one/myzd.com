@@ -117,33 +117,33 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                         <?php }
                         ?>
                         <?php
-                        if (isset($data->results->members) && !is_null($data->results->members)) {
-                            $members = $data->results->members;
+//                        if (isset($data->results->members) && !is_null($data->results->members)) {
+//                            $members = $data->results->members;
                             ?>
-                            <div class="mb20 mt40 team">
+<!--                            <div class="mb20 mt40 team">
                                 <span class="docinfo-title members" >团队成员简介</span><div class="pull-left team-line"></div><div class="clearfix"></div>                          
-                            </div>     
+                            </div>     -->
                             <?php
-                            foreach ($members as $member) {
+//                            foreach ($members as $member) {
                                 ?>
-                                <div class="pl30">
+<!--                                <div class="pl30">
                                     <div class="media">
                                         <div class="media-left media-middle pull-left">
-                                            <img class="media-object team-img" src="<?php echo $member->imageUrl; ?>" alt="<?php echo $member->name; ?>">
+                                            <img class="media-object team-img" src="<?php //echo $member->imageUrl; ?>" alt="<?php //echo $member->name; ?>">
                                         </div>
                                         <div class="media-body pl10">
-                                            <div class="media-heading mt15"><?php echo $member->name; ?><span class="color-gray ml20"><?php echo $member->mTitle; ?></span><span class="color-gray ml20"><?php echo $member->aTitle; ?></span></div>
+                                            <div class="media-heading mt15"><?php //echo $member->name; ?><span class="color-gray ml20"><?php //echo $member->mTitle; ?></span><span class="color-gray ml20"><?php //echo $member->aTitle; ?></span></div>
                                             <div class="mt15">
-                                                <?php echo $member->hpDeptName == null ? '' : '<span class="color-25aea6 text-center">' . $member->hpDeptName . '</span>'; ?>
+                                                <?php //echo $member->hpDeptName == null ? '' : '<span class="color-25aea6 text-center">' . $member->hpDeptName . '</span>'; ?>
                                             </div>
-                                            <div class="mt15"><?php echo $doctor->hospitalName; ?></div>
+                                            <div class="mt15"><?php //echo $doctor->hospitalName; ?></div>
                                         </div>
                                     </div>
-                                    <div class="expert-desc mt15 mb40"><?php echo $member->description == null ? '' : $member->description; ?></div>
-                                </div>
+                                    <div class="expert-desc mt15 mb40"><?php //echo $member->description == null ? '' : $member->description; ?></div>
+                                </div>-->
                                 <?php
-                            }
-                        }
+//                            }
+//                        }
                         ?>
                         <div class="comment-text">
 

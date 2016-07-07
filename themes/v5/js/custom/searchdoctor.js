@@ -13,6 +13,7 @@ function setDoctorHtml(data, urlDoctorView) {
                 docdesc = '暂无信息';
             }
             var hpDeptName = doctor.hpDeptName == null ? '&nbsp;' : doctor.hpDeptName;
+            var hpName = doctor.hpName == null ? '&nbsp;' : doctor.hpName;
             var isContractedImg = doctor.isContracted == 0 ? '' : '<div class="pull-right contracted-img"></div><div class="clearfix"></div>';
             var isMingyiyizhenImg = doctor.ServiceId == 2 ? '<div class="pull-right mingyiyizhen-img"></div>' : '';
             var academicianImg = doctor.id == 117 ? '<div class="pull-right academician-img"></div>' : '';
@@ -28,7 +29,7 @@ function setDoctorHtml(data, urlDoctorView) {
                     '<div class="text-center"><span class="strong">' + doctor.name + '</span>&nbsp;' +
                     '<span class="text-center mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</span></div>' +
                     '<div class="text-center mt5 hpDeptName">' + hpDeptName + '</div>' +
-                    '<div class="text-center mt5">' + doctor.hpName + '</div>' +
+                    '<div class="text-center mt5">' + hpName + '</div>' +
                     '<div class="docdesc text12"><span class="strong">擅长：</span>' + docdesc + '</div>' +
                     '<div class="text-center mt10"></div>' +
                     '</div>' +

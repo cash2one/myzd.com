@@ -16,54 +16,54 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
         <div class="container-fluid bg-gray-f7">
             <div class="row">
                 <div class="container ">
-                    <div class="row mt30 mb100">
+                    <div class="row mt100 mb100 border-one">                     
                         <div class="col-sm-2">
                             <div class="personalcenter-advertises active">
-                                <div class="text-center personalcenter-font-size title mt5"style="margin-right:-15px;">运营/市场/推广类 </div>
+                                <div class="text-center personalcenter-font-size title "style="margin-right:-15px;margin-top: 0px;">运营/市场/推广类 </div>
                                 <ul class="advertises-classifications text-center">
-                                    <li><a href="#advertises1" class="active">医学部专家回访客服专员</a></li>
-                                    <li><a href="#advertises2">呼叫中心客服专员</a></li>
-                                    <li><a href="#advertises3">医疗资源KA</a></li>
-                                    <li><a href="#advertises4">医疗信息运营专员</a></li>
-                                    <li><a href="#advertises5">用户运营主管</a></li>
-                                    <li><a href="#advertises6">产品运营主管</a></li>
-                                    <li><a href="#advertises7">内容运营主管</a></li>
-                                    <li><a href="#advertises8">内容文案策划</a></li>
-                                    <li><a href="#advertises9">活动策划</a></li>
-                                    <li><a href="#advertises10">地面推广</a></li>
-                                    <li><a href="#advertises11">市场经理</a></li>
-                                    <li><a href="#advertises12">SEO优化师</a></li>
-                                    <li><a href="#advertises13">线上流量运营</a></li>
-                                    <li><a href="#advertises14">PR部媒体经理</a></li>
-                                    <li><a href="#advertises15">公关经理</a></li>
-                                    <li><a href="#advertises16">招聘主管</a></li>
+                                    <li class="li-border"><a href="#advertises1" class="active">医学部专家回访客服专员</a></li>
+                                    <li class="li-border"><a href="#advertises2">呼叫中心客服专员</a></li>
+                                    <li class="li-border"><a href="#advertises3">医疗资源KA</a></li>
+                                    <li class="li-border"><a href="#advertises4">医疗信息运营专员</a></li>
+                                    <li class="li-border"><a href="#advertises5">用户运营主管</a></li>
+                                    <li class="li-border"><a href="#advertises6">产品运营主管</a></li>
+                                    <li class="li-border"><a href="#advertises7">内容运营主管</a></li>
+                                    <li class="li-border"><a href="#advertises8">内容文案策划</a></li>
+                                    <li class="li-border"><a href="#advertises9">活动策划</a></li>
+                                    <li class="li-border"><a href="#advertises10">地面推广</a></li>
+                                    <li class="li-border"><a href="#advertises11">市场经理</a></li>
+                                    <li class="li-border"><a href="#advertises12">SEO优化师</a></li>
+                                    <li class="li-border"><a href="#advertises13">线上流量运营</a></li>
+                                    <li class="li-border"><a href="#advertises14">PR部媒体经理</a></li>
+                                    <li class="li-border"><a href="#advertises15">公关经理</a></li>
+                                    <li class="li-border"><a href="#advertises16">招聘主管</a></li>
                                 </ul>
                             </div>
                             <div class="personalcenter-advertises">
-                                <div class="text-center personalcenter-font-size title mt5"style="margin-right:-15px;">技术开发类</div>
+                                <div class="text-center personalcenter-font-size title"style="margin-right:-15px;">技术开发类</div>
                                 <div class="advertises-classifications text-center">
                                     <ul class="advertises-classifications">
-                                        <li><a href="#advertises17">测试工程师</a></li>
-                                        <li><a href="#advertises18">Linux运维工程师</a></li>
-                                        <li><a href="#advertises19">PHP后台工程师</a></li>
-                                        <li><a href="#advertises20">android开发工程师</a></li>
-                                        <li><a href="#advertises21">平面设计管理</a></li>
-                                        <li><a href="#advertises22">移动UI设计师</a></li>
+                                        <li class="li-border"><a href="#advertises17">测试工程师</a></li>
+                                        <li class="li-border"><a href="#advertises18">Linux运维工程师</a></li>
+                                        <li class="li-border"><a href="#advertises19">PHP后台工程师</a></li>
+                                        <li class="li-border"><a href="#advertises20">android开发工程师</a></li>
+                                        <li class="li-border"><a href="#advertises21">平面设计管理</a></li>
+                                        <li class="li-border"><a href="#advertises22">移动UI设计师</a></li>
                                 </div>
                             </div>
                             <div class="personalcenter-advertises">
-                                <div class="text-center personalcenter-font-size title mt5"style="margin-right:-15px;">财会类</div>
+                                <div class="text-center personalcenter-font-size title"style="margin-right:-15px;">财会类</div>
                                 <div class="advertises-classifications text-center">
                                     <ul class="advertises-classifications">
-                                        <li><a href="#advertises23">总账会计</a></li>
-                                        <li><a href="#advertises24">税务会计</a></li>
-                                        <li><a href="#advertises25">法务</a></li>
-                                        <li><a href="#advertises26">保险内勤</a></li>
+                                        <li class="li-border"><a href="#advertises23">总账会计</a></li>
+                                        <li class="li-border"><a href="#advertises24">税务会计</a></li>
+                                        <li class="li-border"><a href="#advertises25">法务</a></li>
+                                        <li class="li-border"><a href="#advertises26">保险内勤</a></li>
                                 </div>
                             </div>
                         </div>
-                        <div class="border-two col-sm-7" style="min-height:658px; text-align: justify;">
-                            <div class="mt30 advertises-dimension" id="advertises1"style="display:block;padding-left:15px;" >
+                        <div class="border-two col-sm-7">
+                            <div class="mt30 advertises-dimension" id="advertises1">
                                 <strong>【岗位职责】</strong>
                                 <div >接听大客户电话；电话回访大客户；根据客户的问题提供专业解答；维护客户关系，及时更新客户资料。</div>
                                 <strong>【资质要求】</strong>
@@ -73,9 +73,9 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <strong>【素质要求】</strong>
                                 <div >善于与人沟通，性格开朗，耐心细致，应变能力好。</div>
                                 <strong>【福利待遇】</strong>
-                                <div >美国硅谷回国创业团队、五险一金、年终奖金、绩效奖金、弹性工作、餐饮补贴。</div>
+                                <div >美国硅谷回国创业团25队、五险一金、年终奖金、绩效奖金、弹性工作、餐饮补贴。</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises2"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises2">
                                 <strong>【职位描述】</strong>
                                 <div >1、 根据公司提供的数据信息，直接与客户进行电话沟通；</div>
                                 <div >2、 积极宣传、推广公司业务，与客户保持良好的合作关系；</div>
@@ -87,7 +87,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 4、 踏实肯干，能够承受工作压力，乐于从事挑战性的工作；</div>
                                 <div > 5、工作态度积极热情，仔细耐心，学习能力强，有一定的抗压能力；</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises3"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises3">
                                 <strong>岗位职责：</strong>
                                 <div >1、  负责引进、维护外科医生队伍</div>
                                 <div >2、  向外科医生介绍平台服务，传递公司价值，使之认可平台</div>
@@ -99,7 +99,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div >3、  具备优秀的沟通、协调、推动能力</div>
                                 4、  医生资源丰富、开拓能力强、外企医药优先
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises4"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises4">
                                 <strong>岗位职责：</strong>
                                 <div >1、医学平台智能分诊平台的搭建；</div>
                                 <div > 2、平台医学数据的整体分析及运营；</div>
@@ -115,7 +115,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 2、熟练运用办公软件；</div>
                                 <div > 3、立志从事互联网医疗类工作</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises5"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises5">
                                 <strong>岗位职责:</strong>
                                 <div >1、负责公司产品线上营销活动方案的策划、提案、执行、跟踪，分析，总结活动得失，提供活动分析报告，并及时优化调整</div>
                                 <div > 2、负责APP产品的用户运营，包括APP产品的拉新及达人、医生线上维护，有效地提升用户留存率和重复使用频次</div>
@@ -129,7 +129,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 4、熟悉线上产品、内容和用户运营，擅长用户激活、招回与用户数据分析，对用户行为变化敏感</div>
                                 <div > 5、擅长沟通表达，性格开朗，责任感强，工作积极主动，具备学习意识，有良好的团队协作意识</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises6"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises6">
                                 <strong>岗位职责:</strong>
                                 <div >1、  负责公司产品的内容维护，推广和运营工作</div>
                                 <div >2、  负责提升相关产品用户量及粘度、活跃度</div>
@@ -142,7 +142,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div >4、熟练常用办公软件office word 、PPT、excel等</div>
 
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises7"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises7">
                                 <strong> 岗位职责:</strong>
                                 <div >1. 负责参与协助 名医主刀品牌 媒体及外宣内容的更新及维护</div>
                                 <div >2. 负责参协助与媒体渠道营销方案策划及落地执行</div>
@@ -156,7 +156,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 4.     能够熟悉使用PS等图片处理技术</div>
                                 <div >5.     能够接受互联网公司快节奏，高强度工作压力者优先考虑</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises8"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises8">
                                 <strong>岗位职责：</strong>
                                 <div > 1. 负责公司传播、推广活动中各类文案</div>
                                 <div > 2. 负责公司宣传物料文案、产品专题的策划和撰写工作</div>
@@ -170,7 +170,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div >  5. 知名广告公司经验者优先</div>
                                 <div >  6.文笔功底扎实、活动创意新颖、沟通能力强</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises9"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises9">
                                 <strong>岗位职责：</strong>
                                 <div >1. 通过线上和线下手段进行网站/APP微信公众号等的推广，负责活动和专题的策划、选题、撰写、实现下载量、安装量、活跃度目标、曝光度</div>
                                 <div > 2. 负责公司线上宣传推广，线下活动策划, 组织与实施</div>
@@ -184,7 +184,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 4. 具备优秀的沟通、协调、推动能力</div>
                                 <div >5.线下线下活动、专题策划经验、把握市场趋势</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises10"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises10">
                                 <strong>岗位职责：</strong>
                                 <div >1. 执行公司的推广策略及政策，洽谈新增合作伙伴，沟通维护合作关系</div>
                                 <div >2. 合理运营所负责的区域，涉及运营、策划、执行等各方面</div>
@@ -197,7 +197,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 4. 具备沟通、协调、推动能力</div>
                                 <div > 5.责任心强、医生资源丰富、沟通能力强</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises11"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises11">
                                 <strong>岗位职责：</strong>
                                 <div > 1、协助北京市场负责人开展市场推广品牌宣传活动等</div>
                                 <div >2、参与北方各类医疗学术会议，在医生群体中宣传名医主刀品牌</div>
@@ -206,7 +206,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 1、熟悉办公软件操作</div>
                                 <div > 2、有客户服务意识和团队合作精神</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises12"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises12">
                                 <strong> 工作职责：</strong>
                                 <div > 1、制定与实施公司官网SEO计划，规划网站的SEO架构</div>
                                 <div > 2、负责网站的内容优化、结构优化和搜索引擎优化</div>
@@ -220,7 +220,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 4.SEO/SEM行业1年以上工作经验</div>
                                 <div >5.会html语言、Dreamwear、DedeCms搭建和优化的优先考虑者优先</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises13"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises13">
                                 <strong>工作职责：</strong>
                                 <div >1、负责企业客户的拓展和维护，从场景切入通过线上线下运营完成平台用户的拉新工作</div>
                                 <div >2、负责与企业客户对接，通过策划线上线下活动，将企业用户转化为平台用户</div>
@@ -232,7 +232,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 2、工作热情：对互联网创新项目和品牌塑造充满热情，能高效整合资源，持续产出有市场影响力的项目，为平台持续导入用户</div>
                                 <div > 3、海量而优秀的想法，出色的文字功底</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises14"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises14">
                                 <strong>岗位职责：</strong>
                                 <div >（1）维护和协助管理公司媒体关系，与品牌部对接优化资源配置</div>
                                 <div >（2）负责公司微信公众号，网站内容的撰写，初审和传播，如新闻稿、发言稿等</div>
@@ -248,7 +248,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div >  5、 性格开朗、亲和力强、善于沟通、积极进取</div>
                                 <div >  6、 谙熟对公关传播、媒介执行工作，有团队合作精神，热爱本职工作</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises15"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises15">
                                 <strong> 岗位职责：</strong>
                                 <div > 1、  负责公司对外沟通工作，拓展、维护媒体资源，与合作方建立长期稳定的合作关系；</div>
                                 <div >2、  执行公司的公关传播计划，负责跨部门项目中与媒体、公众沟通的部分</div>
@@ -264,7 +264,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 5、  有互联网公关岗位或医学相关领域实践经验的优先</div>
                                 <div > 6、 业内人脉、维护媒体资源、文笔出众</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises16"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises16">
                                 <strong>工作内容和职责</strong>
                                 <div > 1、负责公司的员工招聘筛选和面试工作</div>
                                 <div > 2、按照公司的招聘需求，优先合理安排人力资源招聘规划，并实施对应的员工招聘</div>
@@ -276,7 +276,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 8、公司员工的离职、辞退、辞职等相关手续办理</div>
                                 <div > 9、员工手册的修改，公司招聘制度及员工考勤制度</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises17"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises17">
                                 <strong>职位描述：</strong>
                                 <div >1.负责完成项目测试，能组织团队完成工作者尤佳</div>
                                 <div >2.根据产品需求编写测试计划，设计测试数据和测试用例</div>
@@ -288,7 +288,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div >2.两年以上专业测试经验，有自动化测试经验优先考虑</div>
                                 <div >3.熟悉测试理论，有团队合作精神</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises18"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises18">
                                 <strong>职位描述：</strong>
                                 <div > 1，服务器系统的部署规划，安装、配置、故障排除、系统优化等系统管理工作</div>
                                 <div > 2，网站系统及广告系统的日常管理和维护</div>
@@ -308,7 +308,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 9，精通网络/系统安全，以及精通系统备份者优先考虑</div>
                                 <div > 10，有aliyun经验的优先考虑</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises19"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises19">
                                 <strong> 岗位职责：</strong>
                                 <div > 1.负责项目后台编码、设计</div>
                                 <div > 2.参与数据库设计，并根据开发规范独立完成编码和测试</div>
@@ -322,7 +322,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 4.有一定的数据库优化经验优先，了解ERP/CRM系统优先</div>
                                 <div > 5.善于学习，抗压能力强</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises20"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises20">
                                 <strong> 职位描述：</strong>
                                 <div > 1. 负责手机端软件产品开发</div>
                                 <div > 2.与产品和运营人员沟通保证产品的质量和开发进度</div>
@@ -335,7 +335,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 5.有上线APP产品者优先</div>
                                 <div > 6.具有极强的责任心，良好的沟通能力和团队合作精神，愿意加入一个创业团队长期发展</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises21"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises21">
                                 <strong>岗位职责：</strong>
                                 <div > 1、负责公司平台的宣传设计，包括网站用素材。微信、微博、APP端、PPT、活动物料的平面设计管理</div>
                                 <div > 2、根据公司策划思路和营销概念能独立完成个案，充分理解创意意图并准确体现于创意设计中</div>
@@ -349,7 +349,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 6、足够的团队协作和沟通能力，优秀的学习能力与创新能力。工作责任心强、积极乐观，有激情及较强的自我驱动能力，愿意接受挑战</div>
                                 <div > 7、有移动平台设计经验者优先</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises22"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises22">
                                 <strong> 工作职责：</strong>
                                 <div > 1、负责公司手机客户端产品的视觉设计工作，表现为iPhone及Android平台APP的美术资源制作与APP产品的交互设计等</div>
                                 <div > 2、关注自己负责产品的同类型设计方向，进行用户研究、设计流行趋势分析，并对现有产品的视觉设计提出改进方案，持续优化产品的视觉呈现方式</div>
@@ -360,7 +360,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 3、熟悉IOS及Android的界面设计规范与流程</div>
                                 <div > 4、能配合项目完成各项设计UI设计工作，准确表达设计思路，有较强的责任心及较强的理解分析能力</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises23"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises23">
                                 <strong> 岗位职责：</strong>
                                 <div > 1、在财务经理的领导下，负责公司会计组的管理、指导、监督和评估工作</div>
                                 <div > 2、根据公司会计制度，填制、审核和定期汇总会计凭证，登记明细账和总账</div>
@@ -376,7 +376,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 6、工作积极主动，认真负责，具有团队合作精神；能承受较大的工作压力</div>
                                 <div >  7、 有批发零售，电商，互联网，医药企业相关财务经验的优先</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises24"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises24">
                                 <strong> 岗位职责：</strong>
                                 <div > 1、独立完成汇算清缴，日常纳税申报</div>                                                               
                                 <div > 2、及时更新税法变化，开展税务培训</div>                                                          
@@ -391,7 +391,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 4、良好的沟通协调能力，执行能力强</div>
                                 <div > 5、熟悉上海市（杨浦区）税务优先考虑</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises25"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises25">
                                 <strong>岗位职责：</strong>
                                 <div >1、公司各类合同、协议、章程以及公司对外法律文件之起草、修改、审核及管理，参加重大合同的谈判工作</div>
                                 <div >2、收集与公司产业相关法律、法规资料，建立法规汇编、案例等信息库，定期将新颁法规通报给公司全体人员，根据公司战略及员工的需求开展法律知识培训</div>
@@ -407,7 +407,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div > 5、熟练使用各类办公软件</div>
                                 <div > 6、持有法律职业资格证书或律师执业证者优先</div>
                             </div>
-                            <div class="mt30 advertises-dimension" id="advertises26"style="display:block;padding-left:15px;">
+                            <div class="mt30 advertises-dimension" id="advertises26">
                                 <strong>  岗位职责：</strong>
                                 <div >1、协助上级制定保险项目和运营管理的工作规范及流程</div>
                                 <div > 2、完成销售情况的统计、传递投保信息</div>
@@ -419,7 +419,6 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="border-three">
                                 <div class="mt30">
                                     <div><span style="font-size:16px;color:#333;">公司基本信息</span></div><div class="line-title-one"></div>
                                     <div class="mt20">
@@ -438,19 +437,19 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                         <span style="font-size:16px;color:#333;">公司标签</span><div class="line-title-two"></div>
                                     </div>
                                     <div class="row mt10 text-center"style="font-size:12px;padding-right:15px;">
-                                        <div class="col-md-4 mr-10">
+                                        <div class="col-md-4 ">
                                             <div class="mt15 biaoqian ">年终奖金</div>
                                             <div class="mt15 biaoqian">弹性工作</div>
                                             <div class="mt15 biaoqian">带薪年假</div>
                                             <div class="mt15 biaoqian">生日惊喜</div>
                                         </div>
-                                        <div class="col-md-4 mr-10">
+                                        <div class="col-md-4">
                                             <div class="mt15 biaoqian">五险一金</div>
                                             <div class="mt15 biaoqian">包吃三餐</div>
                                             <div class="mt15 biaoqian">节日礼物</div>
                                             <div class="mt15 biaoqian">扁平管理</div>
                                         </div>
-                                        <div class="col-md-4 mr-10">
+                                        <div class="col-md-4 ">
                                             <div class="mt15 biaoqian">绩效奖励</div>
                                             <div class="mt15 biaoqian">临近地铁</div>
                                             <div class="mt15 biaoqian">年度旅游</div>
@@ -461,8 +460,6 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div class="mt50" style="font-size:18px;color:#9f9fa0;">
                                     欢迎您将个人简历投至：hr@mingyizhudao.com
                                 </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>

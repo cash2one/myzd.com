@@ -71,7 +71,14 @@ $this->checkVendor(AppLog::SITE_MYGY);
                         last = 'last';
                     }
                     var doctor = doctors[i];
+                    var docdesc = '';
+                    if (doctor.desc) {
+                        docdesc = doctor.desc.length > 40 ? doctor.desc.substr(0, 40) + '...' : doctor.desc;
+                    } else {
+                        docdesc = '暂无信息';
+                    }
                     var hpDeptName = doctor.hpDeptName == null ? "&nbsp;" : doctor.hpDeptName;
+                    var hpName = doctor.hpName == null ? "&nbsp;" : doctor.hpName;
                     var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
                     innerHtml += '<a href="' + urlDoctorView + "?id=" + doctor.id + "&is_commonweal=1" + '" target="_blank"><div class="mt20 expertList pull-left ' + last + '">' +
                             '<div class="text-right"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146718708459637" /></div>' +
@@ -79,8 +86,8 @@ $this->checkVendor(AppLog::SITE_MYGY);
                             '<div><img class="img100" src="' + doctor.imageUrl + '" /></div>' +
                             '<div class="text-center"><strong>' + doctor.name + '</strong><span class="ml10">' + doctor.mTitle + ' ' + aTitle + '</span></div>' +
                             '<div class="text-center color-green mt5">' + hpDeptName + '</div>' +
-                            '<div class="text-center mt5 text12">' + doctor.hpName + '</div>' +
-                            '</div>' +
+                            '<div class="text-center mt5 text12">' + hpName + '</div>' +
+                            '</div><div class="text12 mygyexpert-desc"><strong>擅长手术：</strong>' + docdesc + '</div>' +
                             '</div></a>';
                 }
                 innerHtml += '</div>';
