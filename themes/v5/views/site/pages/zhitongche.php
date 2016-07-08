@@ -124,7 +124,7 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                                     <div class="introduce mt20">
                                         <div>在名医主刀和秦红主任的共同努力下，在山东大学齐鲁儿童医院为小圆圆进行了手术，在秦主任的妙手仁心下，手术非常成功。</div>
                                     </div>
-                                    <div class="learn-more"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'returnstadium')); ?>">查看详情></a></div>
+                                    <div class="learn-more"><a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'baby')); ?>">查看详情></a></div>
                                 </div>
                             </div>
                         </div>
