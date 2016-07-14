@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle='名医公益联盟,公益手术申请_名医主刀网';
+$this->htmlMetaKeywords = '公益联盟,公益手术,名医主刀网';
+$this->htmlMetaDescription ='名医公益联盟是名医主刀倡导发起,并联合公益组织,医生共建的一种可持续公益模式,旨在让更多患者有机会接受更好的治疗。希望通过名医公益联盟,汇聚社会爱心力量,帮助贫困患者解决“好看病,看好病”的切实需求。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDownloads = $this->createUrl('site/downLoadFile', array('fileName' => ''));
 $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
@@ -40,23 +43,23 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
             <div class="mt40"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146718242234110"><span class="mygy-small-title">免支付专家会诊费</span></div>
             <div class="row">
                 <div class="col-sm-7">
-                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3301')) ?>" target="_blank">
+                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3305')) ?>" target="_blank">
                         <div class="recommend-expert">
                             <div><img class="recommend-icon" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146718266929627"></div>
                             <div class="pb10 expert-info">
                                 <div class="row">
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/146397210907928.jpg" alt="方有生"/></div></div>
+                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/146457623247028.jpg" alt="韩宝三"/></div></div>
                                     <div class="col-md-4 mt25 expertdesc">
-                                        <div><strong>方有生</strong><span class="ml10">主任医师</span><span class="ml10">副教授</span></div>
-                                        <div class="color-green mt10">手外科</div>
-                                        <div class="mt10">上海华山医院</div>
+                                        <div><strong>韩宝三</strong><span class="ml10">主任医师</span></div>
+                                        <div class="color-green mt10">普外科</div>
+                                        <div class="mt10">上海新华医院</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="recommend-content">
-                                <div><strong>推荐理由</strong>：副教授，医学博士，博士后，复旦大学附属华山医院手外科主任医师，科室水平全国第一。曾先后在美国哈佛大学医学院及Kleinert手外科中心学习三年，重点学习手部先天性畸形及骨关节损伤和疾病的诊治。方医师积极投身公益事业，参与救助手足畸形儿童公益活动多年，在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望让每个手足畸形儿童都能够拥有一个健康、阳光、快乐的未来。</div>
-                                <div class="mt20"><strong>擅长手术</strong>：手部及足部先天性畸形（包括多指、并指、短指、缺指、屈曲畸形、骨关节畸形等等）、上肢骨关节损伤和疾病、神经损伤与疾病、手部及上肢外伤后的功能重建。</div>
+                                <div><strong>推荐理由</strong>：医学博士，博士后，上海新华医院主任医师。国内知名乳腺肿瘤整形外科手术专家，中国抗癌协会乳腺癌专业委员会青年委员，中国抗癌协会会员，海峡两岸医药交流委员会海西乳腺手术学组副主委兼秘书长。韩医师近年所倡导的“微创、精准、精美、精心”的乳腺外科手术学理念和新技术受邀在国内60多个学术会议演讲并被广泛借鉴，在国内30多家医院进行过手术示教。为了更好的关爱女性，关爱乳腺健康，韩医师更投身公益事业，作为名医主刀的签约专家，韩医师在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，为有需要的患者免费救治。</div>
+                                <div class="mt20"><strong>擅长手术</strong>：乳腺良恶性肿瘤的早期诊断；微创、精准、美学前提下的乳腺癌根治性手术、保乳手术和术后乳房重建；践行乳腺癌规范的化疗、内分泌和靶向治疗等综合治疗；乳腺癌一期保乳或联合乳房重建。</div>
                             </div>
                         </div>
                     </a>
