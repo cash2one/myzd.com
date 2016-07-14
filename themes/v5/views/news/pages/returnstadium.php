@@ -40,7 +40,7 @@
                     </p>
                 </div>
             </div>
-            <?php $this->renderPartial('//news/pages/_newsmenu', $data = 'zhitongche'); ?>
+            <?php $this->renderPartial('//news/pages/_storiesmenu', $data = 'zhitongche'); ?>
         </div>
     </div>
 </div>

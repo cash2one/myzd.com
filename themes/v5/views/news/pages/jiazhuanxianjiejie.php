@@ -87,7 +87,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
                     </span>
                 </p>
             </div>
-            <?php $this->renderPartial('//news/pages/_newsmenu', $data = 'jiazhuanxianjiejie'); ?>
+            <?php $this->renderPartial('//news/pages/_storiesmenu', $data = 'jiazhuanxianjiejie'); ?>
         </div>
     </div>
 </div>

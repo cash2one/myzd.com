@@ -15,7 +15,7 @@ $this->htmlMetaDescription = '患者生命垂危，又身在异乡举目无亲�
 <div class="container">
     <div class="mt10">
         <div class="">
-            <div class="col-sm-9 news-content pt30">
+            <div class="col-md-9 news-content pt30">
                 <p style="text-align: center; margin-top: 20px;">
                     <span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-weight: bold; font-size: 18px;">8小时冒雪夜行驰援，医者仁心只为救死扶伤</span>
                 </p>
@@ -95,7 +95,7 @@ $this->htmlMetaDescription = '患者生命垂危，又身在异乡举目无亲�
                     <br/>
                 </p>
             </div>
-            <?php $this->renderPartial('//news/pages/_newsmenu', $data = 'firstaid'); ?>
+            <?php $this->renderPartial('//news/pages/_storiesmenu'); ?>
         </div>
     </div>
 </div>

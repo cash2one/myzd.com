@@ -37,6 +37,38 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                             <div class="col-md-10 col-sm-9 ml-50 news">
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146823098998766">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年7月
+                                            </div>
+                                            <div class="content">
+                                                <div>近日，名医主刀创始人兼CEO苏舒，联合创始人兼首席技术官秦鹏以及首席财务官叶菲等一行前往美国纽约，与<span class="text21">美国凯瑟琳癌症中心完成了股权合作</span>，标志着双方的合作迈入实质性的深度阶段。此前，在名医主刀B轮融资中，美国凯瑟琳癌症中心的核心团队成员不远万里为投资而来，且最终选定名医主刀成为美国凯瑟琳癌症中心在中国唯一的投资项目，可见他们真诚而又郑重的合作意向。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $this->createUrl('event/view',array('page'=>'cooperation')); ?>" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14682293619706">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年6月
+                                            </div>
+                                            <div class="content">
+                                                <div>名医主刀联合上海德济医院、中国抗癫痫协会以及上海市欧美同学会于德济医院举行了<span class="text21">“名医相伴-国际癫痫日”</span>大型公益行动。此次公益活动旨在让社会公众和患者对于癫痫有科学、理性的认识，让癫痫患者得到规范化诊疗并增强战胜疾病的信心，关爱癫痫患者、消除偏见和歧视。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>guojihuanzheri" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
                                         <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146770428220249">
                                     </div>
                                     <div class="col-md-9 col-sm-12">

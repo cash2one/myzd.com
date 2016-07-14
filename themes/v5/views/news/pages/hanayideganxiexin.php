@@ -47,7 +47,7 @@ $this->htmlMetaDescription = '韩阿姨家住河南，今年6月份和家人来�
                     <br/>
                 </p>
             </div>
-            <?php $this->renderPartial('//news/pages/_newsmenu',$data='hanayideganxiexin'); ?>
+            <?php $this->renderPartial('//news/pages/_storiesmenu',$data='hanayideganxiexin'); ?>
         </div>
     </div>
 </div>

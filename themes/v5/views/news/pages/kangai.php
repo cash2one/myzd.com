@@ -64,7 +64,7 @@ $this->htmlMetaDescription = '我们接到孟先生女儿电话的时候，孟�
                     <br/>
                 </p>
             </div>
-            <?php $this->renderPartial('//news/pages/_newsmenu',$data='kangai'); ?>
+            <?php $this->renderPartial('//news/pages/_storiesmenu',$data='kangai'); ?>
         </div>
     </div>
 </div>

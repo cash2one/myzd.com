@@ -60,7 +60,7 @@ $this->htmlMetaDescription = '我们第一次接到冯女士的电话是8月18�
                     <br/>
                 </p>
             </div>
-            <?php $this->renderPartial('//news/pages/_newsmenu',$data='jiazhuangxian'); ?>
+            <?php $this->renderPartial('//news/pages/_storiesmenu',$data='jiazhuangxian'); ?>
         </div>
     </div>
 </div>

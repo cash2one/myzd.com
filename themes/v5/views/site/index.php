@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle='三甲医院手术预约,专家,主任医生手术,床位预约_名医主刀网';
+$this->htmlMetaKeywords = '预约手术,专家手术,名医主刀网';
+$this->htmlMetaDescription ='名医随时有,手术不再难!【名医主刀】汇聚国内外顶级名医和床位资源,利用互联网技术实现医患精准匹配,帮助广大患者在第一时间预约到名医专家进行主刀治疗-www.mingyizhudao.com';
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/home.js?v=' . time(), CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 1));
@@ -72,8 +75,8 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 pr0 mt50">
-                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'centralpublicwelfare')); ?>" target="_blank">
-                            <img class="img-responsive home-event-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146535538360733"/>
+                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'cooperation')); ?>" target="_blank">
+                            <img class="img-responsive home-event-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146837977635481"/>
                         </a>
                     </div>
                     <div class="col-md-3 pl0 pr0 home-small-event-img mt50">
