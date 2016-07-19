@@ -1,5 +1,7 @@
 <?php
-$this->pageTitle = '免责申明_名医主刀';
+$this->pageTitle = '免责声明_名医主刀网';
+$this->htmlMetaKeywords = '名医主刀服务协议,免责声明';
+$this->htmlMetaDescription = '当您注册或使用“名医主刀”旗下网站、APP、微信公众号等提供的服务时,表明您已知晓并同意本声明的内容,这些内容自动成为您与本公司协议的一部分。 ';
 ?>
 <style>
     #site-header{border-bottom:1px solid #ddd;}

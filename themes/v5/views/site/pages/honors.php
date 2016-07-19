@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle = '企业荣誉_名医主刀网';
+$this->htmlMetaKeywords = '名医主刀荣誉,名医主刀网';
+$this->htmlMetaDescription = '2016年3月,在由辉瑞中国、中国平安、腾讯、君联资本四大行业代表企业跨界联手主办的医疗合伙人创新合作方案大奖赛上,名医主刀力拔头筹,荣获服务类冠军。';
 $menu = $this->getPageMenu();
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());

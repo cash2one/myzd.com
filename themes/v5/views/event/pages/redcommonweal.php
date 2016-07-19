@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle = '互联网手术中心落地延安_名医主刀网';
+$this->htmlMetaKeywords = '互联网手术中心,延安大学附属医院';
+$this->htmlMetaDescription = '近日,中国最大的移动医疗手术平台-“名医主刀”与延安大学附属医院成功签约,双方将以延安大学附属医院为区域手术基地, 合作共建延安市第一家互联网手术中心。此举也标志着名医主刀“红色公益之旅”大型活动正式启动。    ';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-main.min.css?v=" . time());
 ?>

@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle = '名医公益手术捐赠暨公益发布会_名医主刀网';
+$this->htmlMetaKeywords = '名医公益手术,名医公益发布会';
+$this->htmlMetaDescription = '4月20日.“共享名医资源、共铸健康中国;名医公益手术捐赠暨名医公益宣言发布会 ”在人民大会堂如期举行。此次大型公益活动由名医主刀、国内多家公益基金等单位共同发起,力求在“全民健康,全面小康”的总方针下,创新性尝试共享公益资源的新模式。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-shapinghealth.css");
 ?>

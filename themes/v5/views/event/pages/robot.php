@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle = '机器人会下棋,机器人还会做手术_名医主刀网';
+$this->htmlMetaKeywords = '达芬奇手术机器人,手术机器人介绍';
+$this->htmlMetaDescription = '与Alpha Go不同,达芬奇手术机器人并非人工智能。一提到它,也许很多医疗界外的人会感觉是科幻片的主角。但实际上它是一台用微创的方法,实施复杂外科手术的系统,只是从智能的意义上讲的确可称为机器人。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-robot.css");
 ?>

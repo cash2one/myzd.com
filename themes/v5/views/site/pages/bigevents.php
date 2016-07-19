@@ -1,6 +1,8 @@
 <?php
 $menu = $this->getPageMenu();
-$this->pageTitle = '大事记_名医主刀';
+$this->pageTitle = '名医主刀大事记_名医主刀网';
+$this->htmlMetaKeywords = '名医主刀大事记,名医主刀网';
+$this->htmlMetaDescription = '2016年4月,名医主刀完成B轮1.5亿元人民币融资。本轮由约印创投、国开汉富领投，复星医药、高榕资本、真格基金、美国凯瑟琳肿瘤中心与风和资本等机构跟投。';
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>

@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle = '肺癌治疗,肺癌需要手术吗,凯瑟琳癌症中心_名医主刀网';
+$this->htmlMetaKeywords = '肺癌治疗,凯瑟琳癌症中心';
+$this->htmlMetaDescription = '美国哈佛大学公共卫生学院根据中国现有的数据和情况曾作出报告,在未来的30年,中国因肺癌致死的人数将高达1800万,这意味着每分钟会有1人死于肺癌。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <style type="text/css">

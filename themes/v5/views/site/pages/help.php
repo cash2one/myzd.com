@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle = '常见问题_名医主刀网';
+$this->htmlMetaKeywords = '常见问题,名医主刀网';
+$this->htmlMetaDescription = '名医主刀网将自助出现的问题都整理在此,可供您在咨询前做参考;如有更多疑问可拨打我们的客服热线400-6277-120或在线咨询。';
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/help.css");
 $urlBookingList = $this->createUrl('booking/list');

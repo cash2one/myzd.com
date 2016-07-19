@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle='预约名医手术,网上预约,医生排行榜,好医生_名医主刀网';
+$this->htmlMetaKeywords = '找名医,网上预约手术,床位预约';
+$this->htmlMetaDescription ='名医主刀网为您提供国内医生预约手术,医生排行榜,医生大全,专家主任哪个好等权威信息;助您在第一时间找到好医生,以最快的时间预约医生并安排手术,网上预约手术就看名医主刀网。';
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/searchdoctor.min.css?v=" . time());
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchdoctor.js?v=' . time(), CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";

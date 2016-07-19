@@ -1,8 +1,8 @@
 <?php
 $menu = $this->getPageMenu();
-$this->pageTitle = '关于我们_公司简介_名医主刀';
-$this->htmlMetaKeywords = '关于我们,名医主刀';
-$this->htmlMetaDescription = '关于我们。【名医主刀】总部坐落于上海，现设北京、杭州、天津、广州、南京、成都等分部，业务范围覆盖全国。做手术就找名医主刀';
+$this->pageTitle = '关于我们_名医主刀网';
+$this->htmlMetaKeywords = '名医主刀简介,名医主刀网';
+$this->htmlMetaDescription = '名医主刀作为国内最大的移动医疗手术预约平台,旨在为有手术需求的患者提供专业、高效、安全的手术医疗预约服务,帮助广大有手术需求的患者,在第一时间预约全国知名专家,安排入院手术。';
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>

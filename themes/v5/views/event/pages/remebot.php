@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle = 'Remebot机器人微创手术_名医主刀网';
+$this->htmlMetaKeywords = 'Remebot机器人,机器人微创手术';
+$this->htmlMetaDescription = 'Remebot作为我国18年自主研发的神经外科手术机器人,经历了15年的临床探索和6次产品迭代,先后治愈上万名患者,无论在技术还是应用层面,都处于行业领先地位。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-remebot.css");
 ?>

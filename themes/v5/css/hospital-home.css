@@ -25,6 +25,7 @@
 #hospital-home .department-group .recommend-content .look-more a{color:#036eb8;position:absolute;bottom:10px;right:30px;}
 #hospital-home .department-group .recommend-content .look-more a:hover{text-decoration:underline;}
 #hospital-home .department-group .recommend-content .content{line-height:1.8em;}
+#hospital-home .department-group .recommend-content .content h3,#hospital-home .department-group .recommend-content .content h4{font-size:14px;display:inline-block;margin-top:0px;margin-bottom:0px;}
 #hospital-home .department-group .recommend-content .content .arrow{display:none;}
 #hospital-home .department-group .recommend-content .content .hospital-dept:hover .arrow{display:inline-block;}
 #hospital-home .department-waike .recommend-content .content .hospital-dept:hover a{color:#82c0ca;cursor:pointer;}

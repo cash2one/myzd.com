@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle = '名医主刀APP,安卓端应用下载,微信公众号_名医主刀网';
+$this->htmlMetaKeywords = '名医主刀APP,名医主刀微信号,名医主刀Android系统';
+$this->htmlMetaDescription = '做手术就找名医主刀,名医主刀只帮您预约手术专业领域最强的医院科室;下载名医主刀APP及安卓应用,迅速预约名医,关注名医主刀微信号,随时关注移动医疗最新资讯。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/appdownload.css?v=" . time());
 ?>

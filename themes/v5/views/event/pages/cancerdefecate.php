@@ -1,4 +1,7 @@
 <?php
+$this->pageTitle = '澄清癌症的错误认识,癌症十大误区总结_名医主刀网';
+$this->htmlMetaKeywords = '癌症,癌症知识,癌症误区';
+$this->htmlMetaDescription = '世界卫生组织报告显示,从公众、患者到部分医护人员,都对癌症存在不少误区。名医君总结了人们对癌症普遍存在的十大误区,大家有则改之无则加勉哦。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-main.min.css?v=" . time());
 ?>
