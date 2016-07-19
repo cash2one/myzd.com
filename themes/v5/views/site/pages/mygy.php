@@ -93,7 +93,7 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
                     <div class="col-sm-6">
                         <div class="text-center mygy-support">
                             <div class="contentone"><span class="titleone">100万公益基金</span><span class="ml20 titletwo">100位手术患者</span></div>
-                            <div class="contenttwo">名医主刀向手术费用困难的患者提供没人一万元人民币的专家手术资助</div>
+                            <div class="contenttwo">名医主刀向手术费用困难的患者提供每人一万元人民币的专家手术资助</div>
                             <div>如情况更为特殊，名医主刀会额外增资</div>
                         </div>
                     </div>
