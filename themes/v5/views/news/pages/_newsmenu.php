@@ -1,5 +1,6 @@
 <?php
 $news = array(
+    'anhuiflooding'=>'安徽怀宁水灾救援',
     'guojihuanzheri'=>'癫痫患者福音来啦！',
     'xuzhou'=>'互联网+手术战略合作基地落地徐州',
     'entrepreneurship'=>'医生创业：周瑜等来了东风',

@@ -13,9 +13,6 @@ $urlGetSmsVerifyCode = $this->createAbsoluteUrl('/auth/sendSmsVerifyCode');
 $authActionType = AuthSmsVerify::ACTION_BOOKING;
 $urlSubmitForm = $this->createUrl("booking/ajaxQuickbook");
 $urlReturn = '';
-$this->pageTitle = '手术直通车_各大名医手术在线预约_名医主刀';
-$this->htmlMetaKeywords = '手术直通车';
-$this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需求的患者提供的一项快速、便捷、高效、安全的服务。旨在帮助广大有手术需求的患者，第一时间预约全国知名专家，安排入院手术。名医主刀';
 ?>
 <div class="container-fluid" id="zhitongche">
     <div class="row">
@@ -159,6 +156,20 @@ $this->htmlMetaDescription = '手术直通车，是名医主刀为有手术需�
                                             <div>卢宏章教授是以膝关节置换和运动损伤见长的北大第一医院主任医师，卢教授趁周六的业余休息时间，来到河北保定为胡先生面诊并手术，手术非常成功。...</div>
                                         </div>
                                         <div class="learn-more">查看详情></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mt15">
+                            <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'tick')); ?>">
+                                <div class="every-story">                           
+                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146882561736947"/></div>
+                                    <div class="story-content">
+                                        <div class="text14 mt10 ">疾病名称：蜱虫叮咬</div>
+                                        <div class="introduce mt20">
+                                            <div>7月11日晚八时许，名医主刀大客户关系部的李洁看到小芳的朋友圈里，发布一条被蜱虫袭击的小童（化名）的求救信息。身为五岁女儿妈妈的李洁看到这个消息...</div>
+                                        </div>
+                                        <div class="learn-more">查看详情</div>
                                     </div>
                                 </div>
                             </a>

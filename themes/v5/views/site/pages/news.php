@@ -2,6 +2,9 @@
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
 $urlNews = $this->createUrl('news/page', array("view" => ""));
+$this->pageTitle = '公司资讯_名医主刀网';
+$this->htmlMetaKeywords = '公司新闻,公司资讯';
+$this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学附属医院成功签约,双方将以延安大学附属医院为区域手术基地,合作共建延安市第一家互联网手术中心。';
 ?>
 <div class="container-fluid aboutus-header h400">
     <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625020116117"/>
@@ -35,6 +38,22 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                                 </div>
                             </div>
                             <div class="col-md-10 col-sm-9 ml-50 news">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146883240108139">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年7月
+                                            </div>
+                                            <div class="content">
+                                                <div>7月初，安徽省遭遇50年一遇强降雨，灾情严重。灾区人民时时牵动着名医主刀小伙伴的心，很多小伙伴的故乡是安徽，不断为家乡祈福。<span class="text21">“名医主刀仁爱志愿队”</span>更是行动派，在继阜宁赈灾后，再次前往受灾严重的安徽省安庆市怀宁县，为当地灾民发放救济物资。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>anhuiflooding" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146823098998766">

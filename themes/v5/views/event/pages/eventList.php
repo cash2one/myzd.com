@@ -17,6 +17,40 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
     <div class="container">
         <div class="row">
             <div class="col-md-3">
+                <a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank">
+                    <div class="special-topic">
+                        <div class="header-img">
+                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146908818587832">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div>前段时间网络爆红的人机大战，Alpha Go以4:1战胜韩国棋手李世石，让很多人感到恐慌，"机器人威胁说"不胫而走。</div>
+                                <div>但是，今天名医君要给大家介绍的一款机器人，不仅不会让你感到威胁…</div>
+                            </div>
+                            <div class="learn-more">查看详情></div>
+                            <div class="mark-activity"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="<?php echo $this->createUrl('event/view', array('page' => 'catherine')); ?>" target="_blank">
+                    <div class="special-topic">
+                        <div class="header-img">
+                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146908818404221">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div>日前，中国最大的互联网医疗手术平台名医主刀牵手美国凯瑟琳癌症中心。</div>
+                                <div>众所周知，美国凯瑟琳癌症中心是全球历史最悠久、规模最大的私立癌症中心，之所以选择“名医主刀”成为...</div>
+                            </div>
+                            <div class="learn-more">查看详情></div>
+                            <div class="mark-activity"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'centralpublicwelfare')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">

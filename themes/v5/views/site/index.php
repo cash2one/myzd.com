@@ -1,7 +1,7 @@
 <?php
-$this->pageTitle='三甲医院手术预约,专家,主任医生手术,床位预约_名医主刀网';
+$this->pageTitle = '三甲医院手术预约,专家,主任医生手术,床位预约_名医主刀网';
 $this->htmlMetaKeywords = '预约手术,专家手术,名医主刀网';
-$this->htmlMetaDescription ='名医随时有,手术不再难!【名医主刀】汇聚国内外顶级名医和床位资源,利用互联网技术实现医患精准匹配,帮助广大患者在第一时间预约到名医专家进行主刀治疗-www.mingyizhudao.com';
+$this->htmlMetaDescription = '名医随时有,手术不再难!【名医主刀】汇聚国内外顶级名医和床位资源,利用互联网技术实现医患精准匹配,帮助广大患者在第一时间预约到名医专家进行主刀治疗-www.mingyizhudao.com';
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/home.js?v=' . time(), CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 1));
@@ -27,9 +27,9 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                             <span class="slogan-sm color-green">国内最大的互联网医疗手术平台</span>
                         </div>
                     </div>
-<!--                    <div class="mt40">
-                        <a id="show_top" class="btn btn-home color-green" >为什么选择名医主刀?</a>
-                    </div>-->
+                    <!--                    <div class="mt40">
+                                            <a id="show_top" class="btn btn-home color-green" >为什么选择名医主刀?</a>
+                                        </div>-->
                 </div>
             </div>
         </div>
@@ -75,8 +75,8 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 pr0 mt50">
-                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'cooperation')); ?>" target="_blank">
-                            <img class="img-responsive home-event-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146837977635481"/>
+                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'zeroconsultation')); ?>" target="_blank">
+                            <img class="img-responsive home-event-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146908716504875"/>
                         </a>
                     </div>
                     <div class="col-md-3 pl0 pr0 home-small-event-img mt50">
@@ -134,7 +134,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
         </div>
     </div>
 
-    <div class="container-fluid " >
+    <div class="container-fluid">
         <div class="row">
             <div class="container" id="service-circuit-home">
                 <div class="text-center service-header"><span class="short-line"></span><span class="content">服务流程</span><span class="short-line"></span></div>
@@ -163,8 +163,32 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid" id="bouncedhide">
+        <div class="row">
+            <div class="homepage-bounced-all">
+                    <div class="homepage-bounced-fork"id="homeforkone">
+                    </div>
+                </div>
+            <div class="container">
+                <div class="homepage-bounced">
+                    <a href="<?php echo $this->createUrl('event/view', array('page' => 'zeroconsultation')); ?>" target="_blank">
+                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14690924509732">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
+<style>
+    #bouncedhide .homepage-bounced-all{background-color:#221714;opacity:0.7;width:100%;height:200px;position:fixed;bottom:0;z-index:99;display:block;}
+    #bouncedhide .homepage-bounced{position:fixed;bottom:0;z-index: 99}
+    #bouncedhide .homepage-bounced-fork{position:absolute;top:20px;right:20px;z-index: 100;}
+    #homeforkone{cursor:pointer;display:block;width: 25px;height:25px;background:url(http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023236775);}
+    #homeforkone:hover{background:url(http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023898548);}
+</style>
 <script>
     $(document).ready(function () {
         $('.home-expslider').click(function () {
@@ -174,7 +198,10 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
             $('.expgroup-slider').removeClass('active');
             $(pageId).addClass('active');
         });
-
+        //广告弹框
+        $('#homeforkone').click(function () {
+            $('#bouncedhide').hide();
+        });
         $('#home .department .dept-area').hover(function () {
             $('.dept-bottom-img', this).stop().animate({
                 height: '80px'
@@ -184,10 +211,9 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 height: '0'
             });
         });
-        $html = '<li><div class="catherine"><a href="<?php echo $this->createUrl('event/view', array('page' => 'catherine')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14653554028857" alt="" class="img-responsive"></a></div></li>' +
+        $html = '<li><div class="cooperation"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cooperation')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146908742787421" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="redcommonweal"><a href="<?php echo $this->createUrl('event/view', array('page' => 'redcommonweal')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146417164772626" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="lungcancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146338468582143" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="robot"><a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009492190148" alt="" class="img-responsive"></a></div></li>';
+                '<li><div class="lungcancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146338468582143" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
         //服务流程步骤跳转
         var i = 2;

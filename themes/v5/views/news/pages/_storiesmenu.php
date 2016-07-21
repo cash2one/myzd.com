@@ -13,7 +13,12 @@
     .operationconcent .hideconcent.active{display:block;}
     .operationconcent .story-heading.active{color:#333;font-size:15px;}
     .operationconcent .story-heading.active>.number-icon{font-size:16px;color:#25aea6;}
-    .operationconcent .story-heading.active>.text-content{text-decoration:underline;overflow:hidden; white-space:nowrap;width:80%;text-overflow: ellipsis;display:inline-block;margin-bottom:-4px;}
+    .operationconcent .story-heading.active>.text-content{overflow:hidden; white-space:nowrap;width:80%;text-overflow: ellipsis;display:inline-block;margin-bottom:-4px;}
+    .operationconcent .story-heading.active>.text-content:hover{text-decoration:underline;}
+     .bgpicture1{background: url(http://7xsq2z.com2.z0.glb.qiniucdn.com/146855152975744)no-repeat;height:148px;width:278px;display:block;}
+    .bgpicture1:hover{background: url(http://7xsq2z.com2.z0.glb.qiniucdn.com/146855158540075)no-repeat;height:148px;width:278px;display:block;}
+    .bgpicture2{background:url(http://7xsq2z.com2.z0.glb.qiniucdn.com/14685532570970)no-repeat;height:148px;width:278px;display:block;}
+    .bgpicture2:hover{background: url(http://7xsq2z.com2.z0.glb.qiniucdn.com/146855329614264)no-repeat;height:148px;width:278px;display:block;}
 </style>
 <div class="col-md-3">
     <div class="border-one">
@@ -80,8 +85,8 @@
             </div>
         </div>
     </div>
-    <div class="mt15" style="margin-right: -15px;"><a href="<?php echo $this->createUrl('event/view', array('page' => 'catherine')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146841250767966"></a></div>
-    <div class="mt15" style="margin-right: -15px;"><a href="<?php echo $this->createUrl('event/view', array('page' => 'centralpublicwelfare')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146841297080310"></a></div>
+    <div class="mt15" style="margin-right: -15px;"><a href="<?php echo $this->createUrl('event/view', array('page' => 'catherine')); ?>" target="_blank"><div class="bgpicture1"></div></a></div>
+    <div class="mt15" style="margin-right: -15px;"><a href="<?php echo $this->createUrl('event/view', array('page' => 'centralpublicwelfare')); ?>" target="_blank"><div class="bgpicture2"></div></a></div>
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
@@ -91,9 +96,5 @@
             $('.hideconcent').hide();
             $(this).parents('.story-area').find('.hideconcent').show();
         });
-//        $("#div1").show();
-//        $("a").mouseenter(function(){
-//        $("text-12").css({"color":"#333","font-size":"15px","height":"25px","overflow":"hidden","text-overflow":"ellipsis"});
-//    });
     });
 </script>
