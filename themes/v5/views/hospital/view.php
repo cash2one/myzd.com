@@ -21,9 +21,9 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hos
 $urlQuickBook = $this->createUrl('booking/quickbook');
 $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-$this->pageTitle = $hName . '手术预约,电话,地址,网址_名医主刀';
-$this->htmlMetaKeywords = $hName;
-$this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'utf-8') : $desc;
+// $this->pageTitle = $hName . '手术预约,电话,地址,网址_名医主刀';
+// $this->htmlMetaKeywords = $hName;
+// $this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'utf-8') : $desc;
 $deptId = Yii::app()->request->getQuery('deptId', '');
 ?>
 <div class="container-fluid crumbs crumbs-hospital">

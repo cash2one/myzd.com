@@ -24,9 +24,9 @@ else:
     if (isset($data->disease->desc)) {
         $disDesc = $data->disease->desc;
     }
-    $this->pageTitle = $disName . '介绍_' . $disName . '专家预约推荐_名医主刀';
-    $this->htmlMetaKeywords = $disName . ',名医主刀,' . $disName . '专家预约';
-    $this->htmlMetaDescription = mb_strlen($disDesc) > 70 ? mb_substr($disDesc, 0, 70, 'utf-8') : $disDesc;
+    $this->pageTitle = "治疗".$disName."哪家医院最好,治疗".$disName."哪个医生最好,专家名医排行_名医主刀网";
+    $this->htmlMetaKeywords = $disName."治疗,".$disName."症状,".$disName."名医";
+    $this->htmlMetaDescription = mb_strlen($disDesc) > 120 ? mb_substr($disDesc, 0, 120, 'utf-8') : $disDesc;
     ?>
     <div class="container pb40">
         <div>

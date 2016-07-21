@@ -43,7 +43,28 @@ class DoctorController extends WebsiteController {
     }
 
     public function actionTop() {
-
+        $value=$_GET;
+        $seoKey="";
+        if(array_key_exists("city",$value)){
+           $cityInfo=RegionCity::model()->getById($value['city']);
+           $cityName=$cityInfo['name_cn'];
+           $seoKey.=$cityName;
+        }
+        if(array_key_exists("disease_sub_category",$value)){
+           $diseaseCategoryInfo=DiseaseCategory::model()->getById($value['disease_sub_category']);
+           $diseaseCategoryName=$diseaseCategoryInfo['sub_cat_name'];
+           $seoKey.=$diseaseCategoryName;
+        }
+        if(array_key_exists("disease",$value)){
+           $diseaseInfo=Disease::model()->getById($value['disease']);
+           $diseaseName=$diseaseInfo['name'];
+           $diseaseCategoryInfo=DiseaseCategory::model()->getById($diseaseInfo['category_id']);
+           $diseaseCategoryName=$diseaseCategoryInfo['sub_cat_name'];
+           $seoKey.=$diseaseCategoryName.$diseaseName;
+        }
+        $this->pageTitle=$seoKey."医生排行,哪个医生好,专家医生预约_名医主刀网";
+        $this->htmlMetaKeywords="手术预约,找医生,网上预约医生";
+        $this->htmlMetaDescription="名医主刀网为您提供".$seoKey."医生排行榜,手术预约,专家医生预约,哪个医生好等信息;帮助广大有手术需求的患者,在第一时间预约全国知名专家,安排入院手术。";
         $this->render('top');
     }
 
@@ -58,6 +79,9 @@ class DoctorController extends WebsiteController {
     public function actionView($id) {
         $apiService = new ApiViewDoctorV7($id);
         $output = $apiService->loadApiViewData();
+        $this->pageTitle=$output->results->doctor->hospitalName.$output->results->doctor->name."医生预约,怎么样好不好,挂号时间_名医主刀网";
+        $this->htmlMetaKeywords=$output->results->doctor->name."手术预约,".$output->results->doctor->name."医生预约,".$output->results->doctor->name."医生介绍";
+        $this->htmlMetaDescription=mb_strlen($output->results->doctor->careerExp) > 120 ? mb_substr($output->results->doctor->careerExp, 0, 120, 'utf-8') : $output->results->doctor->careerExp;
         $this->render('view', array(
             'data' => $output
         ));
