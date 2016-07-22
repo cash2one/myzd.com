@@ -1,7 +1,13 @@
 <?php
+if(array_key_exists('page',$_GET)){
+$this->pageTitle = '免责声明_名医主刀网';
+$this->htmlMetaKeywords = '名医主刀服务协议,免责声明';
+$this->htmlMetaDescription = '当您注册或使用“名医主刀”旗下网站、APP、微信公众号等提供的服务时,表明您已知晓并同意本声明的内容,这些内容自动成为您与本公司协议的一部分。';
+}else{
 $this->pageTitle = '常见问题_名医主刀网';
 $this->htmlMetaKeywords = '常见问题,名医主刀网';
 $this->htmlMetaDescription = '名医主刀网将自助出现的问题都整理在此,可供您在咨询前做参考;如有更多疑问可拨打我们的客服热线400-6277-120或在线咨询。';
+}
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/help.css");
 $urlBookingList = $this->createUrl('booking/list');
