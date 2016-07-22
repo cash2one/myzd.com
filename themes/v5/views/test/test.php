@@ -10,6 +10,7 @@
     echo $now->format('Y-m-d H:i:s');
     ?>
 </p>
+
 <p>
     <span>患者姓名：</span>
     <span><strong><?php echo $model->getName(); ?></strong></span>
