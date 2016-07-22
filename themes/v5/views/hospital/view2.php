@@ -46,7 +46,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                 <div class="hospital-title"><?php echo $hName; ?></div>
                 <div class="hdesc">
                     <?php
-                    if (mb_strlen($desc) > 900) {
+                    if (mb_strlen($desc, 'utf-8') > 300) {
                         $subdesc = mb_substr($desc, 0, 300, 'utf-8');
                         $subdesc = $subdesc . '<span class="ellipsis">...</span>';
                     } else {
@@ -58,7 +58,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                     echo $lastdesc;
                     ?>
                 </div>
-                <?php if (mb_strlen($desc) > 900) { ?>
+                <?php if (mb_strlen($desc, 'utf-8') > 300) { ?>
                     <div class="text-right more-desc"><a href="javascript:void(0);" alt="查看全部">详情&nbsp;<i class="fa fa fa-caret-down"></i></a></div>
                 <?php } ?>
                 <div class="text-right retract"><a href="javascript:void(0);" alt="查看全部">收起&nbsp;<i class="fa fa fa-caret-up"></i></a></div>
@@ -101,7 +101,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                     echo '<div class="dept-slider"><div data-dept="' . $key . '" class="dept-name dept-waike ' . $last . '">' . $key . ' <i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></div><div class="faculty-open">';
                                     foreach ($dept as $faculty) {
                                         $fuacultyName = $faculty->name;
-                                        if (mb_strlen($faculty->name) > 6) {
+                                        if (mb_strlen($faculty->name, 'utf-8') > 6) {
                                             $fuacultyName = mb_substr($fuacultyName, 0, 6, 'utf-8');
                                             $fuacultyName = $fuacultyName . '<span>...</span>';
                                         } else {
