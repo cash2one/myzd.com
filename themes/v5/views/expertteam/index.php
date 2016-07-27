@@ -3,9 +3,9 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/expertteam.css");
 $urlLoadallEteamsByCity = $this->createUrl('api/expertteam'); // append city.id behind.
 $urlLoadEteamsByCity = $this->createUrl('api/expertteam', array('city' => '')); // append city.id behind.
-// $this->pageTitle = '国内顶尖外科专家领衔的专业手术治疗团队_名医主刀';
-// $this->htmlMetaKeywords = '明星专家团队';
-// $this->htmlMetaDescription = '明星专家团队，国内顶尖外科专家领衔的专业手术治疗团队，北京,上海,南京明星专家团队。名医主刀';
+$this->pageTitle = '国内顶尖外科专家领衔的专业手术治疗团队_名医主刀';
+$this->htmlMetaKeywords = '明星专家团队';
+$this->htmlMetaDescription = '明星专家团队，国内顶尖外科专家领衔的专业手术治疗团队，北京,上海,南京明星专家团队。名医主刀';
 ?>
 <style>
 

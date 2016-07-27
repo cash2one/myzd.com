@@ -32,7 +32,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
             <ul>
                 <li><a href="<?php echo Yii::app()->homeUrl; ?>" target="_blank">首页</a></li>
                 <li>></li>
-                <li><a href="<?php echo $this->createUrl('hospital/department'); ?>" target="_blank">找医院</a></li>
+                <li><a href="<?php echo $this->createUrl('hospital/department');?>" target="_blank">找医院</a></li>
                 <li>></li>
                 <li><?php echo $hName; ?></li>
             </ul>
@@ -92,7 +92,6 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                 <?php
                                 $i = 0;
                                 foreach ($departments as $key => $dept) {
-
                                     $i++;
                                     if ($i == count($departments)) {
                                         $last = 'last';
@@ -108,7 +107,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                         } else {
                                             $fuacultyName = $faculty->name;
                                         }
-                                        echo '<a href="' . $this->createUrl('hospital/view2') . '/id/' . $hid . '/deptId/' . $faculty->id . '"><div class="second-faculty" data-dept="' . $key . '" id="faculty' . $faculty->id . '" title="' . $faculty->name . '" data-page="' . $faculty->id . '">' . $fuacultyName . '</div></a>';
+                                        echo '<div class="second-faculty" data-dept="' . $key . '" id="faculty' . $faculty->id . '" title="' . $faculty->name . '" data-page="' . $faculty->id . '">' . $fuacultyName . '</div>';
                                     }
                                     echo '</div></div>';
                                 }
@@ -210,16 +209,16 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
             $('#faculty' + deptId).addClass('active');
             var html = $('#faculty' + deptId).text();
             html += '<i class="fa fa-angle-right ml5"></i><i class="fa fa-angle-down ml5"></i>';
-            $('#faculty' + deptId).parents('.faculty-open').prev().addClass('active');
-            $('#faculty' + deptId).parents('.faculty-open').prev().html(html);
+            $('#faculty' + deptId).parent().prev().addClass('active');
+            $('#faculty' + deptId).parent().prev().html(html);
         } else {
             $('.department-info .faculty-open .second-faculty:first').addClass('active');
             $('.department-info .dept-title:first').addClass('active');
             $('.department-info .desc-area:first').addClass('active');
             var html = $('.department-info .faculty-open .second-faculty:first').text();
             html += '<i class="fa fa-angle-right faculty ml5"></i>';
-            $('.department-info .faculty-open .second-faculty:first').parents('.faculty-open').prev().addClass('active');
-            $('.department-info .faculty-open .second-faculty:first').parents('.faculty-open').prev().html(html);
+            $('.department-info .faculty-open .second-faculty:first').parent().prev().addClass('active');
+            $('.department-info .faculty-open .second-faculty:first').parent().prev().html(html);
         }
         $('.faculty-desc .dept-slider .faculty-open').mouseleave(function () {
             $(this).removeClass('active');
@@ -278,4 +277,6 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
             $(".more-desc").show();
         });
     });
+
+
 </script>

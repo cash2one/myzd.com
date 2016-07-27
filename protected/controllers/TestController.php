@@ -33,7 +33,11 @@ class TestController extends WebsiteController {
     public function actionSendSmsCode() {
         $this->render("sendSmsCode");
     }
-
+   public function actionMongdb(){
+	$model = new TestMongo();
+    $model->addInfo();
+var_dump(TestMongo::model()->findAll());
+}
     public function actionBooking($id = 321) {
         $userId = 3;
         $user = User::model()->getById($userId);

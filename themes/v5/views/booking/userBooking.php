@@ -4,7 +4,8 @@ $urlOrderView = $this->createUrl('order/view');
 $booking = $data->results->booking;
 $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking->id));
 $urlBookingList = $this->createUrl('booking/list');
-$urlUploadFile = $this->createUrl("booking/ajaxUploadFile");
+//$urlUploadFile = $this->createUrl("booking/ajaxUploadFile");
+$urlUploadFile = 'http://file.mingyizhudao.com/api/uploadbookingfile';
 $urlReturn = $this->createUrl('booking/userBooking', array('id' => $booking->id));
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
