@@ -82,10 +82,10 @@ class HospitalController extends WebsiteController {
     }
     
     public function actionTopHospital(){
+        $values=$_GET;
         $topHospitalMgr = new TopHospitalManager();
-        $output = $topHospitalMgr->loadAllTopHospital();
+        $output = $topHospitalMgr->loadAllTopHospital($values);
         $this->render('top');
-        //print_r($output);
     }
 
 }
