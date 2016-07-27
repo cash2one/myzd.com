@@ -85,7 +85,9 @@ class HospitalController extends WebsiteController {
         $values=$_GET;
         $topHospitalMgr = new TopHospitalManager();
         $output = $topHospitalMgr->loadAllTopHospital($values);
-        $this->render('topHospital',array('list'=>$output));
+        $page=$output['page'];
+        unset($output['page']);
+        $this->render('topHospital',array('list'=>$output,'page'=>$page));
     }
 
 }

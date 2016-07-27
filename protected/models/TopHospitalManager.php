@@ -15,7 +15,9 @@ class TopHospitalManager {
         $pageSize=20;
         $limit=($page-1)*$pageSize;
         $options=array('limit'=>$pageSize,'offset'=>$limit);
-        return TopHospital::model()->getAll($with = null,$options);
+        $return=TopHospital::model()->getAll($with = null,$options);
+        $return['page']=$page+1;
+        return $return;
     }
 
 }
