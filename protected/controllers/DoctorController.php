@@ -105,7 +105,7 @@ class DoctorController extends WebsiteController {
         $model = new Doctor;
         if (isset($_POST['Doctor'])) {
             $model->attributes = $_POST['Doctor'];
-            if ($model->save())
+            if ($model->save()) 
                 $this->redirect(array('view', 'id' => $model->id));
         }
         $this->render('create', array(

@@ -25,6 +25,25 @@ class HospitalController extends WebsiteController {
             'model' => $ihospital,
         ));
     }
+    
+    public function actionView2($id,$deptId=0) {
+        //$ifaculty = $this->loadIFaculty($id);
+        $hospitalMgr = new HospitalManager();
+        $with = array('hospitalCity', 'hospitalDepartments' => array('on' => 'hospitalDepartments.is_show=1'));
+        $ihospital = $hospitalMgr->loadIHospitalById($id, $with);
+        if (is_null($ihospital)) {
+            $this->throwPageNotFoundException();
+        }
+        $departmentInfo=HospitalDepartment::model()->getById($deptId);
+        $departmentName=$departmentInfo['name'];
+        $seoKey=$ihospital->name.$departmentName;
+        $this->pageTitle=$seoKey."手术预约,床位预约,专家预约,哪个医生好_名医主刀网";
+        $this->htmlMetaKeywords="手术预约,找医院,网上预约";
+        $this->htmlMetaDescription=mb_strlen($ihospital->desc) > 120 ? mb_substr($ihospital->desc, 0, 120, 'utf-8') : $ihospital->desc;
+        $this->render('view2', array(
+            'model' => $ihospital,
+        ));
+    }
 
     //搜索，根据科室找医院
     public function actionSearch() {
@@ -60,6 +79,13 @@ class HospitalController extends WebsiteController {
     public function actionDepartment() {
         $this->checkVendor(AppLog::SITE_DEPT);
         $this->render('department');
+    }
+    
+    public function actionTopHospital(){
+        $topHospitalMgr = new TopHospitalManager();
+        $output = $topHospitalMgr->loadAllTopHospital();
+        $this->render('top');
+        //print_r($output);
     }
 
 }
