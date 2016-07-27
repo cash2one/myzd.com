@@ -87,7 +87,11 @@ class HospitalController extends WebsiteController {
         $output = $topHospitalMgr->loadAllTopHospital($values);
         $page=$output['page'];
         unset($output['page']);
-        $this->render('topHospital',array('list'=>$output,'page'=>$page));
+        if(Yii::app()->request->getIsAjaxRequest()==false){
+          $this->render('topHospital',array('list'=>$output,'page'=>$page));
+        }else{
+            $this->renderJsonOutput($output);
+        }
     }
 
 }
