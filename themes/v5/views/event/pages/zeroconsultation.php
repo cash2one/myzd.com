@@ -4,6 +4,7 @@ $this->htmlMetaKeywords = '0元见名医,名医主刀';
 $this->htmlMetaDescription = '针对有手术需求的患者,名医主刀提供全国知名三甲医院专家的面对面术前咨询服务, 让患者获得更全面、更权威的诊疗建议;本服务只针对非初诊手术患者,首诊患者可以先到附近正规医院,有初步诊断后方可预约0元面诊服务。';
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-main100.min.css");
 ?>
+<style>#site-content{padding-bottom:0!important;}</style>
 <section id="zeroconsultation">
     <div class="container-fluid">
         <div class="row">
