@@ -88,13 +88,19 @@ function setDoctorHtml(data, urlDoctorView) {
                 var doctor = doctors[i];
                 var contractedImg = doctor.isContracted == 1 ? '<div class="contracted-img"></div>' : '';
                 var isMingyiyizhenImg = doctor.ServiceId == 2 ? '<div class="mingyiyizhen-img pull-right"></div>' : '';
-                if(i==0){innerHtml+='<li class="first-expgroup expgroup-slider active">'}
-                if(i==3){innerHtml+='<li class="second-expgroup expgroup-slider">'}
-                if(i==6){innerHtml+='<li class="third-expgroup expgroup-slider">'}
+                if (i == 0) {
+                    innerHtml += '<li class="first-expgroup expgroup-slider active">'
+                }
+                if (i == 3) {
+                    innerHtml += '<li class="second-expgroup expgroup-slider">'
+                }
+                if (i == 6) {
+                    innerHtml += '<li class="third-expgroup expgroup-slider">'
+                }
                 innerHtml += '<div class="col-md-4" ><a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                         '<div class="expInfo text-center bg-white explist-border">' +
                         contractedImg + isMingyiyizhenImg +
-                        '<div><img class="img100" src="' + doctor.imageUrl + '"/></div>' +
+                        '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '" /></div>' +
                         '<div class="expName color-black">' + doctor.name + '</div>' +
                         '<div class="expTitle">' + doctor.mTitle + ' ' + doctor.aTitle + '</div>' +
                         '<div class="expHospital mt30">' + doctor.hpName + '</div>' +
