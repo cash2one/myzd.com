@@ -17,7 +17,7 @@ $city = $model->getCity();
 $urlLoadDoctorsByDeptId = $this->createUrl('/api/list', array('model' => 'doctor', 'hpdept' => ''));    // append hpdeptId behind.
 ?>
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hospital.min.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/hospital100.min.css");
 $urlQuickBook = $this->createUrl('booking/quickbook');
 $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
@@ -43,7 +43,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
     <div class="container">
         <div class="hinfo">
             <div class="hdecs">
-                <div class="hospital-title"><?php echo $hName; ?></div>
+                <div class="hospital-title"><h1><?php echo $hName; ?></h1></div>
                 <div class="hdesc">
                     <?php
                     if (mb_strlen($desc, 'utf-8') > 300) {
@@ -121,7 +121,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                             foreach ($dept as $faculty) {
                                 ?>
                                 <div class="desc-area" id="<?php echo $faculty->id; ?>">
-                                    <div class="desc-title">学科地位</div>
+                                    <div class="desc-title"><h2>学科地位</h2></div>
                                     <div class="desc-content">
                                         <?php
                                         if (isset($faculty->position) && !is_null($faculty->position)) {
@@ -131,7 +131,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                         }
                                         ?>
                                     </div>
-                                    <div class="desc-title">学科规模</div>
+                                    <div class="desc-title"><h3>学科规模</h3></div>
                                     <div class="desc-content">
                                         <?php
                                         if (isset($faculty->scale) && !is_null($faculty->scale)) {
@@ -141,7 +141,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                         }
                                         ?>
                                     </div>
-                                    <div class="desc-title">学科专长</div>
+                                    <div class="desc-title"><h4>学科专长</h4></div>
                                     <div class="desc-content">
                                         <?php
                                         if (isset($faculty->specialty) && !is_null($faculty->specialty)) {
@@ -151,7 +151,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                         }
                                         ?>
                                     </div>
-                                    <div class="desc-title">学科力量</div>
+                                    <div class="desc-title"><h5>学科力量</h5></div>
                                     <div class="desc-content">
                                         <?php
                                         if (isset($faculty->strength) && !is_null($faculty->strength)) {
@@ -161,13 +161,13 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                         }
                                         ?>
                                     </div>
-                                    <div class="desc-title">学科荣誉</div>
+                                    <div class="desc-title"><h6>学科荣誉</h6></div>
                                     <div class="desc-content">
                                         <?php
                                         if (isset($faculty->honor) && arrayNotEmpty($faculty->honor)) {
                                             $honors = $faculty->honor;
                                             for ($i = 0; $i < count($honors); $i++) {
-                                                echo '<div class="honor"><img class="mr5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146424275010039"><span>' . $honors[$i] . '</span></div>';
+                                                echo '<div class="honor"><img class="mr5" src="http://static.mingyizhudao.com/146424275010039"><span>' . $honors[$i] . '</span></div>';
                                             }
                                         } else {
                                             echo '暂无明确信息';
@@ -184,14 +184,14 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                 <div class="col-lg-3 col-sm-4 col-xs-12"> 
                     <div class="booking-circuit">
                         <div class="text-center heading">一键约科室流程</div>
-                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:8px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434442994569"></div><div class="">点击预约科室</div><div class="clearfix"></div></div>
-                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:5px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445111882"></div><div class="">按要求填写并提交病例资料</div><div class="clearfix"></div></div>
-                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:5px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445119581"></div><div class="">名医助手8小时内回访确认预约和病例资料</div><div class="clearfix"></div></div>
-                        <div class="mt10"><div class="pull-left" style="height:4em;margin-right:5px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445123129"></div><div class="">两个工作日内回访给出最适合的主刀专家推荐和诊疗意见（如有需要会安排面诊）</div><div class="clearfix"></div></div>
-                        <div class="mt10"><div class="pull-left" style="height:4em;margin-right:5px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445127681"></div><div class="">如需要手术，名医助手会立刻开始安排手术床位，减少等待床位时间</div><div class="clearfix"></div></div>
+                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:8px;"><img src="http://static.mingyizhudao.com/146434442994569"></div><div class="">点击预约科室</div><div class="clearfix"></div></div>
+                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:5px;"><img src="http://static.mingyizhudao.com/146434445111882"></div><div class="">按要求填写并提交病例资料</div><div class="clearfix"></div></div>
+                        <div class="mt10"><div class="pull-left" style="height:2em;margin-right:5px;"><img src="http://static.mingyizhudao.com/146434445119581"></div><div class="">名医助手8小时内回访确认预约和病例资料</div><div class="clearfix"></div></div>
+                        <div class="mt10"><div class="pull-left" style="height:4em;margin-right:5px;"><img src="http://static.mingyizhudao.com/146434445123129"></div><div class="">两个工作日内回访给出最适合的主刀专家推荐和诊疗意见（如有需要会安排面诊）</div><div class="clearfix"></div></div>
+                        <div class="mt10"><div class="pull-left" style="height:4em;margin-right:5px;"><img src="http://static.mingyizhudao.com/146434445127681"></div><div class="">如需要手术，名医助手会立刻开始安排手术床位，减少等待床位时间</div><div class="clearfix"></div></div>
                     </div>
-                    <div class="event-link-img mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancerdefecate')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445103935"></a></div>
-                    <div class="event-link-img mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')) ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146434445115492"></a></div>
+                    <div class="event-link-img mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cancerdefecate')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/146434445103935" alt="澄清癌症错误认识" title="澄清癌症错误认识"/></a></div>
+                    <div class="event-link-img mt20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')) ?>" target="_blank"><img src="http://static.mingyizhudao.com/146434445115492" alt="肺癌" title="肺癌" /></a></div>
                 </div>
             </div>
         </div>

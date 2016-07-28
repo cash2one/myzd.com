@@ -11,7 +11,7 @@ if (isset($data->disease) === false):
     </div>
     <?php
 else:
-    Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/disease.css");
+    Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/disease100.min.css");
     $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     $diseaseId = $data->disease->id;
     $expertteams = $data->expertteams;
@@ -30,14 +30,14 @@ else:
     ?>
     <div class="container pb40">
         <div>
-            <div id="dis-name" class="dis-title border-left"><span><?php echo $disName; ?></span></div>
+            <div id="dis-name" class="dis-title border-left"><span><h1><?php echo $disName; ?></h1></span></div>
             <div class="dis-desc mt10"><?php echo $disDesc; ?></div>
         </div>
         <div id="expertteam" class="rec-team">
             <?php
             for ($i = 0; $i < count($expertteams); $i++) {
                 if ($i == 0) {
-                    echo '<div class="dis-title">推荐专家团队</div>';
+                    echo '<div class="dis-title"><h2>推荐专家团队</h2></div>';
                 }
                 ?>
                 <div class="border-gray mt20"><div class="mt35 mb35">
@@ -64,7 +64,7 @@ else:
             <?php } ?>
         </div>
         <div class="rec-doc pb40">
-            <div class="dis-title">推荐相关名医<span class="more-doctor pull-right"><a href="<?php echo $this->createUrl('doctor/search', array('disease' => $data->disease->id)); ?>">更多医生>></a></span></div>
+            <div class="dis-title"><h3>推荐相关名医</h3><span class="more-doctor pull-right"><a href="<?php echo $this->createUrl('doctor/search', array('disease' => $data->disease->id)); ?>">更多医生>></a></span></div>
             <div class="divider"></div>
             <div class="loading loading02"></div>
             <div class="row doclist">
