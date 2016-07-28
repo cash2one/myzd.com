@@ -9,10 +9,10 @@ function setHospitalHtml(data, urlHospitalView) {
             var hp_dept_desc = hospital.hp_dept_desc == '' ? '暂无信息' : hospital.hp_dept_desc;
             hp_dept_desc = hp_dept_desc.length > 105 ? hp_dept_desc.substr(0, 105) + '<span class="ellipsis">...</span><span class="dese-last">' + hp_dept_desc.substr(105) + '</span>' : hp_dept_desc;
             innerHtml += '<div class="row mt30">' +
-                    '<div class="col-sm-3 col-lg-2"><a target="_blank" href="' + urlHospitalView +'/id/'+ hospital.hospital_id + '/deptId/' + deptId + '"><img class="img-responsive" src="' + hospital.imageUrl + '"></a></div>' +
+                    '<div class="col-sm-3 col-lg-2"><a target="_blank" href="' + urlHospitalView +'/hospital-view-id-'+ hospital.hospital_id + '-deptId-' + deptId + '.html"><img class="img-responsive" src="' + hospital.imageUrl + '" alt="' + hospital.name + '" title="' + hospital.name + '"></a></div>' +
                     '<div class="col-sm-9 col-lg-10 ml-30">' +
-                    '<div><strong><a class="hpName" target="_blank" href="'  + urlHospitalView +'/id/'+ hospital.hospital_id + '/deptId/' + deptId +  '"><h2>' + hospital.name + '</h2></a></strong>' +
-                    '<span class="pull-right"><a target="_blank" href="'  + urlHospitalView +'/id/'+ hospital.hospital_id + '/deptId/' + deptId +  '"><button class="btn btn-yes pr30 pl30">查 看 详 情</button></a></span></div>' +
+                    '<div><strong><a class="hpName" target="_blank" href="'  + urlHospitalView +'/hospital-view-id-'+ hospital.hospital_id + '-deptId-' + deptId +  '.html"><h2>' + hospital.name + '</h2></a></strong>' +
+                    '<span class="pull-right"><a target="_blank" href="'  + urlHospitalView +'/hospital-view-id-'+ hospital.hospital_id + '-deptId-' + deptId +  '.html"><button class="btn btn-yes pr30 pl30">查 看 详 情</button></a></span></div>' +
                     '<div class="mt20 dept-name"><h3><span>医院科室名称：</span><span class="color-green ml10">' + hospital.hp_dept_name + '</span></h3></div>' +
                     '<div class="clearfix"></div>' +
                     '<div class="ml-15 hospital-desc mt20">' + hp_dept_desc + '</div>' +

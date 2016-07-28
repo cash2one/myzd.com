@@ -25,6 +25,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 //$this->htmlMetaKeywords = $hName;
 //$this->htmlMetaDescription = mb_strlen($desc) > 70 ? mb_substr($desc, 0, 70, 'utf-8') : $desc;
 $deptId = Yii::app()->request->getQuery('deptId', '');
+$urlHospital= Yii::app()->params['baseUrl'];
 ?>
 <div class="container-fluid crumbs crumbs-hospital">
     <div class="container">
@@ -108,7 +109,7 @@ $deptId = Yii::app()->request->getQuery('deptId', '');
                                         } else {
                                             $fuacultyName = $faculty->name;
                                         }
-                                        echo '<a href="' . $this->createUrl('hospital/view2') . '/id/' . $hid . '/deptId/' . $faculty->id . '"><div class="second-faculty" data-dept="' . $key . '" id="faculty' . $faculty->id . '" title="' . $faculty->name . '" data-page="' . $faculty->id . '">' . $fuacultyName . '</div></a>';
+                                        echo '<a href="' . $urlHospital . '/hospital-view2-id-' . $hid . '-deptId-' . $faculty->id . '.html"><div class="second-faculty" data-dept="' . $key . '" id="faculty' . $faculty->id . '" title="' . $faculty->name . '" data-page="' . $faculty->id . '">' . $fuacultyName . '</div></a>';
                                     }
                                     echo '</div></div>';
                                 }
