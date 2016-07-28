@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/searchdoctor.min.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/searchdoctor100.min.css");
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchdoctor.js?v=' . time(), CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDoctorSearch = $this->createUrl('doctor/top');
@@ -17,10 +17,13 @@ $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
 $page = Yii::app()->request->getQuery('page', '');
+$this->pageTitle = "预约名医手术,网上预约,医生排行榜,好医生_名医主刀网";
+$this->htmlMetaKeywords = "找名医,网上预约手术,床位预约";
+$this->htmlMetaDescription = "名医主刀网为您提供国内医生预约手术,医生排行榜,医生大全,专家主任哪个好等权威信息;助您在第一时间找到好医生,以最快的时间预约医生并安排手术,网上预约手术就看名医主刀网。";
 ?>
 <div class="container-fluid bg-green">
     <div class="row" style="text-decoration:underline;">
-        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146242718127132" alt=""/>
+        <img src="http://static.mingyizhudao.com/146242718127132" alt=""/>
     </div>
 </div>
 <div class="container pb20" id="findexpert">
@@ -45,7 +48,7 @@ $page = Yii::app()->request->getQuery('page', '');
         </div>
         <div class="col-sm-4">
             <div class="service-circuit">
-                <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146581012481437"></div>
+                <div><img src="http://static.mingyizhudao.com/146581012481437"></div>
                 <div class="scroll-booking-area">
                     <ul class="patient-bxslider">
                     </ul>
@@ -164,7 +167,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
                 innerHtml += '<div class="col-sm-3 mt20">' +
                         '<a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
-                        '<div class="expert-info"><div class="border-gray"><div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '"></div>' +
+                        '<div class="expert-info border-gray"><div><div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '"></div>' +
                         '<div class = "pull-right recommend-contracted-img"></div><div class="clearfix"></div >' +
                         '<div class = "text-center"><span class = "strong">' + doctor.name + '</span>&nbsp;<span class="text-center mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</span ></div>' +
                         '<div class = "text-center mt5 hpDeptName">' + hpDeptName + '</div>' +

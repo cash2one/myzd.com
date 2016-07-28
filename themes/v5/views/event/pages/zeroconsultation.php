@@ -1,22 +1,20 @@
-<style>
-    #zeroconsultation .zeroconsultation-content .mt85{margin-top:40px;}
-    #zeroconsultation .zeroconsultation-content .zeroconsultation-padding-115{padding-left: 115px;padding-right: 115px;}
-    #zeroconsultation .zeroconsultation-content .text-20{font-size: 18px;color:#666;font-family:webfont;}
-    #zeroconsultation{background: #f7f7f7;}
-    #site-content{padding-bottom: 0px;}
-    #zeroconsultation .zeroconsultation-content .zeroconsultation-padding-105{padding-left: 105px;padding-right: 105px;}
-</style>
+<?php
+$this->pageTitle = '0元见名医,专家面对面_名医主刀网';
+$this->htmlMetaKeywords = '0元见名医,名医主刀';
+$this->htmlMetaDescription = '针对有手术需求的患者,名医主刀提供全国知名三甲医院专家的面对面术前咨询服务, 让患者获得更全面、更权威的诊疗建议;本服务只针对非初诊手术患者,首诊患者可以先到附近正规医院,有初步诊断后方可预约0元面诊服务。';
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-main100.min.css");
+?>
 <section id="zeroconsultation">
     <div class="container-fluid">
         <div class="row">
-            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146908024721626"/>
+            <img src="http://static.mingyizhudao.com/146908024721626"/>
             </div>
         </div>
     <div class="zeroconsultation-content">
         <div class="container ">
             <div class="zeroconsultation-padding-115">
                 <div class=" mt85 text-center">
-                   <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14689883443570">
+                   <img src="http://static.mingyizhudao.com/14689883443570">
                 </div>
                 <div class="mt25 text-20">
                     <div>
@@ -25,7 +23,7 @@
                     </div>
                 </div>
                 <div class="mt85 text-center">
-                   <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146898838869337">
+                   <img src="http://static.mingyizhudao.com/146898838869337">
                 </div>
                 <div class="mt25 text-20">
                     <div>
@@ -35,9 +33,9 @@
                 </div>
             <div class="zeroconsultation-padding-105">
                 <div class="mt85 text-center">
-                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146898839303827">
+                    <img src="http://static.mingyizhudao.com/146898839303827">
                 </div>
-                <div class="mt25 text-center"><img style="" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146898931533930"></div>
+                <div class="mt25 text-center"><img style="" src="http://static.mingyizhudao.com/146898931533930"></div>
                 <div class="mt10 text-20">
                     <div style="width:20%;float:left;padding-right: 20px;" class=" text-center">
                         <div>扫描下方二维码</div>
@@ -62,9 +60,9 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="mt85 text-center">
-                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146898839689952">
+                    <img src="http://static.mingyizhudao.com/146898839689952">
                 </div>
-                <div class="text-center mt25 mb50"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146898504737557"></div>
+                <div class="text-center mt25 mb50"><img src="http://static.mingyizhudao.com/146898504737557"></div>
             </div> 
         </div>
     </div>
