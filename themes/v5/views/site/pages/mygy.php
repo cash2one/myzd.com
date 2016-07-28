@@ -1,20 +1,20 @@
 <?php
-$this->pageTitle='名医公益联盟,公益手术申请_名医主刀网';
+$this->pageTitle = '名医公益联盟,公益手术申请_名医主刀网';
 $this->htmlMetaKeywords = '公益联盟,公益手术,名医主刀网';
-$this->htmlMetaDescription ='名医公益联盟是名医主刀倡导发起,并联合公益组织,医生共建的一种可持续公益模式,旨在让更多患者有机会接受更好的治疗。希望通过名医公益联盟,汇聚社会爱心力量,帮助贫困患者解决“好看病,看好病”的切实需求。';
+$this->htmlMetaDescription = '名医公益联盟是名医主刀倡导发起,并联合公益组织,医生共建的一种可持续公益模式,旨在让更多患者有机会接受更好的治疗。希望通过名医公益联盟,汇聚社会爱心力量,帮助贫困患者解决“好看病,看好病”的切实需求。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDownloads = $this->createUrl('site/downLoadFile', array('fileName' => ''));
 $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
 $urlCommonwealDoctors = $this->createUrl('api/commonwealdoctors');
 $urlDoctorView = $this->createUrl('doctor/view');
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/mygy.min.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/mygy100.min.css");
 $this->checkVendor(AppLog::SITE_MYGY);
 $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
 ?>
 <div class="container-fluid">
     <div class="row">
         <div class="mygy-header">
-            <div class="text-center"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146163981184576"></div>
+            <div class="text-center"><img src="http://static.mingyizhudao.com/146163981184576"></div>
         </div>
     </div>
 </div>
@@ -38,28 +38,28 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
             <div class="text-center service-header mt40"><span class="short-line"></span><span class="content">服务流程</span><span class="short-line"></span></div>
             <div class="service-line"> 
             </div>
-            <div class="text-center mt20 mb20 service-line-img"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14671984566685"></div>
+            <div class="text-center mt20 mb20 service-line-img"><img src="http://static.mingyizhudao.com/14671984566685"></div>
 
-            <div class="mt40"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146718242234110"><span class="mygy-small-title">免支付专家会诊费</span></div>
+            <div class="mt40"><img src="http://static.mingyizhudao.com/146718242234110"><span class="mygy-small-title">免支付专家会诊费</span></div>
             <div class="row">
                 <div class="col-sm-7">
-                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3305')) ?>" target="_blank">
+                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '2926')) ?>" target="_blank">
                         <div class="recommend-expert">
-                            <div><img class="recommend-icon" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146718266929627"></div>
+                            <div><img class="recommend-icon" src="http://static.mingyizhudao.com/146718266929627"></div>
                             <div class="pb10 expert-info">
                                 <div class="row">
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/146457623247028.jpg" alt="韩宝三"/></div></div>
+                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/60E4CB6914FEC60539366533DA8E64DA" alt="陈欣欣" title="陈欣欣"/></div></div>
                                     <div class="col-md-4 mt25 expertdesc">
-                                        <div><strong>韩宝三</strong><span class="ml10">主任医师</span></div>
-                                        <div class="color-green mt10">普外科</div>
-                                        <div class="mt10">上海新华医院</div>
+                                        <div><strong>陈欣欣</strong><span class="ml10">主任医师</span><span class="ml10">教授</span></div>
+                                        <div class="color-green mt10">心脏中心</div>
+                                        <div class="mt10">广州市妇女儿童医疗中心</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="recommend-content">
-                                <div><strong>推荐理由</strong>：医学博士，博士后，上海新华医院主任医师。国内知名乳腺肿瘤整形外科手术专家，中国抗癌协会乳腺癌专业委员会青年委员，中国抗癌协会会员，海峡两岸医药交流委员会海西乳腺手术学组副主委兼秘书长。韩医师近年所倡导的“微创、精准、精美、精心”的乳腺外科手术学理念和新技术受邀在国内60多个学术会议演讲并被广泛借鉴，在国内30多家医院进行过手术示教。为了更好的关爱女性，关爱乳腺健康，韩医师更投身公益事业，作为名医主刀的签约专家，韩医师在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，为有需要的患者免费救治。</div>
-                                <div class="mt20"><strong>擅长手术</strong>：乳腺良恶性肿瘤的早期诊断；微创、精准、美学前提下的乳腺癌根治性手术、保乳手术和术后乳房重建；践行乳腺癌规范的化疗、内分泌和靶向治疗等综合治疗；乳腺癌一期保乳或联合乳房重建。</div>
+                                <div><strong>推荐理由</strong>：医学博士，心脏中心主任，广州市妇女儿童医疗中心主任医师。从事小儿先天性心脏病的外科治疗工作二十余年，具有丰富的临床经验。主刀的心脏病例超4000例，效果优良。陈医师帮助国内40多家医院开展复杂先心病外科治疗工作，其临床工作达到国内先进水平，部分技术居于国内领先地位。作为名医主刀的签约专家，陈医师积极投身公益事业，在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望让更多的宝宝拥有健康的心脏。。</div>
+                                <div class="mt20"><strong>擅长手术</strong>：大动脉转位、完全性房室通道、完全性肺静脉异位引流、肺动脉闭锁、主动脉缩窄及主动脉弓离断等重症先心病的外科治疗。</div>
                             </div>
                         </div>
                     </a>
@@ -83,11 +83,11 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
             <div class="commonwealexpert mt30 clearfix">       
             </div>
             <div class="text-right mt5 learn-more-expert"><a href="<?php echo $this->createUrl('site/page', array('view' => 'mygyexpert')); ?>" target="_blank">查看更多专家&gt;&gt;</a></div>
-            <div class="mt30"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146718242194824"><span class="mygy-small-title">免费术前方案评估</span></div>
+            <div class="mt30"><img src="http://static.mingyizhudao.com/146718242194824"><span class="mygy-small-title">免费术前方案评估</span></div>
             <div class="mingyiyizhenexpert clearfix"></div>
             <div class="text-right mt5 learn-more-expert"><a href="<?php echo $this->createUrl('event/view', array('page' => 'mingyiyizhen')); ?>" target="_blank">查看更多专家&gt;&gt;</a></div>
 
-            <div class="mt40"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146718242150047"><span class="mygy-small-title">一万元人民币资助</span></div>
+            <div class="mt40"><img src="http://static.mingyizhudao.com/146718242150047"><span class="mygy-small-title">一万元人民币资助</span></div>
             <div class="bg-white">
                 <div class="row">
                     <div class="col-sm-6">
@@ -110,9 +110,9 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
         </div>
         <div class="container pr0">
             <!--            <div class="mygy-cooperation">
-                            <div class="text-center cooperation-header"><span class="short-line"></span><span class="vertical-line"></span><span class="content"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14641698902646"></span><span class="vertical-line"></span><span class="short-line"></span></div>
+                            <div class="text-center cooperation-header"><span class="short-line"></span><span class="vertical-line"></span><span class="content"><img src="http://static.mingyizhudao.com/14641698902646"></span><span class="vertical-line"></span><span class="short-line"></span></div>
                         </div>-->
-            <div class="mt40"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146718241986487"></div>
+            <div class="mt40"><img src="http://static.mingyizhudao.com/146718241986487"></div>
             <div class="mygy-cooperation-area mt10">
                 <div class="text-center cooperation"><div class="cooperation-one"></div><div class="cooperation-name">爱永纯</div></div>
                 <div class="text-center cooperation"><div class="cooperation-two"></div><div class="cooperation-name">柏惠维康</div></div>
@@ -172,9 +172,9 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
                 var hpDeptName = doctor.hpDeptName == null ? "&nbsp;" : doctor.hpDeptName;
                 var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
                 innerHtml += '<a href="' + urlDoctorView + "?id=" + doctor.id + "&is_commonweal=1" + '" target="_blank"><div class="expertList pull-left ' + last + '">' +
-                        '<div class="text-right"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146718708459637" /></div>' +
+                        '<div class="text-right"><img src="http://static.mingyizhudao.com/146718708459637" /></div>' +
                         '<div class="pb20 expert-info">' +
-                        '<div><img class="img100" src="' + doctor.imageUrl + '" /></div>' +
+                        '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '"/></div>' +
                         '<div class="text-center"><strong>' + doctor.name + '</strong><span class="ml10">' + doctor.mTitle + ' ' + aTitle + '</span></div>' +
                         '<div class="text-center color-green mt5">' + hpDeptName + '</div>' +
                         '<div class="text-center mt5 text12">' + doctor.hpName + '</div>' +
@@ -222,7 +222,7 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
                 var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
                 innerHtml += '<a href="' + urlDoctorView + "?id=" + doctor.id + "&is_commonweal=1" + '" target="_blank"><div class="expertList pull-left ' + last + '">' +
                         '<div class="pb20 expert-info">' +
-                        '<div><img class="img100" src="' + doctor.imageUrl + '" /></div>' +
+                        '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '"/></div>' +
                         '<div class="text-center"><strong>' + doctor.name + '</strong><span class="ml10">' + doctor.mTitle + ' ' + aTitle + '</span></div>' +
                         '<div class="text-center color-green mt5">' + hpDeptName + '</div>' +
                         '<div class="text-center mt5 text12">' + doctor.hpName + '</div>' +
