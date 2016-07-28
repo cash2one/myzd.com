@@ -1,8 +1,8 @@
 <?php
-$this->pageTitle='手术直通车真实案例,患者故事_名医主刀网';
+$this->pageTitle = '手术直通车真实案例,患者故事_名医主刀网';
 $this->htmlMetaKeywords = '患者故事,手术直通车,名医主刀网';
-$this->htmlMetaDescription ='让每一位患者在名医主刀“好看病，看好病”是我们不变的宗旨,名医主刀可以给患者带去更多的希望,不仅可以帮助患者尽快预约到专家,还能大大节省患者等待床位的时间,让患者得到最快的治疗。';
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/operation.min.css?v=" . time());
+$this->htmlMetaDescription = '让每一位患者在名医主刀“好看病，看好病”是我们不变的宗旨,名医主刀可以给患者带去更多的希望,不仅可以帮助患者尽快预约到专家,还能大大节省患者等待床位的时间,让患者得到最快的治疗。';
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/operation100.min.css");
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/zhitongche.js', CClientScript::POS_END);
 
 $urlFindDoctor = $this->createUrl('doctor/top', array('disease_sub_category' => 1));
@@ -28,7 +28,7 @@ $urlReturn = '';
                         <div class="col-md-4 mt15 ">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'firstaid')); ?>">
                                 <div class="every-story">
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146374348524210" /></div>
+                                    <div><img src="http://static.mingyizhudao.com/146374348524210" alt="8小时冒雪夜行驰援，医者仁心只为救死扶伤" title="8小时冒雪夜行驰援，医者仁心只为救死扶伤"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10">疾病名称：脊柱粉碎性骨折脱位</div>
                                         <div class="introduce mt20">2015年12月25日上午为其联系到青大附院的骨科主任、山东省医学会骨科分会脊柱外科学组组长陈柏华。而这仅仅离求助信息发布仅2小时。陈教授雪夜驰援...</div>
@@ -40,7 +40,7 @@ $urlReturn = '';
                         <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'kangai')); ?>">
                                 <div class="every-story">
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146374348541839" /></div>
+                                    <div><img src="http://static.mingyizhudao.com/146374348541839" alt="父亲两次抗癌,只为给女儿更久的爱" title="父亲两次抗癌,只为给女儿更久的爱"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10">疾病名称：喉部鳞状细胞癌</div>
                                         <div class="introduce mt20">孟先生手术非常成功，这次郭院长给出的手术方案与孟先生当地医院给出的手术方案完全不同，避免了锯开下颌骨进行手术的高风险，让孟先生的女儿觉得无比欣慰和感激。...</div>
@@ -52,7 +52,7 @@ $urlReturn = '';
                         <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'hanayideganxiexin')); ?>">
                                 <div class="every-story">
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146374348551782" /></div>
+                                    <div><img src="http://static.mingyizhudao.com/146374348551782" alt="韩阿姨的一封感谢信照亮千万患者就医路" title="韩阿姨的一封感谢信照亮千万患者就医路"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10">疾病名称：先天性心脏病</div>
                                         <div class="introduce mt20">韩阿姨尝试了许多方法去医院挂号，每天很早去医院排队，当韩阿姨挂上专家号之后被专家告知需要手术却没有床位的时候，韩阿姨和她家人又一次陷入失望，...</div>
@@ -64,7 +64,7 @@ $urlReturn = '';
                         <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'jiazhuangxian')); ?>">
                                 <div class="every-story">
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146374348559378" /></div>
+                                    <div><img src="http://static.mingyizhudao.com/146374348559378" alt="甲状腺肿瘤患者的求医经历" title="甲状腺肿瘤患者的求医经历"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10">疾病名称：甲状腺肿瘤</div>
                                         <div class="introduce mt20">
@@ -79,7 +79,7 @@ $urlReturn = '';
                         <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'jiazhuanxianjiejie')); ?>">
                                 <div class="every-story ">
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146374348569164" /></div>
+                                    <div><img src="http://static.mingyizhudao.com/146374348569164" alt="当甲状腺结节遇到达芬奇机器人" title="当甲状腺结节遇到达芬奇机器人"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10">疾病名称：甲状腺结节</div>
                                         <div class="introduce mt20">
@@ -93,7 +93,7 @@ $urlReturn = '';
                         <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'coats')); ?>">
                                 <div class="every-story">
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146840054209794" /></div>
+                                    <div><img src="http://static.mingyizhudao.com/146840054209794" alt="我代表“国务院”感谢你" title="我代表“国务院”感谢你"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10">疾病名称：外层渗出性视网膜病变</div>
                                         <div class="introduce mt20">
@@ -107,7 +107,7 @@ $urlReturn = '';
                         <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'lumbardisc')); ?>">
                                 <div class="every-story">
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146840054462360" /></div>
+                                    <div><img src="http://static.mingyizhudao.com/146840054462360" alt="腰疼怎么不是病？" title="腰疼怎么不是病？"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10">疾病名称：腰椎间盘突出</div>
                                         <div class="introduce mt20">
@@ -121,7 +121,7 @@ $urlReturn = '';
                         <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'returnstadium')); ?>">
                                 <div class="every-story">
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146840054500641" /></div>
+                                    <div><img src="http://static.mingyizhudao.com/146840054500641" alt="公益的力量，让他重返球场" title="公益的力量，让他重返球场"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10">疾病名称：左膝前交叉韧带断裂</div>        
                                         <div class="introduce mt20">
@@ -135,7 +135,7 @@ $urlReturn = '';
                         <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'baby')); ?>">
                                 <div class="every-story">
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146840054681090" /></div>
+                                    <div><img src="http://static.mingyizhudao.com/146840054681090" alt="半岁宝宝如何摆脱10厘米肿瘤" title="半岁宝宝如何摆脱10厘米肿瘤"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10">疾病名称：肝母细胞瘤</div>        
                                         <div class="introduce mt20">
@@ -149,7 +149,7 @@ $urlReturn = '';
                         <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'zhizhu')); ?>">
                                 <div class="every-story">
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146840054727485"/></div>
+                                    <div><img src="http://static.mingyizhudao.com/146840054727485"  alt="一个家的支柱倒了，该怎么办？" title="一个家的支柱倒了，该怎么办？"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10 ">疾病名称：右膝关节前脱位</div>
                                         <div class="introduce mt20">
@@ -163,11 +163,25 @@ $urlReturn = '';
                         <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'tick')); ?>">
                                 <div class="every-story">                           
-                                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146882561736947"/></div>
+                                    <div><img src="http://static.mingyizhudao.com/146882561736947" alt="遇蜱虫别慌张，我来教你如何预防" title="遇蜱虫别慌张，我来教你如何预防"/></div>
                                     <div class="story-content">
                                         <div class="text14 mt10 ">疾病名称：蜱虫叮咬</div>
                                         <div class="introduce mt20">
                                             <div>7月11日晚八时许，名医主刀大客户关系部的李洁看到小芳的朋友圈里，发布一条被蜱虫袭击的小童（化名）的求救信息。身为五岁女儿妈妈的李洁看到这个消息...</div>
+                                        </div>
+                                        <div class="learn-more">查看详情</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mt15">
+                            <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'patientchenlin')); ?>">
+                                <div class="every-story">                           
+                                    <div><img src="http://static.mingyizhudao.com/146950188754926" alt="同病不同命" title="同病不同命"/></div>
+                                    <div class="story-content">
+                                        <div class="text14 mt10 ">疾病名称：左肺鳞状细胞癌</div>
+                                        <div class="introduce mt20">
+                                            <div>一样的病，一样的医生，陈先生的治病过程却与老乡大相径庭。互联网时代的到来，让大部分人解决了“好看病”的问题，可是真正需要解决的“看好病”确仍旧...</div>
                                         </div>
                                         <div class="learn-more">查看详情</div>
                                     </div>
@@ -185,7 +199,7 @@ $urlReturn = '';
                         <div>做手术就找名医主刀！</div>
                     </div>
                     <div class="mt15 text-center">
-                        <a target="_blank" href="<?php echo $this->createUrl("site/page", array("view" => 'mygy')); ?>"><div class="ztc-mygy-img"></div></a>
+                        <a target="_blank" href="<?php echo $this->createUrl("site/page", array("view" => 'mygy')); ?>"><div class="ztc-mygy-img" title="公益手术"></div></a>
                     </div>
                     <a href="<?php echo $urlFindDoctor; ?>" target="_black">
                         <div class="ztc-find-expert mt15">
