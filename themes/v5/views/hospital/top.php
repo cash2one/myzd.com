@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/searchhospital.min.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/searchhospital100.min.css");
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchhospital.js?v=' . time(), CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlHopitalSearch = $this->createUrl('hospital/top');
@@ -29,7 +29,7 @@ $page = Yii::app()->request->getQuery('page', '');
 </div>
 <div class="container" id="hospital-list">
     <div class="city-cutover mt20">
-        <span><img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146253292660125"></span><span class="city-name"></span><span class="cutover-btn"></span>
+        <span><img class="mt-5" src="http://static.mingyizhudao.com/146253292660125"></span><span class="city-name"></span><span class="cutover-btn"></span>
     </div>
     <div class="open-city city-list">
         <div class="heading mt5">热门城市<span class="close-btn"></span></div>
@@ -46,7 +46,7 @@ $page = Yii::app()->request->getQuery('page', '');
             <div class="col-sm-2">
                 <div class="border-gray department-list mt20">
                 </div>
-                <div class="mt20 mb20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146242724592795"></a></div>
+                <div class="mt20 mb20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/146242724592795"></a></div>
                 <div class="flowChart">
                     <div class="title">服务流程：</div>
                     <div class="content">
@@ -70,7 +70,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 </div>
             </div>
             <div class="col-sm-10">
-                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146371056784455" class="img-responsive mt20">
+                <a href="<?php echo $this->createUrl('hospital/topHospital')?>" target="_blank"><img class="tophospital-link img-responsive mt20" src="http://static.mingyizhudao.com/146967591025119" /></a>
                 <div class="loading loading02" style="margin-top:100px;"></div>
                 <div class="hospital-list">
 
