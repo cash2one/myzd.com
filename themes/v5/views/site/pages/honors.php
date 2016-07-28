@@ -4,11 +4,11 @@ $this->htmlMetaKeywords = '名医主刀荣誉,名医主刀网';
 $this->htmlMetaDescription = '2016年3月,在由辉瑞中国、中国平安、腾讯、君联资本四大行业代表企业跨界联手主办的医疗合伙人创新合作方案大奖赛上,名医主刀力拔头筹,荣获服务类冠军。';
 $menu = $this->getPageMenu();
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/aboutus100.min.css");
 $urlNews = $this->createUrl('news/page', array("view" => ""));
 ?>
 <div class="container-fluid aboutus-header h400">
-    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625020116117"/>
+    <img src="http://static.mingyizhudao.com/14625020116117"/>
 </div>
 <div class="container-fluid bg-gray-f7">
     <div class="row">
@@ -21,7 +21,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
             <div class="main-content">
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172673436123">
+                        <img src="http://static.mingyizhudao.com/146172673436123">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -36,7 +36,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172673415560">
+                        <img src="http://static.mingyizhudao.com/146172673415560">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -51,7 +51,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172652186866">
+                        <img src="http://static.mingyizhudao.com/146172652186866">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -66,7 +66,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172652153787">
+                        <img src="http://static.mingyizhudao.com/146172652153787">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -81,7 +81,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172639888442">
+                        <img src="http://static.mingyizhudao.com/146172639888442">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -96,7 +96,7 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172651968057">
+                        <img src="http://static.mingyizhudao.com/146172651968057">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">
@@ -104,14 +104,14 @@ $urlNews = $this->createUrl('news/page', array("view" => ""));
                                 2015年11月
                             </div>
                             <div class="content">
-                                <div>在人民日报《健康时报》主办的第八届“健康中国”论坛上，名医主刀荣获<span class="text21">“2015年度互联网+医疗行业创新贡献奖”</span>；名医主刀与滴滴出行、阿里健康共同打造的“滴滴医生”项目获评2015年度十大健康新闻。名医主刀CEO苏舒受到全国人大常委会副委员长陈至立、原卫生部部长高强等领导同志接见。</div>
+                                <div>在人民日报《健康时报》主办的第八届“健康中国”论坛上，名医主刀荣获<span class="text21">“2015年度互联网+医疗行业创新贡献奖”</span>；名医主刀与滴滴出行、阿里健康共同打造的“滴滴医生”项目获评2015年度十大健康新闻。名医主刀CEO苏舒受到全国人大常委会原副委员长陈至立、原卫生部部长高强等领导同志接见。</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="honor row">
                     <div class="col-md-3 col-sm-5">
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172652112799">
+                        <img src="http://static.mingyizhudao.com/146172652112799">
                     </div>
                     <div class="col-md-9 col-sm-7 pl0">
                         <div class="summary">

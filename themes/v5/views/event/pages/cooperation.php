@@ -1,9 +1,9 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-main.min.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-main100.min.css");
 ?>
 <div id="cooperation">
 <div>
-            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14683119356409">
+            <img src="http://static.mingyizhudao.com/14683119356409">
         </div> 
         <div class="container  mt20">
             <div class="cooperation-padding-85">
@@ -17,7 +17,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14683101499410"> </div>
+                        <div><img src="http://static.mingyizhudao.com/14683101499410"> </div>
                         <div class="cooperation-text-12 mt10">美国凯瑟琳癌症中心第五代传人Mr. Grant Kettering、名医主刀创始人兼CEO苏舒</div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 </div>
                 <div class="row mt20">
                     <div class="col-lg-6">
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146831476742078">
+                        <img src="http://static.mingyizhudao.com/146831476742078">
                         <div class="cooperation-text-12 mt10">名医主刀联合创始人兼首席技术馆秦鹏、首席财务官叶菲、创始人兼CEO苏舒</div>
                     </div>
                     <div class="col-lg-6">
@@ -51,8 +51,8 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="row">
                     <div class="col-lg-12 cooperation-text-14 mt20">一百多年来，美国凯瑟琳癌症中心一直专注于各类癌症的研究、诊断与治疗，积累了雄厚卓著的实力，无论是知名医生的团队阵容还是手术方法的突破创新都领跑全美，每年所实施的各类癌症手术数量更是位居美国首位。正因如此，美国凯瑟琳癌症中心成为美国国家总统以及国家领导人的御用医疗机构。</div>
                     <div class="col-lg-12 mt30"style="text-align: center;">
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146831692042525">
-                        <div class="cooperation-text-12 mt10">名医主刀创始人兼CEO 苏舒苏舒、凯瑟琳癌症中心副总裁兼国际合作部总负责人Dr. Brennan、凯瑟琳癌症中心国际合作部行政主管Dr. Noreen</div>
+                        <img src="http://static.mingyizhudao.com/146831692042525">
+                        <div class="cooperation-text-12 mt10">名医主刀创始人兼CEO苏舒、凯瑟琳癌症中心副总裁兼国际合作部总负责人Dr. Brennan、凯瑟琳癌症中心国际合作部行政主管Dr. Noreen</div>
                     </div>
                 </div>
                 <div class="mt30 mb50">
