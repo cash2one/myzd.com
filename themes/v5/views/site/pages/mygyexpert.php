@@ -83,9 +83,9 @@ $this->checkVendor(AppLog::SITE_MYGY);
                     var hpName = doctor.hpName == null ? "&nbsp;" : doctor.hpName;
                     var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
                     innerHtml += '<a href="' + urlDoctorView + "?id=" + doctor.id + "&is_commonweal=1" + '" target="_blank"><div class="mt20 expertList pull-left ' + last + '">' +
-                            '<div class="text-right"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146718708459637" /></div>' +
+                            '<div class="text-right"><img src="http://static.mingyizhudao.com/146718708459637" /></div>' +
                             '<div class="pb20 expert-info">' +
-                            '<div><img class="img100" src="' + doctor.imageUrl + '" /></div>' +
+                            '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '"/></div>' +
                             '<div class="text-center"><strong>' + doctor.name + '</strong><span class="ml10">' + doctor.mTitle + ' ' + aTitle + '</span></div>' +
                             '<div class="text-center color-green mt5">' + hpDeptName + '</div>' +
                             '<div class="text-center mt5 text12">' + hpName + '</div>' +

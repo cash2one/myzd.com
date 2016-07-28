@@ -27,7 +27,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                         <div class="col-md-8">
                             <div class="media ml30">
                                 <div class="media-left media-middle pull-left">
-                                    <img class="media-object doc-img" src="<?php echo $doctor->imageUrl; ?>" alt="<?php echo $doctor->name; ?>">
+                                    <img class="media-object doc-img" src="<?php echo $doctor->imageUrl; ?>" alt="<?php echo $doctor->name; ?>" title="<?php echo $doctor->name; ?>">
                                 </div>
                                 <div class="media-body pl10">
                                     <h1 class="media-heading mt30"><span><?php echo $doctor->name; ?></span><span class="color-gray ml20"><?php echo $doctor->mTitle; ?></span><span class="color-gray ml20"><?php echo $doctor->aTitle == '无' ? '' : $doctor->aTitle; ?></span></h1>
@@ -226,7 +226,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                                         <div class="expInfo ">
                                             <div class="content <?php echo $last; ?>">
                                                 <div class="pull-left mr10" >
-                                                    <img src="<?php echo $relateddoc->imageUrl; ?>"/>
+                                                    <img src="<?php echo $relateddoc->imageUrl; ?>"  alt="<?php echo $relateddoc->name; ?>" title="<?php echo $relateddoc->name; ?>"/>
                                                 </div>	
                                                 <div class="expName pt5"><span class="color-black"><?php echo $relateddoc->name; ?></span>&nbsp;&nbsp;<span class="color-gray"><?php echo $relateddoc->mTitle; ?> <?php echo $relateddoc->aTitle; ?></span></div>
                                                 <div class="expHospital mt10 text-overflow"><?php echo $relateddoc->hpDeptName; ?></div>
@@ -325,7 +325,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
             var userName = comment[i].userName == null ? '&nbsp;' : comment[i].userName;
             var date = comment[i].dateCreated.substr(0, 11);
             var commentText = comment[i].commentText.length > 90 ? comment[i].commentText.substr(0, 90) + '<span class="ellipsis">...</span><span class="dese-last" style="display:none;">' + comment[i].commentText.substr(90) + '</span><div class="dese-operate text-right"><span class="desc-more">展开全部 <i class="fa fa-angle-down"></i></span><span class="desc-retract" style="display:none">收起全部 <i class="fa fa-angle-up"></i></span></div>' : comment[i].commentText;
-            appendHtml += '<div class="pl30 row mt20"><div class = "col-sm-2 pr0"><div class="text-center"><img src = "http://7xsq2z.com2.z0.glb.qiniucdn.com/146822933824594"></div><div class = "text-center text12">' + userName + '</div></div>' +
+            appendHtml += '<div class="pl30 row mt20"><div class = "col-sm-2 pr0"><div class="text-center"><img src = "http://static.mingyizhudao.com/146822933824594"></div><div class = "text-center text12">' + userName + '</div></div>' +
                     '<div class = "col-sm-10"><div class="clearfix"><span>主刀专家：<?php echo $doctor->name; ?></span><span class="ml30">确诊疾病：' + detail + '</span><span class="text12 pull-right color-777">' + date + '</span></div>';
 
             appendHtml += '<div class="mt20"><div class = "comment-desc text12">' + commentText + '</div></div></div>' +

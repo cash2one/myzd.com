@@ -24,7 +24,7 @@ function setDoctorHtml(data, urlDoctorView) {
             innerHtml += '<div class="col-lg-3 col-sm-4 mt30">' +
                     '<a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                     '<div class="border-gray expert-list">' +
-                    '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '"></div>' +
+                    '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '"></div>' +
                     isContractedImg + academicianImg + robotImg + isMingyiyizhenImg +
                     '<div class="text-center"><span class="strong">' + doctor.name + '</span>&nbsp;' +
                     '<span class="text-center mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</span></div>' +
