@@ -1339,4 +1339,24 @@ abstract class EMongoDocument extends EMongoEmbeddedDocument
 
 		return $criteria;
 	}
+	
+	public function getAutoincrementalId($autoSetMongoId = true)
+	{
+	    $primaryKey=$this->primaryKey();
+	    if(is_array($primaryKey)) { $primaryKey = $primaryKey[0]; } // 如果是复合主键那么采用第一个就好了
+	    $command = array(
+	        'findAndModify' => 'autoIncreaseIds', // 这个名称也可以单独存出了来，这个就是主键集了
+	        'update' => array('$inc' => array($this->primaryKey() => 1 )),
+	        'query' => array('name' => $this->getCollectionName()),
+	        'new' => true,
+	        'upsert' => true
+	    );
+	    $res = $this->getDb()->command($command);
+	    $autoIncreaseId = null;
+	    if(isset($res['value'][$primaryKey])) {
+	        $autoIncreaseId = $res['value'][$primaryKey];
+	        if(false !== $autoSetMongoId) { $this->_id = $autoIncreaseId; } // 这里是我们的特殊需求了，需要将自增ID映射到_id，然后查询的时候再映射回来
+	    }
+	    return $autoIncreaseId;
+	}
 }

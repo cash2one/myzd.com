@@ -4,6 +4,7 @@ class TestMongo extends EMongoDocument
      public $login;
         public $name;
         public $pass;
+        public $autoId;
 	public $z;   
         // This has to be defined in every model, this is same as with standard Yii ActiveRecord
         public static function model($className=__CLASS__)
@@ -18,6 +19,7 @@ class TestMongo extends EMongoDocument
        }
 		public function addInfo() {
         $this->z='1234';
+        $this->autoId = $this->getAutoIncreaseId();
         $this->save();
     }
        public function rules()
