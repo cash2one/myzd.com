@@ -19,7 +19,7 @@ class TestMongo extends EMongoDocument
        }
 		public function addInfo() {
         $this->z='1234';
-        $this->autoId = $this->getAutoIncreaseId();
+        $this->autoId = $this->getAutoincrementalId();
         $this->save();
     }
        public function rules()
