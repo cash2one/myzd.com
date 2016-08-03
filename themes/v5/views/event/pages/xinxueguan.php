@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-xinxueguan.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-xinxueguan100.min.css");
 ?>
 <div class="container-fluid">
     <div class="row">
@@ -30,7 +30,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             </div>
             <div class="col-md-6 col-sm-12 girl">
                 <div class="pl20">
-                    <img src="<?php echo $urlResImage; ?>event/xinxueguan/girl.png" />
+                    <img src="http://static.mingyizhudao.com/147013913939012" />
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
         <div class="xinxueguan-title">怎样预防心脑血管疾病突发？</div>
         <div class="title-sm"><span class="title-no">(1)</span><span class="title-content">“魔鬼时间” 慎起居</span></div>
         <p><span class="color-green">上午6时～12时</span>被医学家喻为是心脑血管病的“魔鬼时间”，70%～80%的心脑血管病猝发都在此时。因此，<span class="color-green">锻炼要避开这段时间。</span></p>
-        <p class="time"><img src="<?php echo $urlResImage; ?>event/xinxueguan/time.png" /></p>
+        <p class="time"><img src="http://static.mingyizhudao.com/147013913944097" /></p>
         <div class="title-sm"><span class="title-no">(2)</span><span class="title-content">饮食清淡，红黄绿白黑搭配好</span></div>
         <div class="row">
             <div class="col-md-5 col-sm-8">
@@ -53,7 +53,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 </div>
             </div>
             <div class="col-md-7 col-sm-4">
-                <img src="<?php echo $urlResImage; ?>event/xinxueguan/food.png" />
+                <img src="http://static.mingyizhudao.com/14701391388487" />
             </div>
         </div>
         <div class="row mt50">
@@ -143,7 +143,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-md-6 col-sm-12">
                 <div class="border-gary pad20 expert-content">
                     <a href="<?php echo $this->createUrl('doctor/view', array('id' => '88')); ?>">
-                        <img src="<?php echo $urlResImage; ?>doc-images/xujianping.png"/>
+                        <img src="http://static.mingyizhudao.com/147013919509270"/>
                         <div class="mt10"><span class="ename">许建屏</span> <span class="color-gray">主任|教授</span></div>
                         <div class="color-gray text12">北京阜外医院</div>
                         <div class="color-yellow">心血管外科国内前三甲</div>

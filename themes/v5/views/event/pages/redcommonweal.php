@@ -3,11 +3,11 @@ $this->pageTitle = '互联网手术中心落地延安_名医主刀网';
 $this->htmlMetaKeywords = '互联网手术中心,延安大学附属医院';
 $this->htmlMetaDescription = '近日,中国最大的移动医疗手术平台-“名医主刀”与延安大学附属医院成功签约,双方将以延安大学附属医院为区域手术基地, 合作共建延安市第一家互联网手术中心。此举也标志着名医主刀“红色公益之旅”大型活动正式启动。    ';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-main.min.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-main100.min.css");
 ?>
 <section id="redcommonweal">
     <div class="redcommonweal-bgcolor">
-        <div class="redcommonweal-picture-move"><img class="redcommonweal-picture-height" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146414797634589" alt=""/></div>
+        <div class="redcommonweal-picture-move"><img class="redcommonweal-picture-height" src="http://static.mingyizhudao.com/146414797634589" alt=""/></div>
     </div>
     <div class="container">
         <div class="mt20">
@@ -20,7 +20,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                             思泉教授为延安23位白内障患者展开公益手术，帮助他们恢复视力。同时，名医主刀和复星公益基金联合为每位患者捐赠1000元手术费，
                             让患者切实感受到公益力量的温暖。
                         </div>
-                        <div class="mt20"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146414797581681" alt=""/></div>
+                        <div class="mt20"><img src="http://static.mingyizhudao.com/146414797581681" alt=""/></div>
                     </div>
                     <div class="col-sm-6">
                         <div class="redcommonweal-text-litle mt10">
@@ -28,7 +28,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                             当地人民看好病的成本高。针对这一现状，名医主刀将以互联网手术中心为载体，采用“名医铸刀”模式，一方面提升地方医疗服务水准，
                             另一方面让延安当地患者享受到权威专家的手术治疗，患者可以大病不出市，切实享受到分级诊疗的红利。
                         </div>
-                        <div class="mt40"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146414797606044" alt=""/></div>
+                        <div class="mt40"><img src="http://static.mingyizhudao.com/146414797606044" alt=""/></div>
                     </div>
                 </div>
             </div>
@@ -43,14 +43,14 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                             据了解，由于优质医疗资源分布的不均衡，医疗资源紧张所导致的看病难、看病贵等问题十分突出。因而，实施以分级诊疗制度为核心的医疗
                             改革就显得尤为迫切。以做手术这领域为突破口，“名医主刀”通过优化名医资源配置来盘活整个分级诊疗链条，让普通患者也能享受到名医的医疗服务。                                
                         </div>
-                        <div class="mt20"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146414797615289" alt=""/></div>
+                        <div class="mt20"><img src="http://static.mingyizhudao.com/146414797615289" alt=""/></div>
                     </div>
                     <div class="col-sm-6 mb50">
                         <div class="redcommonweal-text-litle mt20">
                             专家指出，“名医主刀”的模式真正促成了优质医疗资源下沉，让北京、上海等大城市优质医院与地方医疗机构合作，省级医疗机构与地市县医疗机构对接，实现了优
                             质医疗资源的再分配，对推动分级诊疗、医师多点执业政策全面落地将发挥重要的助推作用。
                         </div>
-                        <div class="mt20 "><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146414797623939" alt=""/></div>
+                        <div class="mt20 "><img src="http://static.mingyizhudao.com/146414797623939" alt=""/></div>
                     </div>
                 </div>
             </div>

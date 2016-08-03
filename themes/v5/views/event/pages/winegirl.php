@@ -1,10 +1,10 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-winegirl.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-winegirl100.min.css");
 ?>
 <div class="container-fluid">
     <div class="row">
-        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146071446098199">
+        <img src="http://static.mingyizhudao.com/146071446098199">
     </div>
 </div>
 <div class="container" id="winegirl">
@@ -23,7 +23,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     <div class="mt20">媒体报道后，程欣家人收到很多权威医院发来的治疗方案，全家人慎重考虑后，最终选择了名医主刀战略合作伙伴 -- “医诺千金”公益项目提供的机器人微创治疗方案。</div>
                 </div>
                 <div class="col-md-4">
-                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146408840407057">
+                    <img src="http://static.mingyizhudao.com/146408840407057">
                 </div>
             </div>
             <div>机器人微创治疗方案使用的是名医主刀战略合作伙伴Remebot神经外科手术机器人，结合了放射影像学、计算机图像图形学、机器人学、立体定向技术和神经外科学等众多学科，协助医生实现微创的无框架立体定向手术，研发历史长达18年，期间累积了两万多例手术病例，其中包含上千例扭转痉挛患者。</div>
@@ -32,31 +32,31 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div>2016年3月17日，在北京大学国际医院，田教授为小程欣实施手术。<span class="text-gray7">（摄影新华社-陈哗华）</span></div>
             <div class="row">
                 <div class="col-md-6 mt10">
-                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146408840429527"></div>
+                    <div><img src="http://static.mingyizhudao.com/146408840429527"></div>
                     <div class="mt10 mb10">一切准备就绪，田教授为小程欣实施机器人辅助立体定向微创手术。</div>
                 </div>
                 <div class="col-md-6 mt10">
-                    <div class="text-right"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146408840448284"></div>
+                    <div class="text-right"><img src="http://static.mingyizhudao.com/146408840448284"></div>
                     <div class="img-undertext">制定手术规划，从两个入颅点进入，分别抵达四个靶点。</div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146408840465766"></div>
+                    <div><img src="http://static.mingyizhudao.com/146408840465766"></div>
                     <div class="mt10 mb10">在Remebot机器人操作平台辅助下，针对病灶实施核团毁损。</div>
                 </div>
                 <div class="col-md-6">
-                    <div class="text-right"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146408840486475"></div>
+                    <div class="text-right"><img src="http://static.mingyizhudao.com/146408840486475"></div>
                     <div class="img-undertext">四个靶点均准确抵达，手术共耗时一个半小时。</div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146408840519122"></div>
+                    <div><img src="http://static.mingyizhudao.com/146408840519122"></div>
                     <div class="mt10">历经一个半小时，手术顺利完成，程欣术后生命体征平稳无并发症，<br/>只留下2个小于3mm的手术创口</div>
                 </div>
                 <div class="col-md-6">
-                    <div class="text-right"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146408840540957"></div>
+                    <div class="text-right"><img src="http://static.mingyizhudao.com/146408840540957"></div>
                     <div class="img-undertext">术后程欣部分症状有所恢复，呛咳减小、肌张力降低、疼痛感减轻、<br/>用药明显减少，手术符合预期效果。</div>
                 </div>
             </div>
@@ -64,10 +64,10 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="mb10">Remebot医疗机器人不仅具有微创、精准、高效的特点，而且适用领域广泛，其末端搭载的多功能操作平台支持如活检、抽吸、毁损、植入、放疗等多种操作，适用于12类近百种神经外科疾病，如脑出血、脑囊肿、帕金森病、癫痫、三叉神经痛等，以及程欣所患的扭转痉挛。</div>
             <div class="row">
                 <div class="col-sm-6">
-                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146408840564084">
+                    <img src="http://static.mingyizhudao.com/146408840564084">
                 </div>
                 <div class="col-sm-6 text-right">
-                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146408840572169">
+                    <img src="http://static.mingyizhudao.com/146408840572169">
                 </div>
             </div>
             <div class="mt10">它是目前世界上最先进的神经外科辅助定位系统， 将手术计划系统、导航功能及机器人辅助器械定位和操作系统（可提供触觉反馈即高级的可视化功能）整合于一体，并借以高精准度、低侵入性、大范围定位、简化操作，使手术入路不再受限制，大量节省术前、术中操作时间，将患者的创伤、手术风险和痛苦降至最低程度，开创了立体定位技术的里程碑。Remebot医疗机器人多应用于癫痫、帕金森等对精确度要求极高的手术，目前我国仅在北京306院、天坛普华医院、天坛医院、北京彭胜医院、北大国际医院配备此设备。</div>

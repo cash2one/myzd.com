@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-nationalday.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-nationalday100.min.css");
 ?>
 <div class="container">
     <div class="nationalday-hreder">
@@ -74,13 +74,13 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
         </div>
     </div>
     <div class="line">
-        <img src="<?php echo $urlResImage; ?>event/nationalday/line.png"/>
+        <img src="http://static.mingyizhudao.com/147013745260088"/>
     </div>
     <div class="tixing">
         <div class="tixing-header">名医专家提醒你</div>
         <div class="color-green">上止血带前，在肢体无骨折的情况下，先要将伤肢抬高，尽量使静脉血回流，减少出血量，并严格遵守下列要求：</div>
         <div class="row mt40">
-            <div class="col-sm-2"><img src="<?php echo $urlResImage; ?>event/nationalday/doctor.png"/></div>
+            <div class="col-sm-2"><img src="http://static.mingyizhudao.com/147013745247082"/></div>
             <div class="col-sm-4 border-right">
                 <div class="yaoqiu"><span>01</span>止血带不直接与皮肤接触，利用棉织品做衬垫。</div>
                 <div class="yaoqiu mt20"><span>02</span>上止血带松紧要合适，以止血后远端不再大量出血为准，越松越好。</div>

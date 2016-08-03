@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-tumor.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-tumor100.min.css");
 ?>
 <style>
     .tumor-dis{padding-left: 15px;}
@@ -76,7 +76,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <div class="eteam-info">
                             <div class="expert-content">
                                 <a href="<?php echo $this->createUrl('doctor/view', array('id' => '83')); ?>">
-                                    <img src="<?php echo $urlResImage; ?>doc-images/gujin.png"/>
+                                    <img src="http://static.mingyizhudao.com/147013769214787"/>
                                     <div class="mt10"><span class="ename">顾晋</span> <span class="color-gray">主任|教授</span></div>
                                     <div class="color-gray text12">北京肿瘤医院</div>
                                     <div class="color-yellow">结直肠癌顶级专家团队,美国外科学院院士</div>

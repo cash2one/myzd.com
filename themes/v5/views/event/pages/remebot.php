@@ -3,13 +3,13 @@ $this->pageTitle = 'Remebot机器人微创手术_名医主刀网';
 $this->htmlMetaKeywords = 'Remebot机器人,机器人微创手术';
 $this->htmlMetaDescription = 'Remebot作为我国18年自主研发的神经外科手术机器人,经历了15年的临床探索和6次产品迭代,先后治愈上万名患者,无论在技术还是应用层面,都处于行业领先地位。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-remebot.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-remebot100.min.css");
 ?>
 <section id="remebot">
     <div class="header">
         <div class="container-fluid">
             <div class="row">
-                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146071635621527"/>
+                <img src="http://static.mingyizhudao.com/146071635621527"/>
             </div>
         </div>
     </div>
@@ -27,10 +27,10 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <div>Remebot作为我国18年自主研发的神经外科手术机器人，经历了15年的临床探索和6次产品迭代，先后治愈上万名患者，无论在技术还是应用层面，都处于行业领先地位。</div>
                     </div>
                     <div class="col-sm-5 text-right pl0">
-                        <img class="mt10" src="<?php echo $urlResImage; ?>/event/remebot/picture1.png">
+                        <img class="mt10" src="http://static.mingyizhudao.com/147013807485728">
                     </div>
                 </div>
-                <div class="mt50"><span class="title">走进Remebot医疗机器人</span><img src="<?php echo $urlResImage; ?>event/remebot/div.png">
+                <div class="mt50"><span class="title">走进Remebot医疗机器人</span><img src="http://static.mingyizhudao.com/147013807361867">
                     <div class="title-line-s"></div>
                 </div>
                 <div class="row mt30">
@@ -41,10 +41,10 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <div>摄像头则像人的“双眼”，可实时捕捉机械臂和患者的位置信息，确保机械臂按手术规划路径运动到指定位置。</div>
                     </div>
                     <div class="col-sm-5">
-                        <img src="<?php echo $urlResImage; ?>/event/remebot/picture2.png">
+                        <img src="http://static.mingyizhudao.com/147013807516141">
                     </div>
                 </div>
-                <div class="mt50"><span class="title">六大核心功能</span><img src="<?php echo $urlResImage; ?>event/remebot/div.png">
+                <div class="mt50"><span class="title">六大核心功能</span><img src="http://static.mingyizhudao.com/147013807361867">
                     <div class="title-line-s"></div>
                 </div>
                 <div class="mt20 text15">六大核心功能帮助医生微创、精准、高效地执行手术操作。</div>
@@ -66,7 +66,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="core mt20">
                     <div class="pull-left blue-area"></div><div class="pull-left text-area"><div class="mt10 pl10"><strong>病灶体积计量</strong></div><div class="mt10 pl10">手术规划软件自动计算医生勾勒的病灶体积，供医生手术参考与传统手术相比优势显著</div></div><div class="clearfix"></div>
                 </div>
-                <div class="mt50"><span class="title">与传统手术相比优势显著</span><img src="<?php echo $urlResImage; ?>event/remebot/div.png">
+                <div class="mt50"><span class="title">与传统手术相比优势显著</span><img src="http://static.mingyizhudao.com/147013807361867">
                     <div class="title-line-s"></div>
                 </div>
                 <div class="mt30">Remebot 医疗机器人的六大核心功能保障了手术的微创、精准、高效。机器人辅助的手术平均用时仅30分钟，定位精度达到1mm，患者创口小于2mm，住院观察2~3天即可出院。</div>
@@ -85,41 +85,41 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                             <tr><td>手术费用</td><td>高</td><td>较低</td><td>较低</td></tr></tbody>
                     </table>
                 </div>
-                <div class="mt50"><span class="title">简单操作流程</span><img src="<?php echo $urlResImage; ?>event/remebot/div.png">
+                <div class="mt50"><span class="title">简单操作流程</span><img src="http://static.mingyizhudao.com/147013807361867">
                     <div class="title-line-s"></div>
                 </div>
                 <div class="row mt30">
                     <div class="col-sm-6">
-                        <div><img src="<?php echo $urlResImage; ?>/event/remebot/step01.png"></div>
+                        <div><img src="http://static.mingyizhudao.com/147013807528883"></div>
                         <div class="mt5">第一步，患者贴上Remebot专用标志点，进行CT/MRI医学影像扫描。<span class="color-blue">手术规划软件会自动合成患者颅部的三维模型和冠状图、矢状图</span>，辅助医生诊断并制定手术方案。</div>
                     </div>
                     <div class="col-sm-6">
-                        <div><img src="<?php echo $urlResImage; ?>/event/remebot/step02.png"></div>
+                        <div><img src="http://static.mingyizhudao.com/147013807551410"></div>
                         <div class="mt5">第二步，医生选择图像，勾勒出病灶的轮廓，<span class="color-blue">手术规划软件实时展示病灶形状、位置及大小</span>。</div>
                     </div>
                 </div>
                 <div class="row mt20">
                     <div class="col-sm-6">
-                        <div><img src="<?php echo $urlResImage; ?>/event/remebot/step03.png"></div>
+                        <div><img src="http://static.mingyizhudao.com/147013807610913"></div>
                         <div class="mt5">第三步，医生观察病灶，确定穿刺靶点，<span class="color-blue">然后根据病灶周边的环境选择最佳的入颅角度</span>，完成手术规划。</div>
                     </div>
                     <div class="col-sm-6">
-                        <div><img src="<?php echo $urlResImage; ?>/event/remebot/step04.png"></div>
+                        <div><img src="http://static.mingyizhudao.com/147013807634149"></div>
                         <div class="mt5">第四步，<span class="color-blue">手术注册是为了确定脑、眼、手三部分的位置关系</span>，并计算出机械臂的运动路径。其中，机器人注册是摄像头和机械臂建立关系，患者注册则是摄像头与患者建立关系。</div>
                     </div>
                 </div>
                 <div class="row mt20">
                     <div class="col-sm-6">
-                        <div><img src="<?php echo $urlResImage; ?>/event/remebot/step05.png"></div>
+                        <div><img src="http://static.mingyizhudao.com/147013807660891"></div>
                         <div class="mt5">第五步，医生在软件上模拟走位，确认无误后机器人走位，标记入颅点。撤离机械臂，对患者进行术前消毒，<span class="color-blue">机器人二次走位锁定入颅点</span>。</div>
                     </div>
                     <div class="col-sm-6">
-                        <div><img src="<?php echo $urlResImage; ?>/event/remebot/step06.png"></div>
+                        <div><img src="http://static.mingyizhudao.com/147013807703759"></div>
                         <div class="mt5">最后，<span class="color-blue">医生在机械臂末端安装作为手术操作平台的导向器</span>，用钻头在入颅点开1个2mm以内的小孔，换上适配的手术针，沿导向器将针推送至底部即为手术规划的路径和靶点位置。</div>
                     </div>
                 </div>
                 <div class="mt20 text15">看似简短的几步操作，实际上经历了十几年的临床摸索和上万次的手术验证，方达到化繁为简的效果。</div>
-                <div class="mt50"><span class="title">机器人手术的适用症</span><img src="<?php echo $urlResImage; ?>event/remebot/div.png">
+                <div class="mt50"><span class="title">机器人手术的适用症</span><img src="http://static.mingyizhudao.com/147013807361867">
                     <div class="title-line-s"></div>
                 </div>
                 <div class="mt20">Remebot医疗机器人搭载多功能操作平台，<span class="color-blue">可进行活检、抽吸、毁损、移植、放疗等操作，适用于12类近百种神经外科疾病</span>。下表将其分为功能性和器质性颅脑疾患，涵盖脑出血、脑囊肿、帕金森病、癫痫、三叉神经痛等。</div>
@@ -139,12 +139,12 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <tr><td>颅内深部肿瘤、脓肿、小病灶等切除术中辅助立体定位</td></tr>
                     </table>
                 </div>
-                <div class="mt50"><span class="title">Remebot：18年来不断摸索</span><img src="<?php echo $urlResImage; ?>event/remebot/div.png">
+                <div class="mt50"><span class="title">Remebot：18年来不断摸索</span><img src="http://static.mingyizhudao.com/147013807361867">
                     <div class="title-line-s"></div>
                 </div>
                 <div class="mt20">早在2005年，机器人辅助的无框架定位技术即获得国家认可，进入了北京市定点医保范围。这意味着患者将来不仅可以享受高端技术带来的便利，而且还能极大缓解手术带来的经济压力。</div>
                 <div class="text-center">
-                    <img class="mt10" src="<?php echo $urlResImage; ?>/event/remebot/table.png">
+                    <img class="mt10" src="http://static.mingyizhudao.com/14701380776270">
                 </div>
                 <div class="text-center mt50">
                     <span class="white-block"></span><span class="big-title">相关医生推荐</span><span class="white-block-s"></span>                         

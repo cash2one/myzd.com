@@ -1,18 +1,21 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-mingyiyizhen.min.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-mingyiyizhen100.min.css");
 $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
 $urlDoctorView = $this->createUrl('doctor/view', array('id' => ''));
 $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
+$this->pageTitle = '名医义诊,免费术前方案评估_名医主刀网';
+$this->htmlMetaKeywords = '名医义诊,名医主刀';
+$this->htmlMetaDescription = '名医义诊,免费术前方案评估,现约现看！';
 ?>
 <div class="container-fluid">
     <div class="row">
-        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403608557" class="img-responsive w100">
+        <img src="http://static.mingyizhudao.com/146140403608557" class="img-responsive w100">
     </div>
 </div>
 <div class="container" id="mingyiyizhen">
     <div class="city-search">
-        <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146140403634015"><span class="city-name ml10">城市：</span><span><a class="mr20 city active all" data-id="">全部</a><a class="mr20 city" data-id="1">北京</a><a class="mr20 city" data-id="73">上海</a><a class="mr20 city" data-id="200">广州</a><a class="mr20 city" data-id="391">重庆</a><a class="mr20 city" data-id="255">成都</a><a class="mr20 city" data-id="186">长沙</a><a class="city" data-id="other">其他</a></span>
+        <img class="mt-5" src="http://static.mingyizhudao.com/146140403634015"><span class="city-name ml10">城市：</span><span><a class="mr20 city active all" data-id="">全部</a><a class="mr20 city" data-id="1">北京</a><a class="mr20 city" data-id="73">上海</a><a class="mr20 city" data-id="200">广州</a><a class="mr20 city" data-id="391">重庆</a><a class="mr20 city" data-id="255">成都</a><a class="mr20 city" data-id="186">长沙</a><a class="city" data-id="other">其他</a></span>
     </div>
 <!--    <div class="text-center service-header"><span class="short-line"></span><span class="content">服务流程</span><span class="short-line"></span></div>
     <div class="service-line"></div>
@@ -139,7 +142,7 @@ $pageCouont = Yii::app()->request->getQuery('pageCouont', '');
                     innerHtml += '<div class="col-lg-3 col-md-6 col-sm-6 mt30" ><a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
                             '<div class="expInfo text-center bg-white explist-border">' +
                             contractedImg + '<div class="mingyiyizhen-img"></div>' +
-                            '<div><img class="img100" src="' + doctor.imageUrl + '"/></div>' +
+                            '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '"/></div>' +
                             '<div class="expName color-black">' + doctor.name + '</div>' +
                             '<div class="expTitle">' + doctor.mTitle + ' ' + aTitle + '</div>' +
                             '<div class="expHospital mt30">' + hpName + '</div>' +

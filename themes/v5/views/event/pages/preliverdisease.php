@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-preliverdisease.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-preliverdisease100.min.css");
 ?>
 <div class="container-fluid">
     <div class="row">
@@ -54,7 +54,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 eteam-info">
                     <div class="pad20 expert-content">
                         <a href="<?php echo $this->createUrl('doctor/view', array('id' => '116')); ?>">
-                            <img src="<?php echo $urlResImage; ?>doc-images/miaoyi.png"/>
+                            <img src="http://static.mingyizhudao.com/147013751065236"/>
                             <div class="mt10"><span class="ename">苗毅</span> <span class="color-gray">主任|教授</span></div>
                             <div class="color-gray text12">江苏省人民医院</div>
                             <div class="color-yellow">胰腺外科国内顶级专家团队</div>

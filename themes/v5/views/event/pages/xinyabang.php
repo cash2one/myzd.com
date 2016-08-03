@@ -1,18 +1,18 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-xinyabang.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-xinyabang100.min.css");
 ?>
 <section id="xinyabang">
     <div class="xinyabang-header">
         <div class="container">
-            <img class="img-block" src="<?php echo $urlResImage; ?>event/xinyabang/header.png"/>
+            <img class="img-block" src="http://static.mingyizhudao.com/147013929053337"/>
         </div>
     </div>
     <div class="xinyabang-content">
         <div class="container">
             <div class="main-content">
                 <div class="header-sm">
-                    <img class="img-block" src="<?php echo $urlResImage; ?>event/xinyabang/header-sm.png"/>
+                    <img class="img-block" src="http://static.mingyizhudao.com/147013929061544"/>
                 </div>
                 <div class="pad100">
                     <div class="summary">
@@ -240,10 +240,10 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     </div>
                 </div>
                 <div class="ranking-img">
-                    <img src="<?php echo $urlResImage; ?>event/xinyabang/ranking.jpg"/>
+                    <img src="http://static.mingyizhudao.com/147013941874544"/>
                 </div>
                 <div class="fifty">
-                    <img src="<?php echo $urlResImage; ?>event/xinyabang/fifty.png"/>
+                    <img src="http://static.mingyizhudao.com/147013929046375"/>
                 </div>
                 <div class="right-text">名医主刀入选 风云榜 . 50强</div>
                 <br/>

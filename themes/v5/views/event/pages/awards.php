@@ -1,11 +1,11 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-awards.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-awards100.min.css");
 ?>
 <section id="awards">
     <div class="awards-header">
         <div class="container">
-            <img src="<?php echo $urlResImage; ?>event/awards/header.png"/>
+            <img src="http://static.mingyizhudao.com/14701300619920"/>
         </div>
     </div>
     <div class="awards-content">
