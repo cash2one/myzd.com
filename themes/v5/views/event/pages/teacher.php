@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-tumor.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-tumor100.min.css");
 ?>
 <style>
     .teacher-text{letter-spacing: 2px;line-height: 2em;margin-top: 20px;font-size: 15px;}
@@ -27,14 +27,14 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
         <div class="teacher-text">每个人的心目中都有一位记忆最深刻的老师。他/她或许是我们学习兴趣和信心的来源，或许是我们奋发图强的动力，亦或说职业方向航程中的引路人，更或曾是我们奏响人生乐章中最重要的一个指挥者。</div>
         <div class="teacher-text">我们总在感谢着老师的帮助，但似乎很少想过怎样帮助老师。除了鲜花，关爱老师更应该成为我们的话题。不少老师因为压力大，容易患上心脑血管疾病。在教师节来临之际，名医主刀携手上海慈善基金会为老师提供医生上门服务，旨在为老师提供最方便最可信的帮助。</div>
         <div class="teacher-img">
-            <img src="<?php echo $urlResImage ?>event/teacher-photo.png"/>
+            <img src="http://static.mingyizhudao.com/147013882227648"/>
         </div>
         <div class="teacher-text">疲劳和高压力在老师中特别是毕业班老师中很常见。长时间的疲劳和压力会令人精神紧张、血压升高、免疫力下降，从而带来高血压、心脑血管疾病方面的隐患，而这类疾病带来的危害是巨大的。在对教师的调查中，中老年教师患心血管疾病的比例还是很高的。“教师中来做心血管手术的不在少数。这与老师的工作状态有关系，与压力、疲劳、久坐、运动少、饮食结构不平衡有密切关系”。在高压力和长时间繁重的工作中，缺少运动，会令人的免疫力低下，而这几乎又是所有疾病发病的原因。据调查，长时间疲劳和高压力的工作与生活会令心脑血管疾病、恶性肿瘤与重大疾病的发病概率增高。</div>
         <div class="row expertteam mt20">
             <div class="col-sm-6">
                 <div class="border-gary pad20 expert-content">
                     <a href="<?php echo $this->createUrl('expertteam/view', array('id' => '1')); ?>">
-                        <img src="<?php echo $urlResImage; ?>doc-images/xujianping.png"/>
+                        <img src="http://static.mingyizhudao.com/147013890781512"/>
                         <div class="mt10"><span class="ename">许建屏</span> <span class="color-gray">主任|教授</span></div>
                         <div class="color-gray text12">北京阜外医院</div>
                         <div class="color-yellow">心血管外科国内前三甲</div>
@@ -47,7 +47,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6">
                 <div class="border-gary pad20 expert-content">
                     <a href="<?php echo $this->createUrl('expertteam/view', array('id' => '5')); ?>">
-                        <img src="<?php echo $urlResImage; ?>doc-images/zhangdong.png"/>
+                        <img src="http://static.mingyizhudao.com/147013893053314"/>
                         <div class="mt10"><span class="ename">张东</span> <span class="color-gray">主任|教授</span></div>
                         <div class="color-gray text12">北京天坛医院</div>
                         <div class="color-yellow">脑血管手术顶级专家团队</div>
@@ -63,7 +63,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6">
                 <div class="border-gary pad20 expert-content">
                     <a href="<?php echo $this->createUrl('expertteam/view', array('id' => '3')); ?>">
-                        <img src="<?php echo $urlResImage; ?>doc-images/zhusiquan.png"/>
+                        <img src="http://static.mingyizhudao.com/147013895060472"/>
                         <div class="mt10"><span class="ename">朱思泉</span> <span class="color-gray">主任|教授</span></div>
                         <div class="color-gray text12">北京同仁医院</div>
                         <div class="color-yellow">国内白内障第一刀，成功手术25万例</div>
@@ -76,7 +76,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6">
                 <div class="border-gary pad20 expert-content">
                     <a href="<?php echo $this->createUrl('expertteam/view', array('id' => '4')); ?>">
-                        <img src="<?php echo $urlResImage; ?>doc-images/luhai.png"/>
+                        <img src="http://static.mingyizhudao.com/147013897690488"/>
                         <div class="mt10"><span class="ename">卢海</span> <span class="color-gray">主任|教授</span></div>
                         <div class="color-gray text12">北京同仁医院</div>
                         <div class="color-yellow">眼底疾病顶级专家团队</div>

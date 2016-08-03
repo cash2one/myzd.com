@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-ruxianai.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-ruxianai100.min.css");
 ?>
 <div class="">
     <div class="">
@@ -19,7 +19,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 </div>
                 <div class="row">
                     <div class="col-sm-3 col-lg-2 pad0">
-                        <img src="<?php echo $urlResImage; ?>event/ruxianai/doctor.png"/>
+                        <img src="http://static.mingyizhudao.com/147013845809972"/>
                     </div>
                     <div class="col-sm-9">
                         <div class="healthy-text">
@@ -104,17 +104,17 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 </div>
                 <div class="ruxianai-text">
                     <div class="row">
-                        <div class="col-sm-4"><img src="<?php echo $urlResImage; ?>event/ruxianai/1.png"/></div>
-                        <div class="col-sm-4"><img src="<?php echo $urlResImage; ?>event/ruxianai/2.png"/></div>
-                        <div class="col-sm-4"><img src="<?php echo $urlResImage; ?>event/ruxianai/3.png"/></div>
+                        <div class="col-sm-4"><img src="http://static.mingyizhudao.com/147013845700535"/></div>
+                        <div class="col-sm-4"><img src="http://static.mingyizhudao.com/147013845710955"/></div>
+                        <div class="col-sm-4"><img src="http://static.mingyizhudao.com/147013845717781"/></div>
                     </div>
                     <div><span class="step step1"></span>&nbsp;<span>仔细观察每一侧乳房的外观、大小、皮肤颜色或者乳头颜色的变化，乳房是否有湿疹，或者皮肤是否出现凸痕，两个乳头高度的差别，乳头有无液体或者血液流出。</span></div>
                     <div><span class="step step2"></span>&nbsp;<span>抬起一侧手臂看另一侧乳房是否像正常一样随之抬起，检查乳房上部与腋下结合有无异常，双手举过头顶，身体转向一侧反复观察乳房的侧面，用同样的方法观察另一侧。</span></div>
                     <div><span class="step step3"></span>&nbsp;<span>双手平稳地放在腰部，用力按压觉得胸部的肌肉紧张起来，然后进行观察，看是否乳房有不同以往的线条。</span></div>
                     <div class="row">
-                        <div class="col-sm-4"><img src="<?php echo $urlResImage; ?>event/ruxianai/4.png"/></div>
-                        <div class="col-sm-4"><img src="<?php echo $urlResImage; ?>event/ruxianai/5.png"/></div>
-                        <div class="col-sm-4"><img src="<?php echo $urlResImage; ?>event/ruxianai/6.png"/></div>
+                        <div class="col-sm-4"><img src="http://static.mingyizhudao.com/147013845757925"/></div>
+                        <div class="col-sm-4"><img src="http://static.mingyizhudao.com/147013845764240"/></div>
+                        <div class="col-sm-4"><img src="http://static.mingyizhudao.com/147013845768958"/></div>
                     </div>
                     <div><span class="step step4"></span>&nbsp;<span>线摸乳房，再摸腋下，用中指和食指的指腹，顺着一个方向全面检查乳房。</span></div>
                     <div><span class="step step5"></span>&nbsp;<span>用食指、中指和拇指轻轻地提起乳头并挤压一下，仔细查看有无分泌物。</span></div>

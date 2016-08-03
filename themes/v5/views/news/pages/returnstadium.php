@@ -23,7 +23,7 @@
                 </p>
                 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;——刘翔主治医师陈世益教授，助力篮球梦</span><br />
                 <br />
-                <div class="pull-left mr10"><img style="width:280px;" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146614731767321" alt="" /><br /></div>
+                <div class="pull-left mr10"><img style="width:280px;" src="http://static.mingyizhudao.com/146614731767321" alt="" /><br /></div>
                 <div style="text-indent:2em;text-align:justify;" class="mb50">
                     <div><span style="text-indent:2em;line-height:1.8;font-size:14px;font-family:'Microsoft YaHei';">随着健康知识的普及，人们生活方式不断改变，喜欢运动锻炼的人越来越多。但随之而来的各种运动损伤也时有发生。一旦身体受伤，如果早期能给予正确的急救处理，可大大减少以后的并发症，加快外伤的好转和愈合，使伤者较快地恢复健康。若急救处理不当，轻者加重伤情，发生感染，延长治疗时间，增加伤员的痛苦，重者则可能造成残废。</span></div><br />
                     <div><span style="line-height:1.8;font-size:14px;font-family:'Microsoft YaHei';">小傅今年只有32岁，可运动伤害却已经伴随了他十几年，原来小傅年幼时打篮球膝盖受到损伤，没有及时处理，导致病情一直反复，常年被病痛折磨。到现在已经恶化成了左膝前交叉韧带断裂、左膝半月板损伤、左膝关节滑膜炎，严重影响日常生活。病情发展成现在这样，是小傅料想不到的。</span></div>

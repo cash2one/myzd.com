@@ -5,7 +5,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
 <div class="container-fluid">
     <div class="row">
         <div class="header-img">
-            <img src="<?php echo $urlResImage; ?>event/xinxueguan/xinxueguan-title.jpg" />
+            <img src="http://static.mingyizhudao.com/147021302828618" />
         </div>
     </div>
 </div>
@@ -76,7 +76,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                     <div class="strong mb10">判断意识</div>
                     <div>拍双肩，唤双耳，搭脉搏，10秒钟内完成</div>
                 </div>
-                <img src="<?php echo $urlResImage; ?>event/xinxueguan/step1.jpg" />
+                <img src="http://static.mingyizhudao.com/147021311480889" />
             </div>
             <div class="col-md-4 col-sm-6 col-sm-12">
                 <div class="minheight100">
@@ -84,14 +84,14 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                     <div class="strong mb10">呼救</div>
                     <div>打120</div>
                 </div>
-                <img src="<?php echo $urlResImage; ?>event/xinxueguan/step2.jpg" />
+                <img src="http://static.mingyizhudao.com/147021311649896" />
             </div>
             <div class="col-md-4 col-sm-6 col-sm-12">
                 <div class="minheight100">
                     <div>3、急救第三步</div>
                     <div class="strong">摆放仰卧体位</div>
                 </div>
-                <img src="<?php echo $urlResImage; ?>event/xinxueguan/step3.jpg" />
+                <img src="http://static.mingyizhudao.com/14702131173963" />
             </div>
             <div class="clearfix mb30"></div>
             <div class="col-md-4 col-sm-6 col-sm-12">
@@ -103,7 +103,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                     <div>力度：按下去至少5CM</div>
                     <div>频率：至少100次/分钟</div>
                 </div>
-                <img src="<?php echo $urlResImage; ?>event/xinxueguan/step4.jpg" />
+                <img src="http://static.mingyizhudao.com/147021311787962" />
             </div>
             <div class="col-md-4 col-sm-6 col-sm-12">
                 <div class="minheight180">
@@ -111,7 +111,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                     <div class="strong mb10">开放气道</div>
                     <div>仰头举颜法</div>
                 </div>
-                <img src="<?php echo $urlResImage; ?>event/xinxueguan/step5.jpg" />
+                <img src="http://static.mingyizhudao.com/14702131179793" />
             </div>
             <div class="col-md-4 col-sm-6 col-sm-12">
                 <div class="minheight180">
@@ -119,7 +119,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                     <div class="strong mb10">人工吹气2次(儿童1次)</div>
                     <div>捏鼻，口包口，吹气</div>
                 </div>
-                <img src="<?php echo $urlResImage; ?>event/xinxueguan/step6.jpg" />
+                <img src="http://static.mingyizhudao.com/147021311885788" />
             </div>
         </div>
     </div>
@@ -156,7 +156,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
             <div class="col-md-6 col-sm-12">
                 <div class="border-gary pad20 expert-content">
                     <a href="<?php echo $this->createUrl('doctor/view', array('id' => '2906')); ?>">
-                        <img src="<?php echo $urlResImage; ?>event/xinxueguan/fujianhua.jpg"/>
+                        <img src="http://static.mingyizhudao.com/147021321955798"/>
                         <div class="mt10"><span class="ename">傅剑华</span> <span class="color-gray">主任医师|教授</span></div>
                         <div class="color-gray text12">中山大学附属肿瘤医院</div>
                         <div class="color-yellow">华南知名胸外科专家</div>

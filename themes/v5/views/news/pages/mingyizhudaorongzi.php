@@ -29,7 +29,7 @@ $this->htmlMetaDescription = '喜大普奔！喜大普奔！我们已经完成�
                     <span style="font-family: 微软雅黑; letter-spacing: 0px; font-size: 14px;">值得一提的是，在这个被普遍认为是“资本寒冬”的阶段，我们却收到了超过10家上市公司的投资意向，最后敲定了复星医药、高榕资本和真格基金。苏舒认为，无论是医疗资源，还是互联网DNA，选择这三家投资公司都是最有利于公司的下一步发展的。</span>
                 </p>
                 <p style="margin: 5px 0px; text-indent: 28px; line-height: 28px; text-align: center;">
-                    <span style="font-family: 微软雅黑;letter-spacing: 0;font-size: 16px"><img alt="demo.jpg" src="<?php echo $baseUrlImage; ?>news/mingyizhudaorongzi/image1.jpg" title=""/></span>
+                    <span style="font-family: 微软雅黑;letter-spacing: 0;font-size: 16px"><img alt="demo.jpg" src="http://static.mingyizhudao.com/147021844736847" title=""/></span>
                 </p>
                 <p style="margin: 5px 0px; text-indent: 28px; line-height: 2em;">
                     <span style="font-family: 微软雅黑; color: rgb(25, 175, 166); letter-spacing: 0px; font-weight: bold; font-size: 14px;">为什么是他们？</span>

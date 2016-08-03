@@ -36,7 +36,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
                     <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">今年6月份，我们接收到这样一位患者。来自河北保定的胡先生，今年49岁，文化水平不高，但是整个家庭靠他支撑，是家中的经济支柱。谁知天不如人愿，意外的降临让一家人陷入莫大的困境。</span></div>
                 </div>
                 <div style="text-align:center;">
-                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146780080779611" >
+                    <img src="http://static.mingyizhudao.com/146780080779611" >
                 </div>
                 <div style="text-align:left;">
                     <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">6月3日，胡先生在骑电动车时，车子失控导致右膝关节前脱位，前后交叉韧带、内外侧副韧带均断裂。家人在第一时间把胡先生送入保定市第七医院骨科接受治疗，骨科董主任认定手术难度非常大，加上胡先生目前仍是家中的支柱，如果不请高级专家根治，很容易留下后遗症，这样对整个家庭的伤害更大。</span></div>

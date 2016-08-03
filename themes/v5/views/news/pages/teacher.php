@@ -41,7 +41,7 @@ $this->htmlMetaDescription = '2015年9月10日，我们迎来了第31个教师�
                     <span style="font-size: 16px; color: black; font-family: 微软雅黑,Microsoft YaHei;">&nbsp; </span>
                 </p>
                 <p style="text-align: center;">
-                    <img src="<?php echo $baseUrlImage; ?>news/teacher1.jpg"/>
+                    <img src="http://static.mingyizhudao.com/147021876080871"/>
                 </p>
                 <p style="text-align: center; line-height: 2em;">
                     <span style="color: black; font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">（上海市慈善基金会的领导、名医主刀和随行医疗专家走访患病教师）</span>
@@ -50,7 +50,7 @@ $this->htmlMetaDescription = '2015年9月10日，我们迎来了第31个教师�
                     <span style="color: black; font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">&nbsp;</span>
                 </p>
                 <p style="text-align: center; line-height: 2em;">
-                    <img src="<?php echo $baseUrlImage; ?>news/teacher2.jpg"/>
+                    <img src="http://static.mingyizhudao.com/147021867692058"/>
                 </p>
                 <p style="text-align: center; line-height: 2em;">
                     <span style="color: black; font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">（上海市慈善基金会的领导慰问教师，名医主刀随行专家进行义诊）</span>

@@ -20,7 +20,7 @@
                     <span style="line-height:2;font-size:18px;font-family:'Microsoft YaHei';"><strong><br />
                         </strong></span>
                 </p>
-                <div style="float: left;padding-right: 10px; padding-top:4px;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146769959395642" style="height:380px;width:300px; "></div>
+                <div style="float: left;padding-right: 10px; padding-top:4px;"><img src="http://static.mingyizhudao.com/146769959395642" style="height:380px;width:300px; "></div>
                 <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">第一次得知小圆圆（化名）的不幸，是从他爸爸发出的求助信息上，那个时候她才6个半月大。粉嘟嘟、胖乎乎的她，是一个非常爱笑的小姑娘。可是，意料之外的不幸却发生在她的身上。</span></div><br />
               
                 <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">据圆圆爸的同事回忆，圆圆爸是他们公司出了名的“拼命三郎”，对待工作从来都是兢兢业业、力争上游。他甚至没有休过婚假和产假，平时工作也总是带头实干，绝不退缩。直到2015年11月中下旬，圆圆爸突然请假了，一天、两天、三天，同事们忍不住打电话询问，电话那头却传来令人痛心的消息。</span></div><br />

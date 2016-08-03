@@ -21,7 +21,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                 “立秋之日凉风至”，虽然今年全国大部分地区在立秋后暑气难消，“秋老虎”的余威依旧，但总的趋势是天气逐渐凉爽。气温的日较差逐渐明显，往往是白天很热，而夜晚却比较凉爽。一些曾经患过肝病的人更易因此旧病复发。
             </div>
             <div class="mt20">
-                <img src="<?php echo $urlResImage; ?>event/liver-health.jpg"/>
+                <img src="http://static.mingyizhudao.com/147021126884017"/>
             </div>
         </div>
         <div class="solution mt50">
@@ -34,7 +34,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                 肝病由不同病因引起，如病毒感染、毒物或毒素中毒、不良的饮食习惯以及药物中毒等。这些病因大多是与人们不良的生活习惯有关，如急性甲肝和戊肝是由于饮食、饮水不洁，生食肉食或生猛海鲜造成的；有些乙肝、丙肝和丁肝患者主要是经血和血制品、母婴、破损的皮肤和黏膜感染的；酒精性肝病、脂肪性肝病是由于人们大量酗酒，饮食无节制，大吃大喝，最终致病。
             </div>
             <div class="mb20">
-                <img src="<?php echo $urlResImage; ?>event/liver-cirrhosis.jpg" alt=""/>
+                <img src="http://static.mingyizhudao.com/147021131967611" alt=""/>
             </div>
             <div class="text-intro">
                 肝硬化、肝恶变等重症肝病都是由慢性乙肝发展而来，肝脏这个“沉默”的器官，在满足人体的新陈代谢时，即便出现些微病变也不会引起人体的强列反应，因此常被忽视，而一些患者发现自己患上肝病，比如检查出“肝病”之后，大多数人“转阴”心切，因此相信一些“一个月之内转阴”的不实、夸大的宣传，治疗的效果却往往不尽如人意，病情依旧，甚至还耽误了比较好治疗时机导致病情恶化。

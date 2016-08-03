@@ -48,7 +48,7 @@ $this->htmlMetaDescription = '我们第一次接到冯女士的电话是8月18�
                     <br/>
                 </p>
                 <p style="clear: both; white-space: normal; text-align: center; line-height: 2em;">
-                    <img data-s="300,640" data-type="jpeg" src="<?php echo $baseUrlImage ?>news/jiazhuangxian-img.jpg" data-ratio="0.5612648221343873" data-w="" style="max-width: 100%; height: auto !important;"/><br/>
+                    <img data-s="300,640" data-type="jpeg" src="http://static.mingyizhudao.com/147021836270424" data-ratio="0.5612648221343873" data-w="" style="max-width: 100%; height: auto !important;"/><br/>
                 </p>
                 <p style="clear: both; white-space: normal; line-height: 2em;">
                     <span style="color: rgb(63, 63, 63); font-size: 14px; line-height: 28px; text-align: justify; font-family: 微软雅黑, 'Microsoft YaHei';"><span style="color: rgb(37, 37, 37); font-size: 14px; line-height: 24px; text-align: justify; font-family: 宋体; text-indent: 28px; background-color: rgb(255, 255, 255);">　　</span>今天是冯女士联系我们的第十天，她已经坐在回家的航班上，能够帮助到冯女士，让她及时的接受手术治疗，我们深深的感受到名医主刀平台存在的价值——让患者从“好看病”到“看好病”。我们希望冯女士今后的生活健康美满幸福。</span>

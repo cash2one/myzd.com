@@ -67,7 +67,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
                         他开朗乐观的心态也感染了我们的工作人员，向身边的人传递着微笑与希望。</span><span></span> 
                 </p>
                 <div class="text-center">
-                <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146570334420071" alt="" width="225" height="400" title="" align="" /></span><br />
+                <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/146570334420071" alt="" width="225" height="400" title="" align="" /></span><br />
                 </div>
                 <p>
                     <br />

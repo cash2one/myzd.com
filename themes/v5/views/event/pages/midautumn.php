@@ -1,11 +1,11 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlQuickBook = $this->createUrl('booking/quickbook');
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-midautumn.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-midautumn100.min.css");
 ?>
 <div class="midautumn">
     <div class="container">
-        <img src="<?php echo $urlResImage; ?>event/midautumn-header.png" />
+        <img src="http://static.mingyizhudao.com/14701373653984" />
     </div>
     <div class="container">
         <div class="qiuyizhong">
