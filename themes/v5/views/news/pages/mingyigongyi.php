@@ -42,7 +42,7 @@ $this->htmlMetaDescription = '相信大家都已经对 “名医主刀” 这个
                     &nbsp;
                 </p>
                 <p class="MsoNormal text-center">
-                <img width="279" height="185" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362720569586" /><div class=" text-center" style="font-size:14px;line-height:28px;">（名医主刀创始人兼CEO 苏舒）</div>
+                <img width="279" height="185" src="http://static.mingyizhudao.com/146362720569586" /><div class=" text-center" style="font-size:14px;line-height:28px;">（名医主刀创始人兼CEO 苏舒）</div>
                 </p>
                 <p class="MsoNormal" align="left">
                     &nbsp;
@@ -54,7 +54,7 @@ $this->htmlMetaDescription = '相信大家都已经对 “名医主刀” 这个
                     &nbsp;
                 </p>
                 <p class="MsoNormal" align="center" style="text-align:center;">
-                    <img width="279" height="185" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362720711080" />
+                    <img width="279" height="185" src="http://static.mingyizhudao.com/146362720711080" />
                 </p>
                 <p class="MsoNormal" align="center" style="text-align:center;font-size:14px;">
                     （中国医药教育协会会长黄正明）
@@ -69,10 +69,10 @@ $this->htmlMetaDescription = '相信大家都已经对 “名医主刀” 这个
                     基于对“名医公益联盟”模式的认可，复星医药董事长陈启宇、真格基金创始人徐小平、百度医疗事业部总经理李政、约印创投创始人郑玉芬、国开汉富总裁郭露等企业家代表也参加了此次公益活动，并讲述了他们与名医主刀和公益之间千丝万缕的联系。作为各界知名企业，相信有了他们的支持，“名医公益联盟”能发挥出更大的力量。
                 </p>
                 <div class="row">
-                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362720744359" /><div style="text-align:center;font-size:14px;margin-top:5px;">（复星医药董事长陈启宇）</div></div>
-                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362720826661" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（“真格基金”创始人徐小平）</div></div>
-                    <div class="col-sm-6 text-center mt10"><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362720861473" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（百度医疗事业部总经理李政）</div></div>
-                    <div class="col-sm-6 text-center mt10"><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362720871363" /><div style="text-align:center;font-size:14px;margin-top:5px;">（投资人代表）</div></div>
+                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://static.mingyizhudao.com/146362720744359" /><div style="text-align:center;font-size:14px;margin-top:5px;">（复星医药董事长陈启宇）</div></div>
+                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://static.mingyizhudao.com/146362720826661" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（“真格基金”创始人徐小平）</div></div>
+                    <div class="col-sm-6 text-center mt10"><img width="307" height="204" src="http://static.mingyizhudao.com/146362720861473" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（百度医疗事业部总经理李政）</div></div>
+                    <div class="col-sm-6 text-center mt10"><img width="307" height="204" src="http://static.mingyizhudao.com/146362720871363" /><div style="text-align:center;font-size:14px;margin-top:5px;">（投资人代表）</div></div>
                 </div>
                 <p class="MsoNormal mt10">
                     前线医生力挺，专家价值更彰显
@@ -81,11 +81,11 @@ $this->htmlMetaDescription = '相信大家都已经对 “名医主刀” 这个
                     医疗的核心在于医生，名医公益宣言活动必然少不了医院代表和医生代表们。安贞医院前副院长白树功，上海德济医院院长郭辉，广州妇女儿童医疗中心教授陈欣欣，作为医疗事业最前线的人，他们对“名医公益联盟”模式非常认可。医生本身也是公益医疗最核心的部分，不少医生自身热心公益，此次活动正好给了他们投身公益事业的好机会，让医生的价值得以更好的体现。
                 </p>
                 <div class="row">
-                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362720919764" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（安贞医院前副院长白树功）</div></div>
-                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362720946849" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（上海德济医院院长郭辉）</div></div>
+                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://static.mingyizhudao.com/146362720919764" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（安贞医院前副院长白树功）</div></div>
+                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://static.mingyizhudao.com/146362720946849" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（上海德济医院院长郭辉）</div></div>
                 </div>
                 <div class="text-center">
-                    <div class="mt10"><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362721112879" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（广州妇女儿童医疗中心教授陈欣欣）</div></div>
+                    <div class="mt10"><img width="307" height="204" src="http://static.mingyizhudao.com/146362721112879" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（广州妇女儿童医疗中心教授陈欣欣）</div></div>
                 </div>
                 <p class="MsoNormal">
                     公益组织联盟，资源分配更高效
@@ -94,7 +94,7 @@ $this->htmlMetaDescription = '相信大家都已经对 “名医主刀” 这个
                     春晖博爱儿童救助基金会秘书长张志荣等各界公益人士出席活动并现场发言。我们发现每个公益组织的公益切入点不尽相同，如果能把更多不同类型的公益组织联合到一起，当患者有困难时，求路无门的现象会大大减少。正是这种“共享公益”模式的驱动，才让更多公益组织紧密的联合到一起，为患者排忧解难。
                 </p>
                 <p class="MsoNormal text-center">
-                <img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362721154491" /><div style="text-align:center;font-size:14px;">（春晖博爱儿童救助基金会秘书长张志荣）</div>
+                <img width="307" height="204" src="http://static.mingyizhudao.com/146362721154491" /><div style="text-align:center;font-size:14px;">（春晖博爱儿童救助基金会秘书长张志荣）</div>
                 </p>
                 <p class="MsoNormal">
                     明星效应，公益活动传更广
@@ -104,10 +104,10 @@ $this->htmlMetaDescription = '相信大家都已经对 “名医主刀” 这个
 
                 </p>
                 <div class="row">
-                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362721220136" /><div style="text-align:center;font-size:14px;margin-top:5px;">（王艳致谢著名心外科专家刘彦国主任）</div></div>
-                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362721300179" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（著名主持人郎永淳、钱婧）</div></div>
+                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://static.mingyizhudao.com/146362721220136" /><div style="text-align:center;font-size:14px;margin-top:5px;">（王艳致谢著名心外科专家刘彦国主任）</div></div>
+                    <div class="col-sm-6 text-center"><img width="307" height="204" src="http://static.mingyizhudao.com/146362721300179" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（著名主持人郎永淳、钱婧）</div></div>
                 </div>
-                <div class="text-center mt10"><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362721344979" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（著名配音大师乔榛）</div></div>
+                <div class="text-center mt10"><img width="307" height="204" src="http://static.mingyizhudao.com/146362721344979" /> <div style="text-align:center;font-size:14px;margin-top:5px;">（著名配音大师乔榛）</div></div>
                 <p class="MsoNormal mt10">
                     手术捐赠，让公益掷地有声
                 </p>
@@ -115,14 +115,14 @@ $this->htmlMetaDescription = '相信大家都已经对 “名医主刀” 这个
                     名医主刀联合创始人吴勇先生分享了名医主刀帮助的一名罹患肝母细胞瘤的儿童的故事，并宣布此次活动共获得了来自85位专家的365台手术捐赠。公益组织、企业家代表、公益明星们在后续的微访谈中相继探讨了如何借助互联网的优势发挥公益的效能，解患者之难。
                 </p>
                 <div class="row">
-                    <div class="col-sm-6 text-center">/><img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362721401599" /><div style="text-align:center;font-size:14px;margin-top:5px;">（名医主刀联合创始人吴勇）</div></div>
-                    <div class="col-sm-6 text-center"><img width="279" height="185" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362721411436" /></div>
+                    <div class="col-sm-6 text-center">/><img width="307" height="204" src="http://static.mingyizhudao.com/146362721401599" /><div style="text-align:center;font-size:14px;margin-top:5px;">（名医主刀联合创始人吴勇）</div></div>
+                    <div class="col-sm-6 text-center"><img width="279" height="185" src="http://static.mingyizhudao.com/146362721411436" /></div>
                 </div>
                 <p class="MsoNormal mt10">
                     和睦家医院、Remebot微创机器人、优蓝机器人等众多医疗企业也捐赠手术费用以及手术器械，其中名医主刀负责对接优质医师，公益医院负责实施手术操作。
                 </p>
                 <p class="MsoNormal text-center">
-                    &nbsp;<img width="307" height="204" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146362721488489" /> <div style="text-align:center;font-size:14px;">（手术捐赠代表）</div>
+                    &nbsp;<img width="307" height="204" src="http://static.mingyizhudao.com/146362721488489" /> <div style="text-align:center;font-size:14px;">（手术捐赠代表）</div>
                 </p>
                 <p class="MsoNormal">
                     &nbsp;

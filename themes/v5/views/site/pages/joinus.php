@@ -3,10 +3,10 @@ $menu = $this->getPageMenu();
 $this->pageTitle = '加入我们_名医主刀网';
 $this->htmlMetaKeywords = '加入我们,人才招聘';
 $this->htmlMetaDescription = '这里有不忘初心以爱为名你想做却不敢做的人,这里不仅仅只是一份工作,兄弟、妹子只要你答应一声,我们便会等着你！不管是以前的故人、朋友还是扯不清的关系,来到这里我们就是战友;名医主刀,等你！';
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/aboutus100.min.css");
 ?>
 <div class="container-fluid aboutus-header h400">
-    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625020116117"/>
+    <img src="http://static.mingyizhudao.com/14625020116117"/>
 </div>
 <div class="container-fluid" id="joinus">
     <div class="row">
@@ -424,16 +424,16 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/abo
                                 <div class="mt30">
                                     <div><span style="font-size:16px;color:#333;">公司基本信息</span></div><div class="line-title-one"></div>
                                     <div class="mt20">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146725259778482" alt=""/>&nbsp;&nbsp;&nbsp;互联网+，移动医疗
+                                        <img src="http://static.mingyizhudao.com/146725259778482" alt=""/>&nbsp;&nbsp;&nbsp;互联网+，移动医疗
                                     </div>
                                     <div class="mt20">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146725259788055" alt=""/>&nbsp;&nbsp;&nbsp;B轮
+                                        <img src="http://static.mingyizhudao.com/146725259788055" alt=""/>&nbsp;&nbsp;&nbsp;B轮
                                     </div>
                                     <div class="mt20">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146725259800635" alt=""/>&nbsp;&nbsp;&nbsp;100-200人
+                                        <img src="http://static.mingyizhudao.com/146725259800635" alt=""/>&nbsp;&nbsp;&nbsp;100-200人
                                     </div>
                                     <div class="mt20 mb50">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14672525980509" alt=""/>&nbsp;&nbsp;&nbsp;上海
+                                        <img src="http://static.mingyizhudao.com/14672525980509" alt=""/>&nbsp;&nbsp;&nbsp;上海
                                     </div>
                                     <div>
                                         <span style="font-size:16px;color:#333;">公司标签</span><div class="line-title-two"></div>

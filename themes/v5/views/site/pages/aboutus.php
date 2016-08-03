@@ -3,7 +3,7 @@ $menu = $this->getPageMenu();
 $this->pageTitle = '关于我们_名医主刀网';
 $this->htmlMetaKeywords = '名医主刀简介,名医主刀网';
 $this->htmlMetaDescription = '名医主刀作为国内最大的移动医疗手术预约平台,旨在为有手术需求的患者提供专业、高效、安全的手术医疗预约服务,帮助广大有手术需求的患者,在第一时间预约全国知名专家,安排入院手术。';
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/aboutus100.min.css");
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <style>
@@ -14,7 +14,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 
 </style>
 <div class="container-fluid aboutus-header h400">
-    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625020116117"/>
+    <img src="http://static.mingyizhudao.com/14625020116117"/>
 </div>
 <section id="aboutus">
     <div class="container-fluid">

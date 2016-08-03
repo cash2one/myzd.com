@@ -32,22 +32,22 @@ $this->htmlMetaDescription = '在大家准备和亲人团聚欢度十一长假�
                     <span style="font-family: 微软雅黑, 'Microsoft YaHei'; letter-spacing: 0px; font-size: 14px;">陈静瑜主任也在个人微博中写到：</span>
                 </p>
                 <p style="text-align: left;">
-                    <span style="color: rgb(51, 51, 51); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; letter-spacing: 1px; line-height: 32px; text-align: center; background-color: rgb(255, 255, 255);"><img src="<?php echo $baseUrlImage; ?>/news/mmjxfy_01.png"  class="center-block" title="" alt="demo.jpg"/></span><br/>
+                    <span style="color: rgb(51, 51, 51); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; letter-spacing: 1px; line-height: 32px; text-align: center; background-color: rgb(255, 255, 255);"><img src="http://static.mingyizhudao.com/147014097604811"  class="center-block" title="" alt="demo.jpg"/></span><br/>
                 </p>
                 <p style="text-align: left;">
-                    <span style="color: rgb(51, 51, 51); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; letter-spacing: 1px; line-height: 32px; text-align: center; background-color: rgb(255, 255, 255);"><img src="<?php echo $baseUrlImage; ?>/news/mmjxfy_02.jpg"  class="center-block" title="" alt="demo.jpg"/></span>
+                    <span style="color: rgb(51, 51, 51); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; letter-spacing: 1px; line-height: 32px; text-align: center; background-color: rgb(255, 255, 255);"><img src="http://static.mingyizhudao.com/147014097616756"  class="center-block" title="" alt="demo.jpg"/></span>
                 </p>
                 <p style="text-align: left;">
                     <span style="font-family: 微软雅黑, 'Microsoft YaHei'; color: rgb(0, 0, 0);"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; letter-spacing: 1px; line-height: 32px; text-align: center; background-color: rgb(255, 255, 255);">（</span><span style="font-family: 微软雅黑, 'Microsoft YaHei'; color: rgb(0, 0, 0); font-size: 14px; letter-spacing: 0px;">患者目前在湘雅附三院重症监护室肺气管切开靠呼吸机及ECMO维持生命</span><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 12px; letter-spacing: 0px;">）</span></span>
                 </p>
                 <p style="text-align: left;">
-                    <span style="color: rgb(51, 51, 51); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; letter-spacing: 1px; line-height: 32px; text-align: center; background-color: rgb(255, 255, 255);"></span><img src="<?php echo $baseUrlImage; ?>/news/mmjxfy_03.jpg"  class="center-block" title="" alt="demo.jpg"/>
+                    <span style="color: rgb(51, 51, 51); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; letter-spacing: 1px; line-height: 32px; text-align: center; background-color: rgb(255, 255, 255);"></span><img src="http://static.mingyizhudao.com/147014097703262"  class="center-block" title="" alt="demo.jpg"/>
                 </p>
                 <p>
                     <span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; color: rgb(0, 0, 0);">（<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; letter-spacing: 0px;">目前双肺毁损实变急需肺移植，急需有心脑死亡爱心器官捐献的A或者O型肺源）</span></span>
                 </p>
                 <p>
-                    <span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; color: rgb(0, 0, 0); letter-spacing: 0px;"><img src="<?php echo $baseUrlImage; ?>/news/mmjxfy_04.jpg"  class="center-block" title="" alt="demo.jpg"/></span>
+                    <span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; color: rgb(0, 0, 0); letter-spacing: 0px;"><img src="http://static.mingyizhudao.com/147014097715093"  class="center-block" title="" alt="demo.jpg"/></span>
                 </p>
                 <p>
                     <span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px; color: rgb(0, 0, 0); letter-spacing: 0px;">（患者由于溺水时吸入大量淤泥，致使肺部严重受损。）</span>

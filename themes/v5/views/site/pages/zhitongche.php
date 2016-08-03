@@ -3,7 +3,7 @@ $this->pageTitle = '手术直通车真实案例,患者故事_名医主刀网';
 $this->htmlMetaKeywords = '患者故事,手术直通车,名医主刀网';
 $this->htmlMetaDescription = '让每一位患者在名医主刀“好看病，看好病”是我们不变的宗旨,名医主刀可以给患者带去更多的希望,不仅可以帮助患者尽快预约到专家,还能大大节省患者等待床位的时间,让患者得到最快的治疗。';
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/operation100.min.css");
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/zhitongche.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/zhitongche.min.js', CClientScript::POS_END);
 
 $urlFindDoctor = $this->createUrl('doctor/top', array('disease_sub_category' => 1));
 $urlFindHopital = $this->createUrl('hospital/department');

@@ -25,7 +25,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
                     <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;来自辽宁的曹先生由于工作和运动的原因，不幸患上了非常严重的腰椎间盘突出，稍稍劳累点，马上就疼，实在严重的时候就会吃止痛药。到后来，根本无法平卧，整晚无法睡觉，非常痛苦。之前曹先生也在沈阳当地的医院看过病，医生都是采用保守治疗的方法，让曹先生苦不堪言。</span>
                 </p>
                 <p class="MsoNormal text-center">
-                    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14657035092787" alt="" width="334" height="250" title="" align="" />
+                    <img src="http://static.mingyizhudao.com/14657035092787" alt="" width="334" height="250" title="" align="" />
                 </p>
                 <p class="MsoNormal" style="text-indent:21.0pt;">
                     <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;保守治疗效果不明显。曹先生开始寻求手术治疗的方法，在当地医院，有的医生建议做微创手术，有的建议做大手术，让曹先生和他的家属一下子没了主见。曹先生的女儿了解到名医主刀平台上签约了全国各个科室的顶尖医生，抱着试一试的心态来到了名医主刀平台，经过了解，北京积水潭医院脊柱外科是全国有名的科室，于是在名医主刀平台提交了预约单，预约了北京积水潭医院脊柱外科的刘波教授。</span>

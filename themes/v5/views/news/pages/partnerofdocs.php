@@ -32,7 +32,7 @@ $this->htmlMetaDescription = '李克强总理2015年政府工作报告中提出�
                     <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">在中国医生多点执业、自由执业的大趋势下，今年以来，各地“医生集团”在公立医院的体制内外如雨后春笋般破土而生。然而，由医生组建的“医生集团”，也面临公司经营、体制排斥、患者吸引、营利模式、利润分配等多重难题。9月18日，中国医生集团大会邀请国内有名的医生集团代表、互联网医疗平台，针对医生集团目前面临的难题，医生集团未来的发展方向等话题做了深度的交流。</span>
                 </p>
                 <p style="text-indent: 32px; line-height: 2em; text-align: center;">
-                    <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;"><img alt="" src="<?php echo $baseUrlImage; ?>news/partnerofdocs/image1.png" title=""/></span>
+                    <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;"><img alt="" src="http://static.mingyizhudao.com/147014134181922" title=""/></span>
                 </p>
                 <p style="text-indent: 32px; line-height: 2em; text-align: justify;">
                     <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">“名医主刀”作为国内最大手术互联网平台，也应邀参加大会，CEO苏舒分享了搭建医生集团合伙人互联网平台的重要性和必要性，并介绍了“名医主刀”作为医生集团合伙人的运营流程，还介绍了该平台能为医生集团带来的帮助和资源。</span>
@@ -47,7 +47,7 @@ $this->htmlMetaDescription = '李克强总理2015年政府工作报告中提出�
                     <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">有一天，在卫生部门做公务员的父亲提出了一个问题：为什么有些医院门庭若市，而有些医院却门可罗雀？这让苏舒开始思考，到底是什么导致这样的医疗资源的不平衡，而这个没有找到答案的问题在他的心里落下了深深的烙印。</span>
                 </p>
                 <p style="text-indent: 32px; line-height: 2em; text-align: center;">
-                    <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;"><img alt="demo.jpg" src="<?php echo $baseUrlImage; ?>news/partnerofdocs/image2.png" title=""/></span>
+                    <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;"><img alt="demo.jpg" src="http://static.mingyizhudao.com/147014134282393" title=""/></span>
                 </p>
                 <p style="text-align: center; line-height: 2em;">
                     <br/>
@@ -65,7 +65,7 @@ $this->htmlMetaDescription = '李克强总理2015年政府工作报告中提出�
                     <span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">首先，从医疗的角度上来说，“名医主刀”能够在全国各地搜集稳定的患者来源，让医生无论是在体制内还是体制外都能与患者有一个持续的连接。其次，“名医主刀”有专业的医生团队为患者进行早期的分诊服务，将医患进行更精准地匹配。再次，“名医主刀”的平台通过国家对医生鼓励多点执业的政策导向，将闲置的医疗资源和人满的医疗资源进行配置，使两边达成一种平衡。在短短十个月内，“名医主刀”已为超过2万名患者服务，并与国内三甲医院的专家进行合作，并与100多家有富余床位的医疗机构进行了对接，实现了华北、华南、华东全覆盖及全科室手术。</span>
                 </p>
                 <p style="text-align: center; line-height: 2em;">
-                    <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;"><img alt="" src="<?php echo $baseUrlImage; ?>news/partnerofdocs/image3.png" title=""/></span>
+                    <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;"><img alt="" src="http://static.mingyizhudao.com/147014134348955" title=""/></span>
                 </p>
                 <p style="line-height: 2em; text-align: justify;">
                     <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;"><strong><span style="font-family: 微软雅黑,Microsoft YaHei;">发挥互联网优势 寻求多平台合作</span></strong></span>

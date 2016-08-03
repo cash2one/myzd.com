@@ -61,8 +61,8 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
                             &nbsp;
                         </p>
                         <p class="MsoNormal text-center">
-                            <!--[if gte vml 1]><![endif]--><!--[if !vml]--><img width="203" height="362" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146243641890893" /><!--[endif]-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <!--[if gte vml 1]><![endif]--><!--[if !vml]--><img width="203" height="362" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146243642226651" /><!--[endif]-->
+                            <!--[if gte vml 1]><![endif]--><!--[if !vml]--><img width="203" height="362" src="http://static.mingyizhudao.com/146243641890893" /><!--[endif]-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <!--[if gte vml 1]><![endif]--><!--[if !vml]--><img width="203" height="362" src="http://static.mingyizhudao.com/146243642226651" /><!--[endif]-->
                         </p>
                         <p class="MsoNormal">
                             &nbsp;
@@ -75,7 +75,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
                         </p>
                         <div class="row">
                             <div class="col-md-4">
-                                <!--[if gte vml 1]><![endif]--><!--[if !vml]--><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14624405397599" /><!--[endif]-->
+                                <!--[if gte vml 1]><![endif]--><!--[if !vml]--><img src="http://static.mingyizhudao.com/14624405397599" /><!--[endif]-->
                             </div>
                             <div class="col-md-8">
                                 <div class="vedio-area">

@@ -27,7 +27,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
              <div style="text-align:center;"><video style="width:500px;" id="vedio-content" class="video-js " src="<?php echo $urlVideo; ?>event/stories/tick.mp4"  data-setup="{}" type="video/mp4" controls></video></div><br />
             <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">小芳何许人？</span><br />
             <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">南京经济广播电台《小芳健康网》主播。小芳属于专家型主持人，原本就是医生出身的她，既能深入临床一线，了解医学进展，把对生命的感悟，融入在对每一位听众的帮助之中，驾起了医患专家沟通的桥梁，节目的收听率与影响力一直名列前茅，成为南京广播双十佳栏目。小芳还担任江苏省医学会、江苏省医师协会科普与健康促进分会委员兼秘书。无怪乎，大家都这么亲切的称呼她“要健康，找小芳”呢。</span><br /></div>
-            <div  style="text-align:center;"><img  style="height:400px;"  src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146882274378980"></div>
+            <div  style="text-align:center;"><img  style="height:400px;"  src="http://static.mingyizhudao.com/146882274378980"></div>
             <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">事件回放：</span><br />
             <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">七岁的小童7月11日七时许，在草丛中玩耍，突然他的小手一阵巨痛，一条虫子钻进了他的手背。这可急坏了小童的妈妈，小童妈妈快速的捏住正在往小童手背里钻的虫子，结果，虫子的尾巴被拽出来了，可是头却继续在小童的手背里。这下子，泪流满面的不再只是小童，还有小童的妈妈。小童妈妈迅速带着小童来到医院，由于情况紧急，辗转了几家医院都没有处理好，这才朋友圈求救。</span><br /></div>
             <br />
@@ -40,7 +40,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
             <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">唐代彬，南京医科大学附属逸夫医院急诊科副主任医师，硕士研究生。具有二十余年临床工作经历，擅长常见内科急症的诊治，在心肺脑复苏、中毒的救治、危重病人的综合救治、批量伤病员救治组织管理方面积累了丰富经验。</span><br /></div>
             <br />
             
-            <div  style="text-align:center;"><img style="height:330px;width:500px;" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146882279359588"></div>
+            <div  style="text-align:center;"><img style="height:330px;width:500px;" src="http://static.mingyizhudao.com/146882279359588"></div>
             <div style="text-align:center;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">唐代彬主任工作照</span></div><br />
             <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">蜱虫遍布世界各地，有些地区称其为“草爬子”，是仅次于蚊子的第二种最常见的传播疾病的媒介生物。蜱虫本身并不会对人体造成多么严重的伤害,蜱虫主要以吸取动物的血液为生，体内会携带多种来自动物的病毒。如果携带这些病毒的蜱虫咬了人，患者就会感染某些病毒从而引发重大疾病。</span><br /></div>
             <br />

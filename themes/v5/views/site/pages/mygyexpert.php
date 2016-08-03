@@ -2,7 +2,7 @@
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlCommonwealDoctors = $this->createUrl('api/commonwealdoctors');
 $urlDoctorView = $this->createUrl('doctor/view');
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/mygy.min.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/mygy100.min.css');
 $this->checkVendor(AppLog::SITE_MYGY);
 ?>
 <section id="mygyexpert">

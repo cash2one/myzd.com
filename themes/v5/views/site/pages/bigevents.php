@@ -3,11 +3,11 @@ $menu = $this->getPageMenu();
 $this->pageTitle = '名医主刀大事记_名医主刀网';
 $this->htmlMetaKeywords = '名医主刀大事记,名医主刀网';
 $this->htmlMetaDescription = '2016年4月,名医主刀完成B轮1.5亿元人民币融资。本轮由约印创投、国开汉富领投，复星医药、高榕资本、真格基金、美国凯瑟琳肿瘤中心与风和资本等机构跟投。';
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/aboutus100.min.css");
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <div class="container-fluid aboutus-header h400">
-    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625020116117"/>
+    <img src="http://static.mingyizhudao.com/14625020116117"/>
 </div>
 <div class="container-fluid">
     <div class="row">
@@ -22,7 +22,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     <div class="main-content">
                         <div class="event">
                             <div class="pull-left mr30">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146139395817078">
+                                <img src="http://static.mingyizhudao.com/146139395817078">
                             </div>
                             <div class="pl620">
                                 <div class="event-date">2016年4月</div>
@@ -33,7 +33,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                         </div>
                         <div class="event">
                             <div class="pull-left mr30">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146139399025115">
+                                <img src="http://static.mingyizhudao.com/146139399025115">
                             </div>
                             <div class="pl620">
                                 <div class="event-date">2015年10月</div>
@@ -44,7 +44,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                         </div>
                         <div class="event">
                             <div class="pull-left mr30">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146139399008732">
+                                <img src="http://static.mingyizhudao.com/146139399008732">
                             </div>
                             <div class="pl620">
                                 <div class="event-date">2015年5月</div>
@@ -55,7 +55,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                         </div>
                         <div class="event">
                             <div class="pull-left">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146139399004245">
+                                <img src="http://static.mingyizhudao.com/146139399004245">
                             </div>
                             <div class="pl620">
                                 <div class="event-date">2014年10月，名医主刀项目启动。</div>

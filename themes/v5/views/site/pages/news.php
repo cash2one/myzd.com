@@ -1,13 +1,13 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/aboutus.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/aboutus100.min.css");
 $urlNews = $this->createUrl('news/page', array("view" => ""));
 $this->pageTitle = '公司资讯_名医主刀网';
 $this->htmlMetaKeywords = '公司新闻,公司资讯';
 $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学附属医院成功签约,双方将以延安大学附属医院为区域手术基地,合作共建延安市第一家互联网手术中心。';
 ?>
 <div class="container-fluid aboutus-header h400">
-    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14625020116117"/>
+    <img src="http://static.mingyizhudao.com/14625020116117"/>
 </div>
 <div class="container-fluid bg-gray-f7">
     <div class="row">
@@ -24,13 +24,13 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                             <div class="col-md-2 col-sm-3">
                                 <div class="time-line">
                                     <div>
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250228832979">
+                                        <img src="http://static.mingyizhudao.com/146250228832979">
                                     </div>
                                     <div>
                                         <div class="yellow-line-one"></div>
                                     </div>
                                     <div>
-                                        <img class="mt-25" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250228825473">
+                                        <img class="mt-25" src="http://static.mingyizhudao.com/146250228825473">
                                     </div>
                                     <div>
                                         <div class="yellow-line-two"></div>
@@ -40,7 +40,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                             <div class="col-md-10 col-sm-9 ml-50 news">
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146883240108139">
+                                        <img src="http://static.mingyizhudao.com/146883240108139">
                                     </div>
                                     <div class="col-md-9 col-sm-12">
                                         <div class="news-content">
@@ -56,7 +56,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146823098998766">
+                                        <img src="http://static.mingyizhudao.com/146823098998766">
                                     </div>
                                     <div class="col-md-9 col-sm-12">
                                         <div class="news-content">
@@ -72,7 +72,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14682293619706">
+                                        <img src="http://static.mingyizhudao.com/14682293619706">
                                     </div>
                                     <div class="col-md-9 col-sm-12">
                                         <div class="news-content">
@@ -88,7 +88,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146770428220249">
+                                        <img src="http://static.mingyizhudao.com/146770428220249">
                                     </div>
                                     <div class="col-md-9 col-sm-12">
                                         <div class="news-content">
@@ -104,7 +104,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146640680208048">
+                                        <img src="http://static.mingyizhudao.com/146640680208048">
                                     </div>
                                     <div class="col-md-9 col-sm-12">
                                         <div class="news-content">
@@ -120,7 +120,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146356319786612">
+                                        <img src="http://static.mingyizhudao.com/146356319786612">
                                     </div>
                                     <div class="col-md-9 col-sm-12">
                                         <div class="news-content">
@@ -136,7 +136,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146356319763533">
+                                        <img src="http://static.mingyizhudao.com/146356319763533">
                                     </div>
                                     <div class="col-md-9 col-sm-12">
                                         <div class="news-content">
@@ -152,7 +152,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265336047">
+                                        <img src="http://static.mingyizhudao.com/146250265336047">
                                     </div>
                                     <div class="col-md-9 col-sm-12">
                                         <div class="news-content">
@@ -167,7 +167,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146172652186866">
+                                        <img src="http://static.mingyizhudao.com/146172652186866">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -183,7 +183,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265326421">
+                                        <img src="http://static.mingyizhudao.com/146250265326421">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -199,7 +199,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265311271">
+                                        <img src="http://static.mingyizhudao.com/146250265311271">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -215,7 +215,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265317817">
+                                        <img src="http://static.mingyizhudao.com/146250265317817">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -231,7 +231,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265278635">
+                                        <img src="http://static.mingyizhudao.com/146250265278635">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -247,7 +247,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265286019">
+                                        <img src="http://static.mingyizhudao.com/146250265286019">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -263,7 +263,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265292894">
+                                        <img src="http://static.mingyizhudao.com/146250265292894">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -279,7 +279,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265301176">
+                                        <img src="http://static.mingyizhudao.com/146250265301176">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -295,7 +295,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265272716">
+                                        <img src="http://static.mingyizhudao.com/146250265272716">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -311,7 +311,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265220664">
+                                        <img src="http://static.mingyizhudao.com/146250265220664">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -326,7 +326,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265243797">
+                                        <img src="http://static.mingyizhudao.com/146250265243797">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -342,7 +342,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265249537">
+                                        <img src="http://static.mingyizhudao.com/146250265249537">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -357,7 +357,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265258730">
+                                        <img src="http://static.mingyizhudao.com/146250265258730">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">
@@ -373,7 +373,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146250265264069">
+                                        <img src="http://static.mingyizhudao.com/146250265264069">
                                     </div>
                                     <div class="col-md-9 col-sm-7">
                                         <div class="news-content">

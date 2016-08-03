@@ -8,8 +8,8 @@ $this->pageTitle = '常见问题_名医主刀网';
 $this->htmlMetaKeywords = '常见问题,名医主刀网';
 $this->htmlMetaDescription = '名医主刀网将自助出现的问题都整理在此,可供您在咨询前做参考;如有更多疑问可拨打我们的客服热线400-6277-120或在线咨询。';
 }
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/help.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/help100.min.css");
 $urlBookingList = $this->createUrl('booking/list');
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $isTerms = Yii::app()->request->getQuery('page', '');
@@ -93,7 +93,7 @@ $isTerms = Yii::app()->request->getQuery('page', '');
         </div>
         <div class="col-sm-9 payment">
             <div>
-                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14624356699601">
+                <img class="img-responsive" src="http://static.mingyizhudao.com/14624356699601">
             </div>
             <div class="border-gray mt10 lineh2-5em">
                 <div class="pb40  support-content" id="answer1">  
