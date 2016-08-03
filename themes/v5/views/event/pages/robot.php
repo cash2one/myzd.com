@@ -3,7 +3,7 @@ $this->pageTitle = '机器人会下棋,机器人还会做手术_名医主刀网'
 $this->htmlMetaKeywords = '达芬奇手术机器人,手术机器人介绍';
 $this->htmlMetaDescription = '与Alpha Go不同,达芬奇手术机器人并非人工智能。一提到它,也许很多医疗界外的人会感觉是科幻片的主角。但实际上它是一台用微创的方法,实施复杂外科手术的系统,只是从智能的意义上讲的确可称为机器人。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-robot.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-robot100.min.css");
 ?>
 <section id="robot">
     <div class="container">
@@ -20,7 +20,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <div><span class="color-036eb7">与Alpha Go不同，达芬奇手术机器人并非人工智能。</span>一提到它，也许很多医疗界外的人会感觉是科幻片的主角。但实际上它是一台用微创的方法，实施复杂外科手术的系统，只是从智能的意义上讲的确可称为机器人。它的三维视觉可放大物体10-15倍，在手术应用中非常精准且极度微创，曾成功缝合厚度不到1毫米的葡萄皮。现被应用于普通外科、胸外科、泌尿外科、妇产科等领域。</div>
                     </div>
                 </div>
-                <div class="col-md-5"><img class="img-responsive" src="<?php echo $urlResImage; ?>event/robot/picture01.png"></div>
+                <div class="col-md-5"><img class="img-responsive" src="http://static.mingyizhudao.com/147013832985948"></div>
             </div>
             <div class="heading">手术机器人</div>
             <div class="row">
@@ -31,7 +31,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <div class="mt20"><strong>3.成像系统</strong>：内装有外科手术机器人的核心处理器以及图象处理设备。外科手术机器人的内窥镜对手术视野具有10倍以上的放大倍数，能为主刀医生带来患者体腔内三维立体高清影像，使主刀医生较普通腹腔镜手术更能把握操作距离，更能辨认解剖结构，提升了手术精确度。</div>
                     </div>
                 </div>
-                <div class="col-md-4 text-right"><img class="img-responsive" src="<?php echo $urlResImage; ?>event/robot/picture02.png"></div>
+                <div class="col-md-4 text-right"><img class="img-responsive" src="http://static.mingyizhudao.com/147013833061499"></div>
             </div>
             <div class="heading">手术机器人有啥优势？</div>
             <div class="row">
@@ -43,7 +43,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <div class="mt10">④医生有利之处归根到底还是为患者。例如，机器人提高精确度，便能节省出手术时间从而减少术者疲劳，这样可以进一步防止术者手部颤动使术者精力更集中，使手术更完美。</div>
                     </div>
                 </div>
-                <div class="col-md-4 text-right"><img class="img-responsive" src="<?php echo $urlResImage; ?>event/robot/picture03.png"></div>
+                <div class="col-md-4 text-right"><img class="img-responsive" src="http://static.mingyizhudao.com/147013833074673"></div>
             </div>
             <div class="heading">手术机器人适用于那些手术？</div>
             <div class="content text15">
@@ -59,7 +59,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         <div class="mt20">顶级水平的医生加上尖端科技设备，相信可以创造更多医学奇迹。</div>
                     </div>
                 </div>
-                <div class="col-md-3 text-right"><img class="img-responsive" src="<?php echo $urlResImage; ?>event/robot/picture04.png"></div>
+                <div class="col-md-3 text-right"><img class="img-responsive" src="http://static.mingyizhudao.com/147013833094043"></div>
             </div>
             <div class="heading">你没见过的“感谢诗”</div>
             <div class="content">在中国，写给医生的感谢信，送给医生的感谢锦旗，很常见， 不过像下面的这两首“感谢诗”可不多见。两首“感谢诗”的作者，张爷爷，在他罹患贲门癌的老伴儿在和睦家启望肿瘤中心与北京大学肿瘤医院的携手合作以及达芬奇机器人的帮助下，顺利完成了全胃切除手术后，诗兴大发，写下了这两首感谢诗送给医院和医生们。</div>
@@ -89,7 +89,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             </div>
             <div class="heading">不负越洋2万里的托付</div>
             <div class="row">
-                <div class="col-md-4"><img class="img-responsive" src="<?php echo $urlResImage; ?>event/robot/picture05.png"></div>
+                <div class="col-md-4"><img class="img-responsive" src="http://static.mingyizhudao.com/147013833111525"></div>
                 <div class="col-md-8">
                     <div class="content">
                         <div>常年居住在美国的王女士患子宫肌瘤，需要进行非常精密的子宫肌瘤剔除手术，以往的这种手术患者疼痛感明显、术后痕迹大、恢复时间长，但在达芬奇的帮助下，不仅手术过程中疼痛感轻，甚至仅出血50 毫升，手术痕迹只有4个指甲盖长短的小切口，伤口恢复快，以至于王女士3天后，便已经在家中的躺椅上沐浴阳光。</div>

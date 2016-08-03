@@ -1,14 +1,14 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-main.min.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-main100.min.css");
 ?>
 <section id="centralpublicwelfare">
     <div class="Centralpublicwelfare-bgcolor">
-        <div class="container"><img class="header-img" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146535429302443" alt=""/></div>
+        <div class="container"><img class="header-img" src="http://static.mingyizhudao.com/146535429302443" alt=""/></div>
     </div>
     <div class="container mt30">
         <div class="row">
             <div class="col-sm-4">
-                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146535428250189" alt=""/>
+                <img src="http://static.mingyizhudao.com/146535428250189" alt=""/>
             </div>
             <div class="col-sm-8">
                 <div class="Centralpublicwelfare-text-litle">
@@ -31,7 +31,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 术，在术后探访了患者并送去了公益福利。
             </div>
             <div class="Centralpublicwelfare-picture-right mt10 mr5">
-                <img  src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146535428512512" alt=""/>
+                <img  src="http://static.mingyizhudao.com/146535428512512" alt=""/>
             </div>
             <div>
                 当来自北京大学人民医院的刘彦国教授代表名医主刀联合复星公益基金为老区患者捐赠1000元手术费的时候，老区患者的家属开心的说：“真是太温暖，太感谢了！拍个合影留个念吧！”
@@ -52,7 +52,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
         </div>
         <div class="mt50">
             <div class="Centralpublicwelfare-picture-left" >
-                <img class="mt10" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146535428575870" alt=""/>
+                <img class="mt10" src="http://static.mingyizhudao.com/146535428575870" alt=""/>
             </div>
             <div class="Centralpublicwelfare-text-litle-black">
                 <div >
@@ -74,7 +74,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
         </div>
         <div class="row">
             <div class="col-sm-9 mt20">
-                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146536841742318" alt=""/>
+                <img src="http://static.mingyizhudao.com/146536841742318" alt=""/>
             </div>
             <div class="col-sm-3 mt20 pl0">
                 <div class="Centralpublicwelfare-last">
@@ -89,7 +89,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6 col-lg-4 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '85')); ?>">
                     <div class="border-gray expert-list">
-                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/4F10705C31AE305A07B256283A8B5CDB" alt=""></div>
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/4F10705C31AE305A07B256283A8B5CDB" alt="朱思泉" title="朱思泉" /></div>
                         <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                         <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
                         <div class="text-center"><span class="strong ml20">朱思泉</span><span class="text-center">&nbsp;主任医师&nbsp;教授</span></div>
@@ -102,7 +102,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6 col-lg-4 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '2939')); ?>">
                     <div class="border-gray expert-list">
-                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/960B25FD0970166787774B129807920A" alt=""></div>
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/960B25FD0970166787774B129807920A" alt="刘彦国" title="刘彦国" /></div>
                         <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                         <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
                         <div class="text-center"><span class="strong ml20">刘彦国</span><span class="text-center">&nbsp;主任医师&nbsp;</span></div>
@@ -115,7 +115,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6 col-lg-4 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3017')); ?>">
                     <div class="border-gray expert-list">
-                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/0048D8B24CC66ED65BEA0576D276A93B" alt=""></div>
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/0048D8B24CC66ED65BEA0576D276A93B" alt="李志伟" title="李志伟" /></div>
                         <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                         <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
                         <div class="text-center"><span class="strong ml20">李志伟</span><span class="text-center">&nbsp;主任医师&nbsp;教授</span></div>

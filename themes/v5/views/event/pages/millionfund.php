@@ -1,11 +1,11 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-millionfund.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-millionfund100.min.css");
 ?>
 <div class="container-fluid pt30 bg-millonfund" id="millonfund">
-    <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146183901301572" class="img-responsive"/>
+    <img src="http://static.mingyizhudao.com/146183901301572" class="img-responsive"/>
     <div class="text-center main-content">
-        <div class="img-middle"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146183901297115" class="img-responsive"/></div>
+        <div class="img-middle"><img src="http://static.mingyizhudao.com/146183901297115" class="img-responsive"/></div>
         <div class="mt-130">
             <div>名医主刀通过整合全国优质医疗资源</div>
             <div class="mt10">从顶尖专家到闲置床位</div>
@@ -34,7 +34,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
         </div>
     </div>
     <div class="text-center mt30 color-e50011 text16">*名医助手将对您的病例和申请进行审核，如未通过，我们也将全力帮助您安排到顶尖专家尽快进行手术。</div>
-    <div class="row"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14618390128216" class="img-responsive"/></div>
+    <div class="row"><img src="http://static.mingyizhudao.com/14618390128216" class="img-responsive"/></div>
 
 </div>
 <div class="container-fluid bg-millonfund">

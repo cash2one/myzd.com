@@ -12,7 +12,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 <section id="lungcancer">
     <div class="container-fluid">
         <div class="row">
-            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146338384422913"/>
+            <img src="http://static.mingyizhudao.com/146338384422913"/>
         </div>
     </div>
     <div class="lungcancer-content">
@@ -107,7 +107,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     <div>同时，凯瑟琳癌症中心作为名医主刀B轮1.5亿元融资的战略投资方之一，</div>
                     <div>在未来，将为名医主刀提供远程专家支持等医疗服务。</div>
                 </div>
-                <div class="mt30"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146338384439615"/></div>
+                <div class="mt30"><img src="http://static.mingyizhudao.com/146338384439615"/></div>
                 <div class="content-title mt50 mb50">
                     敬请期待！
                 </div>

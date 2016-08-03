@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-doctorInterview.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-doctorInterview100.min.css");
 ?>
 <section id="doctorInterview">
     <div class="container-fluid">

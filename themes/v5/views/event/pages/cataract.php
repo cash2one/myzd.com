@@ -1,12 +1,12 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-cataract.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-cataract100.min.css");
 ?>
 <section id="cataract">
     <div class="container-fluid bg-abc83d">
         <div class="row">
             <div class="container">
-                <img src="<?php echo $urlResImage; ?>event/cataract/header.png" class="img-responsive" />
+                <img src="http://static.mingyizhudao.com/14701327438657" class="img-responsive" />
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                         </div>
                     </div>
                     <div class="col-sm-5 text-right">
-                        <img src="<?php echo $urlResImage; ?>event/cataract/hospital.png">
+                        <img src="http://static.mingyizhudao.com/147013274465366">
                     </div>
                 </div>
                 <div class="text-content mt50">
@@ -39,7 +39,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                             <div class="mt25"><i class="fa fa-star yellow-star"></i><strong>手术地点</strong>：北京熙仁医院（北京市海淀区学清路 静淑东里10号院）</div>
                         </div>
                         <div class="col-sm-2 text-center">
-                            <img src="<?php echo $urlResImage ?>event/cataract/doctor.png">
+                            <img src="http://static.mingyizhudao.com/147013274309751">
                             <div class="text12 text-center mt5">（图为北京大学第三医院眼科主任医师、著名白内障专家郝燕生教授）</div>
                         </div>
                     </div>

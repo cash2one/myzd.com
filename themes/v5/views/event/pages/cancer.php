@@ -1,10 +1,10 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-cancer.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-cancer100.min.css");
 ?>
 <section id="cancer">
     <div class="container">      
-        <div class="text-center"><span class="total-title text-center"><img src="<?php echo $urlResImage; ?>event/cancer/header80.png">&nbsp;的人忽视的身体小肿块，险些成癌!</span></div>
+        <div class="text-center"><span class="total-title text-center"><img src="http://static.mingyizhudao.com/147013243690630">&nbsp;的人忽视的身体小肿块，险些成癌!</span></div>
         <div class="line-title"></div>
         <div class="text-center text15 color-gray7">
             <div class="mt50"><div class="yellow-title mt10">名医君提示您:</div></div>
@@ -50,23 +50,23 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="content-title">常见癌症的手术治疗</div>
             <div class="row mt50">  
                 <div class="col-sm-4">
-                    <div class="text-center mb10"><img src="<?php echo $urlResImage; ?>event/cancer/icon1.png"></div>
+                    <div class="text-center mb10"><img src="http://static.mingyizhudao.com/147013243807147"></div>
                     <strong class="color-036eb7">口腔癌治疗方式</strong>分为：手术切除、放射线治疗、化学治疗、中药治疗。
                     早期的口腔癌如未见颈部淋巴转移，单独使用手术或放射治疗都有不错的成效。中晚期的口腔癌，推荐使用外科手术。</div>
                 <div class="col-sm-4">
-                    <div class="text-center mb10"><img src="<?php echo $urlResImage; ?>event/cancer/icon2.png"></div>
+                    <div class="text-center mb10"><img src="http://static.mingyizhudao.com/147013243830689"></div>
                     <strong class="color-036eb7">乳腺癌的外科手术</strong>包括乳腺和腋窝淋巴结两部分。乳腺手术有保乳手术和全乳房切除术。腋窝淋巴结手术有前哨淋巴结活检和腋窝淋巴结清扫。目前还做不到所有的乳腺癌患者都能进行保乳手术。对不适合保乳手术的乳腺癌患者还需要切除乳房，但会采用整形外科技术重建乳房。进行乳房重建不会影响乳腺癌的整体治疗。</div>
                 <div class="col-sm-4">
-                    <div class="text-center mb10"><img src="<?php echo $urlResImage; ?>event/cancer/icon3.png"></div>
+                    <div class="text-center mb10"><img src="http://static.mingyizhudao.com/14701324385792"></div>
                     <strong class="color-036eb7">甲状腺癌的手术</strong>治疗包括甲状腺本身的手术，以及颈淋巴结清扫。甲状腺的切除范围目前仍有分歧，范围最小的为腺叶加峡部切除，最大至甲状腺全切除。</div>
             </div>
             <div class="row mt20">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-4">
-                    <div class="text-center mb10"><img src="<?php echo $urlResImage; ?>event/cancer/icon4.png"></div>
+                    <div class="text-center mb10"><img src="http://static.mingyizhudao.com/147013243883231"></div>
                     <strong class="color-036eb7">治疗结肠癌的方案</strong>是以手术切除为主的综合治疗方案。常采用根治性的切除+区域淋巴结清扫，根据癌肿所在部位确定根治切除范围及其手术方式。晚期患者若出现肠梗阻、严重肠出血时，不建议根治手术，可先切除部分，缓解症状，改善患者生活质量。</div>
                 <div class="col-sm-4">
-                    <div class="text-center mb10"><img src="<?php echo $urlResImage; ?>event/cancer/icon5.png"></div>
+                    <div class="text-center mb10"><img src="http://static.mingyizhudao.com/147013243978186"></div>
                     <strong class="color-036eb7">皮肤癌手术治疗</strong>作为皮肤癌首选的治疗方法，适当的手术切除治疗，治愈率达90%～100%。切除的范围随肿瘤的大小、浸润深度而异。其他治疗方式包括药物治疗、放射疗法等。</div>
                 <div class="col-sm-2"></div>
             </div>
@@ -82,7 +82,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     <div>那么真相到底是什么呢？</div>
                     <div>下面，名医君带大家了解一下检查中的一些误区。</div></div>
             </div>
-            <div class="mt30 pull-left bg-f5cfdd"><strong class="text15">1、PET-CT检查是最好的</strong><img class="ml10" src="<?php echo $urlResImage; ?>event/cancer/picturex.png" /></div>             
+            <div class="mt30 pull-left bg-f5cfdd"><strong class="text15">1、PET-CT检查是最好的</strong><img class="ml10" src="http://static.mingyizhudao.com/147013258368813" /></div>             
             <div class="line-one"></div>
              <div class="clearfix"></div>
             <div class="row">                 
@@ -94,14 +94,14 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     <div>而且，PET-CT检查对人体有一定的辐射，不适合经常重复检查，因此不能常规作为防癌体检的方法使用。</div>
                 </div>
                 <div class="col-sm-5 text-center">
-                    <img src="<?php echo $urlResImage; ?>event/cancer/PET-CT.png">
+                    <img src="http://static.mingyizhudao.com/147013258305064">
                 </div>
             </div>
-            <div class="pull-right bg-f5cfdd"><strong class="text15" >2、查血就能诊断癌症</strong><img class="ml10" src="<?php echo $urlResImage; ?>event/cancer/picturex.png"></div>
+            <div class="pull-right bg-f5cfdd"><strong class="text15" >2、查血就能诊断癌症</strong><img class="ml10" src="http://static.mingyizhudao.com/147013258368813"></div>
              <div class="line-two"></div>
              <div class="clearfix"></div>
             <div class="row mt30">
-                <div class="col-sm-5 text-center"><img src="<?php echo $urlResImage; ?>event/cancer/xueye.png"></div>
+                <div class="col-sm-5 text-center"><img src="http://static.mingyizhudao.com/147013258382569"></div>
                 <div class="col-sm-7 text-right">  
                     <div class="mt10">一些外周肿瘤标志物如AFP对于肝癌、PSA对于前列腺癌有一定的诊断意义，</div>
                     <div>其他常见的癌症与血的肿瘤标志物之间缺乏明确的对应关系。</div>
@@ -111,7 +111,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     <div>血液肿瘤标志物检查需要联合医生的临床检查、影像学检查如超声、CT等进行癌症的早期诊断。</div>
                 </div>
             </div>
-             <div class="pull-left mt20 bg-f5cfdd"><strong class="text15">3、血的肿瘤标志物升高就是患了癌症</strong><img class="ml10" src="<?php echo $urlResImage; ?>event/cancer/picturex.png"></div>
+             <div class="pull-left mt20 bg-f5cfdd"><strong class="text15">3、血的肿瘤标志物升高就是患了癌症</strong><img class="ml10" src="http://static.mingyizhudao.com/147013258368813"></div>
              <div class="line-three"></div>
              <div class="clearfix"></div>
             <div class="row mt30">               
@@ -122,7 +122,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     <div>但是，如果在体检过程中发现了血的肿瘤标志物的升高，</div>
                     <div>还是要进行全面的临床检查并长期进行复查、随诊，以发现可能存在的潜在的疾病。</div>
                 </div>
-                <div class="col-sm-5 text-center"><img src="<?php echo $urlResImage; ?>event/cancer/zhongliu.png"></div>
+                <div class="col-sm-5 text-center"><img src="http://static.mingyizhudao.com/147013258391083"></div>
             </div>
         </div>
     </div>
@@ -133,7 +133,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-md-3 col-sm-6 mt40">
                     <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3054')); ?>">
                         <div class="text-center expert">
-                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/4089200A585E7232A77D28A2F5329610"/>
+                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/4089200A585E7232A77D28A2F5329610" alt="李龙江" title="李龙江"/>
                             <div class="mt10"><span class="ename">李龙江</span><span class="color-gray ml10">主任医师&nbsp;教授</span></div>
                             <div class="department">口腔颌面外科</div>
                             <div class="hospital">四川大学华西口腔医院</div>
@@ -151,7 +151,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-md-3 col-sm-6 mt40">
                     <a href="<?php echo $this->createUrl('doctor/view', array('id' => '82')); ?>">
                         <div class="text-center expert">
-                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/4B2E10B6A8B6B408EF2814019DF4F7B7"/>
+                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/4B2E10B6A8B6B408EF2814019DF4F7B7" alt="刘跃武" title="刘跃武"/>
                             <div class="mt10"><span class="ename">刘跃武</span><span class="color-gray ml10">主任医师&nbsp;教授</span></div>
                             <div class="department">基本外科</div>
                             <div class="hospital">北京协和医院</div>
@@ -169,7 +169,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-md-3 col-sm-6 mt40">
                     <a href="<?php echo $this->createUrl('doctor/view', array('id' => '369')); ?>">
                         <div class="text-center expert">
-                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/C175A656BA51004689948F994954EF49"/>
+                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/C175A656BA51004689948F994954EF49"  alt="蔡三军" title="蔡三军"/>
                             <div class="mt10"><span class="ename">蔡三军</span><span class="color-gray ml10">主任医师&nbsp;教授</span></div>
                             <div class="department">大肠外科</div>
                             <div class="hospital">上海复旦大学附属肿瘤医院</div>
@@ -187,7 +187,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-md-3 col-sm-6 mt40">
                     <a href="<?php echo $this->createUrl('doctor/view', array('id' => '295')); ?>">
                         <div class="text-center expert">
-                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/90CBC342F688341BADD18BA6209B8362"/>
+                            <img class="img100" src="http://7xtetc.com1.z0.glb.clouddn.com/90CBC342F688341BADD18BA6209B8362" alt="陆劲松" title="陆劲松"/>
                             <div class="mt10"><span class="ename">陆劲松</span><span class="color-gray ml10">主任医师&nbsp;教授</span></div>
                             <div class="department">乳腺外科</div>
                             <div class="hospital">上海交通大学医学院附属仁济医院</div>

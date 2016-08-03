@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-thyroid.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-thyroid100.min.css");
 ?>
 <div class="container-fluid">
     <div class="row">
@@ -111,7 +111,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                     <div class="teamlist">
                         <a href="<?php echo $this->createUrl('doctor/view', array('id' => 82)); ?>" target="_blank">
                             <div>
-                                <img src="<?php echo $urlResImage; ?>doc-images/liuyuewu.jpg"/>
+                                <img src="http://static.mingyizhudao.com/147020421457785"/>
                             </div>
                             <div class="text-center">
                                 <span class="doc-name">&nbsp;&nbsp;刘跃武</span>

@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-list.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-list100.min.css");
 ?>
 <section id="eventList">
     <div class="container-fluid crumbs-event">
@@ -20,7 +20,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146908818587832">
+                            <img src="http://static.mingyizhudao.com/146908818587832">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -37,7 +37,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'catherine')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146908818404221">
+                            <img src="http://static.mingyizhudao.com/146908818404221">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -54,7 +54,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'centralpublicwelfare')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146848218911910">
+                            <img src="http://static.mingyizhudao.com/146848218911910">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -71,7 +71,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'shapinghealth')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146459511049131">
+                            <img src="http://static.mingyizhudao.com/146459511049131">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -88,7 +88,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'winegirl')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146459508443619">
+                            <img src="http://static.mingyizhudao.com/146459508443619">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -105,7 +105,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'cataract')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314974635016">
+                            <img src="http://static.mingyizhudao.com/146314974635016">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -121,7 +121,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'cancer')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314989894757">
+                            <img src="http://static.mingyizhudao.com/146314989894757">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -138,7 +138,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'prince')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314962973560">
+                            <img src="http://static.mingyizhudao.com/146314962973560">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -155,7 +155,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'lujinsong')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314962969155">
+                            <img src="http://static.mingyizhudao.com/146314962969155">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -172,7 +172,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'rectalcancer')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314962964354">
+                            <img src="http://static.mingyizhudao.com/146314962964354">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -189,7 +189,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'nationalday')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14631496296013">
+                            <img src="http://static.mingyizhudao.com/14631496296013">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -206,7 +206,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'doctorInterview')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314962947593">
+                            <img src="http://static.mingyizhudao.com/146314962947593">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -223,7 +223,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'ertai')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314951573032">
+                            <img src="http://static.mingyizhudao.com/146314951573032">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -240,7 +240,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'guanxinbing')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314951569145">
+                            <img src="http://static.mingyizhudao.com/146314951569145">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -257,7 +257,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'xinxueguan')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314951564529">
+                            <img src="http://static.mingyizhudao.com/146314951564529">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -274,7 +274,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'ruxianai')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314951559287">
+                            <img src="http://static.mingyizhudao.com/146314951559287">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -291,7 +291,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'thyroid')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314951554440">
+                            <img src="http://static.mingyizhudao.com/146314951554440">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -308,7 +308,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'preliverdisease')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14631495154059">
+                            <img src="http://static.mingyizhudao.com/14631495154059">
                         </div>
                         <div class="content">
                             <div class="text-content">
@@ -326,7 +326,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'tumor')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146314951524745">
+                            <img src="http://static.mingyizhudao.com/146314951524745">
                         </div>
                         <div class="content">
                             <div class="text-content">

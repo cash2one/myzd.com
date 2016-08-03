@@ -3,13 +3,13 @@ $this->pageTitle = '澄清癌症的错误认识,癌症十大误区总结_名医�
 $this->htmlMetaKeywords = '癌症,癌症知识,癌症误区';
 $this->htmlMetaDescription = '世界卫生组织报告显示,从公众、患者到部分医护人员,都对癌症存在不少误区。名医君总结了人们对癌症普遍存在的十大误区,大家有则改之无则加勉哦。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-main.min.css?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-main100.min.css");
 ?>
 <section id="defecatecancer">
     <div class="container-fluid bg-header">
         <div class="row">
             <div class="text-center" >
-                <div class="container"><img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146353703773283" alt=""/></div>
+                <div class="container"><img class="img-responsive" src="http://static.mingyizhudao.com/146353703773283" alt=""/></div>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 mt50 pr30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>一、患癌主要由基因决定？</strong></div>
-                        <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146353703683287" alt=""/></div>
+                        <div class="mt10"><img src="http://static.mingyizhudao.com/146353703683287" alt=""/></div>
                     </div>
                     <div class="text-little-content mt15">
                         专家观点： 事实上，遗传只是癌症发生的因素之一，环境污染、不良生活和饮食习惯、过度压力等，都和癌症的发生密切相关。<br><br>
@@ -30,7 +30,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 mt50 pl30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>二、癌症不可预防？</strong></div>
-                        <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146353703702366" alt=""/></div>
+                        <div class="mt10"><img src="http://static.mingyizhudao.com/146353703702366" alt=""/></div>
                     </div>
                     <div class="text-little-content mt15">
                         专家观点：世界卫生组织提出，1/3恶性肿瘤可预防，1/3可治疗，1/3可治愈，预防癌症的主动权掌握在每个人自己手里。<br><br>
@@ -43,7 +43,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 mt50 pr30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>三、吃素者不易患癌？</strong></div>
-                        <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146353703708147" alt=""/></div>
+                        <div class="mt10"><img src="http://static.mingyizhudao.com/146353703708147" alt=""/></div>
                     </div>
                     <div class="text-little-content mt15">
                         调查显示，24%受访者坚信素食者患癌风险低。<br><br>
@@ -54,7 +54,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 mt50 pl30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>四、多痣的人患癌风险高？</strong></div>
-                        <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14635370371467" alt=""/></div>
+                        <div class="mt10"><img src="http://static.mingyizhudao.com/14635370371467" alt=""/></div>
                     </div>
                     <div class="text-little-content mt15">
                         专家观点：痣分为出生就有的原生痣和后天受环境、体质影响生成的痣。<br><br>
@@ -67,7 +67,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 mt50 pr30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>五、胸大易患乳腺癌？</strong></div>
-                        <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146353703720827" alt=""/></div>
+                        <div class="mt10"><img src="http://static.mingyizhudao.com/146353703720827" alt=""/></div>
                     </div>
                     <div class="text-little-content mt15">
                         "乳房大易患乳腺癌"也是不少人的误区，但事实上，这并不科学。<br><br>
@@ -78,7 +78,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 mt50 pl30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>六、吃有机食物可防癌？</strong></div>
-                        <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146353703728117" alt=""/></div>
+                        <div class="mt10"><img src="http://static.mingyizhudao.com/146353703728117" alt=""/></div>
                     </div>
                     <div class="text-little-content mt15">
                         选购有机食物是近年来的健康新潮流。调查发现，39%的50~59岁的人认为吃有机食物可预防癌症，而在13~19岁人群中，这一比例高达53%。<br><br>
@@ -91,7 +91,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 mt50 pr30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>七、酸性体质易患癌？</strong></div>
-                        <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146353703735138" alt=""/></div>
+                        <div class="mt10"><img src="http://static.mingyizhudao.com/146353703735138" alt=""/></div>
                     </div>
                     <div class="text-little-content mt15">
                         "人体只有呈弱碱性才是健康的"，"酸性体质特别容易患癌"……近年来"酸碱性体质"的各种说法被广泛传播，并成为一些保健品广告和养生类电视节目热捧的概念<br><br>
@@ -101,7 +101,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 mt50 pl30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>八、癌症晚期就没救了？</strong></div>
-                        <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146353703741078" alt=""/></div>
+                        <div class="mt10"><img src="http://static.mingyizhudao.com/146353703741078" alt=""/></div>
                     </div>
                     <div class="text-little-content mt15">
                         大多数癌症患者最怕听到自己已是晚期，癌细胞从原发部位转移到肝、肺、骨等部位。调查发现，46%的50~59岁受访者认为癌症晚期没得救。<br><br>
@@ -114,7 +114,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 mt50 pr30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>九、断食可杀死癌细胞？</strong></div>
-                        <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14635370374695" alt=""/></div>
+                        <div class="mt10"><img src="http://static.mingyizhudao.com/14635370374695" alt=""/></div>
                     </div>
                     <div class="text-little-content mt15">
                         不少癌症患者认为，不让癌细胞摄取到任何营养，就能将其"饿死"，于是采取"断食疗法"控制癌症。调查显示，14%的中年受访者赞同这一观点，60岁以上人群这一比例达到22%。<br><br>
@@ -125,7 +125,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 mt50 pl30">
                     <div class="text-center">
                         <div class="text-heading-color"><strong>十、放化疗一定会掉头发？</strong></div>
-                        <div class="mt10"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14635370375452" alt=""/></div>
+                        <div class="mt10"><img src="http://static.mingyizhudao.com/14635370375452" alt=""/></div>
                     </div>
                     <div class="text-little-content mt15">
                         调查显示，76%的50~59岁受访者认为"接受放化疗一定会掉头发"。<br><br>
@@ -141,7 +141,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6 col-lg-3 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '1784')); ?>">
                     <div class="border-gray expert-list">
-                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/D107E4DA373730D16AA7E8D48B11ED4E" alt=""></div>
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/D107E4DA373730D16AA7E8D48B11ED4E" alt="黄健" title="黄健" /></div>
                         <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                         <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
                         <div class="text-center"><span class="strong ml20">黄健</span><span class="text-center">&nbsp;主任医师&nbsp;教授</span></div>
@@ -154,7 +154,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6 col-lg-3 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3232')); ?>">
                     <div class="border-gray expert-list">
-                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/F7BBF8244A72D5CBF144C4241177DD28" alt=""></div>
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/F7BBF8244A72D5CBF144C4241177DD28" alt="曹旭晨" title="曹旭晨" /></div>
                         <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                         <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
                         <div class="text-center"><span class="strong ml20">曹旭晨</span><span class="text-center">&nbsp;主任医师&nbsp;教授</span></div>
@@ -167,7 +167,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6 col-lg-3 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '3059')); ?>">
                     <div class="border-gray expert-list">
-                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/409FCA3EB755390D1CB80B2169CF3CD7" alt=""></div>
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/409FCA3EB755390D1CB80B2169CF3CD7" alt="叶颖江" title="叶颖江" /></div>
                         <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                         <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
                         <div class="text-center"><span class="strong ml20">叶颖江</span><span class="text-center">&nbsp;主任医师</span></div>
@@ -180,7 +180,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6 col-lg-3 mt50">
                 <a target="_blank" href="<?php echo $this->createUrl('doctor/view', array('id' => '1357')); ?>">
                     <div class="border-gray expert-list">
-                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/31347BAD5FF8B337B862586E98908407" alt=""></div>
+                        <div><img class="img100" src="http://dr.static.mingyizhudao.com/31347BAD5FF8B337B862586E98908407" alt="董频" title="董频" /></div>
                         <div class="pull-right contracted-img"></div><div class="clearfix"></div>
                         <div class="pull-right mingyiyizhen-img"></div><div class="clearfix"></div>
                         <div class="text-center"><span class="strong ml20">董频</span><span class="text-center">&nbsp;主任医师&nbsp;教授</span></div>

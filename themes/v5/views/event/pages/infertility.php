@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-ifertility.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-ifertility100.min.css");
 ?>
 <div class="container-fluid">
     <div class="row">
@@ -65,7 +65,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6">
                 <div class="border-gary pad20 expert-content">
                     <a href="<?php echo $this->createUrl('expertteam/view',array('id'=>'11')); ?>">
-                    <img src="<?php echo $urlResImage; ?>doc-images/gongxiaoming.png"/>
+                    <img src="http://static.mingyizhudao.com/14701364251623"/>
                     <div class="mt10"><span class="ename">龚晓明</span> <span class="color-gray">副主任|副教授</span></div>
                     <div class="color-gray text12">上海市第一妇婴保健院</div>
                     <div class="color-yellow">中国妇产网创始人,妇科著名专家团队</div>
@@ -78,7 +78,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="col-sm-6">
                 <div class="border-gary pad20 expert-content">
                     <a href="<?php echo $this->createUrl('expertteam/view',array('id'=>'10')); ?>">
-                    <img src="<?php echo $urlResImage; ?>doc-images/liujiayin.png"/>
+                    <img src="http://static.mingyizhudao.com/147013640018636"/>
                     <div class="mt10"><span class="ename">刘嘉茵</span> <span class="color-gray">主任|教授</span></div>
                     <div class="color-gray text12">江苏省人民医院</div>
                     <div class="color-yellow">不孕不育治疗国内顶尖专家团队</div>

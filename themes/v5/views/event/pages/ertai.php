@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/event-ertai.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-ertai100.min.css");
 ?>
 <section id="ertai">
     <div class="container container-part1" >
@@ -8,7 +8,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
             <div class="title pb50">
                 <div class=" col-sm-offset-4 mr50" >
                     <div class="title-part">
-                        <div class="pull-left" ><img src="<?php echo $urlResImage; ?>event/ertai/bg-book.png"></div>
+                        <div class="pull-left" ><img src="http://static.mingyizhudao.com/147013512324884"></div>
                         <div class="book-title">&nbsp;新政出炉</div><div class="text ">&nbsp;随着国家对二胎政策的放开，肯定有不少年龄稍微大些的女性要考虑再生一个孩子的问题，相对于年轻的女性，大龄女青年可能会面临着不同的问题，比如年龄多大就不能生了？</div><div class="title-text">
                             很多70后再面对允许生二孩的政策下，变得既高兴有犹豫。想生不敢生，不同于80后多考虑的经济问题，70后更多考虑的是身体！错过了35岁前的最佳生育年龄，即将跨过45岁大关，总是会为自己的身体担忧。
                         </div>
@@ -58,7 +58,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/eve
                 <div class="col-sm-6 col-sm-offset-3">
                     <div class="pad20 expert-content">
                         <a href="<?php echo $this->createUrl('doctor/view', array('id' => '112')); ?>">
-                            <img src="<?php echo $urlResImage; ?>doc-images/liujiayin.png"/>
+                            <img src="http://dr.static.mingyizhudao.com/70233701D3F68D27C738BC8B5248F2CA"/>
                             <div class="mt10"><span class="ename">刘嘉茵</span> <span class="color-gray">主任|教授</span></div>
                             <div class="color-gray text12">江苏省人民医院</div>
                             <div class="color-yellow">不孕不育治疗国内顶尖专家团队</div>
