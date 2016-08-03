@@ -2,7 +2,7 @@
 $this->pageTitle = '国内医院排行榜,医院大全,哪家医院好,床位预约_名医主刀网';
 $this->htmlMetaKeywords = '找医院,医院大全,医院排行榜';
 $this->htmlMetaDescription = '名医主刀网为您提供国内医院预约手术,医院排行榜,医院大全,医院哪家好等权威信息;助您在第一时间找到好医院,以最快的时间预约医院并安排手术,网上预约手术就看名医主刀网。';
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hospital-home.css?v=" . time());
+Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/hospital-home.min.css');
 $urlHospital = Yii::app()->params['baseUrl'];
 ?>
 <div class="container-fluid">

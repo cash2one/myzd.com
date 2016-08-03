@@ -11,7 +11,7 @@ if (isset($data->disease) === false):
     </div>
     <?php
 else:
-    Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/disease100.min.css");
+    Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/disease100.min.css");
     $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     $diseaseId = $data->disease->id;
     $expertteams = $data->expertteams;

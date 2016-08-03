@@ -242,7 +242,7 @@ echo CHtml::hiddenField("smsverify[actionType]", $authActionType);
 <?php $this->endWidget(); ?>
 
 <?php
-//Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/multiple-select-master/jquery.multiple.select.js', CClientScript::POS_END);
+//Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.multiple.select.js', CClientScript::POS_END);
 ?>
 
 <script type="text/javascript">

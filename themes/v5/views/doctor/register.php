@@ -1,4 +1,4 @@
-<?php Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());       ?>	
+<?php Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");       ?>	
 <?php
 /*
  * $model DoctorForm.

@@ -4,7 +4,7 @@ $urlQuickBook = $this->createUrl('booking/quickbook');
 $urlHospitalView = $this->createUrl('hospital/view', array('id' => ''));    // hospital/view?id=$id.
 $urlLoadHospitalsByCity = $this->createUrl('api/list', array('model' => 'hospital', 'city' => '')); // append city.id behind.
 $urlLoadHospital = $this->createUrl('api/view', array('model' => 'hospital', 'id' => ''));  // append hospital.id behind.
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hospital.css");
+Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/hospital-index.min.css');
 $this->pageTitle = '北京,上海,南京,杭州,广州等多个城市三级甲等医院, 北京,上海,南京,杭州,广州等多个城市专家名医手术预约_名医主刀';
 $this->htmlMetaKeywords = '三级甲等医院';
 $this->htmlMetaDescription = '北京,上海,南京,杭州,广州等多个城市三级甲等医院, 北京,上海,南京,杭州,广州等多个城市专家名医手术预约。涵盖国内所有重点学科的顶尖三甲医院。名医随时有,手术不再难。名医主刀';
@@ -14,7 +14,7 @@ $this->htmlMetaDescription = '北京,上海,南京,杭州,广州等多个城市�
 <div class="content-img">
     <div class="container-fluid">
         <div class="row">
-            <img src="<?php echo $urlResImage; ?>general/hospital.jpg" alt=""/>
+            <img src="http://static.mingyizhudao.com/147022747586054" alt=""/>
         </div>
     </div>
 </div>
@@ -80,16 +80,16 @@ $this->htmlMetaDescription = '北京,上海,南京,杭州,广州等多个城市�
                         </div>
                         <div class="process-content">
                             <div class="step">第一步</div>
-                            <img src="<?php echo $urlResImage; ?>general/angle-down.png"/>
+                            <img src="http://static.mingyizhudao.com/14701405740018"/>
                             <div class="step-content">
                                 <div>通过网站/微信/APP/电话</div>
                                 <div>提交预约单</div>
                             </div>
                             <div class="step">第二步</div>
-                            <img src="<?php echo $urlResImage; ?>general/angle-down.png"/>
+                            <img src="http://static.mingyizhudao.com/14701405740018"/>
                             <div class="step-content">客服回访确认预约单</div>
                             <div class="step">第三步</div>
-                            <img src="<?php echo $urlResImage; ?>general/angle-down.png"/>
+                            <img src="http://static.mingyizhudao.com/14701405740018"/>
                             <div class="step-content">预约成功并短信通知</div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/searchdoctor100.min.css");
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchdoctor.js?v=' . time(), CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/searchdoctor.min.js', CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDoctorSearch = $this->createUrl('doctor/top');
 $urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 24));

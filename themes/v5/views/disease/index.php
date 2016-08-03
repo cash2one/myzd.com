@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/disease.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/disease100.min.css");
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <div class="container">
