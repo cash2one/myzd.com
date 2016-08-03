@@ -8,7 +8,7 @@
             <div class="group-bg">
                 <div class="row doc-img hidden-xs">
 
-                    <div class="nopadding"><img class="img-center" src="<?php echo $baseUrlImage; ?>doc-images/miaoyi.png"/></div>
+                    <div class="nopadding"><img class="img-center" src="http://static.mingyizhudao.com/147014000648129"/></div>
 
                 </div>
             </div>
@@ -38,7 +38,7 @@
 
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object mt20" src="<?php echo $baseUrlImage; ?>doc-images/miaoyi.png" alt="">
+                    <img class="media-object mt20" src="http://static.mingyizhudao.com/147014000648129" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">苗毅&nbsp;&nbsp;<span class="text15 expert-atitle">教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;主任医师</span></h4>
@@ -50,7 +50,7 @@
             </div>
             <div class="media mt20">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/jiangkuirong.png" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147014003238619" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">蒋奎荣&nbsp;&nbsp;<span class="text15 expert-atitle">教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;主任医师</span></h4>
@@ -62,7 +62,7 @@
             </div>
             <div class="media mt20">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/wujunli.png" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147014005391486" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">吴峻立&nbsp;&nbsp;<span class="text15 expert-atitle">副教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;副主任医师</span></h4>
@@ -73,7 +73,7 @@
             </div>
             <div class="media mt20">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/gaowentao.png" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147014007085323" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">高文涛&nbsp;&nbsp;<span class="text15 expert-atitle">副教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;副主任医师</span></h4>

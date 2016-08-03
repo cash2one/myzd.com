@@ -8,7 +8,7 @@
             <div class="group-bg">
                 <div class="row doc-img hidden-xs">
 
-                    <div class="nopadding"><img class="img-center" src="<?php echo $baseUrlImage; ?>doc-images/gongxiaoming.png"/></div>
+                    <div class="nopadding"><img class="img-center" src="http://static.mingyizhudao.com/147013956631686"/></div>
 
                 </div>
             </div>
@@ -29,7 +29,7 @@
             <h3>专家团队成员简介</h3>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object " src="<?php echo $baseUrlImage; ?>doc-images/gongxiaoming.png" alt="">
+                    <img class="media-object " src="http://static.mingyizhudao.com/147013956631686" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">龚晓明&nbsp;&nbsp;<span class="text15 expert-atitle">副教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;副主任</span></h4>

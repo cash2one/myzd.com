@@ -8,11 +8,11 @@
             <div class="group-bg">
                 <div class="row doc-img hidden-xs">
                     <div class="col-sm-2 col-sm-offset-3">
-                        <img class="img100 pull-right mt21" src="<?php echo $baseUrlImage; ?>doc-images/liuhongfeng.jpg"/>
+                        <img class="img100 pull-right mt21" src="http://static.mingyizhudao.com/147013994637621"/>
                     </div>
-                    <div class="col-sm-2 nopadding"><img class="img-center" src="<?php echo $baseUrlImage; ?>doc-images/liuyuewu.png"/></div>
+                    <div class="col-sm-2 nopadding"><img class="img-center" src="http://static.mingyizhudao.com/147013988712978"/></div>
                     <div class="col-sm-2">
-                        <img class="img100 pull-right mt21" src="<?php echo $baseUrlImage; ?>doc-images/yuanhongwei.jpg"/>
+                        <img class="img100 pull-right mt21" src="http://static.mingyizhudao.com/147013991291968"/>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <h3>专家团队成员简介</h3>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/liuyuewu.png" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147013988712978" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">刘跃武&nbsp;&nbsp;<span class="text15 expert-atitle">教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;主任</span></h4>
@@ -43,7 +43,7 @@
             </div>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/yuanhongwei.jpg" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147013991291968" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">袁宏伟&nbsp;&nbsp;<span class="text15 expert-mtitle">主任医师</span></h4>
@@ -55,7 +55,7 @@
             </div>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/liuhongfeng.jpg" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147013994637621" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">刘洪沨&nbsp;&nbsp;<span class="text15 expert-atitle">副教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;副主任医师</span></h4>

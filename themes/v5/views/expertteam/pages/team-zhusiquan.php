@@ -8,13 +8,13 @@
             <div class="group-bg">
                 <div class="row doc-img hidden-xs">
                     <div class="col-sm-2 col-sm-offset-1">
-                        <img class="img100 pull-right mt21" src="<?php echo $baseUrlImage; ?>doc-images/zhaoyang_M.jpg"/>
+                        <img class="img100 pull-right mt21" src="http://static.mingyizhudao.com/147014049882359"/>
                     </div>
                     <div class="col-sm-2">
-                        <img class="img100 pull-right mt21" src="<?php echo $baseUrlImage; ?>doc-images/taojing.jpg"/>
+                        <img class="img100 pull-right mt21" src="http://static.mingyizhudao.com/147014047267274"/>
                     </div>
-                    <div class="col-sm-2 nopadding"><img class="img-center" src="<?php echo $baseUrlImage; ?>doc-images/zhusiquan.png"/></div>
-                    <div class="col-sm-2"><img class="img100 pull-left mt21" src="<?php echo $baseUrlImage; ?>doc-images/zhaoyang_F.jpg"/></div>
+                    <div class="col-sm-2 nopadding"><img class="img-center" src="http://static.mingyizhudao.com/147014044940411"/></div>
+                    <div class="col-sm-2"><img class="img100 pull-left mt21" src="http://static.mingyizhudao.com/147014052232469"/></div>
                 </div>
             </div>
         </section>
@@ -34,7 +34,7 @@
             <h3>专家团队成员简介</h3>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/zhusiquan.png" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147014044940411" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">朱思泉&nbsp;&nbsp;<span class="text15 expert-atitle">教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;主任</span></h4>
@@ -46,7 +46,7 @@
             </div>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-3">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/taojing.jpg" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147014047267274" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">陶靖&nbsp;&nbsp;<span class="text15 expert-mtitle">副主任医师</span></h4>
@@ -58,7 +58,7 @@
             </div>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-3">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/zhaoyang_M.jpg" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147014049882359" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">赵阳(男)&nbsp;&nbsp;<span class="text15 expert-mtitle">主治医师</span></h4>
@@ -70,7 +70,7 @@
             </div>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-3">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/zhaoyang_F.jpg" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147014052232469" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">赵阳(女)&nbsp;&nbsp;<span class="text15 expert-mtitle">主治医师</span></h4>

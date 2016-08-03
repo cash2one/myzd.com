@@ -8,14 +8,14 @@
             <div class="group-bg">
                 <div class="row doc-img hidden-xs">
                     <div class="col-sm-2 col-sm-offset-1">
-                        <img class="img100 pull-right mt21" src="<?php echo $baseUrlImage; ?>doc-images/liming.jpg"/>
+                        <img class="img100 pull-right mt21" src="http://static.mingyizhudao.com/147013965009746"/>
                     </div>
                     <div class="col-sm-2">
-                        <img class="img100 pull-right mt21" src="<?php echo $baseUrlImage; ?>doc-images/pengyifan.jpg"/>
+                        <img class="img100 pull-right mt21" src="http://static.mingyizhudao.com/147013971371311"/>
                     </div>
-                    <div class="col-sm-2 nopadding"><img class="img-center" src="<?php echo $baseUrlImage; ?>doc-images/gujin.png"/></div>
+                    <div class="col-sm-2 nopadding"><img class="img-center" src="http://static.mingyizhudao.com/147013960696221"/></div>
                     <div class="col-sm-2">
-                        <img class="img100 pull-right mt21" src="<?php echo $baseUrlImage; ?>doc-images/yaoyunfeng.jpg"/>
+                        <img class="img100 pull-right mt21" src="http://static.mingyizhudao.com/147013968781592"/>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
             <h3>专家团队成员简介</h3>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object mt40" src="<?php echo $baseUrlImage; ?>doc-images/gujin.png" alt="">
+                    <img class="media-object mt40" src="http://static.mingyizhudao.com/147013960696221" alt="">
                 </div>
                 <div class="media-body">
                     <div class="media-body">
@@ -54,7 +54,7 @@
             </div>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-3">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/liming.jpg" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147013965009746" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">李明&nbsp;&nbsp;<span class="text15 expert-atitle">副教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;主任医师</span></h4>
@@ -65,7 +65,7 @@
             </div>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-3">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/pengyifan.jpg" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147013971371311" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">彭亦凡&nbsp;&nbsp;<span class="text15 expert-mtitle">&nbsp;主任医师</span></h4>
@@ -76,7 +76,7 @@
             </div>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-3">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/yaoyunfeng.jpg" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147013968781592" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">姚云峰&nbsp;&nbsp;<span class="text15 expert-atitle">副教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;副主任医师</span></h4>

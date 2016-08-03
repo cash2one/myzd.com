@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl . '/css/huizhen.css' . '?v=' . time(); ?>" />
+<link rel="stylesheet" type="text/css" href="http://static.mingyizhudao.com/pc/huizhen.min.css" />
 <?php
 $menu = $this->loadPageMenu();
 $cssClass = $model->code;
@@ -31,55 +31,55 @@ $cssClass = $model->code;
                     <div class="row faculty">
                         <div class="faculty-content col-sm-4 col-md-3">
                             <a href="huizhen/gandan" target="_blank">
-                                <div class="faculty-img"><img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/></div>
+                                <div class="faculty-img"><img src="http://static.mingyizhudao.com/147014072852655"/></div>
                                 <div class="faculty-name">心血管</div>
                             </a>
                         </div>
                         <div class="faculty-content col-sm-4 col-md-3">
                             <a href="huizhen/gandan" target="_blank">
-                                <div class="faculty-img"><img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/></div>
+                                <div class="faculty-img"><img src="http://static.mingyizhudao.com/147014072852655"/></div>
                                 <div class="faculty-name">甲状腺</div>
                             </a>
                         </div>
                         <div class="faculty-content col-sm-4 col-md-3">
                             <a href="huizhen/gandan" target="_blank">
-                                <div class="faculty-img"><img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/></div>
+                                <div class="faculty-img"><img src="http://static.mingyizhudao.com/147014072852655"/></div>
                                 <div class="faculty-name">白内障</div>
                             </a>
                         </div>
                         <div class="faculty-content col-sm-4 col-md-3">
                             <a href="huizhen/gandan" target="_blank">
-                                <div class="faculty-img"><img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/></div>
+                                <div class="faculty-img"><img src="http://static.mingyizhudao.com/147014072852655"/></div>
                                 <div class="faculty-name">神经外科</div>
                             </a>
                         </div>
                         <div class="faculty-content col-sm-4 col-md-3">
                             <a href="huizhen/gandan" target="_blank">
-                                <div class="faculty-img"><img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/></div>
+                                <div class="faculty-img"><img src="http://static.mingyizhudao.com/147014072852655"/></div>
                                 <div class="faculty-name">眼底病科</div>
                             </a>
                         </div>
                         <div class="faculty-content col-sm-4 col-md-3">
                             <a href="huizhen/gandan" target="_blank">
-                                <div class="faculty-img"><img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/></div>
+                                <div class="faculty-img"><img src="http://static.mingyizhudao.com/147014072852655"/></div>
                                 <div class="faculty-name">结直肠癌科</div>
                             </a>
                         </div>
                         <div class="faculty-content col-sm-4 col-md-3">
                             <a href="huizhen/gandan" target="_blank">
-                                <div class="faculty-img"><img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/></div>
+                                <div class="faculty-img"><img src="http://static.mingyizhudao.com/147014072852655"/></div>
                                 <div class="faculty-name">肝脏外科</div>
                             </a>
                         </div>
                         <div class="faculty-content col-sm-4 col-md-3">
                             <a href="huizhen/gandan" target="_blank">
-                                <div class="faculty-img"><img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/></div>
+                                <div class="faculty-img"><img src="http://static.mingyizhudao.com/147014072852655"/></div>
                                 <div class="faculty-name">胰腺外科</div>
                             </a>
                         </div>
                         <div class="faculty-content col-sm-4 col-md-3">
                             <a href="huizhen/gandan" target="_blank">
-                                <div class="faculty-img"><img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/></div>
+                                <div class="faculty-img"><img src="http://static.mingyizhudao.com/147014072852655"/></div>
                                 <div class="faculty-name">生殖科</div>
                             </a>
                         </div>
@@ -96,16 +96,16 @@ $cssClass = $model->code;
                             <div class="docGroup expert-border row" style="padding-top:20px;padding-bottom:10px;;margin:0">
                                 <a href="starDoc-yanke.html">
                                     <div class="img-group pad5 expert-border col-sm-1">
-                                        <img class="img55" src="/myzd/themes/v3/images/doc-images/luhai.png">
-                                        <img class="img55 mt6" src="/myzd/themes/v3/images/doc-images/luhai.png">
-                                        <img class="img55 mt6" src="/myzd/themes/v3/images/doc-images/luhai.png">
+                                        <img class="img55" src="http://static.mingyizhudao.com/147014065866142">
+                                        <img class="img55 mt6" src="http://static.mingyizhudao.com/147014065866142">
+                                        <img class="img55 mt6" src="http://static.mingyizhudao.com/147014065866142">
                                     </div>
                                 
                                 <div class="group-info col-sm-11">
                                     <div class="media row">
                                         <div class="media-left media-middle col-sm-2">
                                             <a href="starDoc-yanke.html">
-                                                <img class="img100" src="/myzd/themes/v3/images/doc-images/luhai.png">
+                                                <img class="img100" src="http://static.mingyizhudao.com/147014065866142">
                                             </a>
                                         </div>
                                         <div class="media-body">
@@ -137,7 +137,7 @@ $cssClass = $model->code;
                             <div class="expert-info col-sm-3 pad5">
                                 <div class="expert-border">
                                     <div class="mt10 mb5">
-                                        <img class="img100" src="/myzd/themes/v3/images/doc-images/luhai.png">
+                                        <img class="img100" src="http://static.mingyizhudao.com/147014065866142">
                                     </div>
                                     <div class="text-center">
                                         <div>卢海 主任医师 教授</div>
@@ -153,7 +153,7 @@ $cssClass = $model->code;
                             <div class="expert-info col-sm-3 pad5">
                                 <div class="expert-border">
                                     <div class="mt10 mb5">
-                                        <img class="img100" src="/myzd/themes/v3/images/doc-images/luhai.png">
+                                        <img class="img100" src="http://static.mingyizhudao.com/147014065866142">
                                     </div>
                                     <div class="text-center">
                                         <div>卢海 主任医师 教授</div>
@@ -169,7 +169,7 @@ $cssClass = $model->code;
                             <div class="expert-info col-sm-3 pad5">
                                 <div class="expert-border">
                                     <div class="mt10 mb5">
-                                        <img class="img100" src="/myzd/themes/v3/images/doc-images/luhai.png">
+                                        <img class="img100" src="http://static.mingyizhudao.com/147014065866142">
                                     </div>
                                     <div class="text-center">
                                         <div>卢海 主任医师 教授</div>
@@ -185,7 +185,7 @@ $cssClass = $model->code;
                             <div class="expert-info col-sm-3 pad5">
                                 <div class="expert-border">
                                     <div class="mt10 mb5">
-                                        <img class="img100" src="/myzd/themes/v3/images/doc-images/luhai.png">
+                                        <img class="img100" src="http://static.mingyizhudao.com/147014065866142">
                                     </div>
                                     <div class="text-center">
                                         <div>卢海 主任医师 教授</div>
@@ -268,13 +268,13 @@ $cssClass = $model->code;
                             </div>
                             <div class="">
                                 <div class="col-sm-4 pad5">
-                                    <img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/>
+                                    <img src="http://static.mingyizhudao.com/147014072852655"/>
                                 </div>
                                 <div class="col-sm-4 pad5">
-                                    <img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/>
+                                    <img src="http://static.mingyizhudao.com/147014072852655"/>
                                 </div>
                                 <div class="col-sm-4 pad5">
-                                    <img src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg"/>
+                                    <img src="http://static.mingyizhudao.com/147014072852655"/>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -324,7 +324,7 @@ $cssClass = $model->code;
                             <table class="table mb0">
                                 <tbody><tr class="noborder"><td><span class="strong">电话：</span></td><td class="strong color-green">400-6277-120</td></tr>
                                     <tr class="noborder"><td><span class="strong">邮箱：</span></td><td><a class="text-info" href="mailto:service@mingyihz.com">service@mingyihz.com</a></td></tr>
-                                    <tr class="noborder"><td><span class="strong">微信：</span></td><td><img class="img-responsive" src="/myzd/themes/v3/images/icons/wx_qrcode_100x100.jpg" width="100px"></td></tr>                                    
+                                    <tr class="noborder"><td><span class="strong">微信：</span></td><td><img class="img-responsive" src="http://static.mingyizhudao.com/147014072852655" width="100px"></td></tr>                                    
                                 </tbody>
                             </table>
                         </div>
@@ -386,4 +386,4 @@ $cssClass = $model->code;
     });
 </script>
 <?php
-//Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/cust/huizhen.js', CClientScript::POS_END); ?>
+//Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/huizhen.min.js', CClientScript::POS_END); ?>

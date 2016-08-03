@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/hospital.css");
+Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/hospital-index.min.css');
 ?>
 <div class="">
     <div class="container">

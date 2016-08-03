@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/expertteam.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/expertteam100.min.css");
 $urlLoadallEteamsByCity = $this->createUrl('api/expertteam'); // append city.id behind.
 $urlLoadEteamsByCity = $this->createUrl('api/expertteam', array('city' => '')); // append city.id behind.
 ?>
@@ -9,7 +9,7 @@ $urlLoadEteamsByCity = $this->createUrl('api/expertteam', array('city' => '')); 
 </style>
 <div class="container-fluid bg-green">
     <div class="row">
-        <img src="<?php echo $urlResImage; ?>general/doc-team.png" alt=""/>
+        <img src="http://static.mingyizhudao.com/147013951038793" alt=""/>
     </div>
 </div>
 <div class="container">

@@ -1,11 +1,11 @@
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl . '/css/huizhen.css' . '?v=' . time(); ?>" />
+<link rel="stylesheet" type="text/css" href="http://static.mingyizhudao.com/pc/huizhen.min.css" />
 <?php
 $urlResource = $this->resource_url;
 $cssImageUrl = Yii::app()->theme->baseUrl . '/images/huizhen/';
 $menu = $this->loadPageMenu();
 
 //data for this page.
-$introImageUrl = Yii::app()->theme->baseUrl . '/images/huizhen/u44.jpg';
+$introImageUrl = 'http://static.mingyizhudao.com/147022285905568';
 $introContent = '';
 
 $diseaseList = array('半月板损伤', '断指再植', '肩周炎', '骨髓炎', '平底足', '骨折', '慢性腰背痛');
@@ -172,4 +172,4 @@ $doctorList = array(
     </div>
 </div>
 
-<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/cust/huizhen.js', CClientScript::POS_END); ?>
+<?php Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/huizhen.min.js', CClientScript::POS_END); ?>

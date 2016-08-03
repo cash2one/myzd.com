@@ -1,11 +1,11 @@
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl . '/css/huizhen.css' . '?v=' . time(); ?>" />
+<link rel="stylesheet" type="text/css" href="http://static.mingyizhudao.com/pc/huizhen.min.css" />
 <?php
 $urlResource = $this->resource_url;
 $cssImageUrl = Yii::app()->theme->baseUrl . '/images/huizhen/';
 $menu = $this->loadPageMenu();
 
 //data for this page.
-$introImageUrl = Yii::app()->theme->baseUrl . '/images/huizhen/u44.jpg';
+$introImageUrl = 'http://static.mingyizhudao.com/147022285905568';
 $introContent = '';
 
 $diseaseList = array('肝硬化', '病毒性肝炎', '脂肪肝', '红斑狼疮肝炎', '胆囊炎', '肝内胆管结石', '多发性肝囊肿');
@@ -171,4 +171,4 @@ $doctorList = array(
         </div>
     </div>
 </div>
-<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/cust/huizhen.js', CClientScript::POS_END); ?>
+<?php Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/huizhen.min.js', CClientScript::POS_END); ?>

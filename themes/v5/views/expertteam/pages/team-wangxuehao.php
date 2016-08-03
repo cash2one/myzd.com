@@ -8,7 +8,7 @@
             <div class="group-bg">
                 <div class="row doc-img hidden-xs">
 
-                    <div class="nopadding"><img class="img-center" src="<?php echo $baseUrlImage; ?>doc-images/wangxuehao.png"/></div>
+                    <div class="nopadding"><img class="img-center" src="http://static.mingyizhudao.com/147014018183542"/></div>
 
                 </div>
             </div>
@@ -33,7 +33,7 @@
             <h3>专家团队成员简介</h3>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object mt20" src="<?php echo $baseUrlImage; ?>doc-images/wangxuehao.png" alt="">
+                    <img class="media-object mt20" src="http://static.mingyizhudao.com/147014018183542" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">王学浩&nbsp;&nbsp;<span class="text15 expert-atitle">教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;肝脏外科研究所所长</span></h4>

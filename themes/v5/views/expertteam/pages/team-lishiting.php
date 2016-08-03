@@ -8,7 +8,7 @@
             <div class="group-bg">
                 <div class="row doc-img hidden-xs">
 
-                    <div class="nopadding"><img class="img-center" src="<?php echo $baseUrlImage; ?>doc-images/lishiting.png"/></div>
+                    <div class="nopadding"><img class="img-center" src="http://static.mingyizhudao.com/147013980985486"/></div>
 
                 </div>
             </div>
@@ -31,7 +31,7 @@
             <h3>专家团队成员简介</h3>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-4">
-                    <img class="media-object mt30" src="<?php echo $baseUrlImage; ?>doc-images/lishiting.png" alt="">
+                    <img class="media-object mt30" src="http://static.mingyizhudao.com/147013980985486" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">李世亭&nbsp;&nbsp;<span class="text15 expert-atitle">教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;主任医师</span></h4>

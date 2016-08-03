@@ -8,20 +8,20 @@
             <div class="group-bg">
                 <div class="row doc-img hidden-xs">
                     <div class="col-sm-2 col-sm-offset-3">
-                        <img class="img100 pull-right mt21" src="<?php echo $baseUrlImage; ?>doc-images/gaofeng.jpg"/>
+                        <img class="img100 pull-right mt21" src="http://static.mingyizhudao.com/147014036202780"/>
                     </div>
                     <div class="col-sm-2 nopadding">
-                        <img class="img-center" src="<?php echo $baseUrlImage; ?>doc-images/xujianping.png"/>
+                        <img class="img-center" src="http://static.mingyizhudao.com/147014022583414"/>
                     </div>
                     <div class="col-sm-2">
-                        <img class="img100 pull-left mt21" src="<?php echo $baseUrlImage; ?>doc-images/chenlei.png"/>
+                        <img class="img100 pull-left mt21" src="http://static.mingyizhudao.com/147014026402729"/>
                     </div>
 
                 </div>
                 <div class="row doc-img visible-xs">
-                    <div class="col-xs-12"><img class="img-center" src="<?php echo $baseUrlImage; ?>doc-images/xujianping.png"/></div>
-                    <div class="col-xs-6"><img class="img100 pull-right mt21" src="<?php echo $baseUrlImage; ?>doc-images/gaofeng.jpg"/></div>
-                    <div class="col-xs-6"><img class="img100 mt21" src="<?php echo $baseUrlImage; ?>doc-images/chenlei.png"/></div>	
+                    <div class="col-xs-12"><img class="img-center" src="http://static.mingyizhudao.com/147014022583414"/></div>
+                    <div class="col-xs-6"><img class="img100 pull-right mt21" src="http://static.mingyizhudao.com/147014036202780"/></div>
+                    <div class="col-xs-6"><img class="img100 mt21" src="http://static.mingyizhudao.com/147014026402729"/></div>	
                 </div>
             </div>
         </section>
@@ -45,7 +45,7 @@
             <h3>专家团队成员简介</h3>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-3">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/xujianping.png" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147014022583414" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">许建屏&nbsp;&nbsp;<span class="text15 expert-atitle">教授&nbsp;</span><span class="text15 expert-mtitle">&nbsp;主任</span></h4>
@@ -56,7 +56,7 @@
             </div>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-3">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/gaofeng.jpg" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147014036202780" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">高峰&nbsp<span class="text15 expert-mtitle">&nbsp;主任医师</span></h4>
@@ -67,7 +67,7 @@
             </div>
             <div class="media">
                 <div class="media-left media-middle col-sm-2 col-xs-3">
-                    <img class="media-object" src="<?php echo $baseUrlImage; ?>doc-images/chenlei.png" alt="">
+                    <img class="media-object" src="http://static.mingyizhudao.com/147014026402729" alt="">
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading mb10">陈雷&nbsp;<span class="text15 expert-mtitle">&nbsp;副主任医师</span></h4>
