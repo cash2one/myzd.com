@@ -51,7 +51,7 @@ class DoctorController extends WebsiteController {
            $seoKey.=$cityName;
         }
         if(array_key_exists("disease_sub_category",$value)){
-           $diseaseCategoryInfo=DiseaseCategory::model()->getById($value['disease_sub_category']);
+           $diseaseCategoryInfo=DiseaseCategory::model()->getByAttributes(array("sub_cat_id"=>$value['disease_sub_category'],"app_version"=>7));
            $diseaseCategoryName=$diseaseCategoryInfo['sub_cat_name'];
            $seoKey.=$diseaseCategoryName;
         }
@@ -82,8 +82,9 @@ class DoctorController extends WebsiteController {
         $this->pageTitle=$output->results->doctor->hospitalName.$output->results->doctor->name."医生预约,怎么样好不好,挂号时间_名医主刀网";
         $this->htmlMetaKeywords=$output->results->doctor->name."手术预约,".$output->results->doctor->name."医生预约,".$output->results->doctor->name."医生介绍";
         $this->htmlMetaDescription=mb_strlen($output->results->doctor->careerExp) > 120 ? mb_substr($output->results->doctor->careerExp, 0, 120, 'utf-8') : $output->results->doctor->careerExp;
+        $referer=$_SERVER['HTTP_REFERER'];
         $this->render('view', array(
-            'data' => $output
+            'data' => $output,'referer' => $referer
         ));
     }
 

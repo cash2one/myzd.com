@@ -90,7 +90,7 @@ class HospitalController extends WebsiteController {
             $seoKey.=$cityName;
         }
         if(array_key_exists("disease_sub_category",$value)){
-            $diseaseCategoryInfo=DiseaseCategory::model()->getById($value['disease_sub_category']);
+            $diseaseCategoryInfo=DiseaseCategory::model()->getByAttributes(array("sub_cat_id"=>$value['disease_sub_category'],"app_version"=>7));
             $diseaseCategoryName=$diseaseCategoryInfo['sub_cat_name'];
             $seoKey.=$diseaseCategoryName;
         }

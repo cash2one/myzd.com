@@ -14,7 +14,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
 <div class="contaier-fluid bg-green">
     <div class="container">
         <div class="crumbs-doctor">
-            <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <?php echo $doctor->hpDeptName == '' ? '' : $doctor->hpDeptName . ' > '; ?><?php echo $doctor->name; ?>
+            <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <a href="<?php echo $referer; ?>">找医生</a> > <?php echo $doctor->name; ?>
         </div>
     </div>
 </div>
