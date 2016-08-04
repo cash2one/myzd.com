@@ -1,4 +1,4 @@
-<?php Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time()); ?>
+<?php Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css"); ?>
 <div class="container">
     <div id="user-col-2" class="row">
         <div class="col-sm-5 col-left mt50 hidden-xs pb50">

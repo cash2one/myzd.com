@@ -1,7 +1,7 @@
 <?php
-Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.form.js', CClientScript::POS_END);
-Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.validate.min.js', CClientScript::POS_END);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/register.js", CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.form.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.validate.min.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile("http://static.mingyizhudao.com/register.min.js", CClientScript::POS_HEAD);
 /**
  * $model UserRegisterForm.
  */
@@ -25,7 +25,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     <div class="form-group">
         <div class="col-sm-12 controls">
             <div class="input-group">
-                <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14601035344900"/></div>
+                <div class="input-group-addon icon"><img src="http://static.mingyizhudao.com/14601035344900"/></div>
                 <input class="form-control" maxlength="11" placeholder="请输入有效的中国手机号码" name="UserRegisterForm[username]" id="UserRegisterForm_username" type="text">
             </div>       
             <div class="Message" id="UserRegisterForm_username_em_" style="display: none;"></div>    
@@ -34,7 +34,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     <div class="form-group">
         <div class="col-sm-12 controls">
             <div class="input-group">
-                <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353439754"/></div>
+                <div class="input-group-addon icon"><img src="http://static.mingyizhudao.com/146010353439754"/></div>
                 <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserRegisterForm[captcha_code_register]" id="UserRegisterForm_captcha_code_register" type="text">            
                 <div class="input-group-addon vailcodeImg"><img class="vailcode" src="<?php echo $this->createUrl('site/getCaptcha'); ?>" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></div>
             </div>
@@ -46,7 +46,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     <div class="form-group">
         <div class="col-sm-12 controls">
             <div class="input-group">
-                <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353439754"/></div>
+                <div class="input-group-addon icon"><img src="http://static.mingyizhudao.com/146010353439754"/></div>
                 <input class="form-control" maxlength="6" placeholder="请输入验证码" name="UserRegisterForm[verify_code]" id="UserRegisterForm_verify_code" type="text">            
                 <div id="btn-sendRegSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>
             </div>
@@ -57,7 +57,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     <div class="form-group">
         <div class="col-sm-12 controls">
             <div class="input-group">
-                <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353443984"/></div>
+                <div class="input-group-addon icon"><img src="http://static.mingyizhudao.com/146010353443984"/></div>
                 <input class="form-control" autocomplete="off" maxlength="40" placeholder="4至20位英文或数字" name="UserRegisterForm[password]" id="UserRegisterForm_password" type="password">
             </div>
             <div class="Message" id="UserRegisterForm_password_em_" style="display:none"></div>    
@@ -66,7 +66,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     <div class="form-group">
         <div class="col-sm-12 controls">
             <div class="input-group">
-                <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353443984"/></div>
+                <div class="input-group-addon icon"><img src="http://static.mingyizhudao.com/146010353443984"/></div>
                 <input class="form-control" autocomplete="off" placeholder="请再次输入密码" name="UserRegisterForm[password_repeat]" id="UserRegisterForm_password_repeat" type="password">
             </div>
             <div class="Message" id="UserRegisterForm_password_repeat_em_" style="display:none"></div>    

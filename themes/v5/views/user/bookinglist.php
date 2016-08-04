@@ -1,11 +1,11 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jqueryfileupload/vendor/jquery.ui.widget.js', CClientScript::POS_HEAD);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jqueryfileupload/jquery.iframe-transport.js', CClientScript::POS_HEAD);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jqueryfileupload/vendor/load-image.all.min.js', CClientScript::POS_HEAD);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jqueryfileupload/jquery.fileupload.js', CClientScript::POS_HEAD);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jqueryfileupload/jquery.fileupload-process.js', CClientScript::POS_HEAD);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jqueryfileupload/jquery.fileupload-image.js', CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.ui.widget.js', CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.iframe-transport.js', CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.fileupload-image.js', CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.fileupload.js', CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.fileupload-process.js', CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.fileupload-image.js', CClientScript::POS_HEAD);
 ?>
 <style>
     #bookinglist .login-menu{text-align: center;}

@@ -1,7 +1,7 @@
 <?php
 $siteMenu = $this->loadSiteMenu()["site"];
 $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/feedback.js", CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile("http://static.mingyizhudao.com/feedback.min.js", CClientScript::POS_HEAD);
 $urlSubmitForm = $this->createUrl("feedback/ajaxcreatfeedback");
 $user_id = '';
 if ($this->getCurrentUser() !== null) {
@@ -23,37 +23,37 @@ if ($this->getCurrentUser() !== null) {
                         <div class="w25 partner pr0">
                             <h4>战略合作伙伴</h4>
                             <div class="pull-left mr10 mt10">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550171630"/>
+                                <img src="http://static.mingyizhudao.com/146009550171630"/>
                             </div>
                             <div class="pull-left mr10 mt10">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550154718"/>
+                                <img src="http://static.mingyizhudao.com/146009550154718"/>
                             </div>
                             <div class="pull-left mt10">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550177089"/>
+                                <img src="http://static.mingyizhudao.com/146009550177089"/>
                             </div>
                             <div class="clearfix"></div>
                             <div class="pull-left mr10 mt10">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14600955016650"/>
+                                <img src="http://static.mingyizhudao.com/14600955016650"/>
                             </div>
                             <div class="pull-left mr10 mt10">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550111140"/>
+                                <img src="http://static.mingyizhudao.com/146009550111140"/>
                             </div>
                             <div class="pull-left mt10">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550181983"/>
+                                <img src="http://static.mingyizhudao.com/146009550181983"/>
                             </div>
                             <div class="clearfix"></div>
                             <div class="pull-left mr10 mt10">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550145111"/>
+                                <img src="http://static.mingyizhudao.com/146009550145111"/>
                             </div>
                             <div class="pull-left mr10 mt10">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550131922"/>
+                                <img src="http://static.mingyizhudao.com/146009550131922"/>
                             </div>
                             <div class="pull-left mt10">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550185756"/>
+                                <img src="http://static.mingyizhudao.com/146009550185756"/>
                             </div>
                             <div class="clearfix"></div>
                             <div class="pull-left mt10">
-                                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146348128150118"/>
+                                <img src="http://static.mingyizhudao.com/146348128150118"/>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -103,7 +103,7 @@ if ($this->getCurrentUser() !== null) {
                             </div>
                         </div>
                         <div class="w25 logo-footer-home border0">
-                            <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146701300490769"/>
+                            <img src="http://static.mingyizhudao.com/146701300490769"/>
                             <div class="text-center text12">扫码关注：名医主刀</div>
                         </div>
                     </div>
@@ -116,36 +116,36 @@ if ($this->getCurrentUser() !== null) {
                                 <h4>战略合作伙伴</h4>
                                 <div class="clearfix">
                                     <div class="pull-left mr10 mt10">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550171630"/>
+                                        <img src="http://static.mingyizhudao.com/146009550171630"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550154718"/>
+                                        <img src="http://static.mingyizhudao.com/146009550154718"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550177089"/>
+                                        <img src="http://static.mingyizhudao.com/146009550177089"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14600955016650"/>
+                                        <img src="http://static.mingyizhudao.com/14600955016650"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550111140"/>
+                                        <img src="http://static.mingyizhudao.com/146009550111140"/>
                                     </div>
                                 </div>
                                 <div class="clearfix">
                                     <div class="pull-left mr10 mt10">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550181983"/>
+                                        <img src="http://static.mingyizhudao.com/146009550181983"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550145111"/>
+                                        <img src="http://static.mingyizhudao.com/146009550145111"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550131922"/>
+                                        <img src="http://static.mingyizhudao.com/146009550131922"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009550185756"/>
+                                        <img src="http://static.mingyizhudao.com/146009550185756"/>
                                     </div>
                                     <div class="pull-left mr10 mt10">
-                                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146348128150118"/>
+                                        <img src="http://static.mingyizhudao.com/146348128150118"/>
                                     </div>
                                 </div>
                                 <div class="mt25 mb20">
@@ -169,7 +169,7 @@ if ($this->getCurrentUser() !== null) {
                             </div>
                             <div class="col-md-3  col-sm-3 logo-footer border0">
                                 <a href="<?php echo Yii::app()->homeUrl; ?>">
-                                    <img class="" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009415900025"/>
+                                    <img class="" src="http://static.mingyizhudao.com/146009415900025"/>
                                 </a>
                             </div>
                         </div>
@@ -193,10 +193,10 @@ if ($this->getCurrentUser() !== null) {
         <div >
             <div>
                 <div class="text-center">
-                    <div class="feedback-icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125395645"></div>
+                    <div class="feedback-icon"><img src="http://static.mingyizhudao.com/146570125395645"></div>
                     <div class="feedback-open-area">
                         <div class="close"></div>
-                        <div class="text-left feedback-title-img"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146570125444173"></div>
+                        <div class="text-left feedback-title-img"><img src="http://static.mingyizhudao.com/146570125444173"></div>
                         <div class="feedback-form pt5" >
                             <form enctype="multipart/form-data" id="feedback-form" action="<?php echo $urlSubmitForm;?>" method="post" onkeydown="if(event.keyCode==13){return false;}">
                                 <input type="hidden" value="<?php echo $user_id;?>" name="feedback[user_id]" id="FeedbackForm_user_id">

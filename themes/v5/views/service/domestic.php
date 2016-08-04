@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl . '/css/service.css' . '?v=' . time(); ?>" />
+<link rel="stylesheet" type="text/css" href="http://static.mingyizhudao.com/service100.min.css" />
 <?php
 $this->content_container = "";
 $menu = array();
@@ -41,7 +41,7 @@ $resourceUrl = Yii::app()->theme->baseUrl . '/images/service';
                         </div>
                         <div class="divider mt20"></div>
                         <div class="clearfix">
-                            <div class="wx-qrcode inline-block pull-left"><img class="img-responsive" src="<?php echo Yii::app()->theme->baseUrl ?>/images/icons/wx_qrcode_258x258.jpg" /></div>
+                            <div class="wx-qrcode inline-block pull-left"><img class="img-responsive" src="http://static.mingyizhudao.com/14702154443740" /></div>
                             <div class="inline-block pull-left">
                                 <div class="contact clearfix"><div class="icon icon-cm-phone"></div><div class="caption">400-6277-120</div></div>
                                 <div class="contact clearfix"><div class="icon icon-cm-qq"></div><div class="caption">3077068520</div></div>
@@ -61,7 +61,7 @@ $resourceUrl = Yii::app()->theme->baseUrl . '/images/service';
                     </div>
                     <div class="content">
                         <div class="h4">您可以通过网站、APP和微信公众号上传病历资料，或者联系我们的客服协助您完成上传</div>
-                        <div><img class="img-responsive" src="<?php echo $resourceUrl; ?>/process_step2.jpg"/></div>
+                        <div><img class="img-responsive" src="http://static.mingyizhudao.com/147021526408644"/></div>
                     </div>
                 </section>
 
@@ -84,9 +84,9 @@ $resourceUrl = Yii::app()->theme->baseUrl . '/images/service';
                     <div class="content">
                         <div class="h4">不排队，不挂号，立即预约，随时入住，一流名医，妙手回春。</div>
                         <div class="row">
-                            <div class="col-sm-4"><img class="img-responsive" src="<?php echo $resourceUrl; ?>/process_step5_img01.jpg" /></div>
-                            <div class="col-sm-4"><img class="img-responsive" src="<?php echo $resourceUrl; ?>/process_step5_img02.jpg" /></div>
-                            <div class="col-sm-4"><img class="img-responsive" src="<?php echo $resourceUrl; ?>/process_step5_img03.jpg" /></div>
+                            <div class="col-sm-4"><img class="img-responsive" src="http://static.mingyizhudao.com/147021526512512" /></div>
+                            <div class="col-sm-4"><img class="img-responsive" src="http://static.mingyizhudao.com/147021526533476" /></div>
+                            <div class="col-sm-4"><img class="img-responsive" src="http://static.mingyizhudao.com/147021526549910" /></div>
                         </div>
                     </div>
                 </section>

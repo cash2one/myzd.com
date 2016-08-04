@@ -10,13 +10,13 @@
 </style>
 <?php
 /*
-  Yii::app()->clientScript->registerCssFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/webuploader/css/webuploader.css');
-  Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . '/js/webuploader/css/webuploader.custom.css');
-  //Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/bootstrap.min.js', CClientScript::POS_HEAD);
-  Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.form.js', CClientScript::POS_END);
-  Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.validate.min.js', CClientScript::POS_END);
-  Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/webuploader/js/webuploader.min.js', CClientScript::POS_END);
-  Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/booking.js', CClientScript::POS_END);
+  Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/webuploader.css');
+  Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/webuploader.custom.css');
+  //Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/bootstrap.min.js', CClientScript::POS_HEAD);
+  Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.form.js', CClientScript::POS_END);
+  Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.validate.min.js', CClientScript::POS_END);
+  Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/webuploader.min.js', CClientScript::POS_END);
+  Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/booking100.min.js', CClientScript::POS_END);
  * 
  */
 /**

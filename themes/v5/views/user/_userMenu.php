@@ -17,7 +17,7 @@ $menus = array(
         <div class="personalcenter">
             <div class="row">
                 <div class="col-sm-5">
-                    <img class="pull-right" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010447602352"/>
+                    <img class="pull-right" src="http://static.mingyizhudao.com/146010447602352"/>
                 </div>
                 <div class="col-sm-7">
                     <h4>你好！</h4>

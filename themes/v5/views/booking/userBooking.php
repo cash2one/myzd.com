@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
 $urlOrderView = $this->createUrl('order/view');
 $booking = $data->results->booking;
 $urlBookingFile = $this->createUrl('booking/bookingFile', array('id' => $booking->id));
@@ -68,7 +68,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     </div> 
                 <?php } else if ($booking->status == StatCode:: BK_STATUS_INVALID || $booking->status == StatCode:: BK_STATUS_CANCELLED) {
                     ?>
-                    <div class="mt15"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146312719792390"></div>
+                    <div class="mt15"><img src="http://static.mingyizhudao.com/146312719792390"></div>
                 <?php }
                 ?>
             </div>
@@ -81,7 +81,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                         echo '</h4>';
                     } else if ($booking->status == StatCode::BK_STATUS_PROCESSING) {
                         echo '<div class="mt30"><h4 class="text-center color-green text20">
-                        <span>状态：对接专家中... <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146286350628653"></span>
+                        <span>状态：对接专家中... <img src="http://static.mingyizhudao.com/146286350628653"></span>
                         <span class="detail" data-toggle="tooltip" data-placement="right" title="*客服确认信息并匹配专家 ，如有需要会安排面诊 *因专家个人原因（如出国参加会议）无法按原有协商时间赴约的，名医助手会第一时间与您沟通其他时间，或为您推荐其他同级别专家名医。该情况不算违约。">声明</span>
                     </h4></div>';
                     } else {
@@ -99,7 +99,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                         echo '<div class="text-right mt-26"><a target="_blank" href="' . $this->createUrl('order/view', array('refno' => $order->refNo)) . '" class="pay-btn btn btn-yes">立即支付</a></div>';
                                     }
                                 } else {
-                                    echo '<div class="text20 color-green text-center mt30"><span><img class="mr10 mt-3" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146312588201985"></span>' . $order->finalAmount . '元预约金支付成功！</div>';
+                                    echo '<div class="text20 color-green text-center mt30"><span><img class="mr10 mt-3" src="http://static.mingyizhudao.com/146312588201985"></span>' . $order->finalAmount . '元预约金支付成功！</div>';
                                 }
                                 echo '</h4>';
                             }

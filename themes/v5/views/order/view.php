@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/example-wap/styles/pinus.css">
+<link rel="stylesheet" type="text/css" href="http://static.mingyizhudao.com/pc/pingpp-html5-master-pinus.css">
 <?php $urlResImage = Yii::app()->theme->baseUrl . "/images/"; ?>
 <style>
     #site-header .dis-index{display:none;}
@@ -10,8 +10,8 @@
     .form-horizontal .checkbox a{text-decoration: underline;color: #19aea5;}
     .ch{text-align:center;}
     .up{background-color:#e4e4e4;border:1px solid #ddd!important;border-radius:10px;background-position:center;background-repeat:no-repeat;width:190px!important;margin:5px auto 0!important;padding:10px!important;}
-    .alipay{background-image: url(<?php echo $urlResImage; ?>icons/ic-alipay.png);}
-    .yeepay{background-image: url(<?php echo $urlResImage; ?>icons/ic-yeepay.png);}
+    .alipay{background-image: url('http://static.mingyizhudao.com/147014148712418');}
+    .yeepay{background-image: url('http://static.mingyizhudao.com/14701414576445');}
 </style>
 
 <?php
@@ -69,8 +69,8 @@ $refUrl = $this->createAbsoluteUrl('order/view',array('refNo'=>$model->ref_no));
     }
     ?>
 </div>
-<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp.js"></script>
-<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp-pc.js"></script>
+<script src="http://static.mingyizhudao.com/pc/pingpp.min.js"></script>
+<script src="http://static.mingyizhudao.com/pc/pingpp-pc.min.js"></script>
 <script type="text/javascript" src="https://one.pingxx.com/lib/pingpp_one.js"></script>
 
 <script type="text/javascript">

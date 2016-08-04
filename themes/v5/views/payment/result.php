@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/example-wap/styles/pinus.css">
+<link rel="stylesheet" type="text/css" href="http://static.mingyizhudao.com/pc/pingpp-html5-master-pinus.css">
 <style>
     #site-header .dis-index{display:none;}
     .order-content{padding: 10px 0;border-bottom: 1px solid #888;}

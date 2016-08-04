@@ -1,10 +1,10 @@
 <?php
-Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.form.js', CClientScript::POS_END);
-Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.validate.min.js', CClientScript::POS_END);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/forgetPwdValidator.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.form.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.validate.min.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/forgetPwdValidator.min.js', CClientScript::POS_END);
 ?>
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
 $urlBookingView = $this->createUrl('booking/view');
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBookingList = $this->createUrl('booking/list');
@@ -26,7 +26,7 @@ $authActionType = AuthSmsVerify::ACTION_USER_PASSWORD_RESET;
     <div class="row mt40">
         <div class="col-sm-7">
             <div>
-                <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010389103757"/>
+                <img src="http://static.mingyizhudao.com/146010389103757"/>
             </div>
         </div>
         <div class="col-sm-4 col-sm-offset-1">

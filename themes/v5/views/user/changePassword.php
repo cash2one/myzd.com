@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
 $urlBookingView = $this->createUrl('booking/view');
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBookingList = $this->createUrl('booking/list');
@@ -22,7 +22,7 @@ $urlBookingList = $this->createUrl('booking/list');
         </div>
         <div class="col-sm-9">
             <div>
-                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146277800063795">
+                <img class="img-responsive" src="http://static.mingyizhudao.com/146277800063795">
             </div>
             <div class="bookinglist border-gray mt10">
                 <div class="mt50">

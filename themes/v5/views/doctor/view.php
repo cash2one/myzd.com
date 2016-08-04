@@ -1,6 +1,6 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/doctor.min.css?v=" . time());
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/jquery.qrcode.min.js', CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/doctor100.min.css');
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.qrcode.min.js', CClientScript::POS_END);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
 $doctor = $data->results->doctor;
@@ -14,14 +14,14 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
 <div class="contaier-fluid bg-green">
     <div class="container">
         <div class="crumbs-doctor">
-            <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <a href="<?php echo $referer; ?>">找医生</a> > <?php echo $doctor->name; ?>
+                        <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <a href="<?php echo $referer; ?>">找医生</a> > <?php echo $doctor->name; ?>
         </div>
     </div>
 </div>
 <div class="container-fluid" id="doctor-view">
     <div class="row">
         <div class="container mb50">
-            <div class="doctorInfo mt20">
+            <div class="doctorInfo mt20 mb40">
                 <div class="doc-media">
                     <div class="row">
                         <div class="col-md-8">
@@ -38,7 +38,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                                     <div class="qrcode">
                                         <div><span class="qrcode-text">微信分享医生主页</span><span id="qrcode-sm"><span class="qrlogo-sm"></span></span> <i class="fa fa-caret-down"></i></div>
                                         <div id="qrcode-lg">
-                                            <div><img src="<?php echo $urlResImage ?>icons/weixin.png"/></div>
+                                            <div><img src="http://static.mingyizhudao.com/14701296243139"/></div>
                                             <div id="qrcode-weixin">
                                                 <div class="qrlogo-lg"></div>
                                             </div>
@@ -50,7 +50,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                         </div>
                         <div class="col-md-4">
                             <div class="mt20 text-center doctor-menu">
-                                <div class="bookingBtn doc-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>"><div class="ml10"><img src="<?php echo $urlResImage; ?>/doctor/icon-booking.png"><span class="ml15">预约<?php echo $doctor->name; ?></span></div></div>
+                                <div class="bookingBtn doc-booking" data-url="<?php echo $urlBooking; ?>&did=<?php echo $doctor->id; ?>" data-toggle="modal" data-target="#booking" data-docid="<?php echo $doctor->id; ?>" data-docname="<?php echo $doctor->name; ?>" data-dochospital="<?php echo $doctor->hospitalName; ?>" data-docdept="<?php echo $doctor->hpDeptName; ?>"><div class="ml10"><img src="http://static.mingyizhudao.com/147012985411365"><span class="ml15">预约<?php echo $doctor->name; ?></span></div></div>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                         if (isset($doctor->reasons) && arrayNotEmpty($doctor->reasons)) {
                             $reasons = $doctor->reasons;
                             ?>
-                            <div class="mt40 pb20" style="border:1px solid #eeefef;">
+                            <div class="pb20" style="border:1px solid #eeefef;">
                                 <div class="docinfo-title good-reason"><h3>推荐理由</h3></div> 
                                 <div class="ml30 pr30">
                                     <ul class="recommend-reasons">
@@ -140,17 +140,17 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                         <!--                                <div class="pl30">
                                                             <div class="media">
                                                                 <div class="media-left media-middle pull-left">
-                                                                    <img class="media-object team-img" src="<?php //echo $member->imageUrl;                   ?>" alt="<?php //echo $member->name;                   ?>">
+                                                                    <img class="media-object team-img" src="<?php //echo $member->imageUrl;                    ?>" alt="<?php //echo $member->name;                    ?>">
                                                                 </div>
                                                                 <div class="media-body pl10">
-                                                                    <div class="media-heading mt15"><?php //echo $member->name;                   ?><span class="color-gray ml20"><?php //echo $member->mTitle;                   ?></span><span class="color-gray ml20"><?php //echo $member->aTitle;                   ?></span></div>
+                                                                    <div class="media-heading mt15"><?php //echo $member->name;                    ?><span class="color-gray ml20"><?php //echo $member->mTitle;                    ?></span><span class="color-gray ml20"><?php //echo $member->aTitle;                    ?></span></div>
                                                                     <div class="mt15">
                         <?php //echo $member->hpDeptName == null ? '' : '<span class="color-25aea6 text-center">' . $member->hpDeptName . '</span>'; ?>
                                                                     </div>
-                                                                    <div class="mt15"><?php //echo $doctor->hospitalName;                   ?></div>
+                                                                    <div class="mt15"><?php //echo $doctor->hospitalName;                    ?></div>
                                                                 </div>
                                                             </div>
-                                                            <div class="expert-desc mt15 mb40"><?php //echo $member->description == null ? '' : $member->description;                   ?></div>
+                                                            <div class="expert-desc mt15 mb40"><?php //echo $member->description == null ? '' : $member->description;                    ?></div>
                                                         </div>-->
                         <?php
 //                            }
@@ -174,7 +174,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                 </div>
                 <div class="col-sm-4 doctor-menu">
                     <div class="server-circuit">
-                        <div class="server-title">服务流程</div>
+                        <div class="server-title" style="margin-top:2px!important;">服务流程</div>
                         <div class="server-step">
                             <div class="mt15">
                                 <div class="pull-left mr10"><span class="step">第一步</span></div>
@@ -275,6 +275,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
         jQuery('#qrcode-sm').qrcode({width: 32, height: 32, text: '<?php echo $urlDoctorView . $doctor->id ?>'});
         jQuery('#qrcode-weixin').qrcode({width: 94.5, height: 94.5, text: '<?php echo $urlDoctorView . $doctor->id ?>'});
         $doctorId = '<?php echo $doctor->id ?>';
+        $doctorName = '<?php echo $doctor->name; ?>';
         ajaxComment($doctorId);
     });
     function ajaxComment(doctorId) {
@@ -326,7 +327,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
             var date = comment[i].dateCreated.substr(0, 11);
             var commentText = comment[i].commentText.length > 90 ? comment[i].commentText.substr(0, 90) + '<span class="ellipsis">...</span><span class="dese-last" style="display:none;">' + comment[i].commentText.substr(90) + '</span><div class="dese-operate text-right"><span class="desc-more">展开全部 <i class="fa fa-angle-down"></i></span><span class="desc-retract" style="display:none">收起全部 <i class="fa fa-angle-up"></i></span></div>' : comment[i].commentText;
             appendHtml += '<div class="pl30 row mt20"><div class = "col-sm-2 pr0"><div class="text-center"><img src = "http://static.mingyizhudao.com/146822933824594"></div><div class = "text-center text12">' + userName + '</div></div>' +
-                    '<div class = "col-sm-10"><div class="clearfix"><span>主刀专家：<?php echo $doctor->name; ?></span><span class="ml30">确诊疾病：' + detail + '</span><span class="text12 pull-right color-777">' + date + '</span></div>';
+                    '<div class = "col-sm-10"><div class="clearfix"><span>主刀专家：' + $doctorName + '</span><span class="ml30">确诊疾病：' + detail + '</span><span class="text12 pull-right color-777">' + date + '</span></div>';
 
             appendHtml += '<div class="mt20"><div class = "comment-desc text12">' + commentText + '</div></div></div>' +
                     '<div class = "clearfix"></div>' +
@@ -370,7 +371,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
 //        }
 //        urlCondition = urlCondition.substring(1);
 //        urlCondition = "?" + urlCondition;
-//        var newUrl = '<?php //echo $urlDoctor;                                          ?>' + $doctorId + urlCondition;
+//        var newUrl = '<?php //echo $urlDoctor;                                           ?>' + $doctorId + urlCondition;
 //        history.pushState(stateObject, title, newUrl);
     }
 </script>

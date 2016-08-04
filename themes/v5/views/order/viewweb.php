@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
 $bookingId = Yii::app()->request->getQuery('bookingId','');
 $urlTerms = $this->createUrl('site/page',array('view'=>'terms'));
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
@@ -63,11 +63,11 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                         <div class="radio mt40">
                             <label>
                                 <input type="radio" name="paytype" id="paytype1" value="alipay">
-                                <img src="<?php echo $urlResImage; ?>icons/ic-alipay.png"/>
+                                <img src="http://static.mingyizhudao.com/147014148712418"/>
                             </label>
                             <label class="ml40">
                                 <input type="radio" name="paytype" id="paytype2" value="yeepay">
-                                <img src="<?php echo $urlResImage; ?>icons/ic-yeepay.png"/>
+                                <img src="http://static.mingyizhudao.com/14701414576445"/>
                             </label>
                         </div>
                         <div class="mt50">

@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
 $urlBookingList = $this->createUrl('booking/list');
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $booking = $data->results->booking;
@@ -25,14 +25,14 @@ $booking = $data->results->booking;
                 <div>&nbsp;</div>
                 <div>
                     <h4 class="text-center color-green text20">
-                        <span class="pr10">状态：对接专家中... <img src="<?php echo $urlResImage; ?>user/phone.png"></span>
+                        <span class="pr10">状态：对接专家中... <img src="http://static.mingyizhudao.com/147013025080444"></span>
                         <span class="detail"data-toggle="tooltip" data-placement="right" title="*对接情况我们将会客服及时通知">详情</span>
                     </h4>
                 </div>
             </div>
             <div class="pb40 border-green mt10">              
                 <div>
-                    <h3 class="text-center color-green mb0"><img src="<?php echo $urlResImage; ?>user/TKCG.png"> 1000元预约金支付成功</h3>
+                    <h3 class="text-center color-green mb0"><img src="http://static.mingyizhudao.com/147013028388789"> 1000元预约金支付成功</h3>
                     <div class="text-center">预约单：<?php echo $booking->refNo; ?></div>
                     <div>
                         <div class="pl100">您的预约单详情如下：</div>

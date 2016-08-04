@@ -22,7 +22,7 @@
         <div class="modal-content">
             <div class="modal-header text-center">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title"><img src="<?php echo $urlResImage; ?>icons/logo-model.png"/>&nbsp;快速预约单</h2>
+                <h2 class="modal-title"><img src="http://static.mingyizhudao.com/147012932956422"/>&nbsp;快速预约单</h2>
             </div>
             <div class="modal-body pb40">
                 <div class="bookingform">

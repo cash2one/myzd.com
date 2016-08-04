@@ -1,6 +1,6 @@
 <?php
 Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/operation.css");
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/zhitongche.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/zhitongche.min.js', CClientScript::POS_END);
 
 $urlDoctorSearch = $this->createUrl('doctor/search', array('disease_category' => 1));
 $urlHopitalSearch = $this->createUrl('hospital/search', array('disease_category' => 1));

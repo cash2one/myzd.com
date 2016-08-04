@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
 $urlOrderView = $this->createUrl('order/viewweb');
 $urlBookingList = $this->createUrl('booking/list');
 $booking = $data->results->booking;

@@ -1,5 +1,6 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/bookingList.min.js', CClientScript::POS_END);
 $urlBookingView = $this->createUrl('booking/view');
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBookingList = $this->createUrl('booking/list');
@@ -23,7 +24,7 @@ $bookinglist = $data->results;
         </div>
         <div class="col-sm-9">
             <div>
-                <img class="img-responsive" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146277800063795">
+                <img class="img-responsive" src="http://static.mingyizhudao.com/146277800063795">
             </div>
             <div class="bookinglist border-gray mt10">
                 <table class="table">
@@ -99,29 +100,3 @@ $bookinglist = $data->results;
         </div>
     </div>
 </div>
-<script>
-    $(document).ready(function () {
-        $('#cancelOrder').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget);
-            var href = button.attr('data-href');
-            var booingId = button.attr('data-id');
-            $('#cancelSubmit').attr({'data-href': href, 'data-id': booingId});
-        });
-        $('#cancelSubmit').click(function (e) {
-            e.preventDefault();
-            var urlSubmit = $(this).attr('data-href');
-            var trId = '#' + $(this).attr('data-id');
-            $.ajax({
-                url: urlSubmit,
-                success: function (data) {
-                    if (data.status == 'ok') {
-                        $('#cancelOrder').modal('hide');
-                        $(trId).find('.bkStatus').text('已取消');
-                        $(trId).find('.bookOperate').html('—');
-
-                    }
-                }
-            });
-        });
-    });
-</script>

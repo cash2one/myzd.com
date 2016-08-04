@@ -1,4 +1,4 @@
-<?php Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time()); ?>	
+<?php Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css"); ?>	
 <?php
 /*
  * $model RegisterForm.
@@ -17,7 +17,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
             <div class="clearfix mt40">
                 <div class="col-sm-7 mt50">
                     <div>
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010389103757"/>
+                        <img src="http://static.mingyizhudao.com/146010389103757"/>
                     </div>
                 </div>
                 <div class="col-sm-4">

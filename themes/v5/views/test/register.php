@@ -33,8 +33,8 @@ if ($model->scenario == 'success') {
         </div>
     </div>
 </div>
-<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-1.11.1.min.js"></script>
-<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap.min.js"></script>
+<script src="http://static.mingyizhudao.com/pc/jquery-1.11.1.min.js"></script>
+<script src="http://static.mingyizhudao.com/bootstrap.min.js"></script>
 <script>
     jQuery(document).ready(function () {
         

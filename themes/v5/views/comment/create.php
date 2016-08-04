@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
 
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlBookingList = $this->createUrl('booking/list');
@@ -54,7 +54,7 @@ $urlConmmentView = $this->createUrl('comment/view', array('bookingId' => $bookin
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div>
                     <h4 class="text-center color-green text20 mt40" >
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010469786484"> <strong>感谢您的评价！</strong>
+                        <img src="http://static.mingyizhudao.com/146010469786484"> <strong>感谢您的评价！</strong>
                     </h4>
                 </div>
                 <div class="divide"></div>

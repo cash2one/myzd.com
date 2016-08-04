@@ -12,27 +12,27 @@
         <meta name="description" content="<?php echo $this->htmlMetaDescription; ?>" />
         <meta name="baidu-site-verification" content="KtqpwJh89S" />
         <meta name="baidu-site-verification" content="trPIkIhMMh" />
-        <link rel="shortcut icon" type="image/ico" href="<?php echo Yii::app()->theme->baseUrl; ?>/images/icons/favicon.ico" />
+        <link rel="shortcut icon" type="image/ico" href="http://static.mingyizhudao.com/14701222767407" />
         
         <?php
 //        Yii::app()->clientScript->registerCssFile("http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/css/bootstrap.min.css");
-//        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/font-awesome.min.css");
-//        Yii::app()->clientScript->registerCssFile("http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery.bxslider/jquery.bxslider.css");
-        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/pc_all.min.css");
-        Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/main.min.css" . "?v=" . time());
-        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery-1.9.1.min.js', CClientScript::POS_HEAD);
-//        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/bootstrap.min.js', CClientScript::POS_HEAD);
-//        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/jquery.bxslider/jquery.bxslider.min.js', CClientScript::POS_END);
-//        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/unslider.min.js', CClientScript::POS_HEAD);
-//        Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/web/js/holder.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/pc_all.min.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/main.js', CClientScript::POS_HEAD);
+//        Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/font-awesome.min.css");
+//        Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/jquery.bxslider100.min.css");
+        Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/pc_all.min.css');
+        Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/main100.min.css");
+//        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery-1.9.1.min.js', CClientScript::POS_HEAD);
+//        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/bootstrap.min.js', CClientScript::POS_HEAD);
+//        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.bxslider.min.js', CClientScript::POS_END);
+//        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/unslider.min.js', CClientScript::POS_HEAD);
+//        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/holder.min.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/pc_all.min.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/main.min.js', CClientScript::POS_HEAD);
         ?>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->		
         <!--[if lt IE 9]>
-        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/html5shiv.js"></script>
-        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/respond.min.js"></script>
+        <script src="http://static.mingyizhudao.com/pc/html5shiv.js"></script>
+        <script src="http://static.mingyizhudao.com/pc/respond.min.js"></script>
         <![endif]-->       
         <style>  #BDBridgeMess{display:none !important;}</style>
     </head>

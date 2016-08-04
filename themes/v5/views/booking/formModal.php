@@ -1,7 +1,7 @@
 <?php
-//Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.form.js', CClientScript::POS_END);
-//Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.validate.min.js', CClientScript::POS_END);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/booking.js', CClientScript::POS_END);
+//Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.form.js', CClientScript::POS_END);
+//Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.validate.min.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/booking100.min.js', CClientScript::POS_END);
 
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlTerms = $this->createUrl('site/page', array('view' => 'help','page'=>'terms'));
@@ -17,7 +17,7 @@ $bookingLog = $this->createUrl("booking/ajaxBookingLog");
                 <div class="block-center">
                     <div class="mybooking">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <div class="mybooking-text text-center color-white"><img src="<?php echo $urlResImage; ?>general/booking.png"> 我要预约</div>
+                        <div class="mybooking-text text-center color-white"><img src="http://static.mingyizhudao.com/147012947413524"> 我要预约</div>
                     </div>
                     <div class="booking-form">
                         <div class="form-wrapper">

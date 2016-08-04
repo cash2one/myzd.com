@@ -1,9 +1,9 @@
 <?php
-//Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.form.js', CClientScript::POS_END);
-//Yii::app()->clientScript->registerScriptFile('http://myzd.oss-cn-hangzhou.aliyuncs.com/static/mobile/js/jquery.validate.min.js', CClientScript::POS_END);
-//Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login.js", CClientScript::POS_HEAD);
-//Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login_verifycode.js", CClientScript::POS_HEAD);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . "/js/custom/login_quickbooking.min.js", CClientScript::POS_END);
+//Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.form.js', CClientScript::POS_END);
+//Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.validate.min.js', CClientScript::POS_END);
+//Yii::app()->clientScript->registerScriptFile("http://static.mingyizhudao.com/login.min.js", CClientScript::POS_HEAD);
+//Yii::app()->clientScript->registerScriptFile("http://static.mingyizhudao.com/login_verifycode.min.js", CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile("http://static.mingyizhudao.com/login_quickbooking.min.js", CClientScript::POS_END);
 $siteMenu = $this->loadSiteMenu();
 $headerMenu = $this->getHeaderMenu();
 $facultyMenu = $siteMenu["faculty"];
@@ -86,7 +86,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="<?php echo Yii::app()->homeUrl; ?>"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146009415900025"></a>
+                        <a href="<?php echo Yii::app()->homeUrl; ?>"><img src="http://static.mingyizhudao.com/146009415900025"></a>
                     </div> 
                     <div class="collapse navbar-collapse" id="header-navbar-collapse">                
                         <ul id="header-nav" class="nav navbar-nav mt5 ml40">
@@ -128,7 +128,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                 </div>
                 <div class="row mb40 mt40">
                     <div class="col-md-6 col-sm-6 hidden-xs text-center">
-                        <img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353414245"/>
+                        <img src="http://static.mingyizhudao.com/146010353414245"/>
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="login-form">
@@ -139,7 +139,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <div class="input-group">
-                                                <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14601035344900"/></div>
+                                                <div class="input-group-addon icon"><img src="http://static.mingyizhudao.com/14601035344900"/></div>
                                                 <input class="form-control" placeholder="输入手机号" maxlength="11" name="UserLoginForm[username]" id="UserLoginForm_username" type="text"/>                        
                                             </div>
                                             <div class="Message" id="UserLoginForm_username_em_" style="display:none"></div>                    
@@ -148,7 +148,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <div class="input-group">
-                                                <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353443984"/></div> 
+                                                <div class="input-group-addon icon"><img src="http://static.mingyizhudao.com/146010353443984"/></div> 
                                                 <input class="form-control" autocomplete="off" placeholder="输入密码" name="UserLoginForm[password]" id="UserLoginForm_password" type="password" />                    
                                             </div>
                                             <div class="Message" id="UserLoginForm_password_em_" style="display:none"></div>                    
@@ -180,7 +180,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
-                                            <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14601035344900"/></div>              
+                                            <div class="input-group-addon icon"><img src="http://static.mingyizhudao.com/14601035344900"/></div>              
                                             <input class="form-control" placeholder="输入手机号" maxlength="11" name="UserVerifyCodeLoginForm[username]" id="UserVerifyCodeLoginForm_username" type="text">                        
                                         </div>
                                         <div class="Message" id="UserVerifyCodeLoginForm_username_em_" style="display:none"></div>                    
@@ -191,7 +191,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
-                                            <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353439754"/></div> 
+                                            <div class="input-group-addon icon"><img src="http://static.mingyizhudao.com/146010353439754"/></div> 
                                             <input class="form-control" maxlength="6" placeholder="请输入图形验证码" name="UserVerifyCodeLoginForm[captcha_code]" id="UserVerifyCodeLoginForm_captcha_code" type="text">            
                                             <div class="input-group-addon vailcodeImg"><a href="javascript:void(0);"><img class="vailcode" src="<?php echo $this->createUrl('site/getCaptcha'); ?>" onclick="this.src = '<?php echo $this->createUrl('site/getCaptcha'); ?>/' + Math.random()"></a></div>
 
@@ -205,7 +205,7 @@ if (($this->action->controller->id == 'user') && ($this->action->id == 'register
                                 <div class="form-group">
                                     <div class="col-sm-12 controls">
                                         <div class="input-group">
-                                            <div class="input-group-addon icon"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146010353439754"/></div> 
+                                            <div class="input-group-addon icon"><img src="http://static.mingyizhudao.com/146010353439754"/></div> 
                                             <input class="form-control" maxlength="6" placeholder="请输入验证码" name="UserVerifyCodeLoginForm[verify_code]" id="UserVerifyCodeLoginForm_verify_code" type="text">            
                                             <div id="btn-sendLoginSmsCode" class="btn input-group-addon  btn-verifycode">获取验证码</div>
                                         </div>

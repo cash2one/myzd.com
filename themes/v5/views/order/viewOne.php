@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
 $urlBookingList = $this->createUrl('booking/list');
 ?>
 <style>
@@ -13,8 +13,8 @@ $urlBookingList = $this->createUrl('booking/list');
     .form-horizontal .checkbox a{text-decoration: underline;color: #19aea5;}
     .ch{text-align:center;}
     .up{border:1px solid #ddd!important;border-radius:10px;background-position:center;background-repeat:no-repeat;width:190px!important;margin:5px auto 0!important;padding:10px!important;}
-    .alipay{background-image: url(<?php echo $urlResImage; ?>icons/ic-alipay.png);}
-    .yeepay{background-image: url(<?php echo $urlResImage; ?>icons/ic-yeepay.jpg);}
+    .alipay{background-image: url('http://static.mingyizhudao.com/147014148712418');}
+    .yeepay{background-image: url('http://static.mingyizhudao.com/14701414576445');}
     .open-code-area{opacity:0.7;width:350px;height:250px;position:fixed;left:41%;bottom:40%;border:1px solid #efefef;border-radius:5px;z-index:99;background-color:#333;padding:0 10px;display:none;}
     .open-code-area .cancel{font-size:24px;color:#fff;display:inline-block;}
     .open-code-area .cancel:hover{cursor:pointer;}
@@ -92,19 +92,19 @@ if (isClientWeixin()) {
                         <div class="col-sm-4">
                             <label>
                                 <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios1" value="wx_pub_qr" checked>
-                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146315422313844">
+                                <img class="mt-5" src="http://static.mingyizhudao.com/146315422313844">
                             </label>
                         </div>
                         <div class="col-sm-4 text-center">
                             <label>
                                 <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios2" value="alipay_pc_direct">
-                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/14631542229868">
+                                <img class="mt-5" src="http://static.mingyizhudao.com/14631542229868">
                             </label>
                         </div>
                         <div class="col-sm-4 text-center">
                             <label>
                                 <input class="input-radio" type="radio" name="optionsRadios" id="optionsRadios3" value="yeepay_wap">
-                                <img class="mt-5" src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146337324530681">
+                                <img class="mt-5" src="http://static.mingyizhudao.com/146337324530681">
                             </label>
                         </div>
                     </div>
@@ -135,10 +135,10 @@ if (isClientWeixin()) {
         </div>
     </div>
 </div>
-<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp.js"></script>
-<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp-pc.js"></script>
+<script src="http://static.mingyizhudao.com/pc/pingpp.min.js"></script>
+<script src="http://static.mingyizhudao.com/pc/pingpp-pc.min.js"></script>
 <script type="text/javascript" src="https://one.pingxx.com/lib/pingpp_one.js"></script>
-<script type="text/javascript" src="http://cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="http://static.mingyizhudao.com/pc/cdn.staticfile.org-jquery.qrcode.min.js"></script>
 
 <script type="text/javascript">
     $(".btn-lg").click(function () {

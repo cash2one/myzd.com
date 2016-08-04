@@ -197,8 +197,8 @@
     var devicetype = "Windows-QQBrowser";
 
     seajs.use("appmsg/index.js");
-</script>    <script type="text/javascript" src="/myhz/themes/v2/js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="/myhz/assets/ec15d31b/jquery.yiiactiveform.js"></script>
+</script>    <script type="text/javascript" src="http://static.mingyizhudao.com/pc/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://static.mingyizhudao.com/pc/jquery.yiiactiveform.js"></script>
 <script type="text/javascript">
     /*<![CDATA[*/
     jQuery(function($) {

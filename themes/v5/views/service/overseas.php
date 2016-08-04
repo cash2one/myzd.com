@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl . '/css/service.css' . '?v=' . time(); ?>" />
+<link rel="stylesheet" type="text/css" href="http://static.mingyizhudao.com/service100.min.css" />
 <?php
 $this->content_container = "";
 $menu = array();
@@ -58,7 +58,7 @@ $resourceUrl = Yii::app()->theme->baseUrl . '/images/service';
                     </div>
                     <div class="content">
                         <div class="h4">您可以通过网站、APP和微信公众号上传病历资料，或者联系我们的客服协助您完成上传</div>
-                        <div><img class="img-responsive" src="<?php echo $resourceUrl; ?>/process_step2.jpg"/></div>
+                        <div><img class="img-responsive" src="http://static.mingyizhudao.com/147021526408644"/></div>
                     </div>
                 </section>
 
@@ -99,9 +99,9 @@ $resourceUrl = Yii::app()->theme->baseUrl . '/images/service';
                     <div class="content">
                         <div class="h4">专车接送，专人接待，全程陪护。保证合作医院均具有国际医疗权威认证，享受最专业，最贴心的医疗服务。</div>
                         <div class="row">
-                            <div class="col-sm-4"><img class="img-responsive" src="<?php echo $resourceUrl; ?>/process_step5_img01.jpg" /></div>                            
-                            <div class="col-sm-4"><img class="img-responsive" src="<?php echo $resourceUrl; ?>/process_step5_img04.jpg" /></div>
-                            <div class="col-sm-4"><img class="img-responsive" src="<?php echo $resourceUrl; ?>/process_step5_img03.jpg" /></div>
+                            <div class="col-sm-4"><img class="img-responsive" src="http://static.mingyizhudao.com/147021526512512" /></div>                            
+                            <div class="col-sm-4"><img class="img-responsive" src="http://static.mingyizhudao.com/147021526559129" /></div>
+                            <div class="col-sm-4"><img class="img-responsive" src="http://static.mingyizhudao.com/147021526549910" /></div>
                         </div>
                     </div>
                 </section>

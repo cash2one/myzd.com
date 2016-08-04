@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/user.css" . "?v=" . time());
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlUploadFile = $this->createUrl("booking/ajaxUploadFile");
 $urlBookingList = $this->createUrl('booking/list');
@@ -24,7 +24,7 @@ $urlReturn = $this->createUrl('booking/userBooking',array('id'=>$booking->id));
         </div>
         <div class="col-sm-9">
             <div class="">
-                <img class="img-responsive" src="<?php echo $urlResImage; ?>user/process.png">
+                <img class="img-responsive" src="http://static.mingyizhudao.com/147012953748342">
             </div>
             <div class="bookingSuccess border-gray mt10 pl40 pr40 minh700">
                 <div class="row mt40">

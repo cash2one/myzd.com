@@ -11,7 +11,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
-<!--                <a href="<?php echo Yii::app()->homeUrl; ?>"><img src="<?php echo $urlResImage; ?>icons/logo.png"></a>-->
+<!--                <a href="<?php echo Yii::app()->homeUrl; ?>"><img src="http://static.mingyizhudao.com/147012936335554"></a>-->
                 <h4 class="modal-title" id="gridSystemModalLabel">预约单</h4>
             </div>
             <div class="modal-body">

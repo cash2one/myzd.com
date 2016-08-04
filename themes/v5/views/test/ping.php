@@ -5,7 +5,7 @@
         <meta name="viewport"
               content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <title>MiniCheckout</title>
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/example-wap/styles/pinus.css">        
+        <link rel="stylesheet" type="text/css" href="http://static.mingyizhudao.com/pc/pingpp-html5-master-pinus.css">        
     </head>
     <body>
         <header>
@@ -33,9 +33,9 @@
                 </div>
             </div>
         </section>
-        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp-pc.js"></script>
+        <script src="http://static.mingyizhudao.com/pc/pingpp-pc.min.js"></script>
         <!--<script src="../../src/pingpp.js"></script>-->
-        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/pingpp-html5-master/src/pingpp.js"></script>
+        <script src="http://static.mingyizhudao.com/pc/pingpp.min.js"></script>
         <script>
                             function wap_pay(channel) {
                                 var amount = document.getElementById('amount').value * 100;
