@@ -196,7 +196,7 @@ $this->htmlMetaDescription = "名医主刀网为您提供国内医生预约手�
     }
     /**** 设置二级科室html ****/
     function setDiseaseCategory(data) {
-        var urlDoctorByDiseaseSubCategory = '<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => '')); ?>';
+        var urlDoctorByDiseaseSubCategory = '<?php echo Yii::app()->params['baseUrl'] ?>';
         if (data.results) {
             var innerHtml = '';
             var diseaseCategorys = data.results;
@@ -210,7 +210,7 @@ $this->htmlMetaDescription = "名医主刀网为您提供国内医生预约手�
                 innerHtml += '<div class="second-faculty-area ' + active + '" id="dept' + i + '">';
                 for (var j = 0; j < subCats.length; j++) {
                     var subCat = subCats[j];
-                    innerHtml += '<span class="second-faculty mr5"><a href="' + urlDoctorByDiseaseSubCategory + subCat.id + '" target="_blank">' + subCat.name + '</a></span>';
+                    innerHtml += '<span class="second-faculty mr5"><a href="' + urlDoctorByDiseaseSubCategory + '/doctor-top-disease_sub_category-' + subCat.id + '.html" target="_blank">' + subCat.name + '</a></span>';
                 }
                 innerHtml += '</div>';
             }

@@ -44,6 +44,17 @@ class DoctorController extends WebsiteController {
 
     public function actionTop() {
         $value=$_GET;
+        if(strstr($_SERVER['REQUEST_URI'],"?")){
+            $flip = array_keys($value);
+            $url="/doctor-top";
+            $uriStr=$url."";
+            foreach($flip as $k=>$v ){
+                if($k<=count($value)){
+                    $uriStr.="-".$v."-".$value[$v];
+                }
+            }
+            $this->redirect($uriStr.".html");
+        }
         $seoKey="";
         if(array_key_exists("city",$value)){
            $cityInfo=RegionCity::model()->getById($value['city']);
@@ -314,10 +325,10 @@ class DoctorController extends WebsiteController {
      * 每周推荐医生配置
      */
     protected function weeksDoctorId($week){
-        $list=array("1"=>array("2939","2913","267","2927","1750","3204","3053","2919"),
-                    "2"=>array("3325","137","3153","295","3021","3217","3042","3130"),
-                    "3"=>array("3087","912","303","3031","3219","3020","3010","3054"),
-                    "4"=>array("2989","3017","3029","359","3223","3218","3124","803")
+        $list=array("1"=>array("233","359","369","473","3220","3184","3591","1286"),
+                    "2"=>array("1389","361","1427","1769","2899","2907","2926","2927"),
+                    "3"=>array("2987","3014","3026","3031","3032","3068","3070","3078"),
+                    "4"=>array("3279","3290","3105","3106","3692","3140","3141","3143")
         );
         if($week>'4'){
             return $list["4"];

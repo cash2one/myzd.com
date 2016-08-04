@@ -40,13 +40,26 @@ class HospitalController extends WebsiteController {
 
     public function actionView($id,$deptId=0) {
         //$ifaculty = $this->loadIFaculty($id);
+        $value=$_GET;
+        if(strstr($_SERVER['REQUEST_URI'],"?")){
+            $flip = array_keys($value);
+            $url="/hospital-view";
+            $uriStr=$url."";
+            foreach($flip as $k=>$v ){
+                if($k<=count($value)){
+                    $uriStr.="-".$v."-".$value[$v];
+                }
+            }
+            $this->redirect($uriStr.".html");
+        }
         $hospitalMgr = new HospitalManager();
         $with = array('hospitalCity', 'hospitalDepartments' => array('on' => 'hospitalDepartments.is_show=1'));
         $ihospital = $hospitalMgr->loadIHospitalById($id, $with);
-        if (is_null($ihospital)) {
-            $this->throwPageNotFoundException();
-        }
         $departmentInfo=HospitalDepartment::model()->getById($deptId);
+        if (is_null($ihospital) || is_null($departmentInfo)) {
+            $this->throwPageNotFoundException();
+            //header("HTTP/1.1 404 Not Found");
+        }
         $departmentName=$departmentInfo['name'];
         $seoKey=$ihospital->name.$departmentName;
         $this->pageTitle=$seoKey."手术预约,床位预约,专家预约,哪个医生好_名医主刀网";
@@ -59,6 +72,18 @@ class HospitalController extends WebsiteController {
     
     public function actionView2($id,$deptId=0) {
         //$ifaculty = $this->loadIFaculty($id);
+        $value=$_GET;
+        if(strstr($_SERVER['REQUEST_URI'],"?")){
+            $flip = array_keys($value);
+            $url="/hospital-view2";
+            $uriStr=$url."";
+            foreach($flip as $k=>$v ){
+                if($k<=count($value)){
+                    $uriStr.="-".$v."-".$value[$v];
+                }
+            }
+            $this->redirect($uriStr.".html");
+        }
         $hospitalMgr = new HospitalManager();
         $with = array('hospitalCity', 'hospitalDepartments' => array('on' => 'hospitalDepartments.is_show=1'));
         $ihospital = $hospitalMgr->loadIHospitalById($id, $with);
@@ -83,6 +108,17 @@ class HospitalController extends WebsiteController {
 
     public function actionTop() {
         $value=$_GET;
+        if(strstr($_SERVER['REQUEST_URI'],"?")){
+            $flip = array_keys($value);
+            $url="/hospital-top";
+            $uriStr=$url."";
+            foreach($flip as $k=>$v ){
+                if($k<=count($value)){
+                    $uriStr.="-".$v."-".$value[$v];
+                }
+            }
+            $this->redirect($uriStr.".html");
+        }
         $seoKey="";
         if(array_key_exists("city",$value)){
             $cityInfo=RegionCity::model()->getById($value['city']);

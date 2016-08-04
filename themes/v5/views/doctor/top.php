@@ -263,7 +263,7 @@ $page = Yii::app()->request->getQuery('page', '');
 //        }
 //        urlCondition = urlCondition.substring(1);
 //        urlCondition = "?" + urlCondition;
-//        var newUrl = "<?php echo $urlDoctorSearch; ?>" + urlCondition;
+//        var newUrl = "//echo $urlDoctorSearch; ?>" + urlCondition;
 //        history.pushState(stateObject, title, newUrl);
     }
     function setCityActive() {
