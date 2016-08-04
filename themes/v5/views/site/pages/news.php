@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/aboutus100.min.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/aboutus100.min.css");
 $urlNews = $this->createUrl('news/page', array("view" => ""));
 $this->pageTitle = '公司资讯_名医主刀网';
 $this->htmlMetaKeywords = '公司新闻,公司资讯';
@@ -38,6 +38,22 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                             </div>
                             <div class="col-md-10 col-sm-9 ml-50 news">
+<!--                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="http://static.mingyizhudao.com/147012353237252">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年7月
+                                            </div>
+                                            <div class="content">
+                                                <div>7月初，安徽省遭遇50年一遇强降雨，灾情严重。灾区人民时时牵动着名医主刀小伙伴的心，很多小伙伴的故乡是安徽，不断为家乡祈福。<span class="text21">“名医主刀仁爱志愿队”</span>更是行动派，在继阜宁赈灾后，再次前往受灾严重的安徽省安庆市怀宁县，为当地灾民发放救济物资。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php// echo $urlNews; ?>tigerbite" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>-->
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/146883240108139">
@@ -54,7 +70,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+<!--                                <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/146823098998766">
                                     </div>
@@ -66,10 +82,10 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                             <div class="content">
                                                 <div>近日，名医主刀创始人兼CEO苏舒，联合创始人兼首席技术官秦鹏以及首席财务官叶菲等一行前往美国纽约，与<span class="text21">美国凯瑟琳癌症中心完成了股权合作</span>，标志着双方的合作迈入实质性的深度阶段。此前，在名医主刀B轮融资中，美国凯瑟琳癌症中心的核心团队成员不远万里为投资而来，且最终选定名医主刀成为美国凯瑟琳癌症中心在中国唯一的投资项目，可见他们真诚而又郑重的合作意向。</div>
                                             </div>
-                                            <div class="detail"><a href="<?php echo $this->createUrl('event/view',array('page'=>'cooperation')); ?>" target="_blank">查看详情 →</a></div>
+                                            <div class="detail"><a href="<?php// echo $this->createUrl('event/view',array('page'=>'cooperation')); ?>" target="_blank">查看详情 →</a></div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/14682293619706">
@@ -118,7 +134,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+<!--                                <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/146356319786612">
                                     </div>
@@ -130,11 +146,11 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                             <div class="content">
                                                 <div>2016年5月14日，“名医主刀”与延安大学附属医院成功签约，双方将以延安大学附属医院为区域手术基地，合作共建<span class="text21">延安市第一家互联网手术中心</span>。以互联网手术中心为载体，采用“名医铸刀”模式，不但能提升地方医疗水准，还能让当地患者真正享受到“大病不出市，名医随时有”。</div>
                                             </div>
-                                            <div class="detail"><a href="<?php echo $urlNews; ?>yanancenter" target="_blank">查看详情 →</a></div>
+                                            <div class="detail"><a href="<?php// echo $urlNews; ?>yanancenter" target="_blank">查看详情 →</a></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
+                                </div>-->
+<!--                                <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/146356319763533">
                                     </div>
@@ -146,11 +162,11 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                             <div class="content">
                                                 <div>2016年4月20日，<span class="text21">“共享名医资源、共铸健康中国；名医公益手术捐赠暨名医公益宣言发布会”</span>在人民大会堂举行。此次大型公益活动由名医主刀联合多家公益组织、企业家代表、医生代表、公益明星共同发起，力求在“全民健康，全面小康”的总方针下，创新性尝试共享公益资源的新模式！</div>
                                             </div>
-                                            <div class="detail"><a href="<?php echo $urlNews; ?>mingyigongyi" target="_blank">查看详情 →</a></div>
+                                            <div class="detail"><a href="<?php// echo $urlNews; ?>mingyigongyi" target="_blank">查看详情 →</a></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
+                                </div>-->
+<!--                                <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/146250265336047">
                                     </div>
@@ -164,7 +180,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
                                         <img src="http://static.mingyizhudao.com/146172652186866">
@@ -197,7 +213,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+<!--                                <div class="row">
                                     <div class="col-md-3 col-sm-5">
                                         <img src="http://static.mingyizhudao.com/146250265311271">
                                     </div>
@@ -209,10 +225,10 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                             <div class="content">
                                                 <div class="text21">滴滴医生火爆预约，名医抢单随车上门。</div>
                                             </div>
-                                            <div class="detail"><a href="<?php echo $urlNews; ?>dididoctor" target="_blank">查看详情 →</a></div>
+                                            <div class="detail"><a href="<?php// echo $urlNews; ?>dididoctor" target="_blank">查看详情 →</a></div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                                 <div class="row">
                                     <div class="col-md-3 col-sm-5">
                                         <img src="http://static.mingyizhudao.com/146250265317817">
