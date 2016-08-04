@@ -1,7 +1,8 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/user100.min.css");
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-$urlUploadFile = $this->createUrl("booking/ajaxUploadFile");
+//$urlUploadFile = $this->createUrl("booking/ajaxUploadFile");
+$urlUploadFile = 'http://file.mingyizhudao.com/api/uploadbookingfile';
 $urlBookingList = $this->createUrl('booking/list');
 $booking = $data->results->booking;
 $urlReturn = $this->createUrl('booking/userBooking',array('id'=>$booking->id));
