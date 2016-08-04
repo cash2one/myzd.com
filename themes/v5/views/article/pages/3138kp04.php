@@ -17,7 +17,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3138/4.png" title="" alt="demo.jpg"/></span><br />
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147004463104171" title="" alt="demo.jpg"/></span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">晚报记者 许沁 报道</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 近日，香港演员成奎安因鼻咽癌去世引发关注。记者了解到，目前我国南方地区尤其是广东、广西、福建等地的鼻咽癌发病率在世界范围内居前列。与此同时，从复旦大学附属眼耳鼻喉科医院、仁济、新华医院耳鼻喉科传出消息，超过半数以上的鼻咽癌患者往往到了中晚期才来就诊。其实，早期鼻咽癌的生存率很高，专家提醒，当出现鼻涕带血、耳鸣、颈部有肿块时，要及时到医院检查，以做到鼻咽癌早发现、早治疗。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 中国南部鼻咽癌发病世界居高</span><br />
@@ -51,10 +51,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3205/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010438212516" title="" alt="demo.jpg"/><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">&nbsp; &nbsp; “让山东的所有肛肠病患者都能享受无痛肛肠手术。”济南肛肠医院王保学院长表示。据悉，2014年初，济南肛肠医院率先实现“检查无痛、治疗无痛、手术无痛、换药无痛”的全无痛治疗肛肠病。目前，该院“无痛病房”已成为山东省一个优质服务、让患者满意的窗口 。另悉，即日起至11月30日，济南肛肠医院推出无痛肠镜、无痛胃镜检查费半价，微创手术（治疗）爱心援助200元等5 大优惠活动，为山东的广大患者送去实实在在的健康大礼。</span><br />
 <br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">&nbsp; &nbsp; 无痛病房，真正实现治疗肛肠疾病全无痛</span><br />
@@ -41,10 +41,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

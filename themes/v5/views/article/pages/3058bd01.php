@@ -34,7 +34,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 癌症我们现在更多把它视为一种慢性病。我们认为在慢性病上，中医可能更擅长，比如慢性咳嗽，西医办法就不太多，中医就比较好的效果。还有像脑血脂，中医针灸治疗也有比较好的效果。中西医是可以结合治疗的。现在一些医院的广告，中医的完全排斥西医，西医的完全排斥中医，其实都是不全面的。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 记者：关于癌症的防治，您对于广大网友有什么具体的建议？</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 程琳：癌症治疗，越早期发现越好治，所以我建议大家应该每年做一次体检。特别是40岁以上的人群，要更加关心自己的健康。癌症预防方面，我们目前没有找到明确致病根源，但影响因素是明确的，吸烟、喝酒都是重要的影响因素。饮食方式，不要吃太多荤腥的东西，要经常摄入绿色蔬菜、粗纤维类的食品。另外也要注意不良情绪的管理，保持健康、向上、快乐的心态。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3058/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003978040983" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">程琳，北京大学人民医院乳腺中心 副主任医师</span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 2003年毕业于北京大学医学部获得外科学博士学位。2007年通过遴选获得EPU奖学金资助前往维也纳医科大学进行博士后研究工作，在奥地利乳腺癌及大肠癌协会（ABCSG）主席Gnant教授指导下接受系统的临床和科研训练。现任北京大学人民医院乳腺中心副主任医师。在核心期刊上已发表多篇论著。主要从事乳腺疾病尤其是乳腺癌的诊断和治疗工作。擅长乳腺癌手术及综合治疗、影像引导下乳腺穿刺、前哨淋巴结活检等乳腺癌综合治疗。</span>
@@ -56,10 +56,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

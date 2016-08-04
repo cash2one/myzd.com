@@ -15,8 +15,8 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <br />
 2月27日、2月29日，连续两个不小心被筷子从嘴部插进脑袋的宝宝，被紧急送到附属新华医院耳鼻喉头颈外科抢救。在经过多学科会诊并采取保障措施后，医生通过手术成功将筷子从孩子的头部成功拔出，情况转危为安。但是专家强调，“拔”筷子有着非常高的医学技术要求和风险，普通人千万不能随便“拔”。&nbsp;<br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/2882/1.png" title="" alt="demo.jpg"/><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/2882/2.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147002227265138" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147002227447844" title="" alt="demo.jpg"/><br />
 <br />
 2月26日16:30至17:30左右，家住奉贤的小阳阳（化名）因吃插在筷子上的紫薯时不慎摔跤，筷子通过口腔插进颅内。家长带着阳阳辗转三家医院，院方均表示无法救治。23时，阳阳的父母辗转来到了新华医院，急疯了的年轻父母早已经泣不成声。医院当即开通急诊绿色通道，将阳阳安顿在“儿科重症监护室”，进一步监测各项生命体征，为后续的治疗做好准备。&nbsp;<br />
 <br />
@@ -56,10 +56,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

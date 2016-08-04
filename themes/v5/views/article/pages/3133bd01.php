@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>12岁男童生吃螃蟹险偏瘫 肺吸虫钻进大脑竟肉眼可见</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3133/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004437987474" title="" alt="demo.jpg"/></span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">恐怖的肺吸虫。 &nbsp;记者 &nbsp;陈丹 &nbsp;摄</span><br />
 <p>
@@ -69,10 +69,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

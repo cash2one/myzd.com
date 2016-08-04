@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3055/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003964185689" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">昨天，医脉通发布了一篇很有意思的文章，讲的是微博一位网友晒出亲属在美国做完手术后收到的账单后，引起了在外同胞集体吐槽国内医疗，有些评论令人捧腹，说的却是实情。</span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">不得不说，“看病难”是近年一个炙手可热的词汇，一个“难”字道出了百姓对医疗现状的不满。从现实的情况看，的确有很多需要改善的地方。很多先富起来的中国人，纷纷将目光瞄准了国内提供高端服务的医疗机构，更有甚者，远渡重洋到海外就医。存在即合理，这些机构的存在为我们提供了一个多元化的选择，但是他们毕竟不是医疗市场的主体。对于普通的百姓而言，国外的发达国家是否也存在与我们类似的看病难问题呢？让我们以美国为例，看看中美百姓就医的差异吧。</span><br />
@@ -112,10 +112,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

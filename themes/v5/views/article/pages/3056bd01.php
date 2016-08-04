@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </p>
 <p>
 	<br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3056/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147003971734793" title="" alt="demo.jpg"/></span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">“来，看这里。你左眼是黄斑变性，需要做个注射手术，没什么问题的，做完了你的视力就会提高很多。”与患者轻声细语交流是北京医院眼科主任戴虹。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">黄斑变性是一种累及视网膜黄斑的变性眼疾，全世界大约2500万至3000万人罹患此病。在城市中，黄斑病变和糖尿病眼病是目前致盲的第一诱因。但由于继往国内外对黄斑部疾病一直没有很有效的治疗手段，医生和患者对这一疾病都不太重视。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">戴虹是国内最早开展黄斑病研究的医生。从国内最早开展黄斑转位手术，到激光治疗方法，再到如今的玻璃体注射治疗方法，戴虹所从事的这一系列的技术探索，都紧跟时代潮流，占据了国内眼科发展史上的多个第一。可以说，黄斑病变研究的每一步进展，都离不开戴虹和他的团队的参与。</span><br />
@@ -56,10 +56,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

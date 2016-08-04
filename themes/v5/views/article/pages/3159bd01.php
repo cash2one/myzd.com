@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>河南弘大心血管病医院用起搏器打开患者“心”门</strong></span>
 </div>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3159/1.png" title="" alt="demo.jpg"/>　心内科专家正在为心脏病患者实施手术&nbsp;</span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010298900392" title="" alt="demo.jpg"/>　心内科专家正在为心脏病患者实施手术&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 在医疗市场竞争日趋激烈的形势下，河南弘大心血管病医院已经从省内知名的心血管病专科医院迈入全国知名心血管病专科医院。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 近一年多来，河南弘大心血管病医院成功开展心内科手术近千例，尤其是心血管内科的高难度手术，如冠脉造影、支架植入、心脏起搏器、射频消融术等。目前，该院心内科在刘怀霖院长的带领下，在心内科手术的成功率、治愈率方面，已响亮地打出了中原地区心血管内科的专科品牌。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 技术</span><br />
@@ -41,10 +41,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

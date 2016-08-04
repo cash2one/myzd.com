@@ -28,7 +28,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">1983年，单希征毕业后被分配到海军总医院耳鼻喉科工作，并听从学科带头人的意见，在业余时间钻研起了眩晕病的诊断和治疗。经过30多年的潜心研究，他成功攻破了眩晕性疾病的诊断标准，并研制出眩晕诊断的医疗仪器。此外，他还发明了耳石症诊疗系统。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3016/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003658438520" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">中国研究型医院学会眩晕医学专业委员会成立大会结束之后，单希征接受了健康界的专访，介绍了眩晕诊治的现状、误区及其研究进展。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">单希征告诉健康界，眩晕性疾病是一类多发病、常见病，涉及多个学科，由于医院没有设专门的眩晕科，难以达到专业化的诊治水平。因此，有些就成为了疑难病症。眩晕作为临床症状，占据门诊患者主诉中的第2~3位，眩晕的发病率约为5%，一生中有过眩晕的人占28%。</span><br />
 <p>
@@ -131,10 +131,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

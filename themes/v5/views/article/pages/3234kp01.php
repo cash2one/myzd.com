@@ -18,7 +18,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3234/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010538304329" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;王行环，武汉大学中南医院泌尿外科主任、教授、博导，中华医学会泌尿外科学分会常委，在泌尿外科微创手术，特别是在前列腺微创手术、腹腔镜手术方面有较高的造诣。如腹腔镜下肾盂成形术、肾癌根治术、前列腺癌根治术等。特别擅长经尿道前列腺等离子电切术。在国内很早开展经尿道前列腺电汽化术，经尿道等离子切割技术等。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;检查前列腺</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;还要常规武器</span><br />
@@ -118,10 +118,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

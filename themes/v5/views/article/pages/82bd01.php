@@ -20,7 +20,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </p>
 <p>
 	<br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/82/2.png" title="" alt="demo.jpg"/>刘跃武教授</span>
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147010618740115" title="" alt="demo.jpg"/>刘跃武教授</span>
 </p>
 <p>
 	<br />
@@ -42,7 +42,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 主持人：甲状腺结节和甲状腺癌有什么关系？</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 刘跃武：本来人的甲状腺里面是不应该有结节的，很均匀的质地，如果长出一个结节，有可能是癌，有可能是腺瘤，也有可能是增生的结节，在这个结节没有定性之前，统称为结节。就好比我们看一个人，假设光线不好，没有看清楚他是一个什么样的人之前，我们只知道这是一个人，等走近一看，才能确定是一个男人、女人、老人或者小孩。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 中青年女性最易得甲状腺结节</span><br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/82/3.png" title="" alt="demo.jpg"/></span>
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147010619001589" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">刘跃武教授</span>
@@ -75,7 +75,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </p>
 <p>
 	<br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/82/4.png" title="" alt="demo.jpg"/>刘跃武教授</span>
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147010619628354" title="" alt="demo.jpg"/>刘跃武教授</span>
 </p>
 <p>
 	<br />
@@ -138,10 +138,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

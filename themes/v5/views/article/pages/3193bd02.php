@@ -16,14 +16,14 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;">&nbsp;</span><br />
 <p>
-	<span style="font-size:14px;font-family:Microsoft YaHei;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3193/2.png" title="" alt="demo.jpg"/></span>
+	<span style="font-size:14px;font-family:Microsoft YaHei;"><img src="http://static.mingyizhudao.com/147010408170040" title="" alt="demo.jpg"/></span>
 </p>
 <p>
-	<span style="font-size:14px;font-family:Microsoft YaHei;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3193/3.png" title="" alt="demo.jpg"/><br />
+	<span style="font-size:14px;font-family:Microsoft YaHei;"><img src="http://static.mingyizhudao.com/14701040820024" title="" alt="demo.jpg"/><br />
 </span>
 </p>
 <span style="font-size:14px;font-family:Microsoft YaHei;"> 袁贤瑞25年主刀超过5000例手术，每一台手术以后，就多一张笑脸。灿烂的笑脸组成一道灿烂的生命的墙。（照片由受访者提供）</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3193/4.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010408233644" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;">袁贤瑞要求学生和同事多从病人角度想问题，但绝容不得“想歪了”。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;"> 中南大学湘雅医院神经外科35病室传出暖暖笑声。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;"> 科室主任袁贤瑞俯身查看来自江西宜春的敖女士病情。</span><br />
@@ -647,10 +647,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

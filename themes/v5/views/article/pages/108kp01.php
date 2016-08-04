@@ -40,10 +40,10 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <span style="font-size:14px;line-height:2;">我科特色：受市科委课题资助，我科开展肝门胆管癌手术可切除性与安全性评估的临床课题研究，通过精准的术前影像与肝功能评估，精细的手术操作如cusa刀切肝，在明显减少出血的情况下，显著提高了切除率，使许多原本无法手术的Ⅳ型肝门胆管癌患者也得到根治，挽救了一大批晚期肝门胆管癌患者的生命。最近又开展围肝门切除术和特殊肝段切除术治疗肝门胆管癌，大大减少了术后肝功能衰竭的发生。</span><br />
-<span style="font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/108/1.png" title="" alt="demo.jpg"/></span><br />
-<span style="font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/108/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147001609594925"></span><br />
+<span style="font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147001818560933"/></span><br />
 <p>
-	<span style="font-size:14px;line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/108/3.png" title="" alt="demo.jpg"/></span>
+	<span style="font-size:14px;line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147001621494685"/></span>
 </p>
 <p>
 	<br />
@@ -62,10 +62,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/108/pic2.png" title="" alt="demo.jpg"/>
-
--->

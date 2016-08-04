@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3013/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003645289412" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 本报讯（记者陈青）这是一次没有成功经验可参照的手术，唯一可确定的是，如果不手术，眼前这个8个月大的患有罕见胸骨裂五联症的男婴，将不会有生存的希望。昨天，复旦大学附属儿科医院胸外科主任贾兵教授与他的团队，经过4个小时的努力，成功完成了从心脏修补到给“裸心”穿上保护“外衣”的一系列根治术，为患儿重建了一颗健康的心脏。</span><br />
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 胸骨裂畸形心脏裸露</span><br />
@@ -72,10 +72,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

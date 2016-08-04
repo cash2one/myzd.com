@@ -14,10 +14,10 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3054/1.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003958947352" title="" alt="demo.jpg"/>
 </span><br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3054/2.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003959135962" title="" alt="demo.jpg"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 编者按：6月5日，近六万人参加的美国临床肿瘤学会年会在美国结束。健康时报在931期焦点版对大会上的中国医生做了专题报道。除北京肿瘤医院郭军教授所做黑色素瘤主题演讲外，四川大学华西口腔医（学）院的李龙江教授也与国际同行分享了他关于口腔癌研究进展的报告。</span><br />
 <br />
@@ -65,10 +65,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

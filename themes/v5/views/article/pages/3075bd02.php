@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>李逊：一个出色的医者和发明家</strong></span>
 </div>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3075/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147004196246133" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 文/羊城晚报记者 陈映平 实习生 王培</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 图/羊城晚报记者 何奔</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 他是第一位全世界用经皮肾镜微创术取石超过一万例的专家；每天都有人从全国甚至全世界坐飞机、坐火车来到广州东部这家不算大的医院找他治病；</span><br />
@@ -65,10 +65,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

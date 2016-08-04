@@ -12,9 +12,9 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:1.5;"><strong>重庆真实版“霍比特人”：最大的心愿是能穿双新鞋</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';"><img src="<?php echo $baseUrlImage; ?>article/doctor/3121/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';"><img src="http://static.mingyizhudao.com/147004376831993" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 手术前刘会长的左脚和右脚对比。　西南医院供图　摄</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3121/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';">&nbsp;<img src="http://static.mingyizhudao.com/147004376901364" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 奶奶给刘会长做的布鞋。　西南医院供图　摄</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 家住四川渠县21岁的刘会长有一个独特的“大脚板”。这只“大脚版”43厘米长，14厘米厚。从出身到现在，刘会长一直没有穿过正常的鞋，所有的鞋都由奶奶给他做。现在，70岁的奶奶老了，眼睛看不见了，刘会长的大脚板以后怎么穿鞋成为奶奶最大的心病。刘会长说，希望手术之后，能让自己的脚恢复正常，奶奶也会安心。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 奶奶给“大脚板”做了21年布鞋</span><br />
@@ -46,10 +46,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -16,7 +16,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">帕金森病又名震颤麻痹，是一种常见的中老年神经系统变性疾病。其运动症状表现为静止时肢体不自主地震颤、肌强直、运动迟缓以及姿势平衡障碍等，病情晚期会导致患者生活不能自理。目前中国帕金森患者数已达200万，占全球帕金森患者总数的一半。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 由于帕金森病至今尚无法治愈，不少患者对晚期生活质量的严重下降担忧不已，甚至失去治疗的信心，给患者及家属带来了很大的心理的负担。针对这一现状，三九健康网编辑请来了第二军医大学附属长海医院神经外科胡小吾教授，向大家仔细介绍应如何科学治疗帕金森病。</span><br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3103/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147004333610467" title="" alt="demo.jpg"/></span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 专家介绍:胡小吾现任中华医学会上海市神经外科学会功能和立体定向学组副组长，上海市医疗质量鉴定委员会专家，中华医师学会神经调控学会委员，世界神经调控学会会员，国家自然科学基金项目评议人。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 专业特长:立体定向功能神经外科，在帕金森病、特发性震颤、扭转痉挛等疾病脑深部刺激术（脑起搏器）治疗和毁损术治疗方面具有较高知名度。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 早期应用药物治疗 把握剂量很关键</span><br />
@@ -54,10 +54,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

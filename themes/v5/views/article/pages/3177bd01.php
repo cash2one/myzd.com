@@ -14,22 +14,22 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">随着人口的老龄化，老年性聋成为仅次于关节炎和高血压的常见慢性疾病，严重影响中老年朋友的生活质量。老年性耳聋是一种什么样的疾病？怎样治疗和预防？日常生活中我们又该如何保健呢？我们特邀全军耳鼻咽喉头颈外科中心主任、海军总医院主任医师孙建军教授做客CRI直播间，一起关注老年性耳聋的防治。&nbsp;</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3177/1.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010356488012" title="" alt="demo.jpg"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">海军总医院孙建军主任医师&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 本期嘉宾：孙建军，全军耳鼻咽喉头颈外科中心主任，教授，主任医师，医学博士，博士、硕士生导师，博士后导师。&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 从事本专业研究20余年，先后在香港大学Queen Marry 医院、美国南加州大学House耳科研究所San Diego 海军医学中心听觉控间定向实验室从事交流与合作。&nbsp;</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3177/2.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010356632154" title="" alt="demo.jpg"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">孙建军主任医师与主持人刘红&nbsp;</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3177/3.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010356672771" title="" alt="demo.jpg"/>
 嘉宾与节目组合影&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 孙建军教授现任中华医学会耳鼻咽喉头颈外科专业委员会常务委员；国家自然科学基金评审专家；全军耳鼻咽喉头颈外科专业委员会副主任委员；北京市耳鼻喉头颈外科专业委员会常委；首都医科大学耳鼻喉科学院教授；世界卫生组织（WHO）防聋合作中心防聋专家委员会副主任委员。&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 专业特长：擅长耳显微与颅底、耳神经颅底外科、睡眠呼吸障碍、鼻腔与鼻窦外科等。&nbsp;</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3177/4.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010356743848" title="" alt="demo.jpg"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">孙建军主任在节目中&nbsp;</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3177/5.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010356806038" title="" alt="demo.jpg"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">全军耳鼻咽喉头颈外科中心主任孙建军教授做客CRI直播间&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> （转：科普）噪音让现代人越来越"聋" 专家推荐护耳八法&nbsp;</span><br />
@@ -50,7 +50,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 8.对于经常用耳机的人，如果出现头晕、耳痛等症状，应暂时不用耳机。如果出现耳鸣以及听力下降，应及时就医。&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 我们每天用耳朵听着各种音乐，接收着各种信息，在它的"身上"打上好几个洞，以便让自己更加时尚。但却没有仔细关注过它的健康。很多人觉得，只要是可以听到外界的声音，耳朵的健康状况就一定良好！其实不然，耳朵的健康指数下降是在潜移默化间，需要你从细节中认真呵护。&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 爱护耳朵，让耳朵帮我们感受多姿多彩的生活。&nbsp;</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3177/6.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010356831313" title="" alt="demo.jpg"/>
 </span><br />
 <p>
 	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">全军耳鼻咽喉头颈外科中心主任孙建军教授&nbsp;</span>
@@ -75,10 +75,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

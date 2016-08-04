@@ -44,7 +44,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">李志伟:李进队长是总指挥，负责流程及施工图纸设计，我具体负责整个医院的具体改造过程，也就是监工。从打隔断到装喷头，一件件落实。总的来说还算顺利，中资机构帮了我们很多忙。但是当地人实在是靠不住。当时留守医院的人全跑了，我们只能把门全砸开，再重新配锁。那都是十几年前中国施工队安装的锁，换到合适的锁芯很不容易。但请的锁匠今天推明天，明天推后天，最后一天马上就要接病人了，这个医院原来的塞方院长亲自去找，才把锁匠找来。最后还是配不齐，只能有什么用什么，有的地方用挂锁，有的地方在门上开一个洞，用自行车的挂锁凑合锁上。我们给第二批交班的时候，也是交的这么一串千奇百怪的钥匙。</span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3017/3.png" title="" alt="demo.jpg"/></span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147003666283517" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"></span><span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">指导医院改造</span>
@@ -56,7 +56,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">李志伟:非常不方便。防护服不透风也不透水，那么热的天气，一戴上口罩和面屏就呼吸困难，稍微动一动气喘。在病房一个半小时已经是体力极限了。脱防护服的时候，经常可以看到同事的脸已经变成紫色。全身都被汗水浸透，几乎是用尽最后的力气才能把防护服脱掉。</span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3017/4.png" title="" alt="demo.jpg"/></span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src=" http://static.mingyizhudao.com/147003666310737" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">挥手进入病区</span><br />
@@ -71,7 +71,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">脱防护服就麻烦了。你是从污染区走出来的，任何错误都可能导致感染。而且为了避免交叉感染，你只能一个人操作，不可能有人帮你。步骤错了、方法错了都不行。所以，我们一再强调，脱防护服才是真正的考验。</span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3017/5.png" title="" alt="demo.jpg"/></span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147003666331765" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">喷淋消毒</span><br />
@@ -79,13 +79,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">进出污染区，我们都做到双人出入，互相监督互相帮助。在这之上还有个双班制度，一个副班在监视器里盯着一线的医生护士，尤其是监控塞方护士，有错立刻通知。只有确保塞方一个医护人员都不感染，才能保证我们中方也不感染。我们投在培训监控管理塞方人员的精力，远远比投在病人身上多的多，因此，我们不但收治了近300病人，更给塞方留下了一支永远带不走的收治传染病的专科医院和专门队伍。</span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3017/6.png" title="" alt="demo.jpg"/></span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147003666447054" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">培训当地人员</span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3017/7.png" title="" alt="demo.jpg"/></span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147003666502157" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">手卫生考核</span><br />
@@ -111,13 +111,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">为什么要修改这个标准呢。因为病人很难管理，交叉感染的概率太高了。我们的医院算是硬件条件比较好的，还是管不住病人往一块凑。病人们不肯老老实实住在病房，从监控里看，他们经常半裸。甚至裸体到处游荡，哪里凉快就在哪里睡，我们查房经常要跑到大树下面。有的时候病人忽然就会少了一个，哪里也找不到，查监控也找不到，然后第二天就冒出来了。还有一次，病人莫名其妙多了一个，那么高的墙，不开门，也不知道怎么就多了，然后这个人过几天又莫名其妙出去了，我们都怀疑自己数错了。后来才知道，一个小伙子翻墙进来看他的弟弟，然后又翻墙出去了。</span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3017/8.png" title="" alt="demo.jpg"/></span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/14700366658134" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">不听管理的病人</span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3017/9.png" title="" alt="demo.jpg"/></span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147003666611081" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">裸体乱走</span><br />
@@ -140,14 +140,14 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">李志伟:我们只去了30人，医疗队内部什么都得自力更生。我是山西人，会做饭，也勤快，只要有空就会去厨房帮忙做饭。我还有个兼职，就是医疗队正式让我负责厨房的食品及环境卫生。每天我要保证餐具清洗消毒干净，厨房用品及时使用及时清洗消毒干净，生熟案板刀具分开，肉菜等清洗干净。两个月驻扎期，全队未发生一人次拉肚子等食物污染事件。</span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><<img src="<?php echo $baseUrlImage; ?>article/doctor/3017/10.png" title="" alt="demo.jpg"/></span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><<img src="http://static.mingyizhudao.com/147003666666978" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">清洗餐具</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">我们临走的时候，考虑到第二批队员刚来需要适应环境，时间比较紧，我给第二批留在厨房好几盆肉酱(面)卤，把菜都洗干净切好了，等他们一来了就能立刻吃饭。</span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3017/11.png" title="" alt="demo.jpg"/></span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147003666709210" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">向第二批先遣组介绍医院布局</span><br />
@@ -168,10 +168,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

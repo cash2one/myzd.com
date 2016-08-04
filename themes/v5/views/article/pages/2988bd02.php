@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2988/1.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003582494679" title="" alt="demo.jpg"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">11月14日是“世界糖尿病日”。2型糖尿病是一种常见的内分泌代谢性疾病，主要是因体内胰岛素分泌不足或作用障碍引起的代谢紊乱的一种疾病，目前认为肥胖是糖尿病的主要危险因素。在所有类型糖尿病中，2型糖尿病病人约占90%。而肥胖人群中患有糖尿病的人数占41.5%。而且，发生肥胖的时间越长，患糖尿病的机会就越大。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">近日，上海复旦大学附属中山医院普外科的楼文晖教授和吴海福教授就公众关心的减重和糖尿病领域话题进行科普讲解，呼吁重视肥胖以及糖尿病，选择正确的诊疗方式。</span><br />
@@ -47,10 +47,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

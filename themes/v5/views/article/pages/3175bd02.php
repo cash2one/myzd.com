@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">新华网北京9月29日电 上海交通大学医学院附属瑞金医院功能神经外科主任，世界功能神经外科学会常务委员孙伯民29日应邀做客新华网，就许多老年人关心的帕金森患者秋冬季节疾病管理问题，与网友进行在线交流。&nbsp;</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3175/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010347843285" title="" alt="demo.jpg"/></span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; &nbsp; 据报道，目前全国帕金森病患者约有200万，已占到全球患者总人数的一半，北京地区的患者已达3万。随着城市老龄化的到来，中国65岁以上老年人口中，大约有1.7%的人患有此病，防治形势极为严峻。上海交通大学医学院附属瑞金医院功能神经外科主任孙伯民做客新华访谈，为您专业解读秋冬季节帕金森患者的疾病管理。图为嘉宾与主持人合影。</span>
 </p>
@@ -38,10 +38,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

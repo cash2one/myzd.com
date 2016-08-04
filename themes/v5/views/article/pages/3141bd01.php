@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3141/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010252856929" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 张晓彪说，目前还没有发现预防胶质瘤发生的方法和措施。身体周刊记者 张新燕 图</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">张晓彪拿着一个神经内镜解释说，“过去，很多颅底肿瘤都由开颅切除，需要牵拉脑组织才能暴露肿瘤，对脑部损伤较大。而这种内窥镜是个微型摄像头，可以从鼻孔等自然管道进入，将颅底的病变放大显示在屏幕上，而且前端可以增加角度观察，这样不需开颅就可以做颅内手术，大大减少了患者的手术创伤，而且不留疤痕，既微创又美观；不仅如此，术后并发症少，住院时间短，手术费用也因此大大降低。”</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">张晓彪</span><br />
@@ -62,10 +62,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -20,7 +20,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">我国已经成功自主研发人工耳蜗，让很多耳聋患者恢复了听力，那么人工耳蜗是怎么起作用的，它适用于所有耳聋患者吗？记者来到解放军总医院鼻咽喉头颈外科，请杨仕明主任为我们介绍人工耳蜗这个在医学界很出名但对大众来说比较陌生的技术。</span>
 </p>
-<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3190/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147010401998469" title="" alt="demo.jpg"/></span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">杨仕明，男，主任医师，教授，中国人民解放军总医院耳鼻咽喉头颈外科主任，国家重点学科带头人，聋病教育部重点实验室主任，全军声损伤防护重点实验室主任，国家人工耳蜗项目技术指导专家，国家973项目首席科学家，入选科技北京百名领军人才。擅长听觉植入手术（人工耳蜗植入、振动声桥和BAHA植入），对聋病临床与基础研究（传导性聋、遗传性聋、先天性聋、药物性聋、噪声性聋、老年性聋等）具有很高造诣。</span>
 </p>
@@ -155,10 +155,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

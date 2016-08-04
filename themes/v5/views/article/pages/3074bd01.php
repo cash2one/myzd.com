@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">一个肝癌病人进入医院，到底是选择肝胆外科治疗还是介入治疗？这是大部分人的疑问，在第三届亚太肿瘤介入大会上，广东省人民医院肿瘤中心介入治疗科主任陆骊工教授告诉我们，多学科合作才是有效治疗肝癌的关键，团队建设和如何合作处理肝癌病人是我们亟待解决的问题。</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3074/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/14700418802631" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 肝癌的治疗应根据病人的具体情况，如机体情况、病理类型、侵犯范围（病理分期）和发展趋势，科学地、合理地、有计划地应用现有的治疗手段，如介入治疗，外科手术，放化疗，靶向治疗等的最佳组合，以期最大幅度地提高治愈率、延长生存期、提高病人生活质量。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 肝癌的治疗方法包括：1、局部治疗方法：肝切除术、消融治疗、放射治疗（包括外照射和粒子植入）、高聚焦超声2、针对全肝的治疗方法：肝脏移植、肝动脉灌注化疗和TACE（超选择导管置管时TACE可为局部治疗）3、针对全身的治疗方法：化疗、靶向药物、免疫生物治疗、中医药治疗4、其他：抗病毒、抗炎、护肝等</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 目前，国际上一般遵循巴塞罗那肝癌治疗标准，2011年国内卫生部也组织专家制定诊治规范，并达成共识，认为小肝癌小于3cm的外科切除，肝移植，射频消融这些方法处理都能达到根治的目的。</span><br />
@@ -45,10 +45,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

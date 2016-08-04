@@ -18,7 +18,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3027/1.png" title="" alt="demo.jpg"/>宿燕岗教授</span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003753874125" title="" alt="demo.jpg"/>宿燕岗教授</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 68岁的王先生因心跳太慢，窦性心动过缓低于每分钟40次，必须安装心脏起搏器来恢复和维持正常的窦性心律。但是他同时还伴有其他慢性疾病，不能排除未来接受核磁共振检查的可能性。好在心脏起搏器进入了核磁兼容型起搏器时代。日前复旦大学附属中山医院心脏内科宿燕岗教授为王先生植入了由百多力公司研制的全身核磁兼容型起搏器。该起搏器相比传统起搏器除了核磁兼容外，还在体积和其他功能上都更胜一筹，在植入方法上与传统起搏器并无二致，手术取得圆满成功。将来王先生就可以安全地接受核磁共振检查。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 宿燕岗教授介绍，全国每年新增7万多例心动过缓、传导阻滞的病人靠心脏起搏器维持心跳维系生命。心脏起搏器技术至今已有60余年，历经了无感知起搏器、单腔有感知起搏器、双腔有感知起搏器、频率应答起搏器、远程监测+频率应答起搏器、核磁兼容型起搏器、等多次技术飞跃，现在是全新升级的“心脏起搏器6.0时代”——核磁兼容型起搏器。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> “快慢通吃”的常规方案</span><br />
@@ -45,10 +45,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

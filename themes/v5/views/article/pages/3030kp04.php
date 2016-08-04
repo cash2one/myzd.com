@@ -16,13 +16,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<br />
 </div>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">癌症病例在我们周围频频发生，积极治疗是最好的办法。但是在日常生活饮食中稍加注意，是否可以预防癌症的发生呢？回答是肯定的。在这里我给大家介绍一些可以预防癌症的蔬菜，根据自己的口味喜好经常选择性的吃一些，也可以达到预防癌症的作用。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3030/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147003765036783" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">刀豆 &nbsp; &nbsp;适宜食管癌、贲门癌、胃癌病人反胃呃逆时食用，有降气止呃的效果。民间常用老刀豆研粉，每次冲服30克，日服2~3次，每30天为一疗程。对肾癌腰酸痛者，民间有用刀豆子50克，同猪腰1个，切成腰花煮汤服用，于1日内分次服完。&nbsp;</span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">菜豆&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 别名四季豆。适宜白血病、鼻咽癌、甲状腺癌、骨肉瘤、恶性葡萄胎、绒毛膜上皮癌、乳房癌、子宫颈痛、卵巢痛、睾丸癌、肠癌等病人食用。这是因为菜豆的种子含糖蛋白、胰蛋白酶抑制物，并含有对人体血红细胞有很强活性的PHA，由于PHA有一定的抗癌作用，所以，上述癌症患者宜食之。&nbsp;</span><br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">黄豆芽 <img src="<?php echo $baseUrlImage; ?>article/doctor/3030/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">黄豆芽 <img src="http://static.mingyizhudao.com/147003765149954" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 是一种很好的抗癌蔬菜，这不仅因为它的营养丰富，含有具有抗癌作用的多量维生素C和胡萝卜素。更重要的是，豆芽莱中含有一种酶，可阻碍致癌物亚硝胺在体内的合成。同时，豆芽中的叶绿素、纤维素也能防治大肠癌和其他一些癌变，癌症病人常吃豆芽，对增进营养，控制病情的发展有一定益处。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">海带&nbsp;</span><br />
@@ -33,7 +33,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">海藻&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 现代药理研究证实，海藻有一定的抗癌功能，也是一种抗癌防癌食物，中医认为海藻性寒，能软坚、散结、消痰，适宜头颈部、甲状腺、消化道、肺部以及淋巴系统各种恶性肿瘤之人服用。通常与海带同食，更为适宜。&nbsp;</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3030/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147003765286838" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">黑木耳&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 性平，味甘，能益气、养阴。近代研究发现，黑木耳中含有一种多糖体，具有一定的抗癌活性。这种抗癌作用不是直接抑制或破坏癌细胞，而是通过提高人体的免疫力来抗癌的，这就是中医所说的扶正祛邪的效果。所以，黑木耳适宜各种癌症病人及放疗、化疗或术后体质衰弱者食用。&nbsp;</span><br />
 <br />
@@ -83,10 +83,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3030/pic2.png" title="" alt="demo.jpg"/>
-
--->

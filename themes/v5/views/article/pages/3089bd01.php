@@ -16,7 +16,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">白内障是目前中国致盲率排第一位的眼病，但白内障并没有人们印象中的那么可怕，其可控性高，手术治愈率高，但国内白内障手术率相对较低，一方面是科普宣传力度不够，另一方面是大家平时接受到很多误导信息，并不知道白内障的最佳治疗方案就是手术，且白内障手术做得相对早，手术风险小，且术后效果好。本期记者来到解放军总医院（301医院）眼科，请李朝辉主任为广大白内障患者讲讲手术的益处，给大家普及科学知识。</span><br />
 <br />
 <p>
-	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3089/1.png" title="" alt="demo.jpg"/> &nbsp;&nbsp; <br />
+	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147004298797188" title="" alt="demo.jpg"/> &nbsp;&nbsp; <br />
 </span>
 </p>
 <p>
@@ -82,10 +82,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

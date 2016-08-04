@@ -16,7 +16,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">鼻炎的事情，可大可小，小到患者忽略它，也能一两天后痊愈;严重的的时候呢?却需要上医院开刀做手术。这不仅同鼻炎患者的病情有关，更与我们对于“鼻炎”概念的差异有关。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 这些差异，复旦大学附属眼耳鼻喉科医院耳鼻喉科主任王德辉教授为网友们一一做了解答，希望大家明白其中的误区。</span><br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3138/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147004462949016" title="" alt="demo.jpg"/></span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">王德辉教授谈青少年是否最容易引发鼻窦炎</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 主持人：何种情况下鼻炎是“小事”?</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 王德辉教授：鼻炎分为急性鼻炎与慢性鼻炎两种，急性鼻炎一般都在感冒以后发生。急性鼻炎本身就是感冒的一部分，就是平常所说的病毒性鼻炎。</span><br />
@@ -59,10 +59,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

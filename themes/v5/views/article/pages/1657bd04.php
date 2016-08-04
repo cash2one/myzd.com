@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <span id="__kindeditor_bookmark_start_2109__"><br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/1657/6.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147002084900331" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">克拉什尼奇接受肾移植后重返赛场，表现依然神勇图/新华社</span><br />
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 受访专家/中山大学附属第一医院器官移植中心主任 王长希</span><br />
@@ -122,10 +122,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -12,7 +12,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>卢聪：广东省人民医院心外科成人病区主任医师</strong></span>
 </div>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2992/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003590326646" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">卢聪主任医师</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 医院：广东省人民医院心外科成人病区</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 职称：主任医师</span><br />
@@ -36,10 +36,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

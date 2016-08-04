@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </p>
 <p>
 	<br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3138/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147004463084840" title="" alt="demo.jpg"/></span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">采写/本报记者 陈俊珺</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 读者来信</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 近来，我一直被鼻塞困扰，特别到夜里会影响睡眠。一开始我以为是感冒引起的，可吃了感冒药仍然不见效。那么，鼻塞是不是和鼻炎有关？应该怎么治疗？</span><br />
@@ -46,10 +46,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

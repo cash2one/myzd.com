@@ -51,7 +51,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 可以拉伸腹部及腰部肌肉，增加髋部柔韧性。</span>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2936/12.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003444018514" title="" alt="demo.jpg"/>
 </p>
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 1. 仰卧，屈膝，两膝内收，足底贴地或垫子上，两足间距离同肩宽，双手放在身体两侧；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 2. 使腰部紧贴地面，使得髋部前倾；</span><br />
@@ -126,7 +126,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 5. 重复5次。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> （九）不全仰卧起坐</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 不全仰卧起坐可以增强腹肌的力量。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/2936/13.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147003444576270" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 1. 仰卧，屈膝，双足底贴地，同肩宽；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 2. 双手在胸前交叉，保证你整个后背贴在地面上。将头及肩部稍稍抬离地面，缓慢抬高直至肩完全离开地面。刚开始抬的高度有限也没关系；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 3. 保持姿势几秒钟，随着练习增多，你慢慢可以保持这个姿势5至10秒钟；</span><br />
@@ -134,7 +134,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 5. 重复5次。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> （二）拱背练习</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 弓背练习（像猫伸懒腰）可以锻炼背部及腹部的肌肉。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/2936/14.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/14700344497193" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 1. 跪在地板上，双手撑地，颈部平行于地面；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 2. 通过收紧腹部及臀部的肌肉，拱起背部，稍稍低头；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 3. 保持5秒钟；</span><br />
@@ -143,7 +143,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 6. 重复5次。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> （三）够手练习</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 够手练习可以增强肩部及上背部肌肉的力量。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/2936/15.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147003445636252" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 1. 四肢着地，颈部与地面平行；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 2. 伸出一侧手臂，注意不要抬起头。尽量将身体重量均匀分布到双膝及贴地的那只手上；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 3. 保持5秒钟；</span><br />
@@ -151,7 +151,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 5. 重复做5次；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 6. 换另一只手，重复如上动作。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> （四）腿后伸练习</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/2936/16.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147003445950027" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 1. 四肢着地，颈部与地面平行；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 2. 缓慢将一只腿平行于地面后伸。脚可以伸直或者弯着，只要你觉得舒服。注意在你后伸腿的时候，不要让你的腰部、头或者腹部下垂。做这个动作的时候，要确保你身后没有人以防踢伤。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 3. 保持5秒钟；</span><br />
@@ -159,7 +159,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 5. 换另外一只腿，重复如上练习动作。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> （五）滑墙练习</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 滑墙练习可以增强腰部、髋部及腿部肌肉的力量。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/2936/17.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147003446284449" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 1. 直立，背贴墙，双足分开同肩宽，双手置于身体两侧。头中立位，两目前视；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 2. 背部沿墙慢慢向下滑动直至你膝弯曲呈90°，就好像坐在凳子上一样。如果你暂时不能降至这个水平，可以先练习滑动至一半的高度；</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 3. 保持5秒钟；</span><br />
@@ -189,10 +189,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

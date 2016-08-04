@@ -16,7 +16,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<br />
 </p>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2931/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003315100474" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 对幼儿来说，包茎大多数是一个生理过程。家长无需太担心。（资料图片）</span><br />
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 目前，医学上对包茎的手术指征仍然存在着争议，只有包皮口瘢痕性狭窄这种情况才绝对需要手术。</span><br />
@@ -87,10 +87,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

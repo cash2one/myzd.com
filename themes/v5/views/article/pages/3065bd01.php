@@ -18,7 +18,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 11月4日，2015年何梁何利基金科学与技术奖颁奖典礼于北京钓鱼台国宾举行，北京清华长庚医院内科部部长、消化内科主任姜泊教授荣获何梁何利基金科学与技术进步奖。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3065/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147004073602279" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 何梁何利基金由香港爱国金融家何善衡、梁銶琚、何添、利国伟于1994年创立，旨在奖励中国杰出科学家。今年共有52位优秀科技工作者获得此项荣誉，其中医学领域仅有8位。</span> 
 </p>
@@ -51,7 +51,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 相关阅读：</span><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 探索肠“道” 意气风发　——记北京清华长庚医院消化内科主任姜泊</span><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 有一条“道”，在人体里蜿蜒，它溶解着外来的一切，供应着全身的力量。这条“道”上有数不尽的成员，它们是“道”的维系者，也会是“道”的破坏者。这条“道”便是人的胃肠道。1984年被分到消化内科，他便走上了这条“道”，30年的人生里，埋头钻研，镜下微观，因此成为胃肠道疾病诊治的翘楚。他是北方人，却在南方贡献了青春，曾任南方医科大学南方消化疾病研究所所长，现在他荣归故里，担任清华长庚医院内科部部长、消化内科主任，他叫姜泊。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3065/2.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147004074018844" title="" alt="demo.jpg"/><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 南下北上的3段人生</span><br />
 <p>
 	<span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 1982年，姜泊毕业于白求恩医科大学，正赶上国家强化军队医疗，一车皮把连他在内的40位医学毕业生拉到了中国人民解放军总医院，他成了一名正式的军人。一心想成为一个外科医师的他，在军队一切行动听指挥的环境下，被分配再分配，姜泊开始了他从医生涯的第一段——与消化内科结缘。</span> 
@@ -111,7 +111,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span> 
 </p>
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 作为清华长庚医院优先发展专科，消化内科从空间到设备都走得超前，内镜中心配备了代表国际最先进水平的内镜，同时科室胃肠功能和动力紊乱等疾病诊治平台，也齐备了胃肠道动力检测设备、肠道疾病生物反馈治疗系统等。因此，他带领团队确立的第四个大方向就是把功能性胃肠病治好，最常见的如胃食管反流，功能性便秘，肠易激综合征等，这些疾病看似非重症，却深深地影响着患者的生活品质。而这个目标，姜泊已经带领他的团队走在了实现的路上。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3065/3.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147004074034181" title="" alt="demo.jpg"/><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> “意识决定技术”</span><br />
 <p>
 	<span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> “我职业生涯的洗礼是在日本。”为了深入研究大肠癌，2000年，姜泊第一次到日本做访问学者，在一家规模不到500张床的医院，他见证了他的老师——工藤教授做出世界顶级水平的业绩。此后的每年他几乎都会去，他说他带回来最宝贵的是一股子精气神。“能够发现早期癌，是日本学者那种研究细微病变的专心、细心，那种坚韧不拔一定要发现的决心，这种意识就决定了技术。”</span> 
@@ -159,10 +159,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

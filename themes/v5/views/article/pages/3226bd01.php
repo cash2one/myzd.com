@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>同济医院骨科专家黄冈开展学术讲座及现场义诊</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3226/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010522435780" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">义诊现场专家教授合影</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 新华网湖北频道12月16日电（吴远征 田利华 夏春芬 郑巧）进入腊月，严寒逼近，气温降骤、冷风刺骨，是各种骨关节疾病高发的季节。12月14日，第二届武汉同济医院鄂东南地区骨科论坛暨现场义诊走进黄冈，在同济黄州医院隆重举行，武汉同济医院骨科主任李锋教授率领十余位同济医院骨科专家教授亲临现场进行学术讲座及现场义诊。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 当日上午8点半，同济黄州医院门诊5楼学术报告厅已是座无虚席。武汉同济医院骨科主任李锋等十余位同济医院骨科专家分别作了学术报告与交流。现场百余名骨科同行相互学习与互动交流，并对几位专家教授所讲内容作了笔记记录。</span><br />
@@ -33,10 +33,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

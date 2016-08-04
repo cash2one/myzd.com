@@ -49,25 +49,25 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">失败的原因包括：283 例（2.8%）髓核摘除不彻底，78 例复发（0.8%），41 例（0.4%）持续疼痛（完全摘除髓核亦不能缓解），21 例切口相关疼痛（0.2%）。髓核摘除不彻底的原因包括工作通道位置不当（33.6%），91 例中央型突出（33.2%，图 1），63 例腋下型突出（22.3%，图 2），70 例髓核游离型（24.7%，图 3）。</span><br />
 <br />
 <p>
-	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3171/3.png" title="" alt="demo.jpg"/><br />
+	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147010321139957" title="" alt="demo.jpg"/><br />
 </span>
 </p>
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">图 1. 中央型突出 A ：术前 MRI；B 和 C 示于椎弓根内缘和中线之间进入，摘除髓核；D：术后 MRI 提示突出仍在</span>
 </p>
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3171/4.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010321536980" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">图 2. 腋下型突出 A 和 B 提示椎间盘腋下型突出，并向远端移动；C 和 D 术后 MRI 提示腋下型突出仍存在</span><br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3171/5.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010321955135" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">图 3. 游离型突出（A、B、C）；D 为术中镜下观，将纤维环下间盘组织摘除；E 为摘除的游离髓核；F 为术后 MRI 提示游离的髓核仍存在，开放手术取出</span><br />
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">对于目前的 PELD 技术，可分为椎间盘内摘除技术（图 4A）和椎管内技术（图 4B），其摘除的髓核范围如 Yeung 等描述的那样（图 5）。</span><br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3171/6.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010322059981" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">图 4. 腰椎间盘椎间孔镜的两种技术</span><br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3171/7.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010322223648" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">图 5. 椎间孔镜下侧隐窝和椎间孔减压技术 A：为部分纤维环切除，减压侧隐窝的底座；B：将侧隐窝骨性结构切除，实现侧隐窝的减压。</span><br />
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">通过以上分析，对于有经验的脊柱外科医师，我们切开突出的纤维环后，摘除突出的髓核，并以髓核钳放置于椎间隙，于多个方向、手感感知松散的、退变的髓核组织并加以彻底摘除。尤其是外侧区域，应加以彻底摘除，此区域为最容易复发掉出的部分。而此区域，恰恰是 PELD 技术的盲区所在。</span><br />
@@ -82,13 +82,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">此患者，我们手术团队（李新奎教授、王海强副教授和张军、王峰亮主治医师）采用双侧椎板开窗减压（开 4 个窗、特别是保留了每侧两个窗之间的骨桥，万一复发需要翻修，此骨桥可提供剥离瘢痕的重要标志）、神经根探查松解、髓核摘除（包括骨块）术，麻醉方式为硬膜外，手术切口 6.5 cm（若是一个节段，切口一般 3 cm），手术时间 100 分钟，所有费用 1 万元。术中无需透视定位。</span><br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3171/8.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/14701032227961" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">图 6. 术前 MRI 和 CT 示腰 4/5 腰 5/ 骶 1 椎间盘突出，腰 4/5 双侧侧隐窝狭窄，腰 5/ 骶 1 椎间盘突出并骨化</span><br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3171/9.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010322389144" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">图 7. 术中切口长 6.5 cm，开 4 个小窗，实现减压、摘除髓核、处理骨块和维持稳定性的完美结合</span><br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3171/10.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010322453521" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">图 8. 术后三维重建 CT 示开窗与保留的椎板骨桥（红色箭头为椎板骨桥）</span><br />
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">关于 PELD 手术的辐射问题，韩国学者报道透视时间为 2.5 分钟，一年之中，无透视铅衣保护下，291 例 PELD 手术即达透视安全界限。MED 亦需透视。脊柱手术的辐射风险，今年 Spine J 的文章已为丁香园骨科频道学术编辑所编译 「辐射风险：医生与患者谁更安全？」，敬请诸君参阅。而开窗手术不用透视。</span><br />
@@ -119,10 +119,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -17,7 +17,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">那么，怎么知道肾结石排出了呢？当然，最直接的办法是病人收集到了自己排出的结石，一定要保存好，交给医生进行结石分析，为下一步预防结石复发打下基础；另外，一定记住要定期复查，一般医生会进行B超检查和拍腹部平片，必要时做CT，判定结石是否已经排净。</span><br />
 <p>
-	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3126/1.png" title="" alt="demo.jpg"/></span> 
+	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004412140393" title="" alt="demo.jpg"/></span> 
 </p>
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">时间：2016-03-02&nbsp;</span><br />
@@ -34,10 +34,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

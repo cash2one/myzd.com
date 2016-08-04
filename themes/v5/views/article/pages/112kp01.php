@@ -16,7 +16,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<br />
 </p>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/112/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147001903853551"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 一对有正常性生活而没有避孕的配偶，在第一年的自然受孕率为86%左右，第二年达到92%，第三年达到95%，也就是说，一对生育年龄的夫妇，在三年内可以自然获得&gt;95%生育目的，仅有约5%的夫妇真正需要求助医生进行治疗。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 国际卫生组织（WHO）和一些国际协会，将不孕症的年限标准定为一年，我国自2008年开始，也将不孕症的标准从两年改为一年。这样的定义显然人为提高了不孕症的发病率，因为其中有约10%的夫妇可能会在第二、三年期待中自然受孕，而无需治疗。</span><br />
 <br />
@@ -37,7 +37,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 我国卫生主管部门颁发了《不孕不育症诊断标准》，这个行业标准充分考虑了对不孕症的准确定义，将不孕不育症这一名词作为诊断的标准术语，涵盖了男性和女性生育障碍的潜在可能，在国内生殖医学界将会被广泛使用。《标准》中将不孕不育症分为三大类：女方的原因，其中包括排卵障碍和盆腔因素两类，男方的原因，和不明原因。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 对于生育来说，不孕不育永远是个复杂的问题，而且是个动态的过程，除了特别界定的绝对原因：例如男方无精症、女方卵巢功能衰竭、女性生殖道无子宫，或输卵管完全梗阻或切除，在其它的不孕不育状态下，生育力常常很难评估，一般会用期待怀孕的时间来证实。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 实际上一对夫妇多年不孕，一朝偶然怀孕的案例也并不少见，所以我们对不孕症的一般治疗，如果不是高质量大样本的随机对照研究，是无法计算其“成功率”的。</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/112/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147001904131819"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 在某些情况下，不孕不育夫妇还是应该早些看医生的。例如：</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> ①女方年龄超过35岁的不孕不育夫妇；</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> ②女方有月经不调或闭经的病史；</span><br />
@@ -67,10 +67,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

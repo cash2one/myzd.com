@@ -48,7 +48,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<span><span style="font-size:14px;line-height:28px;"><br />
 </span></span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">疼痛感受通常来自身体伤害部位的成千上万的神经纤维，经过脊髓，传导至大脑。在某些情况下（如，中风后痛），伤害本就来自大脑和脊髓本身，所以此时大脑和脊髓就成为疼痛感觉的起点。疼痛信号需要首先经过脊髓，然后到达大脑，大脑同时也是诸如焦虑、情感、睡觉、欲望、记忆的“交换局”。（图：红色上行部分）</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2892/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/14700238266203" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">也可以说每个人的大脑创造了个人独一无二的疼痛体验。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">大脑又将信号传回给脊髓，脊髓反过来即进一步减少又增加疼痛感。由于持续的疼痛信号输入在脊髓和大脑的神经末梢细胞变得过度敏感，这种兴奋是持续疼痛难以轻易消除的一个原因，即使造成疼痛的原因已经发现并得到处理。（图：蓝色下行部分）</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">通俗的说，是身体的警告系统变得过于敏感，增强了疼痛的感觉，以至于身体的持续性伤害已经完全消除，疼痛依然存在，从而导致疼痛这种疾病。这导致了长期且令人沮丧的问题，你和你的医生需要富有技巧、给予时间和耐心的紧密合作才能够改善这个问题。</span><br />
@@ -82,10 +82,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

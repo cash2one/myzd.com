@@ -15,12 +15,12 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <br />
 <p>
-	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><<img src="<?php echo $baseUrlImage; ?>article/doctor/2931/1.png" title="" alt="demo.jpg"/></span>
+	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><<img src="http://static.mingyizhudao.com/147003313734129" title="" alt="demo.jpg"/></span>
 </p>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2931/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003314082455" title="" alt="demo.jpg"/></span><br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2931/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003314339467" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 复旦大学附属儿科医院外科主任医师 郑珊 副主任医师 毕允力</span><br />
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 名医档案</span><br />
@@ -84,10 +84,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

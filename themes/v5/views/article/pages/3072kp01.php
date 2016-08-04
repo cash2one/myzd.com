@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>&nbsp;走路总摔跤原是颅底凹陷作怪</strong></span>
 </div>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3072/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147004125174199" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">孩子走路总摔跤，父母应留意。（CFP供图）</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">●颅底凹陷症是一种常见的枕颈部畸形，约占枕颈部畸形的90%</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">●患者早期可无明显症状，但有外伤等诱因时可发生瘫痪甚至猝死</span><br />
@@ -61,10 +61,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

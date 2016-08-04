@@ -68,44 +68,44 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">这台手术，大医生兵器谱全程跟访，我们用文字和照片记录了这位妈妈和宝宝的手术过程，更见证了在心血管外科、妇产科、麻醉、体外循环、监护的团队协作下挽救了两个生命，见识了朱俊明主任精湛的技术，和他“笑料信口抖出”的功力。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">妊娠合并急性主动脉夹层手术纪实</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">文＼大医生兵器谱戴志悦 &nbsp;摄＼特约摄影胡建</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004018926155" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">1､早上8:30，安贞医院心外科大楼11层的5A病房，朱俊明正在查房。他今天主刀手术的患者小凡已经接进手术室，麻醉医生、助手们在做术前的各种准备。这是一台多学科协作的手术，此前，妇产科、麻醉、体外循环、外科、监护室五个部门集中讨论了手术方案，各种预案也都做好了。由于患者是孕妇，医院还向卫生主管部门上报了病例，我国对孕产妇的死亡率控制管理非常严格。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3063/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004019106358" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">2､查完房，离手术还有一点时间，朱俊明插空在办公室接诊了几名患者。他平时不出门诊，患者可以在门诊挂特需号提前预约时间到病房来找他看病。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019199754" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">3､手术间里，助手们已经拉开战斗序幕，建立静脉通路、连接监护仪、麻醉插管、体外准备、切皮、开胸等等。与日常的主动脉手术不同的是，这台手术，妇产科医生需要提前在孕妇的肚子上放置好胎心监测的探头，手术过程中全程监测胎心。大约上午10点，朱俊明结束病房的工作，换好刷手服进入手术室。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019251942" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">4､朱俊明一进手术间就操着湘普话“抖笑料”：“周末听了一个段子，话说啊，养闺女和养儿子的不同就是，老爸在女儿结婚时想的是，好不容易养大了一棵白菜，结果被猪给拱了。”然后开始“挑衅”体外循环医生，她有一个女儿。主刀的外科医生需要调节整个手术室的气氛，控制全场的节奏和工作状态，讲笑话是常用手段。心外科手术中，如果需要心脏停跳，就要借助体外循环机，把血液引出来，在机器中完成氧合并暂时代替心脏给全身各器官泵血，体外循环大夫非常重要。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3063/5.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004019281226" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">5､了解完手术进度，患者、胎儿的各项指征都很正常，朱俊明刷手准备上台。外科医生刷手很严格，挤上专用刷手液，用刷子仔仔细细刷， 每一个指甲缝都要刷干净。天天刷刷，一天几刷，有时还会遇上“坑爹”的刷手液，大夫们手上的皮肤挺受罪。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/6.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019309190" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">6､体外循环医生在“回敬”朱俊明“挑衅”的段子时说：你敢在老孙面前说吗。这不，刷手的时候就遇上了老孙，老孙的手术就在隔壁，两人一边商量工作，一边对着使劲刷刷刷。孙立忠是安贞心外科主任，也是中国主动脉领域的领军人物，朱俊明跟随孙立忠一起工作了二十多年，从小朱到老朱，从阜外到安贞，共同经历手术和职业生涯的风风雨雨。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/7.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019328454" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">7､朱俊明和一助在专注做手术中。患者小凡的升主动脉根部直径已经扩张到6公分，主动脉瓣还出现了大量返流，导致了心衰。朱俊明要在手术中给患者用一根连着人工瓣膜的人工血管，替换不能正常工作的主动脉瓣和随时可能破裂的那一段升主动脉。国内能独立完成这种手术的医院和医生不多，但对安贞的主动脉团队来说，是常规手术。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/8.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019413235" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">8､朱俊明在手术中。这台手术很罕见，所以安排了工作人员扛着摄像机进行手术录像，留存资料。手术过程中，在非关键步骤和操作的时候，朱俊明又开始“抖笑料”，接着说刚才段子的下半部分：而老爸在儿子结婚时是这样想的，养大的猪终于会拱白菜了。一边讲段子，手里的活儿是一点不能放松的。手术台上，医生更要张驰有度，讲笑话的时候，一般是所有人都处于极度疲劳又专注的状态，尤其是刚刚度过关键部分的时候最容易走神，外科大夫常常会用讲笑话来缓和大家的紧张情绪。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/9.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019457874" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">9､这台手术不同常规，要保护好患者腹中的胎儿，术中不仅不能用“深低温停循环”技术给患者降温，还要防止在手术中注入的各种液体让母亲体温降低，要随时注意给母亲保温。母子连心，这是由生理构造决定的亲密关系，妈妈身体温暖了，胎儿才能有存活，这一自然生理规律，成为这台手术能否成功的关键和难点。术中，朱俊明要求让母亲的鼻温维持在34摄氏度，血温过低的话，胎儿心脏就会停跳，朱俊明说，这和早产儿要放在保温箱的原理是一样的。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/10.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019505117" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">10、体外循环医生正在转动的机器里取血样准备化验血糖、血钾。体外循环机不同管道连着患者身体里的不同血管，血液从管子里流进机器里，氧合后再泵回身体里给各大器官供血。一转体外循环，会带来两个变化，一是血流状态完全异常了，二是各种液体进入血液，会让身体自然降温。因此，体外循环科医生要时刻盯着机器里的血液参数，包括血温、灌注压、流量、血氧等，一旦出现异常就要随时调整，还要时不时抽血化验血糖、血钾浓度。这台手术，她们更是一刻不能放松，监测屏幕上的数值也多了许多。为了给胎儿维持一个正常的环境，让孩子感觉到妈妈的身体没有什么变化，要维持足够的血压、血氧，要避免低糖高钾，还要保持母亲鼻温不能低于34摄氏度。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/11.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019619044" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">11、医生们在紧张地工作，还要关注麻醉医师工作台上显示的患者的各种生命指征。麻醉医生要保证患者手术中不能醒来，生命指征都正常，还要随时准备配合外科医生应对瞬息万变的手术，在出现意外时紧急配合使用准确的药物救命。 这台手术中，手术过程中使用的很多药物，可能会影响到胎儿的生命体征，比如心脏停跳药物里含钾，如果进入血液就会引起胎儿心脏也停跳。因此，手术中，麻醉医生在给母亲用药时，一定要避免高钾血症。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/12.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/14700401965923" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">12、麻醉医生数次跪地测胎心，敬业！手术中，外科医生关注病，麻醉医生关注命。这台手术的麻醉医生还要关注两条命，母亲和胎儿。手术过程需要全程监测胎心，但腹中这个调皮的宝宝动来动去，妇产科提前固定在孕妇肚皮上的胎心监测仪有时难以捕捉到胎心，于是麻醉医生需要时不时去调整一下探头，找胎心，每次都得跪在地上操作。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/13.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019689085" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">13、朱俊明手术做得很快，下午13点多，仅3个小时，他就完成了操作离开了手术台，接下来的止血、关胸，由助手完成。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/14.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019722280" title="" alt="demo.jpg"/></span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">14、朱俊明完成手术下来，待其他医生完成止血和关胸缝合后，小凡会被推进重症监护室。小凡的手术很顺利很成功，医生不仅解除了她身体里的不定时炸弹，还保证了胎儿的安全。随后两三天，小凡就可以自己进食，她成为了安贞医院第一例、朱俊明医生第二例成功保住胎儿的妊娠合并急性主动脉夹层患者。小凡将可以继续完成她的妊娠，期待小宝宝降临。朱俊明教授离开手术台后，又开始研究下一台手术的资料——战神的节奏就是，一台手术接着又一台手术......</span>
 </p>
@@ -127,10 +127,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3063/pic2.png" title="" alt="demo.jpg"/>
-
--->

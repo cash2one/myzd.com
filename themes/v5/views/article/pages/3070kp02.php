@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>呼吸道异物堵塞易致死 5岁前小儿别吃危险食物</strong></span>
 </div>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3070/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147004113408424" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 小孩的反射机能差，吃东西的时候一不小心卡到咽喉、气管、支气管的情况时有发生。由于呼吸道是生命通道，一旦卡住容易造成堵塞，导致呼吸不畅甚至死亡，对孩子而言极其危险。专家指出，呼吸道异物堵塞在5岁特别是2岁以下的小儿中发生率非常高，为小孩的生命安全着想，最好在此年龄段前不吃容易导致呼吸道堵塞的食物，比如花生、瓜子、豆子、果冻、口香糖、骨头等。尤其是果冻和口香糖具有粘性，往往一堵就堵得很死，孩子还没来得及送医院就没命了，要绝对禁止食用。此外，对于一些有零碎部件的小玩具，也不宜给孩子买来玩，以免他们拿到嘴巴里吃，造成异物堵塞。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 果冻、口香糖卡住咽喉最容易致死</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 小儿呼吸道异物包括了咽、喉、气管、支气管异物，其中，以喉异物堵塞的危险性最大。由于喉部中央的声门是整个呼吸道最狭窄的地方，一旦有东西卡在这个位置，孩子短时间内就会发生呼吸困难甚至窒息。不过，临床中有不少食物卡喉的案例，有的孩子被抢救回来，有的却很快没了命，这是怎么回事呢？</span><br />
@@ -44,10 +44,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

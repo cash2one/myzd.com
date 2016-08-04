@@ -30,13 +30,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">颈椎椎管内神经鞘瘤手术病例</span>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2935/5.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003328880166" title="" alt="demo.jpg"/>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2935/6.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003329083725" title="" alt="demo.jpg"/>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2935/7.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003329265178" title="" alt="demo.jpg"/>
 </p>
 <p>
 	<br />
@@ -60,10 +60,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

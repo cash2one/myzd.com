@@ -36,7 +36,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">4、脑活检病理证实慢性脑炎。此外Rasmussen综合征发作间期脑电图表现为患肢对侧大脑皮质的弥漫性慢波或多灶性棘波，有时也能见到双侧性独立的痫性放电。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">5、MRI检查可见一侧大脑半球萎缩，额、颞、顶叶长T2信号或部分脑叶发育不良。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">因此全面地评价患者的临床特点、脑电图表现、神经影像学和血清学资料，对于明确诊断是非常关键的。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3093/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004314211062" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><strong>治疗:</strong></span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">几乎所有的抗癫痫药物对于Rasmussen综合征均无满意的疗效。抗病毒药物治疗在临床上也未见确切的疗效。但也有研究使用更昔洛韦治疗Rasmussen综合征，随访1.5年患者无癫痫发作，因此建议当怀疑此病时，应尽早应用抗病毒药物治疗。由于癫痫与免疫缺陷存在遗传学上耦合的可能性，癫痫患者经过长期的抗癫痫药物治疗后也可能会出现免疫缺陷，产生的抗体导致大脑皮质免疫介导性损伤，因此免疫调节是Rasmussen综合征治疗的一个重要方面，多数研究认为免疫球蛋白治疗是值得尝试使用的一种治疗方法，但一般在短期内有效，远期疗效欠佳，不能阻断病程的发展，目前越来越多的证据表明病灶侧半球切除术较部分性切除对于控制癫痫发作疗效明显，可以减少60%--80%的癫痫发作。病程越短，年龄越小，效果越好。经过多年的随访，无论是对于精神运动发育还是社会功能都有进一步的提高。因此目前认为早期的外科治疗是非常重要的，一旦诊断明确，应积极地进行，而不要对于单纯的药物治疗等待过长的时间而延误病情。</span>
@@ -56,10 +56,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

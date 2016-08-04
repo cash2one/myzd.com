@@ -21,7 +21,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">由于椎管内位置有限，随着肿瘤渐渐长大，就会压迫脊髓、神经和血管，导致患者出现一系列症状。其中最常出现的症状就是疼痛，尤其是神经鞘瘤引起的神经根痛最为典型，这种疼痛沿神经根分布区域扩散。神经根主要是脊髓与周围神经的连接部位（如下图），传出、传入的神经冲动都要经过神经根。神经根痛主要是由于肿瘤占位，使得感觉神经不断受到刺激，从而出现感觉过敏，这种过度的神经冲动就会给人体带来一种刺痛的感觉，而且是沿着神经根的分布范围而产生的疼痛。一般来说，如果脊髓外的肿瘤直接压迫神经根或者周围的神经，更容易出现神经根痛；若肿瘤长在脊髓里，神经根痛的症状反倒不明显。</span>
 </p>
 <p>
-	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"></span><img src="<?php echo $baseUrlImage; ?>article/doctor/2973/1.png" title="" alt="demo.jpg"/>
+	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"></span><img src="http://static.mingyizhudao.com/147003531360986" title="" alt="demo.jpg"/>
 </p>
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">神经根（图片来源于网络）</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">不仅如此，有的患者还会感觉到酸痛或烧灼痛，也可出现各种感觉异常，如麻木感、好像有蚂蚁在后背幽幽地乱爬，后背被束缚的感觉，后背凉飕飕的，等等。有的患者甚至感觉不到疼痛、温度，或者触觉减退甚至消失。</span><br />
@@ -71,10 +71,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

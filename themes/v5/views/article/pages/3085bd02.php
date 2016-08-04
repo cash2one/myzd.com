@@ -20,7 +20,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><br />
 </span>
 </p>
-<span style="line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3085/12.png" title="" alt="demo.jpg"/></span><br />
+<span style="line-height:2;"><img src="http://static.mingyizhudao.com/147004282589281" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 帕金森病≠帕金森综合征</span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 首先，疾病起因不同。帕金森综合征一般由神经系统的其他疾病，如脑血管病、脑外伤、颅内炎症、脑肿瘤，或是由毒物、药物所引起，而帕金森病的病理改变主要为中脑黑质多巴胺神经元变性，以致不能产生足够的多巴胺而发病。</span>
@@ -117,10 +117,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

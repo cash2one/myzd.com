@@ -17,10 +17,10 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <p>
-	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3037/1.png" title="" alt="demo.jpg"/></span>
+	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003875168263" title="" alt="demo.jpg"/></span>
 </p>
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3037/2.png" title="" alt="demo.jpg"/></span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3037/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003875419340" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003875854080" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 屈光手术，这个人们口中常说的激光矫正近视眼手术，在眼科手术风险评估中，凭借其高风险难度，在所有眼科手术中，位列榜首，在医学界被称为 “眼科背后的眼科”。</span><br />
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 在中央厚度不足1毫米的角膜上，用激光进行精准的切削、雕琢、重塑，矫正视力。四川大学华西医院眼科副主任邓应平教授，作为中国第一代屈光手术医生，从医30年，在这个被他誉为 “能且只能一次成功”的屈光手术台上，不仅交出了成功完成4万余只眼睛的屈光手术，且无一例感染病例的华丽成绩单，还意外收获了“眼球上的工程师”的赞誉。</span><br />
@@ -92,10 +92,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

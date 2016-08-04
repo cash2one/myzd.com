@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>结直肠癌治疗 告别“单兵作战”时代</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2908/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003137338134" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">（Gettyimages供图）</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 我国启动结直肠癌多学科诊疗（MDT）推广试点工程，打破学科“门派之见”可令患者生存率提高</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 医学指导/中国抗癌协会大肠癌专业委员会副主委、中山大学肿瘤防治中心结直肠科主任潘志忠教授</span><br />
@@ -91,10 +91,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

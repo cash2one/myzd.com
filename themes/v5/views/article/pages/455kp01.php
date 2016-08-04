@@ -18,7 +18,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">甲状腺是人体负责代谢的内分泌器官，它位于颈前部的气管两旁，形似蝴蝶左右叶相连。人群中甲状腺长结节十分常见，过去由于医疗条件限制，人们只有当脖子增粗后才发现。但自从B超声检查普遍应用体检后，甲状腺结节的发现率从人群的4 %，快速上升19 %～67 %[1]。也就是说我们每4个人中就有1人患有甲状腺结节，其中以女性和老年人为主。甲状腺结节中80-90%诊断为结节性甲状腺肿，属于甲状腺组织增生和退行性疾病，不属于是肿瘤，也并不是手术适应症。只有大约5-10%是甲状腺癌，需要手术治疗。另外，还有10%左右其他良性结节疾病，如桥本氏甲状腺炎和甲状腺腺瘤等，通常也不需要手术。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">目前，国内普遍存在对甲状腺结节的过度治疗现象。具一份长春地区甲状腺腺手术统计， 9216例行手术治疗的甲状腺结节，恶性肿瘤仅占约10%，而结节性甲状腺肿和腺瘤等良性结节占90%左右[2]。由于甲状腺结节的发现率可高达19%&nbsp;～67%，对于13亿人口的中国，不应当也不可能对每一个甲状腺结节的患者的都进行手术。但是由于我国大多数医院超声和细胞学诊断水平不高，术前无法区别良恶性质，以至于有的医生对所有甲状腺结节患者都进行手术，不仅浪费了大量的医疗资源，还对患者的外观和功能等造成不同程度的损伤。我们在门诊常常遇到患者困惑于不同医生给出的不同处理意见，如手术、观察、吃药和穿刺诊断等等，根本原因还是由于医生的学识水平和所在医院条件不一致造成。根据欧美国家制定的甲状腺结节诊断标准流程和我们的实际经验[1,3,4]，建议对B超发现1厘米以上的结节进行细针穿刺细胞学检查，基本流程见图。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/455/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010560950978" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">1甲状腺超声检查&nbsp;&nbsp;&nbsp; 高清晰甲状腺超声检查是评估和随访甲状腺结节的首选和常规检查影像学检查，效价比最好。通过了解结节的位置、形态、大小、数目、结节边缘状态、内部结构、回声特征、血流状况和颈部淋巴结情况，多数可初步判别结节性质。我院目前超声诊断良性病变的准确率可达86.0 %, 恶性准确率为82 %[5]。诊断良性结节的依据为：①多发病灶；②病灶周边有完整的“晕环”；③病灶形态规则，边界清晰，内部回声均匀；④有粗大钙化影像；⑤血流不丰富且以周边血流为主；⑥结节前后径/横径比﹤1。诊断恶性占位病变的依据为：①单发结节，②病灶形态欠规则，边界欠清晰；③内部不均匀低回声；④细沙粒样钙化；⑤血流丰富，且以内部血流为主；⑥结节前后径/横径比≥1⑦颈部淋巴结转移性肿大。高清晰甲状腺超声不仅可用于大致判断甲状腺结节的性质，也可用于引导甲状腺细针穿刺细胞学检查。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">2 甲状腺细针吸取细胞学活检（简称穿刺）</span><br />
@@ -52,10 +52,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

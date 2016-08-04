@@ -24,16 +24,16 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </p>
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 京宁不孕不育名医强强联手，怀孕快人一步</span><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 南京天伦不孕不育医院汇集南京医科大学第二附属医院副院长应小燕、南医大附属第一医院教授林正雅、北京医科大学附属复兴医院教授赖爱栾、英国海归不孕不育专家窦占江等京沪知名专家等资深专家坐诊，成为南京乃至华东的专业诊疗中心。天伦不孕不育中心为保证质量及治疗效果，不聘用实习医生，坚持专家亲自坐诊，亲自治疗，保证每一名患者都享受专家的治疗服务，从而保证治愈怀孕率。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/615/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010584365984" title="" alt="demo.jpg"/><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 智慧快孕4G诊疗体系，查通一体、调孕结合</span><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 医院集全球68家临床协作医院、20名国家级知名老中医的智慧，在100余位不孕不育专家、微创手术专家数十年科研成果的基础上，对30万例不孕不育患者成功受孕临床病例进行系统的分析研究，中西医并重，研发出不孕不育里程碑式的诊疗体系——智慧快孕4G诊疗体系。总结归纳了查、通、调、孕“快孕四部曲”，从基因学、免疫学、内分泌学和医学心理学等基础学科入手，采用多项最新的临床设备和技术，以攻克女性和男性不孕不育的十三种主要病症;在治疗形式上，改变以往一对一为多对一的方式，既大大缩短了时间，也增加了诊断的准确性，切实做到快孕不是梦。</span><br />
 <br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 17年用心专注，天伦值得信赖</span><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 我院不断将“不孕不育”做大做强，已成为享誉全国的特色专业医院。我院共计接待全国各地的不孕不育患者一万多名，其中不乏是到各地多年求医无效，而在我院专家的精心治疗下而怀孕，有些更是多家一眼束手无策而在我院喜获身孕的患者。每天我们总能接到来自各地不孕不育患者的报喜电话。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/615/2.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010584724347" title="" alt="demo.jpg"/><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 南京天伦不孕不育医院品牌荣誉</span><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 自天伦不孕不育医院建院以来，凭借着在不孕不育领域的科研技术优势，先后获得政府部门、科研院所及新闻媒体授予的多项荣誉。医院不断致力于把科研技术优势转变为诊疗优势，更好地为华东乃至全国孕育提供高效、优质的医疗服务。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/615/3.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010585081410" title="" alt="demo.jpg"/><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 南京天伦不孕不育医院诊疗项目：</span><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> (一)女性不孕——</span><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 输卵管因素：输卵管不通丨输卵管粘连丨输卵管积水丨输卵管堵塞</span><br />
@@ -64,10 +64,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -29,7 +29,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 							<tr>
 								<td width="322">
 									<p class="MsoNormal" align="center" style="text-align:center;">
-										<span style="font-size:9pt;font-family:宋体;color:#252525;"><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2888/2.png" title="" alt="demo.jpg"/>对于已拥有六个孩子的安吉丽娜·朱莉来说，丧失生育能力或许损失不算大，</span><span><a href="http://money.163.com/keywords/5/0/52079664/1.html" target="http://money.163.com/15/0404/08/_blank"><span style="color:#252525;text-decoration:none;font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">切除</span></span></a><a href="http://money.163.com/keywords/5/7/53755de2/1.html" target="http://money.163.com/15/0404/08/_blank"><span style="color:#252525;text-decoration:none;font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">卵巢</span></span></a></span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">的副作用主要在于绝经。</span></span><span style="font-size:9.0pt;font-family:宋体;"> </span><span style="font-size:9.0pt;"></span>
+										<span style="font-size:9pt;font-family:宋体;color:#252525;"><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/14700233536112" title="" alt="demo.jpg"/>对于已拥有六个孩子的安吉丽娜·朱莉来说，丧失生育能力或许损失不算大，</span><span><a href="http://money.163.com/keywords/5/0/52079664/1.html" target="http://money.163.com/15/0404/08/_blank"><span style="color:#252525;text-decoration:none;font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">切除</span></span></a><a href="http://money.163.com/keywords/5/7/53755de2/1.html" target="http://money.163.com/15/0404/08/_blank"><span style="color:#252525;text-decoration:none;font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">卵巢</span></span></a></span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">的副作用主要在于绝经。</span></span><span style="font-size:9.0pt;font-family:宋体;"> </span><span style="font-size:9.0pt;"></span>
 									</p>
 								</td>
 							</tr>
@@ -146,9 +146,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
     </div>
 </div>
 
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

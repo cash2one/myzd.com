@@ -21,9 +21,9 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 位于肝脏Ⅶ、Ⅷ段的肿瘤由于位置深，暴露困难，能开展此类手术的医院并不多。而肝脏尾状叶位于肝后下腔静脉的前方，第一肝门的后方，三支肝静脉的下方，亦即夹于三个肝门结构之间，位置深在，显露困难，以往甚至被认为是开放手术的禁区。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 直至上世纪90年代，有关肝尾状叶开放切除术的报道才逐渐增加，但开展腹腔镜下尾状叶肿瘤切除术更是寥寥无几。至今为止，全世界范围内单中心腹腔镜下尾状叶肿瘤切除术最多病例数仅为8例。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 华山医院普外科肝胆外科专业组成立1年多来，已成功实施159例完全腹腔镜肝脏肿瘤切除术，包括左右半肝切除、Ⅶ、Ⅷ段肿瘤切除等等。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/267/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147002200841188" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">箭头处为Ⅶ、Ⅷ段交界处肿瘤</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/267/2.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147002201093037" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">箭头处为尾状叶肿瘤</span>
 </p>
@@ -43,9 +43,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
     </div>
 </div>
 
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

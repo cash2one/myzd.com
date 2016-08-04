@@ -33,7 +33,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">（四） 介入方法在心脏外科中的应用</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">杂交手术、主动脉瘤支架植入术</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><strong>二、目前我们开展的工作&nbsp;</strong></span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/89/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010640215035" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 自2010年4月开始，我们在国内率先开展直视下微创心脏手术，目前已完成各类微创心脏手术50例，均痊愈出院，其中30例患者未输血（60.0%），切口长度4~6.5cm（4.85±0.58）。50例手术中微创二尖瓣主动脉瓣替换术+三尖瓣成形术、二尖瓣主动脉瓣替换术、Ebstein畸形矫治术、二尖瓣替换术+冠脉搭桥术、PECD矫治术均为国内首例报道，标志着安贞医院微创心脏外科已达到国内领先水平。该微创手术的优点在于切口少，隐蔽美容；术后出血、输血量明显减少，术后疼痛轻，恢复快；不需要胸腔镜等特殊器械，手术切口小，为直视下手术，操作相对简单，手术适应范围较大，易于在有一定心外科基础的医院推广应用。</span><br />
 <p>
 	<br />
@@ -51,10 +51,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

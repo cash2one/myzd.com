@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">谈到癌症，我们首先还是要简单给大家讲解一下一些常见名词。关于癌症的名词分类是不断在变化的，并且在医学术语和普通大众的叫法上也有些区别。一般而言，肿瘤分成良性和恶性两类（也有少部分肿瘤在开始诊断时分不清是良性还是恶性，可以叫做恶性潜能未定，有少部分些肿瘤介于良恶性之间的称为交界性肿瘤）。恶性肿瘤统称是癌症，其中包括各种恶性实体肿瘤和恶性血液病（白血病），恶性的实体性的肿瘤中又根据组织起源不同分成癌和肉瘤，白血病又有很多分类。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3007/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147003637112443" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">修典荣：肝癌误区详解</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">常有病人问医生自己得的癌是良性的还是恶性的，这个问法是因为对于肿瘤得定义不适很清楚：肿瘤有良性和恶性之分，恶性肿瘤，也就是癌症的主要特点就是具有不断生长和复发转移的特点，这也是为什么不是所有癌症都能彻底治愈，也就是普通大众说得彻底去根儿。相对而言，多数得良性肿瘤是可以通过手术彻底治愈的。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">肝癌的来源就是肝脏？</span><br />
@@ -63,10 +63,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

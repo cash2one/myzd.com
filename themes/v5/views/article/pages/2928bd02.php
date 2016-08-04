@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2928/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003297745763" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">图片说明：医生紧急为伤员进行骨科手术</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 东方网通讯员王根华、实习记者孙晓菲5月18日报道：上海派出的6支医疗救援队自14日前往灾区之后，一直奋战在救援第一线。由于山体滑坡，路面严重被毁，道路不通，大批伤员积压在灾情严重的乡镇边远地区。上海长征医院医疗队在人员十分紧张的条件下，又抽调12人，分3个小组，分别前往晓坝、桑枣、沸水、映秀镇等地展开救治工作，在当地谱写了一首首医疗工作的感人篇章。</span><br />
 <br />
@@ -42,10 +42,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

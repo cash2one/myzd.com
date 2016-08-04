@@ -18,7 +18,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3168/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010312682688" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">中南大学湘雅医院小儿神经外科主任刘景平教授检查患儿情况</span>
 </p>
@@ -96,10 +96,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

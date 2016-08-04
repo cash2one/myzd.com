@@ -17,7 +17,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">随着社会的日益老年化，帕金森病已越来越多地出现在我们身边。关爱帕金森病病人，了解帕金森病的基本常识是全社会刻不容缓的事情。</span><br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3103/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147004333769780" title="" alt="demo.jpg"/></span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">上海长海医院神经外科胡小吾</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 指导医师：胡小吾，第二军医大学附属长海医院神经外科主任医师、教授，现任上海神经外科学会立体定向和功能神经外科学组副组长等职。擅长立体定向功能神经外科，在帕金森病、特发性震颤、扭转痉挛等疾病脑深部刺激术（脑起搏器）治疗和毁损术治疗方面具有较高知名度。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"> 如何发现帕金森病</span><br />
@@ -57,10 +57,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

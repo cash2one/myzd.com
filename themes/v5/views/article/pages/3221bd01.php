@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">春节期间亲朋聚会，美食当道，因此在每年的春节期间便是“节日病”胃肠疾病的高发时期。在这个合家欢乐的节日里如何避免患上肠胃病，家中可常备什么药物作为不时之需的自治自救呢？南方医科大学南方医院消化内科主任刘思德教授在接受家庭医生在线的采访时为各位网友的肠胃健康支招。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3221/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010492174672" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">南方医科大学南方医院消化内科主任刘思德教授</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 节假日预防胃肠疾病 把握三大要点</span><br />
 <p>
@@ -81,10 +81,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

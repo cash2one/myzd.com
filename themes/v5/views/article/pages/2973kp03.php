@@ -35,7 +35,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">接下来脊髓外面有一层脊膜，其实这是由数层膜性结构组成的。由里到外，紧紧贴着脊髓的那一层，叫做软脊膜；软脊膜外边有一层蛛网膜，脑脊髓就在软脊膜和蛛网膜之间流动；蛛网膜之外又有一层像塑料布一样较厚的硬脊膜。我们常说的脊膜特指这种硬脊膜。（见下图）</span><br />
-<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2973/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147003531596014" title="" alt="demo.jpg"/></span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">脊髓、椎管结构（图片来源于网络）</span>
 </p>
@@ -53,7 +53,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><br />
 </span>
 </p>
-<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2973/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147003531824031" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">不同位置的椎管内肿瘤（图片来源于网络）</span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">如果医生怀疑是椎管内肿瘤，通常会采用MRI等检查，来进一步判断患者属于哪一类椎管内肿瘤。总之，椎管内肿瘤多数属于良性的，但是由于脊髓、椎管空间有限，若不及时切除，同样会由于压迫、炎症侵犯到神经和血管。因此，椎管内肿瘤应积极手术治疗，特别是采用显微神经外科技术，尽可能切除肿瘤，又能保护脊髓、椎管。</span>
@@ -74,10 +74,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

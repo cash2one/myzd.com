@@ -19,7 +19,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </p>
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">目前常规的CRT是将LV通过冠状静脉送达静脉分支，从心外膜起搏左室。但由于窦开口畸形等心脏解剖结构的问题，有5%-10%的患者不能通过静脉途径植入左室电极。在中国介入心脏病学大会（CIT2013）上，复旦大学附属中山医院的宿燕岗教授介绍了左室心内膜起搏的优势及应用前景。</span><br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3027/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003754003139" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">宿燕岗教授在作报告</span><br />
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp; &nbsp; &nbsp;经静脉途径植入LV电极不成功后的选择</span><br />
@@ -81,10 +81,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

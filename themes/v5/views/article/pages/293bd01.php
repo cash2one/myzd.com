@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>小儿换肝：“中国标准”从无到有 仁济医院十年实施500例小儿活体肝移植</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/293/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003489173658" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 11月10日，10个月大的重庆小女孩冉冉在上海交通大学附属仁济医院成功接受了活体肝移植。</span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 自2006年10月23日首例成功以来，仁济医院肝脏外科主任夏强带领团队在将近十载的岁月内完成了整整500例小儿肝移植手术，手术总量占全国半壁江山，连续五年位居世界第一。</span>
@@ -111,10 +111,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

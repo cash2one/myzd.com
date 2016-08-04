@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3065/5.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147004074155618" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">近年来，由于饮食结构和生活习惯的改变， 我国大肠癌的发病率和死亡率明显增加。大肠肿瘤，尤其是腺瘤性息肉的早期诊断和治疗是预防大肠癌发生的关键。大肠肿瘤的内镜诊治越来越广泛地应用于临床，它已成为了消化内科医生必不可少的利器，那么我们如何更好地使用它来进行消化道疾病的诊治？</span>
 </p>
@@ -59,10 +59,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

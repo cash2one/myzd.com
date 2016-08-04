@@ -21,7 +21,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">此次手术的成功开展，使地区第二人民医院麻醉科的麻醉技术和手术配合能力得到了一定的提高，而高难度手术的顺利完成，进一步增强了哈密地区的医疗技术力量！</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; （王晓娜）</span><br />
 <p>
-	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3156/1.png" title="" alt="demo.jpg"/></span>
+	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010287612846" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><br />
@@ -40,10 +40,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

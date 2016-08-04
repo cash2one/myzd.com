@@ -14,8 +14,8 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </p>
 <p align="left">
 	<br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/214/1.png" title="" alt="demo.jpg"/></span><br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/214/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147002185863661" title="" alt="demo.jpg"/></span><br />
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/14700218609804" title="" alt="demo.jpg"/></span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">中华医学会骨科学分会主任委员田伟教授在美国骨科医师学会（AAOS）学术年会的世界骨科交流论坛上提到，1921 年中国第一个西医骨科在北京协和医院成立。今天，在 AAOS 会议的中国展台，丁香园有幸对北京协和医院骨科主任翁习生教授进行了专访。</span>
 </p>
 <p>
@@ -54,10 +54,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

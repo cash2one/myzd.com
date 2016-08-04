@@ -14,13 +14,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">据国家心血管病中心统计，我国心血管病患者近3亿，每10秒就有1人死于心血管病，每年大约350万人因此死亡，占总死亡原因的41%，居各类疾病之首。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3139/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004482051980" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">健康的心脏源于健康的环境</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">专家指出，不健康的心脏源于不健康的生活、工作环境。比如办公室温度过高或过低，都会对心脏造成影响。在嘈杂环境中工作的人罹患心脏病的几率比普通人高两倍以上。睡眠不足、精神压力大与心血管疾病年轻化密切相关。研究表明，每天睡眠不足6小时的人发生高血压的风险达35%。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">至少80%的心血管疾病导致的死亡可通过戒烟、限制食盐摄入、控制高血压等干预手段来避免。比如高糖饮食影响体内脂肪消耗导致高血脂，盐分摄入过多容易诱发高血压，吸烟是心血管病的重要诱因，持续饮酒者比不饮酒者，4年内发生高血压的危险增加40%。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">目前，治疗心血管病较为常见的方法就是采取介入治疗，安装心脏支架便是其中一种。心脏支架又称冠状动脉支架，是心脏介入手术中常用的医疗器械，具有疏通动脉血管的作用。心脏支架最早出现在20世纪80年代，它的出现让很多心脏疾病患者重新获得了健康。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">但是，前段时间，内蒙古发生了一起医疗纠纷，一位冠心病患者，被一次性植入了价值15万元的9个心脏支架，手术医生被怀疑“过度医疗”。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004482355037" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">△冠心病示意图</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">一次植入9个支架被疑过度医疗</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">患者黄金海说，4年前因为冠心病做了心脏支架手术，现在症状不但没有减轻，反而加重了，“现在一翻身里面像扎的似的”。</span><br />
@@ -43,7 +43,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">人均植入1.6个支架 数字逐年下降</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">专家介绍，在心脏支架刚出现的10多年中，由于病例少、临床经验不足等原因，一些医生曾希望治疗效果接近完美，建议病人植入更多的支架。另外，由于搭桥手术风险高、创伤大，一些患者主动要求放支架。目前我国建立了心血管介入治疗准入制度和网上直报系统，是世界上为数不多的从国家层面来规范心血管介入治疗的国家。2012年国家卫生行政部门曾对10省市27家医院进行督导，对置入支架数超过5枚的患者进行分析，其中92%的情况被认为是合理的。2013年全国共有45万人接受冠状动脉介入治疗，平均每个病人植入了1.6个支架。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">王伟民说，美国人均植入支架的数量是1.5个左右，根据卫计委的统计数据来看，我国人均植入支架数量从2012年的1.7个，到2013年的1.6个，正处于逐渐下降过程中，且与发达国家是非常接近的。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3148/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004482489056" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">△心脏支架安装示意图</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">冠心病患者该如何科学应用支架</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">冠心病是在长期动脉粥样硬化的基础上造成血管狭窄而引起的心肌供血不足，冠心病最大的危险就是容易猝死。对于冠心病患者来说，应该如何选择最佳治疗方案，科学应用心脏支架呢？</span><br />
@@ -61,10 +61,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

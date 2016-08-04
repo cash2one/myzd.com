@@ -23,13 +23,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">遗憾的是，相当一部分神经外科医生并不认识海绵窦海绵状血管瘤，还有相当一部分神经外科医生根本不知道射波刀治疗此类肿瘤有极其良好的效果。我希望此文能够让更多的病人及其家属看到，减少此类病人因手术而带来的痛苦。</span><br />
 <span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">下面是几个病例，射波刀治疗前和治疗后的对比。</span><br />
 <span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">病例1：病人头疼，肿瘤巨大，按照脑外科专家的意见，这个肿瘤一定需要手术切除，但是我看了病人的磁共振（MRI）图像后，诊断为海绵窦海绵状血管瘤，我肯定的告诉病人及家属，射波刀分次治疗可以代替手术，治疗效果非常好。</span><br />
-<span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';"><img src="<?php echo $baseUrlImage; ?>article/doctor/2900/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';"><img src="http://static.mingyizhudao.com/147002436283684" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">&nbsp;</span><br />
 <span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">病例2也是一个巨大的海绵窦海绵状血管瘤，我们分三次照射肿瘤，治疗后病人恢复良好，但是病人为农村病人，不愿意复查磁共振。治疗后2年时本人出钱为她复查了磁共振，复查结果证实了我们治疗效果，肿瘤缩小了90%以上。</span><br />
-<span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/2900/2.png" title="" alt="demo.jpg"/></span><br />
-<span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/2900/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">&nbsp;<img src="http://static.mingyizhudao.com/147002436467353" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">&nbsp;<img src="http://static.mingyizhudao.com/147002436674346" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">&nbsp;</span><br />
-<span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/2900/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">&nbsp;<img src=" http://static.mingyizhudao.com/147002436882695" title="" alt="demo.jpg"/></span><br />
 <br />
 <span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';"><span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">来源：好大夫网</span><br />
 <span style="font-size:14px;line-height:2;font-family:'Microsoft YaHei';">链接：http://www.haodf.com/zhuanjiaguandian/wangenmin_635776956.htm</span><br />
@@ -39,10 +39,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/2900/pic2.png" title="" alt="demo.jpg"/>
-
--->

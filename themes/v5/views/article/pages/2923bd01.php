@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2923/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003290675146" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">丽雅/漫画</span><br />
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp; 东快讯（记者黄淑平通讯员丁心栓朱秀梅）福州长乐有个“怪”女童小粉（化名），连续六年来，晚上熟睡时经常会突然发出两三声爆发性笑声，笑声约持续1分钟。近日，导致怪笑的病灶“下丘脑错构瘤”被切除，这种怪象才消失。医生说，出现这种现象，可能和小粉的母亲在怀孕期间吃药有关系。</span><br />
@@ -65,10 +65,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

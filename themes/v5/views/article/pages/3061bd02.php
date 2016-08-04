@@ -21,7 +21,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 当前，肾肿瘤高发，且越来越年轻化。对于4厘米～7厘米、毗邻大血管的良性肿瘤，或小于4厘米、位于肾脏核心的恶性肿瘤来说，如果主刀医生技术不够精湛，就只能将肾脏全部切除。但是，张骞将患者的生存质量放在首位，尽量为他们保留肾脏，施行难度高、风险大的腹腔镜部分切除术。他还偷偷给自己定下了一个“百肾计划”，即每年拯救200个肾脏。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3061/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003991711827" title="" alt="demo.jpg"/></span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 为了让更多医生了解并熟练操作腹腔镜肾部分切除技术，张骞又有了新计划。他开始筹划“泌尿外科腔镜万里行”公益行动，一场“肾脏保卫战”随之打响。张骞通过到全国各地为经济困难的患者义务手术，并亲身讲解、实际演示等，普及推广腹腔镜技术，尤其是腹腔镜肾部分切除手术。他说，只要影响到200名医生，每名医生一年做10例肾脏部分切除术，即可为2000名患者保留肾脏。如今，“千肾计划”已变为现实。</span>
 </p>
@@ -67,10 +67,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

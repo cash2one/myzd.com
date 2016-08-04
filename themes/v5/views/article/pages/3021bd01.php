@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	</div>
 <br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3021/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003688855416" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 李幼生，男，1965年7月生，医学博士，现任南京军区南京总医院副主任医师、第二军医大学副教授、南京大学硕士生导师。</span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">李幼生师从我国著名外科专家、中国工程院院士黎介寿教授，自1990年起着重对小肠移植进行了广泛、深入、系统地研究，是国内及亚洲首例小肠移植、肝小肠联合移植的主要完成人员,也是国际上首例头皮及耳廓复合组织联合移植的主要完成人之一。</span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">医疗技术特长：熟练掌握普外科常见病和多发病的诊断和治疗，器官移植（小肠、胰腺和肝脏）、胃肠外科（胃肠肿瘤、肠梗阻和胃肠良性疾病）和营养支持为其主要研究方向，具有较高的治疗水平。</span>
 </p>
 <p>
@@ -44,10 +44,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

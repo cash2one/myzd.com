@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>深入虎穴直击病灶</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2883/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/14700223655102" title="" alt="demo.jpg"/></span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 在人类通过手术探查癫痫病灶的过程中，总是试图不累及正常脑功能区而尽可能精准定位一举拿下，就像驾车人在智能化的GPS指引下不走弯路、绕开拥堵，直达目的地。立体定向脑电图（SEEG），如同医生手里的新式GPS装备，再隐匿的癫痫病灶也躲不过它的火眼金睛。文献显示，SEEG是近年来国际上新兴的一种癫痫病灶查找方法，可以进一步明确癫痫病灶的部位，达到准确切除病灶的目的。</span><br />
 <br />
@@ -39,10 +39,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

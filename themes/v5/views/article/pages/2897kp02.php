@@ -43,13 +43,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">（2）中晚期食管癌手术方法主要有：左胸一切口、右胸-腹二切口、及颈胸腹三切口。长期生存率取决于肿瘤的病理类型、术中淋巴系统清扫、术后的综合治疗。</span>
 </p>
 <p>
-	<span><span style="line-height:25.454544067382813px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2897/2.png" title="" alt="demo.jpg"/></span></span>
+	<span><span style="line-height:25.454544067382813px;"><img src="http://static.mingyizhudao.com/147002426156876" title="" alt="demo.jpg"/></span></span>
 </p>
 <p>
-	<span><span style="line-height:25.454544067382813px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2897/3.png" title="" alt="demo.jpg"/></span></span>
+	<span><span style="line-height:25.454544067382813px;"><img src="http://static.mingyizhudao.com/147002426341456" title="" alt="demo.jpg"/></span></span>
 </p>
 <p>
-	<span><span style="line-height:25.454544067382813px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2897/4.png" title="" alt="demo.jpg"/></span></span>
+	<span><span style="line-height:25.454544067382813px;"><img src="http://static.mingyizhudao.com/147002426524660" title="" alt="demo.jpg"/></span></span>
 </p>
 <p>
 	<span><span style="line-height:25.454544067382813px;"><br />
@@ -68,10 +68,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

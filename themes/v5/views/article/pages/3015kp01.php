@@ -57,10 +57,10 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp;粗隆下外展截骨治疗股骨颈骨不连，历史悠久，效果确实，今日重新描述这一技术，目的在于，当新技术、新方法涌现时，我们不应忽视或忘记那些行之有效的所谓“旧”方法。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 革命导师，列宁说，忘记过去，就意味着背叛。</span><br />
 <p>
-	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; <img src="<?php echo $baseUrlImage; ?>article/doctor/3015/1.png" title="" alt="demo.jpg"/></span>
+	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; <img src="http://static.mingyizhudao.com/147003653754017" title="" alt="demo.jpg"/></span>
 </p>
 <p>
-	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; <img src="<?php echo $baseUrlImage; ?>article/doctor/3015/2.png" title="" alt="demo.jpg"/></span>
+	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; <img src="http://static.mingyizhudao.com/147003653970611" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<br />
@@ -75,10 +75,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

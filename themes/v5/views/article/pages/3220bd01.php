@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="line-height:1.5;font-size:18px;font-family:'Microsoft YaHei';"><strong>乱吃水果有时会夺命</strong></span>
 </div>
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3220/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010487922469" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">医学指导</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 南方医院消化内科主任医师 智发朝教授</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 杨桃可能会夺走生命、菠萝可能会引起窒息、吃柿子吃出胃结石、啖荔枝啖来低血糖晕倒……夏天是敞开肚子吃水果的好时节，殊不知“水果病”也纷纷找上门。专家提醒，吃水果需节制，结合自身体质选择水果，才能吃出健康。</span><br />
@@ -56,10 +56,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

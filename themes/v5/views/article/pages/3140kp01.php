@@ -19,7 +19,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<br />
 </p>
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">据了解，大肠癌包括结肠癌和直肠癌，临床上又被统称为结直肠癌。除了家族史，其他危险因素则包括高脂肪、高蛋白的饮食，缺乏运动等，因此，大肠癌又被称为“富癌”之一，在我国近年来，结直肠癌的发病率和死亡率呈现上升趋势，复旦大学附属中山医院许剑民教授在近日举行“POST ASCO GI 2015”会议上表示，早期治疗结直肠癌的5年生存率高达90%，但是一旦延误至晚期，生存率只有11.7%。遗憾的是，目前我国结直肠癌患者多为中晚期，因此如何进一步提高结直肠癌的临床疗效，成为了我国乃至世界胃肠专家攻克的目标。</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3140/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010245017714" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 专家介绍：许剑民，卫生部大肠癌早诊早治专家组成员，卫生部《结直肠癌诊断和治疗标准》和《结直肠癌诊断和治疗规范》制定专家组成员，中国抗癌协会大肠癌专业委员以及大肠癌肝转移学组和遗传性大肠癌学组委员，国家自然基金和上海市科委基金评审专家，上海市疾病控制中心大肠癌中心组成员。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 直肠癌行辅助化疗VS术后辅助放疗谁更有效？</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 术前放化疗是局部晚期直肠癌的标准治疗，在病人依从性、毒性、降期和保留肛门括约肌方面似乎优于术后放化疗。德国研究人员发现，在长期结局上术前放化疗生存优势并不明显。最新的长期随访结果发现，10年后，术前和术后放化疗的总体生存率类似，无疾病生存率也类似。但是，术前放化疗的局部控制率明显提高，与之前的研究符合。</span><br />
@@ -47,10 +47,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

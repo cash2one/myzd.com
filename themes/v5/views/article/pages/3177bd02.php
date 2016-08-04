@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>海军总医院耳鼻喉科首次为76岁患者实施人工耳蜗植入手术</strong></span><span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong></strong></span>
 </div>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3177/7.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010356856981" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">孙建军教授为患者进行术后检查。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp; 新华网消息：“您又让我听到声音了！太感谢了！”近日，一位白发苍苍的患者紧紧握着海军总医院全军耳鼻喉科中心首席专家孙建军的手激动地热泪盈眶。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp; 这位患者今年76岁，双耳听力丧失7年，并伴有双耳流脓，有鼻咽癌放疗病史，耳聋给其生活带来很多不便，生活质量下降。经多年寻医治疗后，听力无任何改善。孙建军教授认为该患者适合进行人工耳蜗植入，建议其住院人工耳蜗植入治疗。因患者年龄较大，并有多种疾病，全军耳鼻喉科中心联合麻醉科专家制定了详尽的手术方案，为患者顺利进行人工耳蜗植入手术。一个月后患者顺利进行人工耳蜗开机，老人又听到了声音。</span><br />
@@ -38,10 +38,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

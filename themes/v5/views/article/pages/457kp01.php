@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"></span><br />
 <br />
-<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/457/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147010565185917" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;脑肿瘤治疗后 间隔多久复查</span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;目前，脑肿瘤的治疗方法有观察随访、手术、放疗、伽马刀治疗、化疗、靶向治疗和生物治疗等。其中，手术是治疗颅内肿瘤最常用最有效的方法，良性肿瘤经手术大多可治愈；恶性肿瘤通过手术治疗，可以缓解症状，并为术后放化疗提供病理学甚至分子病理学依据。</span>
@@ -79,10 +79,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>晚饭后不活动 易患胆结石</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3047/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003935664644" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">据悉，10月5日，沈殿霞已由重症监护室（ICU）转到普通病房供图/CFP</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 国庆前，香港艺人肥肥（沈殿霞）因胆管炎复发入院治疗。近日，又传出她因肝癌和胰脏癌而病危的小道消息。肥肥在20年前就查出患有胆结石，并伴有胆管炎。4年前，她经手术取出大小36块结石。“胆管结石可引起胆管炎，而肥胖与胆结石密切相关。”昨天，解放军302医院肝胆外科张培瑞副主任医师证实说，40岁以上的中年肥胖女性是胆结石的高发人群。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 绝经使女性形成结石</span><br />
@@ -44,10 +44,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

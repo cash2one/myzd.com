@@ -22,7 +22,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">咳嗽便秘易致疝&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">疝好发于腹股沟，是中老年人的常见病，发病率为1.5%-2%。这和老年人有咳嗽、便秘、前列腺增生肥大等有关，因为长期的慢性咳嗽、排尿困难、排便费力，会使腹腔内压力增高，排挤、压迫腹内脏器向腹壁薄弱的区域移位。&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">刚开始有“疝”时，症状不突出，几乎看不到，手摸的感觉好像有东西向外顶，慢慢症状明显时，有一块貌似肿胀的东西，稍一活动就鼓起来，躺下去就消失了，不痛也不痒，这种情况几乎可以肯定就是疝，要赶快去医院进行治疗。&nbsp;</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/1427/1.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147002040554196" title="" alt="demo.jpg"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">成年人疝需要手术&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">小孩出生后一年内，因腹股沟管尚未发育完善，所以在6个月以内穿疝带或疝托是有可能自愈的。而成年人则不可能，唯一能根治的办法只能手术。&nbsp;</span><br />
@@ -52,10 +52,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

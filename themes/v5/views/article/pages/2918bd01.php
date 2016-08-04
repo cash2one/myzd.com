@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>全飞秒手术——开启我的明亮新世界</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2918/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003195763453" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">hi～我是仲潇伊，是2015年10月在浙二眼科杨亚波教授那里做的全飞秒手术。</span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">摘镜感言：我从小学开始就一直戴眼镜了～别的时候倒也没有什么，主要就是冬天太麻烦了！戴口罩戴眼镜就有雾气，不戴眼镜对面来人看着都自动加成马赛克，不戴口罩吧～又冷的不行，分分钟冻成面瘫……所以啦～下定决心把眼镜给摘了！</span><br />
@@ -30,10 +30,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

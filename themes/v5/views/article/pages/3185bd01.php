@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <div style="text-align:center;">
 	<br />
 </div>
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3185/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/14701039184449" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">图片说明：瑞金医院足踝外科团队进行INBONE全踝关节置换手术操作</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 东方网通讯员丁燕敏、记者刘轶琳10月30日报道：瑞金医院骨科足踝团队日前成功实施了Inbone全踝关节假体置换手术，这是我国首例Inbone全踝假体置换术，术后患者将保留关节的活动能力，该手术的成功开展标志着我国治疗终末期踝关节炎的水平再上新台阶。</span><br />
 <p>
@@ -46,10 +46,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

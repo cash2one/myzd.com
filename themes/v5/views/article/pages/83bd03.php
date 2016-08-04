@@ -30,7 +30,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><strong>专家简介：</strong></span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/83/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010631969771" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">顾 晋，北京大学肿瘤医院结直肠肿瘤外科主任医师、北京大学首钢医院院长。</span>
 </p>
@@ -73,10 +73,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -24,7 +24,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </p>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">其实，真正影响大脑功能的并不取决于麻醉，而直接取决于是否发生了脑缺氧。因为大脑对氧气是很敏感，但在整个全麻过程中，孩子都会得到充足的氧气供应，有全程的血氧饱和度的监测，同时还有现代化高科技的生命监测仪的看护，麻醉医生能随时了解到孩子体内氧气含量和其他生命指标的变化，保证不会出现缺氧的情况发生。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">当然家长也要注意：麻醉之前必须禁饮食6小时以上，必须完善相关的血液和心电图、影像学的检查，手术前一周不能有感冒发烧的情况出现等等，孩子的安全靠我们一起来保障。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3154/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147010279347262" title="" alt="demo.jpg"/></span><br />
 <p>
 	<br />
 </p>
@@ -39,10 +39,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

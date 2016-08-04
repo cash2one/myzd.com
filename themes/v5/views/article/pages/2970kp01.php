@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2970/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/14700352339740" title="" alt="demo.jpg"/></span><br />
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 儿童骨折治疗方法与成人有别，复位不当容易发生骨折并发症“肘内翻”</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">骨骺线是儿童骨骺最薄弱和最易骨折的部位，骨折手术中使用“可吸收钉”，容易“打坏”骨骺线，影响生长发育</span><br />
@@ -60,10 +60,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

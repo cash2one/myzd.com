@@ -19,10 +19,10 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 每周二、周五的上午，走到北京大学第一医院（简称北大医院）四楼的耳鼻咽喉头颈外科诊室外，候诊患者最多的那间，必是肖水芳教授的诊室。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 儒雅的外表，镇定自如的神情，眼神里总是带着笑意，北大医院耳鼻咽喉头颈外科科室主任肖水芳教授自带一种能让人放松的气场，可以很快和人拉近心理距离。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 作为医生，他积极引进一系列新技术和新疗法，创新完成多类手术；作为科室管理者，他率先在科室推行绩效管理制度；作为学者，他主持编写了中国第一本国家卫生和计划生育委员会住院医师规范化培训耳鼻喉领域专业教材……在肖水芳看来，作为医生，更要有“敢为人先”的精神。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/1010/1.png" title="" alt="demo.jpg"/></span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/1010/2.png" title="" alt="demo.jpg"/></span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/1010/3.png" title="" alt="demo.jpg"/></span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/1010/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147001563684134"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147001564680942"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147001564876637"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147001565116119"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 快嘴仁心</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> “孩子现在有夜间睡眠缺氧憋气的症状，如果只保守治疗不做手术的话，将来还有可能复发。至于你担心的以后免疫系统发育问题，那不会受手术影响的。”肖水芳一边给一位来自黑龙江佳木斯的小女孩看病，一边向一旁的孩子父亲解释。他的两个学生则一个在旁边观摩，一个帮着记录病历。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 肖水芳在病人中口碑极好，除了精湛的医术外，他对病人总是很和蔼。在进门之前面色紧张的患者，似乎都在他的诊疗之后轻松不少。</span><br />
@@ -45,10 +45,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

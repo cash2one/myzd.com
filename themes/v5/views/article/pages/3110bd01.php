@@ -18,7 +18,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	&nbsp;
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3110/1.png" title="" alt="demo.jpg"/>自汶川发生地震以来，北京宣武医院共向灾区派出5批医疗队17人分别到绵阳、北川、成都等地进行救治。图为首批医疗队员副主任医师焦力群正在给受伤群众查看伤情。张鸿祺摄</span>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147004368166365" title="" alt="demo.jpg"/>自汶川发生地震以来，北京宣武医院共向灾区派出5批医疗队17人分别到绵阳、北川、成都等地进行救治。图为首批医疗队员副主任医师焦力群正在给受伤群众查看伤情。张鸿祺摄</span>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"></span>&nbsp;
@@ -34,10 +34,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

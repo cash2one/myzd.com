@@ -21,7 +21,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3209/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010447125260" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">作者简介：王涛，解放军第306医院，神经外科。</span>
 </p>
@@ -43,7 +43,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><strong>病例解析</strong></span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3209/2.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010447159672" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">11月9日，在解放军第306医院展开了国内首例机器人辅助的立体定向脑囊虫摘除手术，患者为44岁男性，脑部MRI图像如下图，可清晰看见位于患者顶叶的囊虫。由于囊虫位于功能区，传统的开颅手术后易引发患者并发症，比如瘫痪。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">手术的主刀医生是解放军第306医院神经外科的主任医师赵全军主任，他从事神经外科治疗三十余年，除神经外科常见疾病，如颅内肿瘤手术切除以及脑出血、脑外伤、脑积水等外科治疗外，赵医生在难治性癫痫的外科治疗、 脑功能性疾病的立体定向手术治疗以及机器人辅助无框架定位脑手术方面尤为擅长。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">本次手术使用到的医疗机器人是我国自行研发的 Remebot 神经外科手术机器人。上午9时许，患者头戴 Remebot 标志点扫CT图像，文件导入机器人的计算机软件内后，自动生成患者头颅的三维模型，医生根据模型中所示的病灶位置选择好最佳入颅点和入颅角度。</span><br />
@@ -78,10 +78,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

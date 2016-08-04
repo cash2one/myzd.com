@@ -68,7 +68,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 这次手术，周文定除了要感谢手足之外，还要感谢许许多多的好心人。他告诉记者，他们并非大富之家，自己上学读书已经让家里负债累累，这次治病前后已花了38万余元。除了依靠单位大病统筹的十几万元，其他的钱都是从单位、亲朋好友及老乡处借来的；人民医院也为他们减免了几万元的费用，还替他们向亲体器官移植基金会申请了5000元。很多素不相识的人也通过网站为他们捐款。“没有我弟弟为我披肝沥胆，没有好心人为我捐款，我哪儿能活到今天！感谢所有的人!”</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3066/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004087978247" title="" alt="demo.jpg"/></span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">黄磊大夫和兄弟俩于术后1月照。目前二人身体健康，家庭幸福。</span>
 </p>
@@ -91,10 +91,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

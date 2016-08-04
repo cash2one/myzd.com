@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>达芬奇机器人有了"小白鼠" 医生术前可以反复做"模</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/799/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010610380892" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">“打印”出来的胰腺</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">用3D技术打印骨骼、牙齿，这技术很先进吧？不过，医学发展是很快的。上周末，浙江省人民医院联合中国科学院长春应用研究所举办了一场“生物医用高分子研究与转化医学研讨会”。“高大上”的东西全来了，如能溶解血栓的水凝胶、将肿瘤的诊断和治疗合二为一的纳米粒子、与自体几近一样的胰腺、可降解的人工输尿管支架管膀胱等。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">一块“打印”出来的胰腺</span><br />
@@ -44,10 +44,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

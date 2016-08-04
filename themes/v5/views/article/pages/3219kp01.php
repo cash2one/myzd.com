@@ -17,41 +17,41 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">一、正常的前庭导水管CT影像学</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">正常情况下，在水平半规管或总骨脚出现层面，在岩锥后缘可见细小且较浅的骨性压迹或细管状低密度影，与后半规管走行基本平行（图 1），前庭导水管外口呈扁平裂隙状，前庭导水管近段即接近总骨脚后内侧的部分CT 上较难显示，正常前庭导水管远端内径宽为 0.4~1.0mm。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3219/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010464732968" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">正常前庭导水管呈细线状低密度影（白色箭头所指）</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">二、前庭导水管扩大的CT表现</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">有学者认为测量扩大的VA 可以取两个位置进行测量：前庭导水管外口和总骨脚之间中点（mp）的导水管内径宽度即前庭导水管中段的最大管径宽度MDVA&gt;1.5mm；或者前庭导水管外口（op）宽度即前庭导水管骨嵴至总骨脚后侧壁的垂直距离ODVA &gt;2.0mm，可诊断为前庭导水管扩大 EVA（图 2）。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3219/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010464980331" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">前庭导水管中点（mp）和外口（op）</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">当前导水管中段最大宽度 MDVA 为1.0~1.4mm，外口宽度 ODVA 为1.5~1.9mm 时，考虑为诊断 EVA 的临界值。当前庭导水管中段最大宽度 MDVA小于 1.0mm，外口宽度 ODVA 小于1.5mm，可以诊断前庭导水管正常。前庭导水管扩大时，在水平半规管或总骨脚层面，岩锥后缘可见喇叭形或锥形的骨缺损影，边缘锐利清晰，期内口多与前庭相通。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3219/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010465039374" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">双侧前庭导水管呈裂隙状扩大</span><br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3219/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src=" http://static.mingyizhudao.com/147010465105969" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">双侧前庭导水管扩大，呈宽大三角形，边缘锐利光滑</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">三、几种特殊类型的前庭导水管扩大的CT表现</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">1. 前庭导水管扩大，与总脚相通</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3219/5.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src=" http://static.mingyizhudao.com/14701046513910" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">2. 前庭导水管扩大呈裂隙状，伴骨质缺损</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3219/6.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010465217067" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">3. 前庭导水管扩大呈“喇叭口”状</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3219/7.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010465236110" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">4. 扩大的导水管呈“倒鱼钩”状</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3219/8.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010465296049" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">5. 前庭水管宽度＜1.5 mm，但可以观察到前庭水管与半规管总脚相通</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3219/9.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src=" http://static.mingyizhudao.com/147010465338946" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">左侧前庭导水管宽度1.2mm，与半规管总脚相通</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">6. 前庭导水管扩大伴Mondini畸形</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3219/10.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147010465378182" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">前庭导水管扩大（白箭头）与Mondini畸形（红箭头）并存</span><br />
 <p>
 	<br />
@@ -66,10 +66,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3219/pic2.png" title="" alt="demo.jpg"/>
-
--->

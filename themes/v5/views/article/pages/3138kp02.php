@@ -17,7 +17,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <p>
-	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3138/2.png" title="" alt="demo.jpg"/>
+	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147004462990060" title="" alt="demo.jpg"/>
 </span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">采写/记者 陈俊珺</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">擤鼻涕时，你是否习惯按住双侧鼻腔，用力猛擤？挖鼻孔甚至拔鼻毛，是否成了你不经意间的习惯动作？</span><br />
@@ -58,10 +58,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

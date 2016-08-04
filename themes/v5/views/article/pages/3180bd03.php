@@ -15,11 +15,11 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <br />
 <br />
-&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3180/1.png" title="" alt="demo.jpg"/><br />
+&nbsp;<img src="http://static.mingyizhudao.com/147010377972390" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 断肢X光影像（欧原 摄）</span><br />
-&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3180/2.png" title="" alt="demo.jpg"/><br />
+&nbsp;<img src="http://static.mingyizhudao.com/14701037800714" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 医务人员为小慧实施手术。（欧原 摄）</span><br />
-&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3180/3.png" title="" alt="demo.jpg"/><br />
+&nbsp;<img src="http://static.mingyizhudao.com/147010378036746" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 成功将断足寄养在大腿上。（欧原 摄）</span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 红网长沙3月3日讯（时刻新闻记者 易征洋 通讯员 黄辣 吴攀峰）在成功创造了3例断手寄养小腿和腹部保肢的“奇迹”后，近日，中南大学“湘雅名医”、湘雅医院手显微外科主任唐举玉教授率领科室全体医务人员，为车祸导致左小腿完全离断的2岁女童成功将断足寄养在大腿上，攻下了保肢第一关。唐举玉教授团队接下来还将为小姑娘进行寄养断足回植和小腿牵伸再生延长等两次大型手术。</span>
@@ -110,10 +110,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

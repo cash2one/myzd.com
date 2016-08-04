@@ -16,7 +16,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">清华新闻网9月23日电 （通讯员 韩冬野）日前，经何梁何利基金评选委员会全体会议评审通过，北京清华长庚医院内科部部长、消化内科主任姜泊获评“何梁何利基金科学与技术进步奖”。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3065/4.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147004074083256" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">姜泊近照。</span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">“何梁何利奖”由何梁何利基金设立，该基金是由何善衡基金有限公司、梁銶琚先生、何添先生、利国伟先生的伟伦有限公司共同捐资，旨在奖励我国取得杰出成就的科技工作者，倡导尊重知识、尊重人才、崇尚科学，激励科技工作者不断攀登科学技术高峰，加速国家现代化建设。何梁何利基金2015年颁奖大会将于10月中下旬举行。</span>
@@ -50,10 +50,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

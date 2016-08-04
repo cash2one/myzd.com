@@ -16,7 +16,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">学科建设是教学研究型医院的一项重要战略任务，也是医院综合实力的集中体现。浙江大学医学院附属第二医院（以下简称：浙医二院）副院长梁廷波教授领衔的肝胆胰外科，近年来在发挥专科优势的基础上，借助加速康复外科（ERAS）、多学科协作（MDT）等技术和模式的持续创新，让医院肝胆胰外科的发展驶入快车道，成为业界标杆。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">推动学科不断向前发展，需要有明确的学科定位、合理的人才梯队、完善的人才培养机制以及强大的平台和基地。浙医二院肝胆胰外科在该领域的脱颖而出，与学科建设的诸多环节的科学把控密不可分。日前，健康界以浙医二院肝胆胰外科建设为切入点，与该学科带头人梁廷波教授就学科建设进行了深入访谈。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/698/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010598697370" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">"三定位"找准学科发展方向</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">肝胆胰外科是普外科中最重要的一个亚专科，涵盖肝脏、胆道、胰腺等多个细分方向，其在综合医院学科中的地位举足轻重。最近几年，无论是国内还是国外，肝胆胰外科的发展都日新月盛。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">"学科发展速度变快，新技术、新设备更新迭代的速度也随之加快，学科发展的未知也逐渐越多。作为学科带头人，首先也是最重要的就是要思考学科的定位和发展。"梁廷波表示，大学附属医院的学科定位，要放眼全球、立足本土和本单位，进行三个层次的评估。</span><br />
@@ -29,7 +29,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">对于患者来说，最大的好处就是节约医疗费用，比如肝移植手术，可比传统方法节约三分之一，等于节约了十多万元，对一个普通家庭来说，这是一笔不小的数字。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">"从2015年5月开始，浙医二院在全院成立了一个专家委员会，率先在外科推广加速康复的理念。"梁廷波说，这些外科包括胃肠外科、肿瘤外科、结直肠外科、泌尿外科、心脏外科、骨科和胸外科，他们都将根据自己科室的特点，摸索一套符合自身学科特色的加速康复的方法。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">据梁廷波透露，目前他所带领的肝胆胰外科团队，正根据浙医二院加速康复外科的实践，并结合国际的最新经验和进展，编写符合中国实际的加速康复外科的临床指南。这意味着，浙医二院加速康复外科的经验不但要在全院普及，还要向全国推广。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/698/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147010598960935" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">MDT提升学科内涵</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">"肝胆胰外科的MDT，从院内到院外，从省内到省外，也走出了我们自己的特色。"对于肝胆胰外科的多学科协作组（Multidisciplinary teamwork，MDT），梁廷波向健康界介绍了这支团队的特色。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">肝胆胰外科需要协调的科室众多，包括消化内科、放射科、肿瘤内科、病理科、放疗科、超声科等等。梁廷波表示，刚开始做MDT时阻力很大，因为这样的活动要占据医护人员休息的时间，需要很高的奉献精神。"随着这种合作机制的不懈坚持和深入，学科之间碰撞出的闪光知识，逐渐吸引着全院的员工接受并积极投入到MDT当中"，梁廷波告诉健康界，交流和学习，争议和提高成为医护人员踊跃参与MDT的最大动力。</span><br />
@@ -49,10 +49,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

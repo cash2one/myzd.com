@@ -15,12 +15,12 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3145/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010262092090" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">导游头部受伤，正在常熟新区医院接受治疗</span>
 </p>
 <p>
-	<span><span style="line-height:25.454544067382813px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3145/2.png" title="" alt="demo.jpg"/></span></span>
+	<span><span style="line-height:25.454544067382813px;"><img src="http://static.mingyizhudao.com/147010263922434" title="" alt="demo.jpg"/></span></span>
 </p>
 <p>
 	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">昨晚11时，上海的救护车在常熟新区医院外待命特派记者陈意俊摄</span>
@@ -64,10 +64,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

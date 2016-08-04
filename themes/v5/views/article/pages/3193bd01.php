@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3193/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010408131581" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 名家介绍</span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 袁贤瑞，中南大学湘雅医院神经外科主任、主任医师、博士生导师。任中华医学会神经外科分会副主任委员，肿瘤组副组长，湖南省神经外科专业委员会主委，中国神经科学会神经外科专业委员会委员，中国医师协会神经外科分会神经肿瘤专家委员会委员。担任《国外医学神经病学神经外科学分册》杂志的副主编和多种相关专业杂志的编委。享受国务院特殊津贴。</span>
@@ -143,10 +143,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

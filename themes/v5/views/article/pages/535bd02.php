@@ -16,9 +16,9 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<br />
 </div>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">近两个月的时间过去了，舒马赫依然处在昏迷之中，而全世界车迷对他的关心并没有随着时间的逝去而消减。Stephan Chabardes对于舒马赫的病情非常了解，但是他从不轻易在私下透露车王的病情。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/535/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/14701057655803" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">舒马赫主刀医生Stephan Chabardes（左二）在车王病情发布会上介绍情况。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/535/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147010577452446" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">王伟教授（右）与Stephan Chabardes在上月交流时合影。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> @华西都市报:关于车王的情况，或许只有权威专家给出的说法才比较具有参考价值。为此，华西都市报记者独家专访了四川大学华西医院神经外科教授王伟，听这位曾与舒马赫的主刀医生有过交流的神经外科专家对这一类病况的解读。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 近两个月的时间过去了，舒马赫依然处在昏迷之中，而全世界车迷对他的关心并没有随着时间的逝去而消减。因此当德国新闻杂志Focus耸人听闻地报道称医生已经放弃唤醒车王时，无数人都为车王的现状揪心不已。好在舒马赫的经纪人随后及时辟谣，才让大家心中的大石头稍微放了下来。</span><br />
@@ -54,10 +54,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

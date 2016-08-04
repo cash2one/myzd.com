@@ -66,31 +66,31 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">小结：微创PELD手术已经涵盖了大部分的腰椎疾患，所有腰椎疾患中大约85%的患者可以应用微创的手术方法进行治疗。日间手术缓解了医院住院难的问题，减小了患者手术的创伤、缩短了康复的时间、减轻了家属的护理负担。2015年301医院大约25%的患者，接受的是日间手术模式的住院管理模式，所以说PELD日间手术是腰椎疾患患者的福音。</span>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2978/1.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003544556613" title="" alt="demo.jpg"/>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2978/2.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003544773831" title="" alt="demo.jpg"/>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2978/3.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003545203097" title="" alt="demo.jpg"/>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2978/4.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003545416849" title="" alt="demo.jpg"/>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2978/5.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003545632077" title="" alt="demo.jpg"/>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2978/6.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003545870546" title="" alt="demo.jpg"/>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2978/7.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003546287129" title="" alt="demo.jpg"/>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2978/8.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003546475377" title="" alt="demo.jpg"/>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/2978/9.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003546795417" title="" alt="demo.jpg"/>
 </p>
 <p>
 	<br />
@@ -115,10 +115,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

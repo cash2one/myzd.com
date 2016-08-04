@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"></span><br />
 <br />
-<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3171/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147010321048098" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">毛克亚教授</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">毛克亚，男， 1970 年生，汉族，博士。解放军总医院脊柱外科副主任医师、副教授、硕士研究生导师。毛克亚教授毕业于解放军总医院骨科，并先后赴法国、美国、德国、加拿大等脊柱外科中心学习。长期致力于脊柱外科临床工作和研究，主要从事腰椎间盘突出症、颈椎病、腰椎滑脱、腰椎管狭窄、脊柱侧凸、脊柱结核及肿瘤的开放及微创手术治疗，年手术量达 500 台以上，达到国际和国内先进水平。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">腰椎间盘突出症是骨科的常见病和多发病，虽然常规手术治疗可达到神经根的松解与解压的目的，但有创伤大、手术恢复时间长和术后并发症较多的缺点，随着脊柱外科的发展，微创手术治疗腰椎间盘突出症越来越为人们所接受。我们邀请到了解放军总医院脊柱外科副主任医师毛克亚教授做客“专家访谈录”，谈一谈有关腰椎间盘突出症的最新研究进展，访谈内容主要围绕以下几点展开：</span><br />
@@ -50,10 +50,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

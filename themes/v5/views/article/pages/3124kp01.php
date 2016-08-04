@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">肺癌是呼吸系统中最常见的一种恶性肿瘤。肺癌的脑转移发生率较高，可以达到35％～50％，常以头痛、呕吐、面神经麻痹、偏瘫、视物模糊、失语、肌肉无力等为首发症状而被误诊为脑血管病、原发性脑肿瘤、结核性脑膜炎或颅内高压等。因此，应提高对肺癌脑转移的认识，防患于未然。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3124/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="http://static.mingyizhudao.com/147004399360659" title="" alt="demo.jpg"/></span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 肺癌脑转移是临床常见而严重的病情，也是肺癌治疗失败的常见原因之一。小细胞肺癌在作出诊断时约有20%的患者已有脑转移，而在小细胞肺癌患者的死亡病例尸检中脑转移发生率高达80%.非小细胞肺癌患者在病程中约有30%左右发生脑转移，其中以大细胞未分化癌和腺癌较多见，鳞癌次之。</span>
 </p>
@@ -37,10 +37,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

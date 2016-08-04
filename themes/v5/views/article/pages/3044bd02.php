@@ -39,7 +39,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 只要是手术就会有风险。由于任何角膜屈光手术都会不同程度地切断角膜神经，改变角膜的形态。因此，少数患者手术早期会出现眼干、眩光等不适症状。但是，随着伤口的修复，这些问题都会逐渐得到改善，角膜也会恢复。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> （作者为华北区屈光手术专家会诊中心专家、北京同仁医院眼科中心屈光专科主任周跃华）</span><br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3044/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003917218821" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 周跃华，男，主任医师，教授，留美博士后。北京同仁医院眼科中心屈光专科主任。卫计委国家医学考试中心全国大型医用设备使用人员上岗资格考试命审题委员。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 自1994年从事角膜屈光手术的临床工作和近视理论的基础研究，至今已成功完成各类屈光手术6万余例（其中包括国内知名人士和美国、英国、加拿大等近25个国家和地区的外宾），是国内屈光手术总量和每年手术量最多的屈光专家。在角膜屈光手术及其并发症等的处理方面具有丰富的临床工作经验。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 华北区屈光手术专家会诊中心</span><br />
@@ -58,10 +58,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

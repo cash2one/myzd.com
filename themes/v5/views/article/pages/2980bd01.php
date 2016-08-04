@@ -16,9 +16,9 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong><br />
 </strong></span>
 </p>
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2980/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003559283985" title="" alt="demo.jpg"/></span><br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2980/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003559470217" title="" alt="demo.jpg"/></span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">前日下午,年过七旬的梁伯在中山大学附属肿瘤医院接受了前列腺肿瘤切除手术,“主刀”手术的竟是医院刚引进的“达芬奇”手术机器人。</span><br />
 <br />
@@ -37,9 +37,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
     </div>
 </div>
 
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

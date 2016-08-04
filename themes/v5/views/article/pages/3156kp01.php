@@ -33,7 +33,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">浮游状态有利于感染的扩散，但同时容易被机体免疫系统和抗菌素所攻击。而以生物膜形式存在的细菌不容易形成感染扩散，但同时也受到保护而难以被免疫系统攻击，对抗菌素的治疗也不敏感。</span><br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3156/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147010287922713" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">图1 &nbsp;根据Boles和Horswill、Otto、Resch等的研究所作的示意图以葡萄球菌为例表明生物膜的典型特点。其中蓝框表示生物膜形成的主要步骤，黄框表示细菌所处的化学环境，红框表示细菌的不同表型。浮游细胞通过附属基因调节因子（agr）系统产生致病因子、降低其粘附性、并提高细菌分散度抑制生物膜聚集。EPS：细胞外聚合物。</span><br />
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">值得注意的是，真菌，如念珠菌感染后，也可能以生物膜形式存在。</span><br />
@@ -145,10 +145,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

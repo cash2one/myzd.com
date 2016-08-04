@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span><span style="line-height:25.454544067382813px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3179/1.png" title="" alt="demo.jpg"/></span></span><br />
+<span><span style="line-height:25.454544067382813px;"><img src="http://static.mingyizhudao.com/147010371871232" title="" alt="demo.jpg"/></span></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 华东医院，唐健雄刚下手术台。身体周刊记者 王辰 图</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">疝，病字头一个山，山就是突出的包块，顾名思义，这是一种病态的包块，是指人体器官和组织离开了原来的位置，通过人体正常或非正常的间隙、薄弱部位或缺损进入另一部位，影响脏器的正常功能。这种熟悉又陌生的病到底要不要手术，该选择哪种手术方式，令不少患者纠结不已。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">身为华东医院疝和腹壁外科疾病治疗与培训中心主任，唐健雄深知“小洞不补大洞吃苦”，反复强调及早手术的意义，他将最先进的疝修补术引进国内，采用生物材料“打补丁”修复缺损，避免了传统手术复发率高的缺陷，加快了患者术后的恢复。</span><br />
@@ -67,10 +67,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

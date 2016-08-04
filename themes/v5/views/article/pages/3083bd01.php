@@ -20,7 +20,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">上一期做肿瘤专题的时候提到过一次“对微创的误读”，从各个渠道的发声反馈来看，大家对微创的解读还存在很多误区，因此本期我们来到神经外科继续微创这个话题。神经外科对普通人来说非常陌生，任何一个常见病都能牵扯出很多需要检索的学术名词，为了不给读者造成不必要的困扰，我们不探究某个具体病症，而是请神经外科专家以本学科的角度向非医学工作者这一受众浅谈微创、精准医学等前沿的医学概念。</span>
 </p>
-<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3083/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147004275762921" title="" alt="demo.jpg"/></span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;余新光，解放军总医院神经外科主任，博士生（后）导师。担任中国医师协会神经外科医师分会副会长、专科医师规范化培训基地认证与建设专家委员会主任委员、专业英语教育与培训专家委员会主任委员、中华医学会神经外科学分会神经肿瘤学组副组长、中国颅底多学科协作组神经外科副组长、《中华神经外科杂志》等多种学术刊物编委。从事神经外科30年，在脑血管疾病外科、颅底和脑深部肿瘤这两类公认的复杂疾病的治疗上取得较大成绩。</span>
 </p>
@@ -126,10 +126,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

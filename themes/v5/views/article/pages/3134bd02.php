@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <div style="text-align:center;">
 	<br />
 </div>
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3134/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004443371776" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;护士们在广场上跳乳房保健操 记者 龙在全 摄</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 10月是国际乳腺癌防治月。乳腺癌是女性最常见的肿瘤之一，且发病率逐年上升，目前在我市肿瘤排行榜上居于前六位。重医附一院乳腺外科专家表示，年轻女性最好每年定期进行乳腺彩超检查；而40岁以上女性最好通过乳腺钼靶筛查乳腺癌，做到早诊断早治疗。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 伸展手臂、摆动肩颈……昨日，在重医附一院门诊大楼前的广场上，来自重医附一院乳腺外科的男医生与女护士一起，跳起了乳房保健操，拉开了10月“国际乳腺癌防治月”的活动序幕。据重医附一院乳腺外科主任厉红元介绍，乳腺癌发病率逐年上升，目前在我市肿瘤排行榜上居于前六位。</span><br />
@@ -46,10 +46,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -21,7 +21,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp;如下图所示，颈椎增生压迫脊髓神经根。 &nbsp;&nbsp;</span>
 </p>
 <p>
-	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2983/1.png" title="" alt="demo.jpg"/></span>
+	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003568955646" title="" alt="demo.jpg"/></span>
 </p>
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp;&nbsp;</span><span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">颈椎病的症状非常丰富，多样而复杂，多数患者开始症状较轻，在以后逐渐加重，也有部分症状较重者。常以一个类型为主合并有其它几个类型一起，称为混合型颈椎病。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">1、颈肩酸痛可放射至头枕部和上肢；</span><br />
@@ -37,9 +37,9 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">第四， &nbsp; 适当颈椎牵引。一部分以上肢疼痛、麻木为主的颈椎病，症状严重时运用颈椎牵引可以获得良好疗效；</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">第五， &nbsp; &nbsp;手术治疗&nbsp;</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">对颈椎病诊断明确，神经根压迫症状严重，保守治疗后症状无明显好转者应采取手术治疗，而对于脊髓型颈椎病患者，即主要表现为双下肢走路无力、行走不稳等症状的患者，则应尽早实行手术治疗，以获得良好的恢复效果，因这类患者的治疗效果与神经压迫时间长短有密切关系。随着科学技术的发展，颈椎病手术是安全有效且创伤小，完全不必炜疾忌医。颈椎病主要手术方法有以下几种： &nbsp; &nbsp; &nbsp; 1、颈前路手术：顾名思义，即在脖子前面进行的手术，目前大部分颈前路手术微创小，手术切口小，术后恢复快。手术主要切除突出变形的椎间盘，对于伴有骨赘增生者还要去除增生的骨赘，以及两侧钩椎关节，以免残留可能的致压物。正常结构切除后的重建物多种多样，大多使用钢板和融合器来重建颈椎的高度和稳定性。近几年还出现人工椎间盘置换，可以保留了颈椎节段间的运动功能，对合适的病人临床疗效也很好。</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/2983/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147003569201822" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp;2、颈后路手术：即从脖子后方进行的手术，适用于多节段颈椎病、伴椎管狭窄或后纵韧带骨化者。后路手术主要通过切除全部或部分后方的椎板来达到间接减压的目的，手术风险比前路更小，暴露简单，对于颈椎本身生理曲度存在的患者来说疗效较好。后路单开门椎管成形术等手术可以保留颈椎间的活动度，术后后凸畸形及邻近节段退变等发生率较小，已被广泛采用。</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/2983/3.png" title="" alt="demo.jpg"/></span><span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">img3</span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147003569305324" title="" alt="demo.jpg"/></span><span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">img3</span><br />
 <br />
 <br />
 <p>
@@ -54,10 +54,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3063/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004019756487" title="" alt="demo.jpg"/></span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">首都机场，飞机晚点了，广播响起：本次航班的目的地广州有一个很危急的病人，赶去急救的大夫还没有上飞机，请大家耐心等待一下，他们已到机场正在过安检。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">朱俊明手术团队一上来，关仓门，起飞。</span><br />
@@ -34,7 +34,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">可是，家人咋办？！“二十多年一直这样，母亲、老婆、孩子都习惯了。”</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">多可怜？！“不可怜啊，他们光荣啊，就像春晚小品里演的，找保安怎么样，‘我光荣啊’。”笑料信口抖出。</span><br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3063/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004019810290" title="" alt="demo.jpg"/></span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">整个胸腔被感染，他给主动脉改了个道</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">这个病人在床上躺了4个月，辗转多家医院，请了一拔又一拔专家会诊，但都表示无能为力。有一天，朱俊明去广州做另一台手术，顺便看了下资料，回来后和孙立忠教授商量，研究完回复说“理论上可行”。病人家属马上包了架飞机，把病人送到安贞医院心外大楼11层的5A病房。</span><br />
@@ -49,7 +49,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">针对此类的复杂情况——支架感染后怎么治疗，正是孙立忠带领科室在今后将开展的新项目。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">“这类病人，我们不做就没人做了。”朱俊明说，以前遇上这种病例，就只能看着病人死亡，医生无能为力。朱俊明打开2014年12月底在珠海做报告的ppt查数据：支架感染率0.5%－5%，发生食道漏和支气管漏的0.5%－1.7%。虽然不多，但例例致命。</span><br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3063/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004019810290" title="" alt="demo.jpg"/></span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">是“战神”更是“站神”</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">能做高难度手术的医生不少，但能做高难度、高风险、高强度手术的医生则就是一项极其综合的考验了。</span><br />
@@ -59,7 +59,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">朱俊明说，就愿意做“三高大夫”：高难度，需要很强的技术能力，高风险，需要有聪明的头脑，能在术中随机应变；高强度，需要坚强的毅力，顶住手术强度和压力。大血管外科大夫，必须是“三高大夫”，做不到这一点，复杂的病人就做不好，很多大血管手术一做就是一天或十几个小时，一般医生都不愿意做这个。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">复杂手术，无论是本院的，还是外院的，只要有复杂病例找到朱俊明，他都义不容辞，他认为自己就是干这个的：“孙主任很久以前就对我们说过，要做到别人解决不了的你能解决，‘人无我有，人有我多，人多我精’，不管怎样，要做就该出类拔萃。”</span><br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3063/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004019864399" title="" alt="demo.jpg"/></span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">压住别动，只要朱俊明能到，你们这病人就活了</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">十多年前，北京某医院胸外科一台食管癌手术主动脉出血，赶紧向当时的医科院肿瘤医院胸外科主任张德超教授请求帮助。</span><br />
@@ -104,10 +104,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3063/pic2.png" title="" alt="demo.jpg"/>
-
--->

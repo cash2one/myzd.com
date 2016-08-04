@@ -55,7 +55,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">很多家长还希望奶瓶外形不要太特别，容易买到，不贵。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">不管你选择什么样的奶瓶和奶嘴，目的都是为了让你喂养起来更容易，宝宝也能更好地进行吮吸。因此，相对软的奶嘴要好过相对硬的奶嘴。如果特制的奶嘴不合用，可以选择早产儿专用奶嘴，因为很软。NUK的矫形奶嘴也是一种选择。等宝宝长大些、变壮了，奶嘴也要随之升级，不然宝宝一吸奶嘴就瘪了，吃不到奶。</span><br />
 <p>
-	<span><span style="line-height:25.454544067382813px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2896/1.png" title="" alt="demo.jpg"/></span></span>
+	<span><span style="line-height:25.454544067382813px;"><img src="http://static.mingyizhudao.com/147002416494324" title="" alt="demo.jpg"/></span></span>
 </p>
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">（NUK的矫形奶嘴）</span>
@@ -65,12 +65,12 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">很多医生都会推荐十字口的奶嘴，这种奶嘴可以利用宝宝正常吮吸、吞咽的节律控制奶的流量，因为十字口奶嘴只有在宝宝吮吸的时候才开放。而普通较大的圆形奶嘴开口会使奶液持续流出，宝宝无法自行控制，增加宝宝协调呼吸和吞咽动作的困难，容易造成呛咳。如果自己动手，任何奶嘴都能用单面刮胡刀片切割十字形开口。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">增加奶流量的另一种方法就是使用挤压式奶瓶或者塑料瓶衬（plastic bottle liner）。用塑料瓶衬的话，在喂奶前要排空瓶衬里的空气，然后根据宝宝吮吸的节奏间断性的压迫瓶衬。这种方法可以最大限度地减少宝宝吞咽时吞进胃里的空气，也使宝宝吮吸得更轻松。挤压式奶瓶也叫辅助输送系统（还有比这更学术的名字吗?-_-||）,腭裂宝宝专用的已知有三种: 美赞臣（Mead Johnson Cleft Palate Nurser)、希柏（Haberman Feeder）、贝亲（Pigeon Cleft Palate Nurser）。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">美赞臣的腭裂奶瓶配有一个薄而软的奶嘴，十字形开口。相对长的奶嘴设计可以使奶液顺利通过裂隙部分。瓶身很软，很容易根据宝宝吮吸和吞咽的节奏按捏奶瓶。这样的设计可以克服宝宝吮吸能力不足的问题。按捏奶瓶的时候动作要轻柔、有节奏，不要一直按着不放。根据宝宝自己吃奶的节奏按捏可以确保宝宝不会把奶吸进肺里，也就是误吸。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/2896/2.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147002416694817" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">希柏的奶瓶配有一个大型的、可按捏的奶嘴，一字形开口而不是十字形开口。在奶嘴柔软的基部，有一圈标记标出了一字型开口相对于宝宝嘴巴的位置，同时也让喂奶的人可以知道奶的流速。奶嘴的基部设计了一个垫片，作用类似于单向阀门，令奶液只能单向流动，进入奶嘴（不能流回奶瓶里面）。同时垫片也可以减少奶嘴里面的空气，以免宝宝吞入过多。希柏奶嘴有两种型号：普通型和迷你型。普通型奶嘴是标准长度，迷你型短一些，和早产儿用的差不多。</span>
 </p>
 <p>
-	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2896/3.png" title="" alt="demo.jpg"/></span>
+	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147002416989723" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">贝亲的奶瓶配有一个带“Y”型开口的奶嘴。和其他奶嘴相比，贝亲奶嘴稍大、稍膨一些，更适合宝宝的口腔。它的头部较硬，基底部较软，宝宝的舌头容易吮吸。当宝宝吮吸的时候，还有一个空气阀门防止奶嘴瘪陷。拧松或拧紧瓶颈部可以控制奶液流速。回流控制阀门可以防止奶嘴中的奶液返回奶瓶，也能减少奶嘴里面的空气，以免宝宝吞入。尽管贝亲奶瓶不是软质的，但是有弹性。</span>
@@ -103,10 +103,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

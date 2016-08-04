@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3013/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003645355261" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 医护人员精心护理术后的袖珍宝宝。（儿科医院供图）</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">复旦大学附属儿科医院昨天传出消息：该院心血管中心专家为体重仅为1.5千克的复杂先心病早产儿实施心内隧道术，袖珍宝宝的迷你心脏得到完好修复。这例复杂先心病一期根治手术的成功，标志医院在早产儿、极低体重儿危重先心病体外循环领域再上新台阶。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">术后的患儿小羽躺在监护室床上，小胸脯一上一下，像是在用力感受这美好的世界。小羽父亲36岁、母亲34岁,历经艰辛，尝试各种办法，才迎来一对试管婴儿双胞胎，小羽便是其中之一。双胞胎提前1个月来到人世，小羽体重仅1.5千克、身长不过30厘米，属于极低体重早产儿。胎龄过小，导致患儿组织器官发育很不成熟，出生后不久，孩子就住进儿科医院新生儿监护室，接受生命支持治疗。</span><br />
@@ -50,10 +50,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

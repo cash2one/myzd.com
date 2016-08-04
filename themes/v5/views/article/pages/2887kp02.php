@@ -19,8 +19,8 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">近二十年来，我国人民的生活水平迅速提高，大有“赶英超美”之势，但遗憾的是，国人对于癌症等健康问题的认识水平却大幅落后于发达国家。病人在患了癌症之后，往往火急火燎地托关系、找专家，却不知道在癌症治疗中，“早期发现、早期诊断”这八个字，远远胜过任何专家手中的手术刀。特别是对于前列腺癌，早期发现并治疗能够明显延长患者生存时间。那么今天我们就来谈一谈如何早期发现前列腺？前列腺癌有哪些常用的诊断方法？</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">读者朋友们首先要知道，前列腺癌善于隐蔽，它症状往往并不重，比如尿频、尿急、排尿困难等，这些症状没有什么特色，是老年人常见的毛病，因而很难引起患者重视。此外，等到这些症状出现的时候，前列腺癌往往已经发展到晚期了。所以，光靠症状是很难早期发现前列腺癌的。所幸的是，我们医生有三面“照妖镜”可以帮助患者早早揪出潜伏在前列腺里的坏分子。这三面照妖镜就是直肠指诊(DRE)、经直肠超声和前列腺特异性抗原(PSA)检查。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">1、直肠指诊。直肠指诊就是医生将戴手套的手指伸入患者直肠，并隔着直肠触摸前列腺的检查。由于前列腺癌会变硬、长硬节，所以医生可以通过手指的触感判断它是否癌变。直肠指诊是最简便的检查方法之一，约15％～40％的前列腺癌患者在直肠指诊时可发现异常。但这项检查主要依赖于医生的主观判断，不同的医生可能有不同的结论，因而对医生的技术水平要求较高。此外，还需要注意的是，有些前列腺癌被触摸到和正常的前列腺并无异常，所以直肠指诊有一定局限性。</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2887/1.png" title="" alt="demo.jpg"/></span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2887/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147002327371476" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147002327645673" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;直肠指诊 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;经直肠超声 &nbsp; &nbsp; &nbsp; &nbsp;</span><br />
 <br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;&nbsp;</span><br />
@@ -55,9 +55,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
     </div>
 </div>
 
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

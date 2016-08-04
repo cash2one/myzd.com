@@ -48,8 +48,8 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><br />
 </span>
 </p>
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">5脑干肿瘤预后：小儿脑干胶质瘤的预后主要与肿瘤的病理性质、部位、大小、手术的技术及术后的辅助治疗有关。5年生存率一般报道为30-40%，10年生存率为10-20%。<img src="<?php echo $baseUrlImage; ?>article/doctor/3128/1.png" title="" alt="demo.jpg"/></span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3128/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">5脑干肿瘤预后：小儿脑干胶质瘤的预后主要与肿瘤的病理性质、部位、大小、手术的技术及术后的辅助治疗有关。5年生存率一般报道为30-40%，10年生存率为10-20%。<img src="http://static.mingyizhudao.com/147004417736695" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004417809966" title="" alt="demo.jpg"/></span><br />
 <p>
 	<br />
 </p>
@@ -62,10 +62,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

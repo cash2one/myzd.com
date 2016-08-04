@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>夏强：探索儿童活体肝移植</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/293/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003489443228" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">夏强说，与普通手术不同，肝移植病人术后可能出现排异等一系列问题。身体周刊记者 雍凯 图</span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 十年前，年仅三十八岁的夏强带领平均年龄仅三十四岁的仁济医院肝脏外科团队几乎从零起步，而今，他们已完成肝移植手术一千八百余例，连续四年肝移植手术位居全国首位，尤其在儿童肝移植领域一直领跑全国，连续四年位居全球首位。</span><br />
@@ -95,10 +95,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

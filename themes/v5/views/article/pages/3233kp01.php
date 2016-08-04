@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"></span><br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3233/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010533883614" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">名 医 名 片</span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">陈劲草 神经外科教授，武汉大学中南医院神经外科主任，能熟练处理各种颅内疾病，显微手术技术娴熟，主要研究专业方向为脑血管疾病（动脉瘤、动静脉畸形、脑烟雾病等）的显微手术治疗及松果体区肿瘤的综合治疗。擅长各种疑难脑血管病、颅内肿瘤的诊治。</span>
@@ -95,10 +95,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

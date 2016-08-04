@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"></span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3079/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147004259674767" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">医学指导：中山大学第一附属医院超声科谢晓燕 教授</span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">肝癌是“癌中之王”，是临床上最常见的恶性肿瘤之一，全球发病率逐年增长，位居肿瘤相关死亡的第3位。我国每年因患肝癌死亡的人数超过10万人。</span>
@@ -88,10 +88,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

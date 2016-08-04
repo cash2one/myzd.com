@@ -13,9 +13,9 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>促进血管腔内修复技术不断发展与完善</strong></span>
 </div>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3136/1.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147004456040520" title="" alt="demo.jpg"/>
 </span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><<img src="<?php echo $baseUrlImage; ?>article/doctor/3136/2.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><<img src="http://static.mingyizhudao.com/147004456340237" title="" alt="demo.jpg"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">破裂的腹主动脉瘤的腔内治疗（上图为术前DSA，下图为术后DSA）</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;</span><br />
@@ -61,10 +61,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

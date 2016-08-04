@@ -18,14 +18,14 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp; 手术矫形时一般选择侧弯角度大于40度，Bending位大于25度的结构性侧弯矫形，往往可以取得很好的矫形效果，手术风险较低。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp; 下面为一个典型的特发性脊柱侧弯病例：</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp; &nbsp; 15岁女孩，特发性脊柱侧弯，脊柱呈双弯畸形，胸弯和胸腰弯均大于40度。</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3072/3.png" title="" alt="demo.jpg"/> <img src="<?php echo $baseUrlImage; ?>article/doctor/3072/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147004125348116" title="" alt="demo.jpg"/> <img src="http://static.mingyizhudao.com/147004125389263" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">左右最大侧屈位照片显示双弯均大于25度，属于结构性侧弯，均需要固定融合。</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3072/5.png" title="" alt="demo.jpg"/><img src="<?php echo $baseUrlImage; ?>article/doctor/3072/6.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004125493476" title="" alt="demo.jpg"/><img src="http://static.mingyizhudao.com/147004125602583" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">手术后X线片显示脊柱矫形理想。</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3072/7.png" title="" alt="demo.jpg"/> <img src="<?php echo $baseUrlImage; ?>article/doctor/3072/8.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147004125631328" title="" alt="demo.jpg"/> <img src="http://static.mingyizhudao.com/147004125692840" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">术前和术后的外观像对比显示外观矫形理想。</span><br />
 <p>
-	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3072/9.png" title="" alt="demo.jpg"/><img src="<?php echo $baseUrlImage; ?>article/doctor/3072/10.png" title="" alt="demo.jpg"/></span>
+	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004125819581" title="" alt="demo.jpg"/><img src="http://static.mingyizhudao.com/147004125883088" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><br />
@@ -44,10 +44,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

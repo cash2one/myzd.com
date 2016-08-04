@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">芙蓉花，又名拒霜花，木莲等，因其美丽、高洁、柔韧，历来被文人墨客所钟爱，古有“堪与菊英称晚节，爱他含雨拒清霜”、“谁怜冷落清秋后，能把柔姿独拒霜”的诗句。而在北医三院耳鼻喉科，就有这样一朵芙蓉花，她悄悄地绽放、用自己精湛的医术、温情的话语，想患者之所想，急患者之所急，给每一位患者带来美和正能量——她便是北京大学第三医院耳鼻喉头颈外科主任马芙蓉。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/912/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010644337384" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; “话疗”和医术同样重要</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 一身素色白大褂，和蔼的面庞上总挂着微笑，一开口温暖的话语很自然地就拉近了和患者的距离。很多年轻的患者都亲切地称马芙蓉为“知心妈妈”。</span><br />
 <p>
@@ -86,10 +86,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">&nbsp;李幼生：勤于学习勇创新</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3021/3.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/14700368898878" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">&nbsp; &nbsp; 人物小传：李幼生，男，南京军区南京总医院普通外科主任医师，中华医学会外科学分会器官移植学组委员。2次被南京军区评为“中青年优秀科技人才”，被江苏省表彰为有突出贡献的中青年专家、荣立三等功1次。&nbsp;</span> 
 </p>
@@ -41,10 +41,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -23,13 +23,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">2015年11月07日，2015门静脉高压症高峰论坛在解放军第302医院学术报告厅隆重召开。本次高峰论坛借“三O二医院门脉高压外科”成立5周年之际，由北京医师协会手术技艺研究会主办，解放军第302医院承办。来自全国30余家医院的200余位外科、内科、介入治疗科的医务工作者参加了论坛。</span> 
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/3017/1.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003666164416" title="" alt="demo.jpg"/>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">此次论坛推动了国内门静脉高压症诊疗的学术与发展，加强了区域和学科之间的交流合作，为致力于门静脉高压症诊治的同仁提供了一个相互交流，相互学习的平台。医脉通在会议期间有幸采访到了此次高峰论坛的执行主席李志伟教授，李教授为我们介绍了本次论坛的目的和门静脉高压症的治疗现状，详情如下：</span> 
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/3017/2.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147003666239539" title="" alt="demo.jpg"/>
 </p>
 <p>
 	<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">门静脉高压症高峰论坛召开的意义</span> 
@@ -75,10 +75,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

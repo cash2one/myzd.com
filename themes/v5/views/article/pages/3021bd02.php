@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3021/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147003688940215" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">满面春风，目光炯炯，耳朵白里透红，轮廓分明。今年50岁的他，履历可以总结为一句话——入伍34年，参加工作30年。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">故事倒回1年前，他作为黎院士首位“两栖医生”的培育者，敢于挑战自我，义不容辞救治大洋彼岸的飞机失事患者；</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">故事倒回5年前，他沉着冷静，秉承不放弃、不抛弃的“马拉松”精神，全力接治沈阳危重患者张建宇，使其重获新生；</span><br />
@@ -134,10 +134,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

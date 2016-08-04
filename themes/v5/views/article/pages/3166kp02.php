@@ -21,7 +21,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">正常情况下，大脑里边有许多各种各样的细胞，其中神经元是构成中枢神经系统的基本单元，也是大脑中枢正常运转的基本元件。除了神经元以外，其他的细胞可以统称为神经胶质细胞，这些胶质细胞就相当于神经元的养分“搬运工”，主要是为神经元供给血氧，以保证其正常工作。（如下图所示）</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3166/1.png" title="" alt="demo.jpg"/>
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010306962179" title="" alt="demo.jpg"/>
 </span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">如果哪天中枢的胶质细胞不好好生长繁殖，而是发生了可怕的“恶变”，那问题就严重了。由于大脑中枢的细胞有许多兄弟姐妹，于是人们按照细胞种类也给肿瘤分了类，比如星形细胞瘤、少枝（或少突）胶质瘤、室管膜瘤、混合性胶质瘤、脉络丛乳头状瘤、来源不肯定的神经上皮组织瘤、神经元及神经元神经胶质混合瘤、松果体实质肿瘤、胚胎性肿瘤、神经母细胞瘤……这么多分类，数一数也是醉了。为了更好地进行诊断和治疗，人们又将这些不安分的兄弟姐妹按照厉害程度分了类，不同的分类对患者寿命的影响也不同。</span>
@@ -58,10 +58,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

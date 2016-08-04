@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>腿软像面条原是先天颈椎后凸畸形作怪</strong></span>
 </div>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3072/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/14700412532959" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">一比一的3岁女孩颈椎模型。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">为提高手术精准度，医生术前用特殊仪器制作出一比一的女孩颈椎模型进行试验</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">本报讯 （记者饶贞 通讯员李冰洁、谢银龙摄影报道）因为罕见的先天颈椎畸形，一位3岁女孩从出生8个月起就无法向右侧旋转头部。2岁后的一天，刚学会走路的她突然无法站立，两条腿软得就像面条一样。辗转了多家医院后，女孩的家人带着她前来广州求医。由于病情十分罕见，广州的颈椎专家通过网络与美国颈椎专家一起对女孩进行了会诊，最终确立手术方案，成功挽救了女孩的生命。</span><br />
@@ -48,10 +48,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

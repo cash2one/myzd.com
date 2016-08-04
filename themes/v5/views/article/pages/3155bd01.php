@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>机器人微创前列腺根治术</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; <img src="<?php echo $baseUrlImage; ?>article/doctor/3155/1.png" title="" alt="demo.jpg"/>　机器人就是通过这样的机械手臂完成手术操作的</span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; <img src="http://static.mingyizhudao.com/147010282918714" title="" alt="demo.jpg"/>　机器人就是通过这样的机械手臂完成手术操作的</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">□记者 蔡建华 实习生 黄克宇 通讯员 曹咏 程文杰</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">上个月，迪士尼出品的动画电影《超能陆战队》，在获得6.19亿美元的超高票房后，又斩获了奥斯卡“最佳动画长片”奖。一时间，《超能陆战队》里的机器人“大白”成了影迷们关注的对象。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">事实上，影片中的医疗机器人、微型机器人的部分功能，人类已经实现了。去年10月，河南省首台达芬奇手术机器人落户郑大一附院，当年的10月7日，我省著名肝胆外科专家、郑大一附院的张水军教授通过“达芬奇”手术机器人，为两名患者做了肝脏手术，开启了河南省机器人做手术的新时代。</span><br />
@@ -38,10 +38,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

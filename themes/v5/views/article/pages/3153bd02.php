@@ -17,7 +17,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 小宝宝活泼好动，对外界危险意识不足，很容易产生意外伤害。最近医院屡屡出现铅笔、剪刀等锐器误穿头部的情况，惊醒家长要加强儿童意外特别是颅脑意外伤害的防范意识。儿童颅脑创伤有哪些特点？一旦发生意外家长如何处理？脑震荡有哪些症状？孩子得了脑积水能根治吗？潜毛窦需要如何治疗？上海市儿童医院 神经外科主任陈若平[微博]就“儿童颅脑意外创伤的防治”的问题做了互动回答。</span>
 </p>
 <p>
-	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3153/1.png" title="" alt="demo.jpg"/><br />
+	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010272898714" title="" alt="demo.jpg"/><br />
 </span>
 </p>
 <p>
@@ -77,10 +77,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

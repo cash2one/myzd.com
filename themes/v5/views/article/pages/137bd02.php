@@ -32,7 +32,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span></span><span style="font-size:14px;font-family:'Microsoft YaHei';"> 他也是我跟访了近3年的医生，能容忍你任何的“小白”问题；跟着上手术，他会细心地教你怎么穿无菌衣；碰巧一起出门，他会开车顺道把你捎上一程。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 他还是一位32岁男人小李（化名）的手机屏保，这是跟了他12年的老患者，做了两次心脏手术。小李说，这样就能天天看到孙主任，能激励自己好好活着。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 孙立忠，北京安贞医院心脏外科中心主任，中国医师协会心血管外科分会副会长……原谅我此处的省略，因为我有一大箩筐的故事想讲，但文章篇幅有限，我只能挑几个了。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';"> <img src="<?php echo $baseUrlImage; ?>article/doctor/137/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';"> <img src="http://static.mingyizhudao.com/147002020148159" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 两台手术让日本医生炸了锅</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 那一年，在日本的一个学术会议上，孙立忠临时决定只讲两台手术。没想到，震憾全场，瞬间传遍整个日本心血管外科界。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 当年见证并参与这个历史性事件的郑军大夫说：“把全场日本人都刺激了，太提气了！”他是孙立忠的第一个研究生，如今已是安贞医院心外5病房的副主任。</span><br />
@@ -51,7 +51,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 台下日本医生们开始交头接耳——因为这样的手术谁也做不下来，谁也没做过。日本医生根本没想到，中国医生的水平已经达到了这样的高度，他们都不敢提问题，也问不出问题了。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 当时年仅40多岁的孙立忠和30多岁的郑军师徒二人，第二天到大阪后受到了贵宾待遇：日本医生都想让孙立忠看自己做的手术，本来分两天做的手术，全部临时安排在一天内全做了。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 在孙立忠他们回国前，大阪国立循环中心的一位日本医生，他经历了孙立忠此次日本之行的全过程，他说，现在全日本心外科医生都在议论这件事，中国的孙立忠教授一夜成名。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';"> <img src="<?php echo $baseUrlImage; ?>article/doctor/137/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';"> <img src="http://static.mingyizhudao.com/147002020395220" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 让美国医生从质疑到认可</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 一位来自美国休斯顿医学中心的女医生的话，让我记忆犹新。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 在2013年9月15日孙氏手术十周年大会上，她说：当孙立忠第一次站在休斯顿的讲台上讲主动脉讲“孙氏手术”时，全美国医生都瞪着眼睛不敢相信；当他第二次讲时，美国医生开始议论这事；当第三次来讲，尤其文章发表后，美国医生开始去了解“孙氏手术”，死亡率怎样，有效没效，来参观手术；到现在许多美国医生已经开始在学习模仿“孙氏手术”。</span><br />
@@ -67,7 +67,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 这位传奇的美国心血管外科大夫，1米8的个头，高大结实，60多岁，典雅而温和，在美国的心血管外科有着很高的学术地位，他在33个国家做过手术，手术做得很好，他认可的东西会尽心尽力去帮助。他不仅要把“孙氏手术”技术在美国推广出去，还想把“孙氏手术”用的支架型人工血管引入美国。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 在美国开大会时，“孙氏手术”被美国医生定义为：未来将成为Ａ型主动脉夹层手术的“金标准”；在欧洲开大会时，主持人的评价就是文章开头所说：全世界主动脉夹层效果做得最好的大夫。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 30年埋头做手术做研究的孙立忠，厚积薄发。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';"> <img src="<?php echo $baseUrlImage; ?>article/doctor/137/3.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';"> <img src="http://static.mingyizhudao.com/147002020609838" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 铁打的营盘铁打的兵</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 你去哪儿，我们就去哪儿！</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 如此血性的话，从几位40多岁的教授们嘴里脱口而出，这背后的信任和感情和团队的凝聚力不言而喻。</span><br />
@@ -79,7 +79,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 小李，今年32岁，他把孙立忠的照片设成了手机屏保，还在离北京很近的河北涿州找了份工作，因为：离孙教授近一点，我能有安全感。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 小李是一名马方综合征患者，5岁时确诊马凡，从小就笼罩在死亡的阴影中，家人带着他四处求医，终于在他13岁时找到了孙立忠教授。他20岁时，孙立忠给他了第一次手术。他至今还记得，手术前，孙立忠对他说：留得青山在不怕没柴烧。6小时手术后，他在ICU一醒来，一直等在边上的孙立忠马上握住了他的手。后来家人告诉他，当孙立忠从手术室出来说手术很成功时，他的父亲一下子就跪在了地上，泣不成声。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 这一次成功的手术，让小李高质量地生活了9年，直到2012年，他再次回到孙立忠的手术台上完成了第二次手术。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';"> <img src="<?php echo $baseUrlImage; ?>article/doctor/137/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';"> <img src="http://static.mingyizhudao.com/147002020832386" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> （2014年获得美国AATS会员资格）</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 大血管医生的使命</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> “来不及救的，比救活的多。”这是在孙立忠团队采访的几年来，听到最多的一句话。</span><br />
@@ -89,7 +89,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 要救更多的人，就要尽可能多地培养主动脉专业医生。孙立忠每年除了在安贞医院定期举行主动脉外科继续教育学习班外，还飞到全国各地手把手地教当地医生做手术，现在几乎全国的大血管大夫都曾接受过他的培训。12年来，会做孙氏手术的医生，已经从1位发展到100多位。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 要救更多的人，还要尽可能多的在全国各地建大血管中心。孙立忠的主动脉专业版图里有一个全国的布局，他希望在华北、西北、西南、中南等建立大血管中心，把当地从事大血管外科手术的医生组织起来，定期组织培训，最终保证每个区域都有几个骨干。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> “在我退休之前，各个区域的技术水平能像北京安贞医院、阜外医院一样。”他说。如今，能做孙氏手术的医院，已经从1家医院发展到150多家，从1台手术积累到8000多台。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';"> <img src="<?php echo $baseUrlImage; ?>article/doctor/137/5.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';"> <img src="http://static.mingyizhudao.com/147002021033290" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 恰似他一脸微笑的温厚</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 3年来，我只要逮着机会看孙主任做手术，就舍不得离开手术室，尽管很血淋淋。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';"> 孙立忠的手术很有吸引力，不仅十几年前凭两台手术录相就震住全日本，2014年9月13日，还受埃森西德心脏中心的邀请，同步全球直播。埃森西德心脏中心曾两次请外籍专家转播一台心脏外科手术，转播中国专家的手术现场，这还是第一次。</span><br />
@@ -114,10 +114,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -19,7 +19,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<br />
 </p>
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">2014年6月27日凌晨2:34分，中国医学科学院肿瘤医院胸外科副主任牟巨伟教授用手机发了4张刚刚结束的手术照片，图片下面短短的一行字：VATS左肺下叶袖切成功。图片中的他，和同事们面对镜头，带着满意而又疲惫的笑容，这是当天他和同事们完成的第六台手术。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/461/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010569734539" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">VATS，学名叫电视辅助胸腔镜手术。上世纪90年代初期， VATS开始应用于胸内疾病的诊断和治疗。随着医疗技术，特别是胸部肿瘤规范化诊治成果在全国的推广应用和国内外腔镜器械与微创技术的不断发展完善，近五六年，这项技术在中国医学科学院肿瘤医院胸外科获得了飞速的发展。目前全科近一半的手术都是通过腔镜完成的。而在这项技术的应用与推广中，牟巨伟教授自称“被幸运撞了一下腰”，先后完成了肿瘤医院胸外科第一例胸腔镜下左全肺切除、第一例支气管袖式切除、第一例解剖性肺段切除和第一例胸腹全腔镜食管癌切除食管胃颈部吻合术。</span><br />
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">“水瓶座”，喜欢迎挑战</span><br />
@@ -39,7 +39,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">“我喜欢挑战。”牟教授说。不管是读书，做研究还是外科手术，他都喜欢做一些有一定难度和挑战性的工作，对此他有足够的勇气、胆识和耐心。</span><br />
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">谈及动因，他狡黠地一笑：“因为我是典型的水瓶座。”</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/461/2.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/14701057086097" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">在洛杉矶Cedar Sinai Medical Center手术室与Mekenna教授合影</span><br />
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">“幸运儿”，完成四个第一</span><br />
@@ -75,10 +75,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

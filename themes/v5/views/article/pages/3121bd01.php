@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>天气转暖走走族跑跑族出动 警惕你的后脚跟痛</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3121/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004376581598" title="" alt="demo.jpg"/></span><br />
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">行走、跑步或跳跃时，跟腱承受着巨大的负荷。图片源自网络</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 华龙网2月29日19时20分讯（记者 周晓雪）这几天重庆天气转暖，不少人相约登高爬山，城市里的走走族、跑跑族也越来越多。运动虽好，可还需“量力而行”。今（29）日，重庆第三军医大学西南医院表示，据不完全统计，走走族、跑跑族最常见的抱怨之一就是后跟痛，跟腱炎就是其罪魁祸首。</span><br />
@@ -39,10 +39,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

@@ -19,7 +19,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<br />
 </p>
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">日前，中山大学附属第一医院多个学科联合作战，通过一期手术即完成了一例左侧肾动脉瘤旷置、右肾切取、右肾动脉瘤切除、体外血管重建、自体肾移植等手术步骤在内的复杂双侧肾动脉瘤手术。据了解，这在国内属于首例同期完成此类手术的案例。</span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/1657/5.png" title="" alt="demo.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+<img src="http://static.mingyizhudao.com/147002084699521" title="" alt="demo.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">中山大学附属第一医院器官移植科主任王长希教授</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">双侧肾动脉瘤随时破裂 患者急需保命保肾</span><br />
 <p>
@@ -102,10 +102,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

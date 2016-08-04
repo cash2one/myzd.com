@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><i<img src="<?php echo $baseUrlImage; ?>article/doctor/3140/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><i<img src="http://static.mingyizhudao.com/147010244712231" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 许剑民一直致力于大肠癌早期筛查的推广。身体周刊记者 王炬亮 图</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">针对大肠癌肝转移的难题，许剑民倡导通过建立多学科团队的诊疗模式，对肝转移病人进行手术、化疗联合分子靶向治疗的综合治疗，使得肝转移切除后五年生存率达到百分之四十九。近年来，许剑民和他的团队在达芬奇机器人[2.72% 资金 研报]手术方面有很多创新和探索，这种尖端的手术方式将使需要精细解剖操作的结直肠癌手术变得更加精准。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">许剑民</span><br />
@@ -63,10 +63,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

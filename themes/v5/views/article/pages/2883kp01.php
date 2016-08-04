@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 自上世纪90年代起，国际上出现了一种治疗癫痫全新的方法，即神经调控技术。癫痫发作是由于大脑过度同步放电引起，而神经调控技术通过体外可控的电刺激来抑制发病过程，被医学界形象地称为“以电制电”。经过20多年的不断完善与改进，该技术已经为全球10多万患者提供了医疗服务。该技术的最大的优点是治疗风险远小于常规外科手术，而且可以不断通过体外调控来调节电刺激强度，达到个体化治疗。目前国际上两 种成熟的神经调控方法为迷走神经刺激（VNS）。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2883/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147002235928986" title="" alt="demo.jpg"/></span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">迷走神经刺激是在颈部的迷走神经上放置一个刺激电极，在胸壁放置一个刺激器。刺激电流通过迷走神经传递到大脑，引起脑电活动及神经递质变化，达到使癫痫的发作次数减少的目的。近几年，上海仁济医院VNS的手术量处于国内第一，积累了丰富的临床经验。并于2011年成立全国唯一的“迷走神经刺激技术中国地区医师培训基地”，对全国专业医师进行培训及操作指导。</span>
 </p>
@@ -36,7 +36,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">3、病灶位于功能区，手术治疗可能引起严重的功能缺失的患者；</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">4、儿童及成人均可使用。</span><br />
 <p>
-	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/2883/2.png" title="" alt="demo.jpg"/></span>
+	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147002236156430" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><br />
@@ -56,10 +56,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

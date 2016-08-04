@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">发表于《北京晚报》&nbsp; 2010-1</span><br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/82/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;"><img src="http://static.mingyizhudao.com/147010617934941" title="" alt="demo.jpg"/></span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">&nbsp;</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp; 甲状腺是人体较大的内分泌腺体，同时也是最容易出现疾病的腺体之一。北京协和医院基本外科主任医师刘跃武指出，从外科的角度讲，甲状腺疾病分为甲状腺腺瘤、结节性甲状腺肿、甲亢、慢性淋巴性甲状腺炎和甲状腺癌。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp; “甲状腺疾病高发年龄段集中在30-50岁，以女性居多，大概是男性的7倍左右。虽然甲状腺疾病的发病率较高，但它的预后很好，只要及早发现，规范治疗，甲状腺癌的治愈率较高，十年生存率约为95.2%。”</span><br />
@@ -63,10 +63,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

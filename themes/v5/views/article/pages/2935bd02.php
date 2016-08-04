@@ -16,7 +16,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"></span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">雷锋精神今何在？</span><br />
 <br />
-<span style="font-size:14px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2935/4.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;"><img src="http://static.mingyizhudao.com/147003328688735" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">英雄抓小偷时很勇敢，拍照时很腼腆。</span><br />
 <br />
 <br />
@@ -82,10 +82,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

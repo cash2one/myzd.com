@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2889/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003597312693" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">普胸外科手术是所有外科手术中最疼痛的手术，如何减轻患者的疼痛和并发症？作为复旦大学附属中山医院胸外科主任，王群将希望投向微创技术创新，尽可能提高患者生存质量。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">2000年，年仅36岁的王群远赴美国UMASS医疗中心研修学习当时最为先进的腔镜技术，回国后他带领胸外科团队率先开展腔镜下肺部、食管手术，首先开展全腔镜肺叶切除术、胸腔镜下全胸腺切除、俯卧位胸腔镜食管癌切除术等多种术式。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">近年来，在胸腔镜肺叶切除手术和食管癌手术成熟的基础上，王群又在国内率先倡导微创理念的更新，提出针对肺部小结节的个体化微创概念，开展包括腔镜下肺段切除术、选择性淋巴结清扫等多项难度极高的手术术式。</span><br />
@@ -69,10 +69,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

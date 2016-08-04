@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">通过体表约5毫米的微小切口将关节镜放入关节腔内，经与关节镜相连的摄像系统将关节内图像直接显示在屏幕上，医生通过屏幕直观地了解患者关节内病情，从而做出正确诊断，同时，在开孔处插入检查或手术器械可以直接在病变处进行治疗。目前，在威海市中心医院关节外科，通过先进的关节镜技术及先进的设备，肩、肘、腕、髋、膝、踝关节的各类疾病，医生们均能实现微创治疗。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3067/1.png" title="" alt="demo.jpg"/>于晓峰（中）与同事一起为患者做手术。威海晚报记者 王茂忠 摄</span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004093547628" title="" alt="demo.jpg"/>于晓峰（中）与同事一起为患者做手术。威海晚报记者 王茂忠 摄</span><br />
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> “不到外地看专家，外地专家来看你”是威海市中心医院近年来为广大患者提供的一项便民服务。近年来，关节外科先后与北医三院运动医学研究所、北京积水潭医院等国内著名医院建立良好的技术业务关系，每年邀请专家不定期来院手术、讲课，并选派优秀年轻医师前往进修学习，通过“走出去、请进来”的发展模式，不断提高技术水平，取得了良好效果。</span>
 </p>
@@ -72,13 +72,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 从2012年开始，关节外科与北京大学运动医学研究所合作，成立了威海地区关节镜微创技术协作推广基地，专家每个月来院为患者诊疗、手术，良好的效果叫响了医院“不到外地看专家，外地专家来看你”的服务品牌，慕名前来手术的外地患者已占到患者总数的30%。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 为了提高患者的就医体验，减轻负担，威海市中心医院关节外科以下病种实现就医零负担，职工医保病人费用“零负担”，居民医保病人报销60%：单侧人工股骨头置换手术治疗，单、双侧全膝关节置换手术治疗，单、双侧全髋关节置换手术治疗，关节镜下前、后交叉韧带重建术，关节镜下单、双侧髌骨外侧支持带松解术，关节镜下肩袖修补术。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 专家简介</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3067/2.png" title="" alt="demo.jpg"/>崔国庆</span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004093569164" title="" alt="demo.jpg"/>崔国庆</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 崔国庆 主任医师，教授，研究生导师，副博导，威海市中心医院特聘专家，北医三院运动医学研究所副所长；中国运动医学会运动创伤学组委员；中国运动医学会运动防治专业委员会副主任委员；中国老年学会老年脊柱关节疾病专业委员会委员；中国肩肘外科协作组副组长。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 精于肩、肘、膝关节疾病的诊疗，特别擅长肩关节运动损伤，肩袖撕裂，肩关节脱位，网球肘，膝关节运动损伤等的关节镜微创治疗及人工膝关节置换术。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3067/3.png" title="" alt="demo.jpg"/>丛海波</span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147004093649124" title="" alt="demo.jpg"/>丛海波</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 丛海波 威海市中心医院院长，骨外科学科带头人，博士生导师，主任医师，国家二级教授，中国工程院院士候选人。获得国家科技进步二等奖1项，三等奖1项，省部级科技进步奖一等奖2项，二等奖4项，三等奖2项。在国内外专业刊物上发表论文100余篇，SCI2篇。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 精于断肢(指)再植、肢体严重毁损伤的组织修复与功能重建，四肢严重复杂性骨折、小儿骨折、骨盆骨折及骨关节损伤疾病的治疗，髋、膝关节置换，骨折、脱位的手法闭合复位治疗。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/3067/4.png" title="" alt="demo.jpg"/>于晓峰</span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147004093694866" title="" alt="demo.jpg"/>于晓峰</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 于晓峰 威海市中心医院骨关节外科、显微外科主任，副主任医师，中华医学会运动医疗分会上肢学组青年委员会委员，山东省医学会再生医学分会委员，潍坊医学院、大连医科大学、泰山医学院、滨州医学院兼职教授，从事骨外科工作20余年。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 率先在威海地区开展肩关节镜手术，精于四肢骨折治疗，软组织缺损的显微外科重建修复(特别是大范围多元组织缺损)，断肢(指)再植技术。</span><br />
 <br />
@@ -89,10 +89,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3067/pic2.png" title="" alt="demo.jpg"/>
-
--->

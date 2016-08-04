@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>范瑞新：我该规避风险推迟手术吗？</strong></span>
 </div>
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3080/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147004265010549" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">羊城晚报记者 夏杨 林洁</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 通 &nbsp; 讯 &nbsp; 员 郝黎</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 数次见到范瑞新，留下印象都是：神情疲惫，眼睛通红。</span><br />
@@ -63,10 +63,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

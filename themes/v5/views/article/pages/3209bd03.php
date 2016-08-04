@@ -18,7 +18,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3209/3.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010447226823" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">嘉宾：解放军总装备部总医院306医院神经外科主任医师赵全军 </span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 概要：据相关数据统计显示，中国癫痫病患者目前约有900万，其中每年有40万的新增病例。癫痫让患病的儿童失去了天真浪漫的童年生活；让很多处于结婚生育年龄的青年变得无奈；让很多老年人生活不再平静……癫痫病是怎样的一种疾病，有哪些症状表现，怎样诊断？癫痫的外科手术治疗可以解决哪些问题？《健康中国》特邀解放军306医院神经外科主任医师、立体定向及功能神经疾病诊治中心主任赵全军教授做客直播间，和您说说癫痫的诊断和治疗。 </span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 嘉宾简介：赵全军，主任医师，教授，博士，研究生导师。 </span><br />
@@ -69,22 +69,22 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 一、饮食方面：不要吃辛辣刺激性的食物、海鲜。甚至一些有异味的蔬菜，都要注意，比如香菜、韭菜、芹菜、葱、姜、蒜等。 </span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 二、生活要规律：按时睡觉，按时起床。不到嘈杂的地方，比如歌厅、酒吧、舞厅，不刺激眼睛，不刺激耳朵，包括建筑工地的嘈杂声。电视和游戏也容易诱发癫痫，看电视，一天一个小时，不玩刺激的游戏，不看闪动、颜色鲜艳的画面。 </span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 三、控制情绪，有很多癫痫病人，尤其是面癫痫病人，本身脾气暴躁，情绪波动比较大。情绪上来的时候，大脑放电是增加的，生气的时候，大脑所有的神经原可能都在兴奋，都容易造成兴奋同步化，引发癫痫发作。保持情绪稳定，也是防止癫痫复发的很重要因素。 </span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3209/4.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010447252498" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">306医院神经外科立体定向及功能神经疾病诊治中心主任赵全军 </span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3209/5.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/14701044727791" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;"><span style="line-height:2;">306医院赵全军主任医师参与《健康中国》直播访谈 </span><br />
 </span>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/3209/6.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147010447304733" title="" alt="demo.jpg"/>
 </p>
 <p>
 	<span style="font-family:Microsoft YaHei;font-size:14px;">306医院赵全军主任医师在《健康中国》直播间 <br />
 </span>
 </p>
 <p>
-	<span style="font-family:Microsoft YaHei;font-size:14px;"></span><img src="<?php echo $baseUrlImage; ?>article/doctor/3209/7.png" title="" alt="demo.jpg"/><br />
+	<span style="font-family:Microsoft YaHei;font-size:14px;"></span><img src="http://static.mingyizhudao.com/147010447335971" title="" alt="demo.jpg"/><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;">赵全军教授与主持人刘红</span>
 </p>
 <p>
@@ -103,10 +103,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

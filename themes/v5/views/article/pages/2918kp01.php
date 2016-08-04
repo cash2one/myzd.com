@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="line-height:2;font-size:18px;font-family:'Microsoft YaHei';"><strong>ICL 常见问题详解</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2918/1.png" title="" alt="demo.jpg"/>
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003195355418" title="" alt="demo.jpg"/>
 </span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">ICL 常见问题详解</span><br />
 <br />
@@ -88,10 +88,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

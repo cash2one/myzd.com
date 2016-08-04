@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3003/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147003626289324" title="" alt="demo.jpg"/><br />
 <br />
 2005年12月8日14:00--15:00，[助医在线]邀请到了复旦大学附属眼耳鼻喉科医院江睿副主任医师，做客东方网嘉宾聊天室，就“常见眼底病（视网膜剥离，黄斑变性）的治疗”，进行在线咨询。<br />
 <strong>[嘉宾介绍]</strong><br />
@@ -116,10 +116,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

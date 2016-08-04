@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2970/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147003523622947" title="" alt="demo.jpg"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">3D技术可帮助缩短手术时间。Gettyimages供图</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 3D打印技术可提前把骨折处的结构制作成模型，让医生做好功课再上手术台</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 本报讯 （记者伍君仪 通讯员李冰洁）严重受伤后的复杂骨折需要做手术救治，而手术的长短有“止血带时间”一说，即每过1~1.5小时要给骨折的肢体松绑放血以免坏死，但随之而来的是出血量、药物用量直线上升，手术风险也随之增加。为了避免手术超过一个“止血带时间”，现在患者可以通过3D打印技术把自己骨折处的结构制作成模型，让医生做好功课再上手术台。3D技术有一定的花费，究竟值不值？骨科专家分析认为，新技术缩短了手术时间，可大大减少许多手术的“隐性成本”。</span><br />
@@ -49,10 +49,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

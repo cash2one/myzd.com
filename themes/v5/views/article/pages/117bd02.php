@@ -14,15 +14,15 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/117/1.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147001919457881"/>
 </span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/117/2.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147001919728760"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">肝移植患者捐赠“大医精诚”书法长卷</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/117/3.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147001919939189"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">王学浩（左二）手术中</span><br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/117/4.png" title="" alt="demo.jpg"/>
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147001920162060"/>
 </span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">2012年4月18日，王学浩院士（左二）参加肝移植患者术后10周年庆典活动</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">他是中国大陆活体肝移植领域的开拓者，也是国际上较早开展活体肝移植的学者之一。 如今，他引领的肝脏外科已成为国内活体肝移植的培训和研究基地。面对每年几十万晚期肝病病人求生的目光，他说，要想走在世界医学发展的前沿阵地，作为一名外科医生，必须要有敢冒风险、敢于承担责任和压力的勇气。</span><br />
@@ -96,10 +96,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

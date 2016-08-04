@@ -31,7 +31,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 主持人：就像这个图一样，左边等于是好的腰椎，这个是有问题的腰椎。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 毛克亚：对，是突出的腰椎间盘突出。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 主持人：如果得了腰椎间盘突出症，患者在临床上会有哪些表现？ </span><br />
-<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3171/1.png" title="" alt="demo.jpg"/>专家谈腰椎间盘</span><br />
+<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147010320880314" title="" alt="demo.jpg"/>专家谈腰椎间盘</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">毛克亚：图上可以看到，腰椎间盘突出症可以压迫我们的神经，压迫神经之后直接引起的第一个症状就是腰痛。第二个症状就是腿痛。腰痛一般是腰局部为中心放射到两侧甚至是臀部，是以腰部的疼痛加重休息减轻为特点。这种疼痛随着压迫两侧的神经根会造成放射性的疼痛，这种疼痛会从腰部一直放射至下肢大腿、小腿到足背、足体，引起明显的疼痛、麻木，影响我们日常的生活、工作、学习。</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 主持人：哪些人群比较容易得这种疾病呢？</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"> 毛克亚：由于腰椎间盘突出主要是由于纤维环的破裂，我们任何活动可能会加剧椎间盘的破裂包括损伤等等，都可能造成椎间盘一种损伤。</span><br />
@@ -71,10 +71,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

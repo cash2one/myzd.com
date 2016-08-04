@@ -14,7 +14,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2897/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147002425978516" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">漏斗胸</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">漏斗胸(funnel chest)是一种先天性并常常是家族性的疾病，俗称塌胸脯，男性较女性多见(4:1)。漏斗胸的原因不明，认为与遗传有关，属伴性显性遗传；此外由于维生素D缺乏造成钙、磷等矿物质不能沉积在骨骼上的佝偻病，有的造成双腿的畸形，有的则造成小儿胸廓的畸形。漏斗胸属渐进式病变，在出生时可能就已存在，但往往在几个月甚至几年后才愈来愈明显而被家长所发现。外型特征为前胸凹陷，肩膀前伸，略带驼背及一个突出的上腹。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;</span><br />
@@ -64,10 +64,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

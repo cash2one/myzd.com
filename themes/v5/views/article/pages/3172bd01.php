@@ -14,12 +14,12 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"></span><br />
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3172/1.png" title="" alt="demo.jpg"/><br />
+<img src="http://static.mingyizhudao.com/147010338967556" title="" alt="demo.jpg"/><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">湖南省医学会泌尿外科学专业委员会主委、中南大学首届“湘雅名医”、湘雅医院泌尿外科主任齐琳教授获评中国泌尿外科界最高荣誉——“2015年吴阶平泌尿外科医学奖”。</span>
 </p>
 <p>
-	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3172/2.png" title="" alt="demo.jpg"/><br />
+	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147010339074181" title="" alt="demo.jpg"/><br />
 </span>
 </p>
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">湖南省医学会泌尿外科学专业委员会主委、中南大学首届“湘雅名医”、湘雅医院泌尿外科主任齐琳教授获评中国泌尿外科界最高荣誉——“2015年吴阶平泌尿外科医学奖”。</span><br />
@@ -67,10 +67,3 @@ Research等权威杂志上，被国际公认并多次引用。不仅如此，齐
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

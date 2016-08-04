@@ -16,7 +16,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <br />
 <br />
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2904/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003098105171" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">优医汇</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">红房子丁昂乳腺外科工作室</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">例教职员工增加了一次妇科体检，徐老师和好几个同事都检出有小叶增生，因为最近两年一直看到都市女性要注意预防乳腺癌的宣传，她颇为担心，怕自己的小叶增生会发生癌变小叶增生不是一种疾病</span><br />
@@ -29,7 +29,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">40岁以下的女性，由于其乳腺组织致密，X光射线对其穿透力不够，年轻女性中大约有30%～40%的乳腺癌患者很难借助X光射线查出病灶。因此，邵志敏教授希望，这批高危人群能将乳房B超检查作为早期乳腺癌筛查的首选项目。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">红房子丁昂乳腺外科工作室</span><br />
 <p>
-	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2904/2.png" title="" alt="demo.jpg"/></span>
+	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147003098340060" title="" alt="demo.jpg"/></span>
 </p>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">本诊所从事乳腺外科临床工作10余年，对各种乳腺疾病的诊断和治疗具有丰富的临床经验。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">团队医生 &nbsp; &nbsp; &nbsp; &nbsp;</span><br />
@@ -58,9 +58,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
     </div>
 </div>
 
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

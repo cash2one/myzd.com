@@ -53,13 +53,13 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 同时史建刚主任表示：我们了解到他们一家的情况之后，觉得他们非常的不容易，经请示院领导后所以决定对其减免医疗费用。”史主任还表示：上海长征医院一直非常重视对脊髓栓系综合征患者的援助，并且许多经治患者的家长团体正积极筹备建立“长征医院脊髓栓系综合征基金”，该基金会的成立是为了减轻贫困脊髓栓系综合征患者及其家庭的经济压力，得到正规权威的治疗，摆脱疾病的困扰。脊髓栓系综合征病友经申请可领取援助基金用于脊髓栓系综合征的治疗。</span>
 </p>
 <p>
-	<span style="font-size:12px;line-height:1.5;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2928/1.png" title="" alt="demo.jpg"/></span>
+	<span style="font-size:12px;line-height:1.5;"><img src="http://static.mingyizhudao.com/147003297338116" title="" alt="demo.jpg"/></span>
 </p>
 <p>
 	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">图为术后小陈在医院恢复良好</span>
 </p>
 <p>
-	<span><span style="line-height:25.454544067382813px;"><img src="<?php echo $baseUrlImage; ?>article/doctor/2928/2.png" title="" alt="demo.jpg"/></span></span>
+	<span><span style="line-height:25.454544067382813px;"><img src="http://static.mingyizhudao.com/147003297563368" title="" alt="demo.jpg"/></span></span>
 </p>
 <p>
 	<span><span style="line-height:25.454544067382813px;"><br />
@@ -76,10 +76,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

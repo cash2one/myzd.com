@@ -17,7 +17,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">肢端肥大症是一种不常见疾病，原因是体内产生过多生长激素导致多种症状缓慢进展。最明显的症状是手脚变大和脸部轮廓突出。病因通常是生长于垂体的非癌性肿瘤。治疗方法包括手术切除肿瘤、药物抑制生长激素释放或阻止生长激素的影响。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">&nbsp;</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">了解垂体和生长激素</span><br />
-<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">垂体位于大脑的底部。它产生包括生长激素在内的几种激素。(激素是一种化学物质，在身体的一个部位产生后，进入血液，在身体的其他部<img src="<?php echo $baseUrlImage; ?>article/doctor/2937/1.png" title="" alt="demo.jpg"/>位产生作用。)</span><br />
+<span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">垂体位于大脑的底部。它产生包括生长激素在内的几种激素。(激素是一种化学物质，在身体的一个部位产生后，进入血液，在身体的其他部<img src="http://static.mingyizhudao.com/147003481554166" title="" alt="demo.jpg"/>位产生作用。)</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">生长激素(GH)产生的量，可以由大脑中的一小部分即下丘脑产生的其他激素部分控制。下丘脑恰好位于垂体上方，它产生生长激素释放激素(GHRH)，在血液中生长激素水平低时，刺激垂体产生生长激素。其产生的另一种激素即生长抑素，在血液中生长激素水平高时，则阻止垂体产生生长激素。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">生长激素有助于刺激各种身体组织的生长和修复。在儿童时期需要其帮助孩子成长。生长激素直接作用于某些组织。它还能刺激肝脏产生另一种激素称为胰岛素样生长因子- 1(IGF- 1)。许多生长激素的作用实际上是IGF-1作用于体内各种细胞产生的。</span><br />
 <span style="line-height:2;font-family:Microsoft YaHei;font-size:14px;">&nbsp;</span><br />
@@ -116,10 +116,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

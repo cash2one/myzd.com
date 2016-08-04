@@ -38,16 +38,16 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><br />
 </span>
 </p>
-<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3081/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147004268900811" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;</span><span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">张旭教授致欢迎辞</span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;</span><br />
-<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3081/2.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"><img src="http://static.mingyizhudao.com/147004268927313" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;</span><span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">解放军总医院泌尿外科主任张旭教授接受专访</span><br />
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">&nbsp;</span>
 </p>
 <p>
-	<img src="<?php echo $baseUrlImage; ?>article/doctor/3081/3.png" title="" alt="demo.jpg"/>
+	<img src="http://static.mingyizhudao.com/147004268950599" title="" alt="demo.jpg"/>
 </p>
 <p>
 	<span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;"></span><span style="font-size:14px;font-family:Microsoft YaHei;line-height:2;">解放军总医院泌尿外科主任医师张旭</span>
@@ -100,9 +100,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
     </div>
 </div>
 
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

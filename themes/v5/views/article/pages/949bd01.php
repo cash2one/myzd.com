@@ -16,7 +16,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<br />
 </div>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">马潞林， 男，1961年生，主任医师、教授、博士生导师，现任北京大学第三医院泌尿外科主任。现任中华医学会泌尿外科分会常委，肾脏移植学组组长兼腔道学组委员， 中国医师协会泌尿外科分会委员,中华器官移植委员会北京分会委员，中华泌尿外科委员会北京分会常委，《中华泌尿外科杂志》、《中华外科杂志(电子版)》常 务编委，《中国微创杂志》、《中国组织工程研究与临床康复》和《世界泌尿肿瘤杂志》编委，《中华外科杂志》特约审稿人，北京市及海淀区医疗事故技术鉴定专 家。主要擅长于泌尿外科疑难手术、肾移植和腹腔镜手术。包括腹腔镜下前列腺癌根治，膀胱癌根治，活体供肾切取，肾部分切除术，肾癌合并腔静脉癌栓，后腹膜 淋巴结清扫术等。熟悉取肾、修肾、肾移植和术后免疫抑制剂的合理应用。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/949/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147010648973757" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 各种肾脏疾病引起慢性肾功能衰竭导致尿毒症发生，经一般治疗无效，都会考虑做肾移植来挽救生命。肾移植手术的成功率如何?肾衰患者该如何选择治疗呢?</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<strong>一、是不是所有的肾病都会发展成尿毒症呢?</strong></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"> 主持人：有一位网友提出，慢性的肾功能不全和慢性的肾衰竭是一个概念吗?</span><br />
@@ -66,10 +66,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

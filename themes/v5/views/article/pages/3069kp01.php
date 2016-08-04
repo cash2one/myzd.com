@@ -23,7 +23,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">广州市妇女儿童医疗中心、广州市儿童医院眼科主任项道满</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">在为病人进行眼底激光治疗</span><br />
 <p>
-	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3069/1.png" title="" alt="demo.jpg"/>
+	<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147004105310064" title="" alt="demo.jpg"/>
 </span>
 </p>
 <p>
@@ -46,10 +46,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

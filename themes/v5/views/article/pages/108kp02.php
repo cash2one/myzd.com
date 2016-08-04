@@ -42,10 +42,10 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </span>
 </p>
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">我科特色：腹腔镜胆囊切除术已是胆囊结石治疗的金标准，我科每年实行腹腔镜胆囊切除术约2000例，大部分采用当天入院当天手术，次日出院的日间手术模式。对于胆囊息肉患者，我们制定了严格的鉴别筛查和随访流程，确保在最恰当的时机进行手术治疗。对于合适病例我们还进行经脐单孔腹腔镜胆囊切除。B超定位下的经皮胆囊穿刺（PTGBD）也是我科的特色之一。对于无法耐受手术或胆囊炎症状严重的患者，可先行PTGBD穿刺控制胆囊急性炎症，待炎症消退后再行腹腔镜胆囊切除术。</span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/108/4.png" title="" alt="demo.jpg"/></span><br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/108/5.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147001708766259"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/147001729876614"/></span><br />
 <p>
-	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="<?php echo $baseUrlImage; ?>article/doctor/108/6.png" title="" alt="demo.jpg"/></span>
+	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp;<img src="http://static.mingyizhudao.com/147001804698086"/></span>
 </p>
 <p>
 	<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><br />
@@ -67,9 +67,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
     </div>
 </div>
 
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/108/pic2.png" title="" alt="demo.jpg"/>
-
--->

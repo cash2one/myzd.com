@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 	<span style="font-family:'Microsoft YaHei';font-size:18px;line-height:2;"><strong>达芬奇手术机器人的第555场胃肠癌手术</strong></span>
 </div>
 <br />
-<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/3125/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;"><img src="http://static.mingyizhudao.com/14700440488467" title="" alt="demo.jpg"/></span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">6月19日，重庆西南医院外科手术室，该院医生正在进行达芬奇手术机器人的第555例胃肠癌根治手术。本组图片由李相博拍摄</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 新华网重庆频道6月20日电（李相博）19日上午，56岁的老赵躺在西南医院外科楼11号手术室的床上，准备接受一场手术治疗。不久前，腹部持续出现疼痛的他被确诊患有胃癌。</span><br />
 <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">&nbsp; &nbsp; 相比其他手术室的忙碌景象，11号手术室稍显“冷清”，偌大的手术室里，只有一名助理医生和护士站在手术台两边，主刀医生在坐在手术台不远处的机器边，埋头观看显示屏，双手握住摇杆不停舞动，还有一名护士在旁登记术前麻醉信息。另一个不同的是，手术台边，一台接近两米、名为达芬奇手术机器人的“傢伙”不时地挥动着 “手臂”。</span><br />
@@ -38,10 +38,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

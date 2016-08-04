@@ -13,7 +13,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 </div>
 <br />
 <br />
-<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="<?php echo $baseUrlImage; ?>article/doctor/130/1.png" title="" alt="demo.jpg"/></span><br />
+<span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"><img src="http://static.mingyizhudao.com/147001970005413"/></span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;"> 李世亭反复强调，手术没有患者想象的那么恐怖。身体周刊记者 张新燕 图</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">李世亭自读医以来，一直在与“大脑”打交道。人体一共有十二对颅神经，与人的一举一动息息相关。这十二对颅神经牵扯到的疾病种类繁多，如今最让人们为之困扰的就是三叉神经痛和面肌痉挛。由于科普不足及各地医疗水平的参差不齐，很多患者绕了一大圈才得到适当的治疗。</span><br />
 <span style="font-family:'Microsoft YaHei';font-size:14px;line-height:2;">李世亭</span><br />
@@ -82,10 +82,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->

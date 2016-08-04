@@ -15,7 +15,7 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
 <p>
 	<br />
 </p>
-<span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"><img src="<?php echo $baseUrlImage; ?>article/doctor/3073/1.png" title="" alt="demo.jpg"/>
+<span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"><img src="http://static.mingyizhudao.com/147004181216417" title="" alt="demo.jpg"/>
 </span><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">打雷闪电对癫痫病患者是一种剧烈的感官刺激，容易引起癫痫发作</span><br />
 <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';"> 图/陈秋明</span><br />
@@ -61,10 +61,3 @@ $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
         </div>
     </div>
 </div>
-
-<!--
-//图片改为
-//										                                        /医生id/文件名.后缀名
-<img src="<?php echo $baseUrlImage; ?>article/doctor/3148/pic2.png" title="" alt="demo.jpg"/>
-
--->
