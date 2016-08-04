@@ -24,7 +24,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
             <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">7月11日晚八时许，名医主刀大客户关系部的李洁看到小芳的朋友圈里，发布一条被蜱虫袭击的小童（化名）的求救信息。身为五岁女儿妈妈的李洁看到这个消息，可真是焦急万分。她能体会孩子家长的心情，她更能明白孩子的无助和惧怕。于是她最快的速度发布消息在名医主刀大家庭群里，小伙伴们群策群力，第一时间帮助小朋友联系到了南京医科大学附属逸夫医院急诊科主任唐代彬。非常万幸，在大家一同努力中，被蜱虫袭击的小朋友总算安然无恙了。</span><br /></div>
             <br />
             <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">我们来听听小芳主播对事件的描述：</span><br /></br>
-             <div style="text-align:center;"><video style="width:500px;" id="vedio-content" class="video-js " src="<?php echo $urlVideo; ?>event/stories/tick.mp4"  data-setup="{}" type="video/mp4" controls></video></div><br />
+             <div style="text-align:center;"><video style="width:500px;" id="vedio-content" class="video-js " src="http://static.mingyizhudao.com/pc/tick.mp4"  data-setup="{}" type="video/mp4" controls></video></div><br />
             <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">小芳何许人？</span><br />
             <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">南京经济广播电台《小芳健康网》主播。小芳属于专家型主持人，原本就是医生出身的她，既能深入临床一线，了解医学进展，把对生命的感悟，融入在对每一位听众的帮助之中，驾起了医患专家沟通的桥梁，节目的收听率与影响力一直名列前茅，成为南京广播双十佳栏目。小芳还担任江苏省医学会、江苏省医师协会科普与健康促进分会委员兼秘书。无怪乎，大家都这么亲切的称呼她“要健康，找小芳”呢。</span><br /></div>
             <div  style="text-align:center;"><img  style="height:400px;"  src="http://static.mingyizhudao.com/146882274378980"></div>

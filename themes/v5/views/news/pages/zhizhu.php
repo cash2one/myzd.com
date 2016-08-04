@@ -85,7 +85,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
                 </div>
                 </p>
                 <div class="vedio-area text-center">
-                    <video src="<?php echo $urlVideo; ?>event/stories/event160601.mp4"  data-setup="{}" type="video/mp4" controls></video>
+                    <video src="http://static.mingyizhudao.com/pc/event160601.mp4"  data-setup="{}" type="video/mp4" controls></video>
                 </div>
             </div>
             <?php $this->renderPartial('//news/pages/_storiesmenu', $data = 'mingyizhudao'); ?>

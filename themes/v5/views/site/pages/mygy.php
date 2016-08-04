@@ -24,7 +24,7 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
             <div class="row">
                 <div class="col-md-7 mt40">
                     <div class="vedio-area">
-                        <video id="my-video" class="video-js vedio-content" src="<?php echo $urlVideo; ?>event/mygy/mygy.mp4"  data-setup="{}" type="video/mp4" controls></video>
+                        <video id="my-video" class="video-js vedio-content" src="http://static.mingyizhudao.com/pc/mygy.mp4"  data-setup="{}" type="video/mp4" controls></video>
                     </div>
                 </div>
                 <div class="col-md-5 mt40">

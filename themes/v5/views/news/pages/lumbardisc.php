@@ -68,7 +68,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
                     <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">术后，曹先生的女儿在病房里给我们留下了这段视频，视频中，曹先生的女儿对名医主刀提供的帮助表示感谢，并向积水潭医院的刘主任表示了衷心的谢意。</span>
                 </p>
                 <div class="vedio-area text-center">
-                    <video style="height:400px;width:225px;" id="my-video" class="video-js vedio-content" src="<?php echo $urlVideo; ?>event/stories/eventLumbarDisc.mp4"  data-setup="{}" type="video/mp4" controls></video>
+                    <video style="height:400px;width:225px;" id="my-video" class="video-js vedio-content" src="http://static.mingyizhudao.com/pc/eventLumbarDisc.mp4"  data-setup="{}" type="video/mp4" controls></video>
                 </div>
                 <p class="MsoNormal" style="text-indent:21.0pt;">
                     <span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">俗话说</span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">“</span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">腰疼不是病，疼起来要人命</span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">”</span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">，可是真正经历过这种痛苦的曹先生说：</span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">“</span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">谁说腰疼不是病？</span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">”</span><span style="font-size:14px;font-family:'Microsoft YaHei';line-height:2;">既然是病，就找名医主刀吧！</span>

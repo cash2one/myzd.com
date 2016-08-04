@@ -79,7 +79,7 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
                             </div>
                             <div class="col-md-8">
                                 <div class="vedio-area">
-                                    <video id="my-video" class="video-js vedio-content" src="<?php echo $urlVideo; ?>event/stories/event160322.mp4"  data-setup="{}" type="video/mp4" controls></video>
+                                    <video id="my-video" class="video-js vedio-content" src="http://static.mingyizhudao.com/pc/event160322.mp4"  data-setup="{}" type="video/mp4" controls></video>
                                 </div>
                             </div>
                         </div>

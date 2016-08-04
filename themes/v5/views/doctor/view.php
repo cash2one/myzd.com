@@ -14,7 +14,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
 <div class="contaier-fluid bg-green">
     <div class="container">
         <div class="crumbs-doctor">
-                        <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <a href="<?php echo $referer; ?>">找医生</a> > <?php echo $doctor->name; ?>
+            <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <a href="<?php echo $referer; ?>">找名医</a> > <?php echo $doctor->name; ?>
         </div>
     </div>
 </div>
@@ -140,17 +140,17 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                         <!--                                <div class="pl30">
                                                             <div class="media">
                                                                 <div class="media-left media-middle pull-left">
-                                                                    <img class="media-object team-img" src="<?php //echo $member->imageUrl;                    ?>" alt="<?php //echo $member->name;                    ?>">
+                                                                    <img class="media-object team-img" src="<?php //echo $member->imageUrl;                     ?>" alt="<?php //echo $member->name;                     ?>">
                                                                 </div>
                                                                 <div class="media-body pl10">
-                                                                    <div class="media-heading mt15"><?php //echo $member->name;                    ?><span class="color-gray ml20"><?php //echo $member->mTitle;                    ?></span><span class="color-gray ml20"><?php //echo $member->aTitle;                    ?></span></div>
+                                                                    <div class="media-heading mt15"><?php //echo $member->name;                     ?><span class="color-gray ml20"><?php //echo $member->mTitle;                     ?></span><span class="color-gray ml20"><?php //echo $member->aTitle;                     ?></span></div>
                                                                     <div class="mt15">
                         <?php //echo $member->hpDeptName == null ? '' : '<span class="color-25aea6 text-center">' . $member->hpDeptName . '</span>'; ?>
                                                                     </div>
-                                                                    <div class="mt15"><?php //echo $doctor->hospitalName;                    ?></div>
+                                                                    <div class="mt15"><?php //echo $doctor->hospitalName;                     ?></div>
                                                                 </div>
                                                             </div>
-                                                            <div class="expert-desc mt15 mb40"><?php //echo $member->description == null ? '' : $member->description;                    ?></div>
+                                                            <div class="expert-desc mt15 mb40"><?php //echo $member->description == null ? '' : $member->description;                     ?></div>
                                                         </div>-->
                         <?php
 //                            }
@@ -371,7 +371,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
 //        }
 //        urlCondition = urlCondition.substring(1);
 //        urlCondition = "?" + urlCondition;
-//        var newUrl = '<?php //echo $urlDoctor;                                           ?>' + $doctorId + urlCondition;
+//        var newUrl = '<?php //echo $urlDoctor;                                            ?>' + $doctorId + urlCondition;
 //        history.pushState(stateObject, title, newUrl);
     }
 </script>
