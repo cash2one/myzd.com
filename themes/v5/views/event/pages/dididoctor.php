@@ -5,13 +5,13 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
 <div class="container-fluid">
     <div class="row">
         <div class="header-img">
-            <img src="<?php echo $urlResImage; ?>event/dididoctor/dididoctor-header.jpg" />
+            <img src="http://static.mingyizhudao.com/14702928558196" />
         </div>
     </div>
 </div>
 <div class="container">
     <div>
-        <img src="<?php echo $urlResImage; ?>event/dididoctor/dididoctor-header-sm.jpg"/>
+        <img src="http://static.mingyizhudao.com/147029285704676"/>
     </div>
 </div>
 <div class="container">

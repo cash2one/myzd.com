@@ -9,7 +9,7 @@
 </section>
 	<div class="row">
 		<div class="col-sm-12">
-			<img class="img-responsive" src="http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static/liubaochi-poster01.jpg" width="100%" >
+			<img class="img-responsive" src="http://static.mingyizhudao.com/147029233064456" width="100%" >
 		</div>
 	</div>
 <section class="page-container">
@@ -23,7 +23,7 @@
                             肠结核穿孔并重度脓毒症的患者，把公共卫生临床中心外科逐渐发展成了具有诊治感染疾病相关外科的特色专科。2011年获中国中西医结合学会灾害医学专业委员会颁发
                             “十一五灾害医学突出贡献奖”。2012年到同济大学附属上海东方医院兼职急诊医学部常务副主任。</p>
                         <div>
-                            <img class="img-responsive center-block" src="http://mingyihz.oss-cn-hangzhou.aliyuncs.com/static/liubaochi-poster02.jpg" width="50%" >
+                            <img class="img-responsive center-block" src="http://static.mingyizhudao.com/147029236046646" width="50%" >
                         </div>
                         <div class="heading border-bottom clearfix">
                             <h4 class="strong color-blue">肝硬化治疗难题：</h4>

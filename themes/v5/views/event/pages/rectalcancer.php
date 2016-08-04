@@ -1,5 +1,4 @@
 <?php
-$urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-tumor100.min.css");
 ?>
 <style>
@@ -13,7 +12,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
 <div class="container-fluid">
     <div class="row">
         <div class="">
-            <img src="<?php echo $urlResImage ?>event/rectalcancer-header.jpg" />
+            <img src="http://static.mingyizhudao.com/147029155666260" />
         </div>
     </div>
 </div>

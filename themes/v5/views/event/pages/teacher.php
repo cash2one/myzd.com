@@ -17,7 +17,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
 <div class="container-fluid">
     <div class="row">
         <div class="teacher-header">
-            <img src="<?php echo $urlResImage ?>event/teacher-header.jpg"/>
+            <img src="http://static.mingyizhudao.com/14702931012067"/>
         </div>
     </div>
 </div>

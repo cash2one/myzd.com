@@ -16,11 +16,11 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                 <div class="col-md-8">
                     <div class="imgbxslider">
                         <ul class="bxslider">
-                            <li><img src="<?php echo $urlResImage; ?>event/awards/01.jpg"/></li>
-                            <li><img src="<?php echo $urlResImage; ?>event/awards/02.jpg"/></li>
-                            <li><img src="<?php echo $urlResImage; ?>event/awards/03.jpg"/></li>
-                            <li><img src="<?php echo $urlResImage; ?>event/awards/04.jpg"/></li>
-                            <li><img src="<?php echo $urlResImage; ?>event/awards/05.jpg"/></li>
+                            <li><img src="http://static.mingyizhudao.com/14702925325620"/></li>
+                            <li><img src="http://static.mingyizhudao.com/14702924200853"/></li>
+                            <li><img src="http://static.mingyizhudao.com/147029254252860"/></li>
+                            <li><img src="http://static.mingyizhudao.com/147029254940175"/></li>
+                            <li><img src="http://static.mingyizhudao.com/147029256007646"/></li>
                         </ul>
                     </div>
                 </div>

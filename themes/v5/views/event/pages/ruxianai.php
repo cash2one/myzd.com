@@ -1,11 +1,10 @@
 <?php
-$urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-ruxianai100.min.css");
 ?>
 <div class="">
     <div class="">
         <div class="header-img">
-            <img src="<?php echo $urlResImage; ?>event/ruxianai/ruxianai-header.jpg" />
+            <img src="http://static.mingyizhudao.com/147029172648876" />
         </div>
     </div>
     <div class="bg-pink"></div>
@@ -129,7 +128,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                     <div class="row">
                         <div class="col-sm-4 doctor">
                             <div>
-                                <div><img src="<?php echo $urlResImage; ?>event/ruxianai/0173.jpg"/></div>
+                                <div><img src="http://static.mingyizhudao.com/147029117847877"/></div>
                             </div>
                             <div class="text-center">
                                 <span>邹强</span>&nbsp;&nbsp;&nbsp;<span class="title">主任医师 | 教授</span>
@@ -148,7 +147,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                         </div>
                         <div class="col-sm-4 doctor">
                             <div>
-                                <div><img src="<?php echo $urlResImage; ?>event/ruxianai/0219.jpg"/></div>
+                                <div><img src="http://static.mingyizhudao.com/147029118020867"/></div>
                             </div>
                             <div class="text-center">
                                 <span>陆劲松</span>&nbsp;&nbsp;&nbsp;<span class="title">主任医师 | 教授</span>
@@ -165,7 +164,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                         </div>
                         <div class="col-sm-4 doctor">
                             <div>
-                                <div><img src="<?php echo $urlResImage; ?>event/ruxianai/0292.jpg"/></div>
+                                <div><img src="http://static.mingyizhudao.com/147029118082671"/></div>
                             </div>
                             <div class="text-center">
                                 <span>李鹤成</span>&nbsp;&nbsp;&nbsp;<span class="title">主任医师 | 教授</span>

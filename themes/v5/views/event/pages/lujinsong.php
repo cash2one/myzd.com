@@ -5,7 +5,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
 <section id="body">
     <div class="container-fluid">
         <div class="row">
-            <img src="<?php echo $urlResImage; ?>event/lujinsong/header.jpg">
+            <img src="http://static.mingyizhudao.com/147029145529648">
         </div>
     </div>
     <div class="container-fluid bg-body-lu">

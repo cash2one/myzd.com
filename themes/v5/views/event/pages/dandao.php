@@ -25,7 +25,7 @@ Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/hos
             </div>
             <div class="steps">
                 <div class="steps-img hidden-xs">
-                    <img src="images/general/operation-step.png" alt=""/>
+<!--                    <img src="images/general/operation-step.png" alt=""/>-->
                 </div>
                 <ul>
                     <li class="">
