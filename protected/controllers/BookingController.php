@@ -68,7 +68,7 @@ class BookingController extends WebsiteController {
      */
     public function _paycost($id) {
         $cri = new CDbCriteria();
-        $cri->condition = 'bk_id = :bk_id and is_paid = 1';
+        $cri->condition = 'bk_id = :bk_id and is_paid = 1 and bk_type = 1';
         $cri->params = array(':bk_id' => $id);
         $salesOrder_res = SalesOrder::model()->findAll($cri);
         $data= array();
