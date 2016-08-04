@@ -1,7 +1,6 @@
 <?php
 $this->htmlMetaKeywords = '名医主刀，苏舒，福布斯，青年创业者';
 $this->htmlMetaDescription = '2016年2月，福布斯发布“亚洲30位30岁以下年轻领袖（30 under 30）”榜单，涉及多个领域。榜单评选的是年龄在30岁以下的亚洲青年才俊';
-$urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <style>
     .news-content{border: 1px solid #e4e4e4;font-size: 16px;padding-left: 30px;padding-right: 30px;}
@@ -29,7 +28,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">28岁的苏舒出生于医疗世家，曾就读于斯坦福大学。他希望将名医主刀打造成能吸引最好的医生，能造福更多患者的平台，并进一步改善中国的医疗现状和就医体系。目前，名医主刀是国内最大的移动医疗手术平台。2015年，名医主刀先后获得真格基金、复星医药的投资。</span>
                 </p>
                 <p style="line-height: 2em;">
-                    <span style="font-family: Calibri; font-size: 14px;">&nbsp;&nbsp;<img src="<?php echo $urlResImage;?>news/forbes1.jpg" title="" alt=""/></span>
+                    <span style="font-family: Calibri; font-size: 14px;">&nbsp;&nbsp;<img src="http://static.mingyizhudao.com/147021422480232" title="" alt=""/></span>
                 </p>
                 <p style="line-height: 2em;">
                     <span style="font-family: 微软雅黑,Microsoft YaHei;"><span style="font-size: 14px;">福布斯亚洲高级网络编辑卫华娜在接受媒体采访时表示，这份榜单是“以各领域的创新精神及领导力为标准”，希望从中找到“未来5年</span><span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">或10年后，成为下一位比尔•盖茨或马克•扎克伯格的人才”。对于入选，苏舒表示会再接再厉，将平台做大做强，造福更多的患者。</span></span>
@@ -53,7 +52,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">名医主刀的这一模式正好契合当下国家正在推行的多点执业以及分级诊疗政策，可谓天时地利人和：对医生而言，通过平台可以充分利用自己的空余时间，提升职业价值；对患者而言，通过平台可以接触到更合适的医生，并减少手术等待时间；对全社会而言，平台优化了医疗资源，进一步满足了“好看病，看好病”的切实需求。名医主刀实现了多方共赢。</span><span style="font-family: Calibri; font-size: 14px;">&nbsp;</span>
                 </p>
                 <p style="line-height: 2em;">
-                    <span style="font-family: Calibri; font-size: 14px;"><img src="<?php echo $urlResImage;?>news/forbes2.jpg" title="" alt=""/></span>
+                    <span style="font-family: Calibri; font-size: 14px;"><img src="http://static.mingyizhudao.com/147021425195759" title="" alt=""/></span>
                 </p>
                 <h2>
                     <span style="font-family: 微软雅黑,Microsoft YaHei; font-size: 14px;">踏准风口，深受业界关注</span>

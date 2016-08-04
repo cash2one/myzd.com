@@ -188,6 +188,20 @@ $urlReturn = '';
                                 </div>
                             </a>
                         </div>
+                        <div class="col-md-4 mt15">
+                            <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'xiaozhengzheng')); ?>">
+                                <div class="every-story">                           
+                                    <div><img src="http://static.mingyizhudao.com/14701232654586" alt="小郑郑" title="小郑郑"/></div>
+                                    <div class="story-content">
+                                        <div class="text14 mt10 ">疾病名称：双性儿</div>
+                                        <div class="introduce mt20">
+                                            <div>国内移动医疗手术平台名医主刀在人民大会堂发起了“共享名医资源·共铸健康中国”公益手术捐助活动，当天便募集了365台公益手术。这也让媒体了解到了名医...</div>
+                                        </div>
+                                        <div class="learn-more">查看详情</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 ztc-right-area">

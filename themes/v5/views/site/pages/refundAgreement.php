@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . "/css/refundAgreement.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/refundAgreement.min.css");
 ?>
 <div id="refundAgreement" class="container">
     <div class="head-title">名医主刀预约服务退款协议</div>
