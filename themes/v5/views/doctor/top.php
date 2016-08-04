@@ -253,18 +253,18 @@ $page = Yii::app()->request->getQuery('page', '');
     }
     //设置地址栏信息
     function setLocationUrl() {
-        var stateObject = {};
-        var title = "";
-        var urlCondition = '';
-        for ($key in condition) {
-            if (condition[$key] && condition[$key] !== "") {
-                urlCondition += "&" + $key + "=" + condition[$key];
-            }
-        }
-        urlCondition = urlCondition.substring(1);
-        urlCondition = "?" + urlCondition;
-        var newUrl = "<?php echo $urlDoctorSearch; ?>" + urlCondition;
-        history.pushState(stateObject, title, newUrl);
+//        var stateObject = {};
+//        var title = "";
+//        var urlCondition = '';
+//        for ($key in condition) {
+//            if (condition[$key] && condition[$key] !== "") {
+//                urlCondition += "&" + $key + "=" + condition[$key];
+//            }
+//        }
+//        urlCondition = urlCondition.substring(1);
+//        urlCondition = "?" + urlCondition;
+//        var newUrl = "<?php echo $urlDoctorSearch; ?>" + urlCondition;
+//        history.pushState(stateObject, title, newUrl);
     }
     function setCityActive() {
         $('.city-list a').removeClass('active');
