@@ -18,7 +18,7 @@
 //$this->show_header = false;
 //$this->show_footer = false;
 $this->show_baidushangqiao = false;
-$payUrl = $this->createAbsoluteUrl('payment/doPingxxPay');
+$payUrl = $this->createUrl('payment/doPingxxPay');
 // $refUrl = $this->createAbsoluteUrl('order/view');
 $refUrl = $this->createAbsoluteUrl('order/view',array('refNo'=>$model->ref_no));
 
