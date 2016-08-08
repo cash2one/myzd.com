@@ -31,7 +31,7 @@ $bookinglist = $data->results;
                     <thead>
                         <tr>
                             <td class="text-center">订单号</td>
-                            <td class="text-center">就诊人</td>
+                            <td class="text-center" style="width:20%;">就诊人</td>
                             <td class="text-center">意向就诊专家</td>
                             <td class="pad8">状态</td>
                             <td class="text-center">操作</td>
