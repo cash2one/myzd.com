@@ -56,7 +56,7 @@ class HospitalController extends WebsiteController {
         $with = array('hospitalCity', 'hospitalDepartments' => array('on' => 'hospitalDepartments.is_show=1'));
         $ihospital = $hospitalMgr->loadIHospitalById($id, $with);
         $departmentInfo=HospitalDepartment::model()->getById($deptId);
-        if (is_null($ihospital) || is_null($departmentInfo)) {
+        if (is_null($ihospital)) {
             $this->throwPageNotFoundException();
             //header("HTTP/1.1 404 Not Found");
         }
