@@ -61,6 +61,9 @@ class DoctorController extends WebsiteController {
            $cityName=$cityInfo['name_cn'];
            $seoKey.=$cityName;
         }
+        else{
+            $seoKey.="全国";
+        }
         if(array_key_exists("disease_sub_category",$value)){
            $diseaseCategoryInfo=DiseaseCategory::model()->getByAttributes(array("sub_cat_id"=>$value['disease_sub_category'],"app_version"=>7));
            $diseaseCategoryName=$diseaseCategoryInfo['sub_cat_name'];
