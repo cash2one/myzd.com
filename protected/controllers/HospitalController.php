@@ -149,8 +149,8 @@ class HospitalController extends WebsiteController {
         $values = $_GET;
         $apiService = new ApiViewHospitalSearchV7($values);
         $output = $apiService->loadApiViewData();
-        $referer=$_SERVER['HTTP_REFERER'];
-        $this->render('top',array("data"=>$output,"referer"=>$referer));
+        //$referer=$_SERVER['HTTP_REFERER'];
+        $this->render('top',array("data"=>$output));
     }
     
     public function actionDepartment() {
