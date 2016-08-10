@@ -44,17 +44,17 @@ class DoctorController extends WebsiteController {
 
     public function actionTop() {
         $value=$_GET;
-        if(strstr($_SERVER['REQUEST_URI'],"?")){
-            $flip = array_keys($value);
-            $url="/doctor-top";
-            $uriStr=$url."";
-            foreach($flip as $k=>$v ){
-                if($k<=count($value)){
-                    $uriStr.="-".$v."-".$value[$v];
-                }
-            }
-            $this->redirect($uriStr.".html");
-        }
+//        if(strstr($_SERVER['REQUEST_URI'],"?")){
+//            $flip = array_keys($value);
+//            $url="/doctor-top";
+//            $uriStr=$url."";
+//            foreach($flip as $k=>$v ){
+//                if($k<=count($value)){
+//                    $uriStr.="-".$v."-".$value[$v];
+//                }
+//            }
+//            $this->redirect($uriStr.".html");
+//        }
         $seoKey="";
         if(array_key_exists("city",$value)){
            $cityInfo=RegionCity::model()->getById($value['city']);
@@ -79,7 +79,10 @@ class DoctorController extends WebsiteController {
         $this->pageTitle=$seoKey."医生排行,哪个医生好,专家医生预约_名医主刀网";
         $this->htmlMetaKeywords="手术预约,找医生,网上预约医生";
         $this->htmlMetaDescription="名医主刀网为您提供".$seoKey."医生排行榜,手术预约,专家医生预约,哪个医生好等信息;帮助广大有手术需求的患者,在第一时间预约全国知名专家,安排入院手术。";
-        $this->render('top');
+        $values = $_GET;
+        $apiService = new ApiViewDoctorSearchV7($values);
+        $output = $apiService->loadApiViewData();
+        $this->render('top',array('data'=>$output));
     }
 
     public function actionFindexpert() {
@@ -356,4 +359,6 @@ class DoctorController extends WebsiteController {
         $output = $apisvc->loadApiViewData();
         $this->renderJsonOutput($output);
     }
+    
+    
 }

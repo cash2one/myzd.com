@@ -41,17 +41,17 @@ class HospitalController extends WebsiteController {
     public function actionView($id,$deptId=0) {
         //$ifaculty = $this->loadIFaculty($id);
         $value=$_GET;
-        if(strstr($_SERVER['REQUEST_URI'],"?")){
-            $flip = array_keys($value);
-            $url="/hospital-view";
-            $uriStr=$url."";
-            foreach($flip as $k=>$v ){
-                if($k<=count($value)){
-                    $uriStr.="-".$v."-".$value[$v];
-                }
-            }
-            $this->redirect($uriStr.".html");
-        }
+//        if(strstr($_SERVER['REQUEST_URI'],"?")){
+//            $flip = array_keys($value);
+//            $url="/hospital-view";
+//            $uriStr=$url."";
+//            foreach($flip as $k=>$v ){
+//                if($k<=count($value)){
+//                    $uriStr.="-".$v."-".$value[$v];
+//                }
+//            }
+//            $this->redirect($uriStr.".html");
+//        }
         $hospitalMgr = new HospitalManager();
         $with = array('hospitalCity', 'hospitalDepartments' => array('on' => 'hospitalDepartments.is_show=1'));
         $ihospital = $hospitalMgr->loadIHospitalById($id, $with);
@@ -76,17 +76,17 @@ class HospitalController extends WebsiteController {
     public function actionView2($id,$deptId=0) {
         //$ifaculty = $this->loadIFaculty($id);
         $value=$_GET;
-        if(strstr($_SERVER['REQUEST_URI'],"?")){
-            $flip = array_keys($value);
-            $url="/hospital-view2";
-            $uriStr=$url."";
-            foreach($flip as $k=>$v ){
-                if($k<=count($value)){
-                    $uriStr.="-".$v."-".$value[$v];
-                }
-            }
-            $this->redirect($uriStr.".html");
-        }
+//        if(strstr($_SERVER['REQUEST_URI'],"?")){
+//            $flip = array_keys($value);
+//            $url="/hospital-view2";
+//            $uriStr=$url."";
+//            foreach($flip as $k=>$v ){
+//                if($k<=count($value)){
+//                    $uriStr.="-".$v."-".$value[$v];
+//                }
+//            }
+//            $this->redirect($uriStr.".html");
+//        }
         $hospitalMgr = new HospitalManager();
         $with = array('hospitalCity', 'hospitalDepartments' => array('on' => 'hospitalDepartments.is_show=1'));
         $ihospital = $hospitalMgr->loadIHospitalById($id, $with);
@@ -114,17 +114,17 @@ class HospitalController extends WebsiteController {
 
     public function actionTop() {
         $value=$_GET;
-        if(strstr($_SERVER['REQUEST_URI'],"?")){
-            $flip = array_keys($value);
-            $url="/hospital-top";
-            $uriStr=$url."";
-            foreach($flip as $k=>$v ){
-                if($k<=count($value)){
-                    $uriStr.="-".$v."-".$value[$v];
-                }
-            }
-            $this->redirect($uriStr.".html");
-        }
+//        if(strstr($_SERVER['REQUEST_URI'],"?")){
+//            $flip = array_keys($value);
+//            $url="/hospital-top";
+//            $uriStr=$url."";
+//            foreach($flip as $k=>$v ){
+//                if($k<=count($value)){
+//                    $uriStr.="-".$v."-".$value[$v];
+//                }
+//            }
+//            $this->redirect($uriStr.".html");
+//        }
         $seoKey="";
         if(array_key_exists("city",$value)){
             $cityInfo=RegionCity::model()->getById($value['city']);
@@ -146,7 +146,11 @@ class HospitalController extends WebsiteController {
         $this->pageTitle=$seoKey."医院排行,哪家医院好,床位预约_名医主刀网";
         $this->htmlMetaKeywords="手术预约,找医院,床位预约";
         $this->htmlMetaDescription="名医主刀网为您提供".$seoKey."医院排行榜,医院大全,床位预约,哪家医院好等信息;帮助有手术需求的患者提供专业、高效、安全的手术医疗预约服务。";
-        $this->render('top');
+        $values = $_GET;
+        $apiService = new ApiViewHospitalSearchV7($values);
+        $output = $apiService->loadApiViewData();
+        $referer=$_SERVER['HTTP_REFERER'];
+        $this->render('top',array("data"=>$output,"referer"=>$referer));
     }
     
     public function actionDepartment() {
