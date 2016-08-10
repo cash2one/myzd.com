@@ -90,13 +90,13 @@ class HospitalController extends WebsiteController {
         $hospitalMgr = new HospitalManager();
         $with = array('hospitalCity', 'hospitalDepartments' => array('on' => 'hospitalDepartments.is_show=1'));
         $ihospital = $hospitalMgr->loadIHospitalById($id, $with);
+        $departmentInfo=HospitalDepartment::model()->getById($deptId);
         if($deptId!=0 && is_null($departmentInfo)){
             $this->throwPageNotFoundException();
         }
         if (is_null($ihospital)) {
             $this->throwPageNotFoundException();
         }
-        $departmentInfo=HospitalDepartment::model()->getById($deptId);
         $departmentName=$departmentInfo['name'];
         $seoKey=$ihospital->name.$departmentName;
         $this->pageTitle=$seoKey."手术预约,床位预约,专家预约,哪个医生好_名医主刀网";
