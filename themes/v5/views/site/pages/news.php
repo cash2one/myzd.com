@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/aboutus100.min.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/aboutus101.min.css");
 $urlNews = $this->createUrl('news/page', array("view" => ""));
 $this->pageTitle = '公司资讯_名医主刀网';
 $this->htmlMetaKeywords = '公司新闻,公司资讯';
@@ -38,6 +38,22 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                 </div>
                             </div>
                             <div class="col-md-10 col-sm-9 ml-50 news">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="http://static.mingyizhudao.com/147073121230756">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年8月
+                                            </div>
+                                            <div class="content">
+                                                <div>7月26日，大众日报与新兴互联网医疗平台“名医主刀”签署战略合作协议，迈出省级党媒与<span class="text21">“互联网+医疗”</span>平台的跨界联合的第一步。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>publicdaily" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/146883240108139">

@@ -43,23 +43,23 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
             <div class="mt40"><img src="http://static.mingyizhudao.com/146718242234110"><span class="mygy-small-title">免支付专家会诊费</span></div>
             <div class="row">
                 <div class="col-sm-7">
-                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '2926')) ?>" target="_blank">
+                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '1427')) ?>" target="_blank">
                         <div class="recommend-expert">
                             <div><img class="recommend-icon" src="http://static.mingyizhudao.com/146718266929627"></div>
                             <div class="pb10 expert-info">
                                 <div class="row">
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/60E4CB6914FEC60539366533DA8E64DA" alt="陈欣欣" title="陈欣欣"/></div></div>
+                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://static.mingyizhudao.com/147063704700297" alt="彭林" title="彭林"/></div></div>
                                     <div class="col-md-4 mt25 expertdesc">
-                                        <div><strong>陈欣欣</strong><span class="ml10">主任医师</span><span class="ml10">教授</span></div>
-                                        <div class="color-green mt10">心脏中心</div>
-                                        <div class="mt10">广州市妇女儿童医疗中心</div>
+                                        <div><strong>彭林</strong><span class="ml10">主任医师</span><span class="ml10">教授</span></div>
+                                        <div class="color-green mt10">血管甲状腺腹壁疝外科</div>
+                                        <div class="mt10">广东省人民医院</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="recommend-content">
-                                <div><strong>推荐理由</strong>：医学博士，心脏中心主任，广州市妇女儿童医疗中心主任医师。从事小儿先天性心脏病的外科治疗工作二十余年，具有丰富的临床经验。主刀的心脏病例超4000例，效果优良。陈医师帮助国内40多家医院开展复杂先心病外科治疗工作，其临床工作达到国内先进水平，部分技术居于国内领先地位。作为名医主刀的签约专家，陈医师积极投身公益事业，在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望让更多的宝宝拥有健康的心脏。。</div>
-                                <div class="mt20"><strong>擅长手术</strong>：大动脉转位、完全性房室通道、完全性肺静脉异位引流、肺动脉闭锁、主动脉缩窄及主动脉弓离断等重症先心病的外科治疗。</div>
+                                <div><strong>推荐理由</strong>：医学博士，教授，广东省人民医院血管甲状腺腹壁疝外科科室主任。彭医师从事普外科工作十余年，在普外领域具有深厚的理论基础和丰富的临床经验，曾参与多项国家和国际合作课题的研究工作，对血管外科、甲状腺外科、疝外科、肝胆胰脾外科、胃肠外科疾病的临床诊治和科研有较深造诣。为了更好的帮助患者，彭医师更投身公益事业，作为名医主刀的签约专家，彭医师在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，为有需要的患者免费救治。</div>
+                                <div class="mt20"><strong>擅长手术</strong>：乳主要从事血管外科、甲状腺疾病、疝及腹壁外科疾病的现代治疗和微创治疗，同时兼顾肝胆胰和胃肠疾病的治疗。</div>
                             </div>
                         </div>
                     </a>
