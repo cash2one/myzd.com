@@ -1,4 +1,5 @@
 <?php
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/mygy100.min.js', CClientScript::POS_END);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlCommonwealDoctors = $this->createUrl('api/commonwealdoctors');
 $urlDoctorView = $this->createUrl('doctor/view');
@@ -26,76 +27,6 @@ $this->checkVendor(AppLog::SITE_MYGY);
     $(document).ready(function () {
         var urlLoadCommonwealDoctors = '<?php echo $urlCommonwealDoctors; ?>';
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
-        ajaxLoadCommonwealDoctors(urlLoadCommonwealDoctors, urlDoctorView);
-        $('.dept').click(function () {
-            $('.dept').removeClass('active');
-            $(this).addClass('active');
-            $('.deptgroup').removeClass('active');
-            var groupId = '#' + $(this).attr('data-dept');
-            $(groupId).addClass('active');
-        });
-        $('.dept.all').click(function () {
-            $('.dept').removeClass('active');
-            $(this).addClass('active');
-            $('.deptgroup').addClass('active');
-        });
-    });
-    function ajaxLoadCommonwealDoctors(urlLoadCommonwealDoctors, urlDoctorView) {
-        $.ajax({
-            url: urlLoadCommonwealDoctors,
-            success: function (data) {
-                setCommonwealDoctors(data, urlDoctorView);
-            },
-            error: function (XmlHttpRequest, textStatus, errorThrown) {
-                console.log(XmlHttpRequest);
-                console.log(textStatus);
-                console.log(errorThrown);
-            }
-        });
-    }
-    function setCommonwealDoctors(data, urlDoctorView) {
-        if (data.results) {
-            var innerHtml = "";
-            innerHtml += "";
-            var page = data.results.page;
-            var x = 0;
-            for (x in page) {
-                var doctors = page[x];
-//                $('.mygyexpert-number').html(doctors.length);
-                var active = '';
-                if (x == 0) {
-                    active = 'active';
-                }
-                innerHtml += '<div class="deptgroup ' + active + '" id="group' + x + '">';
-                for (var i = 0; i < doctors.length; i++) {
-                    var last = '';
-                    if ((i + 1) % 5 == 0) {
-                        last = 'last';
-                    }
-                    var doctor = doctors[i];
-                    var docdesc = '';
-                    if (doctor.desc) {
-                        docdesc = doctor.desc.length > 40 ? doctor.desc.substr(0, 40) + '...' : doctor.desc;
-                    } else {
-                        docdesc = '暂无信息';
-                    }
-                    var hpDeptName = doctor.hpDeptName == null ? "&nbsp;" : doctor.hpDeptName;
-                    var hpName = doctor.hpName == null ? "&nbsp;" : doctor.hpName;
-                    var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
-                    innerHtml += '<a href="' + urlDoctorView + "?id=" + doctor.id + "&is_commonweal=1" + '" target="_blank"><div class="mt20 expertList pull-left ' + last + '">' +
-                            '<div class="text-right"><img src="http://static.mingyizhudao.com/146718708459637" /></div>' +
-                            '<div class="pb20 expert-info">' +
-                            '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '"/></div>' +
-                            '<div class="text-center"><strong>' + doctor.name + '</strong><span class="ml10">' + doctor.mTitle + ' ' + aTitle + '</span></div>' +
-                            '<div class="text-center color-green mt5">' + hpDeptName + '</div>' +
-                            '<div class="text-center mt5 text12">' + hpName + '</div>' +
-                            '</div><div class="text12 mygyexpert-desc"><strong>擅长手术：</strong>' + docdesc + '</div>' +
-                            '</div></a>';
-                }
-                innerHtml += '</div>';
-            }
-        }
-        $(".mygyexpert").html(innerHtml);
-    }
-
+        ajaxExpLoadCommonwealDoctors(urlLoadCommonwealDoctors, urlDoctorView);
+    });   
 </script>

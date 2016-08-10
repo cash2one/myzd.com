@@ -1,4 +1,5 @@
 <?php
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/mygy100.min.js', CClientScript::POS_END);
 $this->pageTitle = '名医公益联盟,公益手术申请_名医主刀网';
 $this->htmlMetaKeywords = '公益联盟,公益手术,名医主刀网';
 $this->htmlMetaDescription = '名医公益联盟是名医主刀倡导发起,并联合公益组织,医生共建的一种可持续公益模式,旨在让更多患者有机会接受更好的治疗。希望通过名医公益联盟,汇聚社会爱心力量,帮助贫困患者解决“好看病,看好病”的切实需求。';
@@ -136,100 +137,7 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
         var urlLoadCommonwealDoctors = '<?php echo $urlCommonwealDoctors; ?>';
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadCommonwealDoctors(urlLoadCommonwealDoctors, urlDoctorView);
-        ajaxLoadFreediagnoseDoctors(urlDoctorView);
-    });
-    function ajaxLoadCommonwealDoctors(urlLoadCommonwealDoctors, urlDoctorView) {
-        $.ajax({
-            url: urlLoadCommonwealDoctors,
-            success: function (data) {
-                setCommonwealDoctors(data, urlDoctorView);
-            },
-            error: function (XmlHttpRequest, textStatus, errorThrown) {
-                console.log(XmlHttpRequest);
-                console.log(textStatus);
-                console.log(errorThrown);
-            }
-        });
-    }
-    function setCommonwealDoctors(data, urlDoctorView) {
-        if (data.results) {
-            var innerHtml = "";
-            innerHtml += "";
-            var page = data.results.page;
-            var doctors = page[0];
-            for (var i = 0; i < 5; i++) {
-                var last = '';
-                if (i == 4) {
-                    last = 'last';
-                }
-                var doctor = doctors[i];
-                var docdesc = '';
-                if (doctor.desc) {
-                    docdesc = doctor.desc.length > 40 ? doctor.desc.substr(0, 40) + '...' : doctor.desc;
-                } else {
-                    docdesc = '暂无信息';
-                }
-                var hpDeptName = doctor.hpDeptName == null ? "&nbsp;" : doctor.hpDeptName;
-                var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
-                innerHtml += '<a href="' + urlDoctorView + "?id=" + doctor.id + "&is_commonweal=1" + '" target="_blank"><div class="expertList pull-left ' + last + '">' +
-                        '<div class="text-right"><img src="http://static.mingyizhudao.com/146718708459637" /></div>' +
-                        '<div class="pb20 expert-info">' +
-                        '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '"/></div>' +
-                        '<div class="text-center"><strong>' + doctor.name + '</strong><span class="ml10">' + doctor.mTitle + ' ' + aTitle + '</span></div>' +
-                        '<div class="text-center color-green mt5">' + hpDeptName + '</div>' +
-                        '<div class="text-center mt5 text12">' + doctor.hpName + '</div>' +
-                        '</div><div class="text12 mygyexpert-desc"><span>擅长手术：</span>' + docdesc + '</div>' +
-                        '</div></a>';
-            }
-        }
-        $(".commonwealexpert").html(innerHtml);
-    }
-
-    function ajaxLoadFreediagnoseDoctors(cityId, disease_category) {
-        var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         var urlLoadFreediagnoseDoctors = '<?php echo $urlLoadFreediagnoseDoctors; ?>';
-        $('.loading').show();
-        $.ajax({
-            url: urlLoadFreediagnoseDoctors,
-            success: function (data) {
-                setFreediagnoseDoctors(data, urlDoctorView);
-            },
-            error: function (XmlHttpRequest, textStatus, errorThrown) {
-                $('.loading').hide();
-                console.log(XmlHttpRequest);
-                console.log(textStatus);
-                console.log(errorThrown);
-            }
-        });
-    }
-    function setFreediagnoseDoctors(data, urlDoctorView) {
-        if (data.results) {
-            var innerHtml = "";
-            innerHtml += "";
-            var doctors = data.results;
-            for (var i = 0; i < 5; i++) {
-                if (i == 4) {
-                    var last = 'last';
-                }
-                var doctor = doctors[i];
-                var docdesc = '';
-                if (doctor.desc) {
-                    docdesc = doctor.desc.length > 40 ? doctor.desc.substr(0, 40) + '...' : doctor.desc;
-                } else {
-                    docdesc = '暂无信息';
-                }
-                var hpDeptName = doctor.hpDeptName == null ? "&nbsp;" : doctor.hpDeptName;
-                var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
-                innerHtml += '<a href="' + urlDoctorView + "?id=" + doctor.id + "&is_commonweal=1" + '" target="_blank"><div class="expertList pull-left ' + last + '">' +
-                        '<div class="pb20 expert-info">' +
-                        '<div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '"/></div>' +
-                        '<div class="text-center"><strong>' + doctor.name + '</strong><span class="ml10">' + doctor.mTitle + ' ' + aTitle + '</span></div>' +
-                        '<div class="text-center color-green mt5">' + hpDeptName + '</div>' +
-                        '<div class="text-center mt5 text12">' + doctor.hpName + '</div>' +
-                        '</div><div class="text12 mygyexpert-desc"><strong>擅长手术：</strong>' + docdesc + '</div>' +
-                        '</div></a>';
-            }
-            $(".mingyiyizhenexpert").html(innerHtml);
-        }
-    }
+        ajaxLoadFreediagnoseDoctors(urlDoctorView, urlLoadFreediagnoseDoctors);
+    });
 </script>
