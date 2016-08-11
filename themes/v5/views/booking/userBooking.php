@@ -100,11 +100,21 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                     }
                                 } else {
                                     echo '<div class="text20 color-green text-center mt30"><span><img class="mr10 mt-3" src="http://static.mingyizhudao.com/146312588201985"></span>' . $order->finalAmount . '元预约金支付成功！</div>';
+                                    ?>
+                                    <script>
+                                        $(document).ready(function () {
+                                            var totalmoney = '<?php echo $order->finalAmount; ?>'
+                                            var money = totalmoney / 100;
+                                            var orderNo = '<?php echo $order->refNo; ?>';
+                                            pyRegisterCvt(money, orderNo);
+                                        });
+                                    </script>
+                                    <?php
                                 }
                                 echo '</h4>';
                             }
                             if ($booking->status == StatCode::BK_STATUS_SERVICE_UNPAID) {
-                                
+
                                 $paid_all = 0;
                                 foreach ($salesOrder as $i => $order) {
                                     if ($order->isPaid == 0 && $order->orderTypeCode == 'service') {
@@ -128,19 +138,28 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                                 echo '<h4 class="text-center color-green text16 pb10 ' . $first . '">';
                                                 echo '<span>→请您支付' . $order->finalAmount . '元</span>';
                                                 echo '<span class="mt-26 ml10"><span class="pay-btn btn btn-disabled">已支付</span></span>';
+                                                ?>
+                                                <script>
+                                                    $(document).ready(function () {
+                                                        var totalmoney = '<?php echo $order->finalAmount; ?>'
+                                                        var money = totalmoney / 100;
+                                                        var orderNo = '<?php echo $order->refNo; ?>';
+                                                        pyRegisterCvt(money, orderNo);
+                                                    });
+                                                </script>
+                                                <?php
                                             }
                                             echo '</h4>';
                                         }
                                     }
                                 } else {
-                                    $count_money= 0;
-                                     foreach ($salesOrder as $i => $order) {
-                                         if($order->isPaid == 1 && $order->orderTypeCode == 'service'){
-                                             $count_money = $order->finalAmount + $count_money;
-                                         }
-                                         
-                                     }
-                                         echo '<h4 class="text-center mt30 color-green text20 pb10"><span>您已成功支付平台咨询费'. $count_money .'元</span></h4>';
+                                    $count_money = 0;
+                                    foreach ($salesOrder as $i => $order) {
+                                        if ($order->isPaid == 1 && $order->orderTypeCode == 'service') {
+                                            $count_money = $order->finalAmount + $count_money;
+                                        }
+                                    }
+                                    echo '<h4 class="text-center mt30 color-green text20 pb10"><span>您已成功支付平台咨询费' . $count_money . '元</span></h4>';
                                 }
                             }
                         } else {
@@ -151,14 +170,14 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                     }
                     ?>
                 </div>
-                    <?php
-                    if ($booking->status == StatCode::BK_STATUS_NEW) {
-                        echo '<div class="text-center text-red text12 mt10">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>';
-                    }
-                    if ($booking->status == StatCode::BK_STATUS_SERVICE_PAIDED || $booking->status == StatCode::BK_STATUS_DONE) {
-                        echo '<div class="text20 color-green text-center mt30">感谢您选择名医主刀！祝您手术顺利，早日康复！</div>';
-                    }
-                    ?>
+                <?php
+                if ($booking->status == StatCode::BK_STATUS_NEW) {
+                    echo '<div class="text-center text-red text12 mt10">*该费用术前专家咨询费、第一次面诊费(如有需要，安排面诊)和手术相关安排费用</div>';
+                }
+                if ($booking->status == StatCode::BK_STATUS_SERVICE_PAIDED || $booking->status == StatCode::BK_STATUS_DONE) {
+                    echo '<div class="text20 color-green text-center mt30">感谢您选择名医主刀！祝您手术顺利，早日康复！</div>';
+                }
+                ?>
                 <?php
                 if ($booking->status != 9) {
                     //echo '<div class="pt10"><div class="pull-right"><a class="color-status" href="' . $this->createUrl('booking/uploadFile', array('id' => $booking->id)) . '"><span class="">修改</span></a></div></div>';
@@ -179,7 +198,7 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                 <div class="bookingInfo">患者姓名：<?php echo $booking->patientName; ?></div>
                                 <div class="bookingInfo">联系方式：<?php echo $booking->mobile; ?></div>
                                 <?php if (!empty($paid_count['deposit_count']) || !empty($paid_count['paid_count'])): ?><span>支付费用：</span><?php endif; ?><?php if (!empty($paid_count['deposit_count'])): ?><span class="bookingInfo"> 已支付预约金<?php echo $paid_count['deposit_count']; ?>元</span><?php endif; ?>
-<?php if (!empty($paid_count['deposit_count'])): ?><span class="user-bookinginfo-white-block"></span><?php endif; ?><?php if (!empty($paid_count['paid_count'])): ?><span class="bookingInfo"> 已支付咨询费<?php echo $paid_count['paid_count']; ?>元</span><?php endif; ?>
+                                <?php if (!empty($paid_count['deposit_count'])): ?><span class="user-bookinginfo-white-block"></span><?php endif; ?><?php if (!empty($paid_count['paid_count'])): ?><span class="bookingInfo"> 已支付咨询费<?php echo $paid_count['paid_count']; ?>元</span><?php endif; ?>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -203,11 +222,11 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                             <input id="bookingReport_type" type="hidden" name="booking[report_type]" value="mr" />
                         </form>
                         <div class="mt20">
-<?php
-if ($booking->status >= StatCode::BK_STATUS_NEW && $booking->status < StatCode::BK_STATUS_SERVICE_UNPAID) {
-    $this->renderPartial('_uploadFile');
-}
-?>
+                            <?php
+                            if ($booking->status >= StatCode::BK_STATUS_NEW && $booking->status < StatCode::BK_STATUS_SERVICE_UNPAID) {
+                                $this->renderPartial('_uploadFile');
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -243,5 +262,18 @@ if ($booking->status >= StatCode::BK_STATUS_NEW && $booking->status < StatCode::
         } else {
             $('.imgList').html('<div class="col-sm-12">暂未上传图片</div>');
         }
+    }
+    //    转化代码
+    function pyRegisterCvt(money, orderNo) {
+        var w = window, d = document, e = encodeURIComponent;
+        var b = location.href, c = d.referrer, f, g = d.cookie, h = g.match(/(^|;)\s*ipycookie=([^;]*)/), i = g.match(/(^|;)\s*ipysession=([^;]*)/);
+        if (w.parent != w) {
+            f = b;
+            b = c;
+            c = f;
+        }
+        ;
+        u = '//stats.ipinyou.com/cvt?a=' + e('FEs.cWh.lA-LSR80F89Yd6AM1QZzfX') + '&c=' + e(h ? h[2] : '') + '&s=' + e(i ? i[2].match(/jump\%3D(\d+)/)[1] : '') + '&u=' + e(b) + '&r=' + e(c) + '&rd=' + (new Date()).getTime() + '&OrderNo=' + orderNo + '&Money=' + money + '&e=';
+        (new Image()).src = u;
     }
 </script>

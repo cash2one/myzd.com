@@ -113,10 +113,31 @@ if (isClientWeixin()) {
                         <button  type="button" class="btn btn-yes btn-lg" id="pay-certain-btn">确定</button>
                     </div>
                     <?php
-                }else{
-                ?>
+                } else {
+                    ?>
                     <div class="text-center color-green text20">付款成功！</div>
-                <?php }?>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            var totalmoney = '<?php echo $model->total_amount; ?>'
+                            var money = totalmoney / 100;
+                            var orderNo = '<?php echo $refno; ?>';
+                            pyRegisterCvt(money, orderNo);
+                        });
+                        //    转化代码
+                        function pyRegisterCvt(money, orderNo) {
+                            var w = window, d = document, e = encodeURIComponent;
+                            var b = location.href, c = d.referrer, f, g = d.cookie, h = g.match(/(^|;)\s*ipycookie=([^;]*)/), i = g.match(/(^|;)\s*ipysession=([^;]*)/);
+                            if (w.parent != w) {
+                                f = b;
+                                b = c;
+                                c = f;
+                            }
+                            ;
+                            u = '//stats.ipinyou.com/cvt?a=' + e('FEs.cWh.lA-LSR80F89Yd6AM1QZzfX') + '&c=' + e(h ? h[2] : '') + '&s=' + e(i ? i[2].match(/jump\%3D(\d+)/)[1] : '') + '&u=' + e(b) + '&r=' + e(c) + '&rd=' + (new Date()).getTime() + '&OrderNo=' + orderNo + '&Money=' + money + '&e=';
+                            (new Image()).src = u;
+                        }
+                    </script>
+                <?php } ?>
                 <input id="ref_no" type="hidden" name="order[ref_no]" value="<?php echo $model->ref_no; ?>" />
             </form>
         </div>
@@ -141,72 +162,72 @@ if (isClientWeixin()) {
 <script type="text/javascript" src="http://static.mingyizhudao.com/pc/cdn.staticfile.org-jquery.qrcode.min.js"></script>
 
 <script type="text/javascript">
-    $(".btn-lg").click(function () {
-        $(".btn-lg").attr("disabled", true);
-        var timer = 30;
-        timerId = setInterval(function () {
-            timer--;
-            if (timer > 0) {
-                $('.test').html(timer);
-            } else {
-                $('.open-code-area').hide();
-                clearInterval(timerId);
-                timerId = null;
-                $(".btn-lg").attr("disabled", false);
-                 location.reload();   
-            }
-        }, 1000);
+                    $(".btn-lg").click(function () {
+                        $(".btn-lg").attr("disabled", true);
+                        var timer = 30;
+                        timerId = setInterval(function () {
+                            timer--;
+                            if (timer > 0) {
+                                $('.test').html(timer);
+                            } else {
+                                $('.open-code-area').hide();
+                                clearInterval(timerId);
+                                timerId = null;
+                                $(".btn-lg").attr("disabled", false);
+                                location.reload();
+                            }
+                        }, 1000);
 
-        var refNo = document.getElementById('ref_no').value;
+                        var refNo = document.getElementById('ref_no').value;
 
-        var channel = $('input:radio[name=optionsRadios]:checked').val();
+                        var channel = $('input:radio[name=optionsRadios]:checked').val();
 
 
-        var url = "<?php echo $payUrl; ?>";
-        var refUrl = "<?php echo $refUrl;?>";
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader("Content-type", "application/json");
-        xhr.send(JSON.stringify({
-            order_no: refNo,
-            channel: channel,
-            ref_url: refUrl
-        }));
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                data = eval('(' + xhr.responseText + ')');
-                console.log(data);
-                if (data.channel === 'alipay_pc_direct') {
-                    pingppPc.createPayment(xhr.responseText, function (result, err) {
+                        var url = "<?php echo $payUrl; ?>";
+                        var refUrl = "<?php echo $refUrl; ?>";
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", url, true);
+                        xhr.setRequestHeader("Content-type", "application/json");
+                        xhr.send(JSON.stringify({
+                            order_no: refNo,
+                            channel: channel,
+                            ref_url: refUrl
+                        }));
+                        xhr.onreadystatechange = function () {
+                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                data = eval('(' + xhr.responseText + ')');
+                                console.log(data);
+                                if (data.channel === 'alipay_pc_direct') {
+                                    pingppPc.createPayment(xhr.responseText, function (result, err) {
 //                        console.log(result);
 //                        console.log(err);
-                    });
-                } else {
-                    pingpp.createPayment(xhr.responseText, function (result, err) {
+                                    });
+                                } else {
+                                    pingpp.createPayment(xhr.responseText, function (result, err) {
 //                        console.log(result);
 //                        console.log(err);
-                    });
-                }
-                if (channel == 'wx_pub_qr') {
-                    $(".open-code-area").show();
-                    jQuery('.img_wx_pub_qr').text('');
-                    var img_wx_pub_qr = data.credential.wx_pub_qr;
-                    jQuery('.img_wx_pub_qr').qrcode({width: 130, height: 130, correctLevel: 0, text: img_wx_pub_qr});
+                                    });
+                                }
+                                if (channel == 'wx_pub_qr') {
+                                    $(".open-code-area").show();
+                                    jQuery('.img_wx_pub_qr').text('');
+                                    var img_wx_pub_qr = data.credential.wx_pub_qr;
+                                    jQuery('.img_wx_pub_qr').qrcode({width: 130, height: 130, correctLevel: 0, text: img_wx_pub_qr});
 //                   $("#img_wx_pub_qr").attr('src',jQuery('.code').qrcode({width: 200, height: 200, correctLevel: 0, text: img_wx_pub_qr})); 
 //                    $("#img_wx_pub_qr").attr('src',jQuery('.code').qrcode({width: 200, height: 200, correctLevel: 0, text: img_wx_pub_qr})); 
-                }
+                                }
 
-            }
-        };
+                            }
+                        };
 
 
-    });
-    $(".open-code-area .cancel").click(function () {
-        clearInterval(timerId);
-        timerId = null;
-        $(".btn-lg").attr("disabled", false);
-        $(".open-code-area").hide();
-        location.reload();   
-    });
+                    });
+                    $(".open-code-area .cancel").click(function () {
+                        clearInterval(timerId);
+                        timerId = null;
+                        $(".btn-lg").attr("disabled", false);
+                        $(".open-code-area").hide();
+                        location.reload();
+                    });
 
 </script>

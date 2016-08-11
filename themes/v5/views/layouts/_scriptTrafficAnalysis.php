@@ -3,19 +3,19 @@
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
         document.write(unescape("%3Cspan id='cnzz_stat_icon_1255868724'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1255868724' type='text/javascript'%3E%3C/script%3E"));</script>
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-69061963-1', 'auto');
-        ga('send', 'pageview');
+//        (function (i, s, o, g, r, a, m) {
+//            i['GoogleAnalyticsObject'] = r;
+//            i[r] = i[r] || function () {
+//                (i[r].q = i[r].q || []).push(arguments)
+//            }, i[r].l = 1 * new Date();
+//            a = s.createElement(o),
+//                    m = s.getElementsByTagName(o)[0];
+//            a.async = 1;
+//            a.src = g;
+//            m.parentNode.insertBefore(a, m)
+//        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+//        ga('create', 'UA-69061963-1', 'auto');
+//        ga('send', 'pageview');
     </script>
     <script>
         var _hmt = _hmt || [];
@@ -38,5 +38,28 @@
         </script>
     <?php } ?>
 </div>
+
+<!--代码检查-->
+<!--全站访客代码-->
+<script type="text/javascript">
+var _py = _py || [];
+_py.push(['a', 'FEs..sy5vt5mW3Xnyf1n4JzIalP']);
+_py.push(['domain','stats.ipinyou.com']);
+_py.push(['e','']);
+-function(d) {
+	var s = d.createElement('script'),
+	e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+	f = 'https:' == location.protocol;
+	s.src = (f ? 'https' : 'http') + '://'+(f?'fm.ipinyou.com':'fm.p0y.cn')+'/j/adv.js';
+}(document);
+</script>
+<noscript><img src="//stats.ipinyou.com/adv.gif?a=FEs..sy5vt5mW3Xnyf1n4JzIalP&e=" style="display:none;"/></noscript>
+<!--转化代码-->
+<script>
+
+</script>
+
+
+
 
 
