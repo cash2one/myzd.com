@@ -1,5 +1,6 @@
 <?php
 $news = array(
+    'publicdaily'=>'互联网医疗+纸媒，迈出联姻第一步',
     'anhuiflooding'=>'安徽怀宁水灾救援',
     'guojihuanzheri'=>'癫痫患者福音来啦！',
     'xuzhou'=>'互联网+手术战略合作基地落地徐州',
