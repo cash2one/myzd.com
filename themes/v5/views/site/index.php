@@ -13,6 +13,7 @@ $urlDoctorSearch = $this->createUrl('doctor/search');
 $urlHopitalSearch = $this->createUrl('hospital/search');
 $urlDoctorSearchByDiseaseSubCategory = $this->createUrl('doctor/top', array('disease_sub_category' => 1));
 $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
+$urlBaseUrl = Yii::app()->params['baseUrl'];
 ?>
 <section id="site-content" class="home-bg">
     <div class="container-fluid bg-lunbo h500">
@@ -197,8 +198,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 '<li><div class="lungcancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146338468582143" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
-        ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
-       
+        ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView); 
     });
     function ajaxSearchByKeyWord(keyword) {
         var urlSearch = '<?php echo $urlSearchByKeyWord; ?>' + keyword;
@@ -265,7 +265,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 innerHtml += '<div id="hospital" class="result-tab">';
                 for (var i = 0; i < hospitals.length; i++) {
                     var hospital = hospitals[i];
-                    innerHtml += '<div><a target="_blank" class="doctor" href="<?php echo $urlHospitalView ?>' + hospital.id + '"><span class="strong name">' + setResultsNameActive(hospital.shortName, keyword) + '（' + setResultsNameActive(hospital.name, keyword) + '）</span></a><a target="_blank" href="<?php echo $urlHospitalView ?>' + hospital.id + '" class="pull-right detail">进入医院详情页</a></div>';
+                    innerHtml += '<div><a target="_blank" class="doctor" href="<?php echo $urlBaseUrl ?>' +'/hospital-view-id-'+ hospital.id + '.html"><span class="strong name">' + setResultsNameActive(hospital.shortName, keyword) + '（' + setResultsNameActive(hospital.name, keyword) + '）</span></a><a target="_blank" href="<?php echo $urlBaseUrl ?>' +'/hospital-view-id-'+ hospital.id + '.html" class="pull-right detail">进入医院详情页</a></div>';
                 }
                 innerHtml += '</div>';
             }
