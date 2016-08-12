@@ -15,7 +15,7 @@ $urlDoctorView = $this->createUrl('doctor/view', array('id' => ''));
 $city = Yii::app()->request->getQuery('city', '');
 $disease = Yii::app()->request->getQuery('disease', '');
 $disease_name = Yii::app()->request->getQuery('disease_name', '');
-$disease_category = $diseaseCategoryId;
+$disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
 $urlBaseUrl = Yii::app()->params['baseUrl'];
 $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_category_param', '');
