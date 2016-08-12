@@ -1,10 +1,12 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/searchhospital100.min.css");
-Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/searchhospital.min.js', CClientScript::POS_HEAD);
+//Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/searchhospital.min.js', CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js-bak/custom/searchhospital.js', CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlHopitalSearch = $this->createUrl('hospital/top');
 $urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10));
 $urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10, 'disease_sub_category' => ''));
+$urlBaseUrl = Yii::app()->params['baseUrl'];
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
 //$urlHospitalView = $this->createUrl('hospital/view');
 $urlHospitalView = Yii::app()->params['baseUrl'];
@@ -71,7 +73,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 </div>
             </div>
             <div class="col-sm-10">
-                <a href="<?php echo $this->createUrl('hospital/topHospital')?>" target="_blank"><img class="tophospital-link img-responsive mt20" src="http://static.mingyizhudao.com/146967591025119" /></a>
+                <a href="<?php echo $this->createUrl('hospital/topHospital') ?>" target="_blank"><img class="tophospital-link img-responsive mt20" src="http://static.mingyizhudao.com/146967591025119" /></a>
                 <div class="loading loading02" style="margin-top:100px;"></div>
                 <div class="hospital-list">
 
@@ -209,7 +211,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 var subCats = diseaseCategory.subCat;
                 for (var j = 0; j < subCats.length; j++) {
                     var subCat = subCats[j];
-                    innerHtml += '<li class="ml10"><a class="subCat" data-id = "' + subCat.id + '" href="<?php echo $urlLoadHospitalByDiseaseSubCategory; ?>' + subCat.id + '">' + subCat.name + '</a></li>';
+                    innerHtml += '<li class="ml10"><a class="subCat" data-id = "' + subCat.id + '" href="<?php echo $urlBaseUrl; ?>' + '/hospital-top-disease_sub_category-' + subCat.id + '.html">' + subCat.name + '</a></li>';
                 }
                 innerHtml += '</ul></div>';
             }

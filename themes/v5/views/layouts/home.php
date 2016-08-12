@@ -30,7 +30,7 @@
         Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/pc_all.min.js', CClientScript::POS_HEAD);
         
         Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/main.min.js', CClientScript::POS_HEAD);
-//        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/home.min.js', CClientScript::POS_HEAD);
+//        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/home100.min.js', CClientScript::POS_HEAD);
         ?>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->		
@@ -45,7 +45,7 @@
         <!-- Header -->
         <?php
         if ($this->showHeader()) {
-            $this->renderPartial('//layouts/header_home');
+//            $this->renderPartial('//layouts/header_home');
             $this->renderPartial('//layouts/header');
         }
         ?>

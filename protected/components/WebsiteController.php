@@ -160,12 +160,12 @@ abstract class WebsiteController extends Controller {
 
     public function loadTrafficAnalysisScript($filterDomain = true) {
         $show = true;
-        if ($filterDomain) {
-            $baseUrl = Yii::app()->getBaseUrl(true);
-            if (strStartsWith($baseUrl, 'http://localhost') || strStartsWith($baseUrl, 'http://127.0.0.1')) {
-                $show = false;
-            }
-        }
+//        if ($filterDomain) {
+//            $baseUrl = Yii::app()->getBaseUrl(true);
+//            if (strStartsWith($baseUrl, 'http://localhost') || strStartsWith($baseUrl, 'http://127.0.0.1')) {
+//                $show = false;
+//            }
+//        }
         if ($show) {
             $this->renderPartial('//layouts/_scriptTrafficAnalysis');
         }
@@ -360,5 +360,63 @@ abstract class WebsiteController extends Controller {
         $captcha = new CaptchaManage;
         $captcha->showImg();
     }
+    
+    //分頁    
+    public function page($parmes,$pagesize,$nums)
+    {
+        if(array_key_exists("page",$parmes)){
+            $currentPage=$parmes['page'];
+        }else{
+            $currentPage=1;
+        }
+        unset($parmes['page']);
+        $parmesStr="";
+        foreach($parmes as $k=>$v){
+           if($parmesStr==""){
+               $parmesStr.= "?".$k."=".$v;
+           }else{
+               $parmesStr.= "&".$k."=".$v;
+           }
+        }
+        $uriArr=explode('?',$_SERVER['REQUEST_URI']);
+        $url=$uriArr[0].$parmesStr;
+        $pages=ceil($nums/$pagesize);
+        if($currentPage>$pages){
+            $currentPage=$pages;
+        }
+        if($currentPage < 1){
+            $currentPage=1;
+        }
+        $beginNum = ($currentPage-1)*$pagesize;
+        $limit="$beginNum,$pagesize";
+        $pre = $currentPage-1;
+        if($pre<1)
+        {
+            $pre=1;
+        }
+        $next = $currentPage +1;
+        if($next>$pages)
+        {
+            $next=$pages;
+        }
 
+        $show ="<ul class='pagination'>";
+        $show.= "<li><a aria-label='Previous' href='$url&page=$pre' class='pagePre'><span aria-hidden='true'>«</span></a></li>";
+        for($i=1;$i<=$pages;$i++)
+       {
+            if($i>$currentPage+2 || $i<$currentPage-2)
+                continue;
+            if($i==$currentPage)
+                $show.="<li class='page-item active'><a href='javascript:;' data-page='$i'>$i</a></li>";
+            else   
+                $show.= "<li class='page-item'><a href='$url&page=$i' data-page='$i'>$i</a></li>";
+        }
+        $show.= "<li><a aria-label='Next' href='$url&page=$next' class='pageNext'><span aria-hidden='true'>»</span></a></li>";
+        if($pagesize>=$nums){
+           $showpage['show']="";
+        }else{
+           $showpage['show']=$show;
+        }
+        return $showpage;
+       }
 }

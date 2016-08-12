@@ -1,9 +1,9 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/searchdoctor100.min.css");
-Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/searchdoctor.min.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/searchdoctortop.min.js', CClientScript::POS_END);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDoctorSearch = $this->createUrl('doctor/top');
-$urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 24));
+$urlLoadDoctor = $this->createUrl('doctor/top');
 $urlLoadDoctorByDiseaseCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 24, 'disease_category' => ''));
 $urlLoadDoctorByDiseaseSubCategory = $this->createUrl('api/doctor', array('api' => 7, 'pagesize' => 24, 'disease_sub_category' => ''));
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
@@ -16,8 +16,14 @@ $disease = Yii::app()->request->getQuery('disease', '');
 $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
-$page = Yii::app()->request->getQuery('page', '');
+$urlBaseUrl = Yii::app()->params['baseUrl'];
+$disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_category_param', '');
 ?>
+<style>
+    #doctorList .select-condition .city-list .city-title{height:7em;}
+    #doctorList .select-condition .select-disease .disease-title{height:3em;}
+    @media (max-width: 991px){#doctorList .select-condition .city-list .city-title,#doctorList .select-condition .select-disease .disease-title{height:1em;}} 
+</style>
 <section id="doctorList">
     <div class="container-fluid bg-green">
         <div class="container">
@@ -33,34 +39,87 @@ $page = Yii::app()->request->getQuery('page', '');
             <div class="mt10 subCatList"></div>
         </div>
         <div class="mt10 select-condition">
-            <div class="color-666 text12">为您找到<span class="color-5ebfb8 doctorNum"></span>位医生</div>
+            <div class="color-666 text12">为您找到<span class="color-5ebfb8 doctorNum"><?php echo $doctorNum; ?></span>位医生</div>
             <div class="divider-line-first" class="mt5"></div>
             <div class="mt20 select-disease"></div>
             <div class="mt10 mb20 divider-line"></div>
             <div class="city-list">
             </div>
             <div class="mt20 mb20 divider-line"></div>
-            <div class="select-title">医生级别：</div><a class="mtitle active" data-id="">全部</a><a class="mtitle" data-id="1">主任医师</a><a class="mtitle" data-id="2">副主任医师</a>
+            <div class="select-title">医生级别：</div><a class="mtitle active" href="javascript:;" data-id="">全部</a><a href="javascript:;" class="mtitle" data-id="1" id="mtitle1">主任医师</a><a href="javascript:;" class="mtitle" data-id="2" id="mtitle2">副主任医师</a>
         </div> 
         <div class="row ">
             <div class="col-sm-12 col-md-12">
                 <div class="loading loading02"></div>
                 <div class="row doclist">
-
+                    <?php
+                    if (count($data->results) > 0) {
+                        foreach ($data->results as $k => $v) {
+                            $docdesc = '';
+                            if (isset($v->desc)) {
+                                $docdesc = mb_substr($v->desc, 0, 40, 'utf-8');
+                                $docdesc = $docdesc . '<span>...</span>';
+                            } else {
+                                $docdesc = '暂无信息';
+                            }
+                            $hpDeptName = $v->hpDeptName == null ? '&nbsp;' : $v->hpDeptName;
+                            $hpName = $v->hpName == null ? '&nbsp;' : $v->hpName;
+                            $isContractedImg = $v->isContracted == 0 ? '' : '';
+                            $isMingyiyizhenImg = $v->ServiceId == 2 ? '' : '';
+                            $academicianImg = $v->id == 117 ? '' : '';
+                            $robotImg = '';
+                            if ($v->id == 3209 || $v->id == 3208 || $v->id == 3207) {
+                                $robotImg = '<div class="pull-right roboticon-img"></div>';
+                            }
+                            echo '<div class="col-lg-3 col-sm-4 mt30">';
+                            echo '<a target="_blank" href="' . $urlDoctorView . $v->id . '">';
+                            echo' <div class="border-gray expert-list">';
+                            echo' <div><img class="img100" src="' . $v->imageUrl . '" alt="' . $v->name . '" title="' . $v->name . '"></div>';
+                            if ($v->isContracted == 0) {
+                                echo '';
+                            } else {
+                                echo '<div class="pull-right contracted-img"></div><div class="clearfix"></div>';
+                            }
+                            if ($v->ServiceId == 2) {
+                                echo '<div class="pull-right mingyiyizhen-img"></div>';
+                            } else {
+                                echo '';
+                            }
+                            if ($v->id == 117) {
+                                echo '<div class="pull-right academician-img"></div>';
+                            } else {
+                                echo '';
+                            }
+                            if ($v->id == 3209 || $v->id == 3208 || $v->id == 3207) {
+                                echo '<div class="pull-right roboticon-img"></div>';
+                            }
+                            echo '<div class="text-center"><span class="strong">' . $v->name . '</span>&nbsp;';
+                            echo '<span class="text-center mt5">' . $v->mTitle . '&nbsp;' . $v->aTitle . '</span></div>';
+                            echo '<div class="text-center mt5 hpDeptName">' . $hpDeptName . '</div>';
+                            echo '<div class="text-center mt5">' . $hpName . '</div>';
+                            echo '<div class="docdesc text12"><span class="strong">擅长：</span>' . $docdesc . '</div>';
+                            echo'<div class="text-center mt10"></div></div></a></div>';
+                        }
+                    } else {
+                        echo '<div class="mt150 text-center color-gray">没有相关医生，请重新查找！</div>';
+                    }
+                    ?>
                 </div>
                 <!--分页-->
                 <div class="mt30">
                     <nav class="text-center">
                         <ul class="pagination">
-
+                            <?php echo $page; ?>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </div>
+    <input type="hidden" id="fristLoad" value="1">
 </section>
 <script>
+
     //url参数数组
     var condition = new Array();
     condition["city"] = '<?php echo $city ?>';
@@ -68,21 +127,24 @@ $page = Yii::app()->request->getQuery('page', '');
     condition["disease_name"] = '<?php echo $disease_name; ?>';
     condition["disease_category"] = '<?php echo $disease_category; ?>';
     condition["disease_sub_category"] = '<?php echo $disease_sub_category; ?>';
-    condition["page"] = '<?php echo $page == '' ? 1 : $page; ?>';
-    var urlLoadDoctor = '<?php echo $urlLoadDoctor; ?>';
+    urlLoadDoctor = '<?php echo $urlLoadDoctor; ?>';
     $(document).ready(function () {
-        ajaxLoadCity();
+        condition["disease_sub_category_param"] =
+                ajaxLoadCity();
         $('.toggle-subCat').click(function () {
             $(this).parents('.department-list').find('.more-subCat').toggle();
             $(this).parents('.department-list').find('.retract-subCat').toggle();
             $('#doctorList .department-list .subCatList').toggle();
         });
-        ajaxLoadDoctor('&getcount=1');
+        //ajaxLoadDoctor('&getcount/1');
         setCityActive();
         ajaxLoadDiseaseCategory();
         var disease_category = condition["disease_sub_category"] == '' ? 1 : condition["disease_sub_category"];
         if (condition["disease_sub_category"] != '') {
             ajaxLoadDiseaseByCategory(disease_category);
+        } else {
+            var disease_category_param = '<?php echo $disease_sub_category_param; ?>';
+            ajaxLoadDiseaseByCategory(disease_category_param);
         }
         if (condition["disease_name"]) {
             $('.department-name>span').html(condition["disease_name"]);
@@ -94,35 +156,23 @@ $page = Yii::app()->request->getQuery('page', '');
             var mtitleId = $(this).attr('data-id');
             condition["mtitle"] = mtitleId;
             condition["page"] = 1;
-            ajaxLoadDoctor('&getcount=1');
+            ajaxLoadDoctor('/getcount/1');
         });
+        var mtitleId = '<?php if (array_key_exists("mtitle", $prames)) echo $prames['mtitle']; ?>';
+        if (mtitleId == '') {
+            $('.mtitle:first').addClass('active');
+        } else {
+            $('.mtitle').removeClass('active');
+            $("#mtitle" + mtitleId).attr('class', "mtitle active");
+        }
+
     });
     /**** ajax异步加载医生 ****/
     function ajaxLoadDoctor(getCount) {
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
-        var urlAjaxLoadDoctor = urlLoadDoctor + setUrlCondition();
+        var urlAjaxLoadDoctor = urlLoadDoctor + "/" + setUrlCondition();
         urlAjaxLoadDoctor += getCount;
-        $('.loading').show();
-        $.ajax({
-            url: urlAjaxLoadDoctor,
-            success: function (data) {
-//                var arrcity = [];
-//                for (var i = 0; i < data.results.length; i++) {
-//                    arrcity[i] = data.results[i].cityId;
-//                }
-                $('.doctorNum').html(data.dataNum);
-                setPages(data.dataNum, condition["page"]);
-                setDoctorHtml(data, urlDoctorView);
-                $('.loading').hide();
-            },
-            error: function (XmlHttpRequest, textStatus, errorThrown) {
-                $('.loading').hide();
-                console.log(XmlHttpRequest);
-                console.log(textStatus);
-                console.log(errorThrown);
-            }
-        });
-        setLocationUrl();
+        window.location.href = urlAjaxLoadDoctor;
     }
     /**** ajax异步加载科室 ****/
     function ajaxLoadDiseaseCategory() {
@@ -151,6 +201,18 @@ $page = Yii::app()->request->getQuery('page', '');
                 console.log(XmlHttpRequest);
                 console.log(textStatus);
                 console.log(errorThrown);
+            }, complete: function () {
+                initDiseaseFunction();
+                var disease_sub_category = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category']; ?>'
+                var diseaseId = '<?php if (array_key_exists("disease", $prames)) echo $prames['disease']; ?>';
+                if (diseaseId == '') {
+                    $("#disease" + disease_sub_category).addClass('active');
+                } else {
+                    $('.disease').removeClass('active');
+                    $('.disease-all').removeClass('active');
+//                    $("#disease"+disease_sub_category).addClass('active');
+                    $("#disease" + diseaseId).attr('class', "disease active");
+                }
             }
         });
     }
@@ -172,25 +234,32 @@ $page = Yii::app()->request->getQuery('page', '');
                     e.preventDefault();
                     condition["city"] = '';
                     condition["page"] = 1;
-                    ajaxLoadDoctor('&getcount=1');
+                    ajaxLoadDoctor('/getcount/1');
                 });
                 $('.city-list .city').click(function (e) {
                     e.preventDefault();
                     var cityId = $(this).attr('data-id');
                     condition["city"] = cityId;
                     condition["page"] = 1;
-                    ajaxLoadDoctor('&getcount=1');
+                    ajaxLoadDoctor('/getcount/1');
                     setCityActive();
                 });
+                var cityId = '<?php if (array_key_exists("city", $prames)) echo $prames['city']; ?>';
+                if (cityId == '') {
+                    $('.city:first').addClass('active');
+                } else {
+                    $('.city').removeClass('active');
+                    $("#city" + cityId).attr('class', "city active");
+                }
             }
         });
     }
     function setCityList(data) {
         if (data.results) {
-            var innerHtml = '<div class="pull-left" style="height:7em;"><span class="select-title">按照地区：</span></div><a class="all city active">全部</a>';
+            var innerHtml = '<div class="pull-left city-title"><span class="select-title">按照地区：</span></div><a href="javascript:;" class="all city active">全部</a>';
             for (var i = 0; i < data.results.length; i++) {
                 var city = data.results[i];
-                innerHtml += '<a class="city" data-id="' + city.id + '">' + city.name + '</a>';
+                innerHtml += '<a id="city' + city.id + '" class="city" href="javascript:;" data-id="' + city.id + '">' + city.name + '</a>';
             }
             $('.city-list').html(innerHtml);
         }
@@ -216,7 +285,7 @@ $page = Yii::app()->request->getQuery('page', '');
                 var subCats = diseaseCategory.subCat;
                 for (var j = 0; j < subCats.length; j++) {
                     var subCat = subCats[j];
-                    innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + subCat.name + '" data-id = "' + subCat.id + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCat.id + '">' + subCat.name + '</a></span>';
+                    innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + subCat.name + '" data-id = "' + subCat.id + '" href = "javascript:;">' + subCat.name + '</a></span>';
                 }
                 innerHtml += '</div>';
             }
@@ -232,21 +301,24 @@ $page = Yii::app()->request->getQuery('page', '');
     function setDiseaseHtml(data, subCatId) {
         if (data.results) {
             var diseases = data.results.disease;
-            var innerHtml = '<div class="pull-left" style="min-height:3em;"><span class="select-title">具体疾病：</span></div><div><span class="disease-name"><a class="all active" data-id="' + subCatId + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCatId + '">全部</a></span>';
+            var innerHtml = '<div class="pull-left disease-title"><span class="select-title">具体疾病：</span></div><div><span class="disease-name"><a id="disease' + subCatId + '" class="disease-all all active" data-id="' + subCatId + '" href="<?php echo $urlBaseUrl; ?>' + '/doctor-top-disease_sub_category-' + subCatId + '.html">全部</a></span>';
             for (var i = 0; i < diseases.length; i++) {
                 var disease = diseases[i];
-                innerHtml += '<span class="disease-name"><a class="disease" data-id="' + disease.id + '" href = "<?php echo $urlLoadDoctor; ?>">' + disease.name + '</a></span>';
+                innerHtml += '<span class="disease-name"><a data-subcat="' + subCatId + '" class="disease" id="disease' + disease.id + '" data-id="' + disease.id + '" href = "javascript:;">' + disease.name + '</a></span>';
             }
             innerHtml += '</div>';
             $('.select-disease').html(innerHtml);
-            initDiseaseFunction();
         }
     }
     function setUrlCondition() {
         var urlCondition = "";
         for ($key in condition) {
             if (condition[$key] && condition[$key] !== "") {
-                urlCondition += "&" + $key + "=" + condition[$key];
+                if (urlCondition == "") {
+                    urlCondition += $key + "/" + condition[$key];
+                } else {
+                    urlCondition += "/" + $key + "/" + condition[$key];
+                }
             }
         }
         return urlCondition;
@@ -295,7 +367,6 @@ $page = Yii::app()->request->getQuery('page', '');
     /**** 根据疾病获取二级科室 ****/
     function ajaxLoadSecondaryDepartment() {
         var urlLoadSecondaryDepartment = '<?php echo $urlLoadSecondaryDepartment ?>' + condition["disease"];
-        console.log(urlLoadSecondaryDepartment);
         $.ajax({
             url: urlLoadSecondaryDepartment,
             success: function (data) {

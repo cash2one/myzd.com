@@ -1,5 +1,6 @@
 <?php
-$urlResImage = Yii::app()->theme->baseUrl . "/images/";
+//Yii::app()->clientScript->registerScriptFile("http://static.mingyizhudao.com/login_quickbooking.min.js", CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . 'home-extra.js', CClientScript::POS_END);
 ?>
 <div class="container-fluid pt50 collapse bg-home-top" id="header_home">
     <div id="close-header" class="pull-right"><img src="http://static.mingyizhudao.com/146010032220519"/></div>
@@ -35,24 +36,5 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     </div>
 </div>
 <script>
-    $(document).ready(function () {
-        $('#show_top').click(function () {
-            $("html,body").animate({"scrollTop": 0}, 0);
-            $('#header_home').slideToggle(300);
-        });
-        $('#close-header').click(function () {
-            $('#header_home').slideToggle(300);
-        });
-        //滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定
-        var navH = 396;
-        $(window).scroll(function () {
-            var scroH = $(this).scrollTop();
-            var is_show = $("#header_home").is(':visible');
-            if (is_show && scroH >= navH) {
-                $("#header_home").slideUp(10);
-                $("html,body").animate({"scrollTop": 0}, 0);
-            }
-        });
 
-    });
 </script>

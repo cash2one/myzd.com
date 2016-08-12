@@ -43,18 +43,19 @@ class DoctorController extends WebsiteController {
     }
 
     public function actionTop() {
+        header('HTTP/1.1 301 Moved Permanently');
         $value=$_GET;
-//        if(strstr($_SERVER['REQUEST_URI'],"?")){
-//            $flip = array_keys($value);
-//            $url="/doctor-top";
-//            $uriStr=$url."";
-//            foreach($flip as $k=>$v ){
-//                if($k<=count($value)){
-//                    $uriStr.="-".$v."-".$value[$v];
-//                }
-//            }
-//            $this->redirect($uriStr.".html");
-//        }
+        if(!strstr($_SERVER['REQUEST_URI'],"-")){
+            $flip = array_keys($value);
+            $url="/doctor-top";
+            $uriStr=$url."";
+            foreach($flip as $k=>$v ){
+                if($k<=count($value)){
+                    $uriStr.="-".$v."-".$value[$v];
+                }
+            }
+            $this->redirect($uriStr.".html");
+        }
         $seoKey="";
         if(array_key_exists("city",$value)){
            $cityInfo=RegionCity::model()->getById($value['city']);
@@ -79,10 +80,16 @@ class DoctorController extends WebsiteController {
         $this->pageTitle=$seoKey."医生排行,哪个医生好,专家医生预约_名医主刀网";
         $this->htmlMetaKeywords="手术预约,找医生,网上预约医生";
         $this->htmlMetaDescription="名医主刀网为您提供".$seoKey."医生排行榜,手术预约,专家医生预约,哪个医生好等信息;帮助广大有手术需求的患者,在第一时间预约全国知名专家,安排入院手术。";
-        $values = $_GET;
-        $apiService = new ApiViewDoctorSearchV7($values);
+        $apiService = new ApiViewDoctorSearchV7($value);
         $output = $apiService->loadApiViewData();
-        $this->render('top',array('data'=>$output));
+        if(count($output->results)>0){
+            $showPage=$this->page($value,$pagesize=24,$output->dataNum);
+            $doctorNum=$output->dataNum;
+        }else{
+            $showPage=$this->page($value,$pagesize=24,0);
+            $doctorNum=0;
+        }
+        $this->render('top',array('data'=>$output,'prames'=>$value,'page'=>$showPage['show'],'doctorNum'=>$doctorNum));
     }
 
     public function actionFindexpert() {

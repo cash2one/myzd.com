@@ -1,7 +1,7 @@
 <?php
 $siteMenu = $this->loadSiteMenu()["site"];
 $baseUrlImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerScriptFile("http://static.mingyizhudao.com/feedback.min.js", CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile("http://static.mingyizhudao.com/pc/feedback.min.js", CClientScript::POS_HEAD);
 $urlSubmitForm = $this->createUrl("feedback/ajaxcreatfeedback");
 $user_id = '';
 if ($this->getCurrentUser() !== null) {
@@ -230,30 +230,3 @@ if ($this->show_baidushangqiao) {
     $this->renderPartial("//layouts/_scriptXiaoNeng");
 }
 ?>
-<script>
-    $(document).ready(function () {
-        var speed = 500;//自定义滚动速度
-        var innerHeight = window.innerHeight;//获得浏览器高度
-        //回到顶部
-        $(".totop").click(function () {
-            $("html,body").stop();//多次点击停止之前动画
-            $("html,body").animate({"scrollTop": 0}, speed);
-        });
-        //反馈
-        $(".feedback").click(function () {
-            $('#feedback-open').show();
-        });
-        $("#feedback-open .close").click(function () {
-            $('#feedback-open').hide();
-        });
-        $(window).scroll(function () {
-            var scroH = $(this).scrollTop();
-            //若下滑超过0.1倍浏览器高度则显示回到顶部按钮，否则隐藏
-            if (scroH >= 0.1 * innerHeight) {
-                $(".totop").show();
-            } else {
-                $(".totop").hide();
-            }
-        });
-    });
-</script>

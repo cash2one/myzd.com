@@ -21,9 +21,9 @@ class ApiViewDoctorSearchV7 extends EApiViewService {
     protected function loadData() {
         // load Doctors.
         $this->loadDoctors();
-        if ($this->getCount) {
+        //if ($this->getCount) {
             $this->loadDoctorCount();
-        }
+        //}
     }
 
     protected function createOutput() {
