@@ -1,7 +1,6 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/searchhospital100.min.css");
-//Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/searchhospital.min.js', CClientScript::POS_HEAD);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js-bak/custom/searchhospital.js', CClientScript::POS_HEAD);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/searchhospital.min.js', CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlHopitalSearch = $this->createUrl('hospital/top');
 $urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10));
