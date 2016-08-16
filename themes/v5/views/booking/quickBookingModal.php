@@ -10,6 +10,7 @@ $authActionType = AuthSmsVerify::ACTION_BOOKING;
 $urlSubmitForm = $this->createUrl("booking/ajaxQuickbook");
 $urlReturn = '';
 $bookingLog = $this->createUrl("booking/ajaxBookingLog");
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/quickBookingModal.min.js', CClientScript::POS_END);
 ?>
 <div class="modal fade" id="qucikbookingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -124,82 +125,5 @@ $bookingLog = $this->createUrl("booking/ajaxBookingLog");
     </div>
 </div>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('#qucikbookingModal').on('show.bs.modal', function (event) {
-            var actionUrl = '<?php echo $bookingLog; ?>';
-            $.ajax({
-                type: 'get',
-                url: actionUrl,
-                'success': function (data) {
-
-                },
-                'error': function (data) {
-                    console.log(data);
-                },
-                'complete': function () {
-                }
-            });
-            $('#loginModal').modal('hide');
-        });
-        $("#btn-sendBookingSmsCode").click(function (e) {
-            e.preventDefault();
-            sendBookingSmsVerifyCode($(this));
-        });
-    });
-
-    function sendBookingSmsVerifyCode(domBtn) {
-        var domMobile = $("#booking_mobile");
-        var domCaptchaCode = $("#booking_captcha_code");
-        var mobile = domMobile.val();
-        var captchaCode = domCaptchaCode.val();
-        if (mobile.length === 0) {
-            $("#booking_mobile-error").remove();
-            $("#booking_mobile").after('<div id="booking_mobile-error" class="error">请输入手机号码</div>');
-        } else if (domMobile.hasClass("error")) {
-            // mobile input field as error, so do nothing.
-        } else if (captchaCode.length == 0) {
-            $("div.error").remove();
-            $("#booking_captcha_code").parents('.input-group').after('<div id="booking_captcha_code-error" class="error">请输入图形验证码</div>');
-        } else if (ajaxValidateCaptchaCode(captchaCode) == false) {
-            $("div.error").remove();
-            $("#booking_captcha_code").parents('.input-group').after('<div id="booking_captcha_code-error" class="error">请输入正确的图形验证码</div>');
-        } else {
-            $("div.error").remove();
-            buttonTimerStart(domBtn, 60000);
-            $domForm = $("#quickbook-form");
-            var actionUrl = $domForm.find("input[name='smsverify[actionUrl]']").val();
-            var actionType = $domForm.find("input[name='smsverify[actionType]']").val();
-            var formData = new FormData();
-            formData.append("AuthSmsVerify[mobile]", mobile);
-            formData.append("AuthSmsVerify[actionType]", actionType);
-            formData.append("captcha_code", captchaCode);
-            $.ajax({
-                type: 'post',
-                url: actionUrl,
-                data: formData,
-                dataType: "json",
-                processData: false,
-                contentType: false,
-                'success': function (data) {
-                    if (data.status === true) {
-                        //domForm[0].reset();
-                    }
-                    else {
-                        console.log(data);
-                        if (data.errors.captcha_code) {
-                            clearInterval(timerId);
-                            $("#booking_captcha_code").parents('.input-group').after('<div id="booking_captcha_code-error" class="error">请输入正确的图形验证码</div>');
-                            domBtn.html("获取验证码");
-                            domBtn.attr("disabled", false);
-                        }
-                    }
-                },
-                'error': function (data) {
-                    console.log(data);
-                },
-                'complete': function () {
-                }
-            });
-        }
-    }
+    actionUrl = '<?php echo $bookingLog; ?>';
 </script>

@@ -44,23 +44,23 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
             <div class="mt40"><img src="http://static.mingyizhudao.com/146718242234110"><span class="mygy-small-title">免支付专家会诊费</span></div>
             <div class="row">
                 <div class="col-sm-7">
-                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '1427')) ?>" target="_blank">
+                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3078')) ?>" target="_blank">
                         <div class="recommend-expert">
                             <div><img class="recommend-icon" src="http://static.mingyizhudao.com/146718266929627"></div>
                             <div class="pb10 expert-info">
                                 <div class="row">
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://static.mingyizhudao.com/147063704700297" alt="彭林" title="彭林"/></div></div>
+                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://static.mingyizhudao.com/147124750014071" alt="史占军" title="史占军"/></div></div>
                                     <div class="col-md-4 mt25 expertdesc">
-                                        <div><strong>彭林</strong><span class="ml10">主任医师</span><span class="ml10">教授</span></div>
-                                        <div class="color-green mt10">血管甲状腺腹壁疝外科</div>
-                                        <div class="mt10">广东省人民医院</div>
+                                        <div><strong>史占军</strong><span class="ml10">主任医师</span><span class="ml10">教授</span></div>
+                                        <div class="color-green mt10">关节外科中心</div>
+                                        <div class="mt10">广州南方医院</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="recommend-content">
-                                <div><strong>推荐理由</strong>：医学博士，教授，广东省人民医院血管甲状腺腹壁疝外科科室主任。彭医师从事普外科工作十余年，在普外领域具有深厚的理论基础和丰富的临床经验，曾参与多项国家和国际合作课题的研究工作，对血管外科、甲状腺外科、疝外科、肝胆胰脾外科、胃肠外科疾病的临床诊治和科研有较深造诣。为了更好的帮助患者，彭医师更投身公益事业，作为名医主刀的签约专家，彭医师在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，为有需要的患者免费救治。</div>
-                                <div class="mt20"><strong>擅长手术</strong>：乳主要从事血管外科、甲状腺疾病、疝及腹壁外科疾病的现代治疗和微创治疗，同时兼顾肝胆胰和胃肠疾病的治疗。</div>
+                                <div><strong>推荐理由</strong>：主任医师，教授，广州南方医科大学附属南方医院关节与骨病外科主任医师。史医师每年让数万患者脱离骨与关节病困扰，目前已经完成5000余例人工关节置换手术，为10余个省自治区的百多家大医院的高难度手术提供过手术帮助。多次到德国、奥地利、瑞士、新加坡、美国、澳大利亚、马来西亚、越南、韩国、日本、韩国、等国进行讲学或其他学术交流。作为名医主刀的签约专家，史医师在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望让更多的患者远离病痛困扰。</div>
+                                <div class="mt20"><strong>擅长手术</strong>：人工关节置换，骨肿瘤，小儿骨科和关节镜等诊疗技术，尤其擅长人工髋关节人工膝关节置换手术及相关翻修手术。</div>
                             </div>
                         </div>
                     </a>

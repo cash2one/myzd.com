@@ -40,7 +40,6 @@ class HospitalController extends WebsiteController {
 
     public function actionView($id,$deptId=0) {
         //$ifaculty = $this->loadIFaculty($id);
-        header('HTTP/1.1 301 Moved Permanently');
         $value=$_GET;
         if(!strstr($_SERVER['REQUEST_URI'],"-")){
             $flip = array_keys($value);
@@ -76,7 +75,6 @@ class HospitalController extends WebsiteController {
     
     public function actionView2($id,$deptId=0) {
         //$ifaculty = $this->loadIFaculty($id);
-        header('HTTP/1.1 301 Moved Permanently');
         $value=$_GET;
         if(!strstr($_SERVER['REQUEST_URI'],"-")){
             $flip = array_keys($value);
@@ -115,7 +113,6 @@ class HospitalController extends WebsiteController {
     }
 
     public function actionTop() {
-        header('HTTP/1.1 301 Moved Permanently');
         $value=$_GET;
         if(!strstr($_SERVER['REQUEST_URI'],"-")){
             $flip = array_keys($value);

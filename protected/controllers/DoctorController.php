@@ -99,7 +99,8 @@ class DoctorController extends WebsiteController {
     }
 
     public function actionFindexpert() {
-        $this->render('findexpert');
+        $data=$this->actionDoctorStaticContent();
+        $this->render('findexpert',array("data"=>$data));
     }
 
     /**
@@ -329,7 +330,8 @@ class DoctorController extends WebsiteController {
        $weeksDoctorId=$this->weeksDoctorId($cal_result);
        $apisvc = new ApiViewDoctorV7($weeksDoctorId);
        $output = $apisvc->loadApiViewData();
-       $this->renderJsonOutput($output);
+       return $output;
+       //$this->renderJsonOutput($output);
     }
     
     /**

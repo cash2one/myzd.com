@@ -60,6 +60,36 @@ $this->htmlMetaDescription = "名医主刀网为您提供国内医生预约手�
         <div class="text-center"><span class="short-line"></span><span class="title-content">每周推荐</span><span class="short-line"></span></div>
         <div class="recommend-expert-list">
             <div class="row">
+                <?php
+                if (isset($data) && $data->results->doctor) {
+                    foreach ($data->results->doctor as $doctor) {
+                        $docdesc = '';
+                        if (isset($doctor->description)) {
+                            $docdesc = $doctor->description;
+                            if (mb_strlen($docdesc, 'utf-8') > 40) {
+                                $docdesc = mb_substr($docdesc, 0, 40, 'utf-8');
+                                $docdesc = $docdesc . '<span class="ellipsis">...</span>';
+                            } else {
+                                $docdesc = $docdesc;
+                            }
+                        } else {
+                            $docdesc = '暂无信息';
+                        }
+
+                        $aTitle = $doctor->aTitle == null ? '' : $doctor->aTitle;
+                        $hpDeptName = $doctor->hpDeptName == null ? '&nbsp;' : $doctor->hpDeptName;
+                        echo '<div class="col-sm-3 mt20">';
+                        echo '<a target="_blank" href="' . $urlDoctorView . $doctor->id . '">';
+                        echo '<div class="expert-info border-gray"><div><div><img class="img100" src="' . $doctor->imageUrl . '" alt="' . $doctor->name . '" title="' . $doctor->name . '"></div>';
+                        echo '<div class = "pull-right recommend-contracted-img"></div><div class="clearfix"></div >';
+                        echo '<div class = "text-center"><span class = "strong">' . $doctor->name . '</span>&nbsp;<span class="text-center mt5">' . $doctor->mTitle . '&nbsp;' . $aTitle . '</span ></div>';
+                        echo '<div class = "text-center mt5 hpDeptName">' . $hpDeptName . '</div>';
+                        echo '<div class = "text-center mt5">' . $doctor->hospitalName . '</div>';
+                        echo '<div class = "desc"><strong>擅长：</strong>' . $docdesc . '</div>';
+                        echo '</div></div></a></div>';
+                    }
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -76,7 +106,7 @@ $this->htmlMetaDescription = "名医主刀网为您提供国内医生预约手�
             $('#' + datapage).addClass('active');
         });
         ajaxLoadDiseaseCategory();
-        ajaxDoctorStaticContent();
+//        ajaxDoctorStaticContent();
         ajaxScrollAcceptBooking();
 
     });
@@ -132,53 +162,7 @@ $this->htmlMetaDescription = "名医主刀网为您提供国内医生预约手�
         }
         return arr;
     }
-    /**** ajax异步加载推荐医生 ****/
-    function ajaxDoctorStaticContent() {
-        var urlDoctorStaticContent = '<?php echo $urlDoctorStaticContent; ?>';
-        $.ajax({
-            url: urlDoctorStaticContent,
-            success: function (data) {
-                setDoctorStaticContent(data);
-            },
-            error: function (XmlHttpRequest, textStatus, errorThrown) {
-                console.log(XmlHttpRequest);
-                console.log(textStatus);
-                console.log(errorThrown);
-            }
-        });
-    }
-    /**** 设置推荐医生html ****/
-    function setDoctorStaticContent(data) {
-        var urlDoctorView = '<?php echo $urlDoctorView; ?>';
-        var innerHtml = '';
-        if (data.results) {
-            var doctors = data.results.doctor;
-            innerHtml += '<div class="row">';
-            for (var i = 1; i <= doctors.length; i++) {
-                var doctor = doctors[i - 1];
-                var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
-                var docdesc = '';
-                if (doctor.description) {
-                    docdesc = doctor.description.length > 40 ? doctor.description.substr(0, 40) + '...' : doctor.description;
-                } else {
-                    docdesc = '暂无信息';
-                }
-                var hpDeptName = doctor.hpDeptName == null ? '&nbsp;' : doctor.hpDeptName;
-                var aTitle = doctor.aTitle == '无' ? '' : doctor.aTitle;
-                innerHtml += '<div class="col-sm-3 mt20">' +
-                        '<a target="_blank" href="' + urlDoctorView + doctor.id + '">' +
-                        '<div class="expert-info border-gray"><div><div><img class="img100" src="' + doctor.imageUrl + '" alt="' + doctor.name + '" title="' + doctor.name + '"></div>' +
-                        '<div class = "pull-right recommend-contracted-img"></div><div class="clearfix"></div >' +
-                        '<div class = "text-center"><span class = "strong">' + doctor.name + '</span>&nbsp;<span class="text-center mt5">' + doctor.mTitle + '&nbsp;' + aTitle + '</span ></div>' +
-                        '<div class = "text-center mt5 hpDeptName">' + hpDeptName + '</div>' +
-                        '<div class = "text-center mt5">' + doctor.hospitalName + '</div>' +
-                        '<div class = "desc"><strong>擅长：</strong>' + docdesc + '</div>' +
-                        '</div></div></div>';
-            }
-            innerHtml += '</div>';
-            $('.recommend-expert .recommend-expert-list').html(innerHtml);
-        }
-    }
+
     /**** ajax异步加载科室 ****/
     function ajaxLoadDiseaseCategory() {
         var urlloadDiseaseCategory = '<?php echo $urlloadDiseaseCategory; ?>';

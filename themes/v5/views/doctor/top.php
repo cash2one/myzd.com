@@ -1,7 +1,6 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/searchdoctor100.min.css");
 Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/searchdoctortop100.min.js', CClientScript::POS_END);
-
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDoctorSearch = $this->createUrl('doctor/top');
 $urlLoadDoctor = $this->createUrl('doctor/top');
@@ -58,8 +57,12 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
                         foreach ($data->results as $k => $v) {
                             $docdesc = '';
                             if (isset($v->desc)) {
-                                $docdesc = mb_substr($v->desc, 0, 40, 'utf-8');
-                                $docdesc = $docdesc . '<span>...</span>';
+                                if (mb_strlen($v->desc, 'utf-8') > 40) {
+                                    $docdesc = mb_substr($v->desc, 0, 40, 'utf-8');
+                                    $docdesc = $docdesc . '<span>...</span>';
+                                } else {
+                                    $docdesc = $v->desc;
+                                }
                             } else {
                                 $docdesc = '暂无信息';
                             }
