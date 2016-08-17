@@ -22,7 +22,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                     </div>
                     <div class="col-sm-6">
                         <div class="color-f39700 clearfix">
-                            <div class="pull-left text-indent2em h2em">方法2：</div><div>微信搜索“m18721207747”添加名医小助手，并加入患友社群报名</div>
+                            <div class="pull-left text-indent2em h2em">方法2：</div><div>微信搜索“m18721207747”添加名医小助手，并加入患友社群报名。</div>
                         </div>
                         <div class="text-center mt10"><img src="http://static.mingyizhudao.com/147133142552599"></div>
                     </div>
