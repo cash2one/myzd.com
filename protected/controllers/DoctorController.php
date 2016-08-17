@@ -43,6 +43,7 @@ class DoctorController extends WebsiteController {
     }
 
     public function actionTop() {
+        header('HTTP/1.1 301 Moved Permanently');
         $value=$_GET;
         if(!strstr($_SERVER['REQUEST_URI'],"-")){
             $flip = array_keys($value);
