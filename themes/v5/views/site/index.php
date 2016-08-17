@@ -173,7 +173,7 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
                     </div>
                 <div class="container">
                     <div class="homepage-bounced">
-                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'zeroconsultation')); ?>" target="_blank">
+                        <a href="echo $this->createUrl('event/view', array('page' => 'zeroconsultation')); ?>" target="_blank">
                             <img src="http://static.mingyizhudao.com/14690924509732">
                         </a>
                     </div>
@@ -181,16 +181,16 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
             </div>
         </div>-->
     <!--名医说手术-->
-    <div class="container-fluid" id="bouncedhide">
+    <div class="container-fluid text-center" id="bouncedhide">
         <div class="row">
             <div class="homepage-bounced-all">
-                <div class="homepage-bounced-fork"id="homeforkone">
+                <div class="homepage-bounced-fork" id="homeforkone">
                 </div>
             </div>
             <div class="container">
-                <div class="homepage-bounced">
+                <div class="homepage-bounced" style="padding-left:83px;padding-right:84px;">
                     <a href="<?php echo $this->createUrl('event/view', array('page' => 'doctorLive')); ?>" target="_blank">
-                        <img src="http://static.mingyizhudao.com/14714129934095">
+                        <div><img src="http://static.mingyizhudao.com/147141608739098"></div>
                     </a>
                 </div>
             </div>
@@ -201,11 +201,11 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
 <style>
 /*    #bouncedhide .homepage-bounced-all{background-color:#221714;opacity:0.7;width:100%;height:200px;position:fixed;bottom:0;z-index:99;display:block;}*/
 #bouncedhide .homepage-bounced-all{background:url('http://static.mingyizhudao.com/14714129930363');width:100%;height:210px;position:fixed;bottom:0;z-index:99;display:block;}
-    #bouncedhide .homepage-bounced{position:fixed;bottom:-75px;z-index: 99}
+    #bouncedhide .homepage-bounced{position:fixed;bottom:-50px;z-index: 99;}
     #bouncedhide .homepage-bounced-fork{position:absolute;top:20px;right:20px;z-index: 100;}
 /*    #homeforkone{cursor:pointer;display:block;width: 25px;height:25px;background:url(http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023236775);}*/
-    #homeforkone{cursor:pointer;display:block;width: 25px;height:25px;background:url('http://static.mingyizhudao.com/147133844961773');}
-    #homeforkone:hover{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023898548');}
+    #homeforkone{cursor:pointer;display:block;width: 25px;height:25px;background:url('http://static.mingyizhudao.com/147133844961773');z-index:100;}
+    #homeforkone:hover{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023898548');z-index:100;}
 </style>
 <script>
     $(document).ready(function () {
