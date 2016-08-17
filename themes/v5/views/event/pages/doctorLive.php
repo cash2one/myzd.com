@@ -18,13 +18,13 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                 <div class="row mt20">
                     <div class="col-sm-6 text-indent2em">
                         <div class="color-f39700">方法1：扫描以下二维码，进入患者社群。</div>
-                        <div class="text-center mt31"><img src="http://static.mingyizhudao.com/147133142316125"></div>
+                        <div class="text-center mt31"><img src="http://static.mingyizhudao.com/147143496980699"></div>
                     </div>
                     <div class="col-sm-6">
                         <div class="color-f39700 clearfix">
                             <div class="pull-left text-indent2em h2em">方法2：</div><div>微信搜索“m18721207747”添加名医小助手，并加入患友社群报名。</div>
                         </div>
-                        <div class="text-center mt10"><img src="http://static.mingyizhudao.com/147133142552599"></div>
+                        <div class="text-center mt10"><img src="http://static.mingyizhudao.com/147143497548463"></div>
                     </div>
                 </div>
                 <div class="mt50 text-indent2em point-icon">二是有相关病症的患者和潜在人群，专家会针对常见的神外问题进行“神外手术你应该知道的那些事”科普互动，把正确的预防、治疗等相关医疗知识传播出去。</div>
