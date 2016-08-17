@@ -27,17 +27,33 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                         <img src="http://static.mingyizhudao.com/146250228832979">
                                     </div>
                                     <div>
-                                        <div class="yellow-line-one"></div>
+                                        <div class="yellow-line-one" style="height:1268px;"></div>
                                     </div>
                                     <div>
                                         <img class="mt-25" src="http://static.mingyizhudao.com/146250228825473">
                                     </div>
                                     <div>
-                                        <div class="yellow-line-two"></div>
+                                        <div class="yellow-line-two" style="height:2275px;"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-10 col-sm-9 ml-50 news">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="http://static.mingyizhudao.com/147133206554396">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年8月
+                                            </div>
+                                            <div class="content">
+                                                <div>8月10日，由山东省卫生和计划生育委员会、大众报业集团(大众日报社)主办、名医主刀承办的山东省第一届城市公立医院改革高峰论坛暨首届院长论坛在济南举行。</div>
+                                            </div>
+                                            <div class="detail"><a href="<?php echo $urlNews; ?>deanmanifesto" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/147073121230756">

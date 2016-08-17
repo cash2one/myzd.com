@@ -1,5 +1,6 @@
 <?php
 $news = array(
+    'deanmanifesto'=>'郎永淳担纲主持，120家公立医院发表院长宣言',
     'publicdaily'=>'互联网医疗+纸媒，迈出联姻第一步',
     'anhuiflooding'=>'安徽怀宁水灾救援',
     'guojihuanzheri'=>'癫痫患者福音来啦！',

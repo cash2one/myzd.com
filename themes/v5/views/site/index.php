@@ -3,7 +3,6 @@ $this->pageTitle = '三甲医院手术预约,专家,主任医生手术,床位预
 $this->htmlMetaKeywords = '预约手术,专家手术,名医主刀网';
 $this->htmlMetaDescription = '名医随时有,手术不再难!【名医主刀】汇聚国内外顶级名医和床位资源,利用互联网技术实现医患精准匹配,帮助广大患者在第一时间预约到名医专家进行主刀治疗-www.mingyizhudao.com';
 Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/home.min.js', CClientScript::POS_END);
-$urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 1));
 $urlRecommendedDoctors = $this->createUrl('api/recommendeddoctors');
 $urlDiseaseName = $this->createUrl('api/diseasename', array('api' => 7, 'disease_name' => '')); //api/diseasename?api=7&disease_name=
@@ -165,17 +164,33 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
             </div>
         </div>
     </div>
-
+    <!--0元面诊
+        <div class="container-fluid" id="bouncedhide">
+            <div class="row">
+                <div class="homepage-bounced-all">
+                        <div class="homepage-bounced-fork"id="homeforkone">
+                        </div>
+                    </div>
+                <div class="container">
+                    <div class="homepage-bounced">
+                        <a href="<?php echo $this->createUrl('event/view', array('page' => 'zeroconsultation')); ?>" target="_blank">
+                            <img src="http://static.mingyizhudao.com/14690924509732">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    <!--名医说手术-->
     <div class="container-fluid" id="bouncedhide">
         <div class="row">
             <div class="homepage-bounced-all">
-                    <div class="homepage-bounced-fork"id="homeforkone">
-                    </div>
+                <div class="homepage-bounced-fork"id="homeforkone">
                 </div>
+            </div>
             <div class="container">
                 <div class="homepage-bounced">
-                    <a href="<?php echo $this->createUrl('event/view', array('page' => 'zeroconsultation')); ?>" target="_blank">
-                        <img src="http://static.mingyizhudao.com/14690924509732">
+                    <a href="<?php echo $this->createUrl('event/view', array('page' => 'doctorLive')); ?>" target="_blank">
+                        <img src="http://static.mingyizhudao.com/14714129934095">
                     </a>
                 </div>
             </div>
@@ -184,21 +199,23 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
 
 </section>
 <style>
-    #bouncedhide .homepage-bounced-all{background-color:#221714;opacity:0.7;width:100%;height:200px;position:fixed;bottom:0;z-index:99;display:block;}
-    #bouncedhide .homepage-bounced{position:fixed;bottom:0;z-index: 99}
+/*    #bouncedhide .homepage-bounced-all{background-color:#221714;opacity:0.7;width:100%;height:200px;position:fixed;bottom:0;z-index:99;display:block;}*/
+#bouncedhide .homepage-bounced-all{background:url('http://static.mingyizhudao.com/14714129930363');width:100%;height:210px;position:fixed;bottom:0;z-index:99;display:block;}
+    #bouncedhide .homepage-bounced{position:fixed;bottom:-75px;z-index: 99}
     #bouncedhide .homepage-bounced-fork{position:absolute;top:20px;right:20px;z-index: 100;}
-    #homeforkone{cursor:pointer;display:block;width: 25px;height:25px;background:url(http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023236775);}
-    #homeforkone:hover{background:url(http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023898548);}
+/*    #homeforkone{cursor:pointer;display:block;width: 25px;height:25px;background:url(http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023236775);}*/
+    #homeforkone{cursor:pointer;display:block;width: 25px;height:25px;background:url('http://static.mingyizhudao.com/147133844961773');}
+    #homeforkone:hover{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023898548');}
 </style>
 <script>
-    $(document).ready(function () {     
+    $(document).ready(function () {
         $html = '<li><div class="tiger"><a href="<?php echo $this->createUrl('event/view', array('page' => 'tiger')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147027575800229" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="cooperation"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cooperation')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146908742787421" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="redcommonweal"><a href="<?php echo $this->createUrl('event/view', array('page' => 'redcommonweal')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146417164772626" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="lungcancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146338468582143" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
-        ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView); 
+        ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
     });
     function ajaxSearchByKeyWord(keyword) {
         var urlSearch = '<?php echo $urlSearchByKeyWord; ?>' + keyword;
@@ -265,7 +282,7 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
                 innerHtml += '<div id="hospital" class="result-tab">';
                 for (var i = 0; i < hospitals.length; i++) {
                     var hospital = hospitals[i];
-                    innerHtml += '<div><a target="_blank" class="doctor" href="<?php echo $urlBaseUrl ?>' +'/hospital-view-id-'+ hospital.id + '.html"><span class="strong name">' + setResultsNameActive(hospital.shortName, keyword) + '（' + setResultsNameActive(hospital.name, keyword) + '）</span></a><a target="_blank" href="<?php echo $urlBaseUrl ?>' +'/hospital-view-id-'+ hospital.id + '.html" class="pull-right detail">进入医院详情页</a></div>';
+                    innerHtml += '<div><a target="_blank" class="doctor" href="<?php echo $urlBaseUrl ?>' + '/hospital-view-id-' + hospital.id + '.html"><span class="strong name">' + setResultsNameActive(hospital.shortName, keyword) + '（' + setResultsNameActive(hospital.name, keyword) + '）</span></a><a target="_blank" href="<?php echo $urlBaseUrl ?>' + '/hospital-view-id-' + hospital.id + '.html" class="pull-right detail">进入医院详情页</a></div>';
                 }
                 innerHtml += '</div>';
             }
