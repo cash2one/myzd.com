@@ -194,7 +194,7 @@ $this->htmlMetaDescription = "名医主刀网为您提供国内医生预约手�
                 innerHtml += '<div class="second-faculty-area ' + active + '" id="dept' + i + '">';
                 for (var j = 0; j < subCats.length; j++) {
                     var subCat = subCats[j];
-                    innerHtml += '<span class="second-faculty mr5"><a href="' + urlDoctorByDiseaseSubCategory + '/doctor-top-disease_sub_category-' + subCat.id + '.html" target="_blank">' + subCat.name + '</a></span>';
+                    innerHtml += '<span class="second-faculty mr5"><a href="' + urlDoctorByDiseaseSubCategory + '/doctor-top-disease_sub_category-' + subCat.id + '-page-1-getcount-1.html" target="_blank">' + subCat.name + '</a></span>';
                 }
                 innerHtml += '</div>';
             }

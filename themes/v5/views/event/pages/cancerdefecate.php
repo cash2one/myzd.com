@@ -192,7 +192,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-
             </div>
             
         </div>
-        <div class="text-right mt5"><span class="learn-more"><a href="<?php echo $this->createUrl('doctor/top', array('disease_sub_category' => 1));?>" target="_blank">查看更多</a></span></div>
+        <div class="text-right mt5"><span class="learn-more"><a href="<?php echo Yii::app()->params['baseUrl']; ?>/doctor-top-disease_sub_category-1-page-1-getcount-1.html" target="_blank">查看更多</a></span></div>
     </div>
 </div>
 </section>
