@@ -53,7 +53,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/appdow
                                     <div class="prompt"><img src="http://static.mingyizhudao.com/146010555572874"><span class="ml10">IOS下载</span></div>
                                 </div>
                                 <div class="pull-left ml40">
-                                    <div><img src="http://static.mingyizhudao.com/146010555438284"></div>
+                                    <div><img src="http://static.mingyizhudao.com/147149161431648"></div>
                                     <div class="prompt"><img src="http://static.mingyizhudao.com/146010555450173"><span class="ml10">Android下载</span></div>
                                 </div>
                                 <div class="pull-left ml40">
