@@ -18,7 +18,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                 <div class="row mt20">
                     <div class="col-sm-6 text-indent2em">
                         <div class="color-f39700">方法1：扫描以下二维码，进入患者社群。</div>
-                        <div class="text-center mt31"><img src="http://static.mingyizhudao.com/147143496980699"></div>
+                        <div class="text-center mt31"><img src="http://static.mingyizhudao.com/147185544112328"></div>
                     </div>
                     <div class="col-sm-6">
                         <div class="color-f39700 clearfix">
