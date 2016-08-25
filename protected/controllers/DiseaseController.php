@@ -5,7 +5,7 @@ class DiseaseController extends WebsiteController {
     public function actionView($id) {
         $apiService = new ApiViewDisease($id);
         $data = $apiService->loadApiViewData();
-        if (count($data)<=1) {
+        if ($data->status=="no") {
             $this->throwPageNotFoundException();
         }
         $this->render('view', array(
