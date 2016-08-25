@@ -209,7 +209,8 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
 </style>
 <script>
     $(document).ready(function () {
-        $html = '<li><div class="tiger"><a href="<?php echo $this->createUrl('event/view', array('page' => 'tiger')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147027575800229" alt="" class="img-responsive"></a></div></li>' +
+        $html = '<li><div class="cataractExtraction"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cataractExtraction')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147208952855970" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="tiger"><a href="<?php echo $this->createUrl('event/view', array('page' => 'tiger')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147027575800229" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="cooperation"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cooperation')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146908742787421" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="redcommonweal"><a href="<?php echo $this->createUrl('event/view', array('page' => 'redcommonweal')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146417164772626" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="lungcancer"><a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')); ?>" target="_blank"><img src="http://7xsq2z.com2.z0.glb.qiniucdn.com/146338468582143" alt="" class="img-responsive"></a></div></li>';
