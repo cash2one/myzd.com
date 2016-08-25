@@ -13,6 +13,7 @@ $authActionType = AuthSmsVerify::ACTION_BOOKING;
 $urlSubmitForm = $this->createUrl("booking/ajaxQuickbook");
 $urlReturn = '';
 ?>
+
 <div class="container-fluid" id="zhitongche">
     <div class="row">
         <div class="container-fluid" >
@@ -209,6 +210,20 @@ $urlReturn = '';
                                         <div class="text14 mt10 ">疾病名称：左侧肾上腺肿瘤</div>
                                         <div class="introduce mt20">
                                             <div>名医主刀汇聚了全球3万名专家以及数千张手术床位资源，医疗客服联系了专门负责签约专家的同事，预约到了华东地区技术较高、声誉较好的上海华山医院泌尿...</div>
+                                        </div>
+                                        <div class="learn-more">查看详情</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mt15">
+                            <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'hopealive')); ?>">
+                                <div class="every-story">                           
+                                    <div><img src="http://static.mingyizhudao.com/14719195648621" alt="他说，活下去的希望是你们给的！" title="他说，活下去的希望是你们给的！"/></div>
+                                    <div class="story-content">
+                                        <div class="text14 mt10 ">疾病名称：左侧的股骨头坏死</div>
+                                        <div class="introduce mt20">
+                                            <div>对于这次从上海来到县级医院进行公益手术，程教授感触良多，也非常欣慰。他说：“我觉得这次的公益手术包括以后的合作，最大的得益者是病人是患者。如果...</div>
                                         </div>
                                         <div class="learn-more">查看详情</div>
                                     </div>
