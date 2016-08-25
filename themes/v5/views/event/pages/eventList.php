@@ -24,7 +24,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-
                         </div>
                         <div class="content">
                             <div class="text-content">
-                                <div>前段时间网络爆红的人机大战，Alpha Go以4:1战胜韩国棋手李世石，让很多人感到恐慌，"机器人威胁说"不胫而走。</div>
+                                <div>前段时间网络爆红的人机大战，Alpha Go以4:1战胜韩国棋手李世石，让很多人感到恐慌，"机器人威胁说"不胫<span style="letter-spacing:-1px;">而走。</span></div>
                                 <div>但是，今天名医君要给大家介绍的一款机器人，不仅不会让你感到威胁…</div>
                             </div>
                             <div class="learn-more">查看详情></div>
