@@ -40,7 +40,7 @@ $bookingLog = $this->createUrl("booking/ajaxBookingLog");
                                 <div class="form-group mt30">
                                     <label for="booking_contact_name" class="col-xs-3 col-sm-3 col-md-3 control-label">患者姓名:</label>
                                     <div class="col-sm-8 col-xs-8 controls">
-                                        <input name="booking[contact_name]" placeholder="请填写患者的真实姓名" class="form-control" maxlength="45" id="booking_contact_name" type="text">        </div>
+                                        <input name="booking[contact_name]" placeholder="请填写患者的真实姓名" class="form-control" maxlength="19" id="booking_contact_name" type="text">        </div>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="form-group mt30">
