@@ -45,7 +45,7 @@ Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/
                         <div class="form-group">
                             <label for="" class="padright0 col-sm-offset-1 col-sm-3 col-md-3 control-label">患者姓名:</label>
                             <div class="col-sm-7 controls">
-                                <input name="booking[contact_name]" placeholder="请填写患者的真实姓名" class="form-control" maxlength="50" id="booking_contact_name" type="text">                                </div>
+                                <input name="booking[contact_name]" placeholder="请填写患者的真实姓名" class="form-control" maxlength="19" id="booking_contact_name" type="text">                                </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="form-group">
