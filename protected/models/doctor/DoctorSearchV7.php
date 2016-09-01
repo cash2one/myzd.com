@@ -50,7 +50,7 @@ class DoctorSearchV7 extends ESearchModel {
             if (isset($this->queryParams['disease_name'])) {
                 $disease_name = $this->queryParams['disease_name'];
                 $this->criteria->join = 'left join disease_doctor_join ddj on (t.`id`=ddj.`doctor_id`) left join disease d on d.id=ddj.disease_id';
-                $this->criteria->compare("d.app_version", 7);
+                $this->criteria->compare("d.app_version", 8);
                 $this->criteria->addSearchCondition('d.name', $disease_name);
                 $this->criteria->distinct = true;
             }
@@ -72,7 +72,7 @@ class DoctorSearchV7 extends ESearchModel {
                 $this->criteria->addCondition("d.cat_id=:cateId");
                 $this->criteria->addCondition("d.app_version=:app");
                 $this->criteria->params[":cateId"] = $cateId;
-                $this->criteria->params[":app"] = 7;
+                $this->criteria->params[":app"] = 8;
                 $this->criteria->distinct = true;
             }
             // disease_sub_category.
