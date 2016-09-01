@@ -10,6 +10,7 @@ $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' =>
 $urlLoadSecondaryDepartment = $this->createUrl('api/secondarydepartment', array('api' => 7, 'disease_id' => ''));
 $urlHospitalView = Yii::app()->params['baseUrl'];
 $city = Yii::app()->request->getQuery('city', '1');
+$disease = Yii::app()->request->getQuery('disease', '');
 $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
@@ -107,6 +108,7 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
     //url参数数组
     var condition = new Array();
     condition["city"] = '<?php echo $city ?>';
+    condition["disease"] = '<?php echo $disease; ?>';
     condition["disease_name"] = '<?php echo $disease_name; ?>';
     condition["disease_category"] = '<?php echo $disease_category; ?>';
     condition["disease_sub_category"] = '<?php echo $disease_sub_category; ?>';
@@ -114,8 +116,6 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
     var urlLoadHospital = '<?php echo $urlLoadHospital; ?>';
     $(document).ready(function () {
         //左侧菜单栏
-        setDiseaseCategoryActive();
-
         if (condition["disease"] != '') {
             ajaxLoadSecondaryDepartment();
         }
@@ -163,9 +163,8 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
         $.ajax({
             url: urlLoadSecondaryDepartment,
             success: function (data) {
-                console.log(data);
                 var subId = data.sub_cat_id;
-                
+                setSecondaryDepartmentActive(subId);
             },
             error: function (XmlHttpRequest, textStatus, errorThrown) {
                 console.log(XmlHttpRequest);
@@ -224,11 +223,11 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
             }
         });
     }
-    function setDiseaseCategoryActive() {
+    function setSecondaryDepartmentActive(subId) {
         $('.dept-menu .left-department .border-department').removeClass('active');
         $('.dept-menu .left-department .border-department').each(function () {
             var subCatId = $(this).attr('data-id');
-            if (subCatId == condition["disease_sub_category"]) {
+            if (subCatId == subId) {
                 $('.main-department').html($(this).children('.text-14-right').text());
                 $(this).addClass('active');
             }
