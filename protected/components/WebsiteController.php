@@ -334,7 +334,7 @@ abstract class WebsiteController extends Controller {
     public function getHeaderMenu() {
         if ($this->header_menu === null) {
             $this->header_menu = array(
-                'doctor' => array('label' => '找名医', 'url' => array('doctor/findexpert')),
+                'doctor' => array('label' => '找名医', 'url' => array('/doctor-top-disease_sub_category-1-page-1-getcount-1.html')),
                 'hospital' => array('label' => '找医院', 'url' => array('hospital/department')),
                 'zhitongche' => array('label' => '患者故事', 'url' => array('site/page', 'view' => 'zhitongche')),
                 'mygy' => array('label' => '公益手术', 'url' => array('site/page', 'view' => 'mygy')),

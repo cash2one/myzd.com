@@ -13,6 +13,7 @@ $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
 $page = Yii::app()->request->getQuery('page', '');
+$urlBaseUrl = Yii::app()->params['baseUrl'];
 ?>
 <div class="container-fluid search-hospital-header">
     <div class="container">
@@ -46,18 +47,18 @@ $page = Yii::app()->request->getQuery('page', '');
         <div class="dept-menu">
             <div class="col-sm-2">
                 <ul class="left-department">
-                    <li class="border-department"><div class="bg1-puwaike"></div><div class="text-14-right">普外科</div></li>
-                    <li class="border-department "><div class="bg2-guke"></div><div class="text-14-right">骨科</div></li>
-                    <li class="border-department "><div class="bg3-shenwai"></div><div class="text-14-right">神经外科</div></li>
-                    <li class="border-department "><div class="bg4-miniaowaike"></div><div class="text-14-right">泌尿外科</div></li>
-                    <li class="border-department "><div class="bg5-xiongwaike"></div><div class="text-14-right">胸外科</div></li>
-                    <li class="border-department "><div class="bg6-yanke"></div><div class="text-14-right">眼科</div></li>
-                    <li class="border-department "><div class="bg7-xinxueguan"></div><div class="text-14-right">心血管外科</div></li>
-                    <li class="border-department "><div class="bg8-erbihouke"></div><div class="text-14-right">耳鼻喉科</div></li>
-                    <li class="border-department "><div class="bg9-zhengxingwaike"></div><div class="text-14-right">整形外科</div></li>
-                    <li class="border-department "><div class="bg10-hemianwaike"></div><div class="text-14-right">颌面外科</div></li>
-                    <li class="border-department "><div class="bg11-fuke"></div><div class="text-14-right">妇科</div></li>
-                    <li class="border-department "><div class="bg12-xiaoerwaike"></div><div class="text-14-right">小儿外科</div></li>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-1.html"><li data-id="1" class="border-department"><div class="bg1-puwaike"></div><div class="text-14-right">普外科</div></li></a>
+                    <a  href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-2.html"><li data-id="2" class="border-department "><div class="bg2-guke"></div><div class="text-14-right">骨科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-3.html"><li data-id="3" class="border-department "><div class="bg3-shenwai"></div><div class="text-14-right">神经外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-4.html"><li data-id="4" class="border-department "><div class="bg4-miniaowaike"></div><div class="text-14-right">泌尿外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-5.html"><li data-id="5" class="border-department "><div class="bg5-xiongwaike"></div><div class="text-14-right">胸外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-8.html"><li data-id="8" class="border-department "><div class="bg6-yanke"></div><div class="text-14-right">眼科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-6.html"><li data-id="6" class="border-department "><div class="bg7-xinxueguan"></div><div class="text-14-right">心血管外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-9.html"><li data-id="9" class="border-department "><div class="bg8-erbihouke"></div><div class="text-14-right">耳鼻喉科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-7.html"><li data-id="7" class="border-department "><div class="bg9-zhengxingwaike"></div><div class="text-14-right">整形外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-10.html"><li data-id="10" class="border-department "><div class="bg10-hemianwaike"></div><div class="text-14-right">颌面外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-11.html"><li data-id="11" class="border-department "><div class="bg11-fuke"></div><div class="text-14-right">妇科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-12.html"><li data-id="12" class="border-department "><div class="bg12-xiaoerwaike"></div><div class="text-14-right">小儿外科</div></li></a>
                 </ul>
 
                 <div class="mt20 mb20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/146242724592795"></a></div>
@@ -128,6 +129,7 @@ $page = Yii::app()->request->getQuery('page', '');
     .bg10-hemianwaike{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-270px 0;margin-left: 35px;padding-top:5px;}
     .bg11-fuke{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-300px 0;margin-left: 35px;padding-top:5px;}
     .bg12-xiaoerwaike{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-330px 0;margin-left: 35px;padding-top:5px;}
+    .left-department .border-department.active .text-14-right{color:#19aea5;}
 </style>
 <script>
     //url参数数组
@@ -139,6 +141,9 @@ $page = Yii::app()->request->getQuery('page', '');
     condition["page"] = '<?php echo $page == '' ? 1 : $page; ?>';
     var urlLoadHospital = '<?php echo $urlLoadHospital; ?>';
     $(document).ready(function () {
+        //左侧菜单栏
+        setDiseaseCategoryActive();
+        
         $("#hospital-list .open-city .close-btn").click(function () {
             $("#hospital-list .city-cutover .cutover-btn").removeClass('active');
             $("#hospital-list .open-city").hide();
@@ -157,7 +162,7 @@ $page = Yii::app()->request->getQuery('page', '');
         })
         setCityActive();
         ajaxLoadHopital('&getcount=1');
-        ajaxLoadDiseaseCategory();
+//        ajaxLoadDiseaseCategory();
         $('.city-list a.all').click(function (e) {
             e.preventDefault();
             condition["city"] = '';
@@ -196,69 +201,7 @@ $page = Yii::app()->request->getQuery('page', '');
             }
         });
     }
-    /**** ajax异步加载科室 ****/
-    function ajaxLoadDiseaseCategory() {
-        var urlloadDiseaseCategory = '<?php echo $urlloadDiseaseCategory; ?>';
-        $.ajax({
-            url: urlloadDiseaseCategory,
-            success: function (data) {
-                setDiseaseCategory(data);
-            },
-            error: function (XmlHttpRequest, textStatus, errorThrown) {
-                console.log(XmlHttpRequest);
-                console.log(textStatus);
-                console.log(errorThrown);
-            }
-        });
-    }
 
-    /**** 设置左侧科室菜单html ****/
-    function setDiseaseCategory(data) {
-        if (data.results) {
-            var innerHtml = '';
-            var diseaseCategorys = data.results;
-            var active = '';
-            for (var i = 1; i <= diseaseCategorys.length; i++) {
-                var diseaseCategory = diseaseCategorys[i - 1];
-                if (i == condition["disease_category"]) {
-                    active = 'active';
-                    $('.department-name>span').text(diseaseCategory.name);
-                } else {
-                    active = '';
-                }
-                var imgname = '';
-                if (diseaseCategory.id == 1) {
-                    imgname = 'puwaike-small';
-                } else if (diseaseCategory.id == 2) {
-                    imgname = 'guke-small';
-                } else if (diseaseCategory.id == 3) {
-                    imgname = 'fuchanke-small';
-                } else if (diseaseCategory.id == 4) {
-                    imgname = 'xiaoerke-small';
-                } else if (diseaseCategory.id == 5) {
-                    imgname = 'wuguanke-small';
-                } else if (diseaseCategory.id == 6) {
-                    imgname = 'neike-small';
-                }
-                innerHtml += '<div class="department' + active + '">' +
-                        '<div class="dept-header">' +
-                        '<span class="' + imgname + '"></span><i class="fa fa-caret-right"></i>' +
-                        '<i class="fa fa-caret-down"></i>' +
-                        '<span class="strong dept-name">' + diseaseCategory.name + '</span>' +
-                        '</div>' +
-                        '<ul>';
-                var subCats = diseaseCategory.subCat;
-                for (var j = 0; j < subCats.length; j++) {
-                    var subCat = subCats[j];
-                    innerHtml += '<li class="ml10"><a class="subCat" data-id = "' + subCat.id + '" href="<?php echo $urlLoadHospitalByDiseaseSubCategory; ?>' + subCat.id + '">' + subCat.name + '</a></li>';
-                }
-                innerHtml += '</ul></div>';
-            }
-            $('.department-list').html(innerHtml);
-            setDiseaseCategoryActive();
-            initDeptFunction();
-        }
-    }
     //设置地址栏信息
     function setLocationUrl() {
         var stateObject = {};
@@ -290,14 +233,12 @@ $page = Yii::app()->request->getQuery('page', '');
         });
     }
     function setDiseaseCategoryActive() {
-        $('.department-list .department').removeClass('active');
-        $('.department-list .subCat').each(function () {
+        $('.dept-menu .left-department .border-department').removeClass('active');
+        $('.dept-menu .left-department .border-department').each(function () {
             var subCatId = $(this).attr('data-id');
             if (subCatId == condition["disease_sub_category"]) {
-//                $('.department-name>span').html($(this).text());
-                $('.main-department').html($(this).parents('.department').find('.dept-name').text());
+                $('.main-department').html($(this).children('.text-14-right').text());
                 $(this).addClass('active');
-                $(this).parents('.department').addClass('active');
             }
         });
     }

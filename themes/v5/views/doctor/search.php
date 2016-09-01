@@ -22,7 +22,7 @@ $page = Yii::app()->request->getQuery('page', '');
     <div class="container-fluid bg-green">
         <div class="container">
             <div class="crumbs-doctor">
-                <div><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <a href="<?php echo $this->createUrl('doctor/findexpert'); ?>" target="_blank">找名医</a> > <span class="department main-department"></span></div>
+                <div><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <span>找名医</span></div>
                 <!--                <div class="department-open">
                                     <div class="department">1</div>
                                     <div class="department">1</div>
