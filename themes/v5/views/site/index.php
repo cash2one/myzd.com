@@ -2,8 +2,8 @@
 $this->pageTitle = '三甲医院手术预约,专家,主任医生手术,床位预约_名医主刀网';
 $this->htmlMetaKeywords = '预约手术,专家手术,名医主刀网';
 $this->htmlMetaDescription = '名医随时有,手术不再难!【名医主刀】汇聚国内外顶级名医和床位资源,利用互联网技术实现医患精准匹配,帮助广大患者在第一时间预约到名医专家进行主刀治疗-www.mingyizhudao.com';
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/home.js?v=' . time(), CClientScript::POS_END);
-$urlResImage = Yii::app()->theme->baseUrl . "/images/";
+Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/homeelse101.css');
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/home102.min.js', CClientScript::POS_END);
 $urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 1));
 $urlRecommendedDoctors = $this->createUrl('api/recommendeddoctors');
 $urlDiseaseName = $this->createUrl('api/diseasename', array('api' => 7, 'disease_name' => '')); //api/diseasename?api=7&disease_name=
@@ -81,7 +81,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                 <div class="row">
                     <div class="home-department mt50">
                         <div class="col-sm-3 column-right">
-                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 1)); ?>"target="_blank">
+                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 101)); ?>"target="_blank">
                                 <div class="bg-department">
                                     <div class="bg-puwaike"></div>
                                     <div class="text-21-right">普外科</div>
@@ -89,7 +89,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                             </a>
                         </div>
                         <div class="col-sm-3 column-right">
-                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 2)); ?>"target="_blank">
+                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 102)); ?>"target="_blank">
                                 <div class="bg-department ">
                                     <div class="bg-guke"></div>
                                     <div class="text-21-right">骨科</div>
@@ -97,7 +97,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                             </a>
                         </div>
                         <div class="col-sm-3 column-right">
-                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 3)); ?>"target="_blank">
+                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 103)); ?>"target="_blank">
                                 <div class="bg-department ">
                                     <div class="bg-shenwai"></div>
                                     <div class="text-21-right">神经外科</div>
@@ -105,7 +105,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                             </a>
                         </div>
                         <div class="col-sm-3 ">
-                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 4)); ?>"target="_blank">
+                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 104)); ?>"target="_blank">
                                 <div class="bg-department ">
                                     <div class="bg-miniaoke"></div>
                                     <div class="text-21-right">泌尿外科</div>
@@ -113,7 +113,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                             </a>
                         </div>
                         <div class="col-sm-3 mt20 column-right">
-                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 5)); ?>"target="_blank">
+                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 105)); ?>"target="_blank">
                                 <div class="bg-department">
                                     <div class="bg-xiongwaike"></div>
                                     <div class="text-21-right">胸外科</div>
@@ -121,7 +121,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                             </a>
                         </div>
                         <div class="col-sm-3 mt20 column-right">
-                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 8)); ?>"target="_blank">
+                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 108)); ?>"target="_blank">
                                 <div class="bg-department ">
                                     <div class="bg-yanke"></div>
                                     <div class="text-21-right">眼科</div>
@@ -129,7 +129,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                             </a>
                         </div>
                         <div class="col-sm-3 mt20 column-right">
-                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 6)); ?>"target="_blank">
+                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 106)); ?>"target="_blank">
                                 <div class="bg-department">
                                     <div class="bg-xinxueguan"></div>
                                     <div class="text-21-right">心血管外科</div>
@@ -137,7 +137,7 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
                             </a>
                         </div>
                         <div class="col-sm-3 mt20">
-                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 9)); ?>"target="_blank">
+                            <a href="<?php echo $this->createUrl('hospital/top', array('disease_sub_category' => 109)); ?>"target="_blank">
                                 <div class="bg-department">
                                     <div class="bg-erbihouke"></div>
                                     <div class="text-21-right">耳鼻喉科</div>
@@ -176,18 +176,6 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
         <div class="row">
             <div class="container">
                 <div class="expList-tab row">
-                    <!--                    <div class="recommended-doctor" id="recommended-doctor1">1</div>
-                                        <div class="recommended-doctor" id="recommended-doctor2">2</div>
-                                        <div class="recommended-doctor" id="recommended-doctor3">3</div>
-                                        <div class="recommended-doctor" id="recommended-doctor4">4</div>
-                                        <div class="recommended-doctor" id="recommended-doctor5">5</div>
-                                        <div class="recommended-doctor" id="recommended-doctor6">6</div>
-                                        <div class="recommended-doctor" id="recommended-doctor7">7</div>
-                                        <div class="recommended-doctor" id="recommended-doctor8">8</div>
-                                        <div class="recommended-doctor" id="recommended-doctor9">9</div>
-                                        <div class="recommended-doctor" id="recommended-doctor10">10</div>
-                                        <div class="recommended-doctor" id="recommended-doctor11">11</div>
-                                        <div class="recommended-doctor" id="recommended-doctor12">12</div>-->
                 </div>
             </div>
         </div>
@@ -242,51 +230,10 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
     </div>
 </section>
 <style>
-    #bouncedhide .homepage-bounced-all{background-color:#221714;opacity:0.7;width:100%;height:200px;position:fixed;bottom:0;z-index:99;display:block;}
-    #bouncedhide .homepage-bounced{position:fixed;bottom:0;z-index: 99}
-    #bouncedhide .homepage-bounced-fork{position:absolute;top:20px;right:20px;z-index: 100;}
-    #homeforkone{cursor:pointer;display:block;width: 25px;height:25px;background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023236775');}
-    #homeforkone:hover{background:url('http://7xsq2z.com2.z0.glb.qiniucdn.com/146908023898548');}
-    .text-21{font-size: 21px;color:#555;float: left;}
-    .text-21-right{font-size: 21px;color:#555;margin-top: -66px;margin-left: 120px;}
-    .text-14{font-size: 14px;color:#555;float: right;}
-    .column-right{padding-right:5px;}
-    .bg-department{background-color: #f7f7f7;height:170px;width:100%; padding-top:35px;padding-left: 30px;float: left}
-    .bg-department:hover{background-color:#f2f2f2;}
-    .bg-puwaike{height:100px;width:100px;background: url('http://static.mingyizhudao.com/147157333932964') no-repeat;background-position:0 0;}
-    .bg-guke{height:100px;width:100px;background: url('http://static.mingyizhudao.com/147157333932964') no-repeat;background-position:-100px 0;}
-    .bg-shenwai{height:100px;width:100px;background: url('http://static.mingyizhudao.com/147157333932964') no-repeat;background-position:-200px 0;}
-    .bg-miniaoke{height:100px;width:100px;background: url('http://static.mingyizhudao.com/147157333932964') no-repeat;background-position:-300px 0;}
-    .bg-xiongwaike{height:100px;width:100px;background: url('http://static.mingyizhudao.com/147157333932964') no-repeat;background-position:-400px 0;}
-    .bg-yanke{height:100px;width:100px;background: url('http://static.mingyizhudao.com/147157333932964') no-repeat;background-position:-500px 0;}
-    .bg-xinxueguan{height:100px;width:100px;background: url('http://static.mingyizhudao.com/147157333932964') no-repeat;background-position:-600px 0;}
-    .bg-erbihouke{height:100px;width:100px;background: url('http://static.mingyizhudao.com/147157333932964') no-repeat;background-position:-700px 0;}
-    .recommended-doctor{display:none;}
-    .recommended-doctor.active{display:block;}
-    .recommended-padding{padding-left: 0px;}
-    .recommended-department{margin-left: 50px;}
-    .recommended-department.active,.recommended-department:hover{color: #21a59c;cursor:pointer}
-    #homeads .bx-controls-direction .bx-next{right:37px;}
-    .home-expList .nav-tabs{border-bottom:none;}
-    .home-more-dept:hover{color:#333;}
+
 </style>
 <script>
     $(document).ready(function () {
-        $('.home-expslider').click(function () {
-            $('.home-expslider').removeClass('active');
-            $(this).addClass('active');
-            var pageId = '.' + $(this).attr('data-page');
-            $('.expgroup-slider').removeClass('active');
-            $(pageId).addClass('active');
-        });
-        $('.recommended-department').click(function (e) {
-            e.preventDefault();
-            $('.recommended-department').removeClass('active');
-            $(this).addClass('active');
-            $('.recommended-doctor').hide();
-            var recommendId = $(this).attr('href');
-            $('#' + recommendId).show();
-        });
         $html = '<li><div class="zeroconsultation"><a href="<?php echo $this->createUrl('event/view', array('page' => 'zeroconsultation')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/146908716504875" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="cooperation"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cooperation')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147220392197089" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
