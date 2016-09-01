@@ -21,7 +21,6 @@ class ApiViewRecommendedDoctors extends EApiViewService {
     }
     public function loadDoctors(){
         $doctorList = include dirname(__FILE__) . '/../config/recommendeddoctors.php';
-
         foreach($doctorList as $key=>$doctorIds){
             $criteria = new CDbCriteria();
             $criteria->addCondition('t.date_deleted is NULL');
@@ -33,7 +32,7 @@ class ApiViewRecommendedDoctors extends EApiViewService {
             }
         }
     }
-    private function setDoctors($models, $key){
+    private function setDoctors($models,$key){
         $temp = array();
         foreach ($models as $model) {
             $data = new stdClass();
