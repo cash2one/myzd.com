@@ -7,6 +7,7 @@ $urlLoadHospital = $this->createUrl('api/hospital', array('api' => 7, 'pagesize'
 $urlLoadHospitalByDiseaseSubCategory = $this->createUrl('api/hospital', array('api' => 7, 'pagesize' => 10, 'disease_sub_category' => ''));
 $urlloadDiseaseCategory = $this->createUrl('api/diseasecategory', array('api' => 7)); ///api/diseasecategory
 //$urlHospitalView = $this->createUrl('hospital/view');
+$urlLoadSecondaryDepartment = $this->createUrl('api/secondarydepartment', array('api' => 7, 'disease_id' => ''));
 $urlHospitalView = Yii::app()->params['baseUrl'];
 $city = Yii::app()->request->getQuery('city', '1');
 $disease_name = Yii::app()->request->getQuery('disease_name', '');
@@ -114,7 +115,10 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
     $(document).ready(function () {
         //左侧菜单栏
         setDiseaseCategoryActive();
-        
+
+        if (condition["disease"] != '') {
+            ajaxLoadSecondaryDepartment();
+        }
         $("#hospital-list .open-city .close-btn").click(function () {
             $("#hospital-list .city-cutover .cutover-btn").removeClass('active');
             $("#hospital-list .open-city").hide();
@@ -153,6 +157,23 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
             $('.department-name>strong').html(condition["disease_name"]);
         }
     });
+    /**** 根据疾病获取二级科室 ****/
+    function ajaxLoadSecondaryDepartment() {
+        var urlLoadSecondaryDepartment = '<?php echo $urlLoadSecondaryDepartment ?>' + condition["disease"];
+        $.ajax({
+            url: urlLoadSecondaryDepartment,
+            success: function (data) {
+                console.log(data);
+                var subId = data.sub_cat_id;
+                
+            },
+            error: function (XmlHttpRequest, textStatus, errorThrown) {
+                console.log(XmlHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
+            }
+        });
+    }
     //异步加载医院
     function ajaxLoadHopital(getCount) {
         var urlHospitalView = '<?php echo $urlHospitalView; ?>';
@@ -175,18 +196,18 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
 
     //设置地址栏信息
     function setLocationUrl() {
-        var stateObject = {};
-        var title = "";
-        var urlCondition = '';
-        for ($key in condition) {
-            if (condition[$key] && condition[$key] !== "") {
-                urlCondition += "&" + $key + "=" + condition[$key];
-            }
-        }
-        urlCondition = urlCondition.substring(1);
-        urlCondition = "?" + urlCondition;
-        var newUrl = "<?php echo $urlHopitalSearch; ?>" + urlCondition;
-        history.pushState(stateObject, title, newUrl);
+//        var stateObject = {};
+//        var title = "";
+//        var urlCondition = '';
+//        for ($key in condition) {
+//            if (condition[$key] && condition[$key] !== "") {
+//                urlCondition += "&" + $key + "=" + condition[$key];
+//            }
+//        }
+//        urlCondition = urlCondition.substring(1);
+//        urlCondition = "?" + urlCondition;
+//        var newUrl = "echo $urlHopitalSearch; ?>" + urlCondition;
+//        history.pushState(stateObject, title, newUrl);
     }
     function setCityActive() {
         $('.city-list a').removeClass('active');
