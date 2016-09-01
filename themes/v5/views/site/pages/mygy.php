@@ -44,23 +44,23 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
             <div class="mt40"><img src="http://static.mingyizhudao.com/146718242234110"><span class="mygy-small-title">免支付专家会诊费</span></div>
             <div class="row">
                 <div class="col-sm-7">
-                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3078')) ?>" target="_blank">
+                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3251')) ?>" target="_blank">
                         <div class="recommend-expert">
                             <div><img class="recommend-icon" src="http://static.mingyizhudao.com/146718266929627"></div>
                             <div class="pb10 expert-info">
                                 <div class="row">
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://static.mingyizhudao.com/147124750014071" alt="史占军" title="史占军"/></div></div>
+                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/7A939D1B57DC9BD173D5E25ACF6A3AA1" alt="贾占奎" title="贾占奎"/></div></div>
                                     <div class="col-md-4 mt25 expertdesc">
-                                        <div><strong>史占军</strong><span class="ml10">主任医师</span><span class="ml10">教授</span></div>
-                                        <div class="color-green mt10">关节外科中心</div>
-                                        <div class="mt10">广州南方医院</div>
+                                        <div><strong>贾占奎</strong><span class="ml10">副主任医师</span><span class="ml10">副教授</span></div>
+                                        <div class="color-green mt10">泌尿外科</div>
+                                        <div class="mt10">郑州大学第一附属医院</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="recommend-content">
-                                <div><strong>推荐理由</strong>：主任医师，教授，广州南方医科大学附属南方医院关节与骨病外科主任医师。史医师每年让数万患者脱离骨与关节病困扰，目前已经完成5000余例人工关节置换手术，为10余个省自治区的百多家大医院的高难度手术提供过手术帮助。多次到德国、奥地利、瑞士、新加坡、美国、澳大利亚、马来西亚、越南、韩国、日本、韩国、等国进行讲学或其他学术交流。作为名医主刀的签约专家，史医师在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望让更多的患者远离病痛困扰。</div>
-                                <div class="mt20"><strong>擅长手术</strong>：人工关节置换，骨肿瘤，小儿骨科和关节镜等诊疗技术，尤其擅长人工髋关节人工膝关节置换手术及相关翻修手术。</div>
+                                <div><strong>推荐理由</strong>：医学博士，郑州大学第一附属医院泌尿外科副主任医师。腔内手术（泌尿内窥镜）技术娴熟，对治疗前列腺肥大、膀胱肿瘤、尿道狭窄、肾结石、输尿管结石、膀胱结石等具有不开刀、痛苦小、恢复快、疗效确切等特点。贾医师对泌尿男科各种常见病和多发病的诊断与治疗具有较为丰富的临床经验，作为名医主刀的签约专家，贾医师积极投身公益事业，在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，为有需要的患者免费救治，希望将健康带给更多人。</div>
+                                <div class="mt20"><strong>擅长手术</strong>：擅长前列腺汽化电切术、尿道狭窄冷切开术、经皮肾镜、输尿管镜（软镜）碎石取石术。尤其擅长后腹腔镜下肾上腺肿瘤摘除术（包括巨大肾上腺肿瘤）、肾(盂)癌根治性切除术（包括巨大腔静脉癌栓取出术）、肾周淋巴管剥脱术、肾盂输尿管成形术，腹腔镜下膀胱癌根治术、前列腺癌根治术等的微创治疗。</div>
                             </div>
                         </div>
                     </a>
@@ -71,7 +71,7 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
                             所有公益项目的被资助者（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>mygy_shenqing.docx">下载名医公益申请表</a></strong>）均可以<strong class="color-e50011 text16">免支付专家会诊费</strong>。如家庭条件特别困难，可以再申请“名医公益援助金”（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>tepin_shenqing.docx">下载名医公益援助申请表</a></strong>），通过审核者可获得<strong class="text16 color-e50011">5000-10000元</strong>的援助金。如患者本人因病暂无能力自行申请，需指定委托人填写（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>weituoshu.docx">下载名医公益委托书</a></strong>）。
                         </div>
                         <div>  
-                            <div class="number-tips text-center">
+                            <div class="number-tips text-center" style="margin-top:72px;">
                                 <div class="text-right"><span class="text16">已捐赠手术的医生人数：</span><span class="text21 color-e50011 number">44位</span></div>
                                 <div class="text-right"><span class="text16">已成功资助的患者人数：</span><span class="text21 color-e50011 number">68位</span></div>
                             </div>

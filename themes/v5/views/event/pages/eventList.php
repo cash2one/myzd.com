@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-list101.min.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-list100.min.css");
 ?>
 <section id="eventList">
     <div class="container-fluid crumbs-event">
@@ -17,6 +17,91 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
     <div class="container">
         <div class="row">
             <div class="col-md-3">
+                <a href="<?php echo $this->createUrl('event/view', array('page' => 'cataractExtraction')); ?>" target="_blank">
+                    <div class="special-topic">
+                        <div class="header-img">
+                            <img src="http://static.mingyizhudao.com/147219564565069">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div>白内障复明是一项康复工程、民心工程，为了将这项惠民工程办实办好，
+                                    此次活动由名医主刀发起，江宁区残疾人联合会、南京市老年大学、南京医科大学附属逸夫医院......</div>
+                            </div>
+                            <div class="learn-more">查看详情></div>
+                            <div class="mark-activity"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="<?php echo $this->createUrl('event/view', array('page' => 'tiger')); ?>" target="_blank">
+                    <div class="special-topic">
+                        <div class="header-img">
+                            <img src="http://static.mingyizhudao.com/147219564448778">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div>7月23日下午，北京八达岭野生动物园发生一起老虎伤人的惨剧，1名当事人当场死亡、另有一人受伤，
+                                    目前还在医院救治中。 悲剧的背后，既有天灾的事由，也有人祸的成分。......</div>
+                            </div>
+                            <div class="learn-more">查看详情></div>
+                            <div class="mark-activity"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="<?php echo $this->createUrl('event/view', array('page' => 'cooperation')); ?>" target="_blank">
+                    <div class="special-topic">
+                        <div class="header-img">
+                            <img src="http://static.mingyizhudao.com/14721956419226">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div>近日，名医主刀创始人兼CEO苏舒，联合创始人兼首席技术官秦鹏以及首席财务官叶菲等一行前往美国纽约，
+                                    与美国凯瑟琳癌症中心完成了股权合作，标志着双方的合作迈入实质性......</div>
+                            </div>
+                            <div class="learn-more">查看详情></div>
+                            <div class="mark-activity"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="<?php echo $this->createUrl('event/view', array('page' => 'redcommonweal')); ?>" target="_blank">
+                    <div class="special-topic">
+                        <div class="header-img">
+                            <img src="http://static.mingyizhudao.com/147219563986258">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div>近日，中国最大的移动医疗手术平台——“名医主刀”与延安大学附属医院成功签约，
+                                    双方将以延安大学附属医院为区域手术基地， 合作共建延安市第一家互联网手术中心。......</div>
+                            </div>
+                            <div class="learn-more">查看详情></div>
+                            <div class="mark-activity"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="<?php echo $this->createUrl('event/view', array('page' => 'lungcancer')); ?>" target="_blank">
+                    <div class="special-topic">
+                        <div class="header-img">
+                            <img src="http://static.mingyizhudao.com/14721956372065">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div>专家观点：</div>
+                                <div>早发现、早治疗对于肺癌患者十分重要。手术是目前肺癌最主要的治疗方式，同时多学科的合作，预防术后并发症也不能忽视。术后良好的恢复......</div>
+                            </div>
+                            <div class="learn-more">查看详情></div>
+                            <div class="mark-activity"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'robot')); ?>" target="_blank">
                     <div class="special-topic">
                         <div class="header-img">
@@ -24,7 +109,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                         </div>
                         <div class="content">
                             <div class="text-content">
-                                <div>前段时间网络爆红的人机大战，Alpha Go以4:1战胜韩国棋手李世石，让很多人感到恐慌，"机器人威胁说"不胫<span style="letter-spacing:-1px;">而走。</span></div>
+                                <div>前段时间网络爆红的人机大战，Alpha Go以4:1战胜韩国棋手李世石，让很多人感到恐慌，"机器人威胁说"不胫<span style="letter-spacing:-1px;">而走。</div>
                                 <div>但是，今天名医君要给大家介绍的一款机器人，不仅不会让你感到威胁…</div>
                             </div>
                             <div class="learn-more">查看详情></div>
