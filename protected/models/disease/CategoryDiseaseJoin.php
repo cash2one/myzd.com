@@ -116,8 +116,9 @@ class CategoryDiseaseJoin extends EActiveRecord
         $criteria->distinct = FALSE;
         $criteria->join = 'left join disease d on (t.`disease_id`=d.`id`)';
         $criteria->addCondition("t.sub_cat_id=:sub_cat_id");
+        $criteria->addCondition("d.app_version=8");
         $criteria->params[":sub_cat_id"] = $sub_cat_id;
-
+        $criteria->order = "t.is_common DESC";
         return $this->findAll($criteria);
     }
 

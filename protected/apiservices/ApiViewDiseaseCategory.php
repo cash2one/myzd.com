@@ -52,7 +52,7 @@ class ApiViewDiseaseCategory extends EApiViewService {
         $navList = array();
         foreach ($models as $model) {
             $data = new stdClass();
-            $data->id = $model->getCategoryId();
+            $data->id = $model->getSubCategoryId();
 
             $data->name = $model->getCategoryName();
             // sub group.
