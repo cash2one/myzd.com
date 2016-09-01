@@ -135,6 +135,7 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
     condition["mtitle"] = '';
     urlLoadDoctor = '<?php echo $urlLoadDoctor; ?>';
     $(document).ready(function () {
+        $('.main-subCat').html('请您选择相应科室');
         ajaxLoadCity();
         $('.toggle-subCat').click(function () {
             $(this).parents('.department-list').find('.more-subCat').toggle();
@@ -393,7 +394,10 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
             var subCatId = $(this).attr('data-id');
             var subCatName = $(this).attr('data-name');
             if (subCatId == condition["disease_sub_category"]) {
-                $('.department-list .main-subCat').html(subCatName);
+                $('.more-subCat').click(function () {
+                    $('.department-list .main-subCat').empty();
+                    $('.department-list .main-subCat').html(subCatName);
+                });
                 $('.main-department').html($(this).parents('.department').find('.dept-header').text());
                 $(this).addClass('active');
                 $(this).parents('.department').addClass('active');
@@ -429,5 +433,4 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
             }
         });
     }
-
 </script>
