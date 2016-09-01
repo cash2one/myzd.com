@@ -22,6 +22,7 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
 <style>
     #doctorList .select-condition .city-list .city-title{height:7em;}
     #doctorList .select-condition .select-disease .disease-title{}
+    .diseasemore-open,.diseasemore-closedown{cursor:pointer;}
     @media (max-width: 991px){#doctorList .select-condition .city-list .city-title,#doctorList .select-condition .select-disease .disease-title{height:1em;}} 
 </style>
 <section id="doctorList">
