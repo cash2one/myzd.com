@@ -61,10 +61,11 @@ class ApiViewDiseaseCategory extends EApiViewService {
             $subGroup->name = $model->getSubCategoryName();
 
             if (isset($navList[$data->id])) {
-                $navList[$data->id]->subCat[] = $subGroup;
+                //$navList[$data->id]->subCat[] = $subGroup;
+                $navList[$data->id] = $data;
             } else {
                 $navList[$data->id] = $data;
-                $navList[$data->id]->subCat[] = $subGroup;
+                //$navList[$data->id]->subCat[] = $subGroup;
             }
         }
 

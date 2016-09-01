@@ -56,7 +56,7 @@ class DiseaseManager {
     }
 
     public function loadDiseaseCategoryListV7() {
-        $models = DiseaseCategory::model()->getAllByInCondition('t.app_version', 7);
+        $models = DiseaseCategory::model()->getAllByInCondition('t.app_version', 8);
         return $models;
     }
 
