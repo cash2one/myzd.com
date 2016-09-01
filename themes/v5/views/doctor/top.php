@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/searchdoctor100.min.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/searchdoctor101.min.css");
 Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/searchdoctortop101.min.js', CClientScript::POS_END);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDoctorSearch = $this->createUrl('doctor/top');
@@ -305,7 +305,7 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
 //                var subCats = diseaseCategory.subCat;
 //                for (var j = 0; j < subCats.length; j++) {
 //                    var subCat = subCats[j];
-                    innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + diseaseCategory.name + '" data-id = "' + diseaseCategory.id + '" href="<?php echo $urlBaseUrl; ?>' + '/doctor-top-disease_sub_category-' + diseaseCategory.id + '-page-1-getcount-1.html">' + diseaseCategory.name + '</a></span>';
+                innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + diseaseCategory.name + '" data-id = "' + diseaseCategory.id + '" href="<?php echo $urlBaseUrl; ?>' + '/doctor-top-disease_sub_category-' + diseaseCategory.id + '-page-1-getcount-1.html">' + diseaseCategory.name + '</a></span>';
 //                }
 //                innerHtml += '</div>';
             }

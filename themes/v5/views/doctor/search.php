@@ -16,7 +16,9 @@ $disease = Yii::app()->request->getQuery('disease', '');
 $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
+$urlBaseUrl = Yii::app()->params['baseUrl'];
 $page = Yii::app()->request->getQuery('page', '');
+
 ?>
 <section id="doctorList">
     <div class="container-fluid bg-green">
@@ -33,7 +35,7 @@ $page = Yii::app()->request->getQuery('page', '');
     </div>
     <div class="container pb20 mt30">
         <div class="department-list">
-            <div class=""><span  class="main-subCat"></span><span  class="pull-right more-subCat toggle-subCat">展开其他二级科室 <i class="fa fa-angle-right"></i></span><span  class="pull-right retract-subCat toggle-subCat">收起其他二级科室 <i class="fa fa-angle-down"></i></span></div>
+            <div class=""><span  class="main-subCat"></span><span  class="pull-right more-subCat toggle-subCat">展开科室 <i class="fa fa-angle-right"></i></span><span  class="pull-right retract-subCat toggle-subCat">切换科室 <i class="fa fa-angle-down"></i></span></div>
             <div class="clearfix"></div>
             <div class="mt10 subCatList"></div>
         </div>
@@ -57,7 +59,6 @@ $page = Yii::app()->request->getQuery('page', '');
                 <div class="mt30">
                     <nav class="text-center">
                         <ul class="pagination">
-
                         </ul>
                     </nav>
                 </div>
@@ -220,23 +221,23 @@ $page = Yii::app()->request->getQuery('page', '');
             var active = '';
             for (var i = 1; i <= diseaseCategorys.length; i++) {
                 var diseaseCategory = diseaseCategorys[i - 1];
-                if (i == condition["disease_category"]) {
-                    active = 'active';
-                    $('.department-name>span').text(diseaseCategory.name);
-                } else {
-                    active = '';
-                }
-                innerHtml += '<div class="department ' + active + '">' +
-                        '<div class="dept-header">' + diseaseCategory.name +
-                        '</div>';
-                //'<li><a class="diseaseCategory" data-id = "' + diseaseCategory.id + '" href="<?php //echo $urlLoadDoctorByDiseaseCategory;           ?>' + diseaseCategory.id + '">全部</a></li>';
-                var subCats = diseaseCategory.subCat;
-                for (var j = 0; j < subCats.length; j++) {
-                    var subCat = subCats[j];
+//                if (i == condition["disease_category"]) {
+//                    active = 'active';
+//                    $('.department-name>span').text(diseaseCategory.name);
+//                } else {
+//                    active = '';
+//                }
+//                innerHtml += '<div class="department ' + active + '">' +
+//                        '<div class="dept-header">' + diseaseCategory.name +
+//                        '</div>';
+//                //'<li><a class="diseaseCategory" data-id = "' + diseaseCategory.id + '" href="<?php //echo $urlLoadDoctorByDiseaseCategory;           ?>' + diseaseCategory.id + '">全部</a></li>';
+//                var subCats = diseaseCategory.subCat;
+//                for (var j = 0; j < subCats.length; j++) {
+//                    var subCat = subCats[j];
 //                    innerHtml += '<li class="ml10"><a class="subCat" data-id = "' + subCat.id + '" href="<?php // echo $urlLoadDoctorByDiseaseSubCategory;       ?>' + subCat.id + '">' + subCat.name + '</a></li>';
-                    innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + subCat.name + '" data-id = "' + subCat.id + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCat.id + '">' + subCat.name + '</a></span>';
-                }
-                innerHtml += '</div>';
+                    innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + diseaseCategory.name + '" data-id = "' + diseaseCategory.id + '" href="<?php echo $urlBaseUrl; ?>' + '/doctor-top-disease_sub_category-' + diseaseCategory.id + '-page-1-getcount-1.html">' + diseaseCategory.name + '</a></span>';
+//                }
+//                innerHtml += '</div>';
             }
             $('.subCatList').html(innerHtml);
             if (condition["disease"] != '') {

@@ -1,5 +1,5 @@
 <?php
-Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/searchhospital100.min.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/searchhospital100.min.css");
 Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchhospital.js?v=' . time(), CClientScript::POS_HEAD);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlHopitalSearch = $this->createUrl('hospital/top');
@@ -47,18 +47,18 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
         <div class="dept-menu">
             <div class="col-sm-2">
                 <ul class="left-department">
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-1.html"><li data-id="1" class="border-department"><div class="bg1-puwaike"></div><div class="text-14-right">普外科</div></li></a>
-                    <a  href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-2.html"><li data-id="2" class="border-department "><div class="bg2-guke"></div><div class="text-14-right">骨科</div></li></a>
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-3.html"><li data-id="3" class="border-department "><div class="bg3-shenwai"></div><div class="text-14-right">神经外科</div></li></a>
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-4.html"><li data-id="4" class="border-department "><div class="bg4-miniaowaike"></div><div class="text-14-right">泌尿外科</div></li></a>
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-5.html"><li data-id="5" class="border-department "><div class="bg5-xiongwaike"></div><div class="text-14-right">胸外科</div></li></a>
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-8.html"><li data-id="8" class="border-department "><div class="bg6-yanke"></div><div class="text-14-right">眼科</div></li></a>
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-6.html"><li data-id="6" class="border-department "><div class="bg7-xinxueguan"></div><div class="text-14-right">心血管外科</div></li></a>
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-9.html"><li data-id="9" class="border-department "><div class="bg8-erbihouke"></div><div class="text-14-right">耳鼻喉科</div></li></a>
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-7.html"><li data-id="7" class="border-department "><div class="bg9-zhengxingwaike"></div><div class="text-14-right">整形外科</div></li></a>
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-10.html"><li data-id="10" class="border-department "><div class="bg10-hemianwaike"></div><div class="text-14-right">颌面外科</div></li></a>
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-11.html"><li data-id="11" class="border-department "><div class="bg11-fuke"></div><div class="text-14-right">妇科</div></li></a>
-                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-12.html"><li data-id="12" class="border-department "><div class="bg12-xiaoerwaike"></div><div class="text-14-right">小儿外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-101.html"><li data-id="101" class="border-department"><div class="bg1-puwaike"></div><div class="text-14-right">普外科</div></li></a>
+                    <a  href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-102.html"><li data-id="102" class="border-department "><div class="bg2-guke"></div><div class="text-14-right">骨科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-103.html"><li data-id="103" class="border-department "><div class="bg3-shenwai"></div><div class="text-14-right">神经外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-104.html"><li data-id="104" class="border-department "><div class="bg4-miniaowaike"></div><div class="text-14-right">泌尿外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-105.html"><li data-id="105" class="border-department "><div class="bg5-xiongwaike"></div><div class="text-14-right">胸外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-108.html"><li data-id="108" class="border-department "><div class="bg6-yanke"></div><div class="text-14-right">眼科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-106.html"><li data-id="106" class="border-department "><div class="bg7-xinxueguan"></div><div class="text-14-right">心血管外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-109.html"><li data-id="109" class="border-department "><div class="bg8-erbihouke"></div><div class="text-14-right">耳鼻喉科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-107.html"><li data-id="107" class="border-department "><div class="bg9-zhengxingwaike"></div><div class="text-14-right">整形外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-110.html"><li data-id="110" class="border-department "><div class="bg10-hemianwaike"></div><div class="text-14-right">颌面外科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-111.html"><li data-id="111" class="border-department "><div class="bg11-fuke"></div><div class="text-14-right">妇科</div></li></a>
+                    <a href="<?php echo $urlBaseUrl; ?>/hospital-top-disease_sub_category-112.html"><li data-id="112" class="border-department "><div class="bg12-xiaoerwaike"></div><div class="text-14-right">小儿外科</div></li></a>
                 </ul>
 
                 <div class="mt20 mb20"><a href="<?php echo $this->createUrl('event/view', array('page' => 'remebot')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/146242724592795"></a></div>
@@ -102,35 +102,6 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
     </div>
 </div>
 <?php //$this->renderPartial("//booking/bookingDeptModal"); ?>
-<style>
-    .border-switch{cursor:pointer;padding-left: 5px;padding-right: 5px;background-color: #fff;height:29px;width:70px;margin-top: 10px;border:1px solid #5cb6af;border-bottom-color:#fff;position:absolute;z-index: 100}
-    .text-switch{font-size: 12px;color:#9f9fa0; margin-top: 3px;}
-    .text-switch:hover{font-size: 12px;color:#5cb6af; margin-top: 3px;}
-    .mt-3{margin-top: -3px;}
-    .border-city{padding-left:20px;z-index: 99;background-color: #fff;width:380px;height:250px;position:absolute;border:1px solid #5cb6af;margin-top:38px;}
-    .text-15-color{font-size:15px;color:#9f9fa0;}
-    .text-14-color{font-size: 14px;color:#5cb6af}
-    .text-12{font-size: 12px;color: #555}
-    .line-divider{border-bottom:1px solid #9f9fa0;width:350px;margin-left: -5px;}
-    .left-department{margin-left: -40px;margin-top: 20px;}
-    .text-14-right{font-size:14px;color:#555;margin-top: -25px;margin-left:80px;}
-    .ml20{margin-left:20px;}
-    .ml5{margin-left: 5px;}
-    .border-department{background-color: #f7f7f7;height:40px;width:100%;margin-top: 1px;padding-top:5px;}
-    .bg1-puwaike{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:0 0;margin-left: 35px;padding-top:5px;}
-    .bg2-guke{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-30px 0;margin-left: 35px;padding-top:5px;}
-    .bg3-shenwai{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-60px 0;margin-left: 35px;padding-top:5px;}
-    .bg4-miniaowaike{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-90px 0;margin-left: 35px;padding-top:5px;}
-    .bg5-xiongwaike{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-120px 0;margin-left: 35px;padding-top:5px;}
-    .bg6-yanke{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-150px 0;margin-left: 35px;padding-top:5px;}
-    .bg7-xinxueguan{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-180px 0;margin-left: 35px;padding-top:5px;}
-    .bg8-erbihouke{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-210px 0;margin-left: 35px;padding-top:5px;}
-    .bg9-zhengxingwaike{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-240px 0;margin-left: 35px;padding-top:5px;}
-    .bg10-hemianwaike{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-270px 0;margin-left: 35px;padding-top:5px;}
-    .bg11-fuke{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-300px 0;margin-left: 35px;padding-top:5px;}
-    .bg12-xiaoerwaike{height:30px;width:30px;background: url(http://static.mingyizhudao.com/147200784822191) no-repeat;background-position:-330px 0;margin-left: 35px;padding-top:5px;}
-    .left-department .border-department.active .text-14-right{color:#19aea5;}
-</style>
 <script>
     //url参数数组
     var condition = new Array();
