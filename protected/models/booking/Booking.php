@@ -265,6 +265,7 @@ class Booking extends EActiveRecord {
         if (isset($options['order']))
             $criteria->order = $options['order'];
 
+        $criteria->order = "t.date_created DESC";
         return $this->findAll($criteria);
     }
 
