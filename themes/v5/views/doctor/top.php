@@ -35,7 +35,7 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
     </div>
     <div class="container pb20 mt30">
         <div class="department-list">
-            <div class=""><span  class="main-subCat"></span><span  class="pull-right more-subCat toggle-subCat">展开科室 <i class="fa fa-angle-right"></i></span><span  class="pull-right retract-subCat toggle-subCat">切换科室 <i class="fa fa-angle-down"></i></span></div>
+            <div class=""><span  class="main-subCat"></span><span class="ml20 more-subCat toggle-subCat">切换科室 <i class="fa fa-angle-right"></i></span><span class="ml20 retract-subCat toggle-subCat">切换科室 <i class="fa fa-angle-down"></i></span></div>
             <div class="clearfix"></div>
             <div class="mt10 subCatList"></div>
         </div>
@@ -123,7 +123,7 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
     </div>
     <input type="hidden" id="fristLoad" value="1">
 </section>
-<style>#doctorList .department-list .department{display:block!important;}.diseaseimain.active{height:100px;overflow:hidden;}</style>
+<style>#doctorList .department-list .department{display:block!important;}.diseaseimain.active{height:95px;overflow:hidden;}.diseasemore .diseasemore-open:hover,.diseasemore .diseasemore-closedown:hover{text-decoration:underline;}.diseasemore .diseasemore-open,.diseasemore .diseasemore-closedown{color:#036eb8;}</style>
 <script>
     //url参数数组
     var condition = new Array();
@@ -135,7 +135,7 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
     condition["mtitle"] = '';
     urlLoadDoctor = '<?php echo $urlLoadDoctor; ?>';
     $(document).ready(function () {
-        $('.main-subCat').html('请您选择相应科室');
+//        $('.main-subCat').html('请您选择相应科室');
         ajaxLoadCity();
         $('.toggle-subCat').click(function () {
             $(this).parents('.department-list').find('.more-subCat').toggle();
@@ -332,7 +332,7 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
             innerHtml += '</div>';
             $('.select-disease').html(innerHtml);
             if (diseases.length > 20) {
-                innerHtml += '<div class="text-right diseasemore"><span class="diseasemore-open">展开更多</span><span class="diseasemore-closedown" style="display:none;">收缩</span></div>';
+                innerHtml += '<div class="text-right diseasemore"><span class="diseasemore-open">展开全部</span><span class="diseasemore-closedown" style="display:none;">收起</span></div>';
                 $('.select-disease').html(innerHtml);
             }
             $('.diseasemore').click(function () {
@@ -394,10 +394,10 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
             var subCatId = $(this).attr('data-id');
             var subCatName = $(this).attr('data-name');
             if (subCatId == condition["disease_sub_category"]) {
-                $('.more-subCat').click(function () {
-                    $('.department-list .main-subCat').empty();
+//                $('.more-subCat').click(function () {
+//                    $('.department-list .main-subCat').empty();
                     $('.department-list .main-subCat').html(subCatName);
-                });
+//                });
                 $('.main-department').html($(this).parents('.department').find('.dept-header').text());
                 $(this).addClass('active');
                 $(this).parents('.department').addClass('active');
