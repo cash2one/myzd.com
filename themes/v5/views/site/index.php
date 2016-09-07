@@ -2,7 +2,7 @@
 $this->pageTitle = '三甲医院手术预约,专家,主任医生手术,床位预约_名医主刀网';
 $this->htmlMetaKeywords = '预约手术,专家手术,名医主刀网';
 $this->htmlMetaDescription = '名医随时有,手术不再难!【名医主刀】汇聚国内外顶级名医和床位资源,利用互联网技术实现医患精准匹配,帮助广大患者在第一时间预约到名医专家进行主刀治疗-www.mingyizhudao.com';
-Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/homeelse101.css');
+Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/homeelse102.css');
 Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/home102.min.js', CClientScript::POS_END);
 $urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 1));
 $urlRecommendedDoctors = $this->createUrl('api/recommendeddoctors');
@@ -231,11 +231,13 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
     </div>
 </section>
 <style>
-
+.home-more-dept:hover{text-decoration:underline;}
+.home-expList .recommended-department.active, .home-expList .recommended-department:hover{}
 </style>
 <script>
     $(document).ready(function () {
-        $html = '<li><div class="zeroconsultation"><a href="<?php echo $this->createUrl('event/view', array('page' => 'zeroconsultation')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/146908716504875" alt="" class="img-responsive"></a></div></li>' +
+        $html = '<li><div class="IQQAtechnology"><a href="<?php echo $this->createUrl('event/view', array('page' => 'IQQAtechnology')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147321875452189" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="zeroconsultation"><a href="<?php echo $this->createUrl('event/view', array('page' => 'zeroconsultation')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/146908716504875" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="cooperation"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cooperation')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147220392197089" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
