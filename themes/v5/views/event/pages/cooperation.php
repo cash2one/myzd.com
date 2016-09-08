@@ -30,7 +30,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-
                 <div class="row mt20">
                     <div class="col-lg-6">
                         <img src="http://static.mingyizhudao.com/146831476742078">
-                        <div class="cooperation-text-12 mt10">名医主刀联合创始人兼首席技术馆秦鹏、首席财务官叶菲、创始人兼CEO苏舒</div>
+                        <div class="cooperation-text-12 mt10">名医主刀联合创始人兼首席技术官秦鹏、首席财务官叶菲、创始人兼CEO苏舒</div>
                     </div>
                     <div class="col-lg-6">
                         <div class="border-488">
