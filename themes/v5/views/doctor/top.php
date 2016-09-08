@@ -258,8 +258,8 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
             $('.city-list .all.city').click(function (e) {
                 e.preventDefault();
                 condition["city"] = '';
-                condition["disease_sub_category"] = '';
-                condition["disease_sub_category_param"] = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category_param", $prames)) echo $prames['disease_sub_category_param']; ?>';
+                condition["disease_sub_category"] = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];?>';
+                //condition["disease_sub_category_param"] = '<?php //if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category_param", $prames)) echo $prames['disease_sub_category_param']; ?>';
                 condition["page"] = 1;
                 if (condition["disease"] == "" && condition["city"] == "" && condition["mtitle"] == "") {
                     window.location.href = 'doctor-top-disease_sub_category-' + condition["disease_sub_category_param"] + '-page-1-getcount-1.html';
@@ -271,8 +271,8 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
                 e.preventDefault();
                 var cityId = $(this).attr('data-id');
                 condition["city"] = cityId;
-                condition["disease_sub_category"] = '';
-                condition["disease_sub_category_param"] = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category_param", $prames)) echo $prames['disease_sub_category_param']; ?>';
+                condition["disease_sub_category"] = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];?>';
+               // condition["disease_sub_category_param"] = '<?php //if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category_param", $prames)) echo $prames['disease_sub_category_param']; ?>';
                 condition["page"] = 1;
                 ajaxLoadDoctor('/getcount/1');
                 setCityActive();

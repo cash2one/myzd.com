@@ -95,7 +95,7 @@ class DoctorController extends WebsiteController {
             $showPage=$this->page($value,$pagesize=24,0);
             $doctorNum=0;
         }
-        unset($value['disease_sub_category']);
+        //unset($value['disease_sub_category']);
         $this->render('top',array('data'=>$output,'prames'=>$value,'page'=>$showPage['show'],'doctorNum'=>$doctorNum,'diseaseCategoryId'=>$diseaseCategoryId));
     }
 
