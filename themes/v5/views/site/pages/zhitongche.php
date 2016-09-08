@@ -26,6 +26,20 @@ $urlReturn = '';
                     <div class="heading"><span class="big-title">真实案例</span><span class="small-title">用仁爱之心</span><span class="small-title">解患者之难</span></div>
                     <div class="row">
                         <div class="col-md-4 mt15">
+                            <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'weifangsurgery')); ?>">
+                                <div class="every-story">                           
+                                    <div><img src="http://static.mingyizhudao.com/147280739176698" alt="他说，活下去的希望是你们给的！" title="他说，活下去的希望是你们给的！"/></div>
+                                    <div class="story-content">
+                                        <div class="text14 mt10 ">疾病描述：先天性心脏病</div>
+                                        <div class="introduce mt20">
+                                            <div>经过2小时的救治，青青的手术完美结束。“手术很成功，和潍坊本地孙忠东副主任配合的也比较好。”术后，王安彪专家第一时间告诉担忧的家属。考虑到女孩...</div>
+                                        </div>
+                                        <div class="learn-more">查看详情</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mt15">
                             <a target="_blank" href="<?php echo $this->createUrl("news/page", array("view" => 'hopealive')); ?>">
                                 <div class="every-story">                           
                                     <div><img src="http://static.mingyizhudao.com/14719195648621" alt="他说，活下去的希望是你们给的！" title="他说，活下去的希望是你们给的！"/></div>
