@@ -231,14 +231,14 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
     </div>
 </section>
 <style>
-.home-more-dept:hover{text-decoration:underline;}
-.home-expList .recommended-department.active, .home-expList .recommended-department:hover{}
+    .home-more-dept:hover{text-decoration:underline;}
+    .home-expList .recommended-department.active, .home-expList .recommended-department:hover{}
 </style>
 <script>
     $(document).ready(function () {
-        $html = '<li><div class="IQQAtechnology"><a href="<?php echo $this->createUrl('event/view', array('page' => 'IQQAtechnology')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147321875452189" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="zeroconsultation"><a href="<?php echo $this->createUrl('event/view', array('page' => 'zeroconsultation')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/146908716504875" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="cooperation"><a href="<?php echo $this->createUrl('event/view', array('page' => 'cooperation')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147220392197089" alt="" class="img-responsive"></a></div></li>';
+        $html = '<li><div class="loseWeightSurgery"><a href="<?php echo $this->createUrl('event/view', array('page' => 'loseWeightSurgery')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/14733163619513" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="IQQAtechnology"><a href="<?php echo $this->createUrl('event/view', array('page' => 'IQQAtechnology')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147321875452189" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="MaChengOperationCenter"><a href="<?php echo $this->createUrl('event/view', array('page' => 'MaChengOperationCenter')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147331657675720" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);

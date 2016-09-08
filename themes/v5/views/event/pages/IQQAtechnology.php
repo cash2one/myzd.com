@@ -42,7 +42,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                 </div>
             </div>
             <div class="mt15 text-14 ml30">
-                已获得美国FDA、欧盟CE、中国CFDA及台湾DOH等多方国际认证的IQQA精准手术规划技术平台，涵盖重大癌症（尤其是胸、腹、盆腔肿瘤）治疗的术前精准模拟规划、术后定量评估及随访。
+                已获得美国FDA、中国CFDA等多方国际认证的IQQA精准手术规划技术平台，涵盖重大癌症（尤其是胸、腹、盆腔肿瘤）治疗的术前精准模拟规划、术后定量评估及随访。
             </div>
             <div class="text-14">
                 <img class="mr10" src="http://static.mingyizhudao.com/147314259691672"><strong>肝胆胰：</strong>肝脏肿瘤精准外科切除、肝移植、肝门部胆管癌、胆道肿瘤、胰腺肿瘤、肝肿瘤介入消融治疗等方面的术前精准评估和规划等
@@ -67,9 +67,9 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                 </div>
             </div>
             <div class="mt15 text-14">
-                <div><img class="mr10" src="http://static.mingyizhudao.com/147314259691672">在肝脏三维影像应用中，精准度、智能化、自动化水平最高；</div>
+                <div><img class="mr10" src="http://static.mingyizhudao.com/147314259691672">在三维影像应用中，精准度、智能化、自动化水平最高；</div>
                 <div><img class="mr10" src="http://static.mingyizhudao.com/147314259691672">智能2D/3D信息融合及高级3D显示，支持用户实时校验及调整；</div>
-                <div><img class="mr10" src="http://static.mingyizhudao.com/147314259691672">支持医生在对肝脏/肝段、肿瘤及肝脏内部管道复杂的解剖结构做出快捷、直观、个体化、全量化的即时定位定量分析；</div>
+                <div><img class="mr10" src="http://static.mingyizhudao.com/147314259691672">支持医生对器官，肿瘤与器官内部管道复杂的解剖结构做出快捷、直观、个体化、全量化的即时定位定量分析；</div>
                 <div><img class="mr10" src="http://static.mingyizhudao.com/147314259691672">为医生提供全面、快捷客观定量分析与术前术后评估的临床解决方案，辅助医生进行更精准的术前模拟规划和术后评估。</div>
             </div>
             <div class="mt15">
