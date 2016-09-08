@@ -1,6 +1,6 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/searchdoctor101.min.css");
-Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/searchdoctortop101.min.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/searchdoctortop102.min.js', CClientScript::POS_END);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDoctorSearch = $this->createUrl('doctor/top');
 $urlLoadDoctor = $this->createUrl('doctor/top');
@@ -262,7 +262,7 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
                 //condition["disease_sub_category_param"] = '<?php //if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category_param", $prames)) echo $prames['disease_sub_category_param']; ?>';
                 condition["page"] = 1;
                 if (condition["disease"] == "" && condition["city"] == "" && condition["mtitle"] == "") {
-                    window.location.href = 'doctor-top-disease_sub_category-' + condition["disease_sub_category_param"] + '-page-1-getcount-1.html';
+                    window.location.href = 'doctor-top-disease_sub_category-' + condition["disease_sub_category"] + '-page-1-getcount-1.html';
                 } else {
                     ajaxLoadDoctor('/getcount/1');
                 }
