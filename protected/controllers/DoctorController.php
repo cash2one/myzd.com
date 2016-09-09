@@ -63,11 +63,14 @@ class DoctorController extends WebsiteController {
         }
         else{
             $seoKey.="全国";
+            $value['city']=0;
         }
         if(array_key_exists("disease_sub_category",$value)){
            $diseaseCategoryInfo=DiseaseCategory::model()->getByAttributes(array("sub_cat_id"=>$value['disease_sub_category'],"app_version"=>7));
            $diseaseCategoryName=$diseaseCategoryInfo['sub_cat_name'];
            $seoKey.=$diseaseCategoryName;
+        }else{
+            $value['disease_sub_category']=0;
         }
         if(array_key_exists("disease",$value)){
            $diseaseInfo=Disease::model()->getById($value['disease']);
@@ -75,10 +78,16 @@ class DoctorController extends WebsiteController {
            $diseaseCategoryInfo=DiseaseCategory::model()->getById($diseaseInfo['category_id']);
            $diseaseCategoryName=$diseaseCategoryInfo['sub_cat_name'];
            $seoKey.=$diseaseCategoryName.$diseaseName;
+        }else{
+           $value['disease']=0;
+        }
+        if(!array_key_exists("mtitle",$value)){
+            $value['mtitle']=0;
         }
         $this->pageTitle=$seoKey."医生排行,哪个医生好,专家医生预约_名医主刀网";
         $this->htmlMetaKeywords="手术预约,找医生,网上预约医生";
         $this->htmlMetaDescription="名医主刀网为您提供".$seoKey."医生排行榜,手术预约,专家医生预约,哪个医生好等信息;帮助广大有手术需求的患者,在第一时间预约全国知名专家,安排入院手术。";
+        
         $apiService = new ApiViewDoctorSearchV7($value);
         $output = $apiService->loadApiViewData();
         if(count($output->results)>0){
