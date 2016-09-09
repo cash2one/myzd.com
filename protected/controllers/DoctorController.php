@@ -79,13 +79,6 @@ class DoctorController extends WebsiteController {
         $this->pageTitle=$seoKey."医生排行,哪个医生好,专家医生预约_名医主刀网";
         $this->htmlMetaKeywords="手术预约,找医生,网上预约医生";
         $this->htmlMetaDescription="名医主刀网为您提供".$seoKey."医生排行榜,手术预约,专家医生预约,哪个医生好等信息;帮助广大有手术需求的患者,在第一时间预约全国知名专家,安排入院手术。";
-        if(array_key_exists("disease_sub_category_param", $value)){
-            //$diseaseCategoryInfo=DiseaseCategory::model()->getByAttributes(array("sub_cat_id"=>$value['disease_sub_category_param'],"app_version"=>8));
-            $diseaseCategoryId=$value['disease_sub_category_param'];
-            $value['disease_sub_category']=$value['disease_sub_category_param'];
-        }else{
-            $diseaseCategoryId="";
-        }
         $apiService = new ApiViewDoctorSearchV7($value);
         $output = $apiService->loadApiViewData();
         if(count($output->results)>0){
@@ -96,7 +89,7 @@ class DoctorController extends WebsiteController {
             $doctorNum=0;
         }
         //unset($value['disease_sub_category']);
-        $this->render('top',array('data'=>$output,'prames'=>$value,'page'=>$showPage['show'],'doctorNum'=>$doctorNum,'diseaseCategoryId'=>$diseaseCategoryId));
+        $this->render('top',array('data'=>$output,'prames'=>$value,'page'=>$showPage['show'],'doctorNum'=>$doctorNum));
     }
 
     public function actionFindexpert() {
