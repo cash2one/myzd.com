@@ -432,4 +432,15 @@ abstract class WebsiteController extends Controller {
         }
         return $showpage;
        }
+       
+       function array2object($array) {
+           if (is_array($array)) {
+               $obj = new StdClass();
+               foreach ($array as $key => $val){
+                   $obj->$key = $val;
+               }
+           }
+           else { $obj = $array; }
+           return $obj;
+       }
 }
