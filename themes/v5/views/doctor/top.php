@@ -18,7 +18,6 @@ $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
 $urlBaseUrl = Yii::app()->params['baseUrl'];
-$disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
 ?>
 <style>
     #doctorList .select-condition .city-list .city-title{height:7em;}
