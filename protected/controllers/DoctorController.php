@@ -53,7 +53,7 @@ class DoctorController extends WebsiteController {
         $value['getcount']=1;
         array_merge($value,$_GET);
         //$value=$_GET;
-        if(!strstr($_SERVER['REQUEST_URI'],"-")){
+        /*if(!strstr($_SERVER['REQUEST_URI'],"-")){
             $flip = array_keys($value);
             $url="/doctor-top";
             $uriStr=$url."";
@@ -63,7 +63,7 @@ class DoctorController extends WebsiteController {
                 }
             }
             $this->redirect($uriStr.".html");
-        }
+        }/
         $seoKey="";
         if(array_key_exists("city",$value)){
            $cityInfo=RegionCity::model()->getById($value['city']);
