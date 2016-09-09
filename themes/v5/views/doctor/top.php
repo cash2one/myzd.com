@@ -1,6 +1,7 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/searchdoctor101.min.css");
-Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/searchdoctortop102.min.js', CClientScript::POS_END);
+//Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/searchdoctortop102.min.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchdoctor.js', CClientScript::POS_END);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDoctorSearch = $this->createUrl('doctor/top');
 $urlLoadDoctor = $this->createUrl('doctor/top');
@@ -17,7 +18,7 @@ $disease_name = Yii::app()->request->getQuery('disease_name', '');
 $disease_category = Yii::app()->request->getQuery('disease_category', '');
 $disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
 $urlBaseUrl = Yii::app()->params['baseUrl'];
-$disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_category_param', '');
+$disease_sub_category = Yii::app()->request->getQuery('disease_sub_category', '');
 ?>
 <style>
     #doctorList .select-condition .city-list .city-title{height:7em;}
@@ -149,7 +150,7 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
         if (condition["disease_sub_category"] != '') {
             ajaxLoadDiseaseByCategory(disease_category);
         } else {
-            var disease_category_param = '<?php echo $disease_sub_category_param; ?>';
+            var disease_category_param = '<?php echo $disease_sub_category; ?>';
             ajaxLoadDiseaseByCategory(disease_category_param);
         }
         if (condition["disease_name"]) {
@@ -162,10 +163,10 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
             var mtitleId = $(this).attr('data-id');
             condition["mtitle"] = mtitleId;
             condition["disease_sub_category"] = '';
-            condition["disease_sub_category_param"] = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category_param", $prames)) echo $prames['disease_sub_category_param']; ?>';
+            condition["disease_sub_category"] = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category']; ?>';
             condition["page"] = 1;
             if (condition["disease"] == "" && condition["city"] == "" && condition["mtitle"] == "") {
-                window.location.href = 'doctor-top-disease_sub_category-' + condition["disease_sub_category_param"] + '-page-1-getcount-1.html';
+                window.location.href = 'doctor-top-disease_sub_category-' + condition["disease_sub_category"] + '-page-1-getcount-1.html';
             } else {
                 ajaxLoadDoctor('/getcount/1');
             }
@@ -258,8 +259,8 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
             $('.city-list .all.city').click(function (e) {
                 e.preventDefault();
                 condition["city"] = '';
-                condition["disease_sub_category"] = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];?>';
-                //condition["disease_sub_category_param"] = '<?php //if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category_param", $prames)) echo $prames['disease_sub_category_param']; ?>';
+                condition["disease_sub_category"] = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category']; ?>';
+                //condition["disease_sub_category"] = '<?php //if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];  ?>';
                 condition["page"] = 1;
                 if (condition["disease"] == "" && condition["city"] == "" && condition["mtitle"] == "") {
                     window.location.href = 'doctor-top-disease_sub_category-' + condition["disease_sub_category"] + '-page-1-getcount-1.html';
@@ -271,8 +272,8 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
                 e.preventDefault();
                 var cityId = $(this).attr('data-id');
                 condition["city"] = cityId;
-                condition["disease_sub_category"] = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];?>';
-               // condition["disease_sub_category_param"] = '<?php //if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category_param", $prames)) echo $prames['disease_sub_category_param']; ?>';
+                condition["disease_sub_category"] = '<?php if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category']; ?>';
+                // condition["disease_sub_category"] = '<?php //if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];if (array_key_exists("disease_sub_category", $prames)) echo $prames['disease_sub_category'];  ?>';
                 condition["page"] = 1;
                 ajaxLoadDoctor('/getcount/1');
                 setCityActive();
@@ -396,7 +397,7 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
             if (subCatId == condition["disease_sub_category"]) {
 //                $('.more-subCat').click(function () {
 //                    $('.department-list .main-subCat').empty();
-                    $('.department-list .main-subCat').html(subCatName);
+                $('.department-list .main-subCat').html(subCatName);
 //                });
                 $('.main-department').html($(this).parents('.department').find('.dept-header').text());
                 $(this).addClass('active');
@@ -433,4 +434,39 @@ $disease_sub_category_param = Yii::app()->request->getQuery('disease_sub_categor
             }
         });
     }
+
+    function initDiseaseFunction() {
+        $(".select-disease a.all").click(function (e) {
+            e.preventDefault();
+            var subCat = $(this).attr("data-id");
+            var disease_sub_category = $(this).attr("data-subcat");
+            condition["disease"] = "";
+            condition["disease_sub_category"] = "";
+            condition["disease_sub_category"] = disease_sub_category;
+            condition["page"] = 1;
+            if (condition["disease"] == "" && condition["city"] == "" && condition["mtitle"] == "") {
+                window.location.href = "doctor-top-disease_sub_category-" + condition["disease_sub_category"] + "-page-1-getcount-1.html"
+            } else {
+                ajaxLoadDoctor("/getcount/1")
+            }
+        });
+        $(".select-disease a.disease").click(function (e) {
+            e.preventDefault();
+            var disease_name = $(this).text();
+            var disease = $(this).attr("data-id");
+            var disease_sub_category = $(this).attr("data-subcat");
+            condition["disease"] = disease;
+            condition["disease_name"] = "";
+            condition["disease_sub_category"] = disease_sub_category;
+            condition["disease_category"] = "";
+            condition["disease_sub_category"] = "";
+            condition["page"] = 1;
+            $(".department-name>span").html(disease_name);
+            $(".select-disease a.all").removeClass("active");
+            $(".select-disease a.disease").removeClass("active");
+            $(this).addClass("active");
+            ajaxLoadDoctor("/getcount/1")
+        })
+    }
+    ;
 </script>
