@@ -1,10 +1,12 @@
 <?php
 
+use Pingpp\Object;
 class DoctorController extends WebsiteController {
 
     public $listId;
     public $diseaselist = null;
     public $disease = null;
+    public $value=array();
 
     /**
      * @return array action filters
@@ -43,8 +45,14 @@ class DoctorController extends WebsiteController {
     }
 
     public function actionTop() {
-        $value=$_GET;
-        if(!strstr($_SERVER['REQUEST_URI'],"-")){
+        $value['city']=0;
+        $value['disease_sub_category']=0;
+        $value['disease']=0;
+        $value['mtitle']=0;
+        $value['page']=1;
+        $value['getcount']=1;
+        array_merge($value, $_GET);
+        /*if(!strstr($_SERVER['REQUEST_URI'],"-")){
             $flip = array_keys($value);
             $url="/doctor-top";
             $uriStr=$url."";
@@ -54,7 +62,7 @@ class DoctorController extends WebsiteController {
                 }
             }
             $this->redirect($uriStr.".html");
-        }
+        }*/
         $seoKey="";
         if(array_key_exists("city",$value)){
            $cityInfo=RegionCity::model()->getById($value['city']);
@@ -97,8 +105,9 @@ class DoctorController extends WebsiteController {
             $showPage=$this->page($value,$pagesize=24,0);
             $doctorNum=0;
         }
+        $prames=(object)$value;
         //unset($value['disease_sub_category']);
-        $this->render('top',array('data'=>$output,'prames'=>$value,'page'=>$showPage['show'],'doctorNum'=>$doctorNum));
+        $this->render('top',array('data'=>$output,'prames'=>$prames,'page'=>$showPage['show'],'doctorNum'=>$doctorNum));
     }
 
     public function actionFindexpert() {
