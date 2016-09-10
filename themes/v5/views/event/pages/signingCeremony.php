@@ -6,8 +6,8 @@ $this->show_header = false;
     #qiao-icon-wrap .qiao-icon-head{height:0;}
     #site-content{padding-bottom:0;}
     .pwd_article .pwd-box{padding-left: 1px;position: relative;border-radius: 3px;overflow: hidden;}
-    .pwd_article .pwd-box input[type="tel"]{height: 160px;color: transparent;position: absolute;top: 0;left: 0;border: none;font-size: 18px;opacity: 0;z-index: 1;letter-spacing: 35px;text-indent:-100em;margin-left: -100%;width: 200%;}
-    .pwd_article .fake-box input{float:left;height: 160px;width:160px;border: none;border-radius: 0px;border: 1px solid #efca24!important;text-align: center;font-size: 30px;margin-bottom: 0px;}
+    .pwd_article .pwd-box input[type="tel"]{height: 160px;color: transparent;position: absolute;top: 0;left: 0;border: none;font-size: 20px;opacity: 0;z-index: 1;letter-spacing: 35px;text-indent:-100em;margin-left: -100%;width: 200%;}
+    .pwd_article .fake-box input{float:left;height: 160px;width:160px;border: none;border-radius: 0px;border: 1px solid #efca24!important;text-align: center;font-size: 80px;margin-bottom: 0px;}
     .pwd_article .fake-box .col-1:nth-last-child(1) input{border-right:none!important;}
     .pwd_article .fake-box input{color:#378438;}
     .pd210{padding-left:210px;padding-right:210px;}
