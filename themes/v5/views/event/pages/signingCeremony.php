@@ -69,6 +69,7 @@ $this->show_header = false;
         $('#pwd-input').focus();
     }
     $(document).ready(function () {
+        var slider = true;
         $('.bxslider').bxSlider({
             mode: 'vertical',
             slideMargin: 0,
@@ -128,7 +129,10 @@ $this->show_header = false;
             var realkey = String.fromCharCode(e.which);
             if (pwd.length == 8) {
                 if (keycode == 13) {
-                    $('.bx-controls-direction .bx-next').trigger("click");
+                    if (slider) {
+                        $('.bx-controls-direction .bx-next').trigger("click");
+                        slider = false;
+                    }
                 }
             }
         }
