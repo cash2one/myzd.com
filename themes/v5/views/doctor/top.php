@@ -178,6 +178,7 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
         $.ajax({
             url: urlloadDiseaseCategory,
             success: function (data) {
+                console.log(data);
                 setDiseaseCategory(data);
             },
             error: function (XmlHttpRequest, textStatus, errorThrown) {
@@ -257,9 +258,10 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
             var active = '';
             for (var i = 1; i <= diseaseCategorys.length; i++) {
                 var diseaseCategory = diseaseCategorys[i - 1];
-                innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + diseaseCategory.name + '" data-id = "' + diseaseCategory.id + '" href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/' + diseaseCategory.id + '/disease/' + condition["disease"] + '/city/' + condition["city"] + '/mtitle/' + condition["mtitle"] + '/page/1/getcount/1.html' + diseaseCategory.name + '</a></span>';
+                innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + diseaseCategory.name + '" data-id = "' + diseaseCategory.id + '" href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/' + diseaseCategory.id + '/disease/' + condition["disease"] + '/city/' + condition["city"] + '/mtitle/' + condition["mtitle"] + '/page/1/getcount/1.html">' + diseaseCategory.name + '</a></span>';
             }
             $('.subCatList').html(innerHtml);
+            console.log(innerHtml);
             if (condition["disease"] != '') {
                 ajaxLoadSecondaryDepartment();
             }
@@ -273,16 +275,16 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
             var diseases = data.results.disease;
             var innerHtml = '<div class="pull-left disease-title"><span class="select-title">具体疾病：</span></div><div class="diseaseimain active"><span class="disease-name"><a data-subcat="' + subCatId + '" id="disease' + subCatId + '" class="disease-all all active" data-id="' + subCatId + '" href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/0/disease/0/city/0/mtitle/0/page/1/getcount/1.html">全部</a></span>';
 
-            for (var i = 0; i < diseases.length; i++) {
-                var disease = diseases[i];
-                innerHtml += '<span class="disease-name"><a data-subcat="' + subCatId + '" class="disease" id="disease' + disease.id + '" data-id="' + disease.id + '" href = "<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/' + diseaseCategory.id + '/disease/' + disease.id + '/city/' + condition["city"] + '/mtitle/' + condition["mtitle"] + '/page/1/getcount/1.html">' + disease.name + '</a></span>';
-            }
+//            for (var i = 0; i < diseases.length; i++) {
+//                var disease = diseases[i];
+//                innerHtml += '<span class="disease-name"><a data-subcat="' + subCatId + '" class="disease" id="disease' + disease.id + '" data-id="' + disease.id + '" href = "<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/' + diseaseCategory.id + '/disease/' + disease.id + '/city/' + condition["city"] + '/mtitle/' + condition["mtitle"] + '/page/1/getcount/1.html">' + disease.name + '</a></span>';
+//            }
             innerHtml += '</div>';
             $('.select-disease').html(innerHtml);
-            if (diseases.length > 20) {
+//            if (diseases.length > 20) {
                 innerHtml += '<div class="text-right diseasemore"><span class="diseasemore-open">展开全部</span><span class="diseasemore-closedown" style="display:none;">收起</span></div>';
                 $('.select-disease').html(innerHtml);
-            }
+//            }
             $('.diseasemore').click(function () {
                 $(this).find('.diseasemore-open').toggle();
                 $(this).find('.diseasemore-closedown').toggle();
