@@ -98,7 +98,7 @@ class DoctorController extends WebsiteController {
             $showPage=$this->page($value,$pagesize=24,0);
             $doctorNum=0;
         }
-        $this->render('top',array('data'=>$output,'prames'=>$value,'page'=>$showPage['show'],'doctorNum'=>$doctorNum));
+        $this->render('top',array('data'=>$output,'parames'=>$value,'page'=>$showPage['show'],'doctorNum'=>$doctorNum));
     }
 
     public function actionFindexpert() {
