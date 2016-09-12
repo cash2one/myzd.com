@@ -45,7 +45,7 @@ class DoctorController extends WebsiteController {
     }
 
     public function actionTop() {
-        $value=$_GET;
+        $parames=$value=$_GET;
         /*if(!strstr($_SERVER['REQUEST_URI'],"-")){
             $flip = array_keys($value);
             $url="/doctor-top";
@@ -57,6 +57,11 @@ class DoctorController extends WebsiteController {
             }
             $this->redirect($uriStr.".html");
         }*/
+        foreach($value as $k=>$v){
+            if($v=="0"){
+                unset($value[$k]);
+            }
+        }
         $seoKey="";
         if(array_key_exists("city",$value)){
            $cityInfo=RegionCity::model()->getById($value['city']);
@@ -91,7 +96,7 @@ class DoctorController extends WebsiteController {
             $showPage=$this->page($value,$pagesize=24,0);
             $doctorNum=0;
         }
-        $this->render('top',array('data'=>$output,'parames'=>$value,'page'=>$showPage['show'],'doctorNum'=>$doctorNum));
+        $this->render('top',array('data'=>$output,'parames'=>$parames,'page'=>$showPage['show'],'doctorNum'=>$doctorNum));
     }
 
     public function actionFindexpert() {
