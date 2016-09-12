@@ -379,7 +379,7 @@ abstract class WebsiteController extends Controller {
            }
         }
         
-        $uriArr=explode('-',$_SERVER['REQUEST_URI']);
+        $uriArr=explode('/',$_SERVER['REQUEST_URI']);
         $key=array_search('page', $uriArr);
         
         
@@ -408,15 +408,15 @@ abstract class WebsiteController extends Controller {
         $nextUriArray[$key+1]=$next;
         $forUriArray=$uriArr;
         
-        $preUrl=  implode("-", $preUriArray);
-        $nextUrl=  implode("-", $nextUriArray);
+        $preUrl=  implode("/", $preUriArray);
+        $nextUrl=  implode("/", $nextUriArray);
         
         $show ="<ul class='pagination'>";
         $show.= "<li><a aria-label='Previous' href='$preUrl' class='pagePre'><span aria-hidden='true'>«</span></a></li>";
         for($i=1;$i<=$pages;$i++)
        {
             $forUriArray[$key+1]=$i;
-            $forUrl=  implode("-", $forUriArray);
+            $forUrl=  implode("/", $forUriArray);
             if($i>$currentPage+2 || $i<$currentPage-2)
                 continue;
             if($i==$currentPage)
