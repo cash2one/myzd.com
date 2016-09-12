@@ -63,7 +63,7 @@ class DoctorController extends WebsiteController {
                 }
             }
             $this->redirect($uriStr.".html");
-        }/
+        }*/
         $seoKey="";
         if(array_key_exists("city",$value)){
            $cityInfo=RegionCity::model()->getById($value['city']);
