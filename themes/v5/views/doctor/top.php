@@ -48,7 +48,7 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
             <div class="city-list">
             </div>
             <div class="mt20 mb20 divider-line"></div>
-            <div class="select-title">医生级别：</div><a class="mtitle active" href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/<?php echo $parames["disease_sub_category"];?>/disease/<?php echo $parames["disease"];?>/city/<?php echo $parames["city"];?>/mtitle/0/page/1/getcount/1.html" data-id="">全部</a><a href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/<?php echo $parames["disease_sub_category"];?>/disease/<?php echo $parames["disease"];?>/city/<?php echo $parames["city"];?>/mtitle/1/page/1/getcount/1.html" class="mtitle" data-id="1" id="mtitle1">主任医师</a><a href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/<?php echo $parames["disease_sub_category"];?>/disease/<?php echo $parames["disease"];?>/city/<?php echo $parames["city"];?>/mtitle/2/page/1/getcount/1.html" class="mtitle" data-id="2" id="mtitle2">副主任医师</a>
+            <div class="select-title">医生级别：</div><a class="mtitle active" href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/<?php echo $parames["disease_sub_category"]; ?>/disease/<?php echo $parames["disease"]; ?>/city/<?php echo $parames["city"]; ?>/mtitle/0/page/1/getcount/1.html" data-id="">全部</a><a href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/<?php echo $parames["disease_sub_category"]; ?>/disease/<?php echo $parames["disease"]; ?>/city/<?php echo $parames["city"]; ?>/mtitle/1/page/1/getcount/1.html" class="mtitle" data-id="1" id="mtitle1">主任医师</a><a href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/<?php echo $parames["disease_sub_category"]; ?>/disease/<?php echo $parames["disease"]; ?>/city/<?php echo $parames["city"]; ?>/mtitle/2/page/1/getcount/1.html" class="mtitle" data-id="2" id="mtitle2">副主任医师</a>
         </div> 
         <div class="row ">
             <div class="col-sm-12 col-md-12">
@@ -261,7 +261,6 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
                 innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + diseaseCategory.name + '" data-id = "' + diseaseCategory.id + '" href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/' + diseaseCategory.id + '/disease/' + condition["disease"] + '/city/' + condition["city"] + '/mtitle/' + condition["mtitle"] + '/page/1/getcount/1.html">' + diseaseCategory.name + '</a></span>';
             }
             $('.subCatList').html(innerHtml);
-            console.log(innerHtml);
             if (condition["disease"] != '') {
                 ajaxLoadSecondaryDepartment();
             }
@@ -275,16 +274,16 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
             var diseases = data.results.disease;
             var innerHtml = '<div class="pull-left disease-title"><span class="select-title">具体疾病：</span></div><div class="diseaseimain active"><span class="disease-name"><a data-subcat="' + subCatId + '" id="disease' + subCatId + '" class="disease-all all active" data-id="' + subCatId + '" href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/0/disease/0/city/0/mtitle/0/page/1/getcount/1.html">全部</a></span>';
 
-//            for (var i = 0; i < diseases.length; i++) {
-//                var disease = diseases[i];
-//                innerHtml += '<span class="disease-name"><a data-subcat="' + subCatId + '" class="disease" id="disease' + disease.id + '" data-id="' + disease.id + '" href = "<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/' + diseaseCategory.id + '/disease/' + disease.id + '/city/' + condition["city"] + '/mtitle/' + condition["mtitle"] + '/page/1/getcount/1.html">' + disease.name + '</a></span>';
-//            }
+            for (var i = 0; i < diseases.length; i++) {
+                var disease = diseases[i];
+                innerHtml += '<span class="disease-name"><a data-subcat="' + subCatId + '" class="disease" id="disease' + disease.id + '" data-id="' + disease.id + '" href = "<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/' + diseaseCategory.id + '/disease/' + disease.id + '/city/' + condition["city"] + '/mtitle/' + condition["mtitle"] + '/page/1/getcount/1.html">' + disease.name + '</a></span>';
+            }
             innerHtml += '</div>';
             $('.select-disease').html(innerHtml);
-//            if (diseases.length > 20) {
+            if (diseases.length > 20) {
                 innerHtml += '<div class="text-right diseasemore"><span class="diseasemore-open">展开全部</span><span class="diseasemore-closedown" style="display:none;">收起</span></div>';
                 $('.select-disease').html(innerHtml);
-//            }
+            }
             $('.diseasemore').click(function () {
                 $(this).find('.diseasemore-open').toggle();
                 $(this).find('.diseasemore-closedown').toggle();
