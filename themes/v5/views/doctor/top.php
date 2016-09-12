@@ -276,7 +276,7 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
 
             for (var i = 0; i < diseases.length; i++) {
                 var disease = diseases[i];
-                innerHtml += '<span class="disease-name"><a data-subcat="' + subCatId + '" class="disease" id="disease' + disease.id + '" data-id="' + disease.id + '" href = "<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/' + diseaseCategory.id + '/disease/' + disease.id + '/city/' + condition["city"] + '/mtitle/' + condition["mtitle"] + '/page/1/getcount/1">' + disease.name + '</a></span>';
+                innerHtml += '<span class="disease-name"><a data-subcat="' + subCatId + '" class="disease" id="disease' + disease.id + '" data-id="' + disease.id + '" href = "<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/' + condition["disease_sub_category"] + '/disease/' + disease.id + '/city/' + condition["city"] + '/mtitle/' + condition["mtitle"] + '/page/1/getcount/1">' + disease.name + '</a></span>';
             }
             innerHtml += '</div>';
             $('.select-disease').html(innerHtml);
@@ -347,35 +347,6 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
 //                    $('.department-list .main-subCat').empty();
                 $('.department-list .main-subCat').html(subCatName);
 //                });
-                $('.main-department').html($(this).parents('.department').find('.dept-header').text());
-                $(this).addClass('active');
-                $(this).parents('.department').addClass('active');
-            }
-        });
-    }
-    /**** 根据疾病获取二级科室 ****/
-    function ajaxLoadSecondaryDepartment() {
-        var urlLoadSecondaryDepartment = '<?php echo $urlLoadSecondaryDepartment ?>' + condition["disease"];
-        $.ajax({
-            url: urlLoadSecondaryDepartment,
-            success: function (data) {
-                var subId = data.sub_cat_id;
-                setSecondaryDepartmentActive(subId);
-            },
-            error: function (XmlHttpRequest, textStatus, errorThrown) {
-                console.log(XmlHttpRequest);
-                console.log(textStatus);
-                console.log(errorThrown);
-            }
-        });
-    }
-    function setSecondaryDepartmentActive(subId) {
-        $('.department-list .department').removeClass('active');
-        $('.department-list .subCat').each(function () {
-            var subCatId = $(this).attr('data-id');
-            var subCatName = $(this).attr('data-name');
-            if (subCatId == subId) {
-                $('.department-list .main-subCat').html(subCatName);
                 $('.main-department').html($(this).parents('.department').find('.dept-header').text());
                 $(this).addClass('active');
                 $(this).parents('.department').addClass('active');
