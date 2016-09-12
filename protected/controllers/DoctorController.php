@@ -45,14 +45,7 @@ class DoctorController extends WebsiteController {
     }
 
     public function actionTop() {
-        $value['city']=0;
-        $value['disease_sub_category']=0;
-        $value['disease']=0;
-        $value['mtitle']=0;
-        $value['page']=1;
-        $value['getcount']=1;
-        array_merge($value,$_GET);
-        //$value=$_GET;
+        $value=$_GET;
         /*if(!strstr($_SERVER['REQUEST_URI'],"-")){
             $flip = array_keys($value);
             $url="/doctor-top";
