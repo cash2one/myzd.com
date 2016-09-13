@@ -53,7 +53,7 @@ $urlHospital = Yii::app()->params['baseUrl'];
 
 <script>
     $(document).ready(function () {
-//        var topPage = '<?php //echo $page;           ?>';
+//        var topPage = '<?php //echo $page;            ?>';
 //        alert(topPage);
         $('.tophospital-learn-more').click(function (e) {
             e.preventDefault();
@@ -89,14 +89,14 @@ $urlHospital = Yii::app()->params['baseUrl'];
             innerHtml += '';
             for (var i = 0; i < 20; i++) {
                 var hospital = data[i];
-                var hospitalView = '<?php echo $this->createUrl('hospital/view', array('id' => '')); ?>';
+                var hospitalView = '<?php echo $urlHospital; ?>';
                 var hospitalId = hospital.hospital_id;
                 innerHtml += '<tr><td class="number-icons"><div class="circular-border"><div class="circular-number">' + hospital.id + '</div></div></td>';
                 innerHtml += '<td><div class="padding60">' + hospital.hospital_name + '</div></td>';
                 if (hospitalId == null) {
                     innerHtml += '<td ><div class="td-color-grey">敬请期待</div></td>';
                 } else {
-                    innerHtml += '<td ><a class="td-color" target="_blank" href="' + hospitalView + hospital.hospital_id + '">查看医院详情></a></td></tr>';
+                    innerHtml += '<td ><a class="td-color" target="_blank" href="' + hospitalView + '/hospital-view-id-' + hospital.hospital_id + '.html">查看医院详情></a></td></tr>';
                 }
             }
             innerHtml += '</tr>';
