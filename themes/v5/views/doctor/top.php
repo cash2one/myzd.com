@@ -1,8 +1,7 @@
 <?php
 //var_dump($parames);exit;
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/searchdoctor101.min.css");
-//Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/searchdoctortop102.min.js', CClientScript::POS_END);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/custom/searchdoctor.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/searchdoctortop103.min.js', CClientScript::POS_END);
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 $urlDoctorSearch = $this->createUrl('doctor/top');
 $urlLoadDoctor = $this->createUrl('doctor/top');
