@@ -257,7 +257,7 @@ $urlReturn = '';
                     <div class="mt15 text-center">
                         <a target="_blank" href="<?php echo $this->createUrl("site/page", array("view" => 'mygy')); ?>"><div class="ztc-mygy-img" title="公益手术"></div></a>
                     </div>
-                    <a href="<?php echo Yii::app()->params['baseUrl']; ?>/doctor-top-disease_sub_category-1-page-1-getcount-1.html" target="_black">
+                    <a href="<?php echo Yii::app()->params['baseUrl']; ?>/doctor/top/disease_sub_category/101/disease/0/city/0/mtitle/0/page/1/getcount/1" target="_black">
                         <div class="ztc-find-expert mt15">
                         </div>
                     </a>
