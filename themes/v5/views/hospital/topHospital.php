@@ -1,5 +1,6 @@
-<?php 
+<?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/searchhospital100.min.css");
+$urlHospital = Yii::app()->params['baseUrl'];
 ?>
 <div class="tophospitalbgImg">
     <div class="text-center"><img class="tophospital-header-img" src='http://static.mingyizhudao.com/146959029895232'></div>
@@ -35,7 +36,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/search
                 }
                 echo '<td><div class="padding60">' . $hospital->hospital_name . '</div></td>';
                 if (isset($hospital->hospital_id) && !is_null($hospital->hospital_id)) {
-                    echo '<td ><a class="td-color" target="_blank" href="' . $this->createUrl('hospital/view', array('id' => '')) . $hospital->hospital_id . '">查看医院详情></a></td>';
+                    echo '<td ><a class="td-color" target="_blank" href="' . $urlHospital . '/hospital-view-id-' . $hospital->hospital_id . '.html">查看医院详情></a></td>';
                 } else {
                     echo '<td ><div class="td-color-grey" href="">敬请期待</div></td>';
                 }
@@ -52,7 +53,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/search
 
 <script>
     $(document).ready(function () {
-//        var topPage = '<?php //echo $page;         ?>';
+//        var topPage = '<?php //echo $page;           ?>';
 //        alert(topPage);
         $('.tophospital-learn-more').click(function (e) {
             e.preventDefault();
