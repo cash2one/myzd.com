@@ -37,7 +37,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                                     </h2>
                                     <div class="qrcode">
                                         <div><span class="qrcode-text">微信分享医生主页</span><span id="qrcode-sm"><span class="qrlogo-sm"></span></span> <i class="fa fa-caret-down"></i></div>
-                                        <div id="qrcode-lg">
+                                        <div id="qrcode-lg" style="background-color:transparent;">
                                             <div><img src="http://static.mingyizhudao.com/14701296243139"/></div>
                                             <div id="qrcode-weixin">
                                                 <div class="qrlogo-lg"></div>
