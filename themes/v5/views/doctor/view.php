@@ -14,7 +14,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
 <div class="contaier-fluid bg-green">
     <div class="container">
         <div class="crumbs-doctor">
-            <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <a href="<?php echo $this->createUrl('/doctor-top-disease_sub_category-101-page-1-getcount-1.html'); ?>">找名医</a> > <?php echo $doctor->name; ?>
+            <a href="<?php echo Yii::app()->homeUrl; ?>">首页</a> > <a href="<?php echo Yii::app()->params['baseUrl']; ?>/doctor/top/disease_sub_category/101/disease/0/city/0/mtitle/0/page/1/getcount/1">找名医</a> > <?php echo $doctor->name; ?>
         </div>
     </div>
 </div>
