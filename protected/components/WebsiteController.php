@@ -379,7 +379,7 @@ abstract class WebsiteController extends Controller {
            }
         }
         
-        $uriArr=explode('/',$_SERVER['REQUEST_URI']);
+        $uriArr=explode('-',str_replace(".html", "", $_SERVER['REQUEST_URI']));
         $key=array_search('page', $uriArr);
         
         
