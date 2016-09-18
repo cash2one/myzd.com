@@ -20,6 +20,7 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
 $page = Yii::app()->request->getQuery('page', '');
 
 ?>
+<style>.diseaseimain.active{height:95px;overflow:hidden;}.diseasemore .diseasemore-open:hover,.diseasemore .diseasemore-closedown:hover{text-decoration:underline;}.diseasemore .diseasemore-open,.diseasemore .diseasemore-closedown{color:#036eb8;}.diseasemore-open, .diseasemore-closedown:hover{cursor:pointer;}</style>
 <section id="doctorList">
     <div class="container-fluid bg-green">
         <div class="container">
@@ -235,7 +236,7 @@ $page = Yii::app()->request->getQuery('page', '');
 //                for (var j = 0; j < subCats.length; j++) {
 //                    var subCat = subCats[j];
 //                    innerHtml += '<li class="ml10"><a class="subCat" data-id = "' + subCat.id + '" href="<?php // echo $urlLoadDoctorByDiseaseSubCategory;       ?>' + subCat.id + '">' + subCat.name + '</a></li>';
-                    innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + diseaseCategory.name + '" data-id = "' + diseaseCategory.id + '" href="<?php echo $urlBaseUrl; ?>' + '/doctor-top-disease_sub_category-' + diseaseCategory.id + '-page-1-getcount-1.html">' + diseaseCategory.name + '</a></span>';
+                    innerHtml += '<span class="other-subCat"><a class="subCat mr10" data-name="' + diseaseCategory.name + '" data-id = "' + diseaseCategory.id + '" href="<?php echo $urlBaseUrl; ?>/doctor/top/disease_sub_category/' + diseaseCategory.id + '/disease/0/city/0/mtitle/0/page/1/getcount/1">' + diseaseCategory.name + '</a></span>';
 //                }
 //                innerHtml += '</div>';
             }
@@ -251,13 +252,27 @@ $page = Yii::app()->request->getQuery('page', '');
     function setDiseaseHtml(data, subCatId) {
         if (data.results) {
             var diseases = data.results.disease;
-            var innerHtml = '<div class="pull-left" style="min-height:3em;"><span class="select-title">具体疾病：</span></div><div><span class="disease-name"><a class="all active" data-id="' + subCatId + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCatId + '">全部</a></span>';
+            var innerHtml = '<div class="pull-left"><span class="select-title">具体疾病：</span></div><div class="diseaseimain active"><span class="disease-name"><a class="all active" data-id="' + subCatId + '" href="<?php echo $urlLoadDoctorByDiseaseSubCategory; ?>' + subCatId + '">全部</a></span>';
             for (var i = 0; i < diseases.length; i++) {
                 var disease = diseases[i];
                 innerHtml += '<span class="disease-name"><a class="disease" data-id="' + disease.id + '" href = "<?php echo $urlLoadDoctor; ?>">' + disease.name + '</a></span>';
             }
             innerHtml += '</div>';
             $('.select-disease').html(innerHtml);
+            if (diseases.length > 20) {
+                innerHtml += '<div class="text-right diseasemore"><span class="diseasemore-open">展开全部</span><span class="diseasemore-closedown" style="display:none;">收起</span></div>';
+                $('.select-disease').html(innerHtml);
+            }
+            $('.diseasemore').click(function () {
+                $(this).find('.diseasemore-open').toggle();
+                $(this).find('.diseasemore-closedown').toggle();
+            });
+            $('.diseasemore-open').click(function () {
+                $('.diseaseimain').removeClass('active');
+            });
+            $('.diseasemore-closedown').click(function () {
+                $('.diseaseimain').addClass('active');
+            });
             initDiseaseFunction();
         }
     }
