@@ -84,6 +84,15 @@ class ApiViewUserBookingV7 extends EApiViewService {
             $data->isPaid = $model->getIsPaid(false);
             $data->orderType = $model->getOrderType();
             $data->orderTypeCode = $model->getOrderType(false);
+            if($model->getDateInvalid()==NULL){
+                $data->isInvalid=1;//1为未超时
+            }else{
+                if($model->getDateInvalid()>date("Y-m-d",time())){
+                    $data->isInvalid=1;
+                }else{
+                    $data->isInvalid=0;//0为已超时
+                }
+            }
             $this->salesOrder[] = $data;
         }
     }

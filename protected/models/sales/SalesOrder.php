@@ -482,5 +482,9 @@ class SalesOrder extends EActiveRecord {
         } else
             return $date->format($format);
     }
+    
+    public function getDateInvalid(){
+        return $this->date_invalid;
+    }
 
 }

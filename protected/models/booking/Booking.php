@@ -552,5 +552,5 @@ class Booking extends EActiveRecord {
     public function getUserAgent() {
         return $this->user_agent;
     }
-
+    
 }

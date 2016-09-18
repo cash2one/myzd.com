@@ -60,6 +60,7 @@ class BookingController extends WebsiteController {
     public function actionUserbooking($id) {
         $apisvc = new ApiViewUserBookingV7($id);
         $output = $apisvc->loadApiViewData();
+        print_r($output);exit;
         $this->render('userBooking', array('data' => $output, 'paid_count' => $this->_paycost($id)));
     }
 
