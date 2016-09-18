@@ -96,7 +96,12 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                     if ($order->orderTypeCode == SalesOrder::ORDER_TYPE_DEPOSIT && $booking->bookingServiceId == 2) {
                                         echo '<div class="text-right mt-26"><a class="pay-btn btn btn-yes" href="' . $this->createUrl('order/payDeposit', array('refno' => $order->refNo)) . '">点击完成</a></div>';
                                     } else {
-                                        echo '<div class="text-right mt-26"><a target="_blank" href="' . $this->createUrl('order/view', array('refno' => $order->refNo)) . '" class="pay-btn btn btn-yes">立即支付</a></div>';
+
+                                        if ($order->isInvalid == 1) {
+                                            echo '<div class="text-right mt-26"><a target="_blank" href="' . $this->createUrl('order/view', array('refno' => $order->refNo)) . '" class="pay-btn btn btn-yes">立即支付</a></div>';
+                                        } else {
+                                            echo '<div class="text-right mt-26"><a target="_blank" href="javascript:;" class="pay-btn btn btn-disabled">支付超时</a></div>';
+                                        }
                                     }
                                 } else {
                                     echo '<div class="text20 color-green text-center mt30"><span><img class="mr10 mt-3" src="http://static.mingyizhudao.com/146312588201985"></span>' . $order->finalAmount . '元预约金支付成功！</div>';
@@ -133,7 +138,11 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
                                             if ($order->isPaid == 0) {
                                                 echo '<h4 class="text-center color-green text16 pb10 ' . $first . '">';
                                                 echo '<span>→请您支付' . $order->finalAmount . '元</span>';
-                                                echo '<span class="mt-26 ml10"><a target="_blank" href="' . $this->createUrl('order/view', array('refno' => $order->refNo)) . '" class="pay-btn btn btn-yes">立即支付</a></span>';
+                                                if ($order->isInvalid == 1) {
+                                                    echo '<span class="mt-26 ml10"><a target="_blank" href="' . $this->createUrl('order/view', array('refno' => $order->refNo)) . '" class="pay-btn btn btn-yes">立即支付</a></span>';
+                                                } else {
+                                                    echo '<span class="mt-26 ml10"><a target="_blank" href="javascript:;" class="pay-btn btn btn-disabled">支付超时</a></span>';
+                                                }
                                             } else {
                                                 echo '<h4 class="text-center color-green text16 pb10 ' . $first . '">';
                                                 echo '<span>→请您支付' . $order->finalAmount . '元</span>';
