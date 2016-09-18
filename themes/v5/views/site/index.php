@@ -236,7 +236,8 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
 </style>
 <script>
     $(document).ready(function () {
-        $html = '<li><div class="loseweight"><a href="<?php echo $this->createUrl('event/view', array('page' => 'loseweight')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147417832983951" alt="" class="img-responsive"></a></div></li>' +
+        $html = '<li><div class="shareEconomic"><a href="<?php echo $this->createUrl('event/view', array('page' => 'shareEconomic')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147419072489754" alt="" class="img-responsive"></a></div></li>' +
+                '<li><div class="loseweight"><a href="<?php echo $this->createUrl('event/view', array('page' => 'loseweight')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147417832983951" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="loseWeightSurgery"><a href="<?php echo $this->createUrl('event/view', array('page' => 'loseWeightSurgery')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/14733163619513" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="IQQAtechnology"><a href="<?php echo $this->createUrl('event/view', array('page' => 'IQQAtechnology')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147321875452189" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="MaChengOperationCenter"><a href="<?php echo $this->createUrl('event/view', array('page' => 'MaChengOperationCenter')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147331657675720" alt="" class="img-responsive"></a></div></li>';
