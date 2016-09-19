@@ -1,5 +1,6 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/refundAgreement.min.css");
+$this->pageTitle = '名医主刀预约服务退款协议_名医主刀网';
 ?>
 <div id="refundAgreement" class="container">
     <div class="head-title">名医主刀预约服务退款协议</div>

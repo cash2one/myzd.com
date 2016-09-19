@@ -160,12 +160,12 @@ abstract class WebsiteController extends Controller {
 
     public function loadTrafficAnalysisScript($filterDomain = true) {
         $show = true;
-//        if ($filterDomain) {
-//            $baseUrl = Yii::app()->getBaseUrl(true);
-//            if (strStartsWith($baseUrl, 'http://localhost') || strStartsWith($baseUrl, 'http://127.0.0.1')) {
-//                $show = false;
-//            }
-//        }
+        if ($filterDomain) {
+            $baseUrl = Yii::app()->getBaseUrl(true);
+            if (strStartsWith($baseUrl, 'http://localhost') || strStartsWith($baseUrl, 'http://127.0.0.1')) {
+                $show = false;
+            }
+        }
         if ($show) {
             $this->renderPartial('//layouts/_scriptTrafficAnalysis');
         }
