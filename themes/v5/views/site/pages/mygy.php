@@ -50,17 +50,17 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
                             <div class="pb10 expert-info">
                                 <div class="row">
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/146492588141318.jpg" alt="鲍朝辉" title="鲍朝辉"/></div></div>
+                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/146278005149258.jpg" alt="卢秀波" title="卢秀波"/></div></div>
                                     <div class="col-md-4 mt25 expertdesc">
-                                        <div><strong>鲍朝辉</strong><span class="ml10">副主任医师</span><span class="ml10"></span></div>
-                                        <div class="color-green mt10">骨科</div>
-                                        <div class="mt10">郑州市骨科医院</div>
+                                        <div><strong>卢秀波</strong><span class="ml10">主任医师</span><span class="ml10">教授</span></div>
+                                        <div class="color-green mt10">甲状腺外科</div>
+                                        <div class="mt10">郑州大学第一附属医院</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="recommend-content">
-                                <div><strong>推荐理由</strong>：郑州市骨科医院微创脊柱骨科副主任医师。曾到北京积水潭医院学习先进的理念和技术2年时间,在解放军总参医院学习微创治疗颈椎、腰椎疾病，具有丰富的临床经验。主攻微创脊柱外科，椎体（后凸）成形术治疗骨质疏松性椎体压缩骨折、椎间盘镜下髓核摘除术、椎间孔镜下髓核摘除术、等离子低温射频消融治疗颈腰椎间盘突出、颈性眩晕等。作为名医主刀的签约专家，鲍医师积极投身公益事业，在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望让更多的患者远离病痛困扰。</div>
-                                <div class="mt20"><strong>擅长手术</strong>：微创脊柱外科，椎体（后凸）成形术治疗骨质疏松性椎体压缩骨折、椎间盘镜下髓核摘除术、椎间孔镜髓核摘除术，等离子低温射频消融治疗颈腰椎间盘突出、颈性眩晕等。</div>
+                                <div><strong>推荐理由</strong>：博士，郑州大学一附院甲状腺外科主任。1985年毕业于河南医科大学医疗系至今一直从事普通外科的医疗和教学及科研工作，具有丰富的普通外科理论知识及临床经验，熟练地掌握了甲状腺、乳腺、肝胆及胃肠道等系统的疾病的诊断和治疗。每年完成甲状腺手术1000余台，并曾多次参加国际、国内学术研讨会。卢医师从医近30年，追求“医术上精益求精，对病人至诚至爱”，作为名医主刀的签约专家，卢医师冰秉持医者仁心继续践行公益之路，在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望为有需求的患者解决切实之需。</div>
+                                <div class="mt20"><strong>擅长手术</strong>：甲状腺、甲状旁腺疾病的诊断和治疗。</div>
                             </div>
                         </div>
                     </a>
