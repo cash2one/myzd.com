@@ -209,7 +209,7 @@ $urlDoctor = $this->createUrl('doctor/view', array('id' => ''));
                         </div>
                     </div>
                     <div class="rec-title">
-                        <span>同科室推荐</span>
+                        <span>同专业推荐</span>
                     </div>
                     <div class="border-gray">
                         <div class="rec-doc">
