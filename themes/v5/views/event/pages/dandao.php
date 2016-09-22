@@ -1,4 +1,5 @@
 <?php
+$this->throwPageNotFoundException();exit;
 Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/hospital-index.min.css');
 ?>
 <div class="">
