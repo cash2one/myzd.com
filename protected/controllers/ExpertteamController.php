@@ -16,6 +16,7 @@ class ExpertteamController extends WebsiteController {
     }
 
     public function actionView($id) {
+        $this->throwPageNotFoundException();exit;
         $expteamMgr = new ExpertTeamManager();
         $imodel = $expteamMgr->loadIExpertTeamById($id);
         $this->pageTitle=$imodel->name."成员介绍,擅长哪些手术_名医主刀网";
