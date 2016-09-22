@@ -5,6 +5,7 @@ class FacultyController extends WebsiteController{
     public $current_page=null;
     
     public function actionView($name) {
+        $this->throwPageNotFoundException();exit;
         $this->headerUTF8();
         $faculty = Faculty::model()->getActiveRecordByName($name);
         

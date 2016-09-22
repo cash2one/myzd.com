@@ -18,6 +18,7 @@ class EventController extends WebsiteController {
     }
 
     public function actionView($page) {
+        $this->throwPageNotFoundException();exit;
         $this->current_page = $page;
 
         $this->render('viewXiumi');
