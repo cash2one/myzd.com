@@ -1,4 +1,18 @@
-<section class="bg-shareEconomic" id="shareEconomic">
+<section >
+     <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-shareEconomic" id="shareEconomic">
     <div class="bg-banner text-center">
         <img src="http://static.mingyizhudao.com/147418627073285">
     </div>
@@ -22,6 +36,7 @@
             </div>
         </div>
     </div>
+        </div>
 </section>
 <style>
     #shareEconomic .bg-banner{background-color:#eeefef}
@@ -32,4 +47,10 @@
     #shareEconomic .mt115{margin-top: 115px;}
     #shareEconomic .border{padding-top: 115px;padding-bottom:180px;margin-left: 30px;padding-right: 20px;}
     #shareEconomic .bg-image{background:url('http://static.mingyizhudao.com/147418626479740')no-repeat;}
+</style>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
 </style>

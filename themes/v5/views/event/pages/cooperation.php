@@ -1,6 +1,28 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-main100.min.css");
+$this->pageTitle = '名医主刀开创互联网手术新纪元';
+$this->htmlMetaKeywords = '肿瘤服务平台,移动医疗手术平台';
+$this->htmlMetaDescription = '近日，名医主刀创始人兼CEO苏舒，联合创始人兼首席技术官秦鹏以及首席财务官叶菲等一行前往美国纽约，与美国凯瑟琳癌症中心完成了股权合作，标志着双方的合作迈入实质性的深度阶段。';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <div id="cooperation">
 <div>
             <img src="http://static.mingyizhudao.com/14683119356409">

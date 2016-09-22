@@ -1,7 +1,7 @@
 <?php
-$this->pageTitle = '肺癌治疗,肺癌需要手术吗,凯瑟琳癌症中心_名医主刀网';
-$this->htmlMetaKeywords = '肺癌治疗,凯瑟琳癌症中心';
-$this->htmlMetaDescription = '美国哈佛大学公共卫生学院根据中国现有的数据和情况曾作出报告,在未来的30年,中国因肺癌致死的人数将高达1800万,这意味着每分钟会有1人死于肺癌。';
+$this->pageTitle = '发现了肺癌该怎么办，需要立刻手术吗-名医主刀';
+$this->htmlMetaKeywords = '肺癌该怎么办';
+$this->htmlMetaDescription = '凯瑟琳癌症中心作为名医主刀B轮1.5亿元融资的战略投资方之一，在未来，将为名医主刀提供远程专家支持等医疗服务。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 ?>
 <style type="text/css">
@@ -9,6 +9,25 @@ $urlResImage = Yii::app()->theme->baseUrl . "/images/";
     #lungcancer .lungcancer-content .one-content{line-height:30px;}
     #lungcancer .lungcancer-content .divcss5-x5{padding-bottom:5px;border-bottom:1px solid #ef2e7d;}
 </style>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <section id="lungcancer">
     <div class="container-fluid">
         <div class="row">

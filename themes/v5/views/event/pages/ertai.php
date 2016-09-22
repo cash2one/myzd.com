@@ -1,7 +1,29 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-ertai100.min.css");
+$this->pageTitle = '名医主刀为您的家庭美满护航';
+$this->htmlMetaKeywords = '生育评估';
+$this->htmlMetaDescription = '随着国家对二胎政策的放开，肯定有不少年龄稍微大些的女性要考虑再生一个孩子的问题，相对于年轻的女性，大龄女青年可能会面临着不同的问题，比如年龄多大就不能生了？';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <section id="ertai">
     <div class="container container-part1" >
         <div class="ertai-content">

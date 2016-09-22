@@ -1,8 +1,30 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-main102.min.css");
+$this->pageTitle = '让爱带来光明-白内障复明公益项目正式开启啦！_名医主刀';
+$this->htmlMetaKeywords = '白内障复明,公益项目';
+$this->htmlMetaDescription = '白内障复明是一项康复工程、民心工程，为了将这项惠民工程办实办好，此次活动由名医主刀发起，江宁区残疾人联合会、南京市老年大学、南京医科大学附属逸夫医院、小芳健康网等组织共同举办，为白内障患者实施复明公益项目，希望能为他们带去光明。';
 ?>
 <style>#site-content{padding-bottom:0!important;}</style>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
 <section id="cataractExtraction">
+    <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="contaier-fluid">
         <div class="row">
             <div class="container">

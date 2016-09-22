@@ -1,6 +1,28 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-main100.min.css");
+$this->pageTitle = '互联网手术中心公益正在进行时-名医主刀';
+$this->htmlMetaKeywords = '互联网手术中心';
+$this->htmlMetaDescription = '近日，名医主刀互联网手术中心-延安大学附属医院，迎来了北京的权威胸外科专家刘彦国教授和北京的肝胆外科专家李志伟教授。';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <section id="centralpublicwelfare">
     <div class="Centralpublicwelfare-bgcolor">
         <div class="container"><img class="header-img" src="http://static.mingyizhudao.com/146535429302443" alt=""/></div>

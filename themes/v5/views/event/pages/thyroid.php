@@ -1,7 +1,29 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-thyroid100.min.css");
+$this->pageTitle = '常见饮食可预防甲状腺疾病-名医主刀';
+$this->htmlMetaKeywords = '甲状腺疾病';
+$this->htmlMetaDescription = '甲状腺功能亢进:　肿大的甲状腺质地柔软，触诊时可有震颤，可能听到“嗡鸣”样血管杂音，是血管增多、增粗、血流增速的结果。';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <div class="container-fluid">
     <div class="row">
         <div class="header-img">

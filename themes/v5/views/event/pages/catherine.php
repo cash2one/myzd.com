@@ -1,6 +1,28 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-main100.min.css");
+$this->pageTitle = '名医主刀牵手美国凯瑟琳癌症中心';
+$this->htmlMetaKeywords = '美国凯瑟琳癌症中心';
+$this->htmlMetaDescription = '众所周知，美国凯瑟琳癌症中心是全球历史最悠久、规模最大的私立癌症中心，之所以选择“名医主刀”成为中国投资的唯一项目，毫无疑问是源于名医主刀在商业模式、医疗资源、团队实力等独特的优势。';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <section id="catherine">
     <img src="http://static.mingyizhudao.com/146535200632042" alt=""/>
     <div class="container">

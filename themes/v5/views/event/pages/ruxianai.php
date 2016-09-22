@@ -1,6 +1,28 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-ruxianai100.min.css");
+$this->pageTitle = '关爱女性，关爱乳房-名医主刀';
+$this->htmlMetaKeywords = '乳腺癌,乳腺癌治疗';
+$this->htmlMetaDescription = '中国每6分钟，就有1个人被查出癌症。中国每年新增癌症病例约350万，约有250万人因此死亡。';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <div class="">
     <div class="">
         <div class="header-img">

@@ -1,7 +1,29 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-xinxueguan100.min.css");
+$this->pageTitle = '双11熬夜秒杀警惕心血管病突发-名医主刀';
+$this->htmlMetaKeywords = '心血管病突发';
+$this->htmlMetaDescription = '很多人已经在心里暗暗倒数双十一的到来，准备一过午夜0点就加入“抢杀大军”。中国医师协会心脏内科医师会员、上海远大心胸医院心内科主任孟庆智提醒，熬夜购物有风险，熬夜秒杀要警惕心血管疾病突发。';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <div class="container-fluid">
     <div class="row">
         <div class="header-img">

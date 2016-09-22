@@ -1,7 +1,21 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-IQQAtechnology.min.css");
 ?>
-<section class="background-color" id="IQQA-technology">
+<section >
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+    <div class="container">
+        <div class="crumbs-header">
+            <ul>
+                <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                <li>></li>
+                <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                <li>></li>
+                <li class="main-department">详情</li>
+            </ul>
+        </div>
+    </div>
+ </div>
+    <div class="background-color" id="IQQA-technology">
     <div class="banner-bg text-center">
         <img src="http://static.mingyizhudao.com/147312958892497">
     </div>
@@ -145,4 +159,11 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
             </div>
         </div>
     </div>
+    </div>
 </section>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>

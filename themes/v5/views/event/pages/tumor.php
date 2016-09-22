@@ -1,7 +1,29 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-tumor100.min.css");
+$this->pageTitle = '滚蛋吧，肿瘤君！-名医主刀';
+$this->htmlMetaKeywords = '肿瘤病因';
+$this->htmlMetaDescription = '如果机体内部的某些条件或状况适合外界环境中致癌物质的作用，这些人群就具备了癌症发病的内因。包括精神因素、内分泌失调、免疫缺陷与遗传因素等。';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <div class="container-fluid">
     <div class="row">
         <div class="tumor-header">

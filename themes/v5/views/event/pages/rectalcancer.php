@@ -1,5 +1,8 @@
 <?php
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-tumor100.min.css");
+$this->pageTitle = '医师在手，肠癌无忧！-名医主刀';
+$this->htmlMetaKeywords = '肠癌治疗';
+$this->htmlMetaDescription = '现代社会，由于老龄化及环境的改变，加上久坐不动的生活方式和不均衡的饮食习惯，导致癌症高发，患结直肠癌的比例也越来越高。';
 ?>
 <style>
     .tumor-dis{padding-left: 15px;}
@@ -9,6 +12,25 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
     .info-title{font-weight: bold;font-size: 15px;}
     .info-title>.fa-star{color: #EFA429;}
 </style>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <div class="container-fluid">
     <div class="row">
         <div class="">

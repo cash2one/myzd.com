@@ -1,10 +1,32 @@
 <?php 
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-main100.min.css");
+$this->pageTitle = '名医教你防虎四式-名医主刀';
+$this->htmlMetaKeywords = '防虎四式';
+$this->htmlMetaDescription = '7月23日下午，北京八达岭野生动物园发生一起老虎伤人的惨剧，1名当事人当场死亡、另有一人受伤，目前还在医院救治中。 悲剧的背后，既有天灾的事由，也有人祸的成分。惨烈的结局也不得不让我们思考：万一某天自己遭遇猛虎，该怎样避免悲剧发生？';
 ?>
 <style>
     #site-content{padding-bottom:0!important;}
 </style>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
 <section id="tiger">
+     <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="background-all text-center">
         <img src="http://static.mingyizhudao.com/147020456091656">
     </div>

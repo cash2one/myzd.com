@@ -1,7 +1,29 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-preliverdisease100.min.css");
+$this->pageTitle = '立秋之后怎么预防和治疗肝病?-名医主刀';
+$this->htmlMetaKeywords = '预防和治疗肝病';
+$this->htmlMetaDescription = '肝病由不同病因引起，如病毒感染、毒物或毒素中毒、不良的饮食习惯以及药物中毒等。这些病因大多是与人们不良的生活习惯有关，如急性甲肝和戊肝是由于饮食、饮水不洁，生食肉食或生猛海鲜造成的；';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <div class="container-fluid">
     <div class="row">
         <div class="liver-header">

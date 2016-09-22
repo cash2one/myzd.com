@@ -1,7 +1,29 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-cancer100.min.css");
+$this->pageTitle = '名医主刀讲解防癌常见误区';
+$this->htmlMetaKeywords = '防癌常见误区';
+$this->htmlMetaDescription = '随着人们的健康意识的提高，对于防癌体检也能够主动的去医院进行检查。但是，还是有很多人认为花的钱越多，检查的项目越多，效果就越好。那么真相到底是什么呢？';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <section id="cancer">
     <div class="container">      
         <div class="text-center"><span class="total-title text-center"><img src="http://static.mingyizhudao.com/147013243690630">&nbsp;的人忽视的身体小肿块，险些成癌!</span></div>

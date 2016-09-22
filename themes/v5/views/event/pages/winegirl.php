@@ -1,7 +1,29 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-winegirl100.min.css");
+$this->pageTitle = '机器人微创技术照亮“白酒女孩”求医路-名医主刀';
+$this->htmlMetaKeywords = '机器人微创治疗';
+$this->htmlMetaDescription = '家住江西省修水县的13岁女孩程欣是一名早产儿，出生6个月后被查出患有先天性脑瘫。疼痛难忍时程欣只能让家人用白酒麻痹自己。经媒体报道后，“白酒女孩”程欣得到社会的广泛关注。';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <div class="container-fluid">
     <div class="row">
         <img src="http://static.mingyizhudao.com/146071446098199">

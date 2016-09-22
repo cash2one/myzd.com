@@ -2,7 +2,29 @@
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/event-guanxinbing100.min.css");
 $urlBooking = $this->createUrl('booking/create', array('ajax' => 1));
+$this->pageTitle = '预防冬季冠心病发作名医专家有妙招-名医主刀';
+$this->htmlMetaKeywords = '冠心病症状';
+$this->htmlMetaDescription = '临床资料表明，冠心病患者对寒冷刺激特别敏感，主要是由于寒冷刺激可使体表小血管收缩痉挛，诱发冠状动脉内血栓形成;寒冷刺激还可直接引起冠状动脉痉挛，导致心肌缺血、缺氧，诱发心绞痛或急性心肌梗死等。';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <section id="body">
     <div class="container-fluid">
         <div class="row guan-header text-center">

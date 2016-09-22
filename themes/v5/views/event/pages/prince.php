@@ -1,7 +1,29 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-prince100.min.css");
+$this->pageTitle = '卡塔尔王子中国寻医记-名医主刀';
+$this->htmlMetaKeywords = '肢体僵硬';
+$this->htmlMetaDescription = '肢体僵硬22年，这是正常人难以想象的一种痛苦，更别说作为王室成员，所以王子家属此前也咨询过很多世界顶级专家，并在英国接受专业的康复训练，效果甚微。这次是专程慕名前往北京天坛普华医院接受机器人辅助的微创手术。';
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <section id="prince">
     <div class="container">
         <img src="http://static.mingyizhudao.com/147013786687085" class="img-responsive" />

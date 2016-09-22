@@ -1,10 +1,29 @@
 <?php
-$this->pageTitle = '名医公益手术捐赠暨公益发布会_名医主刀网';
-$this->htmlMetaKeywords = '名医公益手术,名医公益发布会';
-$this->htmlMetaDescription = '4月20日.“共享名医资源、共铸健康中国;名医公益手术捐赠暨名医公益宣言发布会 ”在人民大会堂如期举行。此次大型公益活动由名医主刀、国内多家公益基金等单位共同发起,力求在“全民健康,全面小康”的总方针下,创新性尝试共享公益资源的新模式。';
+$this->pageTitle = '共享名医资源，共筑健康生活-名医主刀';
+$this->htmlMetaKeywords = '名医公益手术捐赠';
+$this->htmlMetaDescription = '4月20日，“共享名医资源、共铸健康中国；名医公益手术捐赠暨名医公益宣言发布会 ”在人民大会堂如期举行。此次大型公益活动由名医主刀、国内多家公益基金等单位共同发起，力求在“全民健康，全面小康”的总方针下，创新性尝试共享公益资源的新模式。';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-shapinghealth100.min.css");
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
+ <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <div class="container-fluid">
     <div class="row">
         <div class="header-img">

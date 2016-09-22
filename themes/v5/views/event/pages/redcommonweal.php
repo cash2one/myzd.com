@@ -1,11 +1,30 @@
 <?php
-$this->pageTitle = '互联网手术中心落地延安_名医主刀网';
-$this->htmlMetaKeywords = '互联网手术中心,延安大学附属医院';
-$this->htmlMetaDescription = '近日,中国最大的移动医疗手术平台-“名医主刀”与延安大学附属医院成功签约,双方将以延安大学附属医院为区域手术基地, 合作共建延安市第一家互联网手术中心。此举也标志着名医主刀“红色公益之旅”大型活动正式启动。    ';
+$this->pageTitle = '名医主刀开启“红色公益之旅”';
+$this->htmlMetaKeywords = '红色公益之旅';
+$this->htmlMetaDescription = '近日，中国最大的移动医疗手术平台——“名医主刀”与延安大学附属医院成功签约，双方将以延安大学附属医院为区域手术基地， 合作共建延安市第一家互联网手术中心。此举也标志着名医主刀“红色公益之旅”大型活动正式启动。 ';
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
 Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-main100.min.css");
 ?>
+<style>
+    .search-hospital-header ul li a{background-color:#19aea5;color:#fff;}
+    .search-hospital-header ul{-webkit-padding-start:0}
+    .search-hospital-header ul li{display:inline-block; color:#fff;font-size:16px}
+    .search-hospital-header .crumbs-header{padding-top:10px}
+</style>
 <section id="redcommonweal">
+    <div class="container-fluid search-hospital-header"style="background-color:#19AEA5;height:45px;">
+        <div class="container">
+            <div class="crumbs-header">
+                <ul>
+                    <li><a href="<?php echo Yii::app()->homeUrl; ?>">首页</a></li>
+                    <li>></li>
+                    <li><a href="<?php echo $this->createUrl('event/view/eventList'); ?>">专题列表</a></li>
+                    <li>></li>
+                    <li class="main-department">详情</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="redcommonweal-bgcolor">
         <div class="redcommonweal-picture-move"><img class="redcommonweal-picture-height" src="http://static.mingyizhudao.com/146414797634589" alt=""/></div>
     </div>
