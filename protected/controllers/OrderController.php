@@ -1,7 +1,6 @@
 <?php
 
 class OrderController extends WebsiteController {
-
     public function actionView() {
         $refNo = Yii::app()->request->getParam('refNo');
         if(empty($refNo)){
@@ -13,6 +12,16 @@ class OrderController extends WebsiteController {
         $this->show_baidushangqiao = false;
         //$this->render('view', array('model' => $model));
         $detect = Yii::app()->mobileDetect;
+        if($model->getDateInvalid()==NULL){
+            $model->date_invalid=1;//1为未超时
+        }else{
+            if($model->getDateInvalid()>date("Y-m-d",time())){
+                $model->date_invalid=1;
+            }else{
+                $model->date_invalid=0;//0为已超时
+            }
+        }
+        print_r($model);exit;
         // client is mobile and url is not mobile.
         if ($detect->isMobile()) {
             $this->redirect(Yii::app()->params['baseUrlMobileDoctor'] . '/mobiledoctor/order/view/refNo/' . $refNo);
