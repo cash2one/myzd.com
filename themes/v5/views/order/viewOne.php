@@ -110,7 +110,13 @@ if (isClientWeixin()) {
                     </div>
 
                     <div class="form-group text-center mt50">
-                        <button  type="button" class="btn btn-yes btn-lg" id="pay-certain-btn">确定</button>
+                        <?php if ($model->date_invalid == 1) { ?>
+                            <button  type="button" class="btn btn-yes btn-lg" id="pay-certain-btn">确定</button>
+                            <?php
+                        } else {
+                            ?>
+                            <button  type="button" class="btn btn-disabled btn-lg" id="pay-disabled-btn">已失效</button>
+                        <?php } ?>
                     </div>
                     <?php
                 } else {
@@ -162,72 +168,72 @@ if (isClientWeixin()) {
 <script type="text/javascript" src="http://static.mingyizhudao.com/pc/cdn.staticfile.org-jquery.qrcode.min.js"></script>
 
 <script type="text/javascript">
-                    $(".btn-lg").click(function () {
-                        $(".btn-lg").attr("disabled", true);
-                        var timer = 30;
-                        timerId = setInterval(function () {
-                            timer--;
-                            if (timer > 0) {
-                                $('.test').html(timer);
-                            } else {
-                                $('.open-code-area').hide();
-                                clearInterval(timerId);
-                                timerId = null;
-                                $(".btn-lg").attr("disabled", false);
-                                location.reload();
-                            }
-                        }, 1000);
-
-                        var refNo = document.getElementById('ref_no').value;
-
-                        var channel = $('input:radio[name=optionsRadios]:checked').val();
-
-
-                        var url = "<?php echo $payUrl; ?>";
-                        var refUrl = "<?php echo $refUrl; ?>";
-                        var xhr = new XMLHttpRequest();
-                        xhr.open("POST", url, true);
-                        xhr.setRequestHeader("Content-type", "application/json");
-                        xhr.send(JSON.stringify({
-                            order_no: refNo,
-                            channel: channel,
-                            ref_url: refUrl
-                        }));
-                        xhr.onreadystatechange = function () {
-                            if (xhr.readyState === 4 && xhr.status === 200) {
-                                data = eval('(' + xhr.responseText + ')');
-                                console.log(data);
-                                if (data.channel === 'alipay_pc_direct') {
-                                    pingppPc.createPayment(xhr.responseText, function (result, err) {
-//                        console.log(result);
-//                        console.log(err);
-                                    });
+                        $("#pay-certain-btn").click(function () {
+                            $("#pay-certain-btn").attr("disabled", true);
+                            var timer = 30;
+                            timerId = setInterval(function () {
+                                timer--;
+                                if (timer > 0) {
+                                    $('.test').html(timer);
                                 } else {
-                                    pingpp.createPayment(xhr.responseText, function (result, err) {
+                                    $('.open-code-area').hide();
+                                    clearInterval(timerId);
+                                    timerId = null;
+                                    $("#pay-certain-btn").attr("disabled", false);
+                                    location.reload();
+                                }
+                            }, 1000);
+
+                            var refNo = document.getElementById('ref_no').value;
+
+                            var channel = $('input:radio[name=optionsRadios]:checked').val();
+
+
+                            var url = "<?php echo $payUrl; ?>";
+                            var refUrl = "<?php echo $refUrl; ?>";
+                            var xhr = new XMLHttpRequest();
+                            xhr.open("POST", url, true);
+                            xhr.setRequestHeader("Content-type", "application/json");
+                            xhr.send(JSON.stringify({
+                                order_no: refNo,
+                                channel: channel,
+                                ref_url: refUrl
+                            }));
+                            xhr.onreadystatechange = function () {
+                                if (xhr.readyState === 4 && xhr.status === 200) {
+                                    data = eval('(' + xhr.responseText + ')');
+                                    console.log(data);
+                                    if (data.channel === 'alipay_pc_direct') {
+                                        pingppPc.createPayment(xhr.responseText, function (result, err) {
 //                        console.log(result);
 //                        console.log(err);
-                                    });
-                                }
-                                if (channel == 'wx_pub_qr') {
-                                    $(".open-code-area").show();
-                                    jQuery('.img_wx_pub_qr').text('');
-                                    var img_wx_pub_qr = data.credential.wx_pub_qr;
-                                    jQuery('.img_wx_pub_qr').qrcode({width: 130, height: 130, correctLevel: 0, text: img_wx_pub_qr});
+                                        });
+                                    } else {
+                                        pingpp.createPayment(xhr.responseText, function (result, err) {
+//                        console.log(result);
+//                        console.log(err);
+                                        });
+                                    }
+                                    if (channel == 'wx_pub_qr') {
+                                        $(".open-code-area").show();
+                                        jQuery('.img_wx_pub_qr').text('');
+                                        var img_wx_pub_qr = data.credential.wx_pub_qr;
+                                        jQuery('.img_wx_pub_qr').qrcode({width: 130, height: 130, correctLevel: 0, text: img_wx_pub_qr});
 //                   $("#img_wx_pub_qr").attr('src',jQuery('.code').qrcode({width: 200, height: 200, correctLevel: 0, text: img_wx_pub_qr})); 
 //                    $("#img_wx_pub_qr").attr('src',jQuery('.code').qrcode({width: 200, height: 200, correctLevel: 0, text: img_wx_pub_qr})); 
+                                    }
+
                                 }
-
-                            }
-                        };
+                            };
 
 
-                    });
-                    $(".open-code-area .cancel").click(function () {
-                        clearInterval(timerId);
-                        timerId = null;
-                        $(".btn-lg").attr("disabled", false);
-                        $(".open-code-area").hide();
-                        location.reload();
-                    });
+                        });
+                        $(".open-code-area .cancel").click(function () {
+                            clearInterval(timerId);
+                            timerId = null;
+                            $("#pay-certain-btn").attr("disabled", false);
+                            $(".open-code-area").hide();
+                            location.reload();
+                        });
 
 </script>
