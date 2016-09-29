@@ -21,7 +21,6 @@ class OrderController extends WebsiteController {
                 $model->date_invalid=0;//0为已超时
             }
         }
-        print_r($model);exit;
         // client is mobile and url is not mobile.
         if ($detect->isMobile()) {
             $this->redirect(Yii::app()->params['baseUrlMobileDoctor'] . '/mobiledoctor/order/view/refNo/' . $refNo);
