@@ -82,7 +82,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                     <div class="col-md-8">
                         <div class="border">
                             <div class="text-15">
-                                <p style="text-indent:0;"><strong>亮点三  拥有各领域最佳专业医疗团队，一站式诊疗</strong></p>
+                                <p style="text-indent:0;"><strong>亮点三  拥有各领域最佳专业医疗团队，一站式诊疗。</strong></p>
                                 <p class="mt15">实力优秀的专业医疗团队提高体检的质量。</p>
                                 <p class="mt15">江北三星医院综合体检中心综合管理各分科具有十年以上丰富经验的专业医疗团队。由此，通过精确的诊断和细致的咨询，致力于早期发现疾病。</p>
                                 <p class="mt15 pb24">同时，由医生、护士、营养师和临床心理医生提供综合健康咨询。综合体检中心还与江北三星医院合作，从体检后分析到治疗，提供一站式诊疗服务。</p>
@@ -100,7 +100,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                     <div class="col-md-8">
                         <div class="border">
                             <div class="text-15">
-                                <p style="text-indent:0;"><strong>亮点四&nbsp;&nbsp;  成为世界第一研究机构&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;约翰霍普金斯大学在亚洲的唯一的合作伙伴，向着世界综合体检中心的目标不断飞跃。</strong></p>
+                                <p style="text-indent:0;"><strong>亮点四  成为世界第一研究机构——约翰霍普金斯大学在亚洲的唯一的合作伙伴，向着世界综合体检中心的目标不断飞跃。</strong></p>
                                 <p class="mt15">通过与世界级研究机构开展合作，提供最佳医疗服务。</p>
                                 <p class="mt15 ">江北三星医院综合体检中心作为世界第一研究机构——约翰霍普金斯大学选择的健康体检领域唯一的合作伙伴，问诊、检查、诊断、结果、评价等所有体检系统都具备了全球标准化，提供体系化的体检服务。此外，与海外学者一起举行研讨会等，地位获得了世界认可。江北三星医院综合体检中心与世界一起开展研究，立志提供不断发展的服务。 </p>
                             </div>
@@ -113,17 +113,17 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                 <div class="border-two mt15">
                     <div class="border-three">
                         <div class="border-four border-text-18">
-                            <a data-id="package1" class="active"><strong>套餐一&nbsp;&nbsp;面体检项目</strong></a>
+                            <a data-id="package1" class="active"><strong>套餐一&nbsp;&nbsp;全面体检项目</strong></a>
                         </div>
                         <div class="border-four border-text-18">
                             <a data-id="package2"> <strong>套餐二&nbsp;&nbsp;癌症精密体检项目</strong></a>
                         </div>
                         <div class="border-four border-text-18">
-                            <a data-id="package3"><strong>套餐三&nbsp;&nbsp;两天一夜深度体检项目</strong></a>
+                            <a data-id="package3"><strong>套餐三&nbsp;&nbsp;深度体检项目</strong></a>
                         </div>
                     </div>
                     <div class="package active" id="package1">
-                        <p class="text-16-color"><strong>套餐一&nbsp;&nbsp;面体检项目</strong></p>
+                        <p class="text-16-color"><strong>套餐一&nbsp;&nbsp;全面体检项目</strong></p>
                         <div class="text-14">
                             <p>1. 价格：¥22,500</p>
                             <p>2. 时间：行程三天两夜，一天体检。</p>
@@ -164,6 +164,7 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/eve
                             <p>1. 价格：¥79,500</p>
                             <p>2. 时间：行程四天三夜，两天体检。</p>
                             <p>3. 体检地点：江北三星医院水原综合体检中心</p>
+                            <p>4. 体检项目：</p>
                             <p><strong>套餐二项目 </strong>+ 颅脑 MRI, 颅脑 MRA, 高半胱氨酸, 运动负荷检查, 冠状动脉MDCT, 腰椎X光及腰椎 MRI, 颈椎X光及颈椎 MRI。</p>
                             <p>5. 配套服务：</p>
                             <p>签证，<strong>头等舱／公务舱</strong>往返机票(出发城市北京，上海，大连)，<strong>VIP接机服务</strong>（飞机门口接机，VIP通道移动），<strong>EQUUS雅科仕</strong>豪华轿车服务（接送机，往返医院，首尔旅游），<strong>5星级</strong>酒店（三夜），翻译（医疗翻译＋旅游翻译），首尔旅游（N首尔塔，景福宫，明洞，包括餐费和门票费）。</p>
