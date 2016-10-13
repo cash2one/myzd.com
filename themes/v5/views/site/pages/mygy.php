@@ -44,34 +44,34 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
             <div class="mt40"><img src="http://static.mingyizhudao.com/146718242234110"><span class="mygy-small-title">免支付专家会诊费</span></div>
             <div class="row">
                 <div class="col-sm-7">
-                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3256')) ?>" target="_blank">
+                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3288')) ?>" target="_blank">
                         <div class="recommend-expert">
                             <div><img class="recommend-icon" src="http://static.mingyizhudao.com/146718266929627"></div>
                             <div class="pb10 expert-info">
                                 <div class="row">
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/146278005149258.jpg" alt="卢秀波" title="卢秀波"/></div></div>
+                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/147279573204054.jpg" alt="张林" title="张林"/></div></div>
                                     <div class="col-md-4 mt25 expertdesc">
-                                        <div><strong>卢秀波</strong><span class="ml10">主任医师</span><span class="ml10">教授</span></div>
-                                        <div class="color-green mt10">甲状腺外科</div>
-                                        <div class="mt10">郑州大学第一附属医院</div>
+                                        <div><strong>张林</strong><span class="ml10">主任医师</span><span class="ml10"></span></div>
+                                        <div class="color-green mt10">胸外科</div>
+                                        <div class="mt10">山东省立医院</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="recommend-content">
-                                <div><strong>推荐理由</strong>：博士，郑州大学一附院甲状腺外科主任。1985年毕业于河南医科大学医疗系至今一直从事普通外科的医疗和教学及科研工作，具有丰富的普通外科理论知识及临床经验，熟练地掌握了甲状腺、乳腺、肝胆及胃肠道等系统的疾病的诊断和治疗。每年完成甲状腺手术1000余台，并曾多次参加国际、国内学术研讨会。卢医师从医近30年，追求“医术上精益求精，对病人至诚至爱”，作为名医主刀的签约专家，卢医师冰秉持医者仁心继续践行公益之路，在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望为有需求的患者解决切实之需。</div>
-                                <div class="mt20"><strong>擅长手术</strong>：甲状腺、甲状旁腺疾病的诊断和治疗。</div>
+                                <div><strong>推荐理由</strong>：主任医师，教授，医学博士，肿瘤学博士后，硕士生导师，山东省立医院大外科副主任、胸外科副主任。张医师擅长肺癌、食管癌、贲门癌、纵隔肿瘤的诊断及外科治疗，擅长采用胸部微创手段使治疗创伤较小，对肺癌、食管癌的综合治疗有深入研究，治疗更加规范。作为名医主刀的签约专家，张林医师积极投身公益事业，在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，为有需要的患者免费救治。</div>
+                                <div class="mt20 "><strong>擅长手术</strong>：胸腔镜下肺癌根治术、肺癌袖状切除、双袖状肺癌根治术，胸腺瘤胸腔镜下扩大切除术、胸腺瘤切除血管置换术，胸腹腔镜联合食管癌根治术、胸腹腔镜联合胃食管交界癌微创治疗。</div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-sm-5">
-                    <div class="information">
+                    <div class="information" style="min-height:326px;">
                         <div class="mt30 main-content">
                             所有公益项目的被资助者（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>mygy_shenqing.docx">下载名医公益申请表</a></strong>）均可以<strong class="color-e50011 text16">免支付专家会诊费</strong>。如家庭条件特别困难，可以再申请“名医公益援助金”（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>tepin_shenqing.docx">下载名医公益援助申请表</a></strong>），通过审核者可获得<strong class="text16 color-e50011">5000-10000元</strong>的援助金。如患者本人因病暂无能力自行申请，需指定委托人填写（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>weituoshu.docx">下载名医公益委托书</a></strong>）。
                         </div>
                         <div>  
-                            <div class="number-tips text-center" style="margin-top:51px;">
+                            <div class="number-tips text-center" style="margin-top:30px;">
                                 <div class="text-right"><span class="text16">已捐赠手术的医生人数：</span><span class="text21 color-e50011 number">44位</span></div>
                                 <div class="text-right"><span class="text16">已成功资助的患者人数：</span><span class="text21 color-e50011 number">68位</span></div>
                             </div>
