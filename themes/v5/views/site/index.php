@@ -237,11 +237,8 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
 <script>
     $(document).ready(function () {
         $html = '<li><div class="samsung"><a href="<?php echo $this->createUrl('event/view', array('page' => 'samsung')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147505521586480" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="shareEconomic"><a href="<?php echo $this->createUrl('event/view', array('page' => 'shareEconomic')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147419072489754" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="loseweight"><a href="<?php echo $this->createUrl('event/view', array('page' => 'loseweight')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147505151627490" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="loseWeightSurgery"><a href="<?php echo $this->createUrl('event/view', array('page' => 'loseWeightSurgery')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/14733163619513" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="IQQAtechnology"><a href="<?php echo $this->createUrl('event/view', array('page' => 'IQQAtechnology')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147321875452189" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="MaChengOperationCenter"><a href="<?php echo $this->createUrl('event/view', array('page' => 'MaChengOperationCenter')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147331657675720" alt="" class="img-responsive"></a></div></li>';
+                '<li><div class="IQQAtechnology"><a href="<?php echo $this->createUrl('event/view', array('page' => 'IQQAtechnology')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147321875452189" alt="" class="img-responsive"></a></div></li>' ;
         $('#homeads .bxslider').html($html);
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);
