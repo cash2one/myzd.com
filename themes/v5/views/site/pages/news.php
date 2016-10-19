@@ -174,7 +174,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                             <div class="content">
                                                 <div>近日，名医主刀创始人兼CEO苏舒，联合创始人兼首席技术官秦鹏以及首席财务官叶菲等一行前往美国纽约，与<span class="text21">美国凯瑟琳癌症中心完成了股权合作</span>，标志着双方的合作迈入实质性的深度阶段。此前，在名医主刀B轮融资中，美国凯瑟琳癌症中心的核心团队成员不远万里为投资而来，且最终选定名医主刀成为美国凯瑟琳癌症中心在中国唯一的投资项目，可见他们真诚而又郑重的合作意向。</div>
                                             </div>
-                                            <div class="detail"><a href="<?php// echo $this->createUrl('event/view',array('page'=>'cooperation')); ?>" target="_blank">查看详情 →</a></div>
+                                            <div class="detail"><a href="// echo $this->createUrl('event/view',array('page'=>'cooperation')); ?>" target="_blank">查看详情 →</a></div>
                                         </div>
                                     </div>
                                 </div>-->
@@ -238,7 +238,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                             <div class="content">
                                                 <div>2016年5月14日，“名医主刀”与延安大学附属医院成功签约，双方将以延安大学附属医院为区域手术基地，合作共建<span class="text21">延安市第一家互联网手术中心</span>。以互联网手术中心为载体，采用“名医铸刀”模式，不但能提升地方医疗水准，还能让当地患者真正享受到“大病不出市，名医随时有”。</div>
                                             </div>
-                                            <div class="detail"><a href="<?php// echo $urlNews; ?>yanancenter" target="_blank">查看详情 →</a></div>
+                                            <div class="detail"><a href="// echo $urlNews; ?>yanancenter" target="_blank">查看详情 →</a></div>
                                         </div>
                                     </div>
                                 </div>-->
@@ -254,7 +254,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                             <div class="content">
                                                 <div>2016年4月20日，<span class="text21">“共享名医资源、共铸健康中国；名医公益手术捐赠暨名医公益宣言发布会”</span>在人民大会堂举行。此次大型公益活动由名医主刀联合多家公益组织、企业家代表、医生代表、公益明星共同发起，力求在“全民健康，全面小康”的总方针下，创新性尝试共享公益资源的新模式！</div>
                                             </div>
-                                            <div class="detail"><a href="<?php// echo $urlNews; ?>mingyigongyi" target="_blank">查看详情 →</a></div>
+                                            <div class="detail"><a href="// echo $urlNews; ?>mingyigongyi" target="_blank">查看详情 →</a></div>
                                         </div>
                                     </div>
                                 </div>-->
@@ -317,7 +317,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                             <div class="content">
                                                 <div class="text21">滴滴医生火爆预约，名医抢单随车上门。</div>
                                             </div>
-                                            <div class="detail"><a href="<?php// echo $urlNews; ?>dididoctor" target="_blank">查看详情 →</a></div>
+                                            <div class="detail"><a href="// echo $urlNews; ?>dididoctor" target="_blank">查看详情 →</a></div>
                                         </div>
                                     </div>
                                 </div>-->
