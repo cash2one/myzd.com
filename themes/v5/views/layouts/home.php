@@ -21,14 +21,14 @@
         Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/font-awesome.min.css');
         Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc_all100.min.css");
         Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/main100.min.css");
-        Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/home100.min.css");
+        Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/home101.min.css");
 //        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery-1.9.1.min.js', CClientScript::POS_HEAD);
 //        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/bootstrap.min.js', CClientScript::POS_HEAD);
 //        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/jquery.bxslider.min.js', CClientScript::POS_END);
 //        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/unslider.min.js', CClientScript::POS_HEAD);
 //        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/holder.min.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/pc_all.min.js', CClientScript::POS_HEAD);
-        
+
         Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/main.min.js', CClientScript::POS_HEAD);
 //        Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/home100.min.js', CClientScript::POS_HEAD);
         ?>
