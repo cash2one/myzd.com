@@ -44,23 +44,23 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
             <div class="mt40"><img src="http://static.mingyizhudao.com/146718242234110"><span class="mygy-small-title">免支付专家会诊费</span></div>
             <div class="row">
                 <div class="col-sm-7">
-                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3252')) ?>" target="_blank">
+                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3292')) ?>" target="_blank">
                         <div class="recommend-expert">
                             <div><img class="recommend-icon" src="http://static.mingyizhudao.com/146718266929627"></div>
                             <div class="pb10 expert-info">
                                 <div class="row">
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/4803A97D6F3B712AC677F7FF7C0C71A5" alt="王东" title="王东"/></div></div>
+                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/147685843770371.jpg" alt="聂志红" title="聂志红"/></div></div>
                                     <div class="col-md-4 mt25 expertdesc">
-                                        <div><strong>王东</strong><span class="ml10">主任医师</span><span class="ml10"></span></div>
-                                        <div class="color-green mt10">泌尿外科</div>
-                                        <div class="mt10">四川省医学科学院</div>
+                                        <div><strong>聂志红</strong><span class="ml10">主任医师</span><span class="ml10"></span></div>
+                                        <div class="color-green mt10">脊柱骨科</div>
+                                        <div class="mt10">邢台市人民医院</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="recommend-content">
-                                <div><strong>推荐理由</strong>：主任医师，教授，硕士研究生导师，机器人微创中心主任，中德机器人手术合作中心中方主任。王东医师是四川省首位全球注册达芬奇机器人主刀医生、首位“超100例”及“超300例”达芬奇医生，2014年10月28日至2016年3月底已完成各类高难复杂达芬奇机器人手术340余例，为来自全国各地甚至部分国外患者解除了病苦。王医师长期从事临床、教学和相关科研工作，擅长机器人辅助腹腔镜技术及腹腔镜技术完成泌尿系统各种高难复杂手术。作为名医主刀的签约专家，王东医师积极投身公益事业，在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，为更多患者解除病苦。</div>
-                                <div class="mt20 "><strong>擅长手术</strong>：全球注册达芬奇机器人主刀医生（四川省首位），长期致力于微创泌尿外科及泌尿系统肿瘤的临床、科研及教学，对泌尿系统肿瘤、感染、结石、畸形、梗阻等有丰富的诊治经验。</div>
+                                <div><strong>推荐理由</strong>：医学博士，主任医师，邢台市人民医院脊柱骨科副主任，脊柱骨科及微创脊柱骨科专家。聂志红医师在北大人民医院、北医三院、解放军总医院、上海华山医院、重庆新桥医院等脊柱中心交流学习，曾赴美国、韩国、英国参观学习，得到多位资深教授的指导。聂医师率先开展脊柱内镜手术微创治疗腰椎间盘突出症，腰椎微创通道治疗腰椎管狭窄症、腰椎滑脱等尖端微创手术。作为名医主刀的签约专家，聂志红医师积极投身公益事业，在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望为有需求的患者解决切实之需，让更多的患者挺起脊梁。</div>
+                                <div class="mt20 "><strong>擅长手术</strong>：腰椎间盘突出症（椎间盘镜经椎间孔和椎板间隙入路微创治疗腰椎间盘突出症）、颈椎病（脊髓型 神经根型 无骨折脱位型颈脊髓损伤）、腰椎管狭窄症、腰椎滑脱 、胸椎管狭窄症 、脊柱侧弯及后突畸形 、脊柱及椎管内肿瘤 、脊柱结核、脊柱布布氏杆菌感染 、脊柱骨折、脱位、截瘫 、脊柱骨质疏松性骨折的微创椎体成形术治疗。</div>
                             </div>
                         </div>
                     </a>
@@ -71,11 +71,11 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
                             所有公益项目的被资助者（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>mygy_shenqing.docx">下载名医公益申请表</a></strong>）均可以<strong class="color-e50011 text16">免支付专家会诊费</strong>。如家庭条件特别困难，可以再申请“名医公益援助金”（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>tepin_shenqing.docx">下载名医公益援助申请表</a></strong>），通过审核者可获得<strong class="text16 color-e50011">5000-10000元</strong>的援助金。如患者本人因病暂无能力自行申请，需指定委托人填写（点击<strong><a class="mygy-textdownload" href="<?php echo $urlDownloads; ?>weituoshu.docx">下载名医公益委托书</a></strong>）。
                         </div>
                         <div>  
-                            <div class="number-tips text-center" style="margin-top:51px;">
+                            <div class="number-tips text-center" style="margin-top:65px;">
                                 <div class="text-right"><span class="text16">已捐赠手术的医生人数：</span><span class="text21 color-e50011 number">44位</span></div>
                                 <div class="text-right"><span class="text16">已成功资助的患者人数：</span><span class="text21 color-e50011 number">68位</span></div>
                             </div>
-                            <div class="text12 text-right mt5"style="padding-bottom: 21px;">截至2016.6.30</div>
+                            <div class="text12 text-right mt5"style="padding-bottom:49px;">截至2016.6.30</div>
                         </div>
                     </div>
                 </div>
