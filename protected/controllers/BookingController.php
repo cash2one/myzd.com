@@ -420,14 +420,16 @@ class BookingController extends WebsiteController {
                     //生成adminbooking & salerOrder
                     $apiRequest = new ApiRequestUrl();
                     $remote_url = $apiRequest->getUrlAdminSalesBookingCreate() . '?type=' . StatCode::TRANS_TYPE_BK . '&id=' . $booking->id;
-                    $data = $this->send_get($remote_url);
+                    
+			$data = $this->send_get($remote_url);
                     if ($data['status'] == "ok") {
                         $output['status'] = 'ok';
                         $output['salesOrderRefNo'] = $data['salesOrderRefNo'];
                         $output['booking']['id'] = $booking->getId();
                     } else {
-                        //$output['errors'] = $salesOrder->getErrors();
-                        throw new CException('error saving data.');
+                       $output['errors'] = $booking->getErrors();
+                       // throw new CException('error saving data.');
+			
                     }
                 } else {
                     $output['errors'] = $form->getErrors();
