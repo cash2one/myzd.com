@@ -17,14 +17,14 @@ if ($this->getCurrentUser() !== null) {
     .centent-border2:hover{background:url('http://static.mingyizhudao.com/147815372132575')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
     .centent-border3{background:url('http://static.mingyizhudao.com/147809544632983')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
     .centent-border3:hover{background:url('http://static.mingyizhudao.com/147815372132575')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
-    .centent-border4{background:url('http://static.mingyizhudao.com/147809544646537')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
-    .centent-border4:hover{background:url('http://static.mingyizhudao.com/147815867838524')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
+    .centent-border4{background:url('http://static.mingyizhudao.com/147867014928251')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
+    .centent-border4:hover{background:url('http://static.mingyizhudao.com/147866980399168')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
     #pop-border1{position:fixed;z-index:99;top:163px;right:70px;}
     #pop-border2{position:fixed;z-index:99;top:216px;right:70px;}
     #pop-border3{position:fixed;z-index:99;top:281px;right:70px;}
     #pop-border4{position:fixed;z-index:99;top:358px;right:70px;}
     .pop-border{display:none}
-    .active{display:block}
+    .fcactive{display:block}
     .bg-phone{background:url('http://static.mingyizhudao.com/147815371219727')no-repeat;width:135px;;height:130px;font-size: 14px;}
     .nbcolor{color:#F9B073}
 </style>
@@ -36,13 +36,13 @@ if ($this->getCurrentUser() !== null) {
                 <a data-id="pop-border1" href="http://dct.zoosnet.net/LR/Chatpre.aspx?id=DCT73779034&lng=cn" target="_blank"><div class="centent-border1 mt1"><img src="http://static.mingyizhudao.com/147809613663817"></div></a>
                 <a data-id="pop-border2"><div class="centent-border2 mt1"><img src="http://static.mingyizhudao.com/147809612454243"></div></a>
                 <a data-id="pop-border3"><div class="centent-border3 mt1"><img src="http://static.mingyizhudao.com/147809614034451"></div></a>
-                <a data-id="pop-border4"><div class="centent-border4 mt1 returntop"><img src="http://static.mingyizhudao.com/147809614289127"></div></a>
+                <a><div class="centent-border4 mt1 returntop"></div></a>
             </div>
             <div class="pop-border" id="pop-border1">
                 <a href="http://dct.zoosnet.net/LR/Chatpre.aspx?id=DCT73779034&lng=cn" target="_blank"><img src="http://static.mingyizhudao.com/147809856137649"></a>
             </div>
             <div class="pop-border" id="pop-border2">
-              <div class="bg-phone">
+                <div class="bg-phone">
                     <p class="pl10 pt5">咨询热线</p>
                     <p class="pl10 nbcolor">400-6277-120</p>
                     <p class="pl10 ">工作时间</p>
@@ -50,10 +50,7 @@ if ($this->getCurrentUser() !== null) {
                 </div>
             </div>
             <div class="pop-border" id="pop-border3">
-               <img src="http://static.mingyizhudao.com/147815371482876">
-            </div>
-            <div class="pop-border" id="pop-border4">
-                <a class="returntop"><img src="http://static.mingyizhudao.com/147815371807997"></a>
+                <img src="http://static.mingyizhudao.com/147815371482876">
             </div>
         </div>
         <!--  toTop  -->
@@ -130,7 +127,7 @@ if ($this->getCurrentUser() !== null) {
                             <h4>关于我们</h4>
                             <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
                             <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms')); ?>" target="_blank">免责声明</a>
-    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];                           ?>" target="_blank">联系我们</a>-->
+    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];                             ?>" target="_blank">联系我们</a>-->
                             <!--                                <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                         </div>
                         <div class="mt40">
@@ -197,7 +194,7 @@ if ($this->getCurrentUser() !== null) {
                                 <h4>关于我们</h4>
                                 <a class="text-info" href="<?php echo $siteMenu["aboutus"]["url"]; ?>" target="_blank">关于我们</a>
                                 <a class="text-info" href="<?php echo $this->createUrl('site/page', array('view' => 'help', 'page' => 'terms')); ?>" target="_blank">免责声明</a>
-    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];                           ?>" target="_blank">联系我们</a>-->
+    <!--                            <a class="text-info" href="<?php //echo $siteMenu["contactus"]["url"];                             ?>" target="_blank">联系我们</a>-->
                                 <!--                                    <a id="header-nav-aboutus" href="http://zixun.mingyizhudao.com/" class="text-info" target="_blank">相关资讯</a>-->
                             </div>
                         </div>
@@ -244,8 +241,8 @@ if ($this->getCurrentUser() !== null) {
                     <div class="text-left feedback-title-img"><img src="http://static.mingyizhudao.com/146570125444173"></div>
                     <div class="feedback-form pt5" >
                         <form enctype="multipart/form-data" id="feedback-form" action="<?php echo $urlSubmitForm; ?>" method="post" onkeydown="if (event.keyCode == 13) {
-                                        return false;
-                                    }">
+                            return false;
+                            }">
                             <input type="hidden" value="<?php echo $user_id; ?>" name="feedback[user_id]" id="FeedbackForm_user_id">
                             <input type="hidden" value="website" name="feedback[source]" id="FeedbackForm_source">
                             <div class="form-group">
@@ -272,29 +269,38 @@ if ($this->getCurrentUser() !== null) {
 </div>
 </section>
 <script>
-    $(document).ready(function () {
-        $(".business-border a").mouseover(function () {
-            var dataId = $(this).attr("data-id");
-            $(".pop-border").removeClass("active");
-            $("#" + dataId).addClass("active");
-        });
-        $(".business-border a").mouseout(function () {
-            $(".pop-border").removeClass("active");
-        });
-        $(".pop-border").mouseover(function () {
-            var dataId = this.id;
-            $("#" + dataId).addClass("active");
-        });
-        $(".pop-border").mouseout(function () {
-            $(".pop-border").removeClass("active");
-        });
-        $(".returntop").click(function () {
-            var speed = 700;
+            $(document).ready(function () {
+    $(".business-border a").mouseover(function () {
+    var dataId = $(this).attr("data-id");
+            $(".pop-border").removeClass("fcactive");
+            $("#" + dataId).addClass("fcactive");
+    });
+            $(".business-border a").mouseout(function () {
+    $(".pop-border").removeClass("fcactive");
+    });
+            $(".pop-border").mouseover(function () {
+    var dataId = this.id;
+            $("#" + dataId).addClass("fcactive");
+    });
+            $(".pop-border").mouseout(function () {
+    $(".pop-border").removeClass("fcactive");
+    });
+            $(".returntop").click(function () {
+    var speed = 700;
             $('body,html').animate({scrollTop: 0}, speed);
             return false;
-        });
-
     });
+     $(window).scroll(function(){
+                var scroH = $(this).scrollTop();
+                if (scroH >= 0.1 * innerHeight){$(".centent-border4").fadeIn(200); 
+                }else{
+                    $(".centent-border4").hide();
+                    $("#pop-border4").hide();
+                }
+            });
+    });
+           
+ 
 </script>
 <?php
 if ($this->show_baidushangqiao) {
