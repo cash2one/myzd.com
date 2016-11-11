@@ -22,7 +22,6 @@ $urlVideo = Yii::app()->theme->baseUrl . "/videos/";
             </p>
             <br />
             <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">2016年7月，我们在安徽宿州一家医院里看到了这对可怜的老夫妻。躺在病床上的老人名叫郑安详，今年60岁。但他的晚年并不像他的名字那样安详。</span></div>
-            <span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">视频</span><br />
             <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">60岁，本该是安享晚年的年纪，但命运弄人。本就一贫如洗的老人，偏偏却祸不单行，一场疾病彻底打垮了这对流浪的老夫妻。</span></div>
             <div class="text-center"><img style="height:280px;width:480px;" src="http://static.mingyizhudao.com/147191864724680"></div>
             <div style="text-indent: 2em;"><span style="line-height:2;font-size:14px;font-family:'Microsoft YaHei';">“我经常哭，经常掉眼泪，心里过的不愉快。”郑安详妻子说。“什么活都不能干，饭都不能弄，还要端给他吃。我也一身都是病。”</span></div>

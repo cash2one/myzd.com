@@ -17,7 +17,7 @@ if ($this->getCurrentUser() !== null) {
     .centent-border2:hover{background:url('http://static.mingyizhudao.com/147815372132575')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
     .centent-border3{background:url('http://static.mingyizhudao.com/147809544632983')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
     .centent-border3:hover{background:url('http://static.mingyizhudao.com/147815372132575')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
-    .centent-border4{background:url('http://static.mingyizhudao.com/147867014928251')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
+    .centent-border4{background:url('http://static.mingyizhudao.com/147867014928251')repeat; text-align:center;width:75px;height:64px;line-height: 64px;display:none;}
     .centent-border4:hover{background:url('http://static.mingyizhudao.com/147866980399168')repeat; text-align:center;width:75px;height:64px;line-height: 64px;}
     #pop-border1{position:fixed;z-index:99;top:163px;right:70px;}
     #pop-border2{position:fixed;z-index:99;top:216px;right:70px;}
