@@ -53,9 +53,9 @@ class AuthController extends WebsiteController {
                     $actionType = $values['actionType'];
 
                     $authMgr = new AuthManager();
-                    $errors = $authMgr->sendAuthSmsVerifyCode($mobile, $actionType, $userIp);
-
-                    if (empty($errors)) {
+                    $result = $authMgr->sendAuthSmsVerifyCode($mobile, $actionType, $userIp);
+                    if (isset($result['status']) && $result['status'] == 'ok') 
+                    {
                         // success.
                     } else {
                         throw new CException("Error.");
