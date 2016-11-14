@@ -16,6 +16,55 @@ Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/event-
     </div>
     <div class="container">
         <div class="row">
+             <div class="col-md-3">
+                <a href="<?php echo $this->createUrl('event/view', array('page' => 'shareEconomic')); ?>" target="_blank">
+                    <div class="special-topic">
+                        <div class="header-img">
+                            <img src="http://static.mingyizhudao.com/147686364517913">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div>近日，国家信息中心分享经济案例研究基地授牌仪式在京举行。国家信息中心常务副主任杜平为首批入选的两家企业上海创贤网络科技有限公司（以下称“名医主刀”）和北京快跑信息科......</div>
+                            </div>
+                            <div class="learn-more">查看详情></div>
+                            <div class="mark-activity"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="<?php echo $this->createUrl('event/view', array('page' => 'loseWeightSurgery')); ?>" target="_blank">
+                    <div class="special-topic">
+                        <div class="header-img">
+                            <img src="http://static.mingyizhudao.com/14768636462547">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div>每个故事里都有那么一个胖子。不知道这句话是不是戳中了很多人，你的身边总会有一个“异”于常人，性格开朗的胖子。但是在我们强调情怀的同时，也请注意他们的健康问题。......</div>
+                            </div>
+                            <div class="learn-more">查看详情></div>
+                            <div class="mark-activity"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="<?php echo $this->createUrl('event/view', array('page' => 'MaChengOperationCenter')); ?>" target="_blank">
+                    <div class="special-topic">
+                        <div class="header-img">
+                            <img src="http://static.mingyizhudao.com/147686364747384">
+                        </div>
+                        <div class="content">
+                            <div class="text-content">
+                                <div>邀请全国知名的外科专家直接到麻城开展手术、义诊、坐诊等服务，提高麻城医疗技术水平；二是打造麻城的分级诊疗体系，
+                            让合适的医生给合适的病人手术；三是建立......</div>
+                            </div>
+                            <div class="learn-more">查看详情></div>
+                            <div class="mark-activity"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
             <div class="col-md-3">
                 <a href="<?php echo $this->createUrl('event/view', array('page' => 'cataractExtraction')); ?>" target="_blank">
                     <div class="special-topic">

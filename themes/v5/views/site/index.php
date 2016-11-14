@@ -2,7 +2,7 @@
 $this->pageTitle = '三甲医院手术预约,专家,主任医生手术,床位预约_名医主刀网';
 $this->htmlMetaKeywords = '预约手术,专家手术,名医主刀网';
 $this->htmlMetaDescription = '名医随时有,手术不再难!【名医主刀】汇聚国内外顶级名医和床位资源,利用互联网技术实现医患精准匹配,帮助广大患者在第一时间预约到名医专家进行主刀治疗-www.mingyizhudao.com';
-Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/homeelse102.css');
+Yii::app()->clientScript->registerCssFile('http://static.mingyizhudao.com/pc/homeelse103.css');
 Yii::app()->clientScript->registerScriptFile('http://static.mingyizhudao.com/pc/home102.min.js', CClientScript::POS_END);
 $urlLoadDoctor = $this->createUrl('api/doctor', array('api' => 4, 'page' => 1, 'pagesize' => 4, 'is_contracted' => 1, 'disease_category' => 1));
 $urlRecommendedDoctors = $this->createUrl('api/recommendeddoctors');
@@ -16,34 +16,31 @@ $urlSearchByKeyWord = $this->createUrl('api/search', array('name' => ''));
 $urlBaseUrl = Yii::app()->params['baseUrl'];
 ?>
 <section id="site-content" class="home-bg">
-    <div class="container-fluid bg-lunbo h500">
-        <div class="row">
-            <div class="container home-header">
-                <div class="home-slogn text-center">
-                    <div class="home-title">
-                        <div>
-                            <span class="slogan-lg strong color-green">做手术就找名医主刀</span>
-                        </div>
-                        <div>
-                            <span class="slogan-sm color-green">国内最大的互联网医疗手术平台</span>
+    <a href="<?php echo $this->createUrl('event/view', array('page' => 'medicalera')); ?>" target="_blank"><div class="container-fluid bg-lunbo h500">
+            <div class="row">
+                <div class="container" id="banner-conter">
+                    <div class="padding-195">
+                        <div class="mt190 border-all">
+                            <div class="text-48">
+                                <span>做手术</span><span class="ml55">就找名医主刀</span>
+                            </div>
+                            <div class="color-green text-18">
+                                <div class="pull-left ml5">精准匹配</div><div class="pull-left mt-5">&nbsp;.&nbsp;</div><div class="pull-left">自主选择</div><div class="ml40 pull-left">流程简单</div><div class="pull-left mt-5">&nbsp;.&nbsp;</div><div class="pull-left">省事省力</div><div class="ml20 border-banner pull-left">了解详情</div>
+                            </div>
                         </div>
                     </div>
-                    <!--                    <div class="mt40">
-                                            <a id="show_top" class="btn btn-home color-green" >为什么选择名医主刀?</a>
-                                        </div>-->
                 </div>
             </div>
-        </div>
-    </div>
+        </div></a>
     <div class="container-fluid home-search">
         <div class="row">
             <div class="container">
                 <div class="form-inline text-center" id="home-search-form">
                     <div class="form-group search-frame">
-                        <input type="text" class="form-control input-area disease-name" placeholder="请输入医生姓名、确诊疾病、医院名称">
+                        <input style="margin-top: -240px;" type="text" class="form-control input-area disease-name" placeholder="请输入医生姓名、确诊疾病、医院名称">
                     </div>
                 </div>
-                <div id="search-display">
+                <div class="mt-100" id="search-display">
                     <div class="search-display-header">
                         <span class="pull-right clearhistory mt10">清除搜索记录</span>
                         <ul class="nav nav-tabs" role="tablist">
@@ -60,14 +57,14 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
             <div class="container home-event">
                 <div class="row">
                     <div class="col-md-9 pr0">
-                        <div id="homeads" class="text-right mt50 img-responsive">
+                        <div id="homeads" class="text-right mt-70 img-responsive">
                             <div class="mt-fix">
                                 <ul class="bxslider">                           
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 pl0 pr0 home-small-event-img mt50">
+                    <div class="col-md-3 pl0 pr0 home-small-event-img mt-70">
                         <div><a href="<?php echo $this->createUrl('event/view', array('page' => 'mingyiyizhen')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/146310859981873"></a></div>
                     </div>
                 </div>
@@ -237,11 +234,8 @@ $urlBaseUrl = Yii::app()->params['baseUrl'];
 <script>
     $(document).ready(function () {
         $html = '<li><div class="samsung"><a href="<?php echo $this->createUrl('event/view', array('page' => 'samsung')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147505521586480" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="shareEconomic"><a href="<?php echo $this->createUrl('event/view', array('page' => 'shareEconomic')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147419072489754" alt="" class="img-responsive"></a></div></li>' +
                 '<li><div class="loseweight"><a href="<?php echo $this->createUrl('event/view', array('page' => 'loseweight')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147505151627490" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="loseWeightSurgery"><a href="<?php echo $this->createUrl('event/view', array('page' => 'loseWeightSurgery')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/14733163619513" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="IQQAtechnology"><a href="<?php echo $this->createUrl('event/view', array('page' => 'IQQAtechnology')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147321875452189" alt="" class="img-responsive"></a></div></li>' +
-                '<li><div class="MaChengOperationCenter"><a href="<?php echo $this->createUrl('event/view', array('page' => 'MaChengOperationCenter')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147331657675720" alt="" class="img-responsive"></a></div></li>';
+                '<li><div class="IQQAtechnology"><a href="<?php echo $this->createUrl('event/view', array('page' => 'IQQAtechnology')); ?>" target="_blank"><img src="http://static.mingyizhudao.com/147321875452189" alt="" class="img-responsive"></a></div></li>';
         $('#homeads .bxslider').html($html);
         var urlDoctorView = '<?php echo $urlDoctorView; ?>';
         ajaxLoadDoctor('<?php echo $urlRecommendedDoctors; ?>', urlDoctorView);

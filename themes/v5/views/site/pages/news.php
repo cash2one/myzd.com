@@ -1,6 +1,6 @@
 <?php
 $urlResImage = Yii::app()->theme->baseUrl . "/images/";
-Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/pc/aboutus101.min.css");
+Yii::app()->clientScript->registerCssFile("http://static.mingyizhudao.com/147675976882625");
 $urlNews = $this->createUrl('news/page', array("view" => ""));
 $this->pageTitle = '公司资讯_名医主刀网';
 $this->htmlMetaKeywords = '公司新闻,公司资讯';
@@ -27,17 +27,77 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                         <img src="http://static.mingyizhudao.com/146250228832979">
                                     </div>
                                     <div>
-                                        <div class="yellow-line-one" style="height:1268px;"></div>
+                                        <div class="yellow-line-one"></div>
                                     </div>
                                     <div>
                                         <img class="mt-25" src="http://static.mingyizhudao.com/146250228825473">
                                     </div>
                                     <div>
-                                        <div class="yellow-line-two" style="height:2275px;"></div>
+                                        <div class="yellow-line-two"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-10 col-sm-9 ml-50 news">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="http://static.mingyizhudao.com/147675748297790">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年9月
+                                            </div>
+                                            <div class="content">
+                                                <div>2016年9月12日，名医主刀“减重互联网手术中心”签约仪式在北京明德医院举行。来自宝岛台湾、专注于肥胖与糖尿病治疗的腹腔镜束带折叠与缩胃绕肠手术发明人黄致锟教授、名医主刀联合创始人兼首席医疗官李名伟等出席了签约仪式。“减重互联网手术中心”成功落地北京。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="http://static.mingyizhudao.com/147675748287773">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年9月
+                                            </div>
+                                            <div class="content">
+                                                <div>2016年9月9日，在共和国的摇篮、红色故都江西省瑞金市，新华社新闻信息中心启动了“致敬历史•重走长征路”大型活动，名医主刀做为赞助方参与了该项活动，并在启动仪式上向革命老区群众捐赠了由京上广一线专家主刀的公益手术。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="http://static.mingyizhudao.com/147675748252468">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年9月
+                                            </div>
+                                            <div class="content">
+                                                <div>2016年9月6日，国家信息中心分享经济案例研究基地授牌仪式在京举行。国家信息中心常务副主任杜平为首批入选的两家企业上海创贤网络科技有限公司（“名医主刀”）和北京快跑信息科技有限公司（“小猪短租”）授牌。信息化研究部主任张新红主持，名医主刀公司CEO苏舒、小猪短租CEO陈驰出席仪式并接牌。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="http://static.mingyizhudao.com/147675748202356">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年8月
+                                            </div>
+                                            <div class="content">
+                                                <div>2016年8月30日，麻城市人民政府与名医主刀签订战略合作框架协议。麻城市领导杨遥、蔡绪安、曹幼松、李景浩、王波，名医主刀联合创始人兼副董事长吴勇、南区总经理王媛、市场部副总监张亮亮等参加了签约仪式。麻城市市长蔡绪安主持签约仪式。此次与麻城市人民政府的战略合作，标志着名医主刀继延安互联网手术中心之后，再次投身革命老区提升医疗健康服务水平，是名医主刀前进道路上又一里程碑。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/147133206554396">
@@ -54,7 +114,7 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/147073121230756">
                                     </div>
@@ -70,6 +130,22 @@ $this->htmlMetaDescription = '2016年5月14日,“名医主刀”与延安大学
                                         </div>
                                     </div>
                                 </div>
+<!--                                <div class="row">
+                                    <div class="col-md-3 col-sm-12">
+                                        <img src="http://static.mingyizhudao.com/147012353237252">
+                                    </div>
+                                    <div class="col-md-9 col-sm-12">
+                                        <div class="news-content">
+                                            <div class="news-date">
+                                                2016年7月
+                                            </div>
+                                            <div class="content">
+                                                <div>7月初，安徽省遭遇50年一遇强降雨，灾情严重。灾区人民时时牵动着名医主刀小伙伴的心，很多小伙伴的故乡是安徽，不断为家乡祈福。<span class="text21">“名医主刀仁爱志愿队”</span>更是行动派，在继阜宁赈灾后，再次前往受灾严重的安徽省安庆市怀宁县，为当地灾民发放救济物资。</div>
+                                            </div>
+                                            <div class="detail"><a href="// echo $urlNews; tigerbite" target="_blank">查看详情 →</a></div>
+                                        </div>
+                                    </div>
+                                </div>-->
                                 <div class="row">
                                     <div class="col-md-3 col-sm-12">
                                         <img src="http://static.mingyizhudao.com/146883240108139">
