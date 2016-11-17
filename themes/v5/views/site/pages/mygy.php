@@ -44,23 +44,23 @@ $urlLoadFreediagnoseDoctors = $this->createUrl('api/freediagnosedoctors');
             <div class="mt40"><img src="http://static.mingyizhudao.com/146718242234110"><span class="mygy-small-title">免支付专家会诊费</span></div>
             <div class="row">
                 <div class="col-sm-7">
-                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3313')) ?>" target="_blank">
+                    <a href="<?php echo $this->createUrl('doctor/view', array('id' => '3317')) ?>" target="_blank">
                         <div class="recommend-expert">
                             <div><img class="recommend-icon" src="http://static.mingyizhudao.com/146718266929627"></div>
                             <div class="pb10 expert-info">
                                 <div class="row">
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/147304619391520.jpg" alt="卢灿省" title="卢灿省"/></div></div>
+                                    <div class="col-md-3 pr0"><div><img class="img100" src="http://dr.static.mingyizhudao.com/147684790351365.jpg" alt="李盈龙" title="李盈龙"/></div></div>
                                     <div class="col-md-4 mt25 expertdesc">
-                                        <div><strong>卢灿省</strong><span class="ml10">副主任医师</span><span class="ml10"></span></div>
-                                        <div class="color-green mt10">肛肠外科</div>
-                                        <div class="mt10">安徽中医药大学第一附属医院</div>
+                                        <div><strong>李盈龙</strong><span class="ml10">副主任医师</span><span class="ml10"></span></div>
+                                        <div class="color-green mt10">眼科</div>
+                                        <div class="mt10">合肥市第一人民医院</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="recommend-content">
-                                <div><strong>推荐理由</strong>：副主任医师，硕士生导师，安徽中医学院第一附属医院肛肠外科。卢医师从事肛门直肠疾病的诊疗及研究工作20余年，发表专业论文数十篇，对本专科疾病的治疗居省内领先水平，现为安徽省中医药学会肛肠分会副主任委员。卢医师对传统中医结扎、挂线疗法有新的认识和突破，大大减轻了术后痛苦、减少了并发症的发生、提高了临床疗效、缩短了住院时间。作为名医主刀的签约专家，卢灿省医师在名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望为更多病患提供切实之需，将健康带给更多人。</div>
-                                <div class="mt20 "><strong>擅长手术</strong>：中西医结合治疗痔疮，肛瘘等常见肛门直肠疾病，尤其擅长微创治疗痔疮、复杂性肛瘘、一次性根治肛周脓肿；对出口梗阻性便秘、结直肠肿瘤、骶尾部藏毛窦的治疗有丰富临床经验。</div>
+                                <div><strong>推荐理由</strong>：副主任医师，眼科行政副主任。从事眼科临床工作已20年，是我省较早开展准分子激光治疗近视的医师之一，先后在中华级及国家核心期刊发表论文10余篇。现主要从事青少年近视的预防和治疗，以及白内障、青光眼方面的研究工作。在省内率先开展LASEK和Epi-LASIK治疗高度近视和复杂性近视手术，特别是对复杂性近视有着很深的造诣，有着5000例近视眼成功手术的经验。作为名医主刀的签约专家，李盈龙医师积极投身公益事业，名医主刀发起的名医公益联盟活动中捐赠多台爱心手术，希望为有需求的患者解决切实之需，给患者一个更加光明的未来。</div>
+                                <div class="mt20 "><strong>擅长手术</strong>：青少年近视、弱视、白内障、青光眼、泪道疾病的治疗。</div>
                             </div>
                         </div>
                     </a>
