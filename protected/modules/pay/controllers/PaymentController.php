@@ -116,11 +116,15 @@ class PaymentController extends WebsiteController {
                 if (isset($payment->user_id)) {
                     $user = User::model()->getById($payment->user_id);
                     if (isset($user->username)) {
-                        $sendMsg = new SmsManager();
+                        
                         $data = new stdClass();
                         $data->amount = $payment->paid_amount;
                         $data->refno = $order->ref_no;
-                        $sendMsg->sendSmsBookingDepositPaid($user->username, $data);
+//                        $sendMsg = new SmsManager();
+//                        $sendMsg->sendSmsBookingDepositPaid($user->username, $data);
+                        $rpc = new RPC();
+                        $client = $rpc->rpcClient(Yii::app()->params['rpcSmsUrl']);
+                        $client->sendSmsBookingDepositPaid($user->username, $order->ref_no, $payment->paid_amount);
                     }
                 }
                 //电邮提醒
